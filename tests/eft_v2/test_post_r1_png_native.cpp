@@ -112,6 +112,71 @@ native::ClosedTriangleVectors rotated_vectors(
     return result;
 }
 
+double dot(
+    const std::array<double,3>& left,
+    const std::array<double,3>& right) {
+    return left[0]*right[0]+left[1]*right[1]+left[2]*right[2];
+}
+
+std::array<double,3> add(
+    const std::array<double,3>& left,
+    const std::array<double,3>& right) {
+    return {{
+        left[0]+right[0],
+        left[1]+right[1],
+        left[2]+right[2]}};
+}
+
+double sinc(double value) {
+    return std::fabs(value)<1.0e-8
+        ?1.0-value*value/6.0
+        :std::sin(value)/value;
+}
+
+double finite_adaptive_brec_gaussian_tree_piece(
+    const SmoothPower& power,
+    const SmoothTransfer& transfer,
+    const native::ClosedTriangleVectors& vectors,
+    const native::NativeConfig& config,
+    double b1,
+    double bphi_recon,
+    double fnl_recon) {
+    const int pairs[3][2]={{0,1},{1,2},{2,0}};
+    double result=0.0;
+    for (const auto& pair:pairs) {
+        const int i=pair[0];
+        const int j=pair[1];
+        const auto output=add(vectors[i],vectors[j]);
+        double shift_sum=0.0;
+        for (const int index:{i,j}) {
+            const auto& momentum=vectors[index];
+            const double k2=dot(momentum,momentum);
+            const double k=std::sqrt(k2);
+            const double gaussian=std::exp(
+                -0.5*k2*config.smoothing_radius
+                    *config.smoothing_radius);
+            const double half_cell=0.5*config.recon_cellsize;
+            const double cic=
+                config.recon_cic_window_power<=0
+                ?1.0
+                :std::pow(
+                    sinc(momentum[0]*half_cell)
+                    *sinc(momentum[1]*half_cell)
+                    *sinc(momentum[2]*half_cell),
+                    config.recon_cic_window_power);
+            const double denominator=
+                config.bias_recon
+                +fnl_recon*bphi_recon/transfer(k);
+            shift_sum+=-dot(output,momentum)/k2
+                       *gaussian*cic/denominator;
+        }
+        const double pi=power(std::sqrt(dot(vectors[i],vectors[i])));
+        const double pj=power(std::sqrt(dot(vectors[j],vectors[j])));
+        result+=b1*b1*b1*b1*pi*pj*shift_sum;
+    }
+    return result;
+}
+
 native::NativeConfig post_config() {
     native::NativeConfig config;
     config.smoothing_radius=15.0;
@@ -263,6 +328,41 @@ void test_tree_orientation_and_limits() {
     compare_tree_components(
         post_infinite,pre,3.0e-12,3.0e-8,
         "R-infinity post/pre identity");
+
+    const double basis=native::
+        compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
+            power,transfer,vectors,config);
+    const double b1=bias.b1;
+    const double bphi_recon=bias.bphi;
+    const double step=1.0e-5;
+    const double finite_difference=
+        (
+            finite_adaptive_brec_gaussian_tree_piece(
+                power,transfer,vectors,config,
+                b1,bphi_recon,step)
+            -finite_adaptive_brec_gaussian_tree_piece(
+                power,transfer,vectors,config,
+                b1,bphi_recon,-step)
+        )/(2.0*step);
+    const double expected=
+        b1*b1*b1*b1*bphi_recon/config.bias_recon*basis;
+    require_close(
+        finite_difference,expected,5.0e-9,3.0e-8,
+        "adaptive b_rec denominator analytic/finite difference");
+
+    const double rotated_basis=native::
+        compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
+            power,transfer,rotated,config);
+    require(
+        std::fabs(rotated_basis-basis)
+            >1.0e-10*std::max(std::fabs(basis),1.0),
+        "adaptive b_rec basis retains CIC orientation dependence");
+    const double infinite_basis=native::
+        compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
+            power,transfer,rotated,infinite);
+    require_close(
+        infinite_basis,0.0,0.0,1.0e-20,
+        "adaptive b_rec basis vanishes for R infinity");
 }
 
 native::ComponentResult matter_response(

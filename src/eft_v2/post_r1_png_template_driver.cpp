@@ -371,6 +371,7 @@ native::ClosedTriangleVectors native_vectors(
 }
 
 struct NativeAccumulator {
+    double adaptive_brec_denominator_tree_basis=0.0;
     double stochastic_alpha3_basis=0.0;
     double dBdfNL_local_tree=0.0;
     double dBdfNL_local_primordial=0.0;
@@ -554,7 +555,8 @@ int main(int argc,char** argv) {
                 <<"POWER_TABLE PNG_TABLE EDGE_FILE "
                 <<"RADIAL_STOP START STOP "
                 <<"SHELL_NRAD SHELL_NMU N_ALPHA N_COS_BETA N_GAMMA "
-                <<"[tree-fixed|matter-linear|matter-b112] LAMBDA "
+                <<"[tree-fixed|adaptive-brec-tree|matter-linear|"
+                  "matter-b112] LAMBDA "
                 <<"EPSREL P13_EPSREL QMIN QMAX PNG_IR_CUTOFF "
                 <<"QMC_POWER QMC_REPLICATES R_SMOOTH B_REC_H "
                 <<"CELL_SIZE CIC_POWER\n";
@@ -586,6 +588,7 @@ int main(int argc,char** argv) {
         shell_config.n_gamma=parse_int(argv[11],"gamma order");
         const std::string sector=argv[12];
         if (sector!="tree-fixed"
+            &&sector!="adaptive-brec-tree"
             &&sector!="matter-linear"
             &&sector!="matter-b112") {
             throw std::invalid_argument("invalid PNG sector");
@@ -668,9 +671,12 @@ int main(int argc,char** argv) {
 
         std::cout<<std::setprecision(17)
                  <<"{\"record\":\"header\","
-                 <<"\"schema\":"
-                   "\"marisa-b-post-r1-finite-png-jsonl-v5\","
-                 <<"\"sector\":";
+                 <<"\"schema\":";
+        write_json_string(
+            sector=="adaptive-brec-tree"
+            ?"marisa-b-post-r1-adaptive-brec-diagnostic-jsonl-v1"
+            :"marisa-b-post-r1-finite-png-jsonl-v5");
+        std::cout<<",\"sector\":";
         write_json_string(sector);
         std::cout<<",\"lambda\":"<<lambda
                  <<",\"input_contract\":{"
@@ -780,7 +786,16 @@ int main(int argc,char** argv) {
                 for (const shell::ShellNode& node:rule.nodes) {
                     const auto vectors=
                         native_vectors(node.closed_vectors);
-                    if (sector=="tree-fixed") {
+                    if (sector=="adaptive-brec-tree") {
+                        native::NativeConfig halo_config=
+                            native_config;
+                        halo_config.bias_recon=b_rec_h;
+                        accumulated
+                            .adaptive_brec_denominator_tree_basis+=
+                            node.weight*native::
+                            compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
+                                power,transfer,vectors,halo_config);
+                    } else if (sector=="tree-fixed") {
                         native::NativeConfig halo_config=
                             native_config;
                         halo_config.bias_recon=b_rec_h;
@@ -1019,7 +1034,12 @@ int main(int argc,char** argv) {
                          <<",\"valid_pair_fraction\":"
                          <<rule.diagnostics.exact
                                 .valid_pair_fraction;
-                if (sector=="tree-fixed") {
+                if (sector=="adaptive-brec-tree") {
+                    std::cout
+                        <<",\"adaptive_brec_denominator_tree_basis\":"
+                        <<accumulated
+                            .adaptive_brec_denominator_tree_basis;
+                } else if (sector=="tree-fixed") {
                     std::cout<<",\"halo_tree\":";
                     write_tree(accumulated);
                     std::cout<<",\"fixed_poisson_png\":{"

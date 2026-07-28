@@ -21,10 +21,10 @@ EXPECTED_REACT_TREE_HASH = (
 )
 EXPECTED_NATIVE_HASHES = {
     "src/marisa_b/marisa_b_native.cpp": (
-        "d3ddf662ca5bb8a36c8126dd72dfb4c19b6b61c87ec6b65047c4c1361bc112b2"
+        "efd56943c8c691cbcbb195c9a39c7497fe3e04431eeaff2ce5e15eb146714ad9"
     ),
     "src/marisa_b/marisa_b_native.h": (
-        "28743d88b165f74edf2708d995a066336841c3c6a0ea72364b4df985f80eb184"
+        "e6b3eec67a6bbf6c92fae37045a7f2d186f9cd22279d2a7088c95e07f7fb98ea"
     ),
 }
 EXPECTED_RELEASE_HASHES = {

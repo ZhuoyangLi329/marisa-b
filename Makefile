@@ -194,8 +194,8 @@ external-inference-regression: marisa-b-triangle
 verify-inputs:
 	@$(PYTHON) scripts/verify_repository_boundary.py --allow-dirty >/dev/null
 	@sha256sum $(POWER_TABLE) | rg -q '^974ffe272cb6d15bb279c63ee64a6183540485cc5a1b6d0d780c4418176679aa '
-	@sha256sum $(DM_CPP) | rg -q '^d3ddf662ca5bb8a36c8126dd72dfb4c19b6b61c87ec6b65047c4c1361bc112b2 '
-	@sha256sum $(DM_HEADER) | rg -q '^28743d88b165f74edf2708d995a066336841c3c6a0ea72364b4df985f80eb184 '
+	@sha256sum $(DM_CPP) | rg -q '^efd56943c8c691cbcbb195c9a39c7497fe3e04431eeaff2ce5e15eb146714ad9 '
+	@sha256sum $(DM_HEADER) | rg -q '^e6b3eec67a6bbf6c92fae37045a7f2d186f9cd22279d2a7088c95e07f7fb98ea '
 	@test "$$(git -C $(REACT_DIR) rev-parse HEAD)" = a36dda02db6b537a4ddcc7bf044c446c10a58373
 	@test "$$(git -C $(REACT_DIR) archive HEAD | sha256sum | awk '{print $$1}')" = d2f3b86ac85016aa1c386dd91299284ea72a83ae0480652be02f60c15655d48d
 	@sha256sum $(REACT_DIR)/LICENSE | rg -q '^b8b9c247a9d453f0669a8c6104b08293b31851a6cdf0f0dcbe08b5bf6dcaf5a1 '
