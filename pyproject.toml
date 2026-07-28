@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marisa-b"
+version = "0.1.0"
+description = "MARISA-B bispectrum theory and inference utilities"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.13",
+]
+
+[project.optional-dependencies]
+core = [
+  "numpy>=2.0",
+  "scipy>=1.13",
+]
+profile = [
+  "iminuit>=2.30,<3",
+]
+mcmc = [
+  "emcee>=3.1",
+  "h5py>=3.11",
+  "arviz>=0.18",
+  "corner>=2.2",
+]
+plot = [
+  "matplotlib>=3.8",
+]
+validate = [
+  "jsonschema>=4.0",
+  "pytest>=8.0",
+]
+cosmology = [
+  "cosmoprimo",
+]
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/python"]
+pythonpath = ["python"]

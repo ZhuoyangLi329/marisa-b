@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://marisa-b.local/schemas/eft_v2_contract.schema.json",
+  "title": "MARISA-B EFT-v2 R0 contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "release", "scope_document", "source_hashes", "fourier",
+    "bias_parameters", "counterterm_parameters", "stochastic_parameters",
+    "renormalization", "ir_resummation", "observable", "fit_protocol", "gates"
+  ],
+  "properties": {
+    "schema": {"const": "marisa-b-eft-v2-contract-v2"},
+    "release": {"const": "EFT-R0"},
+    "scope_document": {"type": "string"},
+    "source_hashes": {
+      "type": "object",
+      "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    },
+    "fourier": {"type": "object"},
+    "bias_parameters": {"$ref": "#/$defs/parameterArray"},
+    "counterterm_parameters": {"$ref": "#/$defs/parameterArray"},
+    "stochastic_parameters": {"$ref": "#/$defs/parameterArray"},
+    "renormalization": {"type": "object"},
+    "ir_resummation": {"type": "object"},
+    "observable": {"type": "object"},
+    "fit_protocol": {"$ref": "#/$defs/fitProtocol"},
+    "gates": {"type": "object"}
+  },
+  "$defs": {
+    "positiveNormalPrior": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "mean", "sigma"],
+      "properties": {
+        "kind": {"const": "normal"},
+        "mean": {"type": "number"},
+        "sigma": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "parameterArray": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "origin", "order", "dimension", "shared_with_power", "prior"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_]*$"},
+          "origin": {"type": "string", "minLength": 1},
+          "order": {"type": "integer", "minimum": 0, "maximum": 4},
+          "dimension": {"type": "string"},
+          "shared_with_power": {"type": "boolean"},
+          "prior": {"$ref": "#/$defs/positiveNormalPrior"}
+        }
+      }
+    },
+    "fitProtocol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["b1", "covariance_likelihood"],
+      "properties": {
+        "b1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role", "primary_prior_source", "robustness_prior_sigmas", "b_rec"
+          ],
+          "properties": {
+            "role": {"const": "shared_fitted_P0_B000_parameter"},
+            "primary_prior_source": {"const": "bias_parameters.b1.prior"},
+            "robustness_prior_sigmas": {
+              "type": "array",
+              "prefixItems": [
+                {"const": 1.0},
+                {"const": 4.0}
+              ],
+              "items": false,
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "b_rec": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "value", "likelihood_role", "purpose",
+                "source_fiducial_realizations", "overlaps_joint_fit_realizations"
+              ],
+              "properties": {
+                "value": {"const": 2.7340475186190334},
+                "likelihood_role": {"const": "none"},
+                "purpose": {"type": "string", "minLength": 1},
+                "source_fiducial_realizations": {
+                  "$ref": "#/$defs/realizationRange"
+                },
+                "overlaps_joint_fit_realizations": {
+                  "$ref": "#/$defs/realizationRange"
+                }
+              }
+            }
+          }
+        },
+        "covariance_likelihood": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mock_count", "matrix_quantity", "primary", "robustness",
+            "correlation_jitter", "robustness_gate_role"
+          ],
+          "properties": {
+            "mock_count": {"const": 500},
+            "matrix_quantity": {
+              "const": "matched sample covariance of the P0+B000 mean"
+            },
+            "primary": {"const": "raw_gaussian"},
+            "robustness": {
+              "type": "array",
+              "prefixItems": [
+                {"const": "hartlap_gaussian"},
+                {"const": "sellentin_heavens"}
+              ],
+              "items": false,
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "correlation_jitter": {"const": 1e-12},
+            "robustness_gate_role": {"const": "diagnostic_only"}
+          }
+        }
+      }
+    },
+    "realizationRange": {
+      "type": "array",
+      "prefixItems": [
+        {"type": "integer", "minimum": 0},
+        {"type": "integer", "minimum": 0}
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    }
+  }
+}

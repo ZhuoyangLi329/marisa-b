@@ -1,0 +1,151 @@
+{
+  "schema": "marisa-b-eft-v2-contract-v2",
+  "release": "EFT-R0",
+  "scope_document": "docs/EFT_V2_SCOPE.md",
+  "source_hashes": {
+    "root_implementation_plan": "b953b6f5ebe51aea451234e237e424d299c9cb28c39651cd99919a355a9351ba",
+    "cobra_2507_22110_v3": "c56a1a82fe55283aa7a6092cf2855c1631a8ead512fd02f129dc77ea35630c27",
+    "v1_data_contract": "ea2d7a2057c3e2633e40a03320c4198459c00c5700d1b9a1d607b5ddd9986ef4",
+    "fiducial500_matrix": "d1448d3aba58a44072bfd85a389e437b5c1811ef6ff731f5285b57b5e1a5d8ee",
+    "linear_power_z1": "974ffe272cb6d15bb279c63ee64a6183540485cc5a1b6d0d780c4418176679aa"
+  },
+  "fourier": {
+    "transform_sign": -1,
+    "loop_measure": "d3q/(2pi)^3",
+    "kernel_normalization": "no_factorial",
+    "kernel_symmetrization": "mean_over_all_permutations",
+    "tidal_convention": "kappa=mu^2-1"
+  },
+  "bias_parameters": [
+    {"id":"b1","origin":"delta","order":1,"dimension":"1","shared_with_power":true,"prior":{"kind":"normal","mean":1.0,"sigma":2.0}},
+    {"id":"b2","origin":"delta^2/2","order":2,"dimension":"1","shared_with_power":true,"prior":{"kind":"normal","mean":0.0,"sigma":3.0}},
+    {"id":"gamma2","origin":"G2(Phi_v)","order":2,"dimension":"1","shared_with_power":true,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"b3","origin":"delta^3/6","order":3,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":5.0}},
+    {"id":"gamma2x","origin":"delta G2(Phi_v)","order":3,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":5.0}},
+    {"id":"gamma3","origin":"G3(Phi_v)","order":3,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":5.0}},
+    {"id":"gamma21","origin":"G2(phi2,phi1)","order":3,"dimension":"1","shared_with_power":true,"prior":{"kind":"normal","mean":0.0,"sigma":3.0}},
+    {"id":"gamma21x","origin":"delta G2(phi2,phi1)","order":4,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":8.0}},
+    {"id":"gamma211","origin":"G3(phi2,phi1,phi1)","order":4,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":8.0}},
+    {"id":"gamma22","origin":"G2(phi2,phi2)","order":4,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":8.0}},
+    {"id":"gamma31","origin":"G2(phi3,phi1)","order":4,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":8.0}}
+  ],
+  "counterterm_parameters": [
+    {"id":"b_nabla2_delta","origin":"nabla^2 delta","order":1,"dimension":"1 with k_NL^-2 extracted","shared_with_power":true,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"b_nabla2_delta2","origin":"nabla^2(delta^2)","order":2,"dimension":"1 with k_NL^-2 extracted","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"b_nabla2_G2","origin":"nabla^2 G2","order":2,"dimension":"1 with k_NL^-2 extracted","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"b_grad_delta2","origin":"(nabla delta)^2","order":2,"dimension":"1 with k_NL^-2 extracted","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"b_grad_t2","origin":"(nabla t_ij)^2","order":2,"dimension":"1 with k_NL^-2 extracted","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}}
+  ],
+  "stochastic_parameters": [
+    {"id":"Pshot","origin":"residual stochastic power","order":0,"dimension":"1","shared_with_power":true,"prior":{"kind":"normal","mean":0.0,"sigma":1.0}},
+    {"id":"a0_power","origin":"derivative stochastic power","order":0,"dimension":"1","shared_with_power":true,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"Ashot_residual","origin":"estimator-subtracted pure stochastic B","order":0,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"a1_pure","origin":"derivative pure stochastic B","order":0,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"Bshot_residual","origin":"estimator-subtracted mixed tree stochastic B","order":1,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"d2","origin":"mixed one-loop epsilon delta^2","order":2,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":3.0}},
+    {"id":"dG2","origin":"mixed one-loop epsilon G2","order":2,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":3.0}},
+    {"id":"dGamma3","origin":"mixed one-loop epsilon Gamma3","order":3,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":3.0}},
+    {"id":"abar0_mixed","origin":"flow/derivative mixed stochastic","order":1,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"a3_mixed","origin":"tidal derivative mixed stochastic","order":1,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"a4_mixed","origin":"isotropic derivative mixed stochastic","order":1,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}},
+    {"id":"a5_mixed","origin":"symmetric derivative mixed stochastic","order":1,"dimension":"1","shared_with_power":false,"prior":{"kind":"normal","mean":0.0,"sigma":2.0}}
+  ],
+  "renormalization": {
+    "primary": "DR/MS-renormalized observable evaluated with direct-subtracted IR-safe B222/B321I, factorized renormalized tracer-P13 B321II, and regulated FFTLog/DR B411",
+    "direct": "large-q asymptotic subtraction through lower-bias, zero-lag stochastic, P/nbar, and k^2 P^2 projectors",
+    "mixed_stochastic_p22_zero_lag_subtraction": "2 P(q)^2 K2_A(q,-q) K2_D(q,-q)",
+    "factorized_p13_uv_tail_restoration": {
+      "enabled": true,
+      "sampled_kmax_h_mpc": 80.0,
+      "quadrature_order": 128,
+      "tail_model": "checked high-k power-law continuation of integral_qmax^infinity dq P(q)/(2pi^2)"
+    },
+    "mixed_stochastic_p13_uv_tail_restoration": {
+      "enabled": true,
+      "sampled_kmax_h_mpc": 80.0,
+      "quadrature_order": 128,
+      "coefficient": "one half of the A-side plus D-side exact tracer-P13 UV coefficients"
+    },
+    "production_numerics": {
+      "qmin_h_mpc": 0.0001,
+      "qmax_h_mpc": 30.0,
+      "direct_radial_order": 8,
+      "direct_angular_rule": "antipodal Fibonacci",
+      "direct_angular_directions": 1536,
+      "factorized_p13_quadrature": [32, 64],
+      "mixed_stochastic_quadrature": [40, 80],
+      "fftlog_k_range_h_mpc": [0.00001, 10.0],
+      "fftlog_frequency_count": 64,
+      "fftlog_bias_nu": -0.3,
+      "analytic_regulator_coarse_epsilon": 1e-8,
+      "analytic_regulator_refinement_ratio": 10.0
+    },
+    "mu_ren_h_mpc": 0.30,
+    "mu_variations_h_mpc": [0.20, 0.40, 0.60],
+    "qmax_variations_h_mpc": [1.0, 2.0, 5.0, 10.0, 20.0, 30.0],
+    "k_NL_h_mpc": 0.30
+  },
+  "ir_resummation": {
+    "primary_split": "CLASS-PT-era Gaussian convolution on log k of P11/P_EH, multiplied back by P_EH",
+    "split_lambda": 0.25,
+    "alternative_split": "Gaussian convolution on log k of log(k^3 P11)",
+    "sigma_integrand_power": "P11",
+    "alternative_sigma_integrand_power": "P_nw",
+    "Lambda_IR_h_mpc": 0.10,
+    "Lambda_IR_variations_h_mpc": [0.08, 0.12],
+    "r_s_mpc_h": 110.0,
+    "r_s_variations_mpc_h": [105.0, 115.0],
+    "tree_matching": "Pnw+(1+k^2 Sigma^2) exp(-k^2 Sigma^2) Pw",
+    "loop_spectrum": "Pnw+exp(-k^2 Sigma^2) Pw"
+  },
+  "observable": {
+    "sample": "Quijote halo z=1 Mmin=1e13 h^-1 Msun",
+    "space": "pre-reconstruction real space",
+    "estimator": "JAXPower B_000 with analytic Poisson subtraction",
+    "bin_count": 120,
+    "box_size_mpc_h": 1000.0,
+    "mesh_size": 256,
+    "shell_measure": "measured float32 FFT lattice",
+    "covariance": "full 500-realization covariance of mean",
+    "number_density_h3_mpc3": 0.00019553021800000002,
+    "kmax_scan_h_mpc": [0.10, 0.12, 0.15, 0.18],
+    "fit_bin_rule": "max of the two stored Sugiyama radial modes <= kmax; the closing side is internal-angle integrated and has no separate shell index"
+  },
+  "fit_protocol": {
+    "b1": {
+      "role": "shared_fitted_P0_B000_parameter",
+      "primary_prior_source": "bias_parameters.b1.prior",
+      "robustness_prior_sigmas": [1.0, 4.0],
+      "b_rec": {
+        "value": 2.7340475186190334,
+        "likelihood_role": "none",
+        "purpose": "reconstruction displacement provenance only",
+        "source_fiducial_realizations": [0, 99],
+        "overlaps_joint_fit_realizations": [0, 499]
+      }
+    },
+    "covariance_likelihood": {
+      "mock_count": 500,
+      "matrix_quantity": "matched sample covariance of the P0+B000 mean",
+      "primary": "raw_gaussian",
+      "robustness": ["hartlap_gaussian", "sellentin_heavens"],
+      "correlation_jitter": 1e-12,
+      "robustness_gate_role": "diagnostic_only"
+    }
+  },
+  "gates": {
+    "integration_per_bin_sigma_mean": 0.02,
+    "integration_rms_sigma_mean": 0.01,
+    "shell_per_bin_sigma_mean": 0.05,
+    "regulator_per_bin_sigma_mean": 0.10,
+    "ir_per_bin_sigma_mean": 0.10,
+    "direct_dr_relative_total": 0.001,
+    "direct_dr_absolute_sigma_mean": 0.02,
+    "parameter_numerical_drift_posterior_sigma": 0.20,
+    "minimum_k_valid_h_mpc": 0.15,
+    "minimum_p_value": 0.05,
+    "maximum_chi2_per_dof": 1.5,
+    "maximum_absolute_pull": 3.0,
+    "neighbor_parameter_stability_sigma": 1.0
+  }
+}

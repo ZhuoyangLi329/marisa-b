@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.mypy_cache/
+build/
+runs/
+scratch/
+*.tmp
+
+# Generated scientific products stay in release/data storage, not Git.
+/analysis/
+/figures/
+/manifests/
+/log/
+/results/
+*.h5
+
+# Machine-local configuration and credentials.
+config/paths.local.toml
+.env
+.env.*

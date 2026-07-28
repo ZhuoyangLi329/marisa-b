@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/marisa-b/inference_run.schema.json",
+  "title": "MARISA-B single-realization inference run",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "model",
+    "selection",
+    "statistics",
+    "parameters",
+    "data_manifest",
+    "scientific_status"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0"
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gaussian_tier",
+        "reconstruction",
+        "png_model",
+        "png_order"
+      ],
+      "properties": {
+        "gaussian_tier": {
+          "enum": [
+            "coevolution",
+            "full"
+          ]
+        },
+        "reconstruction": {
+          "enum": [
+            "pre",
+            "post"
+          ]
+        },
+        "png_model": {
+          "const": "finite_halo_tree_plus_matter_one_loop_uplift"
+        },
+        "png_order": {
+          "const": "quadratic"
+        },
+        "png_stochastic_model": {
+          "enum": [
+            "tied_eq265",
+            "independent_eq265",
+            "disabled"
+          ]
+        }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kmin_h_mpc",
+        "kmax_h_mpc",
+        "exclude_first_bin",
+        "exclude_shell_centres_h_mpc"
+      ],
+      "properties": {
+        "kmin_h_mpc": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "kmax_h_mpc": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 0.2
+        },
+        "exclude_first_bin": {
+          "type": "boolean"
+        },
+        "exclude_shell_centres_h_mpc": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "statistics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "covariance_kind",
+        "precision_correction",
+        "mock_count"
+      ],
+      "properties": {
+        "covariance_kind": {
+          "const": "single_realization"
+        },
+        "precision_correction": {
+          "enum": [
+            "none",
+            "hartlap",
+            "student_t"
+          ]
+        },
+        "mock_count": {
+          "type": "integer",
+          "minimum": 3
+        }
+      }
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "p",
+        "b1",
+        "fNL"
+      ],
+      "properties": {
+        "p": {
+          "const": 1.0
+        },
+        "b1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "initial"
+          ],
+          "properties": {
+            "mode": {
+              "const": "free"
+            },
+            "initial": {
+              "type": "number"
+            },
+            "gaussian_prior_mean": {
+              "type": "number"
+            },
+            "gaussian_prior_sigma": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        "fNL": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "initial",
+            "lower",
+            "upper"
+          ],
+          "properties": {
+            "mode": {
+              "const": "free"
+            },
+            "initial": {
+              "type": "number"
+            },
+            "lower": {
+              "type": "number"
+            },
+            "upper": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "data_manifest": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scientific_status": {
+      "enum": [
+        "validated_pre_recon",
+        "provisional_post_recon"
+      ]
+    }
+  }
+}

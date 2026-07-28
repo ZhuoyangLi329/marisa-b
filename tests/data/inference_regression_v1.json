@@ -1,0 +1,214 @@
+{
+  "schema": "marisa-b-inference-regression-registry-v1",
+  "schema_version": 1,
+  "data_manifest": {
+    "relative_uri": "configs/production_data_manifest.json",
+    "sha256": "0537894199c359e63b31f81f456b1808767b3bc2a133ba439ec7a341c6e43714",
+    "expected_asset_count": 9
+  },
+  "covariance_contract": {
+    "kind": "single_realization",
+    "realization_count": 500,
+    "division_by_realization_count": false,
+    "ensemble_mean_role": "central_vector_only",
+    "precision_correction": "hartlap"
+  },
+  "profiler_policy": {
+    "role": "joint_map_centre_only",
+    "reported_uncertainty": false,
+    "posterior_uncertainty_source": "converged_marginalized_mcmc"
+  },
+  "frozen_artifacts": {
+    "pre_finite_png_profiler": {
+      "relative_uri": "analysis/pre_recon_halo_tree_fnl2_v1_20260726/summary.json",
+      "sha256": "ae0c20c0fa0e9d4c7c4d53ddc58ee224cfeb142369b3b3f2b7fba114c0f58a8b",
+      "schema": 1
+    },
+    "prepost_mcmc_summary": {
+      "relative_uri": "analysis/prepost_recon_halo_fnl_mcmc_v1_20260727/summary.json",
+      "sha256": "5468c1d3d36b1b0b7bc51ce4e8e670c11ef0e2871e45173f60525580cfe36561",
+      "schema": "marisa-b-prepost-halo-fnl-mcmc-summary-v1"
+    },
+    "prepost_mcmc_state": {
+      "relative_uri": "analysis/prepost_recon_halo_fnl_mcmc_v1_20260727/run_state.json",
+      "sha256": "ca7e4fc6db70156d6935d30ebb1195018be608c418537a2a266445c181015e0d",
+      "schema": "marisa-b-prepost-halo-fnl-mcmc-state-v1"
+    },
+    "prepost_fisher_summary": {
+      "relative_uri": "analysis/prepost_recon_halo_fnl_fisher_audit_20260728/summary.json",
+      "sha256": "1afc0a7fa82ba3ca6e3e6dd5442158d6801a27b105c878e0bf07c55b1f7bc165",
+      "schema": "marisa-b-prepost-halo-fnl-fisher-audit-v1"
+    }
+  },
+  "anchors": {
+    "pre_finite_png_profiler_centres": [
+      {
+        "kmax_h_mpc": 0.08,
+        "sample": "fiducial",
+        "n_data": 9,
+        "fNL": 7.974348943848605,
+        "b1": 2.9476126453275375
+      },
+      {
+        "kmax_h_mpc": 0.08,
+        "sample": "LC_p",
+        "n_data": 9,
+        "fNL": 109.45476915443611,
+        "b1": 2.847662293979593
+      },
+      {
+        "kmax_h_mpc": 0.08,
+        "sample": "LC_m",
+        "n_data": 9,
+        "fNL": -94.9818206314553,
+        "b1": 3.0585607736940816
+      },
+      {
+        "kmax_h_mpc": 0.15,
+        "sample": "fiducial",
+        "n_data": 27,
+        "fNL": 2.5738934672623435,
+        "b1": 2.962207340732674
+      },
+      {
+        "kmax_h_mpc": 0.15,
+        "sample": "LC_p",
+        "n_data": 27,
+        "fNL": 95.95456734245998,
+        "b1": 2.8672924620398064
+      },
+      {
+        "kmax_h_mpc": 0.15,
+        "sample": "LC_m",
+        "n_data": 27,
+        "fNL": -84.2940689754726,
+        "b1": 3.0368135306254542
+      }
+    ],
+    "current_joint_map": {
+      "pre_kmax0p14": {
+        "reconstruction": "pre",
+        "tier": "coevolution",
+        "kmax_h_mpc": 0.14,
+        "theta_names": [
+          "fNL",
+          "b1",
+          "b2",
+          "gamma2",
+          "b_nabla2_delta"
+        ],
+        "theta": [
+          2.6589791221390024,
+          2.9621756242131423,
+          0.3971938800385078,
+          -0.5918160581233005,
+          0.16903709289713675
+        ],
+        "objective": 0.235385069495349
+      },
+      "post_kmax0p14": {
+        "reconstruction": "post",
+        "tier": "coevolution",
+        "kmax_h_mpc": 0.14,
+        "theta_names": [
+          "fNL",
+          "b1",
+          "b2",
+          "gamma2",
+          "b_nabla2_delta"
+        ],
+        "theta": [
+          14.125072921257312,
+          2.725109603493445,
+          1.499513108739903,
+          -0.2487981784023068,
+          0.23160823642581146
+        ],
+        "objective": 0.6954511658232352
+      }
+    },
+    "mcmc_kmax0p14": {
+      "pre": {
+        "median_fNL": 20.16718253542786,
+        "equal_tail_68": [
+          -40.305168494051905,
+          85.9419319255455
+        ],
+        "equal_tail_68_half_width": 63.12355020979871,
+        "maximum_rank_rhat": 1.00452695049442,
+        "minimum_bulk_ess": 17602.5208697196,
+        "minimum_tail_ess": 39243.2834120168,
+        "posterior_status": "prior_sensitive"
+      },
+      "post": {
+        "median_fNL": -14.41879189605433,
+        "equal_tail_68": [
+          -105.16784293721847,
+          87.06497681204479
+        ],
+        "equal_tail_68_half_width": 96.11640987463163,
+        "maximum_rank_rhat": 1.00875516855057,
+        "minimum_bulk_ess": 15843.2737149231,
+        "minimum_tail_ess": 13438.9186170274,
+        "posterior_status": "prior_limited"
+      }
+    },
+    "fisher": [
+      {
+        "kmax_h_mpc": 0.08,
+        "reconstruction": "pre",
+        "fixed_nuisance_sigma_fNL": 36.12599053232244,
+        "all_nuisance_sigma_fNL": 83.32570318481258,
+        "b1_fixed_all_other_nuisance_sigma_fNL": 83.07802081294822,
+        "scaled_fisher_minimum_eigenvalue": 0.4221039952560905
+      },
+      {
+        "kmax_h_mpc": 0.08,
+        "reconstruction": "post",
+        "fixed_nuisance_sigma_fNL": 68.25253648272594,
+        "all_nuisance_sigma_fNL": 197.99174318314974,
+        "b1_fixed_all_other_nuisance_sigma_fNL": 197.98939967665717,
+        "scaled_fisher_minimum_eigenvalue": 0.24828100602800796
+      },
+      {
+        "kmax_h_mpc": 0.14,
+        "reconstruction": "pre",
+        "fixed_nuisance_sigma_fNL": 26.574106993705556,
+        "all_nuisance_sigma_fNL": 55.75251239546689,
+        "b1_fixed_all_other_nuisance_sigma_fNL": 55.63604011237856,
+        "scaled_fisher_minimum_eigenvalue": 0.5034508995037722
+      },
+      {
+        "kmax_h_mpc": 0.14,
+        "reconstruction": "post",
+        "fixed_nuisance_sigma_fNL": 26.109000649356187,
+        "all_nuisance_sigma_fNL": 73.68039144160495,
+        "b1_fixed_all_other_nuisance_sigma_fNL": 73.65024235962787,
+        "scaled_fisher_minimum_eigenvalue": 0.5199666445229923
+      }
+    ]
+  },
+  "tolerances": {
+    "frozen_json_absolute": 1e-9,
+    "map_fNL_absolute": 1e-3,
+    "map_nuisance_absolute": 1e-6,
+    "map_objective_absolute": 1e-8,
+    "fisher_relative": 1e-8,
+    "fisher_absolute": 1e-10,
+    "maximum_affine_error_sigma_single": 1e-8,
+    "maximum_direct_objective_delta": 1e-7,
+    "minimum_logdet_spread": 1e-8
+  },
+  "sampler_smoke": {
+    "status": "skipped",
+    "reason": "A short chain is not a convergence test and would create an external HDF5 product. Frozen converged MCMC summaries plus current deterministic likelihood closure are the registered regression."
+  },
+  "scientific_limits": [
+    "The post-reconstruction model remains provisional_unvalidated_numerical_convergence.",
+    "Post-reconstruction fNL=+100/-100 halo catalogues remain quarantined.",
+    "Profiler outputs are joint-MAP centres only and provide no posterior uncertainty.",
+    "Fisher widths are local diagnostics and are not marginalized posterior constraints.",
+    "The model is not a complete halo local-PNG one-loop EFT calculation.",
+    "Legacy Student-t and b1 importance-reweight quantiles used an obsolete duplicate weighted-quantile convention and are not exact anchors here."
+  ]
+}

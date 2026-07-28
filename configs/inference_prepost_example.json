@@ -1,0 +1,41 @@
+{
+  "$schema": "../schemas/inference_run.schema.json",
+  "schema_version": "1.0",
+  "model": {
+    "gaussian_tier": "coevolution",
+    "reconstruction": "post",
+    "png_model": "finite_halo_tree_plus_matter_one_loop_uplift",
+    "png_order": "quadratic",
+    "png_stochastic_model": "independent_eq265"
+  },
+  "selection": {
+    "kmin_h_mpc": 0.025,
+    "kmax_h_mpc": 0.14,
+    "exclude_first_bin": true,
+    "exclude_shell_centres_h_mpc": [
+      0.1553916
+    ]
+  },
+  "statistics": {
+    "covariance_kind": "single_realization",
+    "precision_correction": "hartlap",
+    "mock_count": 500
+  },
+  "parameters": {
+    "p": 1.0,
+    "b1": {
+      "mode": "free",
+      "initial": 2.7465779027841823,
+      "gaussian_prior_mean": 2.7465779027841823,
+      "gaussian_prior_sigma": 2.0
+    },
+    "fNL": {
+      "mode": "free",
+      "initial": 0.0,
+      "lower": -150.0,
+      "upper": 150.0
+    }
+  },
+  "data_manifest": "production_data_manifest.json",
+  "scientific_status": "provisional_post_recon"
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "root_environment": "MARISA_B_DATA_ROOT",
+  "policy": {
+    "tracked_in_source_git": false,
+    "covariance_kind": "single_realization",
+    "ensemble_mean_role": "central_vector_only"
+  },
+  "assets": [
+    {
+      "id": "quijote_halo_fiducial_matrix",
+      "relative_uri": "analysis/quijote_halo_z1_mmin1e13_r15_jaxrecon_b000_pk_fid500/quijote_halo_z1_mmin1e13_r15_jaxrecon_fid500_b000_pk_matrix.npz",
+      "sha256": "d1448d3aba58a44072bfd85a389e437b5c1811ef6ff731f5285b57b5e1a5d8ee",
+      "bytes": 1399412
+    },
+    {
+      "id": "quijote_halo_matched_fid_lcp_lcm_matrix",
+      "relative_uri": "analysis/quijote_halo_z1_mmin1e13_r15_jaxrecon_b000_pk/quijote_halo_z1_mmin1e13_r15_jaxrecon_fid_lcp_lcm_first100_b000_pk_matrix.npz",
+      "sha256": "ad550526470a1f3391fa23fb8e93cdb74de6d14920ef3e37105c0e85b4e16ab2",
+      "bytes": 1374370
+    },
+    {
+      "id": "pre_gaussian_b000_templates",
+      "relative_uri": "analysis/theory_vectors/eft_v2_r0_exact_primary_20260724/b000_ir_contract_v2.jsonl",
+      "sha256": "fd2c24208ded4da259a02f212fcb0cfcdbaddf9c1fe77db81dc9fae9650591ae",
+      "bytes": 775102
+    },
+    {
+      "id": "pre_gaussian_p0_templates",
+      "relative_uri": "analysis/theory_vectors/eft_v2_r0_exact_primary_20260724/p0_ir_contract_v2.jsonl",
+      "sha256": "c3794569f4757ad36751930bb83849b4d9e55dae7936fac2a38db9d0c9a02451",
+      "bytes": 88366
+    },
+    {
+      "id": "pre_matter_png_linear_one_loop",
+      "relative_uri": "analysis/theory_vectors/marisa_b_halo_png_uplift_v1_20260726/dm_pre_local_png_1loop_full2d_kmax0p15_nrad3_nmu48.npz",
+      "sha256": "5b3060b05d7f9f1932bfc81b2958d3f926649d8ab2ffe77e4df3668a03662ff7",
+      "bytes": 34332
+    },
+    {
+      "id": "pre_matter_png_quadratic_b112ii",
+      "relative_uri": "analysis/theory_vectors/marisa_b_halo_png_uplift_v1_20260726/dm_pre_b112ii_full2d_kmax0p15_nrad3_nmu24_qmc11r4.npz",
+      "sha256": "c5f9887bad1e5b57410e2cc3623b0a787e7350cc2cdd6808bf666695d1462a72",
+      "bytes": 34360
+    },
+    {
+      "id": "pre_halo_png_tree_quadratic",
+      "relative_uri": "analysis/theory_vectors/marisa_b_halo_tree_fnl2_v1_20260726/halo_pre_tree_fnl2_components_nrad4_nmu80.npz",
+      "sha256": "6e8ede13a78200c0ee36a9fc15822a8fd63397f54ee48efa755f95bebea8963c",
+      "bytes": 10300
+    },
+    {
+      "id": "post_gaussian_templates",
+      "relative_uri": "analysis/post_recon_halo_finite_png_v1_20260727/post_r1_gaussian_templates.jsonl",
+      "sha256": "34f97d1bb621991b8b3dc4e8c8e2650d436ead345c5e4f82ea356725bfc8a55f",
+      "bytes": 349390
+    },
+    {
+      "id": "post_finite_png_templates",
+      "relative_uri": "analysis/post_recon_halo_finite_png_v1_20260727/finite_png_templates.npz",
+      "sha256": "57ff1f5913fdefcb1fddd2c340b4642902b81310e1b540049877fb28cb8f7012",
+      "bytes": 47328
+    }
+  ]
+}
