@@ -94,6 +94,29 @@ struct ReconstructionConfig {
     double smoothing_radius = 15.0;
     double bias_recon = 2.7340475186190334;
     double cell_size = 8.0;
+    /*
+     * Optional experimental local-PNG reconstruction denominator,
+     *
+     *   b_rec(k)=bias_recon+local_png_bias_amplitude/M(k).
+     *
+     * The amplitude is fNL_rec*bphi_rec.  Modes below
+     * local_png_bias_kmin retain the fixed denominator, matching the absence
+     * of displacement modes below the fundamental mode of a finite box.
+     * Production standard reconstruction leaves the pointer null and the
+     * amplitude zero, so its binary contract is unchanged.
+     */
+    const PowerSpectrum* local_png_bias_transfer = nullptr;
+    double local_png_bias_amplitude = 0.0;
+    double local_png_bias_kmin = 0.0;
+};
+
+struct ReconstructionShiftVariation {
+    double value = 0.0;
+    /*
+     * Derivative with respect to local_png_bias_amplitude at zero
+     * amplitude.  Multiplication by bphi_rec gives d/dfNL_rec.
+     */
+    double local_png_denominator_direction = 0.0;
 };
 
 enum class RadialCoordinate {
@@ -168,6 +191,16 @@ double reconstruction_shift_factor(
     const Vec3& output_momentum,
     const Vec3& block_momentum,
     const ReconstructionConfig& config);
+double reconstruction_bias_denominator(
+    const Vec3& block_momentum,
+    const ReconstructionConfig& config);
+ReconstructionShiftVariation
+reconstruction_shift_factor_local_png_variation(
+    const Vec3& output_momentum,
+    const Vec3& block_momentum,
+    const ReconstructionConfig& fixed_config,
+    const PowerSpectrum& transfer,
+    double kmin = 0.0);
 
 KernelTemplate pre_reconstruction_kernel(const std::vector<Vec3>& momenta);
 KernelTemplate reconstructed_kernel(

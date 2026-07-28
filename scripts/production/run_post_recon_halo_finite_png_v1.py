@@ -76,6 +76,9 @@ PNG_JSONL_LEGACY_SCHEMAS = (
     "marisa-b-post-r1-finite-png-jsonl-v3",
     "marisa-b-post-r1-finite-png-jsonl-v4",
 )
+ADAPTIVE_BREC_RESPONSE_SCHEMA = (
+    "marisa-b-eft-v2-post-r1-adaptive-brec-response-jsonl-v1"
+)
 PNG_TREE_FIELDS = (
     "stochastic_alpha3_basis",
     "dBdfNL_local_tree",
@@ -3708,11 +3711,18 @@ def validate_header(
     header: dict[str, Any],
     *,
     registered_reference: bool = False,
+    adaptive_response: bool = False,
 ) -> None:
+    expected_schema = (
+        ADAPTIVE_BREC_RESPONSE_SCHEMA
+        if adaptive_response
+        else "marisa-b-eft-v2-post-r1-jsonl-v4"
+    )
+    expected_production_candidate = not adaptive_response
     if (
-        header.get("schema")
-        != "marisa-b-eft-v2-post-r1-jsonl-v4"
-        or header.get("production_candidate") is not True
+        header.get("schema") != expected_schema
+        or header.get("production_candidate")
+        is not expected_production_candidate
         or header.get("ir_resummation") is not False
         or header.get("stochastic_status")
         != (
@@ -3722,6 +3732,28 @@ def validate_header(
         )
     ):
         raise ValueError("templates do not implement registered post-R1")
+    if adaptive_response:
+        response = header.get("adaptive_brec_response")
+        if (
+            not isinstance(response, dict)
+            or response.get("derivative") != "dG/dfNL_rec at fNL_rec=0"
+            or response.get("method")
+            != "symmetric finite difference plus Richardson extrapolation"
+            or response.get("finite_difference_steps") != [1.0, 0.5]
+            or response.get("fNL_rec_equals_fNL") is not True
+            or not is_plain_json_number(response.get("bphi_rec"))
+            or not is_plain_json_number(response.get("kmin"))
+            or not math.isclose(
+                float(response.get("kmin", math.nan)),
+                2.0 * math.pi / 1000.0,
+                rel_tol=0.0,
+                abs_tol=2.0e-15,
+            )
+        ):
+            raise ValueError(
+                "adaptive-brec response header violates its derivative "
+                "contract"
+            )
     fixed_poisson = header.get("fixed_poisson")
     if (
         not isinstance(fixed_poisson, dict)
@@ -3884,10 +3916,16 @@ def validate_header(
             "templates violate the registered UV-renormalization contract"
         )
     source_hashes = header.get("source_hashes")
+    expected_source_hashes = {
+        "linear_power",
+        "edge_file",
+        "driver_executable",
+    }
+    if adaptive_response:
+        expected_source_hashes.add("png_table")
     if (
         not isinstance(source_hashes, dict)
-        or set(source_hashes)
-        != {"linear_power", "edge_file", "driver_executable"}
+        or set(source_hashes) != expected_source_hashes
         or any(
             not isinstance(value, str)
             or len(value) != 64
@@ -3916,11 +3954,13 @@ def load_partial_templates(
     path: Path,
     *,
     registered_reference: bool = False,
+    adaptive_response: bool = False,
 ) -> PostTemplateSet:
     header, bins = read_jsonl(path)
     validate_header(
         header,
         registered_reference=registered_reference,
+        adaptive_response=adaptive_response,
     )
     bin_indices = [row["index"] for row in bins]
     if len(set(bin_indices)) != len(bins):

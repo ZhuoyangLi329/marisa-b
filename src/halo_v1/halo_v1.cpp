@@ -1075,15 +1075,76 @@ double reconstruction_window(const Vec3& momentum, const ReconstructionConfig& c
     return gaussian * integer_power(wx, 4) * integer_power(wy, 4) * integer_power(wz, 4);
 }
 
+double reconstruction_bias_denominator(
+    const Vec3& block_momentum,
+    const ReconstructionConfig& config) {
+    if (!(config.bias_recon>0.0)
+        ||!std::isfinite(config.bias_recon)
+        ||!(config.local_png_bias_kmin>=0.0)
+        ||!std::isfinite(config.local_png_bias_kmin)
+        ||!std::isfinite(config.local_png_bias_amplitude)) {
+        throw std::invalid_argument(
+            "invalid reconstruction-bias denominator configuration");
+    }
+    const double q=norm(block_momentum);
+    double result=config.bias_recon;
+    if (config.local_png_bias_transfer!=nullptr
+        &&config.local_png_bias_amplitude!=0.0
+        &&q>=config.local_png_bias_kmin) {
+        const double transfer=
+            (*(config.local_png_bias_transfer))(q);
+        if (!(transfer>0.0) ||!std::isfinite(transfer)) {
+            throw std::domain_error(
+                "local-PNG reconstruction denominator sampled invalid M(k)");
+        }
+        result+=config.local_png_bias_amplitude/transfer;
+    }
+    if (!(result>0.0) ||!std::isfinite(result)) {
+        throw std::domain_error(
+            "local-PNG reconstruction denominator is non-positive");
+    }
+    return result;
+}
+
 double reconstruction_shift_factor(
     const Vec3& output_momentum,
     const Vec3& block_momentum,
     const ReconstructionConfig& config) {
     const double denominator = dot(block_momentum, block_momentum);
     if (denominator <= kZeroTolerance * kZeroTolerance) return 0.0;
-    if (!(config.bias_recon > 0.0)) throw std::invalid_argument("bias_recon must be positive");
     return -dot(output_momentum, block_momentum) / denominator
-           * reconstruction_window(block_momentum, config) / config.bias_recon;
+           * reconstruction_window(block_momentum, config)
+           /reconstruction_bias_denominator(
+               block_momentum,config);
+}
+
+ReconstructionShiftVariation
+reconstruction_shift_factor_local_png_variation(
+    const Vec3& output_momentum,
+    const Vec3& block_momentum,
+    const ReconstructionConfig& fixed_config,
+    const PowerSpectrum& transfer,
+    double kmin) {
+    if (fixed_config.local_png_bias_transfer!=nullptr
+        ||fixed_config.local_png_bias_amplitude!=0.0
+        ||!(kmin>=0.0) ||!std::isfinite(kmin)) {
+        throw std::invalid_argument(
+            "local-PNG shift variation requires a fixed base configuration");
+    }
+    ReconstructionShiftVariation result;
+    result.value=reconstruction_shift_factor(
+        output_momentum,block_momentum,fixed_config);
+    const double q=norm(block_momentum);
+    if (!(q>=kmin) ||result.value==0.0) return result;
+    const double transfer_value=transfer(q);
+    if (!(transfer_value>0.0)
+        ||!std::isfinite(transfer_value)) {
+        throw std::domain_error(
+            "local-PNG shift variation sampled invalid M(k)");
+    }
+    result.local_png_denominator_direction=
+        -result.value/(fixed_config.bias_recon*transfer_value);
+    return result;
 }
 
 KernelTemplate pre_reconstruction_kernel(const std::vector<Vec3>& momenta) {

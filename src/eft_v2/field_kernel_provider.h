@@ -87,6 +87,23 @@ FieldKernelVariation reconstructed_field_kernel_variation_with_shift(
     const std::vector<Vec3>& momenta);
 
 /*
+ * Differentiate only the momentum-dependent local-PNG reconstruction
+ * denominator while keeping the pre-reconstruction tracer kernels fixed.
+ * The direction is normalized to
+ *
+ *   d / d(local_png_bias_amplitude)
+ *
+ * at zero amplitude, with local_png_bias_amplitude=fNL_rec*bphi_rec.
+ */
+FieldKernelVariation
+reconstructed_field_kernel_local_png_denominator_variation(
+    const FieldKernelProvider& base,
+    const marisa_b_halo_v1::ReconstructionConfig& fixed_reconstruction,
+    const PowerSpectrum& transfer,
+    double kmin,
+    const std::vector<Vec3>& momenta);
+
+/*
  * Push a single distinguished stochastic leg through standard
  * reconstruction.  Only the n ordinary matter legs are partitioned
  * symmetrically.  If the marked block contains m matter legs, and the
