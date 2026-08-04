@@ -14,6 +14,7 @@
 
 #include "halo_v1.h"
 #include "marisa_b_native.h"
+#include "PowerSpectrum.h"
 
 namespace eft=marisa_b_eft_v2;
 namespace hv1=marisa_b_halo_v1;
@@ -61,6 +62,29 @@ double g2_formula(const eft::Vec3& left,const eft::Vec3& right) {
     const double k1=hv1::norm(left),k2=hv1::norm(right),mu=eft::cosine(left,right);
     return 3.0/7.0+0.5*mu*(k1/k2+k2/k1)+4.0*mu*mu/7.0;
 }
+
+class SmoothTransfer final:public PowerSpectrum {
+public:
+    real Evaluate(real k) const override {
+        return k>0.0 ?0.37+3.5*k*k :0.0;
+    }
+    const Cosmology& GetCosmology() const override {
+        throw std::logic_error("SmoothTransfer has no cosmology");
+    }
+};
+
+class ConstantTransfer final:public PowerSpectrum {
+public:
+    explicit ConstantTransfer(real value):value_(value) {}
+    real Evaluate(real k) const override {
+        return k>0.0 ?value_:0.0;
+    }
+    const Cosmology& GetCosmology() const override {
+        throw std::logic_error("ConstantTransfer has no cosmology");
+    }
+private:
+    real value_;
+};
 
 void test_primitives() {
     std::mt19937_64 random(8112026);
@@ -318,6 +342,209 @@ void test_reconstructed_provider() {
         "hard-pair reconstructed K4 forest identity");
 }
 
+void test_local_png_reconstruction_denominator_variation() {
+    const SmoothTransfer transfer;
+    hv1::ReconstructionConfig fixed;
+    fixed.enabled=true;
+    fixed.smoothing_radius=15.0;
+    fixed.bias_recon=2.7340475186190334;
+    fixed.cell_size=8.0;
+    const double kmin=0.02;
+
+    const eft::Vec3 output{0.071,-0.033,0.052};
+    const eft::Vec3 above{0.029,0.017,-0.011};
+    const eft::Vec3 below{0.006,0.001,-0.002};
+    const auto shift=
+        hv1::reconstruction_shift_factor_local_png_variation(
+            output,above,fixed,transfer,kmin);
+    const double expected=
+        -shift.value/(fixed.bias_recon*transfer(hv1::norm(above)));
+    require_close(
+        shift.local_png_denominator_direction,
+        expected,2.0e-15,2.0e-15,
+        "local-PNG shift analytic quotient-rule direction");
+
+    const double epsilon=1.0e-5;
+    hv1::ReconstructionConfig plus=fixed;
+    plus.local_png_bias_transfer=&transfer;
+    plus.local_png_bias_amplitude=epsilon;
+    plus.local_png_bias_kmin=kmin;
+    hv1::ReconstructionConfig minus=plus;
+    minus.local_png_bias_amplitude=-epsilon;
+    const double finite_difference=(
+        hv1::reconstruction_shift_factor(output,above,plus)
+        -hv1::reconstruction_shift_factor(output,above,minus))
+        /(2.0*epsilon);
+    require_close(
+        shift.local_png_denominator_direction,
+        finite_difference,2.0e-9,2.0e-11,
+        "local-PNG shift analytic/finite-difference closure");
+    require_close(
+        hv1::reconstruction_bias_denominator(above,plus),
+        fixed.bias_recon+epsilon/transfer(hv1::norm(above)),
+        2.0e-15,2.0e-15,
+        "local-PNG reconstruction denominator definition");
+
+    const auto excluded=
+        hv1::reconstruction_shift_factor_local_png_variation(
+            output,below,fixed,transfer,kmin);
+    require_close(
+        excluded.local_png_denominator_direction,
+        0.0,0.0,0.0,
+        "finite-box cutoff removes absent displacement mode");
+    require_close(
+        hv1::reconstruction_bias_denominator(below,plus),
+        fixed.bias_recon,0.0,0.0,
+        "finite-box cutoff retains fixed denominator");
+
+    const eft::EftBiasKernelProvider base;
+    std::mt19937_64 random(28072026);
+    for (int order=1;order<=4;++order) {
+        for (int sample=0;sample<8;++sample) {
+            std::vector<eft::Vec3> momenta;
+            for (int index=0;index<order;++index) {
+                momenta.push_back(random_vector(random));
+            }
+            const auto analytic=
+                eft::
+                reconstructed_field_kernel_local_png_denominator_variation(
+                    base,fixed,transfer,kmin,momenta);
+            const eft::ReconstructedFieldKernelProvider fixed_provider(
+                base,fixed);
+            compare_polynomials(
+                analytic.value,
+                fixed_provider.deterministic(momenta),
+                3.0e-13,
+                "adaptive field-kernel fixed-map value K"
+                +std::to_string(order));
+
+            const auto central_difference=
+                [&base,&fixed,&transfer,kmin,&momenta](
+                    double step) {
+                    hv1::ReconstructionConfig positive=fixed;
+                    positive.local_png_bias_transfer=&transfer;
+                    positive.local_png_bias_amplitude=step;
+                    positive.local_png_bias_kmin=kmin;
+                    hv1::ReconstructionConfig negative=positive;
+                    negative.local_png_bias_amplitude=-step;
+                    const eft::ReconstructedFieldKernelProvider
+                        positive_provider(base,positive);
+                    const eft::ReconstructedFieldKernelProvider
+                        negative_provider(base,negative);
+                    return (
+                        positive_provider.deterministic(momenta)
+                        -negative_provider.deterministic(momenta))
+                        *(0.5/step);
+                };
+            const eft::SparsePolynomial coarse=
+                central_difference(2.0e-5);
+            const eft::SparsePolynomial fine=
+                central_difference(1.0e-5);
+            const eft::SparsePolynomial richardson=
+                (4.0*fine-coarse)*(1.0/3.0);
+            compare_polynomials(
+                analytic.direction,richardson,2.0e-8,
+                "adaptive field-kernel product-rule closure K"
+                +std::to_string(order));
+
+            std::vector<eft::Vec3> rotated;
+            for (const eft::Vec3& momentum:momenta) {
+                rotated.push_back(cubic_rotate(momentum));
+            }
+            const auto rotated_analytic=
+                eft::
+                reconstructed_field_kernel_local_png_denominator_variation(
+                    base,fixed,transfer,kmin,rotated);
+            compare_polynomials(
+                analytic.direction,
+                rotated_analytic.direction,
+                5.0e-11,
+                "adaptive field-kernel cubic/CIC rotation K"
+                +std::to_string(order));
+        }
+    }
+
+    hv1::ReconstructionConfig no_shift=fixed;
+    no_shift.smoothing_radius=1.0e12;
+    const std::vector<eft::Vec3> probe{
+        {0.031,-0.017,0.052},
+        {-0.044,0.026,0.019},
+        {0.11,0.07,0.19}};
+    const auto no_shift_variation=
+        eft::reconstructed_field_kernel_local_png_denominator_variation(
+            base,no_shift,transfer,kmin,probe);
+    require(
+        no_shift_variation.direction.empty(),
+        "R-infinity removes adaptive reconstruction response");
+
+    hv1::ReconstructionConfig disabled=fixed;
+    disabled.enabled=false;
+    const auto disabled_variation=
+        eft::reconstructed_field_kernel_local_png_denominator_variation(
+            base,disabled,transfer,kmin,probe);
+    require(
+        disabled_variation.direction.empty(),
+        "disabled reconstruction removes adaptive response");
+
+    /*
+     * Independent scalar-denominator oracle.  For constant M(q)=M0,
+     *
+     *   b_rec(q)=b_rec+a/M0
+     *
+     * is exactly a constant-bias reconstruction with
+     * db_rec/da=1/M0.  Differentiate that pre-existing scalar-b_rec path,
+     * without enabling the local-PNG denominator, and compare it to the
+     * analytic block-by-block response.
+     */
+    const double constant_transfer_value=2.7;
+    const ConstantTransfer constant_transfer(constant_transfer_value);
+    const double scalar_step=2.0e-5;
+    hv1::ReconstructionConfig zero_bphi=fixed;
+    zero_bphi.local_png_bias_transfer=&constant_transfer;
+    zero_bphi.local_png_bias_amplitude=0.0;
+    zero_bphi.local_png_bias_kmin=0.0;
+    const eft::ReconstructedFieldKernelProvider zero_bphi_provider(
+        base,zero_bphi);
+    const eft::ReconstructedFieldKernelProvider scalar_fixed_provider(
+        base,fixed);
+    for (int order=1;order<=4;++order) {
+        std::vector<eft::Vec3> momenta;
+        for (int index=0;index<order;++index) {
+            momenta.push_back(
+                eft::Vec3{
+                    0.017+0.011*index,
+                    -0.023+0.007*index,
+                    0.031+0.013*index});
+        }
+        const auto analytic=
+            eft::reconstructed_field_kernel_local_png_denominator_variation(
+                base,fixed,constant_transfer,0.0,momenta);
+        hv1::ReconstructionConfig scalar_plus=fixed;
+        scalar_plus.bias_recon+=
+            scalar_step/constant_transfer_value;
+        hv1::ReconstructionConfig scalar_minus=fixed;
+        scalar_minus.bias_recon-=
+            scalar_step/constant_transfer_value;
+        const eft::ReconstructedFieldKernelProvider plus_provider(
+            base,scalar_plus);
+        const eft::ReconstructedFieldKernelProvider minus_provider(
+            base,scalar_minus);
+        const eft::SparsePolynomial scalar_bias_direction=(
+            plus_provider.deterministic(momenta)
+            -minus_provider.deterministic(momenta))
+            *(0.5/scalar_step);
+        compare_polynomials(
+            analytic.direction,scalar_bias_direction,2.0e-8,
+            "constant-M adaptive response equals independent scalar-b_rec "
+            "derivative K"+std::to_string(order));
+        compare_polynomials(
+            zero_bphi_provider.deterministic(momenta),
+            scalar_fixed_provider.deterministic(momenta),0.0,
+            "bphi_rec=0 exactly reproduces fixed-b_rec K"
+            +std::to_string(order));
+    }
+}
+
 void test_limits_and_matter_oracle() {
     std::mt19937_64 random(411);
     {
@@ -462,6 +689,7 @@ int main() {
         test_bias_k1_k2_and_folpsd();
         test_symmetry_and_slow_reference();
         test_reconstructed_provider();
+        test_local_png_reconstruction_denominator_variation();
         test_limits_and_matter_oracle();
         test_tree_external_permutations();
         std::cout<<"EFT-v2 bias-operator checks passed: "<<checks<<"\n";

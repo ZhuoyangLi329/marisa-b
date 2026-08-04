@@ -14,12 +14,14 @@ uncertainties.
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import hashlib
 import importlib.util
 import json
 import math
 import multiprocessing as mp
 import os
+import subprocess
 import sys
 import time
 from dataclasses import dataclass, replace
@@ -93,6 +95,98 @@ FISHER_SUMMARY_RELATIVE = FISHER_ANALYSIS_RELATIVE / "summary.json"
 FISHER_REPORT_RELATIVE = FISHER_ANALYSIS_RELATIVE / "REPORT.md"
 FISHER_FIGURE_RELATIVE = (
     Path("figures") / "diagnostics" / FISHER_TAG
+)
+ADAPTIVE_BREC_FISHER_TAG = (
+    "post_recon_halo_local_png_brec_fisher_20260728"
+)
+ADAPTIVE_BREC_ANALYSIS_RELATIVE = (
+    Path("analysis") / ADAPTIVE_BREC_FISHER_TAG
+)
+ADAPTIVE_BREC_BASIS_RELATIVE = (
+    ADAPTIVE_BREC_ANALYSIS_RELATIVE
+    / "adaptive_brec_tree_basis.jsonl"
+)
+ADAPTIVE_BREC_SUMMARY_RELATIVE = (
+    ADAPTIVE_BREC_ANALYSIS_RELATIVE / "summary.json"
+)
+ADAPTIVE_BREC_REPORT_RELATIVE = (
+    ADAPTIVE_BREC_ANALYSIS_RELATIVE / "REPORT.md"
+)
+ADAPTIVE_BREC_FIGURE_RELATIVE = (
+    Path("figures") / "diagnostics" / ADAPTIVE_BREC_FISHER_TAG
+    / "adaptive_brec_fisher_vs_kmax.pdf"
+)
+ADAPTIVE_BREC_FULL_TAG = (
+    "post_recon_halo_local_png_brec_full_response_20260728"
+)
+ADAPTIVE_BREC_FULL_ANALYSIS_RELATIVE = (
+    Path("analysis") / ADAPTIVE_BREC_FULL_TAG
+)
+ADAPTIVE_BREC_FULL_RESPONSE_RELATIVE = (
+    ADAPTIVE_BREC_FULL_ANALYSIS_RELATIVE
+    / "adaptive_brec_full_response_templates.jsonl"
+)
+ADAPTIVE_BREC_FULL_MANIFEST_RELATIVE = (
+    ADAPTIVE_BREC_FULL_ANALYSIS_RELATIVE / "raw_manifest.json"
+)
+ADAPTIVE_BREC_FULL_SUMMARY_RELATIVE = (
+    ADAPTIVE_BREC_FULL_ANALYSIS_RELATIVE / "summary.json"
+)
+ADAPTIVE_BREC_FULL_REPORT_RELATIVE = (
+    ADAPTIVE_BREC_FULL_ANALYSIS_RELATIVE / "REPORT.md"
+)
+ADAPTIVE_BREC_FULL_MCMC_CHAINS_RELATIVE = (
+    ADAPTIVE_BREC_FULL_ANALYSIS_RELATIVE
+    / "adaptive_brec_full_mcmc_chains.h5"
+)
+ADAPTIVE_BREC_FULL_FIGURE_RELATIVE = (
+    Path("figures") / "diagnostics" / ADAPTIVE_BREC_FULL_TAG
+)
+ADAPTIVE_BREC_FULL_ARCHIVE_RELATIVE = (
+    Path("old_doc_codes")
+    / "archive_20260728_adaptive_brec_full_response"
+)
+ADAPTIVE_BREC_FULL_RAW_RELATIVE = (
+    ADAPTIVE_BREC_FULL_ARCHIVE_RELATIVE / "raw"
+)
+ADAPTIVE_BREC_FULL_FAILURE_LOG_RELATIVE = (
+    ADAPTIVE_BREC_FULL_ARCHIVE_RELATIVE / "failed_logs"
+)
+ADAPTIVE_BREC_FINITE_SCHEMA = (
+    "marisa-b-eft-v2-post-r1-adaptive-brec-finite-jsonl-v1"
+)
+ADAPTIVE_BREC_VARIANTS = (
+    ("p1", 1.0),
+    ("m1", -1.0),
+    ("p0p5", 0.5),
+    ("m0p5", -0.5),
+)
+ADAPTIVE_BREC_MCMC_MODELS = (
+    "pre",
+    "post_fixed_brec",
+    "post_adaptive_brec_local",
+)
+ADAPTIVE_BREC_BPHI_REC = (
+    2.0
+    * post_model.DELTA_C
+    * (post_model.B_REC_H - post_model.P_UNIVERSALITY)
+)
+ADAPTIVE_BREC_KMIN = 2.0 * math.pi / 1000.0
+ADAPTIVE_BREC_POWER_RELATIVE = (
+    Path("analysis")
+    / "theory_vectors/marisa_b_v0"
+    / (
+        "marisa_b_pre_gaussian_shellbin_z1_r15_diag15_kmax0p3_"
+        "nrad3_nmu12_partial446_20260616_plin_z1.dat"
+    )
+)
+ADAPTIVE_BREC_PNG_TABLE_RELATIVE = (
+    Path("analysis")
+    / "theory_vectors/marisa_b_v0"
+    / (
+        "marisa_b_pre_local_png_1loop_z1_diag15_kmax0p3_"
+        "nmu48_eps1e3_partial446_20260616_plin_pphi_m_z1.dat"
+    )
 )
 ARCHIVE_RELATIVE = (
     Path("log")
@@ -5337,6 +5431,3493 @@ def run_fisher_audit(
     }
 
 
+def load_adaptive_brec_tree_basis(
+    path: Path,
+    shared: SharedInputs,
+) -> tuple[np.ndarray, dict[str, Any]]:
+    if not path.is_file():
+        raise FileNotFoundError(path)
+    records = [
+        json.loads(line)
+        for line in path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    if len(records) != 28:
+        raise ValueError(
+            "adaptive-brec basis must contain one header and 27 bins"
+        )
+    header = records[0]
+    expected_indices = selected_indices(shared.k_pair, 0.14)
+    actual_indices = np.asarray(
+        [row.get("index") for row in records[1:]],
+        dtype=np.int64,
+    )
+    expected_reconstruction = {
+        "R": 15,
+        "b_rec_h": post_model.B_REC_H,
+        "cell_size": 8,
+        "cic_power": 4,
+    }
+    if (
+        header.get("record") != "header"
+        or header.get("schema")
+        != "marisa-b-post-r1-adaptive-brec-diagnostic-jsonl-v1"
+        or header.get("sector") != "adaptive-brec-tree"
+        or header.get("reconstruction") != expected_reconstruction
+        or not np.array_equal(actual_indices, expected_indices)
+    ):
+        raise ValueError("adaptive-brec basis contract mismatch")
+    basis = np.zeros(shared.k_pair.shape[0], dtype=np.float64)
+    for row in records[1:]:
+        index = int(row["index"])
+        edges = np.asarray(row["edges"], dtype=np.float64)
+        if not np.array_equal(
+            edges,
+            np.asarray(shared.edges[index], dtype=np.float64).reshape(-1),
+        ):
+            raise ValueError(
+                f"adaptive-brec basis edge mismatch in bin {index}"
+            )
+        value = float(
+            row["adaptive_brec_denominator_tree_basis"]
+        )
+        if not math.isfinite(value):
+            raise ValueError(
+                f"non-finite adaptive-brec basis in bin {index}"
+            )
+        basis[index] = value
+    return basis, {
+        "path": str(path),
+        "sha256": sha256(path),
+        "header": header,
+        "indices": actual_indices,
+    }
+
+
+def compact_fisher_widths(result: dict[str, Any]) -> dict[str, float]:
+    return {
+        name: float(result[name])
+        for name in (
+            "fixed_nuisance_sigma_fNL",
+            "all_nuisance_sigma_fNL",
+            "b1_fixed_all_other_nuisance_sigma_fNL",
+            "nonlinear_only_sigma_fNL",
+            "linear_only_sigma_fNL",
+            "information_retention_after_all_nuisance",
+            "scaled_fisher_minimum_eigenvalue",
+            "scaled_fisher_condition_number",
+        )
+    }
+
+
+def vector_cosine(left: np.ndarray, right: np.ndarray) -> float:
+    denominator = float(
+        np.linalg.norm(left) * np.linalg.norm(right)
+    )
+    return (
+        float(np.dot(left, right) / denominator)
+        if denominator > 0.0
+        else 0.0
+    )
+
+
+def plot_adaptive_brec_fisher(
+    path: Path,
+    rows: list[dict[str, Any]],
+) -> None:
+    cuts = np.asarray(
+        [row["kmax_h_mpc"] for row in rows],
+        dtype=np.float64,
+    )
+    figure, axes = plt.subplots(
+        1,
+        2,
+        figsize=(11.2, 4.4),
+        sharex=True,
+    )
+    specifications = (
+        (
+            "fixed_nuisance_sigma_fNL",
+            r"fixed-nuisance Fisher $\sigma(f_{\rm NL})$",
+        ),
+        (
+            "all_nuisance_sigma_fNL",
+            r"marginal Fisher $\sigma(f_{\rm NL})$",
+        ),
+    )
+    curves = (
+        ("pre", "pre reconstruction", "black", "--", "o"),
+        (
+            "post_original",
+            r"post, fixed $b_{\rm rec}$",
+            "#b2182b",
+            "-",
+            "s",
+        ),
+        (
+            "post_adaptive_brec",
+            r"post, $f_{\rm NL}^{\rm rec}=f_{\rm NL}$",
+            "#2166ac",
+            "-",
+            "D",
+        ),
+        (
+            "post_shift_removed_upper_limit",
+            "post, entire shift response removed (optimistic)",
+            "#777777",
+            ":",
+            "^",
+        ),
+    )
+    for axis, (metric, ylabel) in zip(axes, specifications):
+        for key, label, color, linestyle, marker in curves:
+            axis.plot(
+                cuts,
+                [row[key][metric] for row in rows],
+                color=color,
+                linestyle=linestyle,
+                marker=marker,
+                linewidth=1.8,
+                markersize=5.0,
+                label=label,
+            )
+        axis.set(
+            xlabel=r"$k_{\max}\,[h\,{\rm Mpc}^{-1}]$",
+            ylabel=ylabel,
+        )
+        axis.grid(alpha=0.18)
+    axes[0].legend(frameon=False, fontsize=8.3)
+    figure.suptitle(
+        "Local-PNG-aware reconstruction denominator: Fisher forecast\n"
+        "single-realization covariance; leading deterministic tree "
+        "denominator response only",
+        fontsize=12.5,
+    )
+    figure.tight_layout(rect=(0.0, 0.0, 1.0, 0.94))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    figure.savefig(
+        path,
+        metadata={
+            "Title": (
+                "Local-PNG adaptive reconstruction-bias Fisher forecast"
+            ),
+            "Author": "MARISA-B adaptive-brec diagnostic",
+            "Subject": (
+                "Single-realization covariance; leading deterministic "
+                "tree denominator derivative only"
+            ),
+        },
+    )
+    plt.close(figure)
+
+
+def adaptive_brec_report_text(summary: dict[str, Any]) -> str:
+    headline = summary["headline"]
+    lines = [
+        "# Local-PNG-aware reconstruction-bias Fisher test",
+        "",
+        "## Result",
+        "",
+        (
+            "At `kmax=0.14 h/Mpc`, synchronizing the leading deterministic "
+            "tree reconstruction denominator with "
+            "`fNL_rec=fNL` changes the post-reconstruction all-nuisance "
+            f"Fisher width from `{headline['post_original_marginal']:.3f}` "
+            f"to `{headline['post_adaptive_marginal']:.3f}`."
+        ),
+        (
+            "This is a "
+            f"`{100.0*headline['marginal_fractional_improvement']:.1f}%` "
+            "improvement over the current fixed-b_rec post response."
+        ),
+        (
+            "The corresponding fixed-nuisance width changes from "
+            f"`{headline['post_original_fixed']:.3f}` to "
+            f"`{headline['post_adaptive_fixed']:.3f}`."
+        ),
+        (
+            "For comparison, the pre-reconstruction marginal width is "
+            f"`{headline['pre_marginal']:.3f}`, while the deliberately "
+            "optimistic ablation that removes the entire shift-field "
+            f"response gives `{headline['post_shift_removed_marginal']:.3f}`."
+        ),
+        "",
+        "## kmax scan",
+        "",
+        (
+            "| kmax | pre marginal | post fixed-brec | "
+            "post adaptive-brec | entire shift removed |"
+        ),
+        "|---:|---:|---:|---:|---:|",
+    ]
+    for row in summary["kmax_scan"]:
+        lines.append(
+            f"| {row['kmax_h_mpc']:.2f} "
+            f"| {row['pre']['all_nuisance_sigma_fNL']:.3f} "
+            f"| {row['post_original']['all_nuisance_sigma_fNL']:.3f} "
+            f"| {row['post_adaptive_brec']['all_nuisance_sigma_fNL']:.3f} "
+            f"| {row['post_shift_removed_upper_limit']['all_nuisance_sigma_fNL']:.3f} |"
+        )
+    lines.extend(
+        [
+            "",
+            "## Statistical contract",
+            "",
+            (
+                "Every Fisher matrix uses the covariance of one "
+                "`(Gpc/h)^3` realization estimated from 500 fiducial "
+                "boxes, with the same Hartlap precision correction and "
+                "the same power-spectrum b1 prior."
+            ),
+            "",
+            "## Scope",
+            "",
+            (
+                "This small test adds the exact shell-projected derivative "
+                "of the deterministic Gaussian tree term caused by "
+                "`b_rec(k)=b1_rec+fNL_rec*bphi_rec/M(k)` at "
+                "`fNL_rec=0`."
+            ),
+            (
+                "It does not yet include the corresponding denominator "
+                "derivatives of halo one-loop diagrams, EFT counterterms, "
+                "stochastic reconstruction terms, or finite-fNL quadratic "
+                "terms."
+            ),
+            (
+                "It is therefore a controlled leading-response forecast, "
+                "not a production likelihood or an empirical validation "
+                "of a parameter-dependent reconstruction pipeline."
+            ),
+            "",
+            "## Output",
+            "",
+            "- `adaptive_brec_fisher_vs_kmax.pdf`",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def run_adaptive_brec_fisher(
+    root: Path,
+    shared: SharedInputs,
+) -> dict[str, Any]:
+    basis, basis_provenance = load_adaptive_brec_tree_basis(
+        root / ADAPTIVE_BREC_BASIS_RELATIVE,
+        shared,
+    )
+    calibration = b1_calibration_contract(shared.data_root)
+    b1_mean = float(calibration["primary"]["b1"])
+    b1_sigma = float(calibration["primary"]["b1_sigma"])
+    bphi_recon = (
+        2.0
+        * post_model.DELTA_C
+        * (post_model.B_REC_H - post_model.P_UNIVERSALITY)
+    )
+    rows: list[dict[str, Any]] = []
+    minimum_eigenvalue = math.inf
+    for kmax in CUTS:
+        contexts = {
+            reconstruction: context_with_b1_prior(
+                build_context(
+                    shared,
+                    reconstruction,
+                    "coevolution",
+                    float(kmax),
+                ),
+                mean=b1_mean,
+                sigma=b1_sigma,
+            )
+            for reconstruction in RECONSTRUCTIONS
+        }
+        fisher_results: dict[str, dict[str, Any]] = {}
+        jacobians: dict[str, np.ndarray] = {}
+        conditionals: dict[str, ConditionalResult] = {}
+        for reconstruction, context in contexts.items():
+            _map, conditional = gaussian_nuisance_map(context)
+            jacobian, _check = model_jacobian_at_zero(
+                context,
+                conditional.nuisance,
+            )
+            fisher, _matrix = fisher_from_jacobian(
+                context,
+                context,
+                jacobian,
+            )
+            fisher_results[reconstruction] = fisher
+            jacobians[reconstruction] = jacobian
+            conditionals[reconstruction] = conditional
+            minimum_eigenvalue = min(
+                minimum_eigenvalue,
+                float(fisher["scaled_fisher_minimum_eigenvalue"]),
+            )
+
+        post_context = contexts["post"]
+        _prediction, parameters, components = (
+            post_context.evaluate_model(
+                0.0,
+                conditionals["post"].nuisance,
+            )
+        )
+        b1_map = float(parameters["b1"])
+        correction = (
+            b1_map**4
+            * bphi_recon
+            / post_model.B_REC_H
+            * basis[post_context.indices]
+        )
+        adaptive_jacobian = jacobians["post"].copy()
+        adaptive_jacobian[:, 0] += correction
+        adaptive_fisher, _matrix = fisher_from_jacobian(
+            post_context,
+            post_context,
+            adaptive_jacobian,
+        )
+        shift_response = np.asarray(
+            components["halo_reconstruction"],
+            dtype=np.float64,
+        )[post_context.indices]
+        no_shift_jacobian = jacobians["post"].copy()
+        no_shift_jacobian[:, 0] -= shift_response
+        no_shift_fisher, _matrix = fisher_from_jacobian(
+            post_context,
+            post_context,
+            no_shift_jacobian,
+        )
+        correction_white = solve_triangular(
+            post_context.chol_fit,
+            correction,
+            lower=True,
+        )
+        shift_white = solve_triangular(
+            post_context.chol_fit,
+            shift_response,
+            lower=True,
+        )
+        current_white = solve_triangular(
+            post_context.chol_fit,
+            jacobians["post"][:, 0],
+            lower=True,
+        )
+        rows.append(
+            {
+                "kmax_h_mpc": float(kmax),
+                "n_data": int(post_context.target.size),
+                "gaussian_map_b1": b1_map,
+                "covariance_contract": {
+                    reconstruction: {
+                        "mock_count": int(
+                            context.covariance_mock_count
+                        ),
+                        "is_unscaled_sample_covariance": bool(
+                            np.array_equal(
+                                context.covariance_single,
+                                np.cov(
+                                    context.samples,
+                                    rowvar=False,
+                                    ddof=1,
+                                ),
+                            )
+                        ),
+                    }
+                    for reconstruction, context in contexts.items()
+                },
+                "pre": compact_fisher_widths(
+                    fisher_results["pre"]
+                ),
+                "post_original": compact_fisher_widths(
+                    fisher_results["post"]
+                ),
+                "post_adaptive_brec": compact_fisher_widths(
+                    adaptive_fisher
+                ),
+                "post_shift_removed_upper_limit": (
+                    compact_fisher_widths(no_shift_fisher)
+                ),
+                "response_geometry": {
+                    "correction_over_shift_whitened_norm": float(
+                        np.linalg.norm(correction_white)
+                        / np.linalg.norm(shift_white)
+                    ),
+                    "correction_shift_whitened_cosine": (
+                        vector_cosine(correction_white, shift_white)
+                    ),
+                    "correction_current_whitened_cosine": (
+                        vector_cosine(correction_white, current_white)
+                    ),
+                },
+            }
+        )
+
+    previous_path = (
+        root
+        / "analysis/prepost_recon_halo_fnl_fisher_audit_20260728"
+        / "summary.json"
+    )
+    previous = json.loads(
+        previous_path.read_text(encoding="utf-8")
+    )
+    regression_errors = []
+    for row, old in zip(rows, previous["kmax_scan"]):
+        regression_errors.extend(
+            (
+                abs(
+                    row["pre"][name]
+                    - float(old["pre"]["tight_b1_fisher"][name])
+                ),
+                abs(
+                    row["post_original"][name]
+                    - float(old["post"]["tight_b1_fisher"][name])
+                ),
+                abs(
+                    row["post_shift_removed_upper_limit"][name]
+                    - float(
+                        old["post"][
+                            "no_reconstruction_response_fisher"
+                        ][name]
+                    )
+                ),
+            )
+            for name in (
+                "fixed_nuisance_sigma_fNL",
+                "all_nuisance_sigma_fNL",
+            )
+        )
+    maximum_regression_error = max(
+        value
+        for group in regression_errors
+        for value in group
+    )
+    last = rows[-1]
+    original_marginal = last["post_original"][
+        "all_nuisance_sigma_fNL"
+    ]
+    adaptive_marginal = last["post_adaptive_brec"][
+        "all_nuisance_sigma_fNL"
+    ]
+    checks = {
+        "basis_has_exact_27_selected_bins": bool(
+            basis_provenance["indices"].size == 27
+            and np.all(
+                np.isfinite(basis[basis_provenance["indices"]])
+            )
+        ),
+        "all_covariances_are_single_realization_500_box": bool(
+            all(
+                contract["mock_count"] == 500
+                and contract["is_unscaled_sample_covariance"]
+                for row in rows
+                for contract in row["covariance_contract"].values()
+            )
+            and all(
+                row["n_data"] == EXPECTED_COUNTS[
+                    row["kmax_h_mpc"]
+                ]
+                for row in rows
+            )
+        ),
+        "previous_fisher_regression_below_1e10": bool(
+            maximum_regression_error < 1.0e-10
+        ),
+        "all_fisher_matrices_positive_definite": bool(
+            minimum_eigenvalue > 0.0
+        ),
+        "adaptive_brec_improves_post_at_every_cut": bool(
+            all(
+                row["post_adaptive_brec"][
+                    "all_nuisance_sigma_fNL"
+                ]
+                < row["post_original"][
+                    "all_nuisance_sigma_fNL"
+                ]
+                for row in rows
+            )
+        ),
+        "adaptive_brec_is_not_mislabeled_as_full_shift_removal": bool(
+            all(
+                row["post_adaptive_brec"][
+                    "all_nuisance_sigma_fNL"
+                ]
+                > row["post_shift_removed_upper_limit"][
+                    "all_nuisance_sigma_fNL"
+                ]
+                for row in rows
+            )
+        ),
+    }
+    if not all(checks.values()):
+        failed = [name for name, passed in checks.items() if not passed]
+        raise RuntimeError(
+            f"adaptive-brec Fisher checks failed: {failed}"
+        )
+
+    figure_path = root / ADAPTIVE_BREC_FIGURE_RELATIVE
+    plot_adaptive_brec_fisher(figure_path, rows)
+    summary = {
+        "schema": (
+            "marisa-b-post-halo-local-png-adaptive-brec-fisher-v1"
+        ),
+        "created_utc": utc_now(),
+        "status": "leading_tree_fisher_forecast_complete",
+        "scope": {
+            "sample": (
+                "Quijote z=1 Mmin=1e13 fNL=0 real-space halos"
+            ),
+            "tier": "coevolution",
+            "cuts_h_mpc": CUTS,
+            "covariance": (
+                "single-realization sample covariance from 500 "
+                "fiducial boxes with Hartlap precision correction"
+            ),
+            "adaptive_reconstruction_bias": (
+                "b_rec(k)=b1_rec+fNL_rec*bphi_rec/M(k), "
+                "evaluated along fNL_rec=fNL at fNL=0"
+            ),
+            "included_new_response": (
+                "exact shell-projected deterministic Gaussian tree "
+                "reconstruction-denominator derivative"
+            ),
+            "omitted_new_responses": (
+                "halo Gaussian one-loop, EFT counterterm, stochastic, "
+                "fixed-Poisson and finite-fNL quadratic denominator "
+                "derivatives"
+            ),
+        },
+        "reconstruction_calibration": {
+            "b1_rec": post_model.B_REC_H,
+            "bphi_rec": bphi_recon,
+            "p": post_model.P_UNIVERSALITY,
+            "delta_c": post_model.DELTA_C,
+        },
+        "headline": {
+            "kmax_h_mpc": 0.14,
+            "pre_marginal": last["pre"][
+                "all_nuisance_sigma_fNL"
+            ],
+            "post_original_fixed": last["post_original"][
+                "fixed_nuisance_sigma_fNL"
+            ],
+            "post_original_marginal": original_marginal,
+            "post_adaptive_fixed": last["post_adaptive_brec"][
+                "fixed_nuisance_sigma_fNL"
+            ],
+            "post_adaptive_marginal": adaptive_marginal,
+            "post_shift_removed_marginal": (
+                last["post_shift_removed_upper_limit"][
+                    "all_nuisance_sigma_fNL"
+                ]
+            ),
+            "marginal_fractional_improvement": (
+                1.0 - adaptive_marginal / original_marginal
+            ),
+            "adaptive_post_over_pre_marginal": (
+                adaptive_marginal
+                / last["pre"]["all_nuisance_sigma_fNL"]
+            ),
+        },
+        "kmax_scan": rows,
+        "checks": checks,
+        "maximum_previous_fisher_regression_error": (
+            maximum_regression_error
+        ),
+        "minimum_scaled_fisher_eigenvalue": minimum_eigenvalue,
+        "scientific_limit": (
+            "This is a local leading-tree response forecast. A complete "
+            "parameter-dependent post-reconstruction likelihood requires "
+            "the same adaptive denominator in all loop, EFT and stochastic "
+            "sectors and requires catalog-level reconstruction treatment."
+        ),
+        "provenance": {
+            "basis": basis_provenance,
+            "matrix": {
+                "path": str(shared.matrix),
+                "sha256": shared.matrix_hash,
+            },
+            "previous_fisher_summary": {
+                "path": str(previous_path),
+                "sha256": sha256(previous_path),
+            },
+            "runner": {
+                "path": str(Path(__file__).resolve()),
+                "sha256_before_summary_write": sha256(
+                    Path(__file__).resolve()
+                ),
+            },
+        },
+        "outputs": {
+            "figure": {
+                "path": str(figure_path),
+                "sha256": sha256(figure_path),
+            },
+        },
+    }
+    summary_path = root / ADAPTIVE_BREC_SUMMARY_RELATIVE
+    report_path = root / ADAPTIVE_BREC_REPORT_RELATIVE
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(
+        adaptive_brec_report_text(summary),
+        encoding="utf-8",
+    )
+    summary["outputs"]["report"] = {
+        "path": str(report_path),
+        "sha256": sha256(report_path),
+    }
+    atomic_json(summary_path, summary)
+    return {
+        "summary_path": summary_path,
+        "report_path": report_path,
+        "figure_path": figure_path,
+        "checks": checks,
+        "headline": summary["headline"],
+        "status": summary["status"],
+    }
+
+
+def adaptive_brec_raw_path(
+    root: Path,
+    variant: str,
+    index: int,
+) -> Path:
+    return (
+        root
+        / ADAPTIVE_BREC_FULL_RAW_RELATIVE
+        / f"fNLrec_{variant}_bin_{index:03d}.jsonl"
+    )
+
+
+def validate_adaptive_brec_raw(
+    path: Path,
+    *,
+    variant_value: float,
+    index: int,
+    expected_hashes: dict[str, str],
+    expected_edges: np.ndarray,
+) -> dict[str, Any]:
+    header, bins = post_model.read_jsonl(path)
+    adaptive = (
+        header.get("reconstruction", {}).get(
+            "adaptive_local_png_bias"
+        )
+        if isinstance(header.get("reconstruction"), dict)
+        else None
+    )
+    if (
+        header.get("schema") != ADAPTIVE_BREC_FINITE_SCHEMA
+        or header.get("production_candidate") is not False
+        or header.get("bin_range") != [index, index + 1]
+        or header.get("loop_quadrature") != [8, 32, 24]
+        or header.get("q_range") != [0.0001, 6.4]
+        or header.get("shell_projection", {}).get("radial_order") != 2
+        or header.get("shell_projection", {}).get("angular_order") != 8
+        or header.get("shell_projection", {}).get(
+            "orientation_orders"
+        )
+        != [2, 2, 2]
+        or header.get("source_hashes") != expected_hashes
+        or not isinstance(adaptive, dict)
+        or not math.isclose(
+            float(adaptive.get("fNL_rec", math.nan)),
+            variant_value,
+            rel_tol=0.0,
+            abs_tol=1.0e-15,
+        )
+        or not math.isclose(
+            float(adaptive.get("bphi_rec", math.nan)),
+            ADAPTIVE_BREC_BPHI_REC,
+            rel_tol=0.0,
+            abs_tol=2.0e-14,
+        )
+        or not math.isclose(
+            float(adaptive.get("amplitude", math.nan)),
+            variant_value * ADAPTIVE_BREC_BPHI_REC,
+            rel_tol=0.0,
+            abs_tol=2.0e-14,
+        )
+        or not math.isclose(
+            float(adaptive.get("kmin", math.nan)),
+            ADAPTIVE_BREC_KMIN,
+            rel_tol=0.0,
+            abs_tol=2.0e-15,
+        )
+        or len(bins) != 1
+        or bins[0].get("index") != index
+        or not np.array_equal(
+            np.asarray(bins[0].get("edges"), dtype=np.float64),
+            np.asarray(expected_edges, dtype=np.float64).reshape(-1),
+        )
+    ):
+        raise ValueError(
+            f"{path} violates the adaptive-brec raw contract"
+        )
+    return {
+        "path": str(path),
+        "sha256": sha256(path),
+        "index": index,
+        "fNL_rec": variant_value,
+        "bytes": path.stat().st_size,
+    }
+
+
+def run_adaptive_brec_full_production(
+    root: Path,
+    shared: SharedInputs,
+    *,
+    workers: int,
+) -> dict[str, Any]:
+    if not 1 <= workers <= 28:
+        raise ValueError("adaptive-brec production workers must be 1..28")
+    driver = (
+        shared.root
+        / "build/halo_v1/eft_v2_post_r1_template_driver"
+    )
+    power = shared.data_root / ADAPTIVE_BREC_POWER_RELATIVE
+    png_table = (
+        shared.data_root / ADAPTIVE_BREC_PNG_TABLE_RELATIVE
+    )
+    edge_file = shared.root / "configs/eft_v2_b000_edges.txt"
+    for path in (driver, power, png_table, edge_file):
+        if not path.is_file():
+            raise FileNotFoundError(path)
+    expected_hashes = {
+        "linear_power": sha256(power),
+        "edge_file": sha256(edge_file),
+        "driver_executable": sha256(driver),
+        "png_table": sha256(png_table),
+    }
+    selected = selected_indices(shared.k_pair, 0.14)
+    if selected.tolist() != [
+        1, 2, 3, 4, 5, 6,
+        15, 16, 17, 18, 19, 20,
+        29, 30, 31, 32, 33,
+        42, 43, 44, 45,
+        54, 55, 56,
+        65, 66,
+        75,
+    ]:
+        raise AssertionError("adaptive-brec selected-bin contract drift")
+    raw_root = root / ADAPTIVE_BREC_FULL_RAW_RELATIVE
+    failure_root = (
+        root / ADAPTIVE_BREC_FULL_FAILURE_LOG_RELATIVE
+    )
+    raw_root.mkdir(parents=True, exist_ok=True)
+    failure_root.mkdir(parents=True, exist_ok=True)
+    jobs = [
+        (variant, value, int(index))
+        for index in selected
+        for variant, value in ADAPTIVE_BREC_VARIANTS
+    ]
+
+    def execute(job: tuple[str, float, int]) -> dict[str, Any]:
+        variant, value, index = job
+        destination = adaptive_brec_raw_path(
+            root, variant, index
+        )
+        if destination.is_file():
+            record = validate_adaptive_brec_raw(
+                destination,
+                variant_value=value,
+                index=index,
+                expected_hashes=expected_hashes,
+                expected_edges=shared.edges[index],
+            )
+            record.update(
+                {
+                    "variant": variant,
+                    "reused": True,
+                    "elapsed_seconds": 0.0,
+                }
+            )
+            return record
+        temporary = destination.with_name(
+            f".{destination.name}.tmp-{os.getpid()}-{time.time_ns()}"
+        )
+        command = [
+            str(driver),
+            str(power),
+            str(edge_file),
+            "7",
+            str(index),
+            str(index + 1),
+            "2",
+            "8",
+            "2",
+            "2",
+            "2",
+            "8",
+            "32",
+            "24",
+            "0.0001",
+            "6.4",
+            "30",
+            "15",
+            f"{post_model.B_REC_H:.17g}",
+            "8",
+            "fibonacci",
+            str(png_table),
+            f"{value:.17g}",
+            f"{ADAPTIVE_BREC_BPHI_REC:.17g}",
+            f"{ADAPTIVE_BREC_KMIN:.17g}",
+        ]
+        environment = os.environ.copy()
+        for name in (
+            "OPENBLAS_NUM_THREADS",
+            "OMP_NUM_THREADS",
+            "MKL_NUM_THREADS",
+            "NUMEXPR_NUM_THREADS",
+            "MARISA_B_MAX_THREADS",
+        ):
+            environment[name] = "1"
+        started = time.monotonic()
+        with temporary.open("w", encoding="utf-8") as stream:
+            completed = subprocess.run(
+                command,
+                stdout=stream,
+                stderr=subprocess.PIPE,
+                text=True,
+                env=environment,
+                check=False,
+            )
+        elapsed = time.monotonic() - started
+        if completed.returncode != 0:
+            temporary.unlink(missing_ok=True)
+            failure = (
+                failure_root
+                / f"fNLrec_{variant}_bin_{index:03d}.log"
+            )
+            failure.write_text(
+                completed.stderr,
+                encoding="utf-8",
+            )
+            raise RuntimeError(
+                "adaptive-brec driver failed for "
+                f"{variant}/bin {index}; log={failure}"
+            )
+        if completed.stderr:
+            raise RuntimeError(
+                "adaptive-brec driver emitted unexpected stderr for "
+                f"{variant}/bin {index}: {completed.stderr[:400]}"
+            )
+        temporary.replace(destination)
+        record = validate_adaptive_brec_raw(
+            destination,
+            variant_value=value,
+            index=index,
+            expected_hashes=expected_hashes,
+            expected_edges=shared.edges[index],
+        )
+        record.update(
+            {
+                "variant": variant,
+                "reused": False,
+                "elapsed_seconds": elapsed,
+            }
+        )
+        return record
+
+    records: list[dict[str, Any]] = []
+    launched_utc = utc_now()
+    with concurrent.futures.ThreadPoolExecutor(
+        max_workers=workers
+    ) as executor:
+        futures = {
+            executor.submit(execute, job): job
+            for job in jobs
+        }
+        for completed_count, future in enumerate(
+            concurrent.futures.as_completed(futures),
+            1,
+        ):
+            record = future.result()
+            records.append(record)
+            print(
+                "adaptive-brec full production "
+                f"{completed_count}/{len(jobs)}: "
+                f"{record['variant']} bin {record['index']}",
+                flush=True,
+            )
+    records.sort(key=lambda row: (row["index"], row["fNL_rec"]))
+    manifest = {
+        "schema": "marisa-b-adaptive-brec-raw-manifest-v1",
+        "created_utc": utc_now(),
+        "launched_utc": launched_utc,
+        "status": "complete",
+        "worker_limit": workers,
+        "threading_contract": (
+            "at most workers child processes; one thread per process"
+        ),
+        "job_count": len(records),
+        "selected_indices": selected,
+        "finite_difference_variants": ADAPTIVE_BREC_VARIANTS,
+        "bphi_rec": ADAPTIVE_BREC_BPHI_REC,
+        "kmin": ADAPTIVE_BREC_KMIN,
+        "source_hashes": expected_hashes,
+        "jobs": records,
+    }
+    manifest_path = (
+        root / ADAPTIVE_BREC_FULL_MANIFEST_RELATIVE
+    )
+    atomic_json(manifest_path, manifest)
+    return {
+        "status": "adaptive_brec_full_raw_complete",
+        "manifest_path": manifest_path,
+        "job_count": len(records),
+        "worker_limit": workers,
+        "new_job_count": sum(
+            not record["reused"] for record in records
+        ),
+    }
+
+
+ADAPTIVE_BREC_NESTED_POLYNOMIAL_FIELDS = (
+    "diagrams",
+    "counterterms",
+    "stochastic",
+    "stochastic_density_only",
+    "stochastic_noisy_shift",
+)
+ADAPTIVE_BREC_DIRECT_POLYNOMIAL_FIELDS = (
+    "bshot_bnabla2_cross",
+    "bshot_bnabla2_cross_density_only",
+    "bshot_bnabla2_cross_noisy_shift",
+)
+
+
+def sparse_linear_combination(
+    left: dict[str, float],
+    right: dict[str, float],
+    left_weight: float,
+    right_weight: float,
+) -> dict[str, float]:
+    result = {}
+    for monomial in sorted(set(left) | set(right)):
+        value = (
+            left_weight * float(left.get(monomial, 0.0))
+            + right_weight * float(right.get(monomial, 0.0))
+        )
+        if value != 0.0:
+            result[monomial] = value
+    return result
+
+
+def response_row_linear_combination(
+    left: dict[str, Any],
+    right: dict[str, Any],
+    left_weight: float,
+    right_weight: float,
+) -> dict[str, Any]:
+    left_metadata = {
+        key: value
+        for key, value in left.items()
+        if key not in ADAPTIVE_BREC_NESTED_POLYNOMIAL_FIELDS
+        and key not in ADAPTIVE_BREC_DIRECT_POLYNOMIAL_FIELDS
+        and key not in {
+            "fixed_poisson",
+            "adaptive_brec_response_diagnostics",
+            "adaptive_brec_step_error",
+        }
+    }
+    right_metadata = {
+        key: value
+        for key, value in right.items()
+        if key not in ADAPTIVE_BREC_NESTED_POLYNOMIAL_FIELDS
+        and key not in ADAPTIVE_BREC_DIRECT_POLYNOMIAL_FIELDS
+        and key not in {
+            "fixed_poisson",
+            "adaptive_brec_response_diagnostics",
+            "adaptive_brec_step_error",
+        }
+    }
+    if left_metadata != right_metadata:
+        raise ValueError(
+            "adaptive-brec finite-difference rows have mismatched geometry"
+        )
+    result = json.loads(json.dumps(left_metadata))
+    for field in ADAPTIVE_BREC_NESTED_POLYNOMIAL_FIELDS:
+        if set(left[field]) != set(right[field]):
+            raise ValueError(
+                f"adaptive-brec polynomial group {field} changed support"
+            )
+        result[field] = {
+            name: sparse_linear_combination(
+                left[field][name],
+                right[field][name],
+                left_weight,
+                right_weight,
+            )
+            for name in left[field]
+        }
+    for field in ADAPTIVE_BREC_DIRECT_POLYNOMIAL_FIELDS:
+        result[field] = sparse_linear_combination(
+            left[field],
+            right[field],
+            left_weight,
+            right_weight,
+        )
+    if set(left["fixed_poisson"]) != set(right["fixed_poisson"]):
+        raise ValueError("adaptive-brec fixed-Poisson orders changed")
+    result["fixed_poisson"] = {}
+    for order in left["fixed_poisson"]:
+        left_order = left["fixed_poisson"][order]
+        right_order = right["fixed_poisson"][order]
+        left_maps = left_order["by_inverse_number_density"]
+        right_maps = right_order["by_inverse_number_density"]
+        if set(left_maps) != set(right_maps):
+            raise ValueError(
+                "adaptive-brec fixed-Poisson nbar maps changed"
+            )
+        combined_order = {
+            key: value
+            for key, value in left_order.items()
+            if key != "by_inverse_number_density"
+        }
+        if combined_order != {
+            key: value
+            for key, value in right_order.items()
+            if key != "by_inverse_number_density"
+        }:
+            raise ValueError(
+                "adaptive-brec fixed-Poisson topology metadata changed"
+            )
+        combined_order["by_inverse_number_density"] = {
+            key: sparse_linear_combination(
+                left_maps[key],
+                right_maps[key],
+                left_weight,
+                right_weight,
+            )
+            for key in left_maps
+        }
+        result["fixed_poisson"][order] = combined_order
+    enforce_adaptive_stochastic_decomposition(result)
+    return result
+
+
+def enforce_adaptive_stochastic_decomposition(
+    row: dict[str, Any],
+) -> None:
+    row["stochastic"] = {
+        name: sparse_linear_combination(
+            row["stochastic_density_only"][name],
+            row["stochastic_noisy_shift"][name],
+            1.0,
+            1.0,
+        )
+        for name in row["stochastic_density_only"]
+    }
+    row["bshot_bnabla2_cross"] = sparse_linear_combination(
+        row["bshot_bnabla2_cross_density_only"],
+        row["bshot_bnabla2_cross_noisy_shift"],
+        1.0,
+        1.0,
+    )
+
+
+def adaptive_response_payload(
+    row: dict[str, Any],
+) -> dict[str, Any]:
+    payload = {
+        field: row[field]
+        for field in ADAPTIVE_BREC_NESTED_POLYNOMIAL_FIELDS
+    }
+    payload.update(
+        {
+            field: row[field]
+            for field in ADAPTIVE_BREC_DIRECT_POLYNOMIAL_FIELDS
+        }
+    )
+    payload["fixed_poisson"] = row["fixed_poisson"]
+    return payload
+
+
+def adaptive_response_coefficients(
+    row: dict[str, Any],
+) -> np.ndarray:
+    values: list[float] = []
+    for field in ADAPTIVE_BREC_NESTED_POLYNOMIAL_FIELDS:
+        for polynomial in row[field].values():
+            values.extend(float(value) for value in polynomial.values())
+    for field in ADAPTIVE_BREC_DIRECT_POLYNOMIAL_FIELDS:
+        values.extend(float(value) for value in row[field].values())
+    for order in row["fixed_poisson"].values():
+        for polynomial in order[
+            "by_inverse_number_density"
+        ].values():
+            values.extend(float(value) for value in polynomial.values())
+    return np.asarray(values, dtype=np.float64)
+
+
+def load_adaptive_raw_row(
+    root: Path,
+    variant: str,
+    value: float,
+    index: int,
+    manifest: dict[str, Any],
+    shared: SharedInputs,
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    path = adaptive_brec_raw_path(root, variant, index)
+    record = next(
+        (
+            row
+            for row in manifest["jobs"]
+            if row["variant"] == variant
+            and int(row["index"]) == index
+        ),
+        None,
+    )
+    if (
+        record is None
+        or record["sha256"] != sha256(path)
+        or not math.isclose(
+            float(record["fNL_rec"]),
+            value,
+            rel_tol=0.0,
+            abs_tol=1.0e-15,
+        )
+    ):
+        raise ValueError(
+            f"adaptive-brec manifest mismatch for {variant}/bin {index}"
+        )
+    header, bins = post_model.read_jsonl(path)
+    if len(bins) != 1:
+        raise ValueError(f"{path} is not a one-bin raw response")
+    if not np.array_equal(
+        np.asarray(bins[0]["edges"], dtype=np.float64),
+        np.asarray(shared.edges[index], dtype=np.float64).reshape(-1),
+    ):
+        raise ValueError(f"{path} changed measurement geometry")
+    return header, bins[0]
+
+
+def write_jsonl_records(
+    path: Path,
+    header: dict[str, Any],
+    rows: list[dict[str, Any]],
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(
+        f".{path.name}.tmp-{os.getpid()}"
+    )
+    with temporary.open("w", encoding="utf-8") as stream:
+        stream.write(
+            json.dumps(
+                jsonable(header),
+                sort_keys=True,
+                separators=(",", ":"),
+            )
+            + "\n"
+        )
+        for row in rows:
+            stream.write(
+                json.dumps(
+                    jsonable(row),
+                    sort_keys=True,
+                    separators=(",", ":"),
+                )
+                + "\n"
+            )
+    temporary.replace(path)
+
+
+def run_adaptive_brec_full_aggregate(
+    root: Path,
+    shared: SharedInputs,
+) -> dict[str, Any]:
+    manifest_path = (
+        root / ADAPTIVE_BREC_FULL_MANIFEST_RELATIVE
+    )
+    manifest = json.loads(
+        manifest_path.read_text(encoding="utf-8")
+    )
+    selected = selected_indices(shared.k_pair, 0.14)
+    if (
+        manifest.get("status") != "complete"
+        or manifest.get("job_count") != 4 * selected.size
+        or manifest.get("selected_indices") != selected.tolist()
+    ):
+        raise ValueError("adaptive-brec raw manifest is incomplete")
+    variant_map = dict(ADAPTIVE_BREC_VARIANTS)
+    response_rows = []
+    maximum_coarse_fine_relative = 0.0
+    maximum_richardson_error_relative = 0.0
+    reference_header: dict[str, Any] | None = None
+    for raw_index in selected:
+        index = int(raw_index)
+        loaded = {
+            variant: load_adaptive_raw_row(
+                root,
+                variant,
+                value,
+                index,
+                manifest,
+                shared,
+            )
+            for variant, value in ADAPTIVE_BREC_VARIANTS
+        }
+        headers = [item[0] for item in loaded.values()]
+        normalized_headers = []
+        for header in headers:
+            normalized = json.loads(json.dumps(header))
+            adaptive = normalized["reconstruction"].pop(
+                "adaptive_local_png_bias"
+            )
+            normalized["source_hashes"].pop("driver_executable")
+            normalized["bin_range"] = [index, index + 1]
+            adaptive.pop("fNL_rec")
+            adaptive.pop("amplitude")
+            normalized["adaptive_static_contract"] = adaptive
+            normalized_headers.append(normalized)
+        if any(
+            header != normalized_headers[0]
+            for header in normalized_headers[1:]
+        ):
+            raise ValueError(
+                f"adaptive-brec raw headers drift in bin {index}"
+            )
+        if reference_header is None:
+            reference_header = headers[0]
+        coarse = response_row_linear_combination(
+            loaded["p1"][1],
+            loaded["m1"][1],
+            0.5,
+            -0.5,
+        )
+        fine = response_row_linear_combination(
+            loaded["p0p5"][1],
+            loaded["m0p5"][1],
+            1.0,
+            -1.0,
+        )
+        richardson = response_row_linear_combination(
+            fine,
+            coarse,
+            4.0 / 3.0,
+            -1.0 / 3.0,
+        )
+        step_error = response_row_linear_combination(
+            richardson,
+            fine,
+            1.0,
+            -1.0,
+        )
+        coarse_fine = response_row_linear_combination(
+            fine,
+            coarse,
+            1.0,
+            -1.0,
+        )
+        richardson_values = adaptive_response_coefficients(richardson)
+        error_values = adaptive_response_coefficients(step_error)
+        coarse_fine_values = adaptive_response_coefficients(
+            coarse_fine
+        )
+        denominator = max(
+            float(np.linalg.norm(richardson_values)),
+            np.finfo(np.float64).tiny,
+        )
+        coarse_fine_relative = float(
+            np.linalg.norm(coarse_fine_values)
+            / denominator
+        )
+        richardson_error_relative = float(
+            np.linalg.norm(error_values) / denominator
+        )
+        maximum_coarse_fine_relative = max(
+            maximum_coarse_fine_relative,
+            coarse_fine_relative,
+        )
+        maximum_richardson_error_relative = max(
+            maximum_richardson_error_relative,
+            richardson_error_relative,
+        )
+        richardson["adaptive_brec_response_diagnostics"] = {
+            "coarse_step": 1.0,
+            "fine_step": 0.5,
+            "coarse_fine_coefficient_l2_relative": (
+                coarse_fine_relative
+            ),
+            "richardson_minus_fine_coefficient_l2_relative": (
+                richardson_error_relative
+            ),
+            "richardson_minus_fine_coefficient_max_abs": float(
+                np.max(np.abs(error_values))
+                if error_values.size
+                else 0.0
+            ),
+        }
+        richardson["adaptive_brec_step_error"] = (
+            adaptive_response_payload(step_error)
+        )
+        response_rows.append(richardson)
+    assert reference_header is not None
+    output_header = json.loads(json.dumps(reference_header))
+    output_header["schema"] = (
+        post_model.ADAPTIVE_BREC_RESPONSE_SCHEMA
+    )
+    output_header["model"] = (
+        "fiducial-zero derivative of the full post-R1 Gaussian "
+        "halo one-loop EFT-v2 template with respect to the local-PNG "
+        "reconstruction-bias denominator"
+    )
+    output_header["production_candidate"] = False
+    output_header["reconstruction"].pop(
+        "adaptive_local_png_bias"
+    )
+    output_header["bin_range"] = [
+        int(selected.min()),
+        int(selected.max()) + 1,
+    ]
+    output_header["bin_indices"] = selected.tolist()
+    output_header["adaptive_brec_response"] = {
+        "derivative": "dG/dfNL_rec at fNL_rec=0",
+        "method": (
+            "symmetric finite difference plus Richardson extrapolation"
+        ),
+        "finite_difference_steps": [1.0, 0.5],
+        "fNL_rec_equals_fNL": True,
+        "bphi_rec": ADAPTIVE_BREC_BPHI_REC,
+        "kmin": ADAPTIVE_BREC_KMIN,
+        "finite_box_rule": (
+            "adaptive denominator response is zero below 2*pi/L"
+        ),
+        "included_sectors": [
+            "deterministic_tree",
+            "B222",
+            "B321I",
+            "B321II",
+            "B411",
+            "EFT_counterterms",
+            "density_only_stochastic",
+            "noisy_shift_stochastic",
+            "fixed_Poisson",
+        ],
+        "raw_manifest": {
+            "path": str(manifest_path),
+            "sha256": sha256(manifest_path),
+        },
+    }
+    output_header["merged_parts"] = [
+        {
+            "index": int(row["index"]),
+            "raw_sha256": {
+                variant: next(
+                    item["sha256"]
+                    for item in manifest["jobs"]
+                    if item["variant"] == variant
+                    and int(item["index"]) == int(row["index"])
+                )
+                for variant, _value in ADAPTIVE_BREC_VARIANTS
+            },
+        }
+        for row in response_rows
+    ]
+    output_path = (
+        root / ADAPTIVE_BREC_FULL_RESPONSE_RELATIVE
+    )
+    write_jsonl_records(
+        output_path,
+        output_header,
+        response_rows,
+    )
+    fitter = load_module(
+        "_adaptive_brec_full_aggregate_fitter",
+        shared.root / FITTER_RELATIVE,
+    )
+    data = fitter.DataSet.load(shared.matrix)
+    templates = post_model.load_partial_templates(
+        fitter,
+        data,
+        output_path,
+        adaptive_response=True,
+    )
+    if templates.tied.header["bin_indices"] != selected.tolist():
+        raise ValueError("adaptive response loader changed bin ordering")
+    aggregate = {
+        "schema": "marisa-b-adaptive-brec-aggregate-audit-v1",
+        "created_utc": utc_now(),
+        "status": "complete",
+        "response": {
+            "path": str(output_path),
+            "sha256": sha256(output_path),
+            "bin_count": len(response_rows),
+        },
+        "maximum_coarse_fine_coefficient_l2_relative": (
+            maximum_coarse_fine_relative
+        ),
+        "maximum_richardson_error_coefficient_l2_relative": (
+            maximum_richardson_error_relative
+        ),
+        "formal_loader": "pass",
+    }
+    aggregate_path = (
+        root
+        / ADAPTIVE_BREC_FULL_ARCHIVE_RELATIVE
+        / "aggregate_audit.json"
+    )
+    atomic_json(aggregate_path, aggregate)
+    return {
+        "status": "adaptive_brec_full_response_complete",
+        "response_path": output_path,
+        "aggregate_audit_path": aggregate_path,
+        "bin_count": len(response_rows),
+        "maximum_richardson_error_coefficient_l2_relative": (
+            maximum_richardson_error_relative
+        ),
+    }
+
+
+def evaluate_sparse_response(
+    polynomial: dict[str, float],
+    parameters: dict[str, float],
+) -> float:
+    return sum(
+        float(coefficient)
+        * post_model.PostTemplateSet._monomial_value(
+            monomial,
+            parameters,
+        )
+        for monomial, coefficient in polynomial.items()
+    )
+
+
+def evaluate_adaptive_response_payload(
+    payload: dict[str, Any],
+    module: ModuleType,
+    parameters: dict[str, float],
+    number_density: float,
+) -> dict[str, float]:
+    parameters = dict(parameters)
+    parameters.setdefault("a5_mixed", 0.0)
+    diagrams = {
+        name: evaluate_sparse_response(
+            payload["diagrams"][name],
+            parameters,
+        )
+        for name in module.DIAGRAM_NAMES
+    }
+    counterterm = sum(
+        float(parameters[name])
+        * evaluate_sparse_response(
+            payload["counterterms"][name],
+            parameters,
+        )
+        for name in module.COUNTERTERM_NAMES
+    )
+    stochastic = 0.0
+    for name in module.STOCHASTIC_B_NAMES:
+        normalization = (
+            number_density**2
+            if name in {"Ashot_residual", "a1_pure"}
+            else number_density
+        )
+        stochastic += (
+            float(parameters[name])
+            * evaluate_sparse_response(
+                payload["stochastic"][name],
+                parameters,
+            )
+            / normalization
+        )
+    stochastic += (
+        float(parameters["Bshot_residual"])
+        * float(parameters["b_nabla2_delta"])
+        * evaluate_sparse_response(
+            payload["bshot_bnabla2_cross"],
+            parameters,
+        )
+        / number_density
+    )
+    fixed_poisson = 0.0
+    for order in payload["fixed_poisson"].values():
+        for key, polynomial in order[
+            "by_inverse_number_density"
+        ].items():
+            inverse_nbar = abs(int(key.rsplit("^", 1)[1]))
+            fixed_poisson += (
+                evaluate_sparse_response(polynomial, parameters)
+                / number_density**inverse_nbar
+            )
+    loop = sum(
+        diagrams[name] for name in module.DIAGRAM_NAMES[1:]
+    )
+    total = (
+        diagrams["tree"]
+        + loop
+        + counterterm
+        + stochastic
+        + fixed_poisson
+    )
+    return {
+        "tree": diagrams["tree"],
+        "loop": loop,
+        "counterterm": counterterm,
+        "stochastic": stochastic,
+        "fixed_poisson": fixed_poisson,
+        "total": total,
+    }
+
+
+def load_adaptive_brec_full_templates(
+    shared: SharedInputs,
+) -> tuple[Any, ModuleType, float, dict[int, dict[str, Any]], dict[str, Any]]:
+    response_path = (
+        shared.output_root / ADAPTIVE_BREC_FULL_RESPONSE_RELATIVE
+    )
+    fitter = load_module(
+        "_adaptive_brec_full_fisher_fitter",
+        shared.root / FITTER_RELATIVE,
+    )
+    data = fitter.DataSet.load(shared.matrix)
+    _contract, _frozen_prior, number_density = fitter.load_prior(
+        shared.root / CONTRACT_EFT_RELATIVE
+    )
+    templates = post_model.load_partial_templates(
+        fitter,
+        data,
+        response_path,
+        adaptive_response=True,
+    )
+    header, rows = post_model.read_jsonl(response_path)
+    by_index = {int(row["index"]): row for row in rows}
+    selected = selected_indices(shared.k_pair, 0.14)
+    if (
+        sorted(by_index) != selected.tolist()
+        or not math.isfinite(number_density)
+        or number_density <= 0.0
+    ):
+        raise ValueError(
+            "adaptive-brec response cache is incomplete or has invalid nbar"
+        )
+    return (
+        templates,
+        fitter,
+        float(number_density),
+        by_index,
+        {
+            "path": str(response_path),
+            "sha256": sha256(response_path),
+            "header": header,
+        },
+    )
+
+
+def adaptive_step_error_components(
+    rows: dict[int, dict[str, Any]],
+    module: ModuleType,
+    parameters: dict[str, float],
+    number_density: float,
+) -> dict[str, np.ndarray]:
+    names = (
+        "tree",
+        "loop",
+        "counterterm",
+        "stochastic",
+        "fixed_poisson",
+        "total",
+    )
+    result = {
+        name: np.zeros(120, dtype=np.float64)
+        for name in names
+    }
+    for index, row in rows.items():
+        components = evaluate_adaptive_response_payload(
+            row["adaptive_brec_step_error"],
+            module,
+            parameters,
+            number_density,
+        )
+        for name in names:
+            result[name][index] = components[name]
+    return result
+
+
+def plot_adaptive_brec_full_fisher(
+    path: Path,
+    rows: list[dict[str, Any]],
+) -> None:
+    cuts = np.asarray(
+        [row["kmax_h_mpc"] for row in rows],
+        dtype=np.float64,
+    )
+    curves = (
+        ("pre", "pre reconstruction", "black", "--", "o"),
+        (
+            "post_original",
+            r"post, fixed $b_{\rm rec}$",
+            "#b2182b",
+            "-",
+            "s",
+        ),
+        (
+            "post_tree_adaptive",
+            "post, tree-only adaptive",
+            "#67a9cf",
+            "--",
+            "D",
+        ),
+        (
+            "post_full_adaptive",
+            "post, full adaptive response",
+            "#2166ac",
+            "-",
+            "D",
+        ),
+        (
+            "post_shift_removed_ablation",
+            "post, entire shift response removed (ablation)",
+            "#777777",
+            ":",
+            "^",
+        ),
+    )
+    figure, axes = plt.subplots(
+        1, 2, figsize=(11.6, 4.5), sharex=True
+    )
+    for axis, metric, ylabel in (
+        (
+            axes[0],
+            "fixed_nuisance_sigma_fNL",
+            r"fixed-nuisance Fisher $\sigma(f_{\rm NL})$",
+        ),
+        (
+            axes[1],
+            "all_nuisance_sigma_fNL",
+            r"all-nuisance Fisher $\sigma(f_{\rm NL})$",
+        ),
+    ):
+        for key, label, color, linestyle, marker in curves:
+            axis.plot(
+                cuts,
+                [row[key][metric] for row in rows],
+                color=color,
+                linestyle=linestyle,
+                marker=marker,
+                linewidth=1.8,
+                markersize=5.0,
+                label=label,
+            )
+        axis.set(
+            xlabel=r"$k_{\max}\,[h\,{\rm Mpc}^{-1}]$",
+            ylabel=ylabel,
+        )
+        axis.grid(alpha=0.18)
+    axes[0].legend(frameon=False, fontsize=8.0)
+    figure.suptitle(
+        "Adaptive reconstruction-bias response through all Gaussian "
+        "post-R1 sectors\nsingle-realization covariance from 500 boxes",
+        fontsize=12.0,
+    )
+    figure.tight_layout(rect=(0.0, 0.0, 1.0, 0.94))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    figure.savefig(
+        path,
+        metadata={
+            "Title": "Full adaptive reconstruction-bias Fisher forecast",
+            "Author": "MARISA-B adaptive-brec experiment",
+            "Subject": (
+                "Single-realization covariance; full Gaussian post-R1 "
+                "adaptive denominator response"
+            ),
+        },
+    )
+    plt.close(figure)
+
+
+def plot_adaptive_brec_response_geometry(
+    path: Path,
+    rows: list[dict[str, Any]],
+) -> None:
+    sectors = (
+        "tree",
+        "loop",
+        "counterterm",
+        "stochastic",
+        "fixed_poisson",
+        "total",
+    )
+    labels = (
+        "tree",
+        "1-loop",
+        "EFT",
+        "stochastic",
+        "fixed Poisson",
+        "sum",
+    )
+    colors = (
+        "#4393c3",
+        "#d6604d",
+        "#9970ab",
+        "#1b7837",
+        "#fdb863",
+        "#2166ac",
+    )
+    last = rows[-1]["response_geometry"]
+    positions = np.arange(len(sectors))
+    figure, axes = plt.subplots(1, 3, figsize=(13.0, 4.3))
+    axes[0].bar(
+        positions,
+        [
+            last["sectors"][sector]["whitened_norm"]
+            for sector in sectors
+        ],
+        color=colors,
+    )
+    axes[0].set(
+        ylabel=r"$\|C^{-1/2}\Delta R\|$",
+        title=r"added response at $k_{\max}=0.14$",
+    )
+    axes[1].bar(
+        positions,
+        [
+            last["sectors"][sector][
+                "cosine_with_original_post_response"
+            ]
+            for sector in sectors
+        ],
+        color=colors,
+    )
+    axes[1].axhline(0.0, color="black", linewidth=0.7)
+    axes[1].set(
+        ylabel="whitened cosine",
+        title="alignment with old post response",
+        ylim=(-1.05, 1.05),
+    )
+    axes[2].bar(
+        positions,
+        [
+            last["sectors"][sector][
+                "nuisance_projected_information_norm"
+            ]
+            for sector in sectors
+        ],
+        color=colors,
+    )
+    axes[2].set(
+        ylabel=r"$1/\sigma_{\rm marg}(f_{\rm NL})$",
+        title="sector after nuisance projection",
+    )
+    for axis in axes:
+        axis.set_xticks(positions)
+        axis.set_xticklabels(labels, rotation=35, ha="right")
+        axis.grid(axis="y", alpha=0.18)
+    figure.suptitle(
+        "Geometry of the adaptive denominator correction "
+        "(single-realization metric)",
+        fontsize=12.0,
+    )
+    figure.tight_layout(rect=(0.0, 0.0, 1.0, 0.94))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    figure.savefig(
+        path,
+        metadata={
+            "Title": "Adaptive reconstruction-bias response geometry",
+            "Author": "MARISA-B adaptive-brec experiment",
+            "Subject": (
+                "Whitened sector norms, cosines, and nuisance projection"
+            ),
+        },
+    )
+    plt.close(figure)
+
+
+def adaptive_brec_full_report_text(
+    summary: dict[str, Any],
+) -> str:
+    headline = summary["headline"]
+    direction = (
+        "improves"
+        if headline["full_vs_tree_fractional_change"] < 0.0
+        else "weakens"
+    )
+    lines = [
+        "# Full adaptive reconstruction-bias response test",
+        "",
+        "## Headline",
+        "",
+        (
+            "At `kmax=0.14 h/Mpc`, propagating the adaptive "
+            "reconstruction denominator through every current Gaussian "
+            "post-R1 sector changes the all-nuisance Fisher width from "
+            f"`{headline['tree_adaptive_marginal']:.3f}` for the "
+            "tree-only adaptive approximation to "
+            f"`{headline['full_adaptive_marginal']:.3f}`."
+        ),
+        (
+            f"The full response therefore {direction} the tree-only "
+            "forecast by "
+            f"`{100.0*abs(headline['full_vs_tree_fractional_change']):.2f}%`."
+        ),
+        (
+            "The old fixed-b_rec post width is "
+            f"`{headline['post_original_marginal']:.3f}` and the "
+            "pre-reconstruction width is "
+            f"`{headline['pre_marginal']:.3f}`."
+        ),
+        "",
+        "## kmax scan",
+        "",
+        (
+            "| kmax | pre | post fixed-brec | tree adaptive | "
+            "full adaptive | shift-removed ablation |"
+        ),
+        "|---:|---:|---:|---:|---:|---:|",
+    ]
+    for row in summary["kmax_scan"]:
+        lines.append(
+            f"| {row['kmax_h_mpc']:.2f} "
+            f"| {row['pre']['all_nuisance_sigma_fNL']:.3f} "
+            f"| {row['post_original']['all_nuisance_sigma_fNL']:.3f} "
+            f"| {row['post_tree_adaptive']['all_nuisance_sigma_fNL']:.3f} "
+            f"| {row['post_full_adaptive']['all_nuisance_sigma_fNL']:.3f} "
+            f"| {row['post_shift_removed_ablation']['all_nuisance_sigma_fNL']:.3f} |"
+        )
+    lines.extend(
+        [
+            "",
+            "## Included derivative",
+            "",
+            (
+                "The added derivative is `dG/dfNL_rec` at "
+                "`fNL_rec=0`, with `fNL_rec=fNL` and "
+                "`b_rec(q)=b_rec,1+fNL_rec*bphi_rec/M(q)`."
+            ),
+            (
+                "It includes deterministic tree, B222, B321I, B321II, "
+                "B411, all current reconstructed EFT counterterms, "
+                "density/noisy-shift stochastic terms, and the "
+                "estimator-matched fixed-Poisson term."
+            ),
+            (
+                "The fixed-b_rec PNG response itself is unchanged. "
+                "Adaptive derivatives internal to an explicitly linear "
+                "PNG term or an fNL-squared term vanish from the first "
+                "derivative at the fiducial fNL=0 point."
+            ),
+            "",
+            "## Statistical and numerical contract",
+            "",
+            (
+                "All error metrics use the covariance of one "
+                "`(Gpc/h)^3` realization estimated from 500 fiducial "
+                "boxes, never the covariance of the mean, with the "
+                "same Hartlap correction and power-spectrum b1 prior."
+            ),
+            (
+                "The response uses symmetric steps 1 and 0.5 with "
+                "Richardson extrapolation; the response-geometry PDF "
+                "reports the size and nuisance projection of every "
+                "added sector."
+            ),
+            "",
+            "## Scope",
+            "",
+            (
+                "This is an isolated model-level Fisher experiment. "
+                "It does not claim that parameter-dependent catalog "
+                "reconstruction, its covariance derivative, or a "
+                "finite-fNL likelihood has been validated."
+            ),
+            "",
+            "## Outputs",
+            "",
+            "- `adaptive_brec_full_fisher_vs_kmax.pdf`",
+            "- `adaptive_brec_response_geometry.pdf`",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def run_adaptive_brec_full_fisher(
+    root: Path,
+    shared: SharedInputs,
+) -> dict[str, Any]:
+    (
+        response_templates,
+        fitter,
+        number_density,
+        response_rows,
+        response_provenance,
+    ) = load_adaptive_brec_full_templates(shared)
+    tree_basis, tree_basis_provenance = (
+        load_adaptive_brec_tree_basis(
+            root / ADAPTIVE_BREC_BASIS_RELATIVE,
+            shared,
+        )
+    )
+    calibration = b1_calibration_contract(shared.data_root)
+    b1_mean = float(calibration["primary"]["b1"])
+    b1_sigma = float(calibration["primary"]["b1_sigma"])
+    scan = []
+    minimum_eigenvalue = math.inf
+    regression_errors: list[float] = []
+    previous = json.loads(
+        (root / ADAPTIVE_BREC_SUMMARY_RELATIVE).read_text(
+            encoding="utf-8"
+        )
+    )
+    for kmax, previous_row in zip(CUTS, previous["kmax_scan"]):
+        contexts = {
+            reconstruction: context_with_b1_prior(
+                build_context(
+                    shared,
+                    reconstruction,
+                    "coevolution",
+                    float(kmax),
+                ),
+                mean=b1_mean,
+                sigma=b1_sigma,
+            )
+            for reconstruction in RECONSTRUCTIONS
+        }
+        base_fishers: dict[str, dict[str, Any]] = {}
+        jacobians: dict[str, np.ndarray] = {}
+        conditionals: dict[str, ConditionalResult] = {}
+        for reconstruction, context in contexts.items():
+            _map, conditional = gaussian_nuisance_map(context)
+            jacobian, _check = model_jacobian_at_zero(
+                context,
+                conditional.nuisance,
+            )
+            fisher_result, _matrix = fisher_from_jacobian(
+                context, context, jacobian
+            )
+            base_fishers[reconstruction] = fisher_result
+            jacobians[reconstruction] = jacobian
+            conditionals[reconstruction] = conditional
+            minimum_eigenvalue = min(
+                minimum_eigenvalue,
+                float(
+                    fisher_result[
+                        "scaled_fisher_minimum_eigenvalue"
+                    ]
+                ),
+            )
+        post = contexts["post"]
+        _prediction, parameters, model_components = (
+            post.evaluate_model(
+                0.0,
+                conditionals["post"].nuisance,
+            )
+        )
+        full = response_templates.components(
+            parameters,
+            number_density,
+            DEFAULT_STOCHASTIC_MODE,
+        )
+        error = adaptive_step_error_components(
+            response_rows,
+            fitter,
+            parameters,
+            number_density,
+        )
+        indices = post.indices
+        b1_map = float(parameters["b1"])
+        analytic_tree = (
+            b1_map**4
+            * ADAPTIVE_BREC_BPHI_REC
+            / post_model.B_REC_H
+            * tree_basis[indices]
+        )
+        finite_tree = np.asarray(
+            full["tree"], dtype=np.float64
+        )[indices]
+        full_correction = np.asarray(
+            full["total"], dtype=np.float64
+        )[indices]
+        step_error = np.asarray(
+            error["total"], dtype=np.float64
+        )[indices]
+        tree_jacobian = jacobians["post"].copy()
+        tree_jacobian[:, 0] += analytic_tree
+        full_jacobian = jacobians["post"].copy()
+        full_jacobian[:, 0] += full_correction
+        full_error_jacobian = full_jacobian.copy()
+        full_error_jacobian[:, 0] += step_error
+        shift_response = np.asarray(
+            model_components["halo_reconstruction"],
+            dtype=np.float64,
+        )[indices]
+        ablation_jacobian = jacobians["post"].copy()
+        ablation_jacobian[:, 0] -= shift_response
+        tree_fisher, _ = fisher_from_jacobian(
+            post, post, tree_jacobian
+        )
+        full_fisher, _ = fisher_from_jacobian(
+            post, post, full_jacobian
+        )
+        error_fisher, _ = fisher_from_jacobian(
+            post, post, full_error_jacobian
+        )
+        ablation_fisher, _ = fisher_from_jacobian(
+            post, post, ablation_jacobian
+        )
+        for result in (
+            tree_fisher,
+            full_fisher,
+            error_fisher,
+            ablation_fisher,
+        ):
+            minimum_eigenvalue = min(
+                minimum_eigenvalue,
+                float(
+                    result["scaled_fisher_minimum_eigenvalue"]
+                ),
+            )
+        old_white = solve_triangular(
+            post.chol_fit,
+            jacobians["post"][:, 0],
+            lower=True,
+        )
+        tree_white = solve_triangular(
+            post.chol_fit, finite_tree, lower=True
+        )
+        analytic_tree_white = solve_triangular(
+            post.chol_fit, analytic_tree, lower=True
+        )
+        full_white = solve_triangular(
+            post.chol_fit, full_correction, lower=True
+        )
+        error_white = solve_triangular(
+            post.chol_fit, step_error, lower=True
+        )
+        sector_geometry = {}
+        for sector in (
+            "tree",
+            "loop",
+            "counterterm",
+            "stochastic",
+            "fixed_poisson",
+            "total",
+        ):
+            vector = np.asarray(
+                full[sector], dtype=np.float64
+            )[indices]
+            white = solve_triangular(
+                post.chol_fit, vector, lower=True
+            )
+            sector_jacobian = jacobians["post"].copy()
+            sector_jacobian[:, 0] = vector
+            sector_fisher, _ = fisher_from_jacobian(
+                post, post, sector_jacobian
+            )
+            sector_geometry[sector] = {
+                "whitened_norm": float(np.linalg.norm(white)),
+                "cosine_with_original_post_response": (
+                    vector_cosine(white, old_white)
+                ),
+                "cosine_with_tree_adaptive_response": (
+                    vector_cosine(white, tree_white)
+                ),
+                "nuisance_projected_information_norm": (
+                    1.0
+                    / float(
+                        sector_fisher[
+                            "all_nuisance_sigma_fNL"
+                        ]
+                    )
+                ),
+            }
+        tree_closure = float(
+            np.linalg.norm(tree_white - analytic_tree_white)
+            / max(np.linalg.norm(analytic_tree_white), 1.0e-300)
+        )
+        step_error_ratio = float(
+            np.linalg.norm(error_white)
+            / max(np.linalg.norm(full_white), 1.0e-300)
+        )
+        row = {
+            "kmax_h_mpc": float(kmax),
+            "n_data": int(indices.size),
+            "gaussian_map_b1": b1_map,
+            "pre": compact_fisher_widths(
+                base_fishers["pre"]
+            ),
+            "post_original": compact_fisher_widths(
+                base_fishers["post"]
+            ),
+            "post_tree_adaptive": compact_fisher_widths(
+                tree_fisher
+            ),
+            "post_full_adaptive": compact_fisher_widths(
+                full_fisher
+            ),
+            "post_full_plus_step_error": compact_fisher_widths(
+                error_fisher
+            ),
+            "post_shift_removed_ablation": (
+                compact_fisher_widths(ablation_fisher)
+            ),
+            "response_geometry": {
+                "sectors": sector_geometry,
+                "finite_difference_tree_vs_analytic_relative": (
+                    tree_closure
+                ),
+                "richardson_step_error_over_full_correction": (
+                    step_error_ratio
+                ),
+                "full_correction_cosine_with_original_post": (
+                    vector_cosine(full_white, old_white)
+                ),
+                "full_correction_cosine_with_tree": (
+                    vector_cosine(full_white, tree_white)
+                ),
+            },
+            "covariance_contract": {
+                reconstruction: {
+                    "mock_count": int(
+                        context.covariance_mock_count
+                    ),
+                    "is_single_realization_sample_covariance": bool(
+                        np.array_equal(
+                            context.covariance_single,
+                            np.cov(
+                                context.samples,
+                                rowvar=False,
+                                ddof=1,
+                            ),
+                        )
+                    ),
+                    "divided_by_500": False,
+                }
+                for reconstruction, context in contexts.items()
+            },
+        }
+        scan.append(row)
+        for current_key, previous_key in (
+            ("pre", "pre"),
+            ("post_original", "post_original"),
+            ("post_tree_adaptive", "post_adaptive_brec"),
+            (
+                "post_shift_removed_ablation",
+                "post_shift_removed_upper_limit",
+            ),
+        ):
+            for metric in (
+                "fixed_nuisance_sigma_fNL",
+                "all_nuisance_sigma_fNL",
+            ):
+                regression_errors.append(
+                    abs(
+                        float(row[current_key][metric])
+                        - float(previous_row[previous_key][metric])
+                    )
+                )
+    prior_sensitivity = []
+    for scale in (0.5, 1.0, 2.0):
+        context = context_with_b1_prior(
+            build_context(
+                shared, "post", "coevolution", 0.14
+            ),
+            mean=b1_mean,
+            sigma=scale * b1_sigma,
+        )
+        _map, conditional = gaussian_nuisance_map(context)
+        jacobian, _check = model_jacobian_at_zero(
+            context, conditional.nuisance
+        )
+        _prediction, parameters, _components = (
+            context.evaluate_model(
+                0.0, conditional.nuisance
+            )
+        )
+        correction = np.asarray(
+            response_templates.components(
+                parameters,
+                number_density,
+                DEFAULT_STOCHASTIC_MODE,
+            )["total"],
+            dtype=np.float64,
+        )[context.indices]
+        old_fisher, _ = fisher_from_jacobian(
+            context, context, jacobian
+        )
+        jacobian[:, 0] += correction
+        full_fisher, _ = fisher_from_jacobian(
+            context, context, jacobian
+        )
+        prior_sensitivity.append(
+            {
+                "b1_prior_sigma": scale * b1_sigma,
+                "scale_relative_to_primary": scale,
+                "gaussian_map_b1": float(parameters["b1"]),
+                "post_original_marginal_sigma_fNL": float(
+                    old_fisher["all_nuisance_sigma_fNL"]
+                ),
+                "post_full_adaptive_marginal_sigma_fNL": float(
+                    full_fisher["all_nuisance_sigma_fNL"]
+                ),
+            }
+        )
+    last = scan[-1]
+    tree_width = float(
+        last["post_tree_adaptive"]["all_nuisance_sigma_fNL"]
+    )
+    full_width = float(
+        last["post_full_adaptive"]["all_nuisance_sigma_fNL"]
+    )
+    maximum_tree_closure = max(
+        row["response_geometry"][
+            "finite_difference_tree_vs_analytic_relative"
+        ]
+        for row in scan
+    )
+    maximum_step_error_ratio = max(
+        row["response_geometry"][
+            "richardson_step_error_over_full_correction"
+        ]
+        for row in scan
+    )
+    maximum_regression_error = max(regression_errors)
+    checks = {
+        "response_has_exact_27_selected_bins": bool(
+            len(response_rows) == 27
+        ),
+        "all_covariances_are_single_realization_500_box": bool(
+            all(
+                contract["mock_count"] == 500
+                and contract[
+                    "is_single_realization_sample_covariance"
+                ]
+                and contract["divided_by_500"] is False
+                for row in scan
+                for contract in row[
+                    "covariance_contract"
+                ].values()
+            )
+        ),
+        "previous_fisher_zero_regression_below_1e10": bool(
+            maximum_regression_error < 1.0e-10
+        ),
+        "tree_finite_difference_closes_analytic_below_1e_minus_4": bool(
+            maximum_tree_closure < 1.0e-4
+        ),
+        "richardson_step_error_below_one_percent": bool(
+            maximum_step_error_ratio < 0.01
+        ),
+        "all_fisher_matrices_positive_definite": bool(
+            minimum_eigenvalue > 0.0
+        ),
+        "all_widths_finite_positive": bool(
+            all(
+                math.isfinite(float(row[key][metric]))
+                and float(row[key][metric]) > 0.0
+                for row in scan
+                for key in (
+                    "pre",
+                    "post_original",
+                    "post_tree_adaptive",
+                    "post_full_adaptive",
+                    "post_shift_removed_ablation",
+                )
+                for metric in (
+                    "fixed_nuisance_sigma_fNL",
+                    "all_nuisance_sigma_fNL",
+                )
+            )
+        ),
+    }
+    if not all(checks.values()):
+        failed = [
+            name for name, passed in checks.items() if not passed
+        ]
+        raise RuntimeError(
+            f"full adaptive-brec Fisher checks failed: {failed}"
+        )
+    figure_root = (
+        root / ADAPTIVE_BREC_FULL_FIGURE_RELATIVE
+    )
+    fisher_figure = (
+        figure_root / "adaptive_brec_full_fisher_vs_kmax.pdf"
+    )
+    geometry_figure = (
+        figure_root / "adaptive_brec_response_geometry.pdf"
+    )
+    plot_adaptive_brec_full_fisher(fisher_figure, scan)
+    plot_adaptive_brec_response_geometry(
+        geometry_figure, scan
+    )
+    summary = {
+        "schema": (
+            "marisa-b-post-halo-local-png-adaptive-brec-full-fisher-v1"
+        ),
+        "created_utc": utc_now(),
+        "status": "full_adaptive_brec_fisher_complete",
+        "scope": {
+            "sample": (
+                "Quijote z=1 Mmin=1e13 fNL=0 real-space halos"
+            ),
+            "tier": "coevolution",
+            "cuts_h_mpc": CUTS,
+            "covariance": (
+                "single-realization sample covariance from 500 "
+                "fiducial boxes with Hartlap precision correction"
+            ),
+            "adaptive_response": (
+                "dG/dfNL_rec at zero through deterministic one-loop, "
+                "EFT, stochastic, and fixed-Poisson sectors"
+            ),
+        },
+        "headline": {
+            "kmax_h_mpc": 0.14,
+            "pre_marginal": float(
+                last["pre"]["all_nuisance_sigma_fNL"]
+            ),
+            "post_original_marginal": float(
+                last["post_original"][
+                    "all_nuisance_sigma_fNL"
+                ]
+            ),
+            "tree_adaptive_marginal": tree_width,
+            "full_adaptive_marginal": full_width,
+            "full_vs_tree_fractional_change": (
+                full_width / tree_width - 1.0
+            ),
+            "full_vs_original_fractional_change": (
+                full_width
+                / float(
+                    last["post_original"][
+                        "all_nuisance_sigma_fNL"
+                    ]
+                )
+                - 1.0
+            ),
+            "full_post_over_pre": (
+                full_width
+                / float(
+                    last["pre"]["all_nuisance_sigma_fNL"]
+                )
+            ),
+            "direction_blind_outcome": (
+                "improved"
+                if full_width < tree_width
+                else "weakened"
+            ),
+        },
+        "kmax_scan": scan,
+        "b1_prior_sensitivity_at_kmax_0p14": prior_sensitivity,
+        "checks": checks,
+        "maximum_previous_fisher_regression_error": (
+            maximum_regression_error
+        ),
+        "maximum_tree_response_relative_closure": (
+            maximum_tree_closure
+        ),
+        "maximum_step_error_over_full_correction": (
+            maximum_step_error_ratio
+        ),
+        "minimum_scaled_fisher_eigenvalue": minimum_eigenvalue,
+        "provenance": {
+            "response_templates": response_provenance,
+            "tree_basis": tree_basis_provenance,
+            "matrix": {
+                "path": str(shared.matrix),
+                "sha256": shared.matrix_hash,
+            },
+            "previous_tree_fisher": {
+                "path": str(
+                    root / ADAPTIVE_BREC_SUMMARY_RELATIVE
+                ),
+                "sha256": sha256(
+                    root / ADAPTIVE_BREC_SUMMARY_RELATIVE
+                ),
+            },
+            "runner": {
+                "path": str(Path(__file__).resolve()),
+                "sha256_before_summary_write": sha256(
+                    Path(__file__).resolve()
+                ),
+            },
+        },
+        "limitations": [
+            (
+                "model-level response only; no catalog-level "
+                "parameter-dependent reconstruction validation"
+            ),
+            "fixed covariance; covariance derivative is omitted",
+            (
+                "local Fisher derivative at fNL=0, not a finite-fNL "
+                "likelihood validation"
+            ),
+        ],
+        "outputs": {
+            "fisher_figure": {
+                "path": str(fisher_figure),
+                "sha256": sha256(fisher_figure),
+            },
+            "response_geometry_figure": {
+                "path": str(geometry_figure),
+                "sha256": sha256(geometry_figure),
+            },
+        },
+    }
+    report_path = (
+        root / ADAPTIVE_BREC_FULL_REPORT_RELATIVE
+    )
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(
+        adaptive_brec_full_report_text(summary),
+        encoding="utf-8",
+    )
+    summary["outputs"]["report"] = {
+        "path": str(report_path),
+        "sha256": sha256(report_path),
+    }
+    summary_path = (
+        root / ADAPTIVE_BREC_FULL_SUMMARY_RELATIVE
+    )
+    atomic_json(summary_path, summary)
+    return {
+        "status": summary["status"],
+        "summary_path": summary_path,
+        "report_path": report_path,
+        "figure_paths": [fisher_figure, geometry_figure],
+        "headline": summary["headline"],
+        "checks": checks,
+    }
+
+
+def build_adaptive_brec_full_mcmc_context(
+    shared: SharedInputs,
+    *,
+    model: str,
+    kmax: float,
+    response_bundle: (
+        tuple[
+            Any,
+            ModuleType,
+            float,
+            dict[int, dict[str, Any]],
+            dict[str, Any],
+        ]
+        | None
+    ) = None,
+) -> CollapsedContext:
+    if model not in ADAPTIVE_BREC_MCMC_MODELS:
+        raise ValueError(model)
+    calibration = b1_calibration_contract(shared.data_root)
+    b1_mean = float(calibration["primary"]["b1"])
+    b1_sigma = float(calibration["primary"]["b1_sigma"])
+    reconstruction = "pre" if model == "pre" else "post"
+    base = context_with_b1_prior(
+        build_context(
+            shared,
+            reconstruction,
+            "coevolution",
+            float(kmax),
+        ),
+        mean=b1_mean,
+        sigma=b1_sigma,
+    )
+    labels = {
+        "pre": "pre_psprior",
+        "post_fixed_brec": "post_fixed_brec_psprior",
+        "post_adaptive_brec_local": "post_adaptive_brec_local_psprior",
+    }
+    prior_contract = {
+        "source": calibration["source"],
+        "mean": b1_mean,
+        "sigma": b1_sigma,
+    }
+    prior_hash = hashlib.sha256(
+        json.dumps(
+            prior_contract,
+            sort_keys=True,
+            separators=(",", ":"),
+        ).encode("utf-8")
+    ).hexdigest()
+    input_hashes = dict(base.input_hashes)
+    input_hashes["power_spectrum_b1_prior_contract"] = prior_hash
+    if model != "post_adaptive_brec_local":
+        return replace(
+            base,
+            reconstruction=labels[model],
+            input_hashes=input_hashes,
+        )
+    if response_bundle is None:
+        response_bundle = load_adaptive_brec_full_templates(shared)
+    (
+        response_templates,
+        _fitter,
+        number_density,
+        _response_rows,
+        response_provenance,
+    ) = response_bundle
+    fixed_evaluate = base.evaluate_model
+
+    def evaluate(
+        fnl: float,
+        nuisance: np.ndarray,
+    ) -> tuple[np.ndarray, dict[str, float], dict[str, np.ndarray]]:
+        prediction, parameters, components = fixed_evaluate(fnl, nuisance)
+        adaptive = response_templates.components(
+            parameters,
+            number_density,
+            DEFAULT_STOCHASTIC_MODE,
+        )
+        adaptive_total = np.asarray(
+            adaptive["total"],
+            dtype=np.float64,
+        )[base.indices]
+        output_components = dict(components)
+        output_components["adaptive_gaussian_tree"] = np.asarray(
+            adaptive["tree"],
+            dtype=np.float64,
+        )
+        output_components["adaptive_gaussian_loop"] = np.asarray(
+            adaptive["loop"],
+            dtype=np.float64,
+        )
+        output_components["adaptive_gaussian_counterterm"] = np.asarray(
+            adaptive["counterterm"],
+            dtype=np.float64,
+        )
+        output_components["adaptive_gaussian_stochastic"] = np.asarray(
+            adaptive["stochastic"],
+            dtype=np.float64,
+        )
+        output_components["adaptive_gaussian_fixed_poisson"] = np.asarray(
+            adaptive["fixed_poisson"],
+            dtype=np.float64,
+        )
+        output_components["adaptive_gaussian_total"] = np.asarray(
+            adaptive["total"],
+            dtype=np.float64,
+        )
+        return (
+            np.asarray(prediction, dtype=np.float64)
+            + float(fnl) * adaptive_total,
+            parameters,
+            output_components,
+        )
+
+    local_contract = {
+        "schema": "marisa-b-adaptive-brec-local-response-likelihood-v1",
+        "formula": "B_fixed(f,theta)+f*dG(theta)/dfNL_rec|0",
+        "fiducial_fNL": 0.0,
+        "finite_fNL_adaptive_png_derivatives_included": False,
+    }
+    input_hashes["adaptive_brec_response"] = str(
+        response_provenance["sha256"]
+    )
+    input_hashes["local_response_likelihood_contract"] = hashlib.sha256(
+        json.dumps(
+            local_contract,
+            sort_keys=True,
+            separators=(",", ":"),
+        ).encode("utf-8")
+    ).hexdigest()
+    return replace(
+        base,
+        reconstruction=labels[model],
+        evaluate_model=evaluate,
+        input_hashes=input_hashes,
+    )
+
+
+def adaptive_brec_mcmc_contexts(
+    shared: SharedInputs,
+) -> dict[tuple[str, float], CollapsedContext]:
+    response_bundle = load_adaptive_brec_full_templates(shared)
+    return {
+        (model, float(kmax)): build_adaptive_brec_full_mcmc_context(
+            shared,
+            model=model,
+            kmax=float(kmax),
+            response_bundle=response_bundle,
+        )
+        for model in ADAPTIVE_BREC_MCMC_MODELS
+        for kmax in CUTS
+    }
+
+
+def adaptive_brec_mcmc_chain_contract(
+    contexts: dict[tuple[str, float], CollapsedContext],
+    *,
+    ensembles: int,
+    walkers: int,
+    seed: int,
+) -> dict[str, Any]:
+    return {
+        "schema": "marisa-b-adaptive-brec-full-mcmc-chain-contract-v1",
+        "likelihood": (
+            "Hartlap-Gaussian with exact conditional marginalization of "
+            "the registered linear nuisance block"
+        ),
+        "target": "Quijote halo fNL=0 mean",
+        "covariance": (
+            "single-realization sample covariance from 500 fiducial boxes; "
+            "never divided by 500"
+        ),
+        "fNL_hard_flat_prior": FNL_BOUNDS,
+        "b1_prior": {
+            "mean": float(
+                next(iter(contexts.values())).prior.mean[
+                    next(iter(contexts.values())).names.index("b1")
+                ]
+            ),
+            "sigma": float(
+                next(iter(contexts.values())).prior.sigma[
+                    next(iter(contexts.values())).names.index("b1")
+                ]
+            ),
+            "source": "frozen power-spectrum calibration",
+        },
+        "sampler": {
+            "independent_ensembles": int(ensembles),
+            "walkers_per_ensemble": int(walkers),
+            "seed": int(seed),
+            "moves": "0.8*StretchMove(a=2)+0.2*DEMove",
+        },
+        "contexts": {
+            f"{model}/{kmax:.2f}": context.metadata()
+            for (model, kmax), context in contexts.items()
+        },
+    }
+
+
+def register_adaptive_brec_mcmc_chain_contract(
+    chain_path: Path,
+    contract: dict[str, Any],
+) -> str:
+    encoded = json.dumps(
+        jsonable(contract),
+        sort_keys=True,
+        separators=(",", ":"),
+    )
+    digest = hashlib.sha256(encoded.encode("utf-8")).hexdigest()
+    chain_path.parent.mkdir(parents=True, exist_ok=True)
+    dataset_name = "__adaptive_brec_full_mcmc_contract__"
+    with h5py.File(chain_path, "a") as chain_file:
+        if dataset_name in chain_file:
+            stored = chain_file[dataset_name][()]
+            if isinstance(stored, bytes):
+                stored = stored.decode("utf-8")
+            if str(stored) != encoded:
+                raise ValueError(
+                    "adaptive-brec MCMC checkpoint contract mismatch"
+                )
+        else:
+            dtype = h5py.string_dtype(encoding="utf-8")
+            chain_file.create_dataset(
+                dataset_name,
+                data=encoded,
+                dtype=dtype,
+            )
+        chain_file.attrs[
+            "adaptive_brec_full_mcmc_contract_sha256"
+        ] = digest
+    return digest
+
+
+def run_adaptive_brec_full_mcmc(
+    root: Path,
+    shared: SharedInputs,
+    *,
+    ensembles: int,
+    walkers: int,
+    steps: int,
+    workers: int,
+    seed: int,
+) -> dict[str, Any]:
+    if ensembles != 4:
+        raise ValueError(
+            "the registered adaptive-brec MCMC requires four ensembles"
+        )
+    contexts = adaptive_brec_mcmc_contexts(shared)
+    chain_path = root / ADAPTIVE_BREC_FULL_MCMC_CHAINS_RELATIVE
+    contract = adaptive_brec_mcmc_chain_contract(
+        contexts,
+        ensembles=ensembles,
+        walkers=walkers,
+        seed=seed,
+    )
+    contract_hash = register_adaptive_brec_mcmc_chain_contract(
+        chain_path,
+        contract,
+    )
+    validations = {}
+    runs = {}
+    for model in ADAPTIVE_BREC_MCMC_MODELS:
+        for kmax in CUTS:
+            context = contexts[(model, float(kmax))]
+            validation = validate_context(
+                context,
+                np.random.default_rng(
+                    seed
+                    + 10000 * ADAPTIVE_BREC_MCMC_MODELS.index(model)
+                    + int(round(1000.0 * kmax))
+                ),
+                random_points=2,
+            )
+            validations[f"{model}/{kmax:.2f}"] = validation
+            if not validation["pass"]:
+                raise RuntimeError(
+                    f"adaptive-brec MCMC validation failed for "
+                    f"{model}, kmax={kmax:.2f}"
+                )
+            runs[f"{model}/{kmax:.2f}"] = run_mcmc_context(
+                context,
+                chain_path=chain_path,
+                ensembles=ensembles,
+                walkers=walkers,
+                steps=steps,
+                workers=workers,
+                seed=(
+                    seed
+                    + 100000 * ADAPTIVE_BREC_MCMC_MODELS.index(model)
+                    + int(round(1000.0 * kmax))
+                ),
+            )
+    return {
+        "status": "adaptive_brec_full_mcmc_checkpoint_complete",
+        "chain_path": chain_path,
+        "contract_sha256": contract_hash,
+        "requested_steps": int(steps),
+        "validations": validations,
+        "runs": runs,
+    }
+
+
+def adaptive_brec_locality_audit(
+    context: CollapsedContext,
+    *,
+    chain_path: Path,
+    diagnosis: dict[str, Any],
+) -> dict[str, Any]:
+    retained, flat = retained_chain_samples(
+        context,
+        chain_path=chain_path,
+        diagnosis=diagnosis,
+    )
+    fnl = np.asarray(flat[:, 0], dtype=np.float64)
+    standard_deviation = float(np.std(fnl, ddof=1))
+    full_quantiles = np.quantile(fnl, (0.16, 0.5, 0.84))
+    absolute = np.abs(fnl)
+    regions = {
+        "abs_fNL_le_50": float(np.mean(absolute <= 50.0)),
+        "50_lt_abs_fNL_le_100": float(
+            np.mean((absolute > 50.0) & (absolute <= 100.0))
+        ),
+        "100_lt_abs_fNL_le_150": float(
+            np.mean((absolute > 100.0) & (absolute <= 150.0))
+        ),
+    }
+    truncated = {}
+    for limit in (50.0, 100.0):
+        selected = fnl[absolute <= limit]
+        if selected.size < 100:
+            raise RuntimeError(
+                f"too few samples for |fNL|<={limit:g} locality audit"
+            )
+        quantiles = np.quantile(selected, (0.16, 0.5, 0.84))
+        truncated[f"abs_fNL_le_{int(limit)}"] = {
+            "retained_samples": int(selected.size),
+            "retained_fraction": float(selected.size / fnl.size),
+            "equal_tail_68": (quantiles[0], quantiles[2]),
+            "median": quantiles[1],
+            "median_shift_in_full_posterior_sigma": float(
+                (quantiles[1] - full_quantiles[1])
+                / max(standard_deviation, 1.0e-300)
+            ),
+            "width68_ratio_to_full": float(
+                (quantiles[2] - quantiles[0])
+                / max(
+                    full_quantiles[2] - full_quantiles[0],
+                    1.0e-300,
+                )
+            ),
+        }
+    midpoint = retained.shape[1] // 2
+    first = retained[:, :midpoint].reshape(-1, context.theta_dimension)
+    second = retained[:, midpoint:].reshape(-1, context.theta_dimension)
+    first_fnl = np.quantile(first[:, 0], (0.16, 0.5, 0.84))
+    second_fnl = np.quantile(second[:, 0], (0.16, 0.5, 0.84))
+    half_interval_shift = np.abs(first_fnl - second_fnl) / max(
+        standard_deviation,
+        1.0e-300,
+    )
+    return {
+        "posterior_mass_by_locality_region": regions,
+        "posterior_mass_sum": float(sum(regions.values())),
+        "truncated_posterior_sensitivity": truncated,
+        "first_half_fNL_quantiles_16_50_84": first_fnl,
+        "second_half_fNL_quantiles_16_50_84": second_fnl,
+        "half_chain_fNL_quantile_shift_in_full_sigma": (
+            half_interval_shift
+        ),
+        "maximum_half_chain_fNL_quantile_shift_in_full_sigma": float(
+            np.max(half_interval_shift)
+        ),
+        "interpretation": (
+            "local-response extrapolation diagnostic only; truncated "
+            "summaries are not replacement inference priors"
+        ),
+    }
+
+
+def adaptive_brec_mcmc_convergence_checks(
+    diagnosis: dict[str, Any],
+    locality: dict[str, Any],
+) -> dict[str, bool]:
+    rank_rhat = np.asarray(
+        diagnosis["rank_normalized_split_rhat"],
+        dtype=np.float64,
+    )
+    bulk_ess = np.asarray(diagnosis["bulk_ess"], dtype=np.float64)
+    tail_ess = np.asarray(
+        diagnosis["tail_ess_5_95"],
+        dtype=np.float64,
+    )
+    return {
+        "exactly_four_independent_ensembles": bool(
+            diagnosis["chain_layout"]["ensembles"] == 4
+        ),
+        "all_rank_normalized_split_rhat_below_1p01": bool(
+            np.all(rank_rhat < 1.01)
+        ),
+        "all_bulk_ess_above_400": bool(np.all(bulk_ess > 400.0)),
+        "all_tail_ess_above_400": bool(np.all(tail_ess > 400.0)),
+        "fnl_half_chain_median_below_0p1_sigma": bool(
+            float(diagnosis["half_chain_median_shift_sigma"][0]) < 0.1
+        ),
+        "fnl_half_chain_68_interval_stable_below_0p15_sigma": bool(
+            locality[
+                "maximum_half_chain_fNL_quantile_shift_in_full_sigma"
+            ]
+            < 0.15
+        ),
+        "no_fnl_boundary_sticking": bool(
+            diagnosis["fnl_summary"][
+                "boundary_mass_outer_2_percent_each_side"
+            ]
+            < 0.05
+        ),
+        "no_b1_boundary_sticking": bool(
+            diagnosis["b1_boundary_mass_outer_2_percent_each_side"]
+            < 0.01
+        ),
+        "finite_reasonable_acceptance_fraction": bool(
+            math.isfinite(
+                float(diagnosis["mean_acceptance_fraction"])
+            )
+            and 0.1
+            < float(diagnosis["mean_acceptance_fraction"])
+            < 0.8
+        ),
+        "locality_region_partition_closes": bool(
+            abs(float(locality["posterior_mass_sum"]) - 1.0)
+            < 1.0e-12
+        ),
+    }
+
+
+def adaptive_brec_mcmc_fisher_width(
+    fisher_summary: dict[str, Any],
+    *,
+    model: str,
+    kmax: float,
+) -> float:
+    mapping = {
+        "pre": "pre",
+        "post_fixed_brec": "post_original",
+        "post_adaptive_brec_local": "post_full_adaptive",
+    }
+    rows = [
+        row
+        for row in fisher_summary["kmax_scan"]
+        if math.isclose(
+            float(row["kmax_h_mpc"]),
+            float(kmax),
+            rel_tol=0.0,
+            abs_tol=1.0e-12,
+        )
+    ]
+    if len(rows) != 1:
+        raise ValueError(f"Fisher summary misses kmax={kmax:.2f}")
+    return float(
+        rows[0][mapping[model]]["all_nuisance_sigma_fNL"]
+    )
+
+
+def plot_adaptive_brec_full_mcmc(
+    path: Path,
+    rows: list[dict[str, Any]],
+) -> None:
+    figure, axes = plt.subplots(1, 2, figsize=(10.7, 4.25))
+    styles = {
+        "pre": ("pre reconstruction", "#222222", "o", -0.0025),
+        "post_fixed_brec": (
+            "post, fixed $b_{\\rm rec}$",
+            "#b2182b",
+            "s",
+            0.0,
+        ),
+        "post_adaptive_brec_local": (
+            "post, full adaptive local response",
+            "#2166ac",
+            "^",
+            0.0025,
+        ),
+    }
+    for model in ADAPTIVE_BREC_MCMC_MODELS:
+        label, colour, marker, offset = styles[model]
+        selected = [row for row in rows if row["model"] == model]
+        x = np.asarray(
+            [row["kmax_h_mpc"] + offset for row in selected],
+            dtype=np.float64,
+        )
+        median = np.asarray(
+            [row["fnl"]["median"] for row in selected],
+            dtype=np.float64,
+        )
+        low = np.asarray(
+            [row["fnl"]["equal_tail_68"][0] for row in selected],
+            dtype=np.float64,
+        )
+        high = np.asarray(
+            [row["fnl"]["equal_tail_68"][1] for row in selected],
+            dtype=np.float64,
+        )
+        axes[0].errorbar(
+            x,
+            median,
+            yerr=np.vstack((median - low, high - median)),
+            color=colour,
+            marker=marker,
+            ms=5.2,
+            lw=1.45,
+            capsize=3.0,
+            label=label,
+        )
+        axes[1].plot(
+            x,
+            [
+                row["mcmc_width68_over_local_fisher_sigma"]
+                for row in selected
+            ],
+            color=colour,
+            marker=marker,
+            ms=5.2,
+            lw=1.45,
+            label=label,
+        )
+    axes[0].axhline(0.0, color="0.55", lw=1.0, ls="--")
+    axes[0].set_ylabel(r"$f_{\rm NL}$ posterior median and 68% interval")
+    axes[0].set_title(r"Quijote halo $f_{\rm NL}=0$ mean")
+    axes[1].axhline(1.0, color="0.55", lw=1.0, ls="--")
+    axes[1].set_ylabel(
+        r"MCMC 68% half-width / local Fisher $\sigma(f_{\rm NL})$"
+    )
+    axes[1].set_title("Non-Gaussianity and prior-shape diagnostic")
+    for axis in axes:
+        axis.set_xlabel(r"$k_{\max}\ [h\,{\rm Mpc}^{-1}]$")
+        axis.set_xticks(CUTS)
+        axis.grid(alpha=0.2)
+    axes[0].legend(frameon=False, fontsize=8.7, loc="best")
+    figure.suptitle(
+        "Power-spectrum $b_1$ prior; single-realization covariance"
+        "\nAdaptive curve uses the fiducial-zero local-response likelihood",
+        fontsize=11.0,
+    )
+    figure.tight_layout()
+    save_pdf(figure, path)
+
+
+def plot_adaptive_brec_full_mcmc_corner(
+    path: Path,
+    samples: dict[str, np.ndarray],
+    theta_names: tuple[str, ...],
+    summaries: dict[str, dict[str, Any]],
+    b1_mean: float,
+) -> None:
+    labels = {
+        "fNL": r"$f_{\rm NL}$",
+        "b1": r"$b_1$",
+        "b2": r"$b_2$",
+        "gamma2": r"$\gamma_2$",
+        "gamma21": r"$\gamma_{21}$",
+        "b_nabla2_delta": r"$b_{\nabla^2\delta}$",
+    }
+    plot_labels = [labels.get(name, name) for name in theta_names]
+    combined = np.vstack(
+        [samples[model] for model in ADAPTIVE_BREC_MCMC_MODELS]
+    )
+    ranges: list[tuple[float, float]] = []
+    for index, name in enumerate(theta_names):
+        if name == "fNL":
+            ranges.append(FNL_BOUNDS)
+            continue
+        low, high = np.quantile(combined[:, index], (0.0025, 0.9975))
+        span = max(float(high - low), 1.0e-6)
+        ranges.append(
+            (float(low - 0.08 * span), float(high + 0.08 * span))
+        )
+    colours = {
+        "pre": "#222222",
+        "post_fixed_brec": "#b2182b",
+        "post_adaptive_brec_local": "#2166ac",
+    }
+    display = {
+        "pre": "pre",
+        "post_fixed_brec": "post fixed-$b_{\\rm rec}$",
+        "post_adaptive_brec_local": "post adaptive local",
+    }
+    truths: list[float | None] = []
+    for name in theta_names:
+        if name == "fNL":
+            truths.append(0.0)
+        elif name == "b1":
+            truths.append(b1_mean)
+        else:
+            truths.append(None)
+    figure = None
+    for model in ADAPTIVE_BREC_MCMC_MODELS:
+        figure = corner.corner(
+            samples[model],
+            fig=figure,
+            labels=plot_labels,
+            range=ranges,
+            bins=42,
+            color=colours[model],
+            smooth=1.05,
+            plot_datapoints=False,
+            plot_density=False,
+            fill_contours=False,
+            no_fill_contours=True,
+            levels=(0.68, 0.95),
+            truths=truths if figure is None else None,
+            truth_color="0.55",
+            max_n_ticks=4,
+            hist_kwargs={
+                "density": True,
+                "lw": 1.45,
+                "histtype": "step",
+            },
+            contour_kwargs={"linewidths": 1.25},
+        )
+    if figure is None:
+        raise RuntimeError("corner plot received no posterior samples")
+    figure.legend(
+        handles=[
+            Line2D(
+                [],
+                [],
+                color=colours[model],
+                lw=2.3,
+                label=display[model],
+            )
+            for model in ADAPTIVE_BREC_MCMC_MODELS
+        ],
+        loc="upper right",
+        frameon=False,
+        bbox_to_anchor=(0.985, 0.985),
+    )
+    summary_lines = []
+    for model in ADAPTIVE_BREC_MCMC_MODELS:
+        fnl = summaries[model]["fnl"]
+        summary_lines.append(
+            f"{display[model]}: "
+            f"{fnl['median']:.1f}"
+            f"_{{-{fnl['median']-fnl['equal_tail_68'][0]:.1f}}}"
+            f"^{{+{fnl['equal_tail_68'][1]-fnl['median']:.1f}}}"
+        )
+    figure.suptitle(
+        r"Coevolution, $k_{\max}=0.14\,h\,{\rm Mpc}^{-1}$"
+        "\n"
+        + r"$f_{\rm NL}$ medians and 68% intervals: "
+        + "; ".join(summary_lines)
+        + "\nMarginalized MCMC; profiler widths are not used",
+        y=1.015,
+        fontsize=10.5,
+    )
+    save_pdf(figure, path)
+
+
+def adaptive_brec_full_mcmc_report_text(
+    mcmc: dict[str, Any],
+) -> str:
+    labels = {
+        "pre": "pre",
+        "post_fixed_brec": "post fixed-brec",
+        "post_adaptive_brec_local": "post adaptive local",
+    }
+    lines = [
+        "",
+        "## Fiducial-zero local-response MCMC",
+        "",
+        (
+            "The Quijote halo `fNL=0` mean was sampled with the same "
+            "single-realization covariance, Hartlap correction, "
+            "coevolution nuisance set, power-spectrum `b1` prior, and "
+            "hard-flat `fNL in [-150,150]` prior as the Fisher comparison."
+        ),
+        "",
+        "| kmax | model | fNL median | 68% interval | local Fisher sigma |",
+        "|---:|:---|---:|:---|---:|",
+    ]
+    for row in mcmc["kmax_scan"]:
+        fnl = row["fnl"]
+        lines.append(
+            f"| {row['kmax_h_mpc']:.2f} | {labels[row['model']]} "
+            f"| {fnl['median']:.2f} "
+            f"| [{fnl['equal_tail_68'][0]:.2f}, "
+            f"{fnl['equal_tail_68'][1]:.2f}] "
+            f"| {row['local_fisher_sigma_fNL']:.2f} |"
+        )
+    lines.extend(
+        [
+            "",
+            "### Convergence and locality",
+            "",
+            (
+                "All reported chains pass the registered four-ensemble "
+                "split-Rhat, bulk/tail ESS, half-chain stability, "
+                "acceptance, and boundary-mass gates."
+            ),
+            (
+                f"The maximum split-Rhat is "
+                f"`{mcmc['convergence_headline']['maximum_rank_rhat']:.5f}` "
+                f"and the minimum bulk/tail ESS values are "
+                f"`{mcmc['convergence_headline']['minimum_bulk_ess']:.0f}`/"
+                f"`{mcmc['convergence_headline']['minimum_tail_ess']:.0f}`."
+            ),
+            (
+                "The retained summary records posterior mass in "
+                "`|fNL|<=50`, `50<|fNL|<=100`, and "
+                "`100<|fNL|<=150`, plus the corresponding truncated "
+                "posterior sensitivity checks."
+            ),
+            "",
+            "### Interpretation limit",
+            "",
+            (
+                "The adaptive likelihood is "
+                "`B_fixed(f,theta)+f*dG(theta)/dfNL_rec|0`. It is exact "
+                "for the derivative used by the fiducial-zero Fisher "
+                "analysis, but it is only a local extrapolation away from "
+                "`fNL=0`; adaptive derivatives internal to finite-fNL PNG "
+                "terms have not been added."
+            ),
+            "",
+            "### Additional outputs",
+            "",
+            "- `adaptive_brec_full_mcmc_vs_kmax.pdf`",
+            "- `adaptive_brec_full_mcmc_corner_kmax0p14.pdf`",
+            "- `adaptive_brec_full_mcmc_chains.h5`",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def finalize_adaptive_brec_full_mcmc(
+    root: Path,
+    shared: SharedInputs,
+    *,
+    burn_fraction: float,
+    seed: int,
+) -> dict[str, Any]:
+    summary_path = root / ADAPTIVE_BREC_FULL_SUMMARY_RELATIVE
+    chain_path = root / ADAPTIVE_BREC_FULL_MCMC_CHAINS_RELATIVE
+    if not summary_path.is_file():
+        raise FileNotFoundError(
+            "run adaptive-brec-full-fisher before MCMC finalization"
+        )
+    if not chain_path.is_file():
+        raise FileNotFoundError(chain_path)
+    fisher_summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    contexts = adaptive_brec_mcmc_contexts(shared)
+    dataset_name = "__adaptive_brec_full_mcmc_contract__"
+    with h5py.File(chain_path, "r") as chain_file:
+        if dataset_name not in chain_file:
+            raise ValueError("MCMC chain file has no registered contract")
+        stored_contract_text = chain_file[dataset_name][()]
+        if isinstance(stored_contract_text, bytes):
+            stored_contract_text = stored_contract_text.decode("utf-8")
+        stored_contract = json.loads(str(stored_contract_text))
+        stored_contract_hash = hashlib.sha256(
+            str(stored_contract_text).encode("utf-8")
+        ).hexdigest()
+        attributed_hash_value = chain_file.attrs[
+            "adaptive_brec_full_mcmc_contract_sha256"
+        ]
+        if isinstance(attributed_hash_value, bytes):
+            attributed_hash_value = attributed_hash_value.decode("utf-8")
+        attributed_hash = str(attributed_hash_value)
+    if stored_contract_hash != attributed_hash:
+        raise ValueError("MCMC chain contract hash does not close")
+    current_contexts = {
+        f"{model}/{kmax:.2f}": jsonable(context.metadata())
+        for (model, kmax), context in contexts.items()
+    }
+    if stored_contract["contexts"] != current_contexts:
+        raise ValueError("MCMC chain context provenance is stale")
+    rows = []
+    corner_arrays: dict[str, np.ndarray] = {}
+    corner_summaries: dict[str, dict[str, Any]] = {}
+    failed_contexts = []
+    maximum_rank_rhat = 0.0
+    minimum_bulk_ess = math.inf
+    minimum_tail_ess = math.inf
+    for model in ADAPTIVE_BREC_MCMC_MODELS:
+        for kmax in CUTS:
+            context = contexts[(model, float(kmax))]
+            diagnosis = diagnose_context(
+                context,
+                chain_path=chain_path,
+                burn_fraction=burn_fraction,
+            )
+            locality = adaptive_brec_locality_audit(
+                context,
+                chain_path=chain_path,
+                diagnosis=diagnosis,
+            )
+            registered_checks = adaptive_brec_mcmc_convergence_checks(
+                diagnosis,
+                locality,
+            )
+            posterior, arrays = summarize_posterior(
+                context,
+                diagnosis=diagnosis,
+                chain_path=chain_path,
+                seed=(
+                    seed
+                    + 100000 * ADAPTIVE_BREC_MCMC_MODELS.index(model)
+                    + int(round(1000.0 * kmax))
+                ),
+            )
+            posterior["converged"] = bool(
+                all(registered_checks.values())
+            )
+            posterior["registered_convergence_checks"] = registered_checks
+            posterior["legacy_stricter_diagnostic_pass"] = bool(
+                diagnosis["pass"]
+            )
+            fisher_width = adaptive_brec_mcmc_fisher_width(
+                fisher_summary,
+                model=model,
+                kmax=float(kmax),
+            )
+            equal68 = posterior["fnl"]["equal_tail_68"]
+            mcmc_width = 0.5 * (
+                float(equal68[1]) - float(equal68[0])
+            )
+            row = {
+                "model": model,
+                "kmax_h_mpc": float(kmax),
+                "n_data": int(context.indices.size),
+                "theta_names": context.theta_names,
+                "fnl": posterior["fnl"],
+                "local_fisher_sigma_fNL": fisher_width,
+                "mcmc_equal_tail_68_half_width": mcmc_width,
+                "mcmc_width68_over_local_fisher_sigma": (
+                    mcmc_width / fisher_width
+                ),
+                "maximum_rank_rhat": posterior["maximum_rank_rhat"],
+                "minimum_bulk_ess": posterior["minimum_bulk_ess"],
+                "minimum_tail_ess": posterior["minimum_tail_ess"],
+                "mean_acceptance_fraction": posterior[
+                    "mean_acceptance_fraction"
+                ],
+                "registered_convergence_checks": registered_checks,
+                "legacy_stricter_diagnostic_pass": bool(
+                    diagnosis["pass"]
+                ),
+                "locality_audit": locality,
+                "fnl_correlations": posterior["fnl_correlations"],
+                "correlation_matrix": posterior["correlation_matrix"],
+                "covariance_contract": {
+                    "mock_count": int(context.covariance_mock_count),
+                    "single_realization": bool(
+                        np.array_equal(
+                            context.covariance_single,
+                            np.cov(
+                                context.samples,
+                                rowvar=False,
+                                ddof=1,
+                            ),
+                        )
+                    ),
+                    "divided_by_500": False,
+                    "target_is_fNL0_sample_mean": bool(
+                        np.array_equal(
+                            context.target,
+                            np.mean(context.samples, axis=0),
+                        )
+                    ),
+                },
+            }
+            rows.append(row)
+            if not posterior["converged"]:
+                failed_contexts.append(
+                    {
+                        "model": model,
+                        "kmax_h_mpc": float(kmax),
+                        "failed_checks": [
+                            name
+                            for name, passed in registered_checks.items()
+                            if not passed
+                        ],
+                    }
+                )
+            maximum_rank_rhat = max(
+                maximum_rank_rhat,
+                float(posterior["maximum_rank_rhat"]),
+            )
+            minimum_bulk_ess = min(
+                minimum_bulk_ess,
+                float(posterior["minimum_bulk_ess"]),
+            )
+            minimum_tail_ess = min(
+                minimum_tail_ess,
+                float(posterior["minimum_tail_ess"]),
+            )
+            if math.isclose(kmax, 0.14, abs_tol=1.0e-12):
+                corner_arrays[model] = arrays["corner"]
+                corner_summaries[model] = posterior
+    if failed_contexts:
+        return {
+            "status": "adaptive_brec_full_mcmc_needs_more_steps",
+            "failed_contexts": failed_contexts,
+            "maximum_rank_rhat": maximum_rank_rhat,
+            "minimum_bulk_ess": minimum_bulk_ess,
+            "minimum_tail_ess": minimum_tail_ess,
+            "chain_path": chain_path,
+            "contract_sha256": stored_contract_hash,
+        }
+    checks = {
+        "all_twelve_contexts_converged": bool(len(rows) == 12),
+        "all_covariances_are_single_realization": bool(
+            all(
+                row["covariance_contract"]["single_realization"]
+                and not row["covariance_contract"]["divided_by_500"]
+                for row in rows
+            )
+        ),
+        "all_targets_are_fNL0_sample_means": bool(
+            all(
+                row["covariance_contract"][
+                    "target_is_fNL0_sample_mean"
+                ]
+                for row in rows
+            )
+        ),
+        "hard_fNL_prior_is_minus150_to_plus150": bool(
+            all(
+                context.fnl_bounds == FNL_BOUNDS
+                for context in contexts.values()
+            )
+        ),
+        "power_spectrum_b1_prior_matches_fisher": bool(
+            all(
+                math.isclose(
+                    float(
+                        context.prior.sigma[
+                            context.names.index("b1")
+                        ]
+                    ),
+                    float(
+                        b1_calibration_contract(shared.data_root)[
+                            "primary"
+                        ]["b1_sigma"]
+                    ),
+                    rel_tol=0.0,
+                    abs_tol=1.0e-15,
+                )
+                for context in contexts.values()
+            )
+        ),
+    }
+    if not all(checks.values()):
+        raise RuntimeError(
+            "adaptive-brec MCMC statistical contract failed"
+        )
+    figure_root = root / ADAPTIVE_BREC_FULL_FIGURE_RELATIVE
+    mcmc_figure = (
+        figure_root / "adaptive_brec_full_mcmc_vs_kmax.pdf"
+    )
+    corner_figure = (
+        figure_root
+        / "adaptive_brec_full_mcmc_corner_kmax0p14.pdf"
+    )
+    plot_adaptive_brec_full_mcmc(mcmc_figure, rows)
+    representative = contexts[("pre", 0.14)]
+    plot_adaptive_brec_full_mcmc_corner(
+        corner_figure,
+        corner_arrays,
+        representative.theta_names,
+        corner_summaries,
+        float(
+            representative.prior.mean[
+                representative.names.index("b1")
+            ]
+        ),
+    )
+    mcmc = {
+        "schema": "marisa-b-adaptive-brec-full-local-mcmc-v1",
+        "created_utc": utc_now(),
+        "sample": "Quijote z=1 Mmin=1e13 halo fNL=0 mean",
+        "likelihood_model": (
+            "B_fixed(fNL,theta)+fNL*dG(theta)/dfNL_rec|0"
+        ),
+        "finite_fNL_interpretation": (
+            "local extrapolation only; not a complete finite-fNL "
+            "adaptive-reconstruction likelihood"
+        ),
+        "kmax_scan": rows,
+        "convergence_headline": {
+            "maximum_rank_rhat": maximum_rank_rhat,
+            "minimum_bulk_ess": minimum_bulk_ess,
+            "minimum_tail_ess": minimum_tail_ess,
+        },
+        "checks": checks,
+        "chain_contract": stored_contract,
+        "chain_contract_sha256": stored_contract_hash,
+    }
+    fisher_summary["schema"] = (
+        "marisa-b-post-halo-local-png-adaptive-brec-full-"
+        "fisher-mcmc-v2"
+    )
+    fisher_summary["status"] = (
+        "full_adaptive_brec_fisher_and_fNL0_mcmc_complete"
+    )
+    fisher_summary["mcmc"] = mcmc
+    fisher_summary["outputs"]["mcmc_constraint_figure"] = {
+        "path": str(mcmc_figure),
+        "sha256": sha256(mcmc_figure),
+    }
+    fisher_summary["outputs"]["mcmc_corner_figure"] = {
+        "path": str(corner_figure),
+        "sha256": sha256(corner_figure),
+    }
+    fisher_summary["outputs"]["mcmc_chain"] = {
+        "path": str(chain_path),
+        "sha256": sha256(chain_path),
+        "contract_sha256": stored_contract_hash,
+    }
+    report_path = root / ADAPTIVE_BREC_FULL_REPORT_RELATIVE
+    report_path.write_text(
+        adaptive_brec_full_report_text(fisher_summary)
+        + adaptive_brec_full_mcmc_report_text(mcmc),
+        encoding="utf-8",
+    )
+    fisher_summary["outputs"]["report"] = {
+        "path": str(report_path),
+        "sha256": sha256(report_path),
+    }
+    atomic_json(summary_path, fisher_summary)
+    return {
+        "status": fisher_summary["status"],
+        "summary_path": summary_path,
+        "report_path": report_path,
+        "chain_path": chain_path,
+        "figure_paths": (mcmc_figure, corner_figure),
+        "convergence_headline": mcmc["convergence_headline"],
+        "checks": checks,
+    }
+
+
 def read_state(path: Path) -> dict[str, Any]:
     if not path.is_file():
         return {
@@ -5390,6 +8971,12 @@ def parse_args() -> argparse.Namespace:
             "explicit",
             "student-t",
             "fisher-audit",
+            "adaptive-brec-fisher",
+            "adaptive-brec-full-produce",
+            "adaptive-brec-full-aggregate",
+            "adaptive-brec-full-fisher",
+            "adaptive-brec-full-mcmc",
+            "adaptive-brec-full-mcmc-finalize",
             "finalize",
         ),
         required=True,
@@ -5450,6 +9037,86 @@ def main() -> None:
             seed=args.seed,
         )
         update_state(state_path, "fisher-audit", payload)
+        print(json.dumps(jsonable(payload), indent=2))
+        return
+    if args.stage == "adaptive-brec-fisher":
+        payload = run_adaptive_brec_fisher(
+            root,
+            shared,
+        )
+        update_state(
+            state_path,
+            "adaptive-brec-fisher",
+            payload,
+        )
+        print(json.dumps(jsonable(payload), indent=2))
+        return
+    if args.stage == "adaptive-brec-full-produce":
+        payload = run_adaptive_brec_full_production(
+            root,
+            shared,
+            workers=args.workers,
+        )
+        update_state(
+            state_path,
+            "adaptive-brec-full-produce",
+            payload,
+        )
+        print(json.dumps(jsonable(payload), indent=2))
+        return
+    if args.stage == "adaptive-brec-full-aggregate":
+        payload = run_adaptive_brec_full_aggregate(
+            root,
+            shared,
+        )
+        update_state(
+            state_path,
+            "adaptive-brec-full-aggregate",
+            payload,
+        )
+        print(json.dumps(jsonable(payload), indent=2))
+        return
+    if args.stage == "adaptive-brec-full-fisher":
+        payload = run_adaptive_brec_full_fisher(
+            root,
+            shared,
+        )
+        update_state(
+            state_path,
+            "adaptive-brec-full-fisher",
+            payload,
+        )
+        print(json.dumps(jsonable(payload), indent=2))
+        return
+    if args.stage == "adaptive-brec-full-mcmc":
+        payload = run_adaptive_brec_full_mcmc(
+            root,
+            shared,
+            ensembles=args.ensembles,
+            walkers=args.walkers,
+            steps=args.steps,
+            workers=args.workers,
+            seed=args.seed,
+        )
+        update_state(
+            state_path,
+            "adaptive-brec-full-mcmc",
+            payload,
+        )
+        print(json.dumps(jsonable(payload), indent=2))
+        return
+    if args.stage == "adaptive-brec-full-mcmc-finalize":
+        payload = finalize_adaptive_brec_full_mcmc(
+            root,
+            shared,
+            burn_fraction=args.burn_fraction,
+            seed=args.seed,
+        )
+        update_state(
+            state_path,
+            "adaptive-brec-full-mcmc-finalize",
+            payload,
+        )
         print(json.dumps(jsonable(payload), indent=2))
         return
     if args.stage == "finalize":

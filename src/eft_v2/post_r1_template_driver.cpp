@@ -4,6 +4,7 @@
 #include <iomanip>
 #include <iostream>
 #include <iterator>
+#include <memory>
 #include <sstream>
 #include <stdexcept>
 #include <string>
@@ -86,6 +87,68 @@ public:
 private:
     std::vector<double> log_k_;
     std::vector<double> log_p_;
+};
+
+class TabulatedTransfer final:public PowerSpectrum {
+public:
+    explicit TabulatedTransfer(const std::string& path) {
+        std::ifstream input(path);
+        if (!input) {
+            throw std::runtime_error(
+                "cannot open local-PNG transfer table: "+path);
+        }
+        std::string line;
+        while (std::getline(input,line)) {
+            if (line.empty() ||line[0]=='#') continue;
+            std::istringstream row(line);
+            double k=0.0;
+            double power=0.0;
+            double ignored=0.0;
+            double transfer=0.0;
+            if (!(row>>k>>power>>ignored>>transfer)
+                ||!(k>0.0 &&transfer>0.0)) {
+                throw std::runtime_error(
+                    "invalid local-PNG transfer-table row");
+            }
+            log_k_.push_back(std::log(k));
+            log_transfer_.push_back(std::log(transfer));
+        }
+        if (log_k_.size()<2) {
+            throw std::runtime_error(
+                "local-PNG transfer table is too short");
+        }
+    }
+
+    real Evaluate(real k) const override {
+        if (!(k>0.0)) return 0.0;
+        const double x=std::log(k);
+        std::size_t right=1;
+        if (x>=log_k_.back()) {
+            right=log_k_.size()-1;
+        } else if (x>log_k_.front()) {
+            right=static_cast<std::size_t>(
+                std::upper_bound(
+                    log_k_.begin(),log_k_.end(),x)
+                -log_k_.begin());
+        }
+        const std::size_t left=right-1;
+        const double fraction=
+            (x-log_k_[left])
+            /(log_k_[right]-log_k_[left]);
+        return std::exp(
+            log_transfer_[left]
+            +fraction*(log_transfer_[right]
+                       -log_transfer_[left]));
+    }
+
+    const Cosmology& GetCosmology() const override {
+        throw std::logic_error(
+            "TabulatedTransfer has no Cosmology object");
+    }
+
+private:
+    std::vector<double> log_k_;
+    std::vector<double> log_transfer_;
 };
 
 int parse_int(
@@ -380,7 +443,7 @@ void write_bin(
 
 int main(int argc,char** argv) {
     try {
-        if (argc!=21) {
+        if (argc!=21 &&argc!=25) {
             std::cerr
                 <<"usage: eft_v2_post_r1_template_driver "
                 <<"POWER_TABLE EDGE_FILE RADIAL_INDEX_STOP "
@@ -390,9 +453,11 @@ int main(int argc,char** argv) {
                 <<"LOOP_NRAD LOOP_NMU LOOP_NPHI "
                 <<"QMIN QMAX UV_TAIL_KMAX "
                 <<"R_SMOOTH B_REC CELL_SIZE "
-                <<"[tensor-gauss|fibonacci]\n";
+                <<"[tensor-gauss|fibonacci] "
+                <<"[PNG_TABLE FNL_REC BPHI_REC KREC_MIN]\n";
             return 2;
         }
+        const bool adaptive_brec=argc==25;
         const std::string power_path=argv[1];
         const std::string edge_path=argv[2];
         const int radial_stop=
@@ -469,13 +534,22 @@ int main(int argc,char** argv) {
             parse_double(argv[18],"reconstruction bias");
         reconstruction.cell_size=
             parse_double(argv[19],"cell size");
+        const std::string png_table_path=
+            adaptive_brec?argv[21]:"";
+        const double fnl_rec=adaptive_brec
+            ?parse_double(argv[22],"fNL_rec"):0.0;
+        const double bphi_rec=adaptive_brec
+            ?parse_double(argv[23],"bphi_rec"):0.0;
+        const double krec_min=adaptive_brec
+            ?parse_double(argv[24],"reconstruction minimum k"):0.0;
         if (!(integration.loop.qmin>0.0)
             ||!(integration.loop.qmax>integration.loop.qmin)
             ||!(integration.loop.uv_tail_kmax
                  >integration.loop.qmax)
             ||!(reconstruction.smoothing_radius>0.0)
             ||!(reconstruction.bias_recon>0.0)
-            ||reconstruction.cell_size<0.0) {
+            ||reconstruction.cell_size<0.0
+            ||!(krec_min>=0.0)) {
             throw std::invalid_argument(
                 "post-R1 Gaussian integration/reconstruction "
                 "parameters violate the positive-domain contract");
@@ -484,19 +558,37 @@ int main(int argc,char** argv) {
         const std::vector<double> edges=
             read_edges(edge_path);
         const TabulatedPower power(power_path);
+        std::unique_ptr<TabulatedTransfer> transfer;
+        if (adaptive_brec) {
+            transfer=std::make_unique<TabulatedTransfer>(
+                png_table_path);
+            reconstruction.local_png_bias_transfer=
+                transfer.get();
+            reconstruction.local_png_bias_amplitude=
+                fnl_rec*bphi_rec;
+            reconstruction.local_png_bias_kmin=krec_min;
+        }
         const std::string power_sha256=file_sha256(power_path);
         const std::string edge_sha256=file_sha256(edge_path);
         const std::string executable_sha256=file_sha256(argv[0]);
+        const std::string png_table_sha256=
+            adaptive_brec?file_sha256(png_table_path):"";
         const eft::EftBiasKernelProvider base;
         std::cout<<std::setprecision(17)
                  <<"{\"record\":\"header\","
-                 <<"\"schema\":\"marisa-b-eft-v2-post-r1-jsonl-v4\","
+                 <<"\"schema\":";
+        write_json_string(
+            adaptive_brec
+            ?"marisa-b-eft-v2-post-r1-adaptive-brec-finite-jsonl-v1"
+            :"marisa-b-eft-v2-post-r1-jsonl-v4");
+        std::cout<<","
                  <<"\"model\":\"post-recon halo Gaussian one-loop "
                    "EFT-v2 deterministic plus reconstructed "
                    "counterterms, estimator-matched fixed Poisson, "
                    "and residual stochastic closure\","
                  <<"\"ir_resummation\":false,"
-                 <<"\"production_candidate\":true,"
+                 <<"\"production_candidate\":"
+                 <<(adaptive_brec?"false":"true")<<','
                  <<"\"renormalization\":{\"status\":"
                    "\"renormalized-direct-post-r1-candidate\","
                  <<"\"uv_subtraction\":true,"
@@ -516,7 +608,18 @@ int main(int argc,char** argv) {
                  <<reconstruction.bias_recon
                  <<",\"cell_size\":"
                  <<reconstruction.cell_size
-                 <<",\"cic_power\":4},"
+                 <<",\"cic_power\":4";
+        if (adaptive_brec) {
+            std::cout
+                <<",\"adaptive_local_png_bias\":{"
+                <<"\"fNL_rec\":"<<fnl_rec
+                <<",\"bphi_rec\":"<<bphi_rec
+                <<",\"amplitude\":"
+                <<reconstruction.local_png_bias_amplitude
+                <<",\"kmin\":"<<krec_min
+                <<",\"transfer_column\":3}";
+        }
+        std::cout<<"},"
                  <<"\"shell_projection\":{\"measure\":"
                  <<"\"exact float32 FFT-lattice k1-k2-mu "
                    "plus normalized Haar orientation cubature\","
@@ -566,6 +669,10 @@ int main(int argc,char** argv) {
         write_json_string(edge_sha256);
         std::cout<<",\"driver_executable\":";
         write_json_string(executable_sha256);
+        if (adaptive_brec) {
+            std::cout<<",\"png_table\":";
+            write_json_string(png_table_sha256);
+        }
         std::cout<<"},\"parameter_registry_sha256\":";
         write_json_string(eft::registry_sha256());
         std::cout<<",\"radial_index_stop\":"

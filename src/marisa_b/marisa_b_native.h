@@ -263,6 +263,27 @@ compute_post_recon_halo_bias_v1_local_png_tree_dfNL_vectors(
     const ClosedTriangleVectors& vectors,
     const NativeConfig& config,
     const HaloBiasV1Params& bias);
+/*
+ * Shell-projectable basis for the extra linear-fNL response generated when
+ * the reconstruction denominator is promoted from fixed b_rec to
+ *
+ *   b_rec(k; fNL_rec) = b_rec + fNL_rec b_phi_rec/M(k).
+ *
+ * At fNL_rec=0 the deterministic Gaussian tree contribution obeys
+ *
+ *   dB/dfNL_rec =
+ *     b1^4 (b_phi_rec/b_rec)
+ *     compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors.
+ *
+ * The basis contains only the derivative of the reconstruction denominator;
+ * the ordinary fixed-b_rec halo-PNG response remains in ComponentResult.
+ */
+real
+compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
+    const PowerSpectrum& P_L,
+    const PowerSpectrum& transfer_m,
+    const ClosedTriangleVectors& vectors,
+    const NativeConfig& config);
 ComponentResult compute_pre_recon_halo_bias_v1_local_png_1loop_truncated_dfNL(
     const PowerSpectrum& P_L,
     const PowerSpectrum& transfer_m,

@@ -98,9 +98,16 @@ void validate_reconstruction(
         &&(!(reconstruction.smoothing_radius>=0.0)
            ||!(reconstruction.bias_recon>0.0)
            ||!(reconstruction.cell_size>=0.0)
+           ||!(reconstruction.local_png_bias_kmin>=0.0)
            ||!std::isfinite(reconstruction.smoothing_radius)
            ||!std::isfinite(reconstruction.bias_recon)
-           ||!std::isfinite(reconstruction.cell_size))) {
+           ||!std::isfinite(reconstruction.cell_size)
+           ||!std::isfinite(
+               reconstruction.local_png_bias_amplitude)
+           ||!std::isfinite(
+               reconstruction.local_png_bias_kmin)
+           ||(reconstruction.local_png_bias_transfer==nullptr
+              &&reconstruction.local_png_bias_amplitude!=0.0))) {
         throw std::invalid_argument(
             "invalid reconstructed EFT kernel configuration");
     }
@@ -232,6 +239,81 @@ FieldKernelVariation reconstructed_field_kernel_variation_with_shift(
             if (!vanishes) {
                 result.value+=shift_product*term.value;
                 result.direction+=shift_product*term.direction;
+            }
+        }
+    }
+    return result;
+}
+
+FieldKernelVariation
+reconstructed_field_kernel_local_png_denominator_variation(
+    const FieldKernelProvider& base,
+    const marisa_b_halo_v1::ReconstructionConfig& fixed_reconstruction,
+    const PowerSpectrum& transfer,
+    double kmin,
+    const std::vector<Vec3>& momenta) {
+    validate_reconstruction(fixed_reconstruction);
+    const int order=static_cast<int>(momenta.size());
+    if (order<1 ||order>4) {
+        throw std::invalid_argument(
+            "adaptive reconstructed EFT kernel order must be one through four");
+    }
+    if (!fixed_reconstruction.enabled) {
+        return FieldKernelVariation{
+            base.deterministic(momenta),{}};
+    }
+    if (fixed_reconstruction.local_png_bias_transfer!=nullptr
+        ||fixed_reconstruction.local_png_bias_amplitude!=0.0) {
+        throw std::invalid_argument(
+            "adaptive denominator variation requires a fixed base map");
+    }
+
+    const Vec3 output=sum(momenta);
+    FieldKernelVariation result;
+    for (const std::vector<std::vector<int>>& partition:
+         set_partitions(order)) {
+        double symmetry=1.0/factorial(order);
+        for (const std::vector<int>& block:partition) {
+            symmetry*=factorial(static_cast<int>(block.size()));
+        }
+        for (std::size_t density_index=0;
+             density_index<partition.size();++density_index) {
+            const std::vector<Vec3> density_vectors=
+                block_vectors(
+                    momenta,partition[density_index]);
+            if (is_zero_block(density_vectors)) continue;
+            FieldKernelVariation term{
+                base.deterministic(density_vectors),{}};
+            bool vanishes=false;
+            for (std::size_t block_index=0;
+                 block_index<partition.size();++block_index) {
+                if (block_index==density_index) continue;
+                const std::vector<Vec3> shift_vectors=
+                    block_vectors(
+                        momenta,partition[block_index]);
+                const Vec3 block_momentum=sum(shift_vectors);
+                const auto shift=
+                    marisa_b_halo_v1::
+                    reconstruction_shift_factor_local_png_variation(
+                        output,block_momentum,
+                        fixed_reconstruction,transfer,kmin);
+                if (shift.value==0.0
+                    &&shift.local_png_denominator_direction==0.0) {
+                    vanishes=true;
+                    break;
+                }
+                const SparsePolynomial source=
+                    base.deterministic(shift_vectors);
+                term=multiply(
+                    term,
+                    FieldKernelVariation{
+                        shift.value*source,
+                        shift.local_png_denominator_direction
+                            *source});
+            }
+            if (!vanishes) {
+                result.value+=symmetry*term.value;
+                result.direction+=symmetry*term.direction;
             }
         }
     }

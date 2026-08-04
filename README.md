@@ -166,6 +166,13 @@ recomputed.  Exact anchors and tolerances live in
 - `provenance/`: first- and third-party source identities;
 - `docs/historical/`: explicitly non-current R0 and bias-v1 records.
 
+## Archived experiments
+
+The conditional v0.9 matched/oracle reconstruction test is preserved as a
+negative diagnostic in
+`docs/experiments/V0P9_MATCHED_ORACLE_20260803.md`.  Its source branch and
+release artifacts are not part of the production inference contract.
+
 Generated files belong in `analysis/`, `figures/`, `manifests/`, `log/`, or
 external release storage; these locations are intentionally excluded from
 source Git.

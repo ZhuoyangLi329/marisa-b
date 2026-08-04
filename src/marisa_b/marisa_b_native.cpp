@@ -3238,6 +3238,43 @@ compute_post_recon_halo_bias_v1_local_png_tree_dfNL_vectors(
             bias);
 }
 
+real
+compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
+    const PowerSpectrum& P_L,
+    const PowerSpectrum& transfer_m,
+    const ClosedTriangleVectors& vectors,
+    const NativeConfig& config) {
+    const std::vector<Vec3> vecs=triangle_vecs(vectors);
+    validate_closed_triangle_vecs(vecs,config.singular_floor);
+    const int pairs[3][3]={{0,1,2},{1,2,0},{2,0,1}};
+    real p[3]={
+        p_safe_vec(P_L,vecs[0]),
+        p_safe_vec(P_L,vecs[1]),
+        p_safe_vec(P_L,vecs[2])};
+    real m[3]={
+        p_safe_vec(transfer_m,vecs[0]),
+        p_safe_vec(transfer_m,vecs[1]),
+        p_safe_vec(transfer_m,vecs[2])};
+    for (int index=0;index<3;++index) {
+        if (!(m[index]>0.0)) return 0.0;
+    }
+
+    real basis=0.0;
+    for (int row=0;row<3;++row) {
+        const int i=pairs[row][0];
+        const int j=pairs[row][1];
+        std::vector<Vec3> pair_vectors{vecs[i],vecs[j]};
+        const Vec3 total_vec=sum_vecs(pair_vectors);
+        const real shift_i=shift_factor_post(
+            total_vec,std::vector<Vec3>{vecs[i]},config);
+        const real shift_j=shift_factor_post(
+            total_vec,std::vector<Vec3>{vecs[j]},config);
+        basis-=p[i]*p[j]
+               *(shift_i/m[i]+shift_j/m[j]);
+    }
+    return basis;
+}
+
 /*
  * 把 response-only 结果及严格 tree 物理分解合并进 Gaussian 一环结果。
  * 分开的 helper 可确保 pre/post 两个入口不会在字段语义上漂移。
