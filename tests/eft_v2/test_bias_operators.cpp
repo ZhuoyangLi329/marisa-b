@@ -73,6 +73,19 @@ public:
     }
 };
 
+class ConstantTransfer final:public PowerSpectrum {
+public:
+    explicit ConstantTransfer(real value):value_(value) {}
+    real Evaluate(real k) const override {
+        return k>0.0 ?value_:0.0;
+    }
+    const Cosmology& GetCosmology() const override {
+        throw std::logic_error("ConstantTransfer has no cosmology");
+    }
+private:
+    real value_;
+};
+
 void test_primitives() {
     std::mt19937_64 random(8112026);
     for (int sample=0;sample<300;++sample) {
@@ -472,6 +485,64 @@ void test_local_png_reconstruction_denominator_variation() {
     require(
         disabled_variation.direction.empty(),
         "disabled reconstruction removes adaptive response");
+
+    /*
+     * Independent scalar-denominator oracle.  For constant M(q)=M0,
+     *
+     *   b_rec(q)=b_rec+a/M0
+     *
+     * is exactly a constant-bias reconstruction with
+     * db_rec/da=1/M0.  Differentiate that pre-existing scalar-b_rec path,
+     * without enabling the local-PNG denominator, and compare it to the
+     * analytic block-by-block response.
+     */
+    const double constant_transfer_value=2.7;
+    const ConstantTransfer constant_transfer(constant_transfer_value);
+    const double scalar_step=2.0e-5;
+    hv1::ReconstructionConfig zero_bphi=fixed;
+    zero_bphi.local_png_bias_transfer=&constant_transfer;
+    zero_bphi.local_png_bias_amplitude=0.0;
+    zero_bphi.local_png_bias_kmin=0.0;
+    const eft::ReconstructedFieldKernelProvider zero_bphi_provider(
+        base,zero_bphi);
+    const eft::ReconstructedFieldKernelProvider scalar_fixed_provider(
+        base,fixed);
+    for (int order=1;order<=4;++order) {
+        std::vector<eft::Vec3> momenta;
+        for (int index=0;index<order;++index) {
+            momenta.push_back(
+                eft::Vec3{
+                    0.017+0.011*index,
+                    -0.023+0.007*index,
+                    0.031+0.013*index});
+        }
+        const auto analytic=
+            eft::reconstructed_field_kernel_local_png_denominator_variation(
+                base,fixed,constant_transfer,0.0,momenta);
+        hv1::ReconstructionConfig scalar_plus=fixed;
+        scalar_plus.bias_recon+=
+            scalar_step/constant_transfer_value;
+        hv1::ReconstructionConfig scalar_minus=fixed;
+        scalar_minus.bias_recon-=
+            scalar_step/constant_transfer_value;
+        const eft::ReconstructedFieldKernelProvider plus_provider(
+            base,scalar_plus);
+        const eft::ReconstructedFieldKernelProvider minus_provider(
+            base,scalar_minus);
+        const eft::SparsePolynomial scalar_bias_direction=(
+            plus_provider.deterministic(momenta)
+            -minus_provider.deterministic(momenta))
+            *(0.5/scalar_step);
+        compare_polynomials(
+            analytic.direction,scalar_bias_direction,2.0e-8,
+            "constant-M adaptive response equals independent scalar-b_rec "
+            "derivative K"+std::to_string(order));
+        compare_polynomials(
+            zero_bphi_provider.deterministic(momenta),
+            scalar_fixed_provider.deterministic(momenta),0.0,
+            "bphi_rec=0 exactly reproduces fixed-b_rec K"
+            +std::to_string(order));
+    }
 }
 
 void test_limits_and_matter_oracle() {

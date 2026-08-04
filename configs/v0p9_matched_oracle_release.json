@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "scientific_status": "archived_negative_diagnostic",
+  "production_candidate": false,
+  "branch": "archive/v0p9-matched-oracle-20260804",
+  "tag": "v0.9-matched-oracle-test",
+  "release_assets": [
+    {
+      "name": "marisa-b-v0p9-matched-oracle-artifacts-20260804.tar.gz",
+      "bytes": 3454081,
+      "sha256": "3e6c51e741c95d0063a975a85361765eaf24181f8e976f84b905ccbb1ac90bd5",
+      "role": "inputs_raw_records_results_figures_and_exact_runtime_source"
+    },
+    {
+      "name": "chains.h5",
+      "bytes": 88760283,
+      "sha256": "3d71a7f508a4e2f3895b0daef5134859ef3b9ff83c4dae845ef603dd978486bc",
+      "role": "compact_converged_mcmc_chain"
+    }
+  ],
+  "result_contract": {
+    "sample": "Quijote halo fNL=0 z=1 R=15",
+    "covariance": "single_realization",
+    "kmax_h_mpc": [0.08, 0.10, 0.12, 0.14],
+    "conditional_path": "fNL_rec=fNL",
+    "operational_unknown_fnl_likelihood": false,
+    "retained_response_fisher_information_at_kmax_0p14": 0.294,
+    "finite_denominator_lower_bound_fnl": -146.004296
+  }
+}

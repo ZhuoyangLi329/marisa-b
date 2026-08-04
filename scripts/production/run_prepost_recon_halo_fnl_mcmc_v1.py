@@ -8639,11 +8639,12 @@ def finalize_adaptive_brec_full_mcmc(
         stored_contract_hash = hashlib.sha256(
             str(stored_contract_text).encode("utf-8")
         ).hexdigest()
-        attributed_hash = str(
-            chain_file.attrs[
-                "adaptive_brec_full_mcmc_contract_sha256"
-            ]
-        )
+        attributed_hash_value = chain_file.attrs[
+            "adaptive_brec_full_mcmc_contract_sha256"
+        ]
+        if isinstance(attributed_hash_value, bytes):
+            attributed_hash_value = attributed_hash_value.decode("utf-8")
+        attributed_hash = str(attributed_hash_value)
     if stored_contract_hash != attributed_hash:
         raise ValueError("MCMC chain contract hash does not close")
     current_contexts = {
