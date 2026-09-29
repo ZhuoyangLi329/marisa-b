@@ -177,6 +177,55 @@ double finite_adaptive_brec_gaussian_tree_piece(
     return result;
 }
 
+double finite_adaptive_brec_png_linear_reconstruction_piece(
+    const SmoothPower& power,
+    const SmoothTransfer& transfer,
+    const native::ClosedTriangleVectors& vectors,
+    const native::NativeConfig& config,
+    double b1,
+    double bphi,
+    double bphi_recon,
+    double fnl_recon) {
+    const int pairs[3][2]={{0,1},{1,2},{2,0}};
+    double result=0.0;
+    for (const auto& pair:pairs) {
+        const int i=pair[0];
+        const int j=pair[1];
+        const auto output=add(vectors[i],vectors[j]);
+        double shift_sum=0.0;
+        double inverse_m_sum=0.0;
+        for (const int index:{i,j}) {
+            const auto& momentum=vectors[index];
+            const double k2=dot(momentum,momentum);
+            const double k=std::sqrt(k2);
+            const double transfer_value=transfer(k);
+            const double gaussian=std::exp(
+                -0.5*k2*config.smoothing_radius
+                    *config.smoothing_radius);
+            const double half_cell=0.5*config.recon_cellsize;
+            const double cic=
+                config.recon_cic_window_power<=0
+                ?1.0
+                :std::pow(
+                    sinc(momentum[0]*half_cell)
+                    *sinc(momentum[1]*half_cell)
+                    *sinc(momentum[2]*half_cell),
+                    config.recon_cic_window_power);
+            const double denominator=
+                config.bias_recon
+                +fnl_recon*bphi_recon/transfer_value;
+            shift_sum+=-dot(output,momentum)/k2
+                       *gaussian*cic/denominator;
+            inverse_m_sum+=1.0/transfer_value;
+        }
+        const double pi=power(std::sqrt(dot(vectors[i],vectors[i])));
+        const double pj=power(std::sqrt(dot(vectors[j],vectors[j])));
+        result+=2.0*b1*b1*b1*bphi*pi*pj
+                *inverse_m_sum*shift_sum;
+    }
+    return result;
+}
+
 native::NativeConfig post_config() {
     native::NativeConfig config;
     config.smoothing_radius=15.0;
@@ -329,9 +378,10 @@ void test_tree_orientation_and_limits() {
         post_infinite,pre,3.0e-12,3.0e-8,
         "R-infinity post/pre identity");
 
-    const double basis=native::
-        compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
+    const auto finite_bases=native::
+        compute_post_recon_halo_local_png_brec_finite_tree_bases_vectors(
             power,transfer,vectors,config);
+    const double basis=finite_bases.gaussian_linear;
     const double b1=bias.b1;
     const double bphi_recon=bias.bphi;
     const double step=1.0e-5;
@@ -349,6 +399,57 @@ void test_tree_orientation_and_limits() {
     require_close(
         finite_difference,expected,5.0e-9,3.0e-8,
         "adaptive b_rec denominator analytic/finite difference");
+
+    const double curvature_step=5.0e-3;
+    const double zero_gaussian=
+        finite_adaptive_brec_gaussian_tree_piece(
+            power,transfer,vectors,config,
+            b1,bphi_recon,0.0);
+    const auto gaussian_quadratic_at_step=
+        [&](double local_step) {
+            return
+        (
+            finite_adaptive_brec_gaussian_tree_piece(
+                power,transfer,vectors,config,
+                b1,bphi_recon,local_step)
+            +finite_adaptive_brec_gaussian_tree_piece(
+                power,transfer,vectors,config,
+                b1,bphi_recon,-local_step)
+            -2.0*zero_gaussian
+        )/(2.0*local_step*local_step);
+        };
+    const double gaussian_quadratic_coarse=
+        gaussian_quadratic_at_step(curvature_step);
+    const double gaussian_quadratic_fine=
+        gaussian_quadratic_at_step(0.5*curvature_step);
+    const double gaussian_quadratic_finite=
+        (4.0*gaussian_quadratic_fine-gaussian_quadratic_coarse)/3.0;
+    const double gaussian_quadratic_expected=
+        b1*b1*b1*b1
+        *std::pow(bphi_recon/config.bias_recon,2)
+        *finite_bases.gaussian_quadratic;
+    require_close(
+        gaussian_quadratic_finite,gaussian_quadratic_expected,
+        2.0e-7,3.0e-6,
+        "adaptive b_rec Gaussian quadratic analytic/finite difference");
+
+    const double tracer_bphi=bias.bphi;
+    const double png_cross_finite=
+        (
+            finite_adaptive_brec_png_linear_reconstruction_piece(
+                power,transfer,vectors,config,
+                b1,tracer_bphi,bphi_recon,step)
+            -finite_adaptive_brec_png_linear_reconstruction_piece(
+                power,transfer,vectors,config,
+                b1,tracer_bphi,bphi_recon,-step)
+        )/(2.0*step);
+    const double png_cross_expected=
+        b1*b1*b1*tracer_bphi
+        *(bphi_recon/config.bias_recon)
+        *finite_bases.png_linear_cross;
+    require_close(
+        png_cross_finite,png_cross_expected,5.0e-9,3.0e-8,
+        "adaptive b_rec PNG-linear cross analytic/finite difference");
 
     const double rotated_basis=native::
         compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(

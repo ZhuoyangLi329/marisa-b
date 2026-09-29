@@ -334,6 +334,7 @@ class PngTemplateSet:
     matter_b112_validation_residuals: np.ndarray
     matter_b112_error_lambdas: np.ndarray
     matter_b112_error_bounds: np.ndarray
+    b_rec_h: float
     metadata: dict[str, Any]
 
     @staticmethod
@@ -515,7 +516,7 @@ class PngTemplateSet:
                 / number_density
             ),
         }
-        lambda_value = b1 / B_REC_H
+        lambda_value = b1 / self.b_rec_h
         matter_loop = self._evaluate_polynomial(
             self.matter_linear_coefficients["loop"],
             lambda_value,
@@ -2156,7 +2157,16 @@ def _validate_png_header(
     allowed_qmax: tuple[float, ...] = (
         PNG_TAIL_REFERENCE_QMAX,
     ),
+    expected_smoothing_radius: float = 15.0,
+    expected_b_rec_h: float = B_REC_H,
 ) -> None:
+    if (
+        not math.isfinite(float(expected_smoothing_radius))
+        or float(expected_smoothing_radius) <= 0.0
+        or not math.isfinite(float(expected_b_rec_h))
+        or float(expected_b_rec_h) <= 0.0
+    ):
+        raise ValueError("invalid expected reconstruction contract")
     sector = str(header.get("sector"))
     schema = header.get("schema")
     if (
@@ -2224,13 +2234,13 @@ def _validate_png_header(
         )
         or not math.isclose(
             float(reconstruction.get("R")),
-            15.0,
+            float(expected_smoothing_radius),
             rel_tol=0.0,
             abs_tol=1.0e-14,
         )
         or not math.isclose(
             float(reconstruction.get("b_rec_h")),
-            B_REC_H,
+            float(expected_b_rec_h),
             rel_tol=0.0,
             abs_tol=2.0e-14,
         )
@@ -2252,15 +2262,22 @@ def _validate_png_header(
         or header.get("lambda_definition")
         != "b1_over_b_rec_h_for_matter_uplift"
         or not is_plain_json_int(header.get("radial_stop"))
-        or header.get("radial_stop") != 7
+        or header.get("radial_stop") not in {7, 10}
         or not isinstance(integration, dict)
     ):
         raise ValueError(f"{path} violates the post-R1 PNG contract")
+    png_ir_scope = integration.get("png_ir_cutoff_scope")
+    valid_v5_png_ir_scope = (
+        png_ir_scope == "all_local_primordial_B0_T0_legs"
+        or (
+            png_ir_scope == "all_primordial_B0_T0_legs"
+            and header.get("png_shape") == "local"
+        )
+    )
     if (
         schema == PNG_JSONL_SCHEMA
         and (
-            integration.get("png_ir_cutoff_scope")
-            != "all_local_primordial_B0_T0_legs"
+            not valid_v5_png_ir_scope
             or integration.get("matter_linear_multicenter_qmc")
             is not True
         )
@@ -2695,6 +2712,9 @@ def _validate_png_shard_rows(
 def compile_png_cache(
     paths: Iterable[Path],
     output: Path,
+    *,
+    expected_smoothing_radius: float = 15.0,
+    expected_b_rec_h: float = B_REC_H,
 ) -> dict[str, Any]:
     records: list[
         tuple[Path, dict[str, Any], list[dict[str, Any]]]
@@ -2702,7 +2722,12 @@ def compile_png_cache(
     for raw_path in paths:
         path = raw_path.resolve()
         header, bins = read_jsonl(path)
-        _validate_png_header(path, header)
+        _validate_png_header(
+            path,
+            header,
+            expected_smoothing_radius=expected_smoothing_radius,
+            expected_b_rec_h=expected_b_rec_h,
+        )
         _validate_png_shard_rows(path, header, bins)
         records.append((path, header, bins))
     if not records:
@@ -3597,6 +3622,16 @@ def load_png_cache(path: Path) -> PngTemplateSet:
     expected_indices = np.asarray(metadata_indices, dtype=np.int64)
     if not np.array_equal(indices, expected_indices):
         raise ValueError("PNG cache index metadata does not close")
+    reconstruction = metadata.get("common_raw_contract", {}).get(
+        "reconstruction", {}
+    )
+    b_rec_h = reconstruction.get("b_rec_h")
+    if not (
+        is_plain_json_number(b_rec_h)
+        and math.isfinite(float(b_rec_h))
+        and float(b_rec_h) > 0.0
+    ):
+        raise ValueError("PNG cache lacks a positive reconstruction bias")
     if (
         len(indices) != len(set(indices.tolist()))
         or np.any(indices < 0)
@@ -3703,6 +3738,7 @@ def load_png_cache(path: Path) -> PngTemplateSet:
         ),
         matter_b112_error_lambdas=matter_b112_error_lambdas,
         matter_b112_error_bounds=matter_b112_error_bounds,
+        b_rec_h=float(b_rec_h),
         metadata=metadata,
     )
 
@@ -3941,7 +3977,7 @@ def validate_header(
             "a338f77092a4b36095d928d74b41805"
         )
         or not is_plain_json_int(header.get("radial_index_stop"))
-        or header.get("radial_index_stop") != 7
+        or header.get("radial_index_stop") not in {7, 10}
     ):
         raise ValueError(
             "templates lack the registered source/registry provenance"

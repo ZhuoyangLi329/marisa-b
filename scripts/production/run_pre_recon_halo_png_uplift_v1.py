@@ -498,12 +498,17 @@ def tree_work(
     nmu: int,
     nradial: int,
     kfund: float | None = None,
+    kmax: float = 0.15,
 ) -> tuple[np.ndarray, list[tuple[float, float, float]], list[tuple[int, float]], dict[str, Any]]:
+    if not math.isfinite(float(kmax)) or float(kmax) <= 0.0:
+        raise ValueError(f"invalid tree-template kmax={kmax}")
     indices = np.flatnonzero(
-        np.max(geometry.weighted_pairs, axis=1) <= 0.15 + 1.0e-12
+        np.max(geometry.weighted_pairs, axis=1) <= float(kmax) + 1.0e-12
     )
-    if indices.size != 28:
+    if math.isclose(float(kmax), 0.15) and indices.size != 28:
         raise AssertionError(f"expected the first 28 B000 bins, got {indices}")
+    if indices.size == 0:
+        raise AssertionError("tree-template cutoff selects no B000 bins")
     if kfund is None:
         args = argparse.Namespace(
             nmu_b000=int(nmu),
@@ -727,6 +732,7 @@ def produce_tree_templates(
     workers: int,
     overwrite: bool,
     kfund: float | None = None,
+    kmax: float = 0.15,
 ) -> dict[str, Any]:
     sidecar = paths.tree_templates.with_suffix(".json")
     if paths.tree_templates.exists() and sidecar.exists() and not overwrite:
@@ -737,6 +743,7 @@ def produce_tree_templates(
         nmu=nmu,
         nradial=nradial,
         kfund=kfund,
+        kmax=kmax,
     )
     unit, chunks = run_tree_components(
         paths=paths,
@@ -892,6 +899,7 @@ def produce_tree_templates(
             "b1": b1,
             "nmu": nmu,
             "nradial": nradial,
+            "kmax_h_mpc": float(kmax),
             "kfund_h_mpc": kfund,
             "finite_box_projection_version": (
                 None
@@ -1086,6 +1094,8 @@ def response_components(
     dm_total: np.ndarray,
     dm_quadratic: np.ndarray,
     response_model: str,
+    bphi_override: float | None = None,
+    preserve_universal_bphidelta: bool = False,
 ) -> dict[str, np.ndarray]:
     cached_b1 = float(np.asarray(tree["b1_fixed"]).item())
     if not math.isfinite(cached_b1) or cached_b1 == 0.0:
@@ -1094,8 +1104,14 @@ def response_components(
     b2_eft = float(parameters["b2"])
     gamma2 = float(parameters["gamma2"])
     b2_native = b2_eft - 4.0 * gamma2 / 3.0
-    bphi = 2.0 * DELTA_C * (float(b1) - float(p))
-    bphidelta = bphi + 2.0 * (
+    bphi_universal = 2.0 * DELTA_C * (float(b1) - float(p))
+    bphi = bphi_universal if bphi_override is None else float(bphi_override)
+    bphidelta_anchor = (
+        bphi_universal
+        if bphi_override is not None and preserve_universal_bphidelta
+        else bphi
+    )
+    bphidelta = bphidelta_anchor + 2.0 * (
         DELTA_C * (b2_native - 8.0 * (float(b1) - 1.0) / 21.0)
         - float(b1)
         + 1.0
@@ -1108,8 +1124,16 @@ def response_components(
         DELTA_C * b2_lagrangian - 2.0 * b1_lagrangian
     )
     data_indices = np.asarray(tree["data_indices"], dtype=int)
-    if data_indices.size != 28:
-        raise AssertionError("tree response cache must contain 28 bins")
+    cached_pairs = np.asarray(tree["k_pair"], dtype=np.float64)
+    if (
+        data_indices.ndim != 1
+        or data_indices.size == 0
+        or cached_pairs.shape != (data_indices.size, 2)
+        or np.unique(data_indices).size != data_indices.size
+        or np.any(data_indices < 0)
+        or np.any(data_indices >= 120)
+    ):
+        raise AssertionError("invalid tree response cache bin contract")
     primordial_local = np.asarray(
         tree["dBdfNL_local_primordial"], dtype=np.float64
     ) * b1_ratio**3
@@ -1322,6 +1346,7 @@ def response_components(
         "projection_adapter_local": projection_adapter,
         "data_indices": data_indices,
         "bphi": np.asarray(bphi),
+        "bphi_universal": np.asarray(bphi_universal),
         "bphidelta_value": np.asarray(bphidelta),
         "bphi2_value": np.asarray(bphi2),
         "b2_native": np.asarray(b2_native),

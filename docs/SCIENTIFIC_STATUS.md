@@ -1,6 +1,6 @@
 # Scientific status
 
-Updated: 2026-07-28
+Updated: 2026-09-29
 
 ## Production selection
 
@@ -58,6 +58,33 @@ are not covered by that quarantine.
 
 No README, tag, or release may upgrade this status merely because the code
 builds or a short profiler/MCMC smoke test completes.
+
+## Local-PNG adaptive reconstruction tree extension
+
+The fixed-`b_rec` pre- and post-reconstruction local-PNG tree formulas retain
+their existing `G + fNL L + fNL^2 Q` definitions.  The source additionally
+exports three shell-projectable bases for an adaptive reconstruction
+denominator,
+
+```text
+b_rec(k; fNL_rec) = b_rec + fNL_rec b_phi_rec / M(k):
+    gaussian_linear,
+    gaussian_quadratic,
+    png_linear_cross.
+```
+
+The quadratic Gaussian basis and the local-PNG cross basis complete the
+adaptive tree expansion through second order when `fNL_rec = fNL`.  Their
+native regression tests compare the analytic coefficients with independent
+finite differences.  This extension contains neither matter-loop terms nor a
+stochastic closure and does not change the provisional status of the
+post-reconstruction model.
+
+The production adapters now read `b_rec_h` from the validated cache contract,
+allow an explicit smoothing radius and reconstruction bias during cache
+compilation, and support an explicit local-PNG `bphi` override together with
+an explicit `preserve_universal_bphidelta` switch controlling the universality
+anchor used for `bphidelta`.
 
 ## Statistical convention
 
