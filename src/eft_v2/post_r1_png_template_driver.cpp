@@ -372,6 +372,8 @@ native::ClosedTriangleVectors native_vectors(
 
 struct NativeAccumulator {
     double adaptive_brec_denominator_tree_basis=0.0;
+    double adaptive_brec_gaussian_quadratic_basis=0.0;
+    double adaptive_brec_png_linear_cross_basis=0.0;
     double stochastic_alpha3_basis=0.0;
     double dBdfNL_local_tree=0.0;
     double dBdfNL_local_primordial=0.0;
@@ -790,11 +792,19 @@ int main(int argc,char** argv) {
                         native::NativeConfig halo_config=
                             native_config;
                         halo_config.bias_recon=b_rec_h;
+                        const native::AdaptiveBrecFiniteTreeBasis basis=
+                            native::
+                            compute_post_recon_halo_local_png_brec_finite_tree_bases_vectors(
+                                power,transfer,vectors,halo_config);
                         accumulated
                             .adaptive_brec_denominator_tree_basis+=
-                            node.weight*native::
-                            compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
-                                power,transfer,vectors,halo_config);
+                            node.weight*basis.gaussian_linear;
+                        accumulated
+                            .adaptive_brec_gaussian_quadratic_basis+=
+                            node.weight*basis.gaussian_quadratic;
+                        accumulated
+                            .adaptive_brec_png_linear_cross_basis+=
+                            node.weight*basis.png_linear_cross;
                     } else if (sector=="tree-fixed") {
                         native::NativeConfig halo_config=
                             native_config;
@@ -1038,7 +1048,13 @@ int main(int argc,char** argv) {
                     std::cout
                         <<",\"adaptive_brec_denominator_tree_basis\":"
                         <<accumulated
-                            .adaptive_brec_denominator_tree_basis;
+                            .adaptive_brec_denominator_tree_basis
+                        <<",\"adaptive_brec_gaussian_quadratic_basis\":"
+                        <<accumulated
+                            .adaptive_brec_gaussian_quadratic_basis
+                        <<",\"adaptive_brec_png_linear_cross_basis\":"
+                        <<accumulated
+                            .adaptive_brec_png_linear_cross_basis;
                 } else if (sector=="tree-fixed") {
                     std::cout<<",\"halo_tree\":";
                     write_tree(accumulated);

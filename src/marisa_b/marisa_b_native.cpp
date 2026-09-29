@@ -3238,8 +3238,8 @@ compute_post_recon_halo_bias_v1_local_png_tree_dfNL_vectors(
             bias);
 }
 
-real
-compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
+AdaptiveBrecFiniteTreeBasis
+compute_post_recon_halo_local_png_brec_finite_tree_bases_vectors(
     const PowerSpectrum& P_L,
     const PowerSpectrum& transfer_m,
     const ClosedTriangleVectors& vectors,
@@ -3256,10 +3256,10 @@ compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
         p_safe_vec(transfer_m,vecs[1]),
         p_safe_vec(transfer_m,vecs[2])};
     for (int index=0;index<3;++index) {
-        if (!(m[index]>0.0)) return 0.0;
+        if (!(m[index]>0.0)) return {};
     }
 
-    real basis=0.0;
+    AdaptiveBrecFiniteTreeBasis basis;
     for (int row=0;row<3;++row) {
         const int i=pairs[row][0];
         const int j=pairs[row][1];
@@ -3269,10 +3269,28 @@ compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
             total_vec,std::vector<Vec3>{vecs[i]},config);
         const real shift_j=shift_factor_post(
             total_vec,std::vector<Vec3>{vecs[j]},config);
-        basis-=p[i]*p[j]
-               *(shift_i/m[i]+shift_j/m[j]);
+        const real pp=p[i]*p[j];
+        const real inverse_m_sum=1.0/m[i]+1.0/m[j];
+        const real shift_over_m=
+            shift_i/m[i]+shift_j/m[j];
+        basis.gaussian_linear-=pp*shift_over_m;
+        basis.gaussian_quadratic+=
+            pp*(shift_i/(m[i]*m[i])+shift_j/(m[j]*m[j]));
+        basis.png_linear_cross-=
+            2.0*pp*inverse_m_sum*shift_over_m;
     }
     return basis;
+}
+
+real
+compute_post_recon_halo_local_png_brec_denominator_tree_basis_vectors(
+    const PowerSpectrum& P_L,
+    const PowerSpectrum& transfer_m,
+    const ClosedTriangleVectors& vectors,
+    const NativeConfig& config) {
+    return
+        compute_post_recon_halo_local_png_brec_finite_tree_bases_vectors(
+            P_L,transfer_m,vectors,config).gaussian_linear;
 }
 
 /*
