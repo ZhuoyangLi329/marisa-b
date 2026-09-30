@@ -1,0 +1,62 @@
+{
+  "schema": "marisa-b-reconstruction-current-p-example-v1",
+  "snapshot_date": "2026-09-30",
+  "purpose": "Document method-to-theory mapping; not a production likelihood configuration or a new calibration fit.",
+  "delta_c": 1.686,
+  "bphidelta_universal_anchor_p": 1.0,
+  "tracers": {
+    "halo": {
+      "b1_theory": 1.93,
+      "p_halo": 1.1788659191136683,
+      "calibrated_for": "ordinary pre tracer; current-p label in the pre IR scan",
+      "calibration_description": "Adopted P0 calibration with fNL fixed to +100, recorded by the 2026-09-16 analysis runner.",
+      "reconstruction_example": {
+        "b_rec": 1.9326526728794324,
+        "p_rec": 1.0,
+        "R_mpc_h": 10.0,
+        "cell_size_mpc_h": 8.0,
+        "cic_power_per_axis": 4
+      }
+    },
+    "sto": {
+      "b1_theory": 2.197952896776342,
+      "p_halo": 1.3394637946618602,
+      "calibrated_for": "STO-only weighted tracer; not a dedicated STO+Marisa post calibration",
+      "calibration_description": "Adopted P0 calibration with fNL fixed to +100, recorded by the 2026-09-16 analysis runner.",
+      "weighting_example": "matter-assisted N+Env; env_source=dm, weight_source=dm, lambda_th=1, number weighting",
+      "reconstruction_example": {
+        "b_rec": 2.197952896776342,
+        "p_rec": 1.0,
+        "R_mpc_h": 10.0,
+        "cell_size_mpc_h": 8.0,
+        "cic_power_per_axis": 4
+      }
+    }
+  },
+  "methods": {
+    "pre": {"tracer": "halo", "kernel": "pre", "calibration_use": "frozen pre IR example"},
+    "standard_gra": {"tracer": "halo", "kernel": "fixed_brec", "calibration_use": "illustrative parent-tracer mapping, not a new post fit"},
+    "marisa_gra": {"tracer": "halo", "kernel": "adaptive_brec", "calibration_use": "illustrative parent-tracer mapping, not a new post fit"},
+    "sto_recon": {"tracer": "sto", "kernel": "pre", "calibration_use": "STO-only tracer calibration"},
+    "sto_marisa": {"tracer": "sto", "kernel": "adaptive_brec", "calibration_use": "illustrative parent-tracer mapping, not a new post fit"}
+  },
+  "pre_ir_scan_context": {
+    "statistic": "pre B000 only",
+    "volume_gpc3_h3": 1.0,
+    "previous_volume_gpc3_h3": 42.875,
+    "input_fNL": [-100, -50, 0, 50, 100],
+    "covariance": "Fid500 single-realization covariance divided by volume, with Hartlap correction; never covariance of the mean",
+    "free_nuisance": ["b2", "gamma2", "Ashot_residual", "Bshot_residual"],
+    "scope": "IR implementation and scan outputs remain outside this public source snapshot; no post IR acceptance is claimed."
+  },
+  "provenance": {
+    "description": "Read-only identities in the external task repository; relative paths are provenance labels, not files required to execute this example.",
+    "source_sha256": {
+      "01_reconstruction_methods/README.md": "b6d9c0c33d393fdf6830c60aab06a68dd53c65835290b59758ccb868ca9e32f8",
+      "01_reconstruction_methods/sto_recon/README.md": "e6dcc8973a5ad71200f58e7ca3966cdb511823021290ab2c60a4205ba9ea4966",
+      "03_bk_model/halo/code/run_paware_pre_tree_fnl250_kmax0p08.py": "645cce4e08f16a1b7c7ab2ce841e82ce4ada7bcf41c0eae4074ca94ef71cb678",
+      "03_bk_model/halo/code/run_paware_sto_tree_fnl2pt_kmax0p08.py": "034f9b5fc8f792a3939a0dbb9100a70a4eb184996d7e2ac0d00a11b72b9a84a1",
+      "03_bk_model/halo/code/run_tree_png_ir_kmax_scan.py": "db7829a624c1dd5fbd3a6df7ffbc428709a01e772baa92c9ec9b4e0a7b28cf37"
+    }
+  }
+}

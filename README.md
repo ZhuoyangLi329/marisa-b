@@ -5,6 +5,24 @@ Quijote-like measurements.  The numerical core is C++17; Python supplies
 data contracts, template assembly, profiling, MCMC, Fisher diagnostics, and
 figures.
 
+## Reconstruction methods and a current-p example
+
+For the distinction between **std**, **Marisa**, **STO**, and **STO+Marisa**,
+start with the [method-to-theory guide](docs/RECONSTRUCTION_METHODS_CURRENT_P.md).
+It maps each method to the existing native kernels, separates tracer
+`p_halo` from displacement `p_rec` and `fNL` from `fNL_rec`, and documents a
+dated ordinary-halo/STO calibration snapshot. The standalone example needs
+only the Python standard library:
+
+```bash
+python scripts/examples/reconstruction_current_p.py --fnl 100 --fnl-rec 100
+```
+
+This is a parameter/method illustration, not a new post-reconstruction fit,
+an automatic change to production defaults, or a complete adaptive IR model.
+The guide explicitly distinguishes adopted tracer calibration from
+illustrative reuse in post branches and preserves all scientific-status gates.
+
 ## Current model
 
 The selected model is
