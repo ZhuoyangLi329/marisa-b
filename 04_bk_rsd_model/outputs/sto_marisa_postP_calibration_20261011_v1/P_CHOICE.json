@@ -1,0 +1,17 @@
+{
+  "physical_p": 1.3079259941635721,
+  "estimator": "posterior median",
+  "physical_p_sigma": 0.6596333049234275,
+  "quantiles": [
+    0.1695936537390328,
+    0.6430745136151493,
+    1.3079259941635721,
+    2.039119891377832,
+    2.686963756430997
+  ],
+  "MAP_p": 1.2494076995227128,
+  "calibration_data_stage": "post-RSD P0 after Marisa shift",
+  "calibration_count": 100,
+  "summary_sha256": "49357b95ab9d3b12b28f725fe7c3540e89edb7c6337b9fdf2909e3828df1f427",
+  "p_uncertainty_propagated": false
+}

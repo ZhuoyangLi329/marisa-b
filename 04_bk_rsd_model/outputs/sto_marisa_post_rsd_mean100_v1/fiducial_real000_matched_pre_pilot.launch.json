@@ -1,0 +1,18 @@
+{
+  "host": "login26",
+  "pid": 2108084,
+  "new_session": true,
+  "CPU_affinity": [
+    11
+  ],
+  "command": [
+    "/global/common/software/desi/users/adematti/perlmutter/cosmodesiconda/20260321-1.0.0/conda/bin/python",
+    "-B",
+    "-u",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/measure_sto_matched_pre_pilot.py",
+    "--realization",
+    "0"
+  ],
+  "log": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/fiducial_real000_matched_pre_pilot.log",
+  "created_UTC": "2026-10-09T06:41:47.194454+00:00"
+}

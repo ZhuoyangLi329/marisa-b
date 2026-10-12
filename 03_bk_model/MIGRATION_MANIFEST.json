@@ -1,0 +1,11 @@
+{
+  "source_root": "/pscratch/sd/l/lzy/reconstruction-png",
+  "destination": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model",
+  "copied": {
+    "canonical_core": ["codes/marisa_b/src", "codes/marisa_b/python", "codes/marisa_b/scripts/production", "codes/marisa_b/configs", "codes/marisa_b/schemas", "codes/marisa_b/provenance", "codes/marisa_b/tests", "codes/marisa_b/docs", "codes/marisa_b/Makefile", "codes/marisa_b/pyproject.toml"],
+    "dm": ["run_quijote_dm_z1_r15_1loop_fnl_profiles.py", "run_quijote_dm_z1_r15_1loop_fnl_mcmc.py", "prepare_quijote_dm_z1_r15_matched_fnl_model.py", "profile_quijote_dm_spt1loop_angle_contributions.py", "profile_quijote_dm_spt1loop_q_contributions.py", "scan_quijote_dm_spt1loop_convergence.py"],
+    "halo": ["prepare_quijote_halo_z0p5_marisa_direct_finite_tree_bases.py", "run_quijote_halo_z0p5_direct_finite_fnl_single_stat_profiles.py", "run_quijote_halo_z0p5_direct_finite_tree_kmax_validity_scan.py", "run_quijote_halo_z0p5_fnl250_pre_std_marisa_tree_dm_kmax0p08_profiles.py", "prepare_quijote_halo_z0p5_pre_active_direct_finite_tree_kmax0p30.py"]
+  },
+  "excluded": ["build binaries", "git metadata", "external simulation subtree", "python caches", "raw simulation", "large production logs"],
+  "original_unchanged": true
+}

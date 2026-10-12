@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "P_bins": 12,
+  "pilot_samples": 60,
+  "fine_samples": 3,
+  "same_edges_and_point_count_as_realspace": true,
+  "exact_lattice_nmodes_verified": true,
+  "P_window_source": "actual shared production binner labels, including CPU float32 boundary convention",
+  "measurement_mesh_convergence": [
+    {
+      "cosmology": "fiducial",
+      "max_shift_over_mean100_sigma": 7.487543549936203e-05
+    },
+    {
+      "cosmology": "LC_p",
+      "max_shift_over_mean100_sigma": 0.00019315032715962375
+    },
+    {
+      "cosmology": "LC_m",
+      "max_shift_over_mean100_sigma": 0.00019315032715962375
+    }
+  ],
+  "truth_recovery_gate": false,
+  "P_B_same_raw_sample": true,
+  "numeric_source_sha256": "2a55ac72e776cc60648cc8d16183a4fdfcf97cf06ad695fdb3b1373ad7711d4a"
+}

@@ -1,0 +1,575 @@
+{
+  "checks": {
+    "all_certified_indices_present": true,
+    "field_relative_l2": {
+      "Bhalo_tree_fNL2_bphi2_operator": 0.0,
+      "Bhalo_tree_fNL2_bphi_B0": 0.0,
+      "Bhalo_tree_fNL2_bphi_bphidelta": 0.0,
+      "Bhalo_tree_fNL2_bphi_sq_F2": 0.0,
+      "Bhalo_tree_fNL2_bphi_sq_advection": 0.0,
+      "Bhalo_tree_fNL2_bphi_sq_b2": 0.0,
+      "Bhalo_tree_fNL2_bphi_sq_bK2": 0.0,
+      "Bhalo_tree_fNL2_deterministic": 0.0,
+      "Bhalo_tree_fNL2_stochastic_alpha3PNG_basis": 0.0,
+      "dBdfNL_local_bphi_advection": 0.0,
+      "dBdfNL_local_bphi_b2": 0.0,
+      "dBdfNL_local_bphi_bK2": 0.0,
+      "dBdfNL_local_bphi_f2": 0.0,
+      "dBdfNL_local_bphidelta": 0.0,
+      "dBdfNL_local_primordial": 0.0,
+      "dBdfNL_local_tree": 0.0,
+      "dBdfNL_stochastic_alpha3_basis": 0.0,
+      "data_indices": 0.0,
+      "stochastic_alpha3_basis": 0.0
+    },
+    "low_k_overlap_below_2e_minus_13": true,
+    "low_k_overlap_maximum_relative_l2": 0.0
+  },
+  "created_utc": "2026-08-30T06:20:17.393109+00:00",
+  "inputs": {
+    "matrix": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100/matrices/baseline_pre_standard_matrix.npz",
+      "sha256": "3e84d977d595eca55260fceb90836cb181cf69ffd52db2da85156b703cb2365e"
+    },
+    "native_binary": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/marisa_b/build/halo_v1/marisa_b_triangle",
+      "sha256": "60b3c8e758abbe3557834a83f97b7c997f574493407f7443bc2182f0c4bd4ed0"
+    },
+    "old_tree": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_pre_standard_projected_png_audit/pre_theory/pre_halo_tree_finite_png_z0p5_kmax0p12_nrad4_nmu80.npz",
+      "sha256": "f04238d2ad02acf35f3d43fa9a1c472ba06de14dacb282c53053cf0866c717c5"
+    },
+    "png_table": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+      "sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb"
+    },
+    "runner": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/marisa_b/scripts/production/run_pre_recon_halo_png_uplift_v1.py",
+      "sha256": "16e124f38b235d5452b2bf081b3b303722777c7b68b12d8617ca339df13090cc"
+    }
+  },
+  "output": {
+    "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_pre_direct_finite_tree_kmax0p20_v1/theory/pre_halo_tree_finite_png_z0p5_kmax0p20_nrad4_nmu80.npz",
+    "sha256": "c8eaf247d6a6994f608a161ab62be8d4b542e7a1f93e0563f967443977b5817d"
+  },
+  "producer_payload": {
+    "chunks": [
+      {
+        "n_triangles": 2048,
+        "start": 0,
+        "wall_seconds": 0.012558657
+      },
+      {
+        "n_triangles": 2048,
+        "start": 2048,
+        "wall_seconds": 0.015472471
+      },
+      {
+        "n_triangles": 2048,
+        "start": 4096,
+        "wall_seconds": 0.016444593
+      },
+      {
+        "n_triangles": 2048,
+        "start": 6144,
+        "wall_seconds": 0.012529633
+      },
+      {
+        "n_triangles": 2048,
+        "start": 8192,
+        "wall_seconds": 0.012940319
+      },
+      {
+        "n_triangles": 2048,
+        "start": 10240,
+        "wall_seconds": 0.016881889
+      },
+      {
+        "n_triangles": 2048,
+        "start": 12288,
+        "wall_seconds": 0.012506711
+      },
+      {
+        "n_triangles": 2048,
+        "start": 14336,
+        "wall_seconds": 0.016775119
+      },
+      {
+        "n_triangles": 2048,
+        "start": 16384,
+        "wall_seconds": 0.015077253
+      },
+      {
+        "n_triangles": 2048,
+        "start": 18432,
+        "wall_seconds": 0.020069322
+      },
+      {
+        "n_triangles": 2048,
+        "start": 20480,
+        "wall_seconds": 0.019904895
+      },
+      {
+        "n_triangles": 2048,
+        "start": 22528,
+        "wall_seconds": 0.015066313
+      },
+      {
+        "n_triangles": 2048,
+        "start": 24576,
+        "wall_seconds": 0.012291199
+      },
+      {
+        "n_triangles": 2048,
+        "start": 26624,
+        "wall_seconds": 0.01506961
+      },
+      {
+        "n_triangles": 2048,
+        "start": 28672,
+        "wall_seconds": 0.011649202
+      },
+      {
+        "n_triangles": 2048,
+        "start": 30720,
+        "wall_seconds": 0.015258221
+      },
+      {
+        "n_triangles": 2048,
+        "start": 32768,
+        "wall_seconds": 0.012236687
+      },
+      {
+        "n_triangles": 2048,
+        "start": 34816,
+        "wall_seconds": 0.011768244
+      },
+      {
+        "n_triangles": 2048,
+        "start": 36864,
+        "wall_seconds": 0.01170763
+      },
+      {
+        "n_triangles": 2048,
+        "start": 38912,
+        "wall_seconds": 0.012102116
+      },
+      {
+        "n_triangles": 2048,
+        "start": 40960,
+        "wall_seconds": 0.012173599
+      },
+      {
+        "n_triangles": 2048,
+        "start": 43008,
+        "wall_seconds": 0.012019822
+      },
+      {
+        "n_triangles": 2048,
+        "start": 45056,
+        "wall_seconds": 0.021143375
+      },
+      {
+        "n_triangles": 2048,
+        "start": 47104,
+        "wall_seconds": 0.024443659
+      },
+      {
+        "n_triangles": 2048,
+        "start": 49152,
+        "wall_seconds": 0.012089774
+      },
+      {
+        "n_triangles": 2048,
+        "start": 51200,
+        "wall_seconds": 0.016011004
+      },
+      {
+        "n_triangles": 2048,
+        "start": 53248,
+        "wall_seconds": 0.015934463
+      },
+      {
+        "n_triangles": 2048,
+        "start": 55296,
+        "wall_seconds": 0.012093951
+      },
+      {
+        "n_triangles": 2048,
+        "start": 57344,
+        "wall_seconds": 0.012369815
+      },
+      {
+        "n_triangles": 2048,
+        "start": 59392,
+        "wall_seconds": 0.015357606
+      },
+      {
+        "n_triangles": 2048,
+        "start": 61440,
+        "wall_seconds": 0.012859138
+      },
+      {
+        "n_triangles": 2048,
+        "start": 63488,
+        "wall_seconds": 0.012829994
+      },
+      {
+        "n_triangles": 2048,
+        "start": 65536,
+        "wall_seconds": 0.01301561
+      },
+      {
+        "n_triangles": 2048,
+        "start": 67584,
+        "wall_seconds": 0.015614805
+      },
+      {
+        "n_triangles": 768,
+        "start": 69632,
+        "wall_seconds": 0.01115486
+      }
+    ],
+    "created_utc": "2026-08-30T06:20:17.359995+00:00",
+    "inputs": {
+      "matrix": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100/matrices/baseline_pre_standard_matrix.npz",
+      "matrix_sha256": "3e84d977d595eca55260fceb90836cb181cf69ffd52db2da85156b703cb2365e",
+      "native_binary": "/pscratch/sd/l/lzy/reconstruction-png/codes/marisa_b/build/halo_v1/marisa_b_triangle",
+      "native_binary_sha256": "60b3c8e758abbe3557834a83f97b7c997f574493407f7443bc2182f0c4bd4ed0",
+      "png_table": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+      "png_table_sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb"
+    },
+    "output": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_pre_direct_finite_tree_kmax0p20_v1/theory/pre_halo_tree_finite_png_z0p5_kmax0p20_nrad4_nmu80.npz",
+    "parameters": {
+      "b1": 1.9326526728794324,
+      "finite_box_projection_version": "continuum_full_shell_denominator_v2",
+      "kfund_h_mpc": 0.006283185307179587,
+      "kmax_h_mpc": 0.2,
+      "n_triangles": 70400,
+      "nmu": 80,
+      "nradial": 4
+    },
+    "schema": 1,
+    "scope": "pre-reconstruction halo tree local-PNG physical components; continuous-shell projection",
+    "status": "pass",
+    "validation": {
+      "b2_eft": 0.83,
+      "b2_native": 1.3233333333333333,
+      "bphi": 2.470504812949446,
+      "bphi2": -1.5726659600894182,
+      "bphidelta": 3.8694204908288867,
+      "chunks": [
+        {
+          "n_triangles": 2048,
+          "start": 0,
+          "wall_seconds": 0.012124758
+        },
+        {
+          "n_triangles": 2048,
+          "start": 2048,
+          "wall_seconds": 0.014974312
+        },
+        {
+          "n_triangles": 2048,
+          "start": 4096,
+          "wall_seconds": 0.012080225
+        },
+        {
+          "n_triangles": 2048,
+          "start": 6144,
+          "wall_seconds": 0.012584586
+        },
+        {
+          "n_triangles": 2048,
+          "start": 8192,
+          "wall_seconds": 0.012083983
+        },
+        {
+          "n_triangles": 2048,
+          "start": 10240,
+          "wall_seconds": 0.012173599
+        },
+        {
+          "n_triangles": 2048,
+          "start": 12288,
+          "wall_seconds": 0.012110232
+        },
+        {
+          "n_triangles": 2048,
+          "start": 14336,
+          "wall_seconds": 0.012066229
+        },
+        {
+          "n_triangles": 2048,
+          "start": 16384,
+          "wall_seconds": 0.0122544
+        },
+        {
+          "n_triangles": 2048,
+          "start": 18432,
+          "wall_seconds": 0.01224397
+        },
+        {
+          "n_triangles": 2048,
+          "start": 20480,
+          "wall_seconds": 0.015152574
+        },
+        {
+          "n_triangles": 2048,
+          "start": 22528,
+          "wall_seconds": 0.014038326
+        },
+        {
+          "n_triangles": 2048,
+          "start": 24576,
+          "wall_seconds": 0.012730919
+        },
+        {
+          "n_triangles": 2048,
+          "start": 26624,
+          "wall_seconds": 0.01292437
+        },
+        {
+          "n_triangles": 2048,
+          "start": 28672,
+          "wall_seconds": 0.01276346
+        },
+        {
+          "n_triangles": 2048,
+          "start": 30720,
+          "wall_seconds": 0.012776112
+        },
+        {
+          "n_triangles": 2048,
+          "start": 32768,
+          "wall_seconds": 0.012240704
+        },
+        {
+          "n_triangles": 2048,
+          "start": 34816,
+          "wall_seconds": 0.012343005
+        },
+        {
+          "n_triangles": 2048,
+          "start": 36864,
+          "wall_seconds": 0.012332877
+        },
+        {
+          "n_triangles": 2048,
+          "start": 38912,
+          "wall_seconds": 0.012039379
+        },
+        {
+          "n_triangles": 2048,
+          "start": 40960,
+          "wall_seconds": 0.015383244
+        },
+        {
+          "n_triangles": 2048,
+          "start": 43008,
+          "wall_seconds": 0.012228541
+        },
+        {
+          "n_triangles": 2048,
+          "start": 45056,
+          "wall_seconds": 0.01240943
+        },
+        {
+          "n_triangles": 2048,
+          "start": 47104,
+          "wall_seconds": 0.012101424
+        },
+        {
+          "n_triangles": 2048,
+          "start": 49152,
+          "wall_seconds": 0.012325924
+        },
+        {
+          "n_triangles": 2048,
+          "start": 51200,
+          "wall_seconds": 0.012262135
+        },
+        {
+          "n_triangles": 2048,
+          "start": 53248,
+          "wall_seconds": 0.015271966
+        },
+        {
+          "n_triangles": 2048,
+          "start": 55296,
+          "wall_seconds": 0.012224094
+        },
+        {
+          "n_triangles": 2048,
+          "start": 57344,
+          "wall_seconds": 0.012441119
+        },
+        {
+          "n_triangles": 2048,
+          "start": 59392,
+          "wall_seconds": 0.012243
+        },
+        {
+          "n_triangles": 2048,
+          "start": 61440,
+          "wall_seconds": 0.016122513
+        },
+        {
+          "n_triangles": 2048,
+          "start": 63488,
+          "wall_seconds": 0.012451959
+        },
+        {
+          "n_triangles": 2048,
+          "start": 65536,
+          "wall_seconds": 0.015774654
+        },
+        {
+          "n_triangles": 2048,
+          "start": 67584,
+          "wall_seconds": 0.010059006
+        },
+        {
+          "n_triangles": 768,
+          "start": 69632,
+          "wall_seconds": 0.012010204
+        }
+      ],
+      "finite_tree_fNL2_max_relative_recombination_error": 1.7841246413958017e-15,
+      "finite_tree_fNL2_stochastic_max_relative_recombination_error": 1.1102230246251565e-16,
+      "gamma2": -0.37,
+      "max_relative_recombination_error": 5.81369114407586e-16,
+      "p": 1.2
+    },
+    "work": {
+      "bin_average": "finite_box_shell",
+      "finite_box_boxsize_mpc_h": 999.9999999999999,
+      "finite_box_domain": "k1,k2,k3 >= kfund; zero mode excluded",
+      "finite_box_kfund_h_mpc": 0.006283185307179587,
+      "finite_box_normalization": "retain the original full radial-shell and [-1,1] angular denominator; excluded configurations contribute zero",
+      "finite_box_projection_version": "continuum_full_shell_denominator_v2",
+      "finite_box_surviving_fraction_by_pair": [
+        0.9183397161772772,
+        0.9699863058873771,
+        0.9705971700577903,
+        0.9705971700577889,
+        0.9705971700577896,
+        0.9705971700577916,
+        0.9705971700577896,
+        0.9705971700577916,
+        0.9705971700577907,
+        0.9705971700577879,
+        0.9966740631653399,
+        0.9998485184199624,
+        0.9999999999999978,
+        0.9999999999999999,
+        0.9999999999999993,
+        1.0000000000000007,
+        1.0000000000000009,
+        0.9999999999999993,
+        1.0000000000000004,
+        0.9987790340551949,
+        0.9999359039267001,
+        0.9999999999999983,
+        0.9999999999999974,
+        0.9999999999999999,
+        0.9999999999999998,
+        1.0000000000000007,
+        0.9999999999999983,
+        0.9993745413854516,
+        0.999964610083408,
+        1.0000000000000009,
+        1.0000000000000013,
+        1.0,
+        0.999999999999999,
+        0.999999999999999,
+        0.9996212221547913,
+        0.9999775550486513,
+        0.9999999999999998,
+        0.9999999999999992,
+        0.9999999999999988,
+        0.9999999999999991,
+        0.9997463700321408,
+        0.9999844934301272,
+        0.999999999999999,
+        0.9999999999999997,
+        1.0000000000000009,
+        0.9998184087043643,
+        0.9999886443091421,
+        1.0000000000000007,
+        1.0000000000000002,
+        0.999863619567336,
+        0.9999913248157263,
+        1.0000000000000013,
+        0.9998938364248999,
+        0.9999931562085849,
+        0.9999150227898057
+      ],
+      "n_selected_pairs": 55,
+      "n_triangles": 70400,
+      "nmu_b000": 80,
+      "normalization_note": "accumulate_b000 multiplies each stored weight by 1/2; finite-box weight sums are <=2 because the denominator is not renormalized after zero-mode support is removed",
+      "nradial_binavg": 4,
+      "pre_half_weight_sum_max": 2.0000000000000027,
+      "pre_half_weight_sum_min": 1.8366794323545543,
+      "triangles_per_pair_max": 1280,
+      "triangles_per_pair_min": 1280
+    }
+  },
+  "schema": "quijote-halo-z0p5-pre-direct-finite-tree-kmax0p20-v1",
+  "scope": {
+    "certified_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      42,
+      43,
+      44,
+      45,
+      47,
+      48,
+      54,
+      55,
+      56,
+      58,
+      59,
+      65,
+      66,
+      68,
+      69,
+      75,
+      77,
+      78,
+      92,
+      93,
+      99
+    ],
+    "finite_png_order": 2,
+    "fully_tree_dm": true,
+    "kmax_h_mpc": 0.2,
+    "nmu": 80,
+    "nradial": 4,
+    "redshift": 0.5
+  },
+  "status": "pass"
+}

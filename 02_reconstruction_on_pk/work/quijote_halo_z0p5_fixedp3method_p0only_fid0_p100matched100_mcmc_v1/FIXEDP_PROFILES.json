@@ -1,0 +1,382 @@
+{
+  "arrays": {
+    "bytes": 12489,
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_fixedp3method_p0only_fid0_p100matched100_mcmc_v1/FIXEDP_PROFILE_ARRAYS.npz",
+    "sha256": "de13f6228a68dbc7f4d5be8bc435da47def809e8137ab1eb41f244bf02abf3fc"
+  },
+  "created_utc": "2026-09-16T12:20:29.282667+00:00",
+  "inputs": {
+    "five_audit": {
+      "bytes": 3596,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/five_method_p0_matrix_audit.json",
+      "sha256": "97e5b4c70e0fad28c96bde4cfd7a59377f5e65abfa40a6452833eacc2aa1f7e3"
+    },
+    "five_matrix": {
+      "bytes": 166664,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/five_method_p0_matrix.npz",
+      "sha256": "c527cf51a6e7c90f02c85cb688d1963b72595809e9ebc9be53468ff80c0c6fa5"
+    },
+    "freep_calibration": {
+      "bytes": 9745,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/fnlfixed100_freep_results.json",
+      "sha256": "f06289e093b56c4919eb3010476ef0a15139f3c2f43a37a2769248650b782284"
+    },
+    "joint_audit": {
+      "bytes": 2847,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/pre_post_joint_p0_matrix_audit.json",
+      "sha256": "fb1debd3c93046b97196b274d70fadc24e6938bd2174bc74a953d1a019893604"
+    },
+    "joint_matrix": {
+      "bytes": 65983,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/pre_post_joint_p0_matrix.npz",
+      "sha256": "b4fac337359cf1587247e834384fbab8e7b5c1ca178d8902ca9cc25e3aad6274"
+    },
+    "runner": {
+      "bytes": 40202,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/code/run_fixedp3method_p0only_mcmc.py",
+      "sha256": "c7083fa913a9191040372dae91a91279fe683d5156ff91abe3db51662198b90c"
+    },
+    "theory": {
+      "bytes": 2707,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.npz",
+      "sha256": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e"
+    }
+  },
+  "rows": {
+    "pre__fNL0": {
+      "case": "pre",
+      "data_chi2": 6.233914686234853,
+      "dof": 9,
+      "goodness_of_fit_p": 0.7162980429838641,
+      "hesse_covariance": [
+        [
+          142.47609398860774,
+          -0.14921348575672388,
+          2666.4202710968325
+        ],
+        [
+          -0.14921348575672388,
+          0.0002876157294440815,
+          -6.117725834388919
+        ],
+        [
+          2666.4202710968325,
+          -6.117725834388919,
+          138021.34386680936
+        ]
+      ],
+      "map": {
+        "Pshot_residual": -476.3219833459524,
+        "b1": 1.958154657319853,
+        "fNL": -1.71409054065237
+      },
+      "minos_fNL": {
+        "lower": -13.543384922118294,
+        "lower_error": -11.829294381465925,
+        "upper": 10.338283075536125,
+        "upper_error": 12.052373616188495,
+        "valid": true
+      },
+      "objective": 6.233914686234853,
+      "optimizer_valid": true,
+      "target": "fNL0",
+      "truth_fNL": 0.0,
+      "truth_profile": {
+        "delta_chi2": 0.020565071361814624,
+        "objective": 6.254479757596668
+      }
+    },
+    "pre__fNL100": {
+      "case": "pre",
+      "data_chi2": 6.449791915514308,
+      "dof": 9,
+      "goodness_of_fit_p": 0.6941927024014529,
+      "hesse_covariance": [
+        [
+          146.24173724917432,
+          -0.15261804278352892,
+          2912.870176008166
+        ],
+        [
+          -0.15261804278352892,
+          0.00024927573724589636,
+          -5.4321197547243845
+        ],
+        [
+          2912.870176008166,
+          -5.4321197547243845,
+          125540.89076710308
+        ]
+      ],
+      "map": {
+        "Pshot_residual": -520.8165643241085,
+        "b1": 1.9443660760012154,
+        "fNL": 100.32198317297505
+      },
+      "minos_fNL": {
+        "lower": 88.37459038687251,
+        "lower_error": -11.947392786102544,
+        "upper": 112.56872755957882,
+        "upper_error": 12.246744386603766,
+        "valid": true
+      },
+      "objective": 6.449791915514308,
+      "optimizer_valid": true,
+      "target": "fNL100",
+      "truth_fNL": 100.0,
+      "truth_profile": {
+        "delta_chi2": 0.0007093896077501327,
+        "objective": 6.450501305122058
+      }
+    },
+    "pre_sto_only__fNL0": {
+      "case": "pre_sto_only",
+      "data_chi2": 12.56215933081625,
+      "dof": 19,
+      "goodness_of_fit_p": 0.8602121871568038,
+      "hesse_covariance": [
+        [
+          137.32661377874223,
+          -0.1434065228469719,
+          -0.16375603231782512,
+          2570.4354682083685,
+          3314.9732627557682
+        ],
+        [
+          -0.1434065228469719,
+          0.0002815294787095287,
+          0.0003160910085219651,
+          -6.0113586980351466,
+          -7.608569608000846
+        ],
+        [
+          -0.16375603231782512,
+          0.0003160910085219651,
+          0.0003615295423419169,
+          -6.723391345170408,
+          -8.685179095775352
+        ],
+        [
+          2570.4354682083685,
+          -6.0113586980351466,
+          -6.723391345170408,
+          136095.29750489257,
+          171563.9337465616
+        ],
+        [
+          3314.9732627557682,
+          -7.608569608000846,
+          -8.685179095775352,
+          171563.9337465616,
+          221598.5100472234
+        ]
+      ],
+      "map": {
+        "b1_post": 2.223386938452863,
+        "b1_pre": 1.9560531492491893,
+        "fNL": -1.2843384335795514,
+        "sn0_post": -600.4785068415864,
+        "sn0_pre": -424.0007139213787
+      },
+      "minos_fNL": {
+        "lower": -12.887063863973637,
+        "lower_error": -11.602725430394086,
+        "upper": 10.53596661385172,
+        "upper_error": 11.82030504743127,
+        "valid": true
+      },
+      "objective": 12.56215933081625,
+      "optimizer_valid": true,
+      "target": "fNL0",
+      "truth_fNL": 0.0,
+      "truth_profile": {
+        "delta_chi2": 0.0120099488098937,
+        "objective": 12.574169279626144
+      }
+    },
+    "pre_sto_only__fNL100": {
+      "case": "pre_sto_only",
+      "data_chi2": 10.908334525154922,
+      "dof": 19,
+      "goodness_of_fit_p": 0.9268832971599964,
+      "hesse_covariance": [
+        [
+          139.61427543257406,
+          -0.14531144056344522,
+          -0.16682568665647457,
+          2777.480115002377,
+          3604.3396303939912
+        ],
+        [
+          -0.14531144056344522,
+          0.00024207910402409308,
+          0.00027337545552788377,
+          -5.297609201145124,
+          -6.748033004067597
+        ],
+        [
+          -0.16682568665647457,
+          0.00027337545552788377,
+          0.00031325811633471027,
+          -5.956151269331272,
+          -7.711445351185112
+        ],
+        [
+          2777.480115002377,
+          -5.297609201145124,
+          -5.956151269331272,
+          123003.94193314419,
+          155900.9106720481
+        ],
+        [
+          3604.3396303939912,
+          -6.748033004067597,
+          -7.711445351185112,
+          155900.9106720481,
+          201698.88340085358
+        ]
+      ],
+      "map": {
+        "b1_post": 2.210930296293881,
+        "b1_pre": 1.9434115825958433,
+        "fNL": 99.4307806391624,
+        "sn0_post": -535.0962550525381,
+        "sn0_pre": -481.50039448256206
+      },
+      "minos_fNL": {
+        "lower": 87.7588565530877,
+        "lower_error": -11.671924086074704,
+        "upper": 111.39217122853726,
+        "upper_error": 11.961390589374853,
+        "valid": true
+      },
+      "objective": 10.908334525154922,
+      "optimizer_valid": true,
+      "target": "fNL100",
+      "truth_fNL": 100.0,
+      "truth_profile": {
+        "delta_chi2": 0.0023195403874147758,
+        "objective": 10.910654065542337
+      }
+    },
+    "sto_only__fNL0": {
+      "case": "sto_only",
+      "data_chi2": 6.3969895216498,
+      "dof": 9,
+      "goodness_of_fit_p": 0.6996217521125436,
+      "hesse_covariance": [
+        [
+          135.48219003440965,
+          -0.1620479812193087,
+          3283.827493513808
+        ],
+        [
+          -0.1620479812193087,
+          0.0003584921984873132,
+          -8.624608371475423
+        ],
+        [
+          3283.827493513808,
+          -8.624608371475423,
+          220357.15152913216
+        ]
+      ],
+      "map": {
+        "Pshot_residual": -615.2474138080219,
+        "b1": 2.223604958984916,
+        "fNL": -0.5071663011419395
+      },
+      "minos_fNL": {
+        "lower": -12.041857741309839,
+        "lower_error": -11.534691440167899,
+        "upper": 11.24424825828686,
+        "upper_error": 11.751414559428799,
+        "valid": true
+      },
+      "objective": 6.3969895216498,
+      "optimizer_valid": true,
+      "target": "fNL0",
+      "truth_fNL": 0.0,
+      "truth_profile": {
+        "delta_chi2": 0.0018971817405599722,
+        "objective": 6.39888670339036
+      }
+    },
+    "sto_only__fNL100": {
+      "case": "sto_only",
+      "data_chi2": 7.2736304351996255,
+      "dof": 9,
+      "goodness_of_fit_p": 0.6086539583076005,
+      "hesse_covariance": [
+        [
+          137.73382664211675,
+          -0.1651073719686772,
+          3573.0606903432895
+        ],
+        [
+          -0.1651073719686772,
+          0.000310698647675125,
+          -7.662301282322469
+        ],
+        [
+          3573.0606903432895,
+          -7.662301282322469,
+          200733.38627546915
+        ]
+      ],
+      "map": {
+        "Pshot_residual": -577.1701319168685,
+        "b1": 2.2120201515582574,
+        "fNL": 99.91485881077985
+      },
+      "minos_fNL": {
+        "lower": 88.31810269127536,
+        "lower_error": -11.596756119504493,
+        "upper": 111.79762030995548,
+        "upper_error": 11.882761499175627,
+        "valid": true
+      },
+      "objective": 7.2736304351996255,
+      "optimizer_valid": true,
+      "target": "fNL100",
+      "truth_fNL": 100.0,
+      "truth_profile": {
+        "delta_chi2": 5.2627171091224056e-05,
+        "objective": 7.273683062370717
+      }
+    }
+  },
+  "schema": "quijote-z0p5-fixedp-3method-profiles-v1",
+  "scope": {
+    "cases": [
+      "pre",
+      "sto_only",
+      "pre_sto_only"
+    ],
+    "p_fixed": {
+      "pre": 1.1788659191136683,
+      "sto_only": 1.3394637946618602
+    },
+    "p_fixed_rounded": {
+      "pre": 1.18,
+      "sto_only": 1.34
+    },
+    "parameters_joint": [
+      "fNL",
+      "b1_pre",
+      "b1_post",
+      "sn0_pre",
+      "sn0_post"
+    ],
+    "parameters_single": [
+      "fNL",
+      "b1",
+      "Pshot_residual"
+    ],
+    "targets": [
+      "fNL0",
+      "fNL100"
+    ]
+  },
+  "status": "complete"
+}

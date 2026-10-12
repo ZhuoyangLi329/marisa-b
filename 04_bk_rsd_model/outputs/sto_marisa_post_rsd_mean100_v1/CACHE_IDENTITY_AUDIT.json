@@ -1,0 +1,108 @@
+{
+  "status": "PILOT_CACHE_IDENTITY_PASS",
+  "created_UTC": "2026-10-08T14:03:44.273116+00:00",
+  "cases_checked": 4,
+  "rows": [
+    {
+      "cosmology": "fiducial",
+      "realization": 0,
+      "n_halo": 309740,
+      "source_cache": "/pscratch/sd/l/lzy/reconstruction-png/result_quijote_halo_z0p5_r10_stovar_env_lam1_gsr2_thr15_fid500_lcp100_source/fiducial/real000/env_lam1_gsr2_thr15/post_sto_halo.npz",
+      "source_cache_sha256": "e9761ae4889e16712efa590d543f1dafd41d8217705af586db31afd99aed6752",
+      "diagnostics_sha256": "58b28f03ffc6ac4a29531425289e3f06e03c56471e51353b03a9c88821c353de",
+      "raw_fof_sha256": "4dac4ffbb267d03f7d9db857b9565f478634d81c9fe02176c44ca3bc6ffb5579",
+      "realspace_rows_exact_match": true,
+      "RSD_horizontal_coordinates_unchanged": true,
+      "weight_sum_powers_1_2_3": [
+        309740.00565600395,
+        320124.63411512563,
+        346265.82106365333
+      ],
+      "P_self_Mpc_h3": 3336.7563161008275,
+      "B_all_same_particle_Mpc_h6": 11652462.65745907,
+      "negative_weight_count": 0,
+      "weight_min": 0.9034888744354248,
+      "weight_max": 1.9194538593292236,
+      "RSD_displacement_rms_Mpc_h": 3.5057543598542367
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 19,
+      "n_halo": 309103,
+      "source_cache": "/pscratch/sd/l/lzy/reconstruction-png/result_quijote_halo_z0p5_r10_stovar_env_lam1_gsr2_thr15_fid500_lcp100_source/fiducial/real019/env_lam1_gsr2_thr15/post_sto_halo.npz",
+      "source_cache_sha256": "65d45cc3577c796a5094bf3ae25d487e6cdd5d2894462772f45085e16073d274",
+      "diagnostics_sha256": "13d9f773cc253fb4c9c930d061afe3b26de8b7663a8ed1140a0928f71d8db74b",
+      "raw_fof_sha256": "e0851517c2773b85eef4575046d3d59cbac7535a6a2490d3c227fb50e43334f0",
+      "realspace_rows_exact_match": true,
+      "RSD_horizontal_coordinates_unchanged": true,
+      "weight_sum_powers_1_2_3": [
+        309102.9979944825,
+        319535.8261242838,
+        346041.7110477599
+      ],
+      "P_self_Mpc_h3": 3344.3607927072017,
+      "B_all_same_particle_Mpc_h6": 11717063.912100567,
+      "negative_weight_count": 0,
+      "weight_min": 0.9036924242973328,
+      "weight_max": 1.9707647562026978,
+      "RSD_displacement_rms_Mpc_h": 3.5861614138219586
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 0,
+      "n_halo": 309602,
+      "source_cache": "/pscratch/sd/l/lzy/reconstruction-png/result_quijote_halo_z0p5_r10_stovar_env_lam1_gsr2_thr15_fid500_lcp100_source/LC_p/real000/env_lam1_gsr2_thr15/post_sto_halo.npz",
+      "source_cache_sha256": "893202a9f11580b8b257e6e6e1a184d7656e74656c1977dc07a965cb9632e690",
+      "diagnostics_sha256": "f7e67cb267c6c6c0d58dc5e3e2129f208fbce1345a7901e776e11ec0b4f89c2a",
+      "raw_fof_sha256": "4748b7e718583199dd49f878fcdc3915b462777e6daffcd7b249762907296658",
+      "realspace_rows_exact_match": true,
+      "RSD_horizontal_coordinates_unchanged": true,
+      "weight_sum_powers_1_2_3": [
+        309602.00564432144,
+        321302.2233568788,
+        351637.8613683072
+      ],
+      "P_self_Mpc_h3": 3352.0169028062032,
+      "B_all_same_particle_Mpc_h6": 11849071.87144209,
+      "negative_weight_count": 0,
+      "weight_min": 0.9006055593490601,
+      "weight_max": 2.0122203826904297,
+      "RSD_displacement_rms_Mpc_h": 3.51354662609038
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 19,
+      "n_halo": 309158,
+      "source_cache": "/pscratch/sd/l/lzy/reconstruction-png/result_quijote_halo_z0p5_r10_stovar_env_lam1_gsr2_thr15_fid500_lcp100_source/LC_p/real019/env_lam1_gsr2_thr15/post_sto_halo.npz",
+      "source_cache_sha256": "5fff529c274b0df97567236f6937de2068040e5046dcc8cb1a6cc3ee4da22b84",
+      "diagnostics_sha256": "be7dbec36c53ade551aa545a81ea2ee80e2b446cfe605cf4b3b8719f8ca76c02",
+      "raw_fof_sha256": "a2616096a3b0ac056b61b65834ecf6ad0f3c9fe8efbb58aa9c64ff54a5fbecbe",
+      "realspace_rows_exact_match": true,
+      "RSD_horizontal_coordinates_unchanged": true,
+      "weight_sum_powers_1_2_3": [
+        309158.0029127598,
+        320475.8781517272,
+        349414.9328013765
+      ],
+      "P_self_Mpc_h3": 3353.0062260403643,
+      "B_all_same_particle_Mpc_h6": 11824968.20609648,
+      "negative_weight_count": 0,
+      "weight_min": 0.8996816873550415,
+      "weight_max": 1.993288278579712,
+      "RSD_displacement_rms_Mpc_h": 3.585829347748384
+    }
+  ],
+  "required_recipe": {
+    "env_source": "dm",
+    "weight_source": "dm",
+    "env_mesh": 128,
+    "recon_mesh": 128,
+    "gsr_mpc_h": 2.0,
+    "thr_mpc_h": 15.0,
+    "lambda_th": 1.0
+  },
+  "scope": "four cached sources only; real-space STO weights carried with halo identity into RSD",
+  "new_RSD_environment_classification": false,
+  "STO_covariance_inputs_complete": false,
+  "entry_sha256": "9998a29e08b8c34de5165f2ed243191f07a201f27295517ac7e6a855fc35b7c4"
+}

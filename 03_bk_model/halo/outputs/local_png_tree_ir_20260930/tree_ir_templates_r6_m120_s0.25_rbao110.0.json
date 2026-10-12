@@ -1,0 +1,186 @@
+{
+  "status": "computed",
+  "redshift": 0.5,
+  "units": {
+    "k": "h/Mpc",
+    "r": "Mpc/h",
+    "sigma2": "(Mpc/h)^2"
+  },
+  "sigma2_by_kir": {
+    "0.05": 10.284279342385746,
+    "0.10": 14.348088509431493,
+    "0.15": 16.531355336263804,
+    "0.20": 17.822758921973392
+  },
+  "r_bao": 110.0,
+  "smoothing_lambda_ln_k": 0.25,
+  "split": "Gaussian Eisenstein-Hu ratio, Quijote fiducial, 8192 log nodes, 4-sigma kernel",
+  "variants": [
+    [
+      "fixed_order",
+      "fixed_order",
+      0.0
+    ],
+    [
+      "strict_zero",
+      "strict_lo",
+      0.0
+    ],
+    [
+      "strict_kir0.05",
+      "strict_lo",
+      10.284279342385746
+    ],
+    [
+      "strict_kir0.10",
+      "strict_lo",
+      14.348088509431493
+    ],
+    [
+      "strict_kir0.15",
+      "strict_lo",
+      16.531355336263804
+    ],
+    [
+      "strict_kir0.20",
+      "strict_lo",
+      17.822758921973392
+    ],
+    [
+      "factorized_kir0.15",
+      "factorized_closure",
+      16.531355336263804
+    ]
+  ],
+  "terms": [
+    "Btree_gaussian_pre",
+    "Btree_gaussian_reconstruction",
+    "dBdfNL_local_primordial",
+    "dBdfNL_local_bphi_f2",
+    "dBdfNL_local_bphi_advection",
+    "dBdfNL_local_bphidelta",
+    "dBdfNL_local_bphi_b2",
+    "dBdfNL_local_bphi_bK2",
+    "dBdfNL_local_bphi_reconstruction",
+    "Bhalo_tree_fNL2_bphi_B0",
+    "Bhalo_tree_fNL2_bphi_sq_advection",
+    "Bhalo_tree_fNL2_bphi_sq_F2",
+    "Bhalo_tree_fNL2_bphi_sq_b2",
+    "Bhalo_tree_fNL2_bphi_sq_bK2",
+    "Bhalo_tree_fNL2_bphi_sq_reconstruction",
+    "Bhalo_tree_fNL2_bphi_bphidelta",
+    "Bhalo_tree_fNL2_bphi2_operator",
+    "stochastic_alpha3_basis",
+    "dBdfNL_stochastic_alpha3_basis",
+    "Bhalo_tree_fNL2_stochastic_alpha3PNG_basis",
+    "stochastic_alpha4_basis",
+    "Btree_gaussian_f2",
+    "Btree_gaussian_b2",
+    "Btree_gaussian_bK2"
+  ],
+  "projection": {
+    "bin_average": "finite_box_shell",
+    "finite_box_kfund_h_mpc": 0.006283185307179587,
+    "finite_box_boxsize_mpc_h": 999.9999999999999,
+    "finite_box_domain": "k1,k2,k3 >= kfund; zero mode excluded",
+    "finite_box_projection_version": "continuum_full_shell_denominator_v2",
+    "finite_box_normalization": "retain the original full radial-shell and [-1,1] angular denominator; excluded configurations contribute zero",
+    "finite_box_surviving_fraction_by_pair": [
+      0.9194405726809758,
+      0.9698951867153581,
+      0.9705971700577923,
+      0.9705971700577949,
+      0.9705971700577917,
+      0.9705971700577914,
+      0.9705971700577928,
+      0.9705971700577883,
+      0.970597170057791,
+      0.9705971700577909,
+      0.9963343270002706,
+      0.9998478434451217,
+      0.9999999999999984,
+      1.000000000000001,
+      1.0000000000000009,
+      0.9999999999999983,
+      1.0000000000000009,
+      1.0000000000000036,
+      1.0000000000000027,
+      0.9986526015709848,
+      0.9999356222729662,
+      1.0000000000000022,
+      0.9999999999999996,
+      1.0000000000000029,
+      1.0000000000000033,
+      0.9999999999999997,
+      0.9999999999999963,
+      0.9993095292162572,
+      0.999964455328455,
+      1.0000000000000018,
+      0.9999999999999997,
+      1.0000000000000018,
+      0.9999999999999997,
+      0.9999999999999978,
+      0.9995817895128347,
+      0.9999774571214919,
+      1.0,
+      0.9999999999999971,
+      0.9999999999999993,
+      0.999999999999999,
+      0.9997199451273179,
+      0.9999844258579466,
+      1.0000000000000009,
+      1.0000000000000018,
+      0.9999999999999997,
+      0.9997994807274171,
+      0.999988594861574,
+      1.0000000000000016,
+      0.9999999999999957,
+      0.9998494000674728,
+      0.9999912870583317,
+      0.9999999999999998,
+      0.9998827653443856,
+      0.9999931264318199,
+      0.9999061599159995
+    ],
+    "nmu_b000": 120,
+    "nradial_binavg": 6,
+    "n_selected_pairs": 55,
+    "n_triangles": 237600,
+    "triangles_per_pair_min": 4320,
+    "triangles_per_pair_max": 4320,
+    "pre_half_weight_sum_min": 1.8388811453619516,
+    "pre_half_weight_sum_max": 2.000000000000007,
+    "normalization_note": "accumulate_b000 multiplies each stored weight by 1/2; finite-box weight sums are <=2 because the denominator is not renormalized after zero-mode support is removed"
+  },
+  "lattice_nodes": 237600,
+  "inputs": {
+    "png_table": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+      "sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb"
+    },
+    "geometry": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100/matrices/baseline_pre_standard_matrix.npz",
+      "sha256": "3e84d977d595eca55260fceb90836cb181cf69ffd52db2da85156b703cb2365e"
+    },
+    "native_library": {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/build/tree_png_ir/libmarisa_tree_png_ir.so",
+      "sha256": "fd72ae621c8d2e8de695d5e96585718a5503d06c7c34d611935e5cba0dca73f0"
+    },
+    "native_source": {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/tree_png_ir.cpp",
+      "sha256": "bdbe737b418efb37f458ead09727eb239ee871409ec6554a5ca15258f7ea17fc"
+    },
+    "producer": {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/code/prepare_tree_png_ir_templates.py",
+      "sha256": "67c1c396c8eaa78fdc3175ea55d1b313b987239f3a90a97ec57457b7abef1e4c"
+    },
+    "node_exporter": {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/build/tree_png_ir/tree_ir_lattice_nodes",
+      "sha256": "e51ed79cceecce39115bc1528eae8a569f12e9b808ecced2131f6365df7b4e69"
+    }
+  },
+  "output": {
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/tree_ir_templates_r6_m120_s0.25_rbao110.0.npz",
+    "sha256": "a5227aeb65c1a09903b83d61901cdd08b0e48ce36a3f68c31d6524b2d8a3e362"
+  }
+}

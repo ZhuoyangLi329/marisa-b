@@ -1,0 +1,4353 @@
+{
+  "status": "ACTUAL300_FINITE_RANDOM_MARKED_CONNECTED_PROBES_COMPLETE_NOT_STO_CLOSURE",
+  "created_UTC": "2026-10-10T08:44:39.189177+00:00",
+  "n_catalogs": 300,
+  "n_per_truth": 100,
+  "records": [
+    {
+      "cosmology": "fiducial",
+      "realization": 0,
+      "source_sha256": "e9761ae4889e16712efa590d543f1dafd41d8217705af586db31afd99aed6752",
+      "diagnostics_sha256": "58b28f03ffc6ac4a29531425289e3f06e03c56471e51353b03a9c88821c353de",
+      "raw_fof_sha256": "4dac4ffbb267d03f7d9db857b9565f478634d81c9fe02176c44ca3bc6ffb5579",
+      "nhalo": 309740,
+      "exact_DFT_seconds": 1.5482971668243408
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 1,
+      "source_sha256": "6397b7dd8b92a4cfab14117c646599261ea51369dd6b709c8c29eda37e59d765",
+      "diagnostics_sha256": "7a53478c696599c06e8794d5a724e318638f6b0928f93b4c3df0145795a0d24c",
+      "raw_fof_sha256": "8b80854696600b68eb7cf47c962655b5832e3ee38b86864266c8fb82f69c6e68",
+      "nhalo": 310442,
+      "exact_DFT_seconds": 1.5612671375274658
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 2,
+      "source_sha256": "3f98645f41fc3c1d56b3d91b27471fbe44a60067721964eb69f0e664923cf20c",
+      "diagnostics_sha256": "b9b02b523c701fe15b813eeb451d1c5bd915614bdcc9aa1f9db225b2241ea5fe",
+      "raw_fof_sha256": "473c034354a1342e93fc6edcfb5e50d5d93600941cbf233970182640133579ce",
+      "nhalo": 309392,
+      "exact_DFT_seconds": 1.5371310710906982
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 3,
+      "source_sha256": "ae1e1f52b4bc08f1ad41e4723696d79dc22648446f3470fe7411a16880a79da5",
+      "diagnostics_sha256": "b1aba7a597d8dc96e29859d3a4bc4450093cd90bc9ebf940d0fece7829b917b8",
+      "raw_fof_sha256": "2a76a1ed025334994a23365f60f55a4410dfbea7a27e8703fa53ea0af9581b32",
+      "nhalo": 309383,
+      "exact_DFT_seconds": 1.468306303024292
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 4,
+      "source_sha256": "2048f7ed612be79930660bd11002e00abe373730d9dd7de06ccb566b2f36b9b2",
+      "diagnostics_sha256": "ec33fcd8b866d07ccb5d0bb9d4902f8f2496e73e79d166b3c2177a6437d5070b",
+      "raw_fof_sha256": "c849f99c4e0cc3dad2a2cc16d4d37e8f4c8990d81173f28e0ac059d5e369ec00",
+      "nhalo": 309610,
+      "exact_DFT_seconds": 1.550858974456787
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 5,
+      "source_sha256": "25c4ad85d58b2ad7302f5dbd3982b1dd8475b4dbb382a6c3227707aef8fcbc3f",
+      "diagnostics_sha256": "ab495b36a9ed80afdc8ccb82a1faf54f6666378b6dd2113d0f7b956dfc140f7c",
+      "raw_fof_sha256": "1705b878e50671d7af4925ff0eb1da134d51f71d13b874528fe39f5cd58bbb94",
+      "nhalo": 309510,
+      "exact_DFT_seconds": 1.5954599380493164
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 6,
+      "source_sha256": "b1ded27d88e42754aa1adbeebdfe24325ac7e029b44bda6f4800d3edc570c37c",
+      "diagnostics_sha256": "13ff652d9836adc782c287354d14a28028041194fbb8a499f3ec96f4b4d0e8b7",
+      "raw_fof_sha256": "5853dccb7f658233778dfa1e690e1d91b1b8e9c985f27baec97003b3d3e9fa89",
+      "nhalo": 308727,
+      "exact_DFT_seconds": 1.5677309036254883
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 7,
+      "source_sha256": "8a66882a1e5cca8220997482f7223efdf52bf334fbd80138933e7607305a87b5",
+      "diagnostics_sha256": "6beb7cbcbca0c51411552f0b97b054d78507bdfa34e4f9e328b6a3b2b6cbe595",
+      "raw_fof_sha256": "9e28307a6728d8816b7f20a3cd1877de46673d59ebd36a54830d6078cc4d3dab",
+      "nhalo": 310198,
+      "exact_DFT_seconds": 1.5484838485717773
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 8,
+      "source_sha256": "21bdba4b38dd7025ed43fe9d227f3b8c9280f38c65c1fb57942a0bf1909a69dc",
+      "diagnostics_sha256": "db2ec253c484d956c384cef20a45be36c324f13e5f11304b6cc6c4e825059b52",
+      "raw_fof_sha256": "fafca9fc3338e95189898523d1b677d63806627c687d291c63bdd700ab588e33",
+      "nhalo": 309435,
+      "exact_DFT_seconds": 1.594059944152832
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 9,
+      "source_sha256": "a50e4ee4620197594468efad490a0328f6e84ceb3d9decdaf981a404f2193296",
+      "diagnostics_sha256": "d9379e1ca2e4790f3ccdf1c0d49b375a8898ad052c0b05b2b7b25934237e08d6",
+      "raw_fof_sha256": "d842fbc8e6a45b8da1d02f54f271b37537a2ff83685d69bd98865f8bdd1baa65",
+      "nhalo": 310151,
+      "exact_DFT_seconds": 1.5778489112854004
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 10,
+      "source_sha256": "ac7ee0cf5ddf7a49c19b40942595c8ef8eff868f5150c5043e5227cfa0769b4a",
+      "diagnostics_sha256": "95be11eb145a461406d877841f2438cb00661bf65f5d71c384be8f2669f61505",
+      "raw_fof_sha256": "9bce72c689d487e6c9b65364b1fde51044fe3b62c6fa5ebc70dea27db3e8a22b",
+      "nhalo": 309061,
+      "exact_DFT_seconds": 1.5684211254119873
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 11,
+      "source_sha256": "5007df72454d133e969220a8f5dc05ed21c32d9728b20b8d46f04d2757fd995a",
+      "diagnostics_sha256": "43bae06b6351fbb2a6d44276e9fdec85c3288f22f20056791a45568fd179cdca",
+      "raw_fof_sha256": "364360d2947347b226fe7990523e231aa1fabc3def7f1e707cfc3f3e6220bcaf",
+      "nhalo": 309430,
+      "exact_DFT_seconds": 1.498772144317627
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 12,
+      "source_sha256": "1b97903c8a9265711971dd3125089b2086a3d1c5b0909b9e6886b9963f4ae491",
+      "diagnostics_sha256": "2f501257abd2b1b6f7e7399dc4724e87d4df0b8472aae0376f7ffa0a9dec9e01",
+      "raw_fof_sha256": "73df892ab84641c095e65f55effd5a33eb446d9afc3c7a012d2e5f905ae66a9f",
+      "nhalo": 308998,
+      "exact_DFT_seconds": 1.5030720233917236
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 13,
+      "source_sha256": "b51b102ee4c16e024444e1a28ad70bad27caacc601355f81e58c032efc7e5dfc",
+      "diagnostics_sha256": "b4d173493aafc5603958debafa1957dc7df86560b5d7cf0015f24cf654191128",
+      "raw_fof_sha256": "a1be5ad835c40e5677d0cc3e7baa9c66180cb685c4fa56223de5b25eaa22d702",
+      "nhalo": 309554,
+      "exact_DFT_seconds": 1.4783351421356201
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 14,
+      "source_sha256": "fda0d414da70721b7d0f5aea3138ea20c97fb769a106776ee0fe7b50946df16b",
+      "diagnostics_sha256": "f730f691064861bd2214d327679a4e71c44ba8bb47ed9dc20a68fc06c0245bbb",
+      "raw_fof_sha256": "2827f638a26e6e2f914b84a4cf68e3bc88fda91d7527002c6dd8df3c7377a9dd",
+      "nhalo": 309509,
+      "exact_DFT_seconds": 1.4023733139038086
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 15,
+      "source_sha256": "8c9b47cf359eaae05861f1bc5d120fbbdb1ce70c79a14de84e49bed7807f9680",
+      "diagnostics_sha256": "1fa831769c98f31183842c616272f38ca9ff934660050a9fa5eec7f7686d961a",
+      "raw_fof_sha256": "222168b46afd7d7807ec80a1fd3eae0d1042d6aec09f7352902fbcfe9ee0558f",
+      "nhalo": 309115,
+      "exact_DFT_seconds": 1.5054523944854736
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 16,
+      "source_sha256": "0f3345af2e230617ab43ed68e82ab723c74405d8c62ca7dc2e3a03df2d2183d6",
+      "diagnostics_sha256": "55d147cca3ccb0df7a2c20d795fe398ac31bab64f6b2479f601a0af9e7a4f528",
+      "raw_fof_sha256": "716257866269b541dc476614156162597d8c04667698e55d3cef1c940e8c8840",
+      "nhalo": 309603,
+      "exact_DFT_seconds": 1.5956218242645264
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 17,
+      "source_sha256": "0267cf2eff56b226af2f09c90acf3db183d9d74a40437df3ba6c0ae0323dc54c",
+      "diagnostics_sha256": "7e739427d2b5ca20742f2f543d19620f4f959f7524f4b65384914508d39c4dd7",
+      "raw_fof_sha256": "c56d284ea8f3e6a21f6881bef1e3347f3c4fcc8fe04e6b01738d1fa2ee9312b5",
+      "nhalo": 308985,
+      "exact_DFT_seconds": 1.5620090961456299
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 18,
+      "source_sha256": "f2bcdb6b8aa57f0ea8c7af1601268eb3033f47fcb20e29936272da4aff9eb38b",
+      "diagnostics_sha256": "f7726537647d3de180ed5321b6159d1e3450b480567e45a5056b8348dee1149a",
+      "raw_fof_sha256": "7cbffb290b8c4919dd71dacb22be71316ed07eccc6fd6e27cf50808d3c1d301a",
+      "nhalo": 309621,
+      "exact_DFT_seconds": 1.5856668949127197
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 19,
+      "source_sha256": "65d45cc3577c796a5094bf3ae25d487e6cdd5d2894462772f45085e16073d274",
+      "diagnostics_sha256": "13d9f773cc253fb4c9c930d061afe3b26de8b7663a8ed1140a0928f71d8db74b",
+      "raw_fof_sha256": "e0851517c2773b85eef4575046d3d59cbac7535a6a2490d3c227fb50e43334f0",
+      "nhalo": 309103,
+      "exact_DFT_seconds": 1.566239356994629
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 20,
+      "source_sha256": "f1287da85cf8fb986017bd6b6ab1938870dbe70f860ece61432092ced667ece4",
+      "diagnostics_sha256": "bf4e8c9faeb5268ae7ba5d362df8076c4b75e835aaef588b0b34da3215164bb9",
+      "raw_fof_sha256": "ee691efafaf7401b5b9451bfb798cec9a63318b4402165e12966c7e329c04c86",
+      "nhalo": 309856,
+      "exact_DFT_seconds": 1.5607120990753174
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 21,
+      "source_sha256": "6f03b8922e8f9bd080b4384fa14789469be32376edb455f03b41e76dbc47dd4d",
+      "diagnostics_sha256": "1bcfc1a70196af6201b7b4c5c84785c1fa7de251b753bc59686f421c82e657c9",
+      "raw_fof_sha256": "0bd55223a88839f97dc06749f26338d171364cc3878620b96e39aadcbb1b72c3",
+      "nhalo": 309648,
+      "exact_DFT_seconds": 1.5968959331512451
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 22,
+      "source_sha256": "b9791dc4111202638ebe4c3113828eb8b907e2953d88f9cde974a330446460f7",
+      "diagnostics_sha256": "431726d1d2591bf11b5c80a00cb2db75900962ce58213723e056eccf63de91fd",
+      "raw_fof_sha256": "f305928b18d82e52b69936bf7dc61547656067b68c39cded8bd586e319509def",
+      "nhalo": 309035,
+      "exact_DFT_seconds": 1.5299901962280273
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 23,
+      "source_sha256": "adf135903e615cba3c8e3758ee490fc59683d60f5b9d2ef80d689ab395b67dd3",
+      "diagnostics_sha256": "c8be7a542550583c04c1501c3aa3d35400b77d6217ae6d53bb2252ed75a24e38",
+      "raw_fof_sha256": "988a42f8505f2925e8dcdd0646d94a40b78030588a864e8e4329dcc3f436722c",
+      "nhalo": 309685,
+      "exact_DFT_seconds": 1.5199007987976074
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 24,
+      "source_sha256": "d7ecac1799ca5aaae72f36d97a2e63e3d5ebefe32ea2824cabce7668aa346c07",
+      "diagnostics_sha256": "e15d6ffc4a3f3adf8e74e57150b8029bade67fa3fa6bc14e0fd25db44102ae18",
+      "raw_fof_sha256": "da513850dbb0af736414126c6be6c56413d9107a2331001017ef3e0853bb471a",
+      "nhalo": 310272,
+      "exact_DFT_seconds": 1.5464162826538086
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 25,
+      "source_sha256": "3a8388daeed245a9a9ab89af513cacb54091c6242cb6c748e1c4e7bcef230c75",
+      "diagnostics_sha256": "56185cfed6a0ad74d0493ee16884a0403fa5e121377b1b1799fe93847d3ce03d",
+      "raw_fof_sha256": "479ff29a1eb9960aedbe446deb2d7659283be63c6077d7d3fdcaaddef2e36ed7",
+      "nhalo": 309033,
+      "exact_DFT_seconds": 1.5162513256072998
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 26,
+      "source_sha256": "2766bd74c5cbc0066e72a4af3ecde4056ed9e0d438d4b54ee3755a0b35862a1a",
+      "diagnostics_sha256": "dd5a2fcd5121c77788e4b079a6bf7b6b7d3a3edbbcfde793621f5e22452518ae",
+      "raw_fof_sha256": "17ab0c10240adf05df1f6afb119ac9d4629a7af6fd216bf9d06f67c6e7830056",
+      "nhalo": 309811,
+      "exact_DFT_seconds": 1.5110464096069336
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 27,
+      "source_sha256": "a5e6b3a2007591d7e7555fd1347ccf7332ca4eeb0e43832269c85e957f809051",
+      "diagnostics_sha256": "3e9aa3c4f658ec0ca34cb5c3a4263d0be8a81ac781c5aa3e13feb1be5a9ba586",
+      "raw_fof_sha256": "563aa2cf0347c6bfbabb708b8de85d502a1ef67a0e2f80166fe50a01f9e79049",
+      "nhalo": 309501,
+      "exact_DFT_seconds": 1.5686414241790771
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 28,
+      "source_sha256": "590f00257bbeac5049e0437d3925d428c0dc8129eab5bbac56b6554834607a7d",
+      "diagnostics_sha256": "194864b620853b5193c7dd916004fb0559e79872eabea9433b3c6277c8768991",
+      "raw_fof_sha256": "f56c062cda9ee4d793f34da39f97b86d614375fe18080e164c296c6b0034c4c9",
+      "nhalo": 310192,
+      "exact_DFT_seconds": 1.5931422710418701
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 29,
+      "source_sha256": "a6553ae338cda66c43e33b2c009f469c2aca2b49c4f2569fd5b38229484daa26",
+      "diagnostics_sha256": "03648675c4c39e005f7970a8687eca4fcedb29ec2b78b7bfe7c0fa9eb939f31a",
+      "raw_fof_sha256": "3d9ce1fa6a3f4dd9b8b18d86a1c28695eb391932ed99dd89e2737bf621949bc8",
+      "nhalo": 309199,
+      "exact_DFT_seconds": 1.5730199813842773
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 30,
+      "source_sha256": "8019cdce23e8b7e787583115789ae42740c3c1be08a3815ef7be86026cd4dcfe",
+      "diagnostics_sha256": "086e6759eba7adf0941d2d09466d72c407a8ebc353e4fb781344cbb0bc2a4209",
+      "raw_fof_sha256": "de4b4cfa8b1e71e4a667b54825fb29338b607e858dcf927b1d843e704a0757b0",
+      "nhalo": 309217,
+      "exact_DFT_seconds": 1.5274336338043213
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 31,
+      "source_sha256": "979b2832003fe7f7e0b39b4e114db078e7ad95da21378d02c2b70283847f2e43",
+      "diagnostics_sha256": "9df58c96177bb9d89976d583963ab95e59ae07429557e47ae9c736722f2c2055",
+      "raw_fof_sha256": "e79b209674bbdf315f4868e81b6c2142be99e1cf35eb4c33b8d6c8c9fc251724",
+      "nhalo": 310143,
+      "exact_DFT_seconds": 1.5984840393066406
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 32,
+      "source_sha256": "84ccbe0e8d57f14f07b0220f7d5191e7c856000f023a8e3ebeabc6cb58adf70c",
+      "diagnostics_sha256": "62b0484f6f07512fc79cf5a085509c8b0b76c11658812e2f6538eb7436a3dfee",
+      "raw_fof_sha256": "afa58fd78855f7ca1647ff863e175d76c7908c39c5834849072dd3a82f5b1315",
+      "nhalo": 308918,
+      "exact_DFT_seconds": 1.588618278503418
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 33,
+      "source_sha256": "07d44771470663040cb46de69c75728b54cfd08a520c58aee8ea1a050dbd9ace",
+      "diagnostics_sha256": "50aed3f71ea923f9dbd86b5bef406c9992f838c8a29351de98094158f47b5c7a",
+      "raw_fof_sha256": "7be88cbc655df7dbe069a542030be52dbc6c972406e8faaf8b0373bb2ca5dcc3",
+      "nhalo": 309382,
+      "exact_DFT_seconds": 1.521822452545166
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 34,
+      "source_sha256": "4f2f7c3d337f46b019d0f01f4703c7b984a7118fea846c54804ec4bc01219e2b",
+      "diagnostics_sha256": "9004c061ca5a82aa0b1fcdfce880b736c35ce5548b851c49681a1adfac070ab0",
+      "raw_fof_sha256": "c40eee99966bc0ef24c0fc63ba22ab3d922897711d3191bcf9968bc8dd3938d4",
+      "nhalo": 309451,
+      "exact_DFT_seconds": 1.4634637832641602
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 35,
+      "source_sha256": "d090722c7871960922a3f5b0d66b614496af759bd539b0084d979369118276be",
+      "diagnostics_sha256": "79079fed4770dbed7360e5cd179f594965191e2992f1934eaf0d0c166a87e2c5",
+      "raw_fof_sha256": "dc59d9b476eb8d7921a45d43818d1da97ebd1a0c6ad557a79acf73dd0eac0593",
+      "nhalo": 309109,
+      "exact_DFT_seconds": 1.5554594993591309
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 36,
+      "source_sha256": "e8ea85b4ef9c5b67c93efd1417397d760fc1f9b4835edf2c7dbbe383f397c9b7",
+      "diagnostics_sha256": "844728f651af0106865a8572317e72886d2b8a9435d0c7ca2b916390fc3bac36",
+      "raw_fof_sha256": "358aa02631bc1d6de497569bbf12753fcb853a38b0b7b8686c51b0d15bc9f4d1",
+      "nhalo": 309575,
+      "exact_DFT_seconds": 1.495378017425537
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 37,
+      "source_sha256": "c5a59a611a4146f3996ae4f148e8d9ff0584b4b8bbb2f9e69e0d7719ea5552d0",
+      "diagnostics_sha256": "183146338a7cef36c4a292bd9110f2ce328957cc7a7c7521801851e27f1da3e6",
+      "raw_fof_sha256": "f97ba8339db022951823cf72f5d27f49e88976f42e099a271ced51254ddfa4e0",
+      "nhalo": 309829,
+      "exact_DFT_seconds": 1.5122411251068115
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 38,
+      "source_sha256": "0ca5e7550fa310f483d6f072cfab64faf0b609d6fef422eabf8cd03948ab446d",
+      "diagnostics_sha256": "6f8310c4953718823c46e32c81661a9889089bbbe45ab9c707fe083c77f96666",
+      "raw_fof_sha256": "2b30e1adc6942a5158acd25894f0b94525f764e5233882524fc40c985958a8f1",
+      "nhalo": 309576,
+      "exact_DFT_seconds": 1.5519630908966064
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 39,
+      "source_sha256": "2ab94b6957405a195008200b433c0db689297857682e75b5216b2c5dc8925183",
+      "diagnostics_sha256": "186a75870baabc43601d6f4beaa5e7eb7849479a5b0290154b690fb81ee2f218",
+      "raw_fof_sha256": "b79b1e511c16713806952b60caf0cda79d4df9d602617f2293bdc07e9aed99cb",
+      "nhalo": 308500,
+      "exact_DFT_seconds": 1.5799987316131592
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 40,
+      "source_sha256": "9fb25a6844984e8e1e0e8876214f4009ddf3439826b026a7da2629f24ce4fe75",
+      "diagnostics_sha256": "942be299bba541bce83366cdc2b59522f3bba94ea17d9c892d03c120e41cbbad",
+      "raw_fof_sha256": "528cc530aeaa9d0dd6f4ea0c6fafba484bab53452e5f957b6126656038249bad",
+      "nhalo": 309493,
+      "exact_DFT_seconds": 1.5651192665100098
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 41,
+      "source_sha256": "9a9c8afec3b54ad2cbc13522fe667d8e84c3e066d01f02c594d1a7c92336e143",
+      "diagnostics_sha256": "e48ad4936390a12c1982540dfff22676d5378d0450d352f2a080dcbbb6a9c350",
+      "raw_fof_sha256": "9a72835f9984d95d79f6a8e5a86255a52cf1a893ee3dc4012e4f28a7bea4c784",
+      "nhalo": 308861,
+      "exact_DFT_seconds": 1.5211350917816162
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 42,
+      "source_sha256": "7f24ef76abf977293d7139a0f992d8e8c4a551cebfcdc04e28ecb263430e534a",
+      "diagnostics_sha256": "a3c4245f6f2052413333384bf29104fe98e4a0e88dc10c5c5153aa2f32767f43",
+      "raw_fof_sha256": "6d43b64ab4c7b2a6ebc54144633d567aafeedd0fec6d42d4f43ade96f7b3335e",
+      "nhalo": 309590,
+      "exact_DFT_seconds": 1.5878512859344482
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 43,
+      "source_sha256": "408bde32138d14f0cc0119a5475f4d1dad7e1261d64c1819408818ca3e0bd70e",
+      "diagnostics_sha256": "ce7f25fed74ea08f1de6c5793eb1ade494af1ab9472dfd178761af6aa2e33b95",
+      "raw_fof_sha256": "3563626bef5fd91da6973ce10c172593ef3bbffb792d0e0a037a2c944025cfa9",
+      "nhalo": 309219,
+      "exact_DFT_seconds": 1.582763433456421
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 44,
+      "source_sha256": "72da8b07105c06dc4bf03662b1bfbc3da2a02b09d3caeed2b5cc678ac1a1d912",
+      "diagnostics_sha256": "3858ee03ecbbbe930e9fb69e70dc3ba0e8691962d4f53ddb3d07e7f30a2d4e20",
+      "raw_fof_sha256": "222032fa3a414370c10f01101e717b8c50271f91a76460e8e52a19d4ab92141b",
+      "nhalo": 308233,
+      "exact_DFT_seconds": 1.4872956275939941
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 45,
+      "source_sha256": "5ed0b35b3aef1c38e40827e36b388e83c07078fe137d19166190cff20c4a8406",
+      "diagnostics_sha256": "f44f24337ea7ce169f77037c404d4bc3fa35c9a2bd617118f3998e32b42c0387",
+      "raw_fof_sha256": "c9649eb250d739ee60396d18fdadb10b2983275ac971d255d07b3cba5c8369e4",
+      "nhalo": 309431,
+      "exact_DFT_seconds": 1.499772071838379
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 46,
+      "source_sha256": "36c7992f3968224c92f8097fc09e8c74144cc3624c0fa39f75ea322b85522741",
+      "diagnostics_sha256": "e23c8035341f46e78ca60fb3ce004c671db7de117540238ad4cc86496a0e2ebe",
+      "raw_fof_sha256": "66bcc813fa57a9c7b9e02419b7464e71e8a010a0fe552c8b012e8eee7b6ebd43",
+      "nhalo": 308802,
+      "exact_DFT_seconds": 1.5911405086517334
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 47,
+      "source_sha256": "5cf2e61f0b04b4c552c74a310c9373e0bebed80716aefed7130d06c6b70d25e7",
+      "diagnostics_sha256": "ab0c2126911112a8edbc8c677818ba7b16235fef1340913882c69d9db943fad1",
+      "raw_fof_sha256": "d959aa84b26c01c22a70ed1236c0a34c19731e07924e693cdc822f19beb5fb6a",
+      "nhalo": 309082,
+      "exact_DFT_seconds": 1.5611131191253662
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 48,
+      "source_sha256": "a468865eb5595ba0733a370ba5b989ea78e97f4c8ca2bb08547b59beef273942",
+      "diagnostics_sha256": "c438e02823dd81fdc3468ade2f0f1971a9bd6b7c5e838defde1df2032c92317e",
+      "raw_fof_sha256": "9ab574587d3d2362d40a1b07502e1602608166a370cce0a6eb5a679d4227b99b",
+      "nhalo": 309613,
+      "exact_DFT_seconds": 1.453648328781128
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 49,
+      "source_sha256": "420c01ed5e2b03c8cfc71a594d91e2e01df58230669a40a796087984d2f4ef1a",
+      "diagnostics_sha256": "b5596191afed7128cf810889c70f441481cadcad0d7402a677293395deffdcdd",
+      "raw_fof_sha256": "302bf69d0144dd14a577712fb9950f805d39007240bf510e6d1c260dde1db9ab",
+      "nhalo": 310289,
+      "exact_DFT_seconds": 1.6064577102661133
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 50,
+      "source_sha256": "0d70c4c25bbeff7057a874c643f01001447a22ed02760d310b081fe7948cbd78",
+      "diagnostics_sha256": "16847e7cab7ef2b28e6d625fa2fe814f30667cb06f693c966398b3563fb2db57",
+      "raw_fof_sha256": "b11491d15f8319f9ca16c825b9d6d3f3aae2d8a061074b4b3cd2bbbdde4f8115",
+      "nhalo": 309178,
+      "exact_DFT_seconds": 1.5887424945831299
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 51,
+      "source_sha256": "7d1d93b583337818e5cbc39abb7333a7750f9f1d4e9c135b71249fd9959e0180",
+      "diagnostics_sha256": "a86461b77c18fb7999d3c5123252d0bdcb085251b0960d7656f74e27750c9145",
+      "raw_fof_sha256": "50b7c8816caf62623cfe110b5840da32b6252ad2f04446ed4de7b70216464b45",
+      "nhalo": 308859,
+      "exact_DFT_seconds": 1.5791146755218506
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 52,
+      "source_sha256": "f2e75cc2dbbe24a71f7bf9aa2694d17a0afb10b74887ab468f4bcb43d3352b14",
+      "diagnostics_sha256": "2af1ca6d11a09edf7e3862991e6da6ccd5faeeb34559cf16e5ccc697628c6408",
+      "raw_fof_sha256": "b0d20ef379a241e2cb9b0a3eb58d6331cae1239bdbd1ca33762532c744320057",
+      "nhalo": 310034,
+      "exact_DFT_seconds": 1.544884204864502
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 53,
+      "source_sha256": "04f7804b86ce7d9e42fdcefd444ea478e030bba63e5ec81f769e3ed423a64143",
+      "diagnostics_sha256": "df60fc8df6d8da77a0acb8b7c69b13eb7e0904c8e8ddd71ff378c4a5a47e9a6d",
+      "raw_fof_sha256": "4384940e6e5a76ba7cf407fdd853fa87307a6379166109afb08624fe59a10a67",
+      "nhalo": 309182,
+      "exact_DFT_seconds": 1.5859053134918213
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 54,
+      "source_sha256": "3ca36abd63c41390f80ccefbcee7b8a6003ae2e91cae60e0711e95615406b11f",
+      "diagnostics_sha256": "f8070e4a7cfb812a1e1db5a2e6d23b0d68d57eedd2070a1d0d14572342fea0fe",
+      "raw_fof_sha256": "3fb6445d254e39adb0df1d4b477d0d54a420eeaa85509f068914d35fd7df468e",
+      "nhalo": 310204,
+      "exact_DFT_seconds": 1.588181972503662
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 55,
+      "source_sha256": "262d39f4a4e413faced52abcb8f1b88833bebafcfbc209faa6df0d78c550cc1c",
+      "diagnostics_sha256": "68e84478c5cd78ec1d38ce86d9ef38dbea42c067d82c9e2d3dbbdca1dce7fddb",
+      "raw_fof_sha256": "c8e80275191648385aeb7d5b885ec25d10bc5bdae50fcad691fff17842debafe",
+      "nhalo": 310593,
+      "exact_DFT_seconds": 1.4342687129974365
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 56,
+      "source_sha256": "e99e4a4b900d92982ba65b443f32818e4a9d856ab83ad46368d3df2f4892577d",
+      "diagnostics_sha256": "932333fac645c4857feeb94b3931caf1361cfd04c57ef0d5990461ebd5365697",
+      "raw_fof_sha256": "c7b41b89f7d9e639396356860d578a764a817789916e2e1d23bed3847515e4cb",
+      "nhalo": 308801,
+      "exact_DFT_seconds": 1.4579813480377197
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 57,
+      "source_sha256": "b3a3498c3e32aec45a81158e8ba43b6523c1325377d79bbfef84eccfebd55d09",
+      "diagnostics_sha256": "3e51594bb1547f7f39ba3d6084f6053afc88779c0eca27f50fc504849ba1cf2f",
+      "raw_fof_sha256": "e947bbe6d2c862589161a0abaa7787afeb4f92d964163c07d8ac09a6996c6976",
+      "nhalo": 308685,
+      "exact_DFT_seconds": 1.4577677249908447
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 58,
+      "source_sha256": "816723f8118848f4afbb729178a9d3f33c1789b4fca40cfb0c1d6088ade09eb0",
+      "diagnostics_sha256": "8ead93ad49a8ce8b38c051dcf024119bdc8c57de83014babe61b8a60e27ef51a",
+      "raw_fof_sha256": "00737b501f56aaaea12e7aae9b40ab1c77bd00c8c0420854da4cea0144b06455",
+      "nhalo": 309082,
+      "exact_DFT_seconds": 1.247358798980713
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 59,
+      "source_sha256": "d10d056f635dff0f8249723fd498c70af7d7dd1d6c6f6ec9940150894397f2da",
+      "diagnostics_sha256": "e9bf6730105ff12ad1bcca72a27cc2363cfb386ef097959b984f22cda2d168be",
+      "raw_fof_sha256": "8fa3aebb683ed0bd4a3897d853c26cb4fe9eb0f01664e4d976e026ea074b576c",
+      "nhalo": 309384,
+      "exact_DFT_seconds": 1.3143959045410156
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 60,
+      "source_sha256": "f0e5afcdab588e59de46803264d83a7a62e980984d4607a463853df4e3a5b0e0",
+      "diagnostics_sha256": "8897401319f7786096cb72e90d06e17589210863abe42300d0bec9856b5b3088",
+      "raw_fof_sha256": "c7d0ab72caec377839e7994a2f54dcfc3fe946d3f98ecb8b287d538cc53b1393",
+      "nhalo": 310058,
+      "exact_DFT_seconds": 1.2146899700164795
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 61,
+      "source_sha256": "032cc7c490eea760443575af42a595a977212e8ed9fbc33dc9965a03dfa59bc1",
+      "diagnostics_sha256": "a9862b9c9f8c71ebdbd12ad5bf8c449b5a66fe2c997a28cc0af6bacc6672f4bf",
+      "raw_fof_sha256": "b0bde8f03778e4b9360e0916e45fc2480e3785d2e65f0d171b8246f2e6553eb8",
+      "nhalo": 310326,
+      "exact_DFT_seconds": 1.2086079120635986
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 62,
+      "source_sha256": "71db8e64673c0c9213fdd0c3f862cdacb2dab9bd80a3c39436f92c00781002c0",
+      "diagnostics_sha256": "eac1f7b62ff27439942ba83d6604f9a8568a18ce0ce8724ba51b872923d364a0",
+      "raw_fof_sha256": "4d4ee8eb5f48e7c87e59a84d6227a43bf4d557a1183e2fc5f4e047bab497afc6",
+      "nhalo": 309143,
+      "exact_DFT_seconds": 1.2039968967437744
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 63,
+      "source_sha256": "b6eb3f1d3b87c520ad9d796233ba9a230039b47e9cba62773ddc31173e1971d8",
+      "diagnostics_sha256": "fb904b68097fad2d2d9e3d129771427e80824a76812852eb1d9d77ea21f22002",
+      "raw_fof_sha256": "b372220251237991c20cca6afd16545b5105a980099d82e31e640eb7da3b7487",
+      "nhalo": 309277,
+      "exact_DFT_seconds": 1.2141435146331787
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 64,
+      "source_sha256": "5bb65126d78296af823e887040ec91cbd7a6731c37b30275e51e22b694bceae9",
+      "diagnostics_sha256": "da999d335a204322ffdc76ca5803155cb68b777e233c236f89870c234eb4864d",
+      "raw_fof_sha256": "9025478bf75b8fad3395a39cfce8287bc771ccf125a2eeab428a9a85a079503f",
+      "nhalo": 309402,
+      "exact_DFT_seconds": 1.2052338123321533
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 65,
+      "source_sha256": "0b152be818b77fe8462800e2ab9ef5dafc4dd5847a673a9daf0dbb0e33d12bad",
+      "diagnostics_sha256": "a63dd47b03e983b232f0b5580f74647944298063acfe09e93054f17ee1fe2939",
+      "raw_fof_sha256": "46a991640306d8e434e879cb5a76d6980f6b082667798d8eac125911116141f0",
+      "nhalo": 309327,
+      "exact_DFT_seconds": 1.188399076461792
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 66,
+      "source_sha256": "2e6475b8e939422878ea7817004dd694e5a5bd7b6245852f8dcb377f2559d0ca",
+      "diagnostics_sha256": "277202bb0c61349d59690f0a0dc498a7c5ab6194734836326c027fdb95048889",
+      "raw_fof_sha256": "7b21142881805fdc329d2d9115053af2f9dd1879cb9f4b2c2a6c310cfdcd6c02",
+      "nhalo": 309179,
+      "exact_DFT_seconds": 1.2135820388793945
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 67,
+      "source_sha256": "6f4da6e923dd7822e4702ebd287346487446962943b0c43c606f1e37cbcbf1cb",
+      "diagnostics_sha256": "5adb0336a31a3c0efcf66e6557464cfeb217df35794acb3617fe28244daf06d7",
+      "raw_fof_sha256": "ae7fef61beb0233fff2fc8f5256b4497e17a5cd9b8fab79b76118494afc2e19d",
+      "nhalo": 309354,
+      "exact_DFT_seconds": 1.1972341537475586
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 68,
+      "source_sha256": "04caad1e565d25184e7cdf801c5e8782b424a1e33283d142cce772f9d41ad11a",
+      "diagnostics_sha256": "6737773c715c3e79a93aba23ad83769caa6ea5aee14364e5e785128f6f6d66f1",
+      "raw_fof_sha256": "fca478cd5fb603925f3bda319d86c455fe6a4c1530792843058725c98cc81818",
+      "nhalo": 309218,
+      "exact_DFT_seconds": 1.259429693222046
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 69,
+      "source_sha256": "835cc916fe5115f97461247e7e039ec42de722eaed04588f670c211145b21070",
+      "diagnostics_sha256": "5b3d6f811a13bb90f9f5e539a47dd6e2316861573dba86e447a7ef843e9082be",
+      "raw_fof_sha256": "61061a5fd32d14a4d374cce539256babcc7d6a39a900971eb89791371cc10678",
+      "nhalo": 309186,
+      "exact_DFT_seconds": 1.2200469970703125
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 70,
+      "source_sha256": "cf642c278efd88a2f0e8b121945bd20ca33c3e6a6f7c6a7f9efe041a10337804",
+      "diagnostics_sha256": "3b710d6acadc553dcf879d99cf2e5f18f0d35e4050e59137d6a8e2734a474442",
+      "raw_fof_sha256": "0be621de0cc33e152d9007c81ed92406c27475476ee294f480e4f48bdd6ed98c",
+      "nhalo": 309070,
+      "exact_DFT_seconds": 1.2282721996307373
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 71,
+      "source_sha256": "bb184448d039bac3b59e7c25551ef4ce92a2a81030d250f84804e62df86504b6",
+      "diagnostics_sha256": "0774ac24dfe5d8043e6065a31fad9ea1eec29988d828e0686dc3d07b91e796fc",
+      "raw_fof_sha256": "7daada0130bf45a7a4aea05a649cdc9489a0f7873081aab589269abb1fd75a2f",
+      "nhalo": 309367,
+      "exact_DFT_seconds": 1.2072060108184814
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 72,
+      "source_sha256": "a952f4d750f807ed5c0dcd08452a1aa9651695b27a548df473c9990e2b6e49c9",
+      "diagnostics_sha256": "6c54b9db48c0752251e6f14fca0430b133ab9a7489551e38a19babea3c36b271",
+      "raw_fof_sha256": "1d7158cd64a98182e22bc6dd00b1e27440de819dd22d3db56582594222a6a4f0",
+      "nhalo": 309313,
+      "exact_DFT_seconds": 1.20369291305542
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 73,
+      "source_sha256": "fa5eb1d049cc850c893630864f7152c84356f94c975ebb41762483fdd52e8af8",
+      "diagnostics_sha256": "d4556e0914be27bd113066cde20fb52ebcf3fc23dfc832645b23d8f2c3bce34b",
+      "raw_fof_sha256": "e4bc4276f7ead8f5f5a47f47eaf256bd2ffdd1deb60ca3aaa4ffa5cba9c0a734",
+      "nhalo": 309715,
+      "exact_DFT_seconds": 1.2035393714904785
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 74,
+      "source_sha256": "1697c3fd00ea4631d403c4031d60224bcd6e647b31b259790fb0ed83e0e26dc0",
+      "diagnostics_sha256": "2c1de42b59936cd9c2fc74cebeede3189ea4cdb32e1ffd7b3025119daacac081",
+      "raw_fof_sha256": "b3a222678c87d97f54637248a1699c5f7583ded70da3be428d73430f0924e282",
+      "nhalo": 309991,
+      "exact_DFT_seconds": 1.2046914100646973
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 75,
+      "source_sha256": "15cfdcc597997e5257eb05e9bd878c5f05ddce6b0c968b22abb587a22e95fbf1",
+      "diagnostics_sha256": "bc4eed1122a1c5e67c60d661539f34a228d003c5b85af5a53358d52707ef7777",
+      "raw_fof_sha256": "710ff0534d9795c0bdcf6d446632a018045c55b5d94b566d3c11a6a9435b9b09",
+      "nhalo": 309627,
+      "exact_DFT_seconds": 1.2006094455718994
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 76,
+      "source_sha256": "83ca298803bcc1d658b2efc97cee820a880a2582898a7a73c330f30acb292bbd",
+      "diagnostics_sha256": "3e41ea696b8af0425841224a5cbe15dd0cd78520e7ecf22fd2366d184dc225af",
+      "raw_fof_sha256": "d3553b9568b9982429c746853a3c4254514431aced2ad14fa8c9344a05bf0983",
+      "nhalo": 308760,
+      "exact_DFT_seconds": 1.1902024745941162
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 77,
+      "source_sha256": "bc47a474a0a8c927bc541715d25ad587cc9a09710555cebda490e343e83f7c17",
+      "diagnostics_sha256": "37f5eaa8a5e5933c413bf622108d3b145bd329013ee39c2c22feee8f90379442",
+      "raw_fof_sha256": "3cc9bbec162702c911c67b7253449257123a2312fee8101840fdf75216856794",
+      "nhalo": 309484,
+      "exact_DFT_seconds": 1.1974525451660156
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 78,
+      "source_sha256": "2eb0bc83f94a9514abe11e7bb24968bbec52601db829c3ecd32fdf16813c88a1",
+      "diagnostics_sha256": "4bd1db935ec2228c83b153d35b6dd16ce03d786f16623c45172510a06bd0d9a9",
+      "raw_fof_sha256": "2ca99a10bcbc122963e4b31c2675d815cb9c6122d1d756cf49df84120892f85e",
+      "nhalo": 309859,
+      "exact_DFT_seconds": 1.2211551666259766
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 79,
+      "source_sha256": "85c107c6b1c8ce5d92b057ff76f43b73c3e41b57826531fd72f66ee8c8fed795",
+      "diagnostics_sha256": "d5b81e4490a15f6558baa2c7f8aa49b37e2cd9be30e352e91e36af94dc7ec615",
+      "raw_fof_sha256": "ea475dab20a5bf8cbf614473d352ac3dd5994167c702016bac4367848c231b10",
+      "nhalo": 310757,
+      "exact_DFT_seconds": 1.2095084190368652
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 80,
+      "source_sha256": "e4a0585dee4ed8730a0daa0a1734be024ecd6c91a636bdfd272941a03b5d31c9",
+      "diagnostics_sha256": "5a5501d07c3c28b225e82a25096989ec072c5425ee6da8565212ccc879aef883",
+      "raw_fof_sha256": "b17158ac613dfa9ae25b0892b4e23e1c9fab63e60dae304f763692413b284c17",
+      "nhalo": 310638,
+      "exact_DFT_seconds": 1.201014518737793
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 81,
+      "source_sha256": "8b700c212dbcff41defa2900f6250ff8713133d9b620d7f8ff1dc88036256f19",
+      "diagnostics_sha256": "5a9d70f09216eb8125bab4b07364de328a7a3f3ba86cdf28973d975080eb91c2",
+      "raw_fof_sha256": "891d40da710af1b0992ab158fc59cb75390acb9e2054df2b86c52311f3c0ad56",
+      "nhalo": 308443,
+      "exact_DFT_seconds": 1.1950795650482178
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 82,
+      "source_sha256": "284d011d25a0bd4c75cc195ff390a073faff903c1bb83896fea4d07bc63136e3",
+      "diagnostics_sha256": "3798ce386f58b2c0e4400f2a71d8034a5f304294dc755f6859e2d3ccbd16506a",
+      "raw_fof_sha256": "d9585b40fcd34cf6ac4db146b18e0533c4dcc072205646977debcbd61e3b6da2",
+      "nhalo": 309878,
+      "exact_DFT_seconds": 1.203880786895752
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 83,
+      "source_sha256": "3322fafcf812dd1946867cccfac85af6d2031aba85b81e5d80d6f54c16ac069e",
+      "diagnostics_sha256": "2c782b7691c741232d62a49b91c20151d56ee645b23786b703d0b2ca240c5d9c",
+      "raw_fof_sha256": "f04eef460d67dd947a9baf085c253d6baccc62c18c0bf25947185a9c6d157890",
+      "nhalo": 309526,
+      "exact_DFT_seconds": 1.1968417167663574
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 84,
+      "source_sha256": "5d8edd24816a42e3e384ecb021a9afa5a92474253af7cb71093b5d14113875bd",
+      "diagnostics_sha256": "edb8b489e3e3a453c2f915aba92e2c82b42ceb5e3f9f217da20178ac30264818",
+      "raw_fof_sha256": "cdbc0310e19b85fe04c8b558b018eec22bc8e598c56521dabbef4deeaec9449a",
+      "nhalo": 309709,
+      "exact_DFT_seconds": 1.1961281299591064
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 85,
+      "source_sha256": "25510ab2f36a96cf02c5745133b4ae84c2d71d22d5a88df95b98e80a24785b68",
+      "diagnostics_sha256": "0b1ea8d6affe67d0bda210bdae25f61f615a0ffac907b02262ef0cc8513d4091",
+      "raw_fof_sha256": "b9a447d2a53aaf26f7f4433727a628bd7ac893ac2108d2c35ff2a5a0e5562e60",
+      "nhalo": 309101,
+      "exact_DFT_seconds": 1.209761619567871
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 86,
+      "source_sha256": "615fd3e390ac88aa41a0250c43f5b96b1ec086aac9b5971fdb66676950c60cbb",
+      "diagnostics_sha256": "ca18838905e69e826f1b9e15673ed2c2b63f87773e5e342ca0674baed296b4a3",
+      "raw_fof_sha256": "68193a06e5b8a3dfd7c986dfc9145363741fd18a3b10137c82d113ac05706b19",
+      "nhalo": 309329,
+      "exact_DFT_seconds": 1.2155787944793701
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 87,
+      "source_sha256": "c05878bec44395392d21ddd607e9a3737bf0e52b5bd4bd43df358e77e1999dba",
+      "diagnostics_sha256": "d7c1aef295ed1a5958cc6a5acf09ce9a256067288fcc61ec9a79717ec32d9002",
+      "raw_fof_sha256": "31a9a0b0f1604e6cba1fb5c7d3e5909dcc6ff2e7f82bfed2be79ff0d9318f5c6",
+      "nhalo": 309556,
+      "exact_DFT_seconds": 1.2255704402923584
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 88,
+      "source_sha256": "b33df9fd79ccd300c736633c3b494ef9a72cb8955673e6ccbde0fe7e718d9139",
+      "diagnostics_sha256": "07b3b173c1a18c0a23d01786929ffdec43b50b7764b65761e127f811cbb60998",
+      "raw_fof_sha256": "d7e040de695e3119feeca1c25830824ac923e0f168de179d2dd5990d7a730336",
+      "nhalo": 309396,
+      "exact_DFT_seconds": 1.2510497570037842
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 89,
+      "source_sha256": "b886607a971e3cceb2362e6d54e7e9363af25decdcaacc48b37b47565bb7f902",
+      "diagnostics_sha256": "16ca31ca3802deddd3d1ebdc4d36a2b7ea41b03b8b8e9964a5ce16558a41c15b",
+      "raw_fof_sha256": "8df38e483e0cf14d2d3ea6732c5a74108acc6a31d8f393a522927a39e552bb6d",
+      "nhalo": 309520,
+      "exact_DFT_seconds": 1.2679178714752197
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 90,
+      "source_sha256": "7d267a36b03de785c57cdc6ccf8d5f25576497d8d8cb5d65fa58ae584fba9fb6",
+      "diagnostics_sha256": "b3b8700f8bf20d5a3e893ba3a43613e4ac4a2db40bd9f430812f4785a87713ed",
+      "raw_fof_sha256": "cfb29e97f8302633b63000f45438922208219c06886d568ef9f80c2b6cbdf6a5",
+      "nhalo": 309613,
+      "exact_DFT_seconds": 1.2723596096038818
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 91,
+      "source_sha256": "3ce9b5db6281ad2fb766ac1db8bbdb757562bc40244fdc1178c5d922fde2eb8b",
+      "diagnostics_sha256": "1ea48bb5a6ddf0336011c4b24afdbbd17f350d196e7cd428902422f16add3308",
+      "raw_fof_sha256": "a5a354fa374fbfdf46524867fe21ca37c177a0e083e1e983949b490bf566f85a",
+      "nhalo": 309321,
+      "exact_DFT_seconds": 1.2697420120239258
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 92,
+      "source_sha256": "a739a7dfc8e2db09bcff1e9135ce2252502efe509bd9321dcfe5dfa8c3b64d46",
+      "diagnostics_sha256": "c394e11a851147441e4c1999040aabe64d27b3cbbf4d5bcd3143f4401efdfe55",
+      "raw_fof_sha256": "23359d62fa0cba82a9b943679a4133f375a7e92150d28177c2db9e520de03bcf",
+      "nhalo": 308107,
+      "exact_DFT_seconds": 1.2606239318847656
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 93,
+      "source_sha256": "9341b70a36c8b160af04e6017bb60f9465e4ade5496a18adc170dec40e20c8c6",
+      "diagnostics_sha256": "18d2aac136cf327d18199e006df962f6168c57f11066347f21c012e663b044a3",
+      "raw_fof_sha256": "8238f6be6a9ce2ffb598bc653a33b1aed48041751079abebe4be5c8723ebe1a1",
+      "nhalo": 309976,
+      "exact_DFT_seconds": 1.4858083724975586
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 94,
+      "source_sha256": "1445fe54a14c9516d655033690ae5befd062441d28c1ca204736f207cbfb841b",
+      "diagnostics_sha256": "1bbe2a24c8b8d1adeb1d29654c9fbcc42820d5f9d75e1315162972a8e3222297",
+      "raw_fof_sha256": "f236c5e4cdfea418c82fe490c6e0aa3151e12bd31c58c34771107cba9508f031",
+      "nhalo": 308625,
+      "exact_DFT_seconds": 1.3937721252441406
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 95,
+      "source_sha256": "e4938b3370c62ac5bef84c3f0a73cbe4891e9881111591bd2ff4d657700ca075",
+      "diagnostics_sha256": "d938813d4db9f6c57b7bf1a848265fd64a5fdd041eb64ce5d5635bda4cd039e6",
+      "raw_fof_sha256": "6b8b5d363ef5cdf212815a234aa4554643f1c04445b77aaa973513505b17059d",
+      "nhalo": 309272,
+      "exact_DFT_seconds": 1.3865082263946533
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 96,
+      "source_sha256": "4d846b303d563ecbb74ec385b1b81707d1d7566597354c57e58e5c72625ed3cc",
+      "diagnostics_sha256": "f1c3e345778104dcd2d0acdb02b3d10cf28af8acdf1e3a62f4ac13be0a66b378",
+      "raw_fof_sha256": "266bab03af607724a730cabf599f2241f21ce1cf3b5e047f6ec3734677b790b9",
+      "nhalo": 308594,
+      "exact_DFT_seconds": 1.355586051940918
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 97,
+      "source_sha256": "d88f54a6ad49a0b5a0af06cc783d50603912016bb6144c471f5734fbbd969a99",
+      "diagnostics_sha256": "d91fc8c4e5ed743313b5b5364136fa4704e96c88389d4f7b9c4961837b446193",
+      "raw_fof_sha256": "c16c7cfc8133607696d5916b288277c9bb3be3357f89be8bd9c1c18deb8719f1",
+      "nhalo": 310029,
+      "exact_DFT_seconds": 1.3734803199768066
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 98,
+      "source_sha256": "948ba288c6ef41a4a972b55b26b1c02f44ca340fc1c69834a9d2ef894823f055",
+      "diagnostics_sha256": "447b065654caee9e3f9faaf1947c1e021d73c6e94dd5aa5d07e4ee79005a3cd6",
+      "raw_fof_sha256": "8e853b2e81f9ff050589d89b170f5aa3feac6b7b51bbd72d031fb621696dbf42",
+      "nhalo": 309557,
+      "exact_DFT_seconds": 1.363205909729004
+    },
+    {
+      "cosmology": "fiducial",
+      "realization": 99,
+      "source_sha256": "8c06b9fde8a0512095d9cbace094a4528721e7f3fe281464e565f6203adde394",
+      "diagnostics_sha256": "d251cabedce3adcf202114ea01d73dbf775dace8188df7b5db48851df1a5d6a7",
+      "raw_fof_sha256": "7576a390d21068980381c9902b113df94c5a5742e47ebd6f32657a1224cc4391",
+      "nhalo": 309992,
+      "exact_DFT_seconds": 1.3708746433258057
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 0,
+      "source_sha256": "893202a9f11580b8b257e6e6e1a184d7656e74656c1977dc07a965cb9632e690",
+      "diagnostics_sha256": "f7e67cb267c6c6c0d58dc5e3e2129f208fbce1345a7901e776e11ec0b4f89c2a",
+      "raw_fof_sha256": "4748b7e718583199dd49f878fcdc3915b462777e6daffcd7b249762907296658",
+      "nhalo": 309602,
+      "exact_DFT_seconds": 1.3780384063720703
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 1,
+      "source_sha256": "6c937073298b04dec00e3029dbac91089291cab8116a9526d4bd7594f64b3ed6",
+      "diagnostics_sha256": "e06a26df954770fc9d04a743799a2648492c7de0f36499cf3894b051f3efe994",
+      "raw_fof_sha256": "4b4a62916003e7e869ea80aa7e0dd7419ee93e267325d5710b3e90d8013e3ace",
+      "nhalo": 310430,
+      "exact_DFT_seconds": 1.3741624355316162
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 2,
+      "source_sha256": "f56b6f06d053cac3f0774c415168859104fb073054ce82bf44d9f4726dfb72f9",
+      "diagnostics_sha256": "6a316ffe644605a3d109e5aa64f14ff20916251bc1966ac29a94932522582d76",
+      "raw_fof_sha256": "de4b3e74b629e2c5daea56ebbed220700dff8dc387d70fe8d84ca2effed70a9d",
+      "nhalo": 309626,
+      "exact_DFT_seconds": 1.3243911266326904
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 3,
+      "source_sha256": "528c0261b165b65b660910e890995f0a627ed073dab67a28c5ebeb079f587d01",
+      "diagnostics_sha256": "70f3b6de50690d23706248d4d48a599fc2481f1213886b4053842d783e551e9b",
+      "raw_fof_sha256": "12adccb913a0842bdecc4f8ca16adb68f619f8858d56ccd209c058554ac5ae14",
+      "nhalo": 309349,
+      "exact_DFT_seconds": 1.3123359680175781
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 4,
+      "source_sha256": "bfc804ae5a76de0ddaf652d21f940acc872df1ad26ed83e6224966e00fff4d2a",
+      "diagnostics_sha256": "92120ce59ef1e56b27987422c17b637ee874e45c99f654529e3074198343cd4a",
+      "raw_fof_sha256": "4eaa6fe5d81c4f9279e8b4b6f98e0670e7d9352ec3a68a3bccdfa759a21e2ea3",
+      "nhalo": 309397,
+      "exact_DFT_seconds": 1.3121583461761475
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 5,
+      "source_sha256": "be9f3f4074aec46ae7987616afb21c609655e03bd5f312e40b5931db062fec70",
+      "diagnostics_sha256": "46d8b675a5a6aadfafb8a3f5272ab050371916561da997f7225a031acca794fe",
+      "raw_fof_sha256": "603f7ae6dab3c3115783a048150bc37975d6d783213ce67769f08eade09d5c59",
+      "nhalo": 309293,
+      "exact_DFT_seconds": 1.3507885932922363
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 6,
+      "source_sha256": "be4b309a38d1e959b58e641ebcb3803689910ff1ba109fcc04516f1be2dc666a",
+      "diagnostics_sha256": "d7eda0d7fa008072e776fc15e0d692ea3d5d023099319642189d17409f77dc49",
+      "raw_fof_sha256": "55b6e2ce04632f5851eac867726aa6f87decf319adb0494c84aef59edab4a760",
+      "nhalo": 308717,
+      "exact_DFT_seconds": 1.3308422565460205
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 7,
+      "source_sha256": "cf50e028b56ccab2793bc490cd6963575d52c4286e3f0e8acda01f60e447b2fe",
+      "diagnostics_sha256": "4f56b75bd1dfb393342b3f3bc4df1d50f55137ec10ce94593f779d44f5458f00",
+      "raw_fof_sha256": "4afd2410c1212f5582d3602c649c7aac4c6d93fbb1705b2acf58381d66442c2f",
+      "nhalo": 310488,
+      "exact_DFT_seconds": 1.3574373722076416
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 8,
+      "source_sha256": "e9032bf68ada2d35c22980f09128ab72649e0272fdcc28f033310161c35611d1",
+      "diagnostics_sha256": "38e57f513d4dbd83fdd6298f6b76c6d71fdb17efccc4a52ff5e97f24605ccaec",
+      "raw_fof_sha256": "f7da7215f994e8077139c17f3ecf21ae746bbd2e3ec3339a12f87c1aa1beb926",
+      "nhalo": 309435,
+      "exact_DFT_seconds": 1.299813985824585
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 9,
+      "source_sha256": "fc0f1344e1df7282ee5af2198a197b32e3dda061cd110af763aec69c6292a10a",
+      "diagnostics_sha256": "44ab62fdd67d9856b171f9d02747613697ecc8cca78bcd3a1f840ffc35b422fa",
+      "raw_fof_sha256": "0fd9df908822388e389c0f66fc3258e61929cfccd988bb4aad376502269db74f",
+      "nhalo": 309762,
+      "exact_DFT_seconds": 1.3568074703216553
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 10,
+      "source_sha256": "a51048093959c09923e583329866efb18b07c16df26e775ce23c2ad49b837073",
+      "diagnostics_sha256": "2575d8021106f9433759ee8eca03cec830f33d04a510be9cad1b7b41f0dc93bd",
+      "raw_fof_sha256": "f500ff287647678134f0c9b068a12aa75db13e38d17b2dceefb25bbcda34ae6b",
+      "nhalo": 309301,
+      "exact_DFT_seconds": 1.3081271648406982
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 11,
+      "source_sha256": "990a0c08f645c3290ee3b6f108ddd4840779fe0dc2e053552bf2160df7791fc3",
+      "diagnostics_sha256": "803cc0de4e92daff4af22f1c00913ea824f764eb481ef7c6559a1ba361f071a3",
+      "raw_fof_sha256": "d42971c1f29a047bd94b09c75c147a85a021dfe2f755bbe9067c31a208e9730e",
+      "nhalo": 308962,
+      "exact_DFT_seconds": 1.2990429401397705
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 12,
+      "source_sha256": "0e229b49de53d421d8ea5c099f07f102b796c7c7efaeaa251fa11bd0f9ab20f5",
+      "diagnostics_sha256": "8016246985fc9d5490e192a0cc6fbbd290868d7fad8001f600631091c224b585",
+      "raw_fof_sha256": "3935f94fd6e32a017ee0bf490c6f3e5ef7ea8124a79e8995cb6b01a9a1fdfbb9",
+      "nhalo": 309440,
+      "exact_DFT_seconds": 1.3166775703430176
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 13,
+      "source_sha256": "0799ffe405474dc446da10da42a8b28ea739c32958f26bf7b81b96c9c3259a08",
+      "diagnostics_sha256": "d662be70f4c3e55299b533d053d964572e30f0665d8f843804b5dd30ff7b2312",
+      "raw_fof_sha256": "da82e3b939fa6b7e5579beb464d94548a1f24ffa01b7c98c666c2285fc138185",
+      "nhalo": 309320,
+      "exact_DFT_seconds": 1.3328676223754883
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 14,
+      "source_sha256": "0f7f2794de9e59f0e971c9a8120c10d349e60a42d891f67b7d4523541c767360",
+      "diagnostics_sha256": "d2ebf0ed72c2b0982ffdd6d822481d585e944b2384acb12c5749471ff31d2e1b",
+      "raw_fof_sha256": "3e2ca89eeb76124b413b0a7dabb611315355a9d11e44adae6c4bd0ad15d8bd8f",
+      "nhalo": 309839,
+      "exact_DFT_seconds": 1.323343276977539
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 15,
+      "source_sha256": "1f43b82f2745cf0419904a4d2caae6d2bdaa8cd694f763440fc1ace1ac883d99",
+      "diagnostics_sha256": "75ab9a21c78a438d1c72a79f62cb5e10ba24277f8a0131e134fb659d6dc41b30",
+      "raw_fof_sha256": "5669433cf4afe64b3bbc006b06f101f4a3d4cf00c8a711e6c07ee03ae2d22e72",
+      "nhalo": 309202,
+      "exact_DFT_seconds": 1.3069922924041748
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 16,
+      "source_sha256": "e2d059e0ee26c80a714b114df7c354e9df5727d47a7c11117146146b030491d2",
+      "diagnostics_sha256": "6dbd90edf7217c9248c3b127cac9d48ccca1d1461d85e9c4128215cde1ce4f73",
+      "raw_fof_sha256": "f719700c1aca76efbca8e88b4445e5d6ba032e52b1254470c3d367749d247b96",
+      "nhalo": 309627,
+      "exact_DFT_seconds": 1.301793098449707
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 17,
+      "source_sha256": "75af2b117c4d3ef6a5035c95455b3f0548ac6f2e147488e7020d5e7dc138314d",
+      "diagnostics_sha256": "8e27e3941a5d520636682bd607ef7994e8ef525b0243bed2a25cf14f208f193d",
+      "raw_fof_sha256": "f9d862b2463314aba1162f1d2ebc34a1f38baac01c5a8d575737a18e4794cab8",
+      "nhalo": 309153,
+      "exact_DFT_seconds": 1.3550043106079102
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 18,
+      "source_sha256": "18d6b5cdcffa36ef056c2444b6633617b8fb7ed97fbc5a68f66ef5c2b446e1bb",
+      "diagnostics_sha256": "055be9e5fb866003592e464e5e9987a4ede14e22698c8f593a2eb6ceb098786d",
+      "raw_fof_sha256": "083d2d686d4fa9b99a1a76fd25d327d7bfb668f131ef8bb8701df30dc3897d4e",
+      "nhalo": 309636,
+      "exact_DFT_seconds": 1.4973475933074951
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 19,
+      "source_sha256": "5fff529c274b0df97567236f6937de2068040e5046dcc8cb1a6cc3ee4da22b84",
+      "diagnostics_sha256": "be7dbec36c53ade551aa545a81ea2ee80e2b446cfe605cf4b3b8719f8ca76c02",
+      "raw_fof_sha256": "a2616096a3b0ac056b61b65834ecf6ad0f3c9fe8efbb58aa9c64ff54a5fbecbe",
+      "nhalo": 309158,
+      "exact_DFT_seconds": 1.4648592472076416
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 20,
+      "source_sha256": "5ab48eed2d095c931bd8e8e1fe2a2ebfd00526e65ce50707c85937b0925ae8c5",
+      "diagnostics_sha256": "9ab5296a4dc029970b99781d15d5157c5708ac0c85be2880ca6847e0d82ba78d",
+      "raw_fof_sha256": "1017e3919f26239db03577aa9647e2c3dfff44972297b878487929f9338ee60b",
+      "nhalo": 310132,
+      "exact_DFT_seconds": 1.3830010890960693
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 21,
+      "source_sha256": "7dae0d1844acfe9410db9fdeff5d601a93cba9f378c6d70a7ea95c689d930143",
+      "diagnostics_sha256": "a442233206ee8051f9ff01f95d92d5092b03bb566d5ccc93b83d30c014a8b449",
+      "raw_fof_sha256": "3ba06c04f8e89db6e20a483a689b9b9b4109a2f8efb3dfc5439e6f8e37c956ed",
+      "nhalo": 309460,
+      "exact_DFT_seconds": 1.5963141918182373
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 22,
+      "source_sha256": "ce7dc875b278f539e145c5341857c6d8ea0cc26e764b484ffe042bc2788eb99f",
+      "diagnostics_sha256": "43b49dfe0dc1d1aa66d071cbab136c4b407d46fa2c7d3a517bf4ad6783e6651d",
+      "raw_fof_sha256": "2855ba177786b7d7686c5fa98d981ca504abaf5f4bdb4401d716fc75cf132a33",
+      "nhalo": 309356,
+      "exact_DFT_seconds": 1.6054255962371826
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 23,
+      "source_sha256": "8458a9612592bb7185dcb22e0298ef1309c2690cdf8a42000ce3988699298e9a",
+      "diagnostics_sha256": "cbb0058d1693b889487decdbcc15543f39c97b6c7e6e47514cde5a8b9ca2b460",
+      "raw_fof_sha256": "46296919ef3b895fe9afc147136d9ab68aa02ff183f91f577f9cbb242eb21105",
+      "nhalo": 309971,
+      "exact_DFT_seconds": 1.5535976886749268
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 24,
+      "source_sha256": "0e331a355884c9c9fa58da0702f341bd0af00e1986e99caadb15630e620159c2",
+      "diagnostics_sha256": "7da6699ea5dcabf6292e51d6c3263ea5cdcc467d6b70403818ddfb79647b311f",
+      "raw_fof_sha256": "edd1c227fdb4fc73d85236df88c31b3b113aa41cff4a4f11c054d812fcb16131",
+      "nhalo": 310234,
+      "exact_DFT_seconds": 1.5619630813598633
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 25,
+      "source_sha256": "067b5cf19a6774b98dc0e408392edca1b415bc99eeac2f1131eca8f71d767ad1",
+      "diagnostics_sha256": "4b7091ec5f43fceed3646fbf7de84a3699101990b8acd7789336f6aa32ef05e9",
+      "raw_fof_sha256": "9d2409220274dcfa67d52e6230b99a8b0d6e2b59700d9f1ff12e38cd52c65806",
+      "nhalo": 309227,
+      "exact_DFT_seconds": 1.5977449417114258
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 26,
+      "source_sha256": "2eed250929b3d0a4872e1dedef7f7bbb790870773ae2b8687548cfbc3bed89e0",
+      "diagnostics_sha256": "60025d548cba58eabbc86a07adc944a59463bde6d5a6441b7ceafbda1e0fd247",
+      "raw_fof_sha256": "687b0c370ebcd491fbb2416f32bd7009518023f8dd4c25fc71b860be749f51c6",
+      "nhalo": 309929,
+      "exact_DFT_seconds": 1.5995571613311768
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 27,
+      "source_sha256": "e67bd6a77140e397355ff3976fc47231bee45fd9b9e36ef884dda0d3bc4358ff",
+      "diagnostics_sha256": "a9b628a4b581bf1c36bc8e059a36b6f21456e993a9ac8712e217efa134ba12ed",
+      "raw_fof_sha256": "ebd2efd9883a1bf75de7087d3ced7e0e16bba979ddccd8011c861de816aa349f",
+      "nhalo": 309416,
+      "exact_DFT_seconds": 1.4152498245239258
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 28,
+      "source_sha256": "9fe7c91d96c929e9a58e5a37e795fc469678011b04eff2c1916f0f6c462acfff",
+      "diagnostics_sha256": "3ddd4751585f84ffc6ed22bfa88b77e932261d813e1fb5d9ad7e28553555d936",
+      "raw_fof_sha256": "43bc34a8ca395c30b583818aa45a6d5d73f73e6d29c24f25243402c10b69e310",
+      "nhalo": 309945,
+      "exact_DFT_seconds": 1.457615852355957
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 29,
+      "source_sha256": "c5d4313ed403c007bf01c87a5b0afc5ed35ef019d7efd7ffcaf37d102d83de28",
+      "diagnostics_sha256": "dfb469aad9b79542db1502b1aced46a6472c707c0df68a47ba65614242a1c0d2",
+      "raw_fof_sha256": "b60483d3fc2e80c9a03feedd1d8ea336065f90b61e14e09f3fd8e833e0164a9c",
+      "nhalo": 309135,
+      "exact_DFT_seconds": 1.4579660892486572
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 30,
+      "source_sha256": "0fdb30e7d319e778947439012c9470169bd3abd95cdc21e6cd1e23f8a2f15d08",
+      "diagnostics_sha256": "8f82fd1086319464dc44c37203493d22f0512c6feb0463dc3eeed9d9e640ad1b",
+      "raw_fof_sha256": "cacc45727ee99a9e7540c061d631686c2cc88961ef810ede31dc2c5b87c29cc4",
+      "nhalo": 309126,
+      "exact_DFT_seconds": 1.3446216583251953
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 31,
+      "source_sha256": "d13e2e528ab0e5c361f0aaccbdf60cd6af6e76507b9835bfd6397756cb8fd0c0",
+      "diagnostics_sha256": "f07108a33fb93216e56f2ef3bcceb9262110993f3b0e719bea52cc3f65f1900b",
+      "raw_fof_sha256": "afc99c5c08677bb63263f516e0cfdb8600698800217dbfb8123a0b385d2aef72",
+      "nhalo": 310085,
+      "exact_DFT_seconds": 1.2621393203735352
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 32,
+      "source_sha256": "bc3bd6eac7816fd0708a5028aa20cf5dd92f92215bb28a1370a04975d10688b3",
+      "diagnostics_sha256": "3bdaf7898bb41207c34321e9be980e965a43d85814a266c4e83753b688c8c8fa",
+      "raw_fof_sha256": "43e6d89ef937c4a3859d6cac1b98060a34e2626e817cc9d16d5fe0db6c265568",
+      "nhalo": 309273,
+      "exact_DFT_seconds": 1.276581048965454
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 33,
+      "source_sha256": "757e010eedfbec9f8e878a5c611790e5158ca634c24676c0167861449f33b0ca",
+      "diagnostics_sha256": "666e91359bc7f1e58c4f3deeb388562502798167e391685cd5235f6c686986c1",
+      "raw_fof_sha256": "4dc695224a55aa7a0870e073580e584b5d5e60073d64d6ed28cff2b240f75341",
+      "nhalo": 309393,
+      "exact_DFT_seconds": 1.286874532699585
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 34,
+      "source_sha256": "8a0525fa89d90eb365ab2817b0f39a32112347455951ad59cf25022d902dea37",
+      "diagnostics_sha256": "aaa9e5ae22f43b8615d64cb2aadfb9b687a4e8896934487d853bd9846deaa8e6",
+      "raw_fof_sha256": "c8bac874e76b8e0771c648fbce923d45ba59cafffa1eabcec76cb543dce73835",
+      "nhalo": 309456,
+      "exact_DFT_seconds": 1.2908587455749512
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 35,
+      "source_sha256": "86ef2a92784458dab42829bddb9ceda15ff687bce8e0d70cccb99eee7c4d9ec8",
+      "diagnostics_sha256": "8ea0df69682deb30da52fa9feb872538e01700a15a81f9558f54124aaf542cf2",
+      "raw_fof_sha256": "c44fee261de0430a2c7ce638e25347cb1738e86b3743a5ea4b30c9a401751721",
+      "nhalo": 309035,
+      "exact_DFT_seconds": 1.2827651500701904
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 36,
+      "source_sha256": "938987d7d4f3b08e9daf7758b788f673dd3efb635f125ab78714c54df028e5ce",
+      "diagnostics_sha256": "08b2ee574edcba06a0a46ba4bd793a0e390d5bcda0ee5b741c43dfa912c83927",
+      "raw_fof_sha256": "5d99942e6cd49371f184b9e38b44c810cb5f42b655b08f89dea37f34f318859f",
+      "nhalo": 309630,
+      "exact_DFT_seconds": 1.2839875221252441
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 37,
+      "source_sha256": "dbf89eb0be0dfb5199a2a0eccb07dd04632914991f9dfe02cc96c02f55784c00",
+      "diagnostics_sha256": "2d0e4f819735f2a8f04c90c9f115048c1e9304a1c991580841a5041f6eda5234",
+      "raw_fof_sha256": "bfe9fa6dccad6dc6ef68d097406ad67d90a09f65b69747034b76886cfc2c1812",
+      "nhalo": 309575,
+      "exact_DFT_seconds": 1.2849252223968506
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 38,
+      "source_sha256": "119250b3039095160f5037655fea8c65b9dadee7283dc2395e4fa5f9285792b5",
+      "diagnostics_sha256": "5fc7bbdde9f23492b39d36aa9536bdcd01c764774ffcb2183f1f08b3710c944b",
+      "raw_fof_sha256": "18616e595ef9746675952ddb9387e6c429bc845aed8fb387a9b28a893757659f",
+      "nhalo": 310256,
+      "exact_DFT_seconds": 1.285682201385498
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 39,
+      "source_sha256": "be7837612a94ad85268a5ba48e7d55eba8e6fd549f91934c0a59e30f1734c85d",
+      "diagnostics_sha256": "0b5223255df6a5e975749db416b95dc17e3623f43d6a8b3e20c2e769e91a811c",
+      "raw_fof_sha256": "62efee58be8ddcda228c3229dfa0af91464571183f19c10114286b9a5491afd6",
+      "nhalo": 308675,
+      "exact_DFT_seconds": 1.2892282009124756
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 40,
+      "source_sha256": "c9389c2fc5c1a53158f2a64ee04516631531c73131768b057477dfbd87d16c27",
+      "diagnostics_sha256": "b1f2dc9c9fff1c702d7b917c7454f6eb8a37bdb24ad8d90c2c2c5ceebe9e5a9a",
+      "raw_fof_sha256": "7884928edd5e525bc065c9d7066239e24ec7a2832c00649bc3738d67b682b608",
+      "nhalo": 309269,
+      "exact_DFT_seconds": 1.2837481498718262
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 41,
+      "source_sha256": "085979eccae8d97a7bf31c0aca31bc871d1ba4827e526d6023a66355423a6cc7",
+      "diagnostics_sha256": "ab4ab8d80e19065131554acf0f4e9bb4bb1cfc7fed87823423eb213a1a9fac10",
+      "raw_fof_sha256": "03f5aab475d9b2a872fd6df0feb62bfb1cb90d35cf3227a049a20ee85731d021",
+      "nhalo": 309269,
+      "exact_DFT_seconds": 1.2855503559112549
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 42,
+      "source_sha256": "57de727d27e047dcaf5f73221d1e9d486ccd2782c76980056bf6cd63e4888f6a",
+      "diagnostics_sha256": "f3bc834e959aedc2dcdaf981ea635886fe454c1579ea6f832d1b49c7e6729578",
+      "raw_fof_sha256": "929db4e716de875fde859882a9a508a0dbdb38aab8b8cd4bf4697c5749644e50",
+      "nhalo": 309762,
+      "exact_DFT_seconds": 1.2783865928649902
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 43,
+      "source_sha256": "09e45880bb9616e0013aded73fa3f7ee18fb156e2bea7491e79d5fedd02632ee",
+      "diagnostics_sha256": "78be536b72b35c7e8223df6b6ee5423fb604b2af1bdffd875768be079aa9231b",
+      "raw_fof_sha256": "2219173b5a1acfe6dd618ea857fabecbe676ea991f0d9957cbbb8728b0dc273c",
+      "nhalo": 309287,
+      "exact_DFT_seconds": 1.2859711647033691
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 44,
+      "source_sha256": "e0fcf7e2143d0440c8d1e3e7d337e91191e652ab984c0d260c0beec94412f291",
+      "diagnostics_sha256": "c45dd6521ba60a7a18457c514d736c118fd3199f40fef5552e75b1024455d001",
+      "raw_fof_sha256": "7e2bd94c99200ca9ddf34dca25c0bde61633d9f9bbbe85f746ba4cf47b323abb",
+      "nhalo": 308300,
+      "exact_DFT_seconds": 1.282339096069336
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 45,
+      "source_sha256": "b31d420becca42cffc522e78885a7d65067ae5c4a9582ebdae67217e0f98b1ec",
+      "diagnostics_sha256": "fecb4954831520cca38ea7c21d5e131ec7d35e1e8c66ffbf8ab5cf27788fa97a",
+      "raw_fof_sha256": "397c16af6d1fee8236a6205ad4ed7a248918d81189753e0eeed2652c8d64a748",
+      "nhalo": 310001,
+      "exact_DFT_seconds": 1.2846436500549316
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 46,
+      "source_sha256": "c77e41218410cf93846d3db6193b1ebeaa545ee3ac8f6650f75318460ad7baf4",
+      "diagnostics_sha256": "c259d423eb0ebc6779d1ce9e64b96b86cd8fea4683964d5dbad4a9c6b01aa643",
+      "raw_fof_sha256": "e51d1bdcae7d271a55c5b3ccb58b39748f830e112fbcbe038d855c82761c45dd",
+      "nhalo": 308977,
+      "exact_DFT_seconds": 1.2812094688415527
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 47,
+      "source_sha256": "f26d4558081eefb5d49e23c4082e89b1d50c547c83715c4c72c7c60127f7322a",
+      "diagnostics_sha256": "73a4e12cd0182235fe59a2b679f48cf4775521492e6afdf368ed9feb5f41b093",
+      "raw_fof_sha256": "87535e31444a2e0d82e168bc2576494020d0aef887ac7b50828de00643ad0644",
+      "nhalo": 309012,
+      "exact_DFT_seconds": 1.2818281650543213
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 48,
+      "source_sha256": "f22dc3cb367c8635d66ac532360edbb39434788cf2016005b33483f46745763f",
+      "diagnostics_sha256": "64555e415a27712b36565b7b8ee2fe2fe18ae2c2c95784d30b0c1cdf2c80c4ed",
+      "raw_fof_sha256": "a6b89fdfea2c82c977c5ff4fbe6798232860b41b742a0b73f0694f98d6d7e8a5",
+      "nhalo": 309949,
+      "exact_DFT_seconds": 1.2827064990997314
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 49,
+      "source_sha256": "3b8fed234c24c86da507dd4bd6a1e56e386c0fa83b5896da9202837968eefd10",
+      "diagnostics_sha256": "326fb4102c92d166b6f4f6de5cce071d3a8f193295c6f546bc1dd0c4ea475144",
+      "raw_fof_sha256": "dc2536d907f447ea6207af8c049f198a8493af83ddb6be8342b982baf0eca819",
+      "nhalo": 310169,
+      "exact_DFT_seconds": 1.283966302871704
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 50,
+      "source_sha256": "8f8efacc8fdff8659e0177b87033dbf752b8ca1ab4645d0d13ab75ecda204e8c",
+      "diagnostics_sha256": "68cad49c498fc5c05055171fe0def3a097f1f8b41f51b2cf0e8c4dac84f38993",
+      "raw_fof_sha256": "2e5e2fc3bf578b2f09b2005123df7e8fd6a9ecbe24c9b9dd22324ec2153f3391",
+      "nhalo": 309247,
+      "exact_DFT_seconds": 1.285128116607666
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 51,
+      "source_sha256": "f35d3c7eb418ba688c137d282950e58a88fd834276f68d4862f0e50036c759f0",
+      "diagnostics_sha256": "6761c0df20a2fdd26ef42502bad502fb57b70ebdcd5f8f2b859e0e5618bbc25f",
+      "raw_fof_sha256": "050e7489a349257180ce211306c1093d0e97e0355ce947ec2209ba85c9c1598c",
+      "nhalo": 308780,
+      "exact_DFT_seconds": 1.2900147438049316
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 52,
+      "source_sha256": "a57e208eaa45173b5f150e17987d12e705f09e84756aff8f8abe8bb179dbefb2",
+      "diagnostics_sha256": "d1b3bb563a73ffe7704b7ed818991821c4713026f2974219dc41b8617a275b78",
+      "raw_fof_sha256": "e1aafa6b334a9df700d7fa2daed437ea036974940980d08b2063f1b20ea15423",
+      "nhalo": 310159,
+      "exact_DFT_seconds": 1.2974300384521484
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 53,
+      "source_sha256": "7c581e507c9eb6cbe8d11545241072612d3be91fc3f70ebb9a6ba13233a1d6dd",
+      "diagnostics_sha256": "b188312ab6b2daf41b25689ca7a90a00b7a97fcb2a76313375cb4b291bd5ba7e",
+      "raw_fof_sha256": "b95082adb21e9f6b0f5f5b80c1ffcf11be42c54927fd7dccb2ccaf564bd1652a",
+      "nhalo": 309471,
+      "exact_DFT_seconds": 1.2863385677337646
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 54,
+      "source_sha256": "13b63925a3acc271b6edd30ce0375ae3c6f5dd4c5b1f35e6809d991550588fe6",
+      "diagnostics_sha256": "dff8276b209f11574f9b00ea7875ce6845964f3db0a444d3e8053a808e84eea2",
+      "raw_fof_sha256": "10b8007d3cb472400de1b0dd58823b909129af47a31d31642acfbfa0fa0a120a",
+      "nhalo": 310028,
+      "exact_DFT_seconds": 1.2894728183746338
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 55,
+      "source_sha256": "30b72c9bbd7704b7e3368fa9ac2bbd0e8e43b841fb2169d6bd08f79d07fca476",
+      "diagnostics_sha256": "f5738fd785653d1e67434911fdeb8ad4c9753fbd9165f626d4d42348d65a73cb",
+      "raw_fof_sha256": "9f475075576921a2f488447a666c7634e7f292a5f560ab7faf442af8be4d480c",
+      "nhalo": 310854,
+      "exact_DFT_seconds": 1.2838804721832275
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 56,
+      "source_sha256": "e00469bdf15f1c1fba1d7873a32226a2723dc7a72ac1391c3ea91c189374e251",
+      "diagnostics_sha256": "4b6cb2e99947654f030475b92793b8c38a7ed71c142f4276c789bc0638d7ad9d",
+      "raw_fof_sha256": "59dd9182bb100a8a2156d383b5162ab721e00eafe6159f5ad38f783fe8f48fcd",
+      "nhalo": 308821,
+      "exact_DFT_seconds": 1.2871639728546143
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 57,
+      "source_sha256": "00f38251b954171f71b42e051654ba96d6573cbe336fe91de86e9d8889bfbc9e",
+      "diagnostics_sha256": "c8081108a28227c3293ca9a46c0024a948d4b86c21a34375fc7d7529e28f1736",
+      "raw_fof_sha256": "2522ae0a86062c582e28d2e6aad6f4baa2b0e8e5bacefb5b7efba315968888da",
+      "nhalo": 309011,
+      "exact_DFT_seconds": 1.2822206020355225
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 58,
+      "source_sha256": "3d8b6bac715a21e6303b7f18fc6a6e31c766103932b07ef3529115d954dfc1d3",
+      "diagnostics_sha256": "03cae0c72bd2538ca99e48901b945cf36a2be156c92a6026bedc208467a47441",
+      "raw_fof_sha256": "e73bd41c48f2445bee99ec940079bb2d50650f6c0c822c7628deb80665081529",
+      "nhalo": 309478,
+      "exact_DFT_seconds": 1.289675235748291
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 59,
+      "source_sha256": "de77cbf00a98984392f4c19fce71804930418f849a1fbf15efb92dc622b158e2",
+      "diagnostics_sha256": "7be7f18d71dac39e8b046c7d97a5b3935fb213db9619aef3f138f98ce4dbc0b9",
+      "raw_fof_sha256": "18ef7c35c98ed2f907cb1528aeef2d3fbc335de8074f7a172353788d12a720f9",
+      "nhalo": 309167,
+      "exact_DFT_seconds": 1.2866370677947998
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 60,
+      "source_sha256": "c39e196780d43ab470f098cacd275f3fbebfa3ad030d3526189685021b5c7994",
+      "diagnostics_sha256": "1f3637816bb38e42d2a46fd072e23eca50e709f030e786768bcdb5cb56ff6706",
+      "raw_fof_sha256": "d3fa04a41e634dcdb075913c8fa6aa5a0819333df657f59fdcf580382a7833fb",
+      "nhalo": 309937,
+      "exact_DFT_seconds": 1.2898755073547363
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 61,
+      "source_sha256": "bfc41ea544475668d79668bcc5192d4b965d4c1adaaf080b679e234e7233c646",
+      "diagnostics_sha256": "9a6069b624c4ccac271ef59988c597b5e32b58d4225165532da2ae229bc73a7d",
+      "raw_fof_sha256": "438eda784b2068697299201b0f1e103a212ade2ea37dd380562e9b54964b0082",
+      "nhalo": 310426,
+      "exact_DFT_seconds": 1.2868471145629883
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 62,
+      "source_sha256": "51c36c3f32134a1c8ea22385556a71694de9b7e4880c74a51b51b9efb92105f7",
+      "diagnostics_sha256": "383a2ea5f3ba431b0c099245eb766213c83053c98060ce5e6fdb290903e8df94",
+      "raw_fof_sha256": "3af65ef3f0021c54ccfc9a9fcb2e6744a7b67d27d2b96e1c1ab4dcdcf79b7919",
+      "nhalo": 309530,
+      "exact_DFT_seconds": 1.2875452041625977
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 63,
+      "source_sha256": "b0f6045739c75289f9b3f5cbb807e646818057e533ac86086434388b509f9f00",
+      "diagnostics_sha256": "601495c32f283262586ebb8727382e5ce5ad6ff3c9f2c94297a08f09abd78bd0",
+      "raw_fof_sha256": "a3cf0c91e32b9f9e83bdca4b5d9a6bb8acd3c86aedca67ee57db9cdbc726b8d4",
+      "nhalo": 309449,
+      "exact_DFT_seconds": 1.287254810333252
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 64,
+      "source_sha256": "8470458ebd2502178cf49de0d6cadd3b0358590ee3fdf5e61b2d65b3359f6ae7",
+      "diagnostics_sha256": "5643b4c3fcb30e77e21f751a25395706763174fa9950544b46e79439c1ef5f94",
+      "raw_fof_sha256": "0b5a7f49d43a596621dbd69ffd8356a27bc9a44662803fe6c72f54bfa5fdb45b",
+      "nhalo": 309309,
+      "exact_DFT_seconds": 1.2847678661346436
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 65,
+      "source_sha256": "af7f2b23412ffa5bac8a408826db27fc677681f64a37bc77ab41fc6001dc7304",
+      "diagnostics_sha256": "15e8e62f532c8cc11a931bfe24aa19877e21b1888c4b8f1da9a55d3b0c9458a0",
+      "raw_fof_sha256": "87c84240aad26e6b80930b63044d94c7de9f9ecb99d5a632abeb31f2c6ac1be4",
+      "nhalo": 309363,
+      "exact_DFT_seconds": 1.2852897644042969
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 66,
+      "source_sha256": "bfc482bb23f7c14759658c50dff540477b01e4d0a0f900421310a132c5b6a1eb",
+      "diagnostics_sha256": "a28ea58309b44eb0ba7c33043b41358aaecef1c7af2995b03f022f3ec5245c88",
+      "raw_fof_sha256": "ea331e969f128810f896c97c21522de61fae96d07c319b3a5f4006df1c8a4dd3",
+      "nhalo": 309381,
+      "exact_DFT_seconds": 1.2832093238830566
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 67,
+      "source_sha256": "73413fa155f969793a07ddb39f806de9c592419d9a6fedb26fdfe84fecba010a",
+      "diagnostics_sha256": "a08fc7b8aa69be139d04ea174648e992892c187fab2eb58e6fe037f73512b488",
+      "raw_fof_sha256": "3a502cb14b81dcc0e1fded7719626ab1b97d4c6e0acbfb39d0de18bdc9ec5888",
+      "nhalo": 309496,
+      "exact_DFT_seconds": 1.2910614013671875
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 68,
+      "source_sha256": "d89b0af72ede73fb9abd8e0b7f1ff5dc7000773285901f53ec0d4aac59cb64da",
+      "diagnostics_sha256": "7a21b29651a081ba1a3848b857f45a2a9d7c693790a99e52e7e8761ed3acf40c",
+      "raw_fof_sha256": "b53129d422dfb88d212fe2c3c3902eb95b9605d9093b027c937c960c5559da97",
+      "nhalo": 309655,
+      "exact_DFT_seconds": 1.2892251014709473
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 69,
+      "source_sha256": "46eff385b2076c48714f6a1a071537dca7285606bf63786ff8e8a72e8056375a",
+      "diagnostics_sha256": "5537fd9fbee3451792196329225980046c937c4767f674db10f765f18125600c",
+      "raw_fof_sha256": "8722a6736381601060af4d62669f2bec53586fdb26196d2c79c79357e13d34ad",
+      "nhalo": 309499,
+      "exact_DFT_seconds": 1.2909255027770996
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 70,
+      "source_sha256": "6f4bfd5b605280c8c85c09f0b6ae640431782be2233164f02b6b43351b49749b",
+      "diagnostics_sha256": "19dde5b5f9fc237d4c87337f6497ee51063dd017ae936e2fe918ca18d4dcc196",
+      "raw_fof_sha256": "9bb1ab6ad42b4881f9b4278f7e45ced13e62f299488fab4b16c315503fcd694b",
+      "nhalo": 309257,
+      "exact_DFT_seconds": 1.2876884937286377
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 71,
+      "source_sha256": "e467b234758f57a5e8e0521ec9d7763420cc5c80ca120a263502fce55ba32cc1",
+      "diagnostics_sha256": "c2bf29588926010b9a5a28ac64df4f18bdae98f2274e11e0fe6435a6ca2abfef",
+      "raw_fof_sha256": "93fdcc5f727d5220430bcc8402c20751c2370721e481e2b360c4e5d9f767584c",
+      "nhalo": 309304,
+      "exact_DFT_seconds": 1.2960572242736816
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 72,
+      "source_sha256": "8185c8c6d8ff7b830ff995489de5de9499669b1cf6b5a8f2d1e3fd9338c79a1c",
+      "diagnostics_sha256": "86e1526fa2ef12522c9f5b92f558c2c7a90f04e0c434ed2821f7dc571e245d17",
+      "raw_fof_sha256": "607487e37481f83f4dedf278a4e2a6b8f43a966694f999e17044b4e4e741bf24",
+      "nhalo": 309952,
+      "exact_DFT_seconds": 1.2861487865447998
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 73,
+      "source_sha256": "2be39deade9e589f9d9c054cd366f3063fa2d22cf604c77e1467518d00ef2c09",
+      "diagnostics_sha256": "9b30b861121b0f9c5122c8d03e3c844a03921ac83b0ef912f185437555f47c75",
+      "raw_fof_sha256": "986d17ea71fe8a2a4b5717bf8eb6608e0d95968615901a3c7197111a21951a77",
+      "nhalo": 309564,
+      "exact_DFT_seconds": 1.2899682521820068
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 74,
+      "source_sha256": "06a868b122f36faf7965287cded6be46ac6b89d43c924ba41ca1a4927b334f52",
+      "diagnostics_sha256": "3981f71a9b676bdfe4b5c6f8bceb4150307c53f747e20fbe2c654bafbccd5270",
+      "raw_fof_sha256": "a1c4897700a3f1fa82244e943934664f64551d9d0af357454e16b8ed581ed610",
+      "nhalo": 309781,
+      "exact_DFT_seconds": 1.291090488433838
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 75,
+      "source_sha256": "0aa6a472e12ccfa6c7018e30f2dc3ca1df5656354e1fe1803e12256130f31d8b",
+      "diagnostics_sha256": "0f029408fc1ddbaf7a7ad6f04b586bbcb63452b4ae3369f39c706a67313423d0",
+      "raw_fof_sha256": "72438ad5d154948d1833e59ba5c82572e9e6ac1dae72f1d20a77a18c9b0fe814",
+      "nhalo": 309613,
+      "exact_DFT_seconds": 1.289200782775879
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 76,
+      "source_sha256": "bdbd695530f7b25a5f51bba378ba806ba1bdccfd44be505f78f638ba8c7ed454",
+      "diagnostics_sha256": "861fb70bb07382b352098abc1d197b387112dd24ce51eb519584aca91b5e2ad8",
+      "raw_fof_sha256": "cdc7f8c26c3e4eebc01197a4abefd4433eac490b4b4c7e29d63be2536f539967",
+      "nhalo": 308383,
+      "exact_DFT_seconds": 1.2835264205932617
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 77,
+      "source_sha256": "fb478b1306148bca2c19499cd0dcb5b5a0cd6c8bb896fb1e89e5433fb5e82683",
+      "diagnostics_sha256": "e364a6b12240eca5d23993d25bdb180b52c4a187fb6b4bb67f43d5ab9357d9d5",
+      "raw_fof_sha256": "a3e4807cfc828e7962e65202c133f152ca11b64be43e084425d325a06ff00f7c",
+      "nhalo": 309800,
+      "exact_DFT_seconds": 1.2917840480804443
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 78,
+      "source_sha256": "44d01ba510dfdfd8cda80bafa4b00c45a29a8fa81911e7ed3bb6c14daf7fea64",
+      "diagnostics_sha256": "7879695d1530f78528542d9d1bf212602136b333f84a12f5bd624f05f246376f",
+      "raw_fof_sha256": "f0130141bc4635df82b8220dc847ff6322309ce97bc2fa6f0860619407e78c8c",
+      "nhalo": 309842,
+      "exact_DFT_seconds": 1.2856333255767822
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 79,
+      "source_sha256": "1e3360756bbd38734fb300e246cac0af6d66d9492f70f3a2a19221612c61e95d",
+      "diagnostics_sha256": "d246951c289de7f48ed3c604273c26d64525e88b4896998a73613c18e22bd595",
+      "raw_fof_sha256": "a84d17e923f7e2e1fac97dafc6620ac919903fb7bde1614ae63f1078ba3fe767",
+      "nhalo": 310594,
+      "exact_DFT_seconds": 1.2977211475372314
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 80,
+      "source_sha256": "e1f768c50aa5410473fa45df89bd37501689e8e8b40280eda910c786fc933737",
+      "diagnostics_sha256": "23e1599db2e0f6608d1712209889a90c14b6482267d57c90e18ef9ccdd7bc25c",
+      "raw_fof_sha256": "0a3d3a4f9cc4380608815d011832d1620bf3120fc7292a1b38f279f3b84f5ead",
+      "nhalo": 310751,
+      "exact_DFT_seconds": 1.297680377960205
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 81,
+      "source_sha256": "635897c1d0b289e62318dc34c32164d5fd2a23c418be50173bffe6ae0ecde64e",
+      "diagnostics_sha256": "7c73a8a01837b0988f391ce733aabae33aec30460530d56289a0e62559bcc745",
+      "raw_fof_sha256": "e7cbe6471b564a27b38de19a5bf908a64e8536de07459907bf02a3d2c32692fe",
+      "nhalo": 308781,
+      "exact_DFT_seconds": 1.2751293182373047
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 82,
+      "source_sha256": "6296bf06ae937cbd44674d3685f8b57137f43bb3a05d8376c7ae96eab8138981",
+      "diagnostics_sha256": "bd50bd24d88da0dd28b3cc67b651aeceedc5ff76f043902f0746489fa5f2b6a9",
+      "raw_fof_sha256": "22db9bed94378a8b7479a3aa2a2534348e7a805897e25616e17c05c1c9cdff75",
+      "nhalo": 309800,
+      "exact_DFT_seconds": 1.2897813320159912
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 83,
+      "source_sha256": "02663c835284d48b05c6cbe041db2ca9f08edce3e2ccffb4e731ad5060f50803",
+      "diagnostics_sha256": "3185575d9fcdffb34f68916e4f1abf02221d426a2eb0ab8b82a62e5757ffe80c",
+      "raw_fof_sha256": "64b1f74c8f47a35275dde69b9b9daa17775ede63dd2b74fdc37a0e73600c360e",
+      "nhalo": 309660,
+      "exact_DFT_seconds": 1.291595220565796
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 84,
+      "source_sha256": "2584a47e98cac4b07bd90ad95a1072597fea25c1787d85250fd4d14166ee0e81",
+      "diagnostics_sha256": "5a17b572350777b5bfd1a62424ae76ae2f099b0e1f9ae53a8bcfe5b0038e856f",
+      "raw_fof_sha256": "e13ed2def635af48f917cbed2520671b25028e5864ba98b53c01c85526b2c769",
+      "nhalo": 309877,
+      "exact_DFT_seconds": 1.2937378883361816
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 85,
+      "source_sha256": "3ee1fd1e2db51a9c26ae07b19601d73a15feeccc2969658cee6dec409da71cf6",
+      "diagnostics_sha256": "8149389e35a0b6915bfa06a38b1b8ca418cb20c88b6312a2710811f291ab7c48",
+      "raw_fof_sha256": "890949f5489f67dac6a3f619c9070a4ba8c0cf06be3a632e8cef5c84ffeb4dcf",
+      "nhalo": 309122,
+      "exact_DFT_seconds": 1.286302089691162
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 86,
+      "source_sha256": "a436c8c62f911c0dfac4c907e18fcaafee0658a7d61d14da483cab59066fb9d0",
+      "diagnostics_sha256": "4d37ea1ff869ae7f1a2b8597dad13a72da6a0be4cbf9d268c522cdba3432f4bc",
+      "raw_fof_sha256": "e23932f4017b34d95133c8317512f0e97897a68e229f125513bdbbba6ca15d38",
+      "nhalo": 309748,
+      "exact_DFT_seconds": 1.290407657623291
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 87,
+      "source_sha256": "c670c538fdbe91c928f45288b3e6eeea7fa1c618d7990ecefc7fc97741bf21bb",
+      "diagnostics_sha256": "99bb3c491ea10117f6296da37e7d240463207f26a420d8c572c468acbb1b057e",
+      "raw_fof_sha256": "dcf4b1c7d38b6814ebe7cd9e56a3fe7d17960d3b1dee3eda6b99cc1e9b671371",
+      "nhalo": 309412,
+      "exact_DFT_seconds": 1.309208869934082
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 88,
+      "source_sha256": "b75b70a886b5572dc6a78aba9c9db14185145baba3ca5016ffcbe40ee2ed5302",
+      "diagnostics_sha256": "197165ac98abec5b25f4f78d5f5dfecb6ef32a13f905825824d0ef0669e21be8",
+      "raw_fof_sha256": "a1a7006349695f1e737fad4adccf25171b57871b62424566d9831c274544e33f",
+      "nhalo": 309499,
+      "exact_DFT_seconds": 1.294790267944336
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 89,
+      "source_sha256": "b485e36cf1c390cfffd54e97d49c42f7ace14908b7b78fa1cb396ebc5d4c13c0",
+      "diagnostics_sha256": "ffeab1c173e62a0cbe6588ef2bb09ae5007a29b6db0948483d9645b034c9956b",
+      "raw_fof_sha256": "7742e1e8a45602d91c89de9334ae013c6cbfbbdc0f2b1fd71e9391fd704297d2",
+      "nhalo": 309297,
+      "exact_DFT_seconds": 1.2899243831634521
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 90,
+      "source_sha256": "f36bc5173217073e336f2f0307c43989ddd46c57d9b4eb6193672cabbbbdcf29",
+      "diagnostics_sha256": "afc8fdcb44f978365b382428bebd534c2b32318afee7d1bc98b2985b981a4a91",
+      "raw_fof_sha256": "8f31d8c588d64c1b126622f87f25c5264f3d07ff58c4670cef59bfa456142251",
+      "nhalo": 309340,
+      "exact_DFT_seconds": 1.285879373550415
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 91,
+      "source_sha256": "5838624025a00e90ce261e9b35b1b63085541b71770eb9670f7fd744297ba819",
+      "diagnostics_sha256": "e48062e489b7bd3a62163d2513a642dd089e0b85d1190dcbb45cabfc5309965c",
+      "raw_fof_sha256": "141a6c4531894c53c517b51828bb89354176c448f84c25054ab34480273ea2fa",
+      "nhalo": 309399,
+      "exact_DFT_seconds": 1.2902488708496094
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 92,
+      "source_sha256": "79c8d836a9650e6f53f6b628c0bf4c8c932ce70795764ba0ee640353116ed36b",
+      "diagnostics_sha256": "8a82d0e33692b7def0138a7a2dba841387131d45047b083af2d69f3c4dec4eaa",
+      "raw_fof_sha256": "8ffbc2de7690edb4363d6e54d61a5bbe6a78b49bf3e2360bfdfacfb57ba53d54",
+      "nhalo": 308062,
+      "exact_DFT_seconds": 1.2831342220306396
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 93,
+      "source_sha256": "ac88288940fdb54c94f865984eb13b33ddc70308f4a733644d61c03b964bdd3d",
+      "diagnostics_sha256": "a9bc4f80ea1b3b8156e96219ae5cdced228716e532bad9bfb476839fe10309d6",
+      "raw_fof_sha256": "637b7e6ff268da4b797605dd8a6c7f0f0b6c30a6798b36c012c6c6c43db8c8a5",
+      "nhalo": 310072,
+      "exact_DFT_seconds": 1.2870149612426758
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 94,
+      "source_sha256": "17ebe32e26f73aba7755877ebc43ebf42bb355aa1d0a0a75d1315ff1230966f7",
+      "diagnostics_sha256": "ef3b43ff2360086e34c1c263752889f045601316161576c2f609cf1e4c456e9c",
+      "raw_fof_sha256": "b4ebdf0e1cfa01a69ef4d86bff439967c6e955b10164ae56b538077bc2b9464d",
+      "nhalo": 308798,
+      "exact_DFT_seconds": 1.292144536972046
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 95,
+      "source_sha256": "c6fc9c0507b9860a908d8c539e5d64b28e3d1867475177124c8056c933e00ac4",
+      "diagnostics_sha256": "08021a0edaf6e2c2f5b8c7836caf014679ba70c6ad29d93a2043694e1aa8282f",
+      "raw_fof_sha256": "8331eb6e1005b14347cf2388974aaa973ad3ba5db8de4cbb7538e96f0e578938",
+      "nhalo": 309491,
+      "exact_DFT_seconds": 1.2868728637695312
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 96,
+      "source_sha256": "17dae17cdc74ec9923329aaaf7f4933fb5ec0f2add1776db762388f2b3cfdbfd",
+      "diagnostics_sha256": "a993f6f5d42bbff4b06006c708de1957110a896ed962e8844770d07f169a4662",
+      "raw_fof_sha256": "02dcb19a43d557cc9a55e19ccec51fdc78bf6b7e1429eb60292b47b2662f1adf",
+      "nhalo": 308712,
+      "exact_DFT_seconds": 1.3136954307556152
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 97,
+      "source_sha256": "6f5ac98a8256aa2eac7c1ddd39c57465f446dc045deb77f04f7f81598c3500f7",
+      "diagnostics_sha256": "98ffcb0729b9a6865b677c2d9d40142b207f041e4e56759ad42bec59625d92b3",
+      "raw_fof_sha256": "c87728a020c43aada9856e86866d6b651707e36241f1c93a1204cd8b415e28ad",
+      "nhalo": 309688,
+      "exact_DFT_seconds": 1.2973933219909668
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 98,
+      "source_sha256": "c03ccb92de712cb50d2747490a3df4c2e60001a464e3067ccc9352b705e935e1",
+      "diagnostics_sha256": "30ec7aad67e3aaaabddd4a635b20bac1f9a990a55ed5acdc94765191adabd7ec",
+      "raw_fof_sha256": "864b7ff8b071b71ca6791f9bd51e5190ffeabac50695cba805ee94630e9ef688",
+      "nhalo": 309499,
+      "exact_DFT_seconds": 1.2900354862213135
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 99,
+      "source_sha256": "39dbd7dfe52b8991e6a9645bb00f77b1d9165bcad62f4d8619f12d04fa297841",
+      "diagnostics_sha256": "bf2f93d3d9e26aff41b3e4a622f4f24d2f504fc739a58d60aa435ca7c4ff255f",
+      "raw_fof_sha256": "d6a9eba2c6a1d920cdd852770f22b7abbc793858cf652819a19cb37ef97ec6c5",
+      "nhalo": 309567,
+      "exact_DFT_seconds": 1.2853951454162598
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 0,
+      "source_sha256": "88ab89b33528a6925029ef08e19b742ea4103ee4b79a10afed618fc0baf1abf1",
+      "diagnostics_sha256": "529b046c8f97918e1b7b7643a5b0da35448d6ef43060657fe60f7145e4d38781",
+      "raw_fof_sha256": "05312b8637090884f931f2a614ee818e14245c216e9e74f516d8ab623f397111",
+      "nhalo": 309357,
+      "exact_DFT_seconds": 1.286564588546753
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 1,
+      "source_sha256": "8c62391703c4fc20901592956815cb529fdfade7f01eef5b95825d605395f691",
+      "diagnostics_sha256": "9bbd33110b12fb4a671d1acf83f0d150a42ded9bcbf1566531b87cc50ab4df1f",
+      "raw_fof_sha256": "a4b88624a5545e709d46a37fbff3a0faac7b62e9f1d4c1708c1a1c3700f92095",
+      "nhalo": 310154,
+      "exact_DFT_seconds": 1.2916259765625
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 2,
+      "source_sha256": "99fc73e16dc7a127857c5ae4254d5ca54aa8499376759f8453122eda7d82fb25",
+      "diagnostics_sha256": "a9792a6bd3733b0f774dbc7d5ada1bd64134f0608c4d2365d4ac39432f22ead3",
+      "raw_fof_sha256": "6e86a15b6b248056289aa253863352d301c0a2308d313bcaf4e72b184fab49a4",
+      "nhalo": 309658,
+      "exact_DFT_seconds": 1.2875034809112549
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 3,
+      "source_sha256": "59c53640e855292f5883cfe1b26f84f63c7ce9acab2b14843f69675c7ede3ff2",
+      "diagnostics_sha256": "1c07f318532be5e8b99e1ab777df38ab838ce883c530e0bfad4c6128b06a2b2e",
+      "raw_fof_sha256": "58e200dbed414a188ea67fbeb1f4781dc54acad6bb2cff999bd2fa070e6fcc99",
+      "nhalo": 309264,
+      "exact_DFT_seconds": 1.2880167961120605
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 4,
+      "source_sha256": "a26843abf129ef38dfe3279c96dedecf7fdd0c1acf95d516e5beca93870eebb6",
+      "diagnostics_sha256": "6d24610c65cb86f38cab93e070e1aa6da121e03a2439ce02cefd7d83d501b118",
+      "raw_fof_sha256": "14e54a4a5eaa1bf24441f880ebb437607da61bc0eced17ca532438126d3a4ed9",
+      "nhalo": 309641,
+      "exact_DFT_seconds": 1.2876973152160645
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 5,
+      "source_sha256": "9d0a67feec47b85802960213c295070fecbd2d27880ee54126708136268d099a",
+      "diagnostics_sha256": "fc9b161eb80534c6e126363b26374e9bed7295c1ffb7eef5b7ed8ea13e1e2973",
+      "raw_fof_sha256": "9ad3dbc90e96ab21e1b4b9135288e64889b9383035ea72cc01261fba0133d515",
+      "nhalo": 309011,
+      "exact_DFT_seconds": 1.2911524772644043
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 6,
+      "source_sha256": "30a7fb682fd2f218761a0b0e67b3e8270307b3c5324e16499e11380eec5afc67",
+      "diagnostics_sha256": "d3e64774b8841d72889cf8a1ae8a3d686a95a8bb14415ae5502a3f1cde645631",
+      "raw_fof_sha256": "ad109d865f49691c30351b727f3d184a5e65bb0d376f069ea65c03362ab96499",
+      "nhalo": 308848,
+      "exact_DFT_seconds": 1.2894213199615479
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 7,
+      "source_sha256": "75071c58d6a38269da7f3194bbfd84a7793b352df9dbbdf5855b46578b7c7d90",
+      "diagnostics_sha256": "0aebbbf51be4f6290fdcde016bb24889c0e6be7dd2e495da36f35b8f962504b5",
+      "raw_fof_sha256": "9c6d1f5d6565cca28bff611d8faca40f69b2b43e551deaf9f9135cccef2d2204",
+      "nhalo": 310007,
+      "exact_DFT_seconds": 1.2900536060333252
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 8,
+      "source_sha256": "2aaf0970466718504097dc54a9286bc3892c09878ba87270a8f8f7debdb7b60f",
+      "diagnostics_sha256": "16a216b4b8248661fea1756a7c489424b7059e314af87597c5a32083bd5678b7",
+      "raw_fof_sha256": "88ea4bc09784583153d950bc439e32a4f010f8fc2e6d61ade545ccbdec86962b",
+      "nhalo": 309457,
+      "exact_DFT_seconds": 1.2933464050292969
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 9,
+      "source_sha256": "8fddde10f7c6ae9bc898d1b6536f28229158ba66aedc91c4a39b28a7590785eb",
+      "diagnostics_sha256": "14f7cd2d55576a2d5b1cedd05d780ec653aa6bfd7e3399549a80a1d5071c3c41",
+      "raw_fof_sha256": "828026f17797402b1bc5420e441334304624eae81f9145a0d9d82ba33c13f8a8",
+      "nhalo": 309786,
+      "exact_DFT_seconds": 1.293595314025879
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 10,
+      "source_sha256": "f60f802c158a7ed3b13b7ce6609defe34642aefb3aec0e59097bd017744e54ff",
+      "diagnostics_sha256": "7ce681bc4a9d38b824841f13748190b0b646f5a364bdc3ab454687b234f06ffe",
+      "raw_fof_sha256": "7559f4e8bde5b88f692c4b0d983edc7886aadda337b3b7880062f98debe57fcb",
+      "nhalo": 308882,
+      "exact_DFT_seconds": 1.2846529483795166
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 11,
+      "source_sha256": "ca1f679d9ef497293d3dbc4138decfb1efc934ffaea8536e2c41fea23d9c3fb3",
+      "diagnostics_sha256": "870c5485187e5f823c4b181e3e01cdc5f229d3c8f80deb1a8b34e26dea5eb23b",
+      "raw_fof_sha256": "7b699d3847fc64ea762651b618d07c77158b55711301e19bfdcd5b8f91a67707",
+      "nhalo": 309488,
+      "exact_DFT_seconds": 1.3105854988098145
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 12,
+      "source_sha256": "1e3e415bb403095f0123d278099ad5f2d448ffda010dcb0b35766372374243be",
+      "diagnostics_sha256": "3ecaf90272a5d41eb1372d427f174763aa8f7cca059d962ad04e2481d86771ec",
+      "raw_fof_sha256": "4f5d11e38926240cac9f5727979129798fbbb848e094fde18d4ac48ea37becb8",
+      "nhalo": 309181,
+      "exact_DFT_seconds": 1.2847740650177002
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 13,
+      "source_sha256": "50c2a9d8f918563a63dd2698c44646426647c70711550e9c03271edc2826a909",
+      "diagnostics_sha256": "fe1142eb57c9aa9fec85bd044a63d7e8a6c6e0a2f5969b5f363d4d2c2868b4b7",
+      "raw_fof_sha256": "9b7e4b08feaa69e7c7d87bcf92dc1066f1382c3ddf31a5df8a823855ff67f65c",
+      "nhalo": 309611,
+      "exact_DFT_seconds": 1.2801754474639893
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 14,
+      "source_sha256": "7ec2bd676426041a286dfef2b0b4d82a1e64b83ca7f9778bb491b39d1b0086a3",
+      "diagnostics_sha256": "d9369b6b05cd5d0e6fd6d1f621e9f9fc6a50cdd50e92857a4a2a867c851d96c2",
+      "raw_fof_sha256": "1a0229f878c27752d1c2ad1b371d9d857c34147176b153cba2097a60952987b3",
+      "nhalo": 309356,
+      "exact_DFT_seconds": 1.2863335609436035
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 15,
+      "source_sha256": "3d9a288bcce87f87f946de838d84400326472a7796606432188330abbb2b597c",
+      "diagnostics_sha256": "21dc565e56f725e8ec89c656b81271f157c7fa6e651aeecff6414ba5ba34b2a8",
+      "raw_fof_sha256": "79b288e5fee57ab063e803715945cbaf138f2c6fec59e03387327aedb76623e4",
+      "nhalo": 309038,
+      "exact_DFT_seconds": 1.283843755722046
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 16,
+      "source_sha256": "59f6fe4ddd6b0cedb50b980d54685f87cc27c84b4947e068535568b6de3b115d",
+      "diagnostics_sha256": "08d5f8dc39a06631a700a1044f20046e15a16f4c28bef620953dd03c87ed8def",
+      "raw_fof_sha256": "7748bb105d9285fa0c513c3f9393f5f7ebbd4fb56830751542d1dd42a6a5c4d0",
+      "nhalo": 309637,
+      "exact_DFT_seconds": 1.3032355308532715
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 17,
+      "source_sha256": "1be9cbd6c4401096153eda40747ee7154eedf86b6364626490eb32e101142d13",
+      "diagnostics_sha256": "28c339bb016dccc04289dfaf1de767996077c01724fbdd35e1c742a701397c75",
+      "raw_fof_sha256": "9192fba9c970bd3f9b435e3a6f746801946af9475d5693524f767ad577eba398",
+      "nhalo": 309055,
+      "exact_DFT_seconds": 1.2756643295288086
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 18,
+      "source_sha256": "c44245c445052811c3db96ee225b4901ca60827039ffeeecef54f384304465d9",
+      "diagnostics_sha256": "e3577444f5cd193389b61aa380b850d064f6249c36df643d01c4acff9b61300a",
+      "raw_fof_sha256": "368646ea57176fea8ae5978b4603a45c5663f9abe7553460e7fbc74553ccdfa9",
+      "nhalo": 309336,
+      "exact_DFT_seconds": 1.2944071292877197
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 19,
+      "source_sha256": "ffe233fca7d3443f04bc39e87e487a90efea6f01a16895aea5f07f6de4946152",
+      "diagnostics_sha256": "3b18e8a358371ba87b1ff901dc5fa3fd1b448bee659757a7b8c33fa86ba9abe0",
+      "raw_fof_sha256": "091e7784edfe675c2e4145a5221f2fdf69515da24933050d5ede16762fa7afb2",
+      "nhalo": 309095,
+      "exact_DFT_seconds": 1.2906413078308105
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 20,
+      "source_sha256": "d3219aa2cab1bd37e36139215199e35d448c87baac1606a2c97743417fe9690b",
+      "diagnostics_sha256": "bbb2f6c395d5ea0d29f3fbbee5f649f5dbb35e07e35fce0602c00422b1a0f1c9",
+      "raw_fof_sha256": "b75bc2ec57b32d08790427dae63c910fe1d784d2429099a6c6c15e41472b6e41",
+      "nhalo": 310249,
+      "exact_DFT_seconds": 1.3419902324676514
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 21,
+      "source_sha256": "8a4ee668bdebb76ae1e78de9abd4655e58f79ba60d8781bbef02831f36956b71",
+      "diagnostics_sha256": "3ce6d5b00b70ca0f74ae53130c584190f17ba0f1269411bbc5838d05c3a4160e",
+      "raw_fof_sha256": "94bbb01d07cb8dca53d082bbe869d1bc67eb9266a6c5c22938370f8855b8056c",
+      "nhalo": 309504,
+      "exact_DFT_seconds": 1.2957606315612793
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 22,
+      "source_sha256": "9d8cc5e06b79209ceaf4fb2ce623d1856cefd37269582f63ac1769d2d7429a81",
+      "diagnostics_sha256": "dd8c5c6305edd3266bfc04dea8b2530c9df3dd08dc4090f0aacbc66a7b6cba43",
+      "raw_fof_sha256": "f27f90182a47cb5de5e879c17ec70bc4abf60597bd58d3866578a9b5da06999a",
+      "nhalo": 309382,
+      "exact_DFT_seconds": 1.2944579124450684
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 23,
+      "source_sha256": "04c196a6afc9dddaff06e479a1f5ea47f7dc0c6010c2463689a82f290e7d5e40",
+      "diagnostics_sha256": "91804f8a4e74288be215d849f404347e5f0d9dfb9c99a70ff44cfe3bc8a00650",
+      "raw_fof_sha256": "d9e4cfa2ca3adc16cb2e1fc4b67196585c5b6510fc0598dd4f6f92911d8e3275",
+      "nhalo": 310098,
+      "exact_DFT_seconds": 1.2886269092559814
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 24,
+      "source_sha256": "67e1f29868743d3acc2f7c7caaf1bfc6b50ef368e56e2e73fa3d3fad21561815",
+      "diagnostics_sha256": "69a81d91029eab632dfc9890a7f834e63cb407bc0e78c7f9b0ba869773060714",
+      "raw_fof_sha256": "f7b588c21e576621f4422fa1b47eeb9b3ba1496830b504efc4c5be17e88a189d",
+      "nhalo": 310027,
+      "exact_DFT_seconds": 1.292198657989502
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 25,
+      "source_sha256": "31ccdb4fa1dd2316f7418ded92630d9abfd6be30ed6e1deb382531b8078e7dff",
+      "diagnostics_sha256": "4204b95d12df47becd682c39147773ebdf9d33d81147787d822574ceb1f28c76",
+      "raw_fof_sha256": "78b84d1761b918a23a46f9d6960cb72823d825e5a8be833c0149f895c8796706",
+      "nhalo": 308910,
+      "exact_DFT_seconds": 1.2843091487884521
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 26,
+      "source_sha256": "db0fa8016ded77833c65721c1c704f16e95064d37c6ab612eced8fa9f579a9b7",
+      "diagnostics_sha256": "66b1f43b62669723b44f594318e33c6f400b0d5e8fc0fa5ca38cb834224f2cda",
+      "raw_fof_sha256": "5d827672c5c396fa0ebbf8b20560638460484443d1a1d9ade251b78c48340302",
+      "nhalo": 309685,
+      "exact_DFT_seconds": 1.29032301902771
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 27,
+      "source_sha256": "3d26abb86c60bc5a7d0bc783c8f575eb028b0c307a4f1965791da4eca6d0665a",
+      "diagnostics_sha256": "7499b275e0d3b67f067ca75300d65979841dbd3b730dfd0f90d09b4ddff96ff5",
+      "raw_fof_sha256": "909da7be069332a1f3755bad6945750aa7f343cfc65743ad63ed167d399e1d74",
+      "nhalo": 309259,
+      "exact_DFT_seconds": 1.2939887046813965
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 28,
+      "source_sha256": "bce1d93d14c8af8983219b548802de6b267cea1ec2e71319e2a8d658fbe75f52",
+      "diagnostics_sha256": "fcad29d8e38dc6db2ffb6a6e2802e3ff12281e8cf01ea0e820f729ffe49b5fdf",
+      "raw_fof_sha256": "a91422f8638c1c2a62254c14fd399c3a9c37d3e2456f281145d2140798341400",
+      "nhalo": 309820,
+      "exact_DFT_seconds": 1.29054594039917
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 29,
+      "source_sha256": "24a6b9a81bb1036ed15876c1d36b3e8a750a8d9c6e19597732202d93a5e7bffb",
+      "diagnostics_sha256": "fe4351b6b6453512f382051d64c91bc0b06419320b9c51ddeb9370991aff691d",
+      "raw_fof_sha256": "2015c31460a9ab4c09c6c19a17eeb60024eeae7ec84c813d552f478abe2fc304",
+      "nhalo": 308961,
+      "exact_DFT_seconds": 1.295243501663208
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 30,
+      "source_sha256": "b8220cd97e8c71015f4c4079af3c6e467316f71085e894033fd2067e5ae6a89d",
+      "diagnostics_sha256": "648b22d92d634ff30e9c357b8f21a79046853f22f594e818ef01747eeecaa01d",
+      "raw_fof_sha256": "b53015e6021b81dde249a87ae298b3a985f8d4ab05c94add668050cfa420db93",
+      "nhalo": 309318,
+      "exact_DFT_seconds": 1.2884719371795654
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 31,
+      "source_sha256": "3dc8320e1b3855afaf008f8ef4bf2ca2268287a846147476a2478745745bba18",
+      "diagnostics_sha256": "6e877597eeffa3720c51ec9b999d874fc8df5383b731400def825d99d3d8760b",
+      "raw_fof_sha256": "5e24911464d18b5271bf70da91af486b040afb55ebb1b1665813c8d6d570cf76",
+      "nhalo": 310203,
+      "exact_DFT_seconds": 1.2928097248077393
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 32,
+      "source_sha256": "9c450005648a695aeb79e4bd4f34e8513ea31f9aa58a22b08f1d779de75e26d5",
+      "diagnostics_sha256": "f306017ca22f7a1c400f549145f4bf89365c572fc7debf04ceb7fde760bac9b7",
+      "raw_fof_sha256": "be73d9c4629017ae3b3af925e84d2f8369f6c529d17998a7e75ead5d907624d9",
+      "nhalo": 309508,
+      "exact_DFT_seconds": 1.2932236194610596
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 33,
+      "source_sha256": "1bc11191c39fe82bd363a2f5a7f9559be4ba43ff652da4a19c72577c93ea8e88",
+      "diagnostics_sha256": "2c941c256dcb4b0bf66e8050e62f2deda1357190f6d1bf267c1f9eff48dfaa81",
+      "raw_fof_sha256": "c26d36c4e4f66c31b9a110e99b38557de56b1f03a00c8f1afc611e9603712e96",
+      "nhalo": 309263,
+      "exact_DFT_seconds": 1.2900810241699219
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 34,
+      "source_sha256": "fea261252d0ca7179423882f6e2c126c8d0702a41e0e619176a286a8df588649",
+      "diagnostics_sha256": "e698688d26611247bcc3c839c564a4a63268ebfc48031fecccb26a8d9a7c60e3",
+      "raw_fof_sha256": "686ed2147362e6f9119d2a9e11a9542f46a05454aec9f24c9347f7c4a476f71d",
+      "nhalo": 309122,
+      "exact_DFT_seconds": 1.2917022705078125
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 35,
+      "source_sha256": "6255a2f428810b6fb6c8e7874aee062171ff1fe5715c91230f444024970a54da",
+      "diagnostics_sha256": "9ec010b27c2c886d8c00a45ed317b9102d175f179d629633b4cca3362c1ddb88",
+      "raw_fof_sha256": "92e5616b2846cf8369a78c0f4e76050bdf3aaa013541c3b215388edd10571fe0",
+      "nhalo": 308969,
+      "exact_DFT_seconds": 1.2864861488342285
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 36,
+      "source_sha256": "a6d0c460a13923561dc0ad459e56b93dfccc7e129ce7fe1cde09ac451b4b1ef8",
+      "diagnostics_sha256": "e0c6e2cfd3bc23453e18b983991e6843d6a84a03f1645029af84de9443041e02",
+      "raw_fof_sha256": "eb60d7c473dde9a0328938762ef2874caabd383e0bb4287f321b990b2d3ad4af",
+      "nhalo": 309182,
+      "exact_DFT_seconds": 1.2955596446990967
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 37,
+      "source_sha256": "0d6b7ced3ad62da15014f9cac5444154589d76fcf178e31f311070164b548443",
+      "diagnostics_sha256": "98a7186efc13fba4aa0f7cc7eb6249c4c49f972adceaeb9577db286f3a2bcbd8",
+      "raw_fof_sha256": "9d620350ae94ca169e5852617ce624f0f4a391c49d06f1c54a9f7f91f58fa6ec",
+      "nhalo": 309705,
+      "exact_DFT_seconds": 1.2876505851745605
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 38,
+      "source_sha256": "588f1bb5105eccfbf11b9bbf63621b51f9ebf523f7d7f9a6b4a44ae4ff8b8630",
+      "diagnostics_sha256": "287a21cbce4ee66f99d8c1cc80ba838474eee29f38193457524baff6388e318c",
+      "raw_fof_sha256": "c003e7513f5c5a16f83ace6c8e800c20cc92b00fc6d48505f844f58abff2e779",
+      "nhalo": 309600,
+      "exact_DFT_seconds": 1.2963571548461914
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 39,
+      "source_sha256": "d693933c314714dca693e16d143f4af24ab01ccc131baa6f5db814ea1340b1d6",
+      "diagnostics_sha256": "0df41d37e1338a5acb0677ffc7f846802503bd90c6ff8112f87a01a369492187",
+      "raw_fof_sha256": "f408110c57f6be6533377915f4ba6479846485aaf3787e8dc7827c4d9506df1e",
+      "nhalo": 308237,
+      "exact_DFT_seconds": 1.284705638885498
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 40,
+      "source_sha256": "3710e0bd28b38f18ce22874db84e7d6f8ff4eb24bf46163759266f6c381f2ebc",
+      "diagnostics_sha256": "ce60ba3605f0191733019225fe92fbb668ea3ec8c5c159945c07128a6bb6feff",
+      "raw_fof_sha256": "1f89eb28921fa5aef8fdeba9ac3ab49ec30140795337a633b8bee23ea20c0f0a",
+      "nhalo": 309173,
+      "exact_DFT_seconds": 1.2811779975891113
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 41,
+      "source_sha256": "cea99ed3858716ac049ae541bc409ba9bda19e36161dd66c573551dd83cf75ee",
+      "diagnostics_sha256": "2c9525b82979df8712fbd29b89e7b34f46634cc3d730ecf44872dd7831f1b090",
+      "raw_fof_sha256": "f62fd837af2500ef025b2ab31772f185efff5dab2f0d3322f9039e5b3c0c6cd4",
+      "nhalo": 309160,
+      "exact_DFT_seconds": 1.2853798866271973
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 42,
+      "source_sha256": "92c7bca88533fa4656ae8fe85fd10aa09c16365bff8e14db168068c263b29cb9",
+      "diagnostics_sha256": "e7756e3f25b982881d7b06e33141fcf36727e57f0a032bf7286691bcd7e5b94e",
+      "raw_fof_sha256": "03b43ea8e0892872be3e88d2ffadc60e59d87977d7fbd260c3b4bf914e66e087",
+      "nhalo": 309511,
+      "exact_DFT_seconds": 1.2902700901031494
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 43,
+      "source_sha256": "b42fd36df6cb72f8c070626f12905f29466f9b8bb9c66ed8f0b5b48838b60e31",
+      "diagnostics_sha256": "6b989139d0f455f14c8fa4db381741bcd84c4b8ebd545aa67b683565428221bb",
+      "raw_fof_sha256": "73747c8c583513dd91d71382c1ee0871f9606b7f55d056be425ec83ea37ca8ea",
+      "nhalo": 308905,
+      "exact_DFT_seconds": 1.2873156070709229
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 44,
+      "source_sha256": "c74fdf1e1bc8f28deadbf0492cfaf3017b05ef8492389b27b58b46f0b6111b76",
+      "diagnostics_sha256": "1743684bb38229731d34b0fcd228f2594159c905c2b245759e9a9366941656ad",
+      "raw_fof_sha256": "385e240c26a595dd241ca4e5c428af2c1595929cb8430a6680d2f5cba06e5cc5",
+      "nhalo": 308414,
+      "exact_DFT_seconds": 1.2917125225067139
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 45,
+      "source_sha256": "ee9f05a473775ae2a7c9be0aea7ca1e0a6b4aca8563ed6c425c443deb8b6f4cf",
+      "diagnostics_sha256": "d393a660cdd4ef511c9b9e4388de970bb2ee910ae1021ab131dc5c6aad350785",
+      "raw_fof_sha256": "fdf8346a0db284348d3a33d80d646225d83b7788c9636a1798e9a410918567d4",
+      "nhalo": 309498,
+      "exact_DFT_seconds": 1.286139965057373
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 46,
+      "source_sha256": "c60b3456b489a82ead34f18334842866b7db34cc77816dfc8b305e52b5b8b060",
+      "diagnostics_sha256": "47234434279a9b8d44bb14abf696e76b32ad67c021679df6314f956771f4388d",
+      "raw_fof_sha256": "1ae29b6026bdd07fa75ed6fd5af85d482c8808dfeed475af54ff14df3848dc43",
+      "nhalo": 308780,
+      "exact_DFT_seconds": 1.288097858428955
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 47,
+      "source_sha256": "1dfe8423a637ede765e37d9f62bd2ef34eceab3ef2d88d3688533c59016f2db4",
+      "diagnostics_sha256": "b97611d50ea952e8716048b031c1121a28e840594a22719ad7257a2621aca6a9",
+      "raw_fof_sha256": "fa2f08dcbadb215708045fba9f936810dd89832234fab4b4ae5ed170eff033d3",
+      "nhalo": 308877,
+      "exact_DFT_seconds": 1.33957839012146
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 48,
+      "source_sha256": "51a09ccca2df74f11d0684ae5c57567e1b22a651f5f4e6a48b477756fc1196ac",
+      "diagnostics_sha256": "0f2ad2810171ee7fd853a577d643a5a87c8809ef0833770b4650d1d599c255f9",
+      "raw_fof_sha256": "72b9291f6d45e34de8721c5f8d68d05fce4bfec0fe4c08ac603760c3b56f6e15",
+      "nhalo": 309393,
+      "exact_DFT_seconds": 1.2894814014434814
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 49,
+      "source_sha256": "63e98e385866320729f3122137ed65ea65bfef2a0ddd368131ba672d2ff291b1",
+      "diagnostics_sha256": "c68c389f3bf0beb7cd24222d81fa987ef53713a4db3ccccf22094d3dad1e06b7",
+      "raw_fof_sha256": "dde477a48f7fe540652c0e1c48acdf0bd9bc980e23cebc9ef3341974d1be35ad",
+      "nhalo": 309661,
+      "exact_DFT_seconds": 1.2905895709991455
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 50,
+      "source_sha256": "ee88e2b3565a51d695320a9ef684cdbf5e4e2b62026ca0a37cadb25f07c69385",
+      "diagnostics_sha256": "9366d8854e4169a3835a4f7113c40294fedc0534c1050943e0832203afcf89bc",
+      "raw_fof_sha256": "83edc9cd67c160fdffb6197ebd6879dc0d08b5c82a154cf0aaecd849613392dc",
+      "nhalo": 309334,
+      "exact_DFT_seconds": 1.2640070915222168
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 51,
+      "source_sha256": "aad880f6cc83ddae663458080d26b31540f2f297f8f4bd283bcb9febe616f9c2",
+      "diagnostics_sha256": "77c2e384c4c022f572a955e44e88e220cffd0c90ba8ada1f83cb855d71bb5264",
+      "raw_fof_sha256": "46b6a92ded7f01057aab1403deba64bcd6edccacbea3e23930f52a8ef28214e4",
+      "nhalo": 308854,
+      "exact_DFT_seconds": 1.2243168354034424
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 52,
+      "source_sha256": "ce8e257c1dc7e5c4369a1be65479fbce34986066d3e1396756b53c7b8582ec55",
+      "diagnostics_sha256": "898cc033c938d726c4cde2973865fff04432c1afc477316f5e105574f68a6037",
+      "raw_fof_sha256": "8cd4fa8376a31b86b6e0ec91e1f6dea8ade25a8307ec30fe9be7065aba9e3e79",
+      "nhalo": 309663,
+      "exact_DFT_seconds": 1.2204196453094482
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 53,
+      "source_sha256": "3adcfd870664715fff5b4361f8914cdc9a377063d6677210a36badd4adb421b8",
+      "diagnostics_sha256": "9cf78924095202c6393e79e390327d629e9109257a377ea91bb8163ee17655d7",
+      "raw_fof_sha256": "1c4f53df40be8bba1d2c446e3bfb286b2ea841d5a5a03c89db38c15115fe66e5",
+      "nhalo": 308904,
+      "exact_DFT_seconds": 1.1957051753997803
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 54,
+      "source_sha256": "15ce871e82ebd470081d4c5fe606c91fdc61b92e6b888e6df08ebef4607f54d4",
+      "diagnostics_sha256": "80133e9ea8352c1fd773d406ddfc463d605a830ec81583be3e5033f618bcab01",
+      "raw_fof_sha256": "bb7b21bfaf58e00c0dabd6dd3e0ebf64bcf16ea0c459ae92ba43bc81ac102311",
+      "nhalo": 310106,
+      "exact_DFT_seconds": 1.1621739864349365
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 55,
+      "source_sha256": "34a7474628ae7590728b8629075bf0b5ff4794d99a4d7ddef541ecc027494a9a",
+      "diagnostics_sha256": "3a33a86638dc1c28d131f5d3c449add41f9587f1011fb1b6467ef7a082c1a68f",
+      "raw_fof_sha256": "e69ea215ed938dccda0a3c68e726dc19b3b54b4bce38c4d6121cdaaee0138a06",
+      "nhalo": 310161,
+      "exact_DFT_seconds": 1.1807117462158203
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 56,
+      "source_sha256": "9e612d0db49f93d89e5efb51e2aa77139c19cb78dd76190ca8268881bc2c722b",
+      "diagnostics_sha256": "ecb9ef3f4d3e62b13444f21429a95d8a8fc13471071fb15903bd17b2917c3209",
+      "raw_fof_sha256": "6281782c4cc22f44bc27c30bdde27ed74734798f7eeca8f703efad9212514ada",
+      "nhalo": 308827,
+      "exact_DFT_seconds": 1.1635773181915283
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 57,
+      "source_sha256": "499a9330115e27f073329c60c842dbfa43cfecfec439e5b88b1a30af59ceb6df",
+      "diagnostics_sha256": "e76e19f3642e3dafef6150d9666cd25e3d41d9054686b1308e050ef4fa01a343",
+      "raw_fof_sha256": "02dfc8adf8f0a4975d167fd770482601d87a9c21ca6d27c464c8db17dcb9d52d",
+      "nhalo": 308716,
+      "exact_DFT_seconds": 1.2766249179840088
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 58,
+      "source_sha256": "d6b9d05e5142a40d993330c2c5ebd04a676fe96a6b4175884eb9c4607e9e377b",
+      "diagnostics_sha256": "6074555bc920dfff0c44e72a74171991440178cc5026c7b8736c1b4177d36b84",
+      "raw_fof_sha256": "50e3a4a1a46c36d40dcbf5a993d7f1a7a59820ba32961d28c8e8d47ac8660ee5",
+      "nhalo": 308777,
+      "exact_DFT_seconds": 1.1712892055511475
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 59,
+      "source_sha256": "d7d902f4b4fea269374f58a8d29c50ed4510c7611c01941f2ffb44fa21d9f003",
+      "diagnostics_sha256": "5c865e9ed57e65ac9a687d8191b793461e958ae23b9240b36df4f7186c4df662",
+      "raw_fof_sha256": "b0b2173b2aad2325c05d7887d87d7e3c1d16ae2cbdc6653a64f76d6499fbad07",
+      "nhalo": 308880,
+      "exact_DFT_seconds": 1.1862413883209229
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 60,
+      "source_sha256": "88cf292de9203c03c4379beb0949c1ead2dfa1b1e1a05a0b0441dc3235182b42",
+      "diagnostics_sha256": "ba9837721dd19d3564562331a75f485426ffc1e5fa005413ea7d8e63611eb3e8",
+      "raw_fof_sha256": "341f607c4effb4ef5348e664e919e97e287473ed2d1e931f60f98b164636d5c7",
+      "nhalo": 309749,
+      "exact_DFT_seconds": 1.2165908813476562
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 61,
+      "source_sha256": "b5ce93d4d6fb0e8a9ecfa043ca537c9301a2bc8e864d01494edaa82a04d5c02b",
+      "diagnostics_sha256": "23b45c38986222b87028b62a5592b329751ca7091533e221710c562ac8e7694a",
+      "raw_fof_sha256": "bbacd7a59fe018bcef28e61cee26d8523655f0b2b235d06714631fc78613ff5c",
+      "nhalo": 310122,
+      "exact_DFT_seconds": 1.1987318992614746
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 62,
+      "source_sha256": "fe22061d55a8394c8587bcf26536a547d52070f1fb655b14b6b0591b5aaf9c7a",
+      "diagnostics_sha256": "f1f90635acd252a7718906d5897cd5ead8020a0b325e863f668ab715ea1246fd",
+      "raw_fof_sha256": "2ba31781639e7ba6ad73486653cf215fafb799b7663420829135770858e69b82",
+      "nhalo": 309007,
+      "exact_DFT_seconds": 1.1839308738708496
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 63,
+      "source_sha256": "a2da8029e024cf70eefa91f6387c9e8d24f8596296f580a5b193a4c1068b1f7d",
+      "diagnostics_sha256": "10dc49cb630c30824afe96daae7f2c642803fa39d43bd57da240042e17c96b0c",
+      "raw_fof_sha256": "26dc6f15e6b48760f19522919a7f8019a6d167a39ad30bc050657a0474695ded",
+      "nhalo": 309320,
+      "exact_DFT_seconds": 1.2273635864257812
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 64,
+      "source_sha256": "eb148e0a616cefac286c865cebd769cb68a7fed9a36b0aba8752d28f1ff3514e",
+      "diagnostics_sha256": "da3d18bcab1020e52132c591e493e52c72b33b9e1dbf78a4b9ce0e538283e727",
+      "raw_fof_sha256": "ba22820a3453b3417d668ceb6f6b5ecd9c0da1957a91418b2fc80d62a44fb813",
+      "nhalo": 309327,
+      "exact_DFT_seconds": 1.2275724411010742
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 65,
+      "source_sha256": "a724c1a0ddf66db5c0a5ca777d5e702a8199b742684543319614a899c863e46b",
+      "diagnostics_sha256": "8f41ef011000c37dff4bd494d3f3c157467d1da6d4c7df4fe999b861785f2b92",
+      "raw_fof_sha256": "c2dfe94c49b7a90d565d9628e085384f666817bda5dd70e53dbbd041c5fc6f48",
+      "nhalo": 309326,
+      "exact_DFT_seconds": 1.4681129455566406
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 66,
+      "source_sha256": "f9cd9529ecff245e1a1a36b1de2d099e2ce2a4e039dab33f06965e8b0b7c2e92",
+      "diagnostics_sha256": "3bf6aeb347a40b49e3303913d0728addf24c44649c48ea82e3a70670fbac9569",
+      "raw_fof_sha256": "42e63dc57c2127c97ed09a3b073701603bb877903b6f797186f6ee113d9a34cf",
+      "nhalo": 308969,
+      "exact_DFT_seconds": 1.4857680797576904
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 67,
+      "source_sha256": "d1e7bcd2abe767ed16ef4a885d401b302242866c101926d124fccaeaa9d9604e",
+      "diagnostics_sha256": "0d316303f37aa5120a85deb14e22cc58dde7606f505b98a2f6e0a8bc7b3e384c",
+      "raw_fof_sha256": "02a7e3f1b68db6f770c0e9b8887358efcb01fd0906e0c18e0e84e82e246b2a3b",
+      "nhalo": 309166,
+      "exact_DFT_seconds": 1.3156440258026123
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 68,
+      "source_sha256": "5ce8ddc26185f019be5ecc589f7acb4afa216b7e738c452cc601c13e156f0a4b",
+      "diagnostics_sha256": "d6777c3121a4b0981691d385c10161b7036283367edf5e07e48afbfd8cb4b0df",
+      "raw_fof_sha256": "b2b3194fe399b00f47af1c543bdccdedcd579c0766ea43ba39876a701dad1540",
+      "nhalo": 309332,
+      "exact_DFT_seconds": 1.3068068027496338
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 69,
+      "source_sha256": "74bfad1c6a6062b451d82ebbffeb7da44ea68a3247b7bf23c4fef879240b68ee",
+      "diagnostics_sha256": "42017bf1ae841718bf48db898752997245378e94bd8e5504fd6c4e53064aee8d",
+      "raw_fof_sha256": "23d2238fb08c521e0f9ab5815f6dcefb4f37dd4b63c7f596b97695ef97c29022",
+      "nhalo": 309159,
+      "exact_DFT_seconds": 1.2759928703308105
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 70,
+      "source_sha256": "c3c44256426122821810d9954a730e1a8af5c958ad70a8d7fe447163d488053e",
+      "diagnostics_sha256": "52016f55b3fc0e1b9f7a1dba2dbe091d38e8394886e3959d608b4cbbe152f9dc",
+      "raw_fof_sha256": "dba30c072252b3b8e8cdbacbcc9485ecef6a3dd50e6e2c91759f1239d16f4dae",
+      "nhalo": 309144,
+      "exact_DFT_seconds": 1.2486801147460938
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 71,
+      "source_sha256": "362a8e4ae4df14ad1023ce99e2c4eeef48326b7b178ec53b4b65d40a57ecfef8",
+      "diagnostics_sha256": "e14fba0e2ccb7077898956cbf41000c9f8aac3b62ecc0a6be60b5c56461e8c17",
+      "raw_fof_sha256": "6a720cfb0a5f1f1d1c5801f4bc6901ffc2317a1e103ead08b8f4905192bd70a0",
+      "nhalo": 309219,
+      "exact_DFT_seconds": 1.2227630615234375
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 72,
+      "source_sha256": "24e51b35aeacf27601b816bd1225d2f53fc0d0bae49f278313d7b0c0e0dd58a8",
+      "diagnostics_sha256": "a25db6e7adbf4ac25e6129f8c9362bba2f3f4ed0824ba5f297ceb19ab778f8de",
+      "raw_fof_sha256": "24513993dae4a971d979003515dd3ad5e5d915c18ace4cfaad2adb8a87d81574",
+      "nhalo": 309482,
+      "exact_DFT_seconds": 1.2855703830718994
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 73,
+      "source_sha256": "f935727b31f6dfcbdffee87b248d50fc430dcd188a5c726641f0a4b36dc2f509",
+      "diagnostics_sha256": "e9a5b517d95f19d149c9e5ce5ed82e32c4d9ced6ee636c4eb1579fb308042a04",
+      "raw_fof_sha256": "f2a8b512fb93f532af9edd6c301255f5eabc528faa9edc7d8c0a44df87805d8a",
+      "nhalo": 309343,
+      "exact_DFT_seconds": 1.2732899188995361
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 74,
+      "source_sha256": "1f5bae57e34bd755de0adcdbe5fe9b8d140ee6178b394f65aa8d49333e7ddbf2",
+      "diagnostics_sha256": "2a6f1fa0210fe845627c446c5089b5eeff8c7a968e23bcab3736406c417e3a63",
+      "raw_fof_sha256": "4c0b04f7ca8e5926b88fd1c7380c55189c4e5fef843bcf5ff978ef24761d930e",
+      "nhalo": 309965,
+      "exact_DFT_seconds": 1.2821276187896729
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 75,
+      "source_sha256": "a7d0f53b2566999e76cd93dd653a3a2c14df7e787d7bd95e615c1f50fb745eff",
+      "diagnostics_sha256": "0498aefd9684ef674cb0be3542e5c0ffb322183a70da6b493d77419048df3cab",
+      "raw_fof_sha256": "d325076840aa5e81515f7ea9223c135514693d4383660074af350779063a62d2",
+      "nhalo": 309501,
+      "exact_DFT_seconds": 1.273252010345459
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 76,
+      "source_sha256": "8c7698cf6ef57177abfcfbb5db5ed05827e10b39b06f6d5c269a4ebafd9c30ba",
+      "diagnostics_sha256": "e23e803c94b84abc055aa1981ee16edd8d8e3ead314244345c0ca4ef33f08574",
+      "raw_fof_sha256": "426ab833e9bc9686c09b4f0bb89a5523404044cf1d9b9429f6715d7cfaa35d7c",
+      "nhalo": 308655,
+      "exact_DFT_seconds": 1.1894102096557617
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 77,
+      "source_sha256": "abbdc67a240e1d8ada1e048014b9b74870e4899a33aa96dc7d1eff317c268594",
+      "diagnostics_sha256": "df75e70f7b7a53c2c9180d7daa29ceb6f1942156c11ddf682e2a34f755f5796d",
+      "raw_fof_sha256": "d4919c48ae4eaa13f74df8947e50f1133ba7601a66e506b275e5f55db79f0986",
+      "nhalo": 309447,
+      "exact_DFT_seconds": 1.2565808296203613
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 78,
+      "source_sha256": "b0c66b1fdd31ffeb28a019ac2168828217d340df3805cd078f921e2422fd90af",
+      "diagnostics_sha256": "2c1e77c232d9c5b73fdfac227701dc58c3a28252741078dc6dd80fd15eab140e",
+      "raw_fof_sha256": "13334f1589d2d071874c099fd930b28a414400fe884558b47f6d103ea1f64e5c",
+      "nhalo": 309242,
+      "exact_DFT_seconds": 1.2072763442993164
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 79,
+      "source_sha256": "c0f6bb8c327bad1f82cbe1b4eb175c99422c13450cec550ff97aa45c82f7a0d4",
+      "diagnostics_sha256": "39c3a0e1df3f8e68342974fb0793b4edd8812b60e2b2981807d947d56471293e",
+      "raw_fof_sha256": "19c7974383633fdd4f3b656b06740efb46469df7e56b8651c66fb2c1a702ceee",
+      "nhalo": 310493,
+      "exact_DFT_seconds": 1.212644100189209
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 80,
+      "source_sha256": "701b59e9e66eb64e92a20bae88a3eb7b81ca7588a99e3bd3f6c77f36f67c2b5b",
+      "diagnostics_sha256": "e2b6bcc109cb492c24326dfe117d281d827af8fd984b63b46625d79615901244",
+      "raw_fof_sha256": "687b4ac60f227eaaa9c81afda4e46cbad641133c68290bd2ca769f27671f8cfb",
+      "nhalo": 310206,
+      "exact_DFT_seconds": 1.2380168437957764
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 81,
+      "source_sha256": "7b36c2f541097ca1118e4c84c3c0d149bf3bf8ae38fcadec8aa006c274d227e5",
+      "diagnostics_sha256": "7bcd43accf4fc997ad78212a9c0eb404cd017f1b8bd6046aa374cc806c6a5a4c",
+      "raw_fof_sha256": "a7c6f3fa75ded94bcc95c4e7c4bd80455af7aaac5c2391417e1b9764c6ea6ddb",
+      "nhalo": 308275,
+      "exact_DFT_seconds": 1.3409788608551025
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 82,
+      "source_sha256": "bbf02ded075d6d133c296ffb8fd5c5414edf038d8e24744d8bd12d727f525b62",
+      "diagnostics_sha256": "ad70d9fa6b19a513e9f74f5ea93c872b52e6814c0b41f3c1f707c9b5c2a2ec77",
+      "raw_fof_sha256": "56fda3f50c16035aebb3d3cf5ba0edc432481ea450b61f1fabca3ba2aba38c8b",
+      "nhalo": 309812,
+      "exact_DFT_seconds": 1.3235993385314941
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 83,
+      "source_sha256": "9a7846b6ce658cbc63f92da4534b1978851d0a9861345e533fb1324f27293885",
+      "diagnostics_sha256": "92b844958ffc2e06b8d0c66e6a1ebf68dbda1a4f78a19f1a8f6f52a2d116b856",
+      "raw_fof_sha256": "e845a9356888225817eef736bb4250d8c5dc4f22404e054c063da13e288fbe02",
+      "nhalo": 309585,
+      "exact_DFT_seconds": 1.5626935958862305
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 84,
+      "source_sha256": "c0d621e97d4cb5b89014e6a46171dbf0d6b9e3737d0a2e4cec185cabfa3590f2",
+      "diagnostics_sha256": "6db57e59aff9228358e62788a96ae87901429d76f0159119ad75620af1c8959b",
+      "raw_fof_sha256": "95c5633194109e4e9b2ba87a28f5594ba461ad7e5346d7ea8635e4a8f1413999",
+      "nhalo": 309787,
+      "exact_DFT_seconds": 1.532562017440796
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 85,
+      "source_sha256": "8d1b99158516c06c242851deb50a91908c9ee2b899f37093505e6b03d0d43dc3",
+      "diagnostics_sha256": "f9eea89698e6fab228f046d7574b4a94baf82ddb7b1ce45f35a64092c1f85dbd",
+      "raw_fof_sha256": "6f8bf5a96038c2878797af91ef47eb5be7063bac9d0fa00c1b325800a1e002a5",
+      "nhalo": 309083,
+      "exact_DFT_seconds": 1.4695310592651367
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 86,
+      "source_sha256": "c6a9c700acdf720583fdff0aa04190bc63e4725e368d2a177242490f3fad76e9",
+      "diagnostics_sha256": "b3470fc15787d646595de0b60c19e537ebb7999e90c5003e590caf64dd8ed1f4",
+      "raw_fof_sha256": "043c88fca4710527ae09ee603e52ff91b1b1697ca30e4ece87e96b06a142b8d4",
+      "nhalo": 309739,
+      "exact_DFT_seconds": 1.6661667823791504
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 87,
+      "source_sha256": "fa9130ca02f0ba9775b658c25310dd99e1fe000d5574d2fb0a43c24bdce0ed39",
+      "diagnostics_sha256": "c0fbdc156b045c1cf50ce5850a18100a67b9cdb609a34e8b5ffc73ef0e520ed0",
+      "raw_fof_sha256": "a250c65ab2bb76a490c7e1c5883862e75e7793628d7d4ee6156d1c3758bc022c",
+      "nhalo": 309268,
+      "exact_DFT_seconds": 1.6682188510894775
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 88,
+      "source_sha256": "204401a6b7d6cfdfd83ce1cb4e4d514f3dade644487f4eb32b89aa7a54e6b690",
+      "diagnostics_sha256": "f2a85b4bbb302d10b1a7ae42ad7ff4faae928b966727458c30cf246bf88c786e",
+      "raw_fof_sha256": "9c50049b3cc11db9f2e032d97a56a5c0dde9ab9f4da1297208d9a7c45549cff7",
+      "nhalo": 309366,
+      "exact_DFT_seconds": 1.6141338348388672
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 89,
+      "source_sha256": "fce254d2d682465c8456db1c76d0dbfc2c5c03186f8e3ac0af89eb67cc14e7d1",
+      "diagnostics_sha256": "133787c1b65438f25f03750c9637247ec04437942817c1ee92c3b9bb85752989",
+      "raw_fof_sha256": "45ed82763f672af6d5b608396a9cd421eb646c9beb615ba6ec0ae3898d88a84f",
+      "nhalo": 309378,
+      "exact_DFT_seconds": 1.613142490386963
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 90,
+      "source_sha256": "4188d47fd4579e07b3c98e8bcb454926487829130fcb86b86d9dd46809d100c2",
+      "diagnostics_sha256": "2ecfda71e90d758d5c9be78e3aa2dea19b92a0a18e3eb160918c59bfc32de078",
+      "raw_fof_sha256": "b6b7ab08e97dfbb33851890276e4fefdd5b9a040a379ec9f3906fc24c9480442",
+      "nhalo": 309483,
+      "exact_DFT_seconds": 1.6557917594909668
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 91,
+      "source_sha256": "1c2f75c2a18adde4a8a2367b56e27394e4970fa457836d08c7d124733eb50ae3",
+      "diagnostics_sha256": "100c220b0e5de3e41461153a0886add686a0f40feb8c91d85c4e3b31f6aed89f",
+      "raw_fof_sha256": "fa8ea73731ed5ac2464cef8712ada57ac6f7d8015523b69f7a7b0b7b939a0a24",
+      "nhalo": 309370,
+      "exact_DFT_seconds": 1.593632698059082
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 92,
+      "source_sha256": "1b980e37405d8ae2c90d473d8e2a7514216d6ca2df5fde8018690ad0fe1ca835",
+      "diagnostics_sha256": "64b19aff238f3a579d6ea0e3c4bca56081c59fc9ec2f17c460f300a41232d684",
+      "raw_fof_sha256": "7b1e293d5e066c64258b1b24d55778687d24a67220f5d91aa39a2ca3f3c77a24",
+      "nhalo": 307973,
+      "exact_DFT_seconds": 1.6246018409729004
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 93,
+      "source_sha256": "93d2d5b6f9434d134ae43afd8deae4ea343d26d0d4c38429e566595aa614feb3",
+      "diagnostics_sha256": "5989f04fae7e00b66513c5768be4e1a5616610cd16635493027cf94950e13073",
+      "raw_fof_sha256": "47d8e81fb92fc648b42c41f58e4831483a9ec59bc47bb3c9b311124570235a62",
+      "nhalo": 309545,
+      "exact_DFT_seconds": 1.9234004020690918
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 94,
+      "source_sha256": "c21804f71141d5630d57198161b0a323676fbf354d46dc1d890a10fee04d1811",
+      "diagnostics_sha256": "7f55a9d2a832e472c4430c612063e0aa8029f15dc62ecfc7954784a15c8596f3",
+      "raw_fof_sha256": "74a9b68bb54efbfdbe36db8be2601b10b640e212c94e3a0b4ec4ccae082183cd",
+      "nhalo": 308723,
+      "exact_DFT_seconds": 1.8414571285247803
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 95,
+      "source_sha256": "2e0546d5bdcdf9b5db3eb92b5355dd4bb5e8ba5a4ac33255d3fee1cdf68de2e5",
+      "diagnostics_sha256": "915f4ab285f81b3093bcb1f377829d2d8dd41e0fd5e65a6736f262e9e6126e5a",
+      "raw_fof_sha256": "33a3dbb3b5d469acff2b61b80ea7c0eea316954b928a6521950e8f36ef8e5be2",
+      "nhalo": 309740,
+      "exact_DFT_seconds": 1.6279115676879883
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 96,
+      "source_sha256": "c5ac500be5c3d45953c0b987055ee5ca87115082e261c13973478c7ffc16f69d",
+      "diagnostics_sha256": "4147b8cb55feaf86a6a517d1ed3a8430c76ba0d28ba8ea4d96ad7395461e8b1c",
+      "raw_fof_sha256": "1129cb7d38d73b8423c598643b10b33f06d615c39acc4146c32f08ea181974c5",
+      "nhalo": 308622,
+      "exact_DFT_seconds": 1.4921951293945312
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 97,
+      "source_sha256": "a13a4869404ce0d5e87ff354f2fe4f2b790a3d3ed0b7cdc6a9845121d3c9c899",
+      "diagnostics_sha256": "776939b3b826a0c79ea266e586654b62e411c0af3f59dbb2e95aa6a6948cbccb",
+      "raw_fof_sha256": "8c46486402440ecea19451fa26746ac1d2c5e88e5d5acc084855339614ca136c",
+      "nhalo": 309547,
+      "exact_DFT_seconds": 1.50213623046875
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 98,
+      "source_sha256": "bd2af242628d03d02576d2a50db06167f7a18ccee076b9ee1f76daae22ea674d",
+      "diagnostics_sha256": "83ce57714bcd9a5b36e4fe4aa9ac83402adb882a3fb5cef2eaea7ab304ba44cf",
+      "raw_fof_sha256": "e9ec97402a1a5ae47c8243e040e55388f7151d43b7c68c900bc4a51948304e26",
+      "nhalo": 309651,
+      "exact_DFT_seconds": 1.5291311740875244
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 99,
+      "source_sha256": "f421e522d3de29a0b8bac155bfed1d4e22ff48a4c80bfaa3063b5227f628a1c5",
+      "diagnostics_sha256": "06682d92ee12eb4d80ec60bf41273a18e167a07baad0b275b006b09ed60ddc03",
+      "raw_fof_sha256": "b646b93754f180338f844d52e28bdf8819aaaf3e472c82fbd30ac2adf73f7695",
+      "nhalo": 309535,
+      "exact_DFT_seconds": 1.5032289028167725
+    }
+  ],
+  "analysis": [
+    {
+      "cosmology": "fiducial",
+      "n_catalogs": 100,
+      "probes": [
+        {
+          "triangle_integer_modes": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              -3,
+              -5,
+              0
+            ]
+          ],
+          "shift_support_integer_modes": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              -3,
+              -5,
+              0
+            ],
+            [
+              -3,
+              0,
+              -1
+            ],
+            [
+              0,
+              -5,
+              1
+            ],
+            [
+              3,
+              5,
+              0
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              18,
+              -4,
+              7
+            ],
+            [
+              -23,
+              9,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -18,
+              4,
+              -7
+            ],
+            [
+              23,
+              -9,
+              -3
+            ]
+          ],
+          "shift_response": [
+            0.41730213804207617,
+            0.4131695935109598,
+            0.4079192212960409,
+            0.41730213804207617,
+            0.4131695935109598,
+            0.4079192212960409,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618
+          ],
+          "physical_units_Mpc_h6_factor": 1e+18,
+          "full_raw_self_corrected_response_components": [
+            "corrected",
+            "raw",
+            "self"
+          ],
+          "cumulant_parts_physical": {
+            "pair_and_means": [
+              [
+                -5711370780.220581,
+                -2.5828010250412693e-08
+              ],
+              [
+                -5991885450.692381,
+                -2.6316697824763445e-08
+              ],
+              [
+                -280514670.4717993,
+                -4.886875743507521e-10
+              ]
+            ],
+            "third_cumulant": [
+              [
+                -275579.3879224122,
+                -8051.631630061019
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                275579.3879221537,
+                8051.631630061019
+              ]
+            ],
+            "fourth_cumulant": [
+              [
+                580960894.3739852,
+                -353774616.6105113
+              ],
+              [
+                580960894.3739852,
+                -353774616.61051124
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "full": [
+              [
+                -5130685465.234518,
+                -353782668.24214137
+              ],
+              [
+                -5410924556.318396,
+                -353774616.6105113
+              ],
+              [
+                -280239091.0838772,
+                8051.63163006053
+              ]
+            ]
+          },
+          "exact_first_order_response_single_box_scatter": [
+            [
+              9988687644.064621,
+              0.0
+            ],
+            [
+              10098602811.332565,
+              0.0
+            ],
+            [
+              158190330.73408183,
+              0.0
+            ]
+          ],
+          "intrinsic_factorial_B_physical": [
+            -26864531966.436184,
+            -38217965422.81577
+          ],
+          "connected_parts_are_not_identified_pure_noise": true
+        },
+        {
+          "triangle_integer_modes": [
+            [
+              8,
+              0,
+              4
+            ],
+            [
+              -3,
+              7,
+              -1
+            ],
+            [
+              -5,
+              -7,
+              -3
+            ]
+          ],
+          "shift_support_integer_modes": [
+            [
+              8,
+              0,
+              4
+            ],
+            [
+              -3,
+              7,
+              -1
+            ],
+            [
+              -5,
+              -7,
+              -3
+            ],
+            [
+              -8,
+              0,
+              -4
+            ],
+            [
+              3,
+              -7,
+              1
+            ],
+            [
+              5,
+              7,
+              3
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              18,
+              -4,
+              7
+            ],
+            [
+              -23,
+              9,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -18,
+              4,
+              -7
+            ],
+            [
+              23,
+              -9,
+              -3
+            ]
+          ],
+          "shift_response": [
+            0.3742188149639329,
+            0.3897216166814242,
+            0.37202304650144985,
+            0.3742188149639329,
+            0.3897216166814242,
+            0.37202304650144985,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618
+          ],
+          "physical_units_Mpc_h6_factor": 1e+18,
+          "full_raw_self_corrected_response_components": [
+            "corrected",
+            "raw",
+            "self"
+          ],
+          "cumulant_parts_physical": {
+            "pair_and_means": [
+              [
+                -1536266865.857762,
+                -4.2780537973050093e-10
+              ],
+              [
+                -1686807884.4619505,
+                -2.497203046364388e-10
+              ],
+              [
+                -150541018.60418844,
+                1.7808507509406208e-10
+              ]
+            ],
+            "third_cumulant": [
+              [
+                -165452.0286662505,
+                -16128.567829416752
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                165452.0286662505,
+                16128.567829416754
+              ]
+            ],
+            "fourth_cumulant": [
+              [
+                -61673259.116806746,
+                -291687217.09977245
+              ],
+              [
+                -61673259.116806746,
+                -291687217.09977245
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "full": [
+              [
+                -1598105577.003235,
+                -291703345.6676019
+              ],
+              [
+                -1748481143.5787573,
+                -291687217.09977245
+              ],
+              [
+                -150375566.57552218,
+                16128.567829416932
+              ]
+            ]
+          },
+          "exact_first_order_response_single_box_scatter": [
+            [
+              5598107925.966446,
+              0.0
+            ],
+            [
+              5663745099.647314,
+              0.0
+            ],
+            [
+              99399494.53639339,
+              0.0
+            ]
+          ],
+          "intrinsic_factorial_B_physical": [
+            13103830821.289244,
+            -20799545095.518253
+          ],
+          "connected_parts_are_not_identified_pure_noise": true
+        },
+        {
+          "triangle_integer_modes": [
+            [
+              10,
+              2,
+              1
+            ],
+            [
+              -2,
+              9,
+              -3
+            ],
+            [
+              -8,
+              -11,
+              2
+            ]
+          ],
+          "shift_support_integer_modes": [
+            [
+              10,
+              2,
+              1
+            ],
+            [
+              -2,
+              9,
+              -3
+            ],
+            [
+              -8,
+              -11,
+              2
+            ],
+            [
+              -10,
+              -2,
+              -1
+            ],
+            [
+              2,
+              -9,
+              3
+            ],
+            [
+              8,
+              11,
+              -2
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              18,
+              -4,
+              7
+            ],
+            [
+              -23,
+              9,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -18,
+              4,
+              -7
+            ],
+            [
+              23,
+              -9,
+              -3
+            ]
+          ],
+          "shift_response": [
+            0.3561346140017463,
+            0.3640276761434501,
+            0.3001381491160518,
+            0.3561346140017463,
+            0.3640276761434501,
+            0.3001381491160518,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618
+          ],
+          "physical_units_Mpc_h6_factor": 1e+18,
+          "full_raw_self_corrected_response_components": [
+            "corrected",
+            "raw",
+            "self"
+          ],
+          "cumulant_parts_physical": {
+            "pair_and_means": [
+              [
+                -1058243420.9934508,
+                -2.0128961057916464e-09
+              ],
+              [
+                -1175439613.0263255,
+                -2.0995183292866465e-09
+              ],
+              [
+                -117196192.03287463,
+                -8.662222349500012e-11
+              ]
+            ],
+            "third_cumulant": [
+              [
+                -115272.14682880421,
+                39923.1920898528
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                115272.1468287008,
+                -39923.1920898528
+              ]
+            ],
+            "fourth_cumulant": [
+              [
+                415776280.28687054,
+                -375643023.7932935
+              ],
+              [
+                415776280.2868704,
+                -375643023.7932935
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "full": [
+              [
+                -642582412.853409,
+                -375603100.6012036
+              ],
+              [
+                -759663332.739455,
+                -375643023.7932935
+              ],
+              [
+                -117080919.88604593,
+                -39923.192089852884
+              ]
+            ]
+          },
+          "exact_first_order_response_single_box_scatter": [
+            [
+              2831056246.1071377,
+              0.0
+            ],
+            [
+              2844558674.8035526,
+              0.0
+            ],
+            [
+              66116348.887049265,
+              0.0
+            ]
+          ],
+          "intrinsic_factorial_B_physical": [
+            -18982871585.98809,
+            -11905018030.78961
+          ],
+          "connected_parts_are_not_identified_pure_noise": true
+        }
+      ]
+    },
+    {
+      "cosmology": "LC_p",
+      "n_catalogs": 100,
+      "probes": [
+        {
+          "triangle_integer_modes": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              -3,
+              -5,
+              0
+            ]
+          ],
+          "shift_support_integer_modes": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              -3,
+              -5,
+              0
+            ],
+            [
+              -3,
+              0,
+              -1
+            ],
+            [
+              0,
+              -5,
+              1
+            ],
+            [
+              3,
+              5,
+              0
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              18,
+              -4,
+              7
+            ],
+            [
+              -23,
+              9,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -18,
+              4,
+              -7
+            ],
+            [
+              23,
+              -9,
+              -3
+            ]
+          ],
+          "shift_response": [
+            0.41730213804207617,
+            0.4131695935109598,
+            0.4079192212960409,
+            0.41730213804207617,
+            0.4131695935109598,
+            0.4079192212960409,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618
+          ],
+          "physical_units_Mpc_h6_factor": 1e+18,
+          "full_raw_self_corrected_response_components": [
+            "corrected",
+            "raw",
+            "self"
+          ],
+          "cumulant_parts_physical": {
+            "pair_and_means": [
+              [
+                -6423363512.484205,
+                8.65012253215503e-10
+              ],
+              [
+                -6720583517.328693,
+                7.359355795823633e-10
+              ],
+              [
+                -297220004.84448826,
+                -1.2907667363313973e-10
+              ]
+            ],
+            "third_cumulant": [
+              [
+                -317030.7369332011,
+                3714.10186970615
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                317030.7369334596,
+                -3714.10186970615
+              ]
+            ],
+            "fourth_cumulant": [
+              [
+                724448682.1769514,
+                -381216988.5009387
+              ],
+              [
+                724448682.1769514,
+                -381216988.5009387
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "full": [
+              [
+                -5699231861.044187,
+                -381213274.399069
+              ],
+              [
+                -5996134835.151742,
+                -381216988.5009387
+              ],
+              [
+                -296902974.1075548,
+                -3714.101869706279
+              ]
+            ]
+          },
+          "exact_first_order_response_single_box_scatter": [
+            [
+              10890948659.064743,
+              0.0
+            ],
+            [
+              11009725027.188875,
+              0.0
+            ],
+            [
+              168599261.1303546,
+              0.0
+            ]
+          ],
+          "intrinsic_factorial_B_physical": [
+            -24007839487.446026,
+            -47364611786.376686
+          ],
+          "connected_parts_are_not_identified_pure_noise": true
+        },
+        {
+          "triangle_integer_modes": [
+            [
+              8,
+              0,
+              4
+            ],
+            [
+              -3,
+              7,
+              -1
+            ],
+            [
+              -5,
+              -7,
+              -3
+            ]
+          ],
+          "shift_support_integer_modes": [
+            [
+              8,
+              0,
+              4
+            ],
+            [
+              -3,
+              7,
+              -1
+            ],
+            [
+              -5,
+              -7,
+              -3
+            ],
+            [
+              -8,
+              0,
+              -4
+            ],
+            [
+              3,
+              -7,
+              1
+            ],
+            [
+              5,
+              7,
+              3
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              18,
+              -4,
+              7
+            ],
+            [
+              -23,
+              9,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -18,
+              4,
+              -7
+            ],
+            [
+              23,
+              -9,
+              -3
+            ]
+          ],
+          "shift_response": [
+            0.3742188149639329,
+            0.3897216166814242,
+            0.37202304650144985,
+            0.3742188149639329,
+            0.3897216166814242,
+            0.37202304650144985,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618
+          ],
+          "physical_units_Mpc_h6_factor": 1e+18,
+          "full_raw_self_corrected_response_components": [
+            "corrected",
+            "raw",
+            "self"
+          ],
+          "cumulant_parts_physical": {
+            "pair_and_means": [
+              [
+                -1630682374.808865,
+                6.181212581011191e-09
+              ],
+              [
+                -1786062305.7449918,
+                6.492283119866145e-09
+              ],
+              [
+                -155379930.93612668,
+                3.110705388549544e-10
+              ]
+            ],
+            "third_cumulant": [
+              [
+                -151130.80793575192,
+                -11503.627276375604
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                151130.80793572607,
+                11503.627276375604
+              ]
+            ],
+            "fourth_cumulant": [
+              [
+                8149857.180186181,
+                -241292284.72648832
+              ],
+              [
+                8149857.180186181,
+                -241292284.72648832
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "full": [
+              [
+                -1622683648.4366145,
+                -241303788.3537647
+              ],
+              [
+                -1777912448.5648055,
+                -241292284.72648832
+              ],
+              [
+                -155228800.12819093,
+                11503.627276375915
+              ]
+            ]
+          },
+          "exact_first_order_response_single_box_scatter": [
+            [
+              5599958384.4329605,
+              0.0
+            ],
+            [
+              5665400617.429246,
+              0.0
+            ],
+            [
+              99276427.27818754,
+              0.0
+            ]
+          ],
+          "intrinsic_factorial_B_physical": [
+            12191584301.873787,
+            -21807123524.026222
+          ],
+          "connected_parts_are_not_identified_pure_noise": true
+        },
+        {
+          "triangle_integer_modes": [
+            [
+              10,
+              2,
+              1
+            ],
+            [
+              -2,
+              9,
+              -3
+            ],
+            [
+              -8,
+              -11,
+              2
+            ]
+          ],
+          "shift_support_integer_modes": [
+            [
+              10,
+              2,
+              1
+            ],
+            [
+              -2,
+              9,
+              -3
+            ],
+            [
+              -8,
+              -11,
+              2
+            ],
+            [
+              -10,
+              -2,
+              -1
+            ],
+            [
+              2,
+              -9,
+              3
+            ],
+            [
+              8,
+              11,
+              -2
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              18,
+              -4,
+              7
+            ],
+            [
+              -23,
+              9,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -18,
+              4,
+              -7
+            ],
+            [
+              23,
+              -9,
+              -3
+            ]
+          ],
+          "shift_response": [
+            0.3561346140017463,
+            0.3640276761434501,
+            0.3001381491160518,
+            0.3561346140017463,
+            0.3640276761434501,
+            0.3001381491160518,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618
+          ],
+          "physical_units_Mpc_h6_factor": 1e+18,
+          "full_raw_self_corrected_response_components": [
+            "corrected",
+            "raw",
+            "self"
+          ],
+          "cumulant_parts_physical": {
+            "pair_and_means": [
+              [
+                -1097115051.5410385,
+                4.4732013608684694e-09
+              ],
+              [
+                -1216621894.4088063,
+                4.5890776663230434e-09
+              ],
+              [
+                -119506842.86776769,
+                1.1587630545457436e-10
+              ]
+            ],
+            "third_cumulant": [
+              [
+                -42229.40027393408,
+                18662.0213351682
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                42229.400273985775,
+                -18662.021335168203
+              ]
+            ],
+            "fourth_cumulant": [
+              [
+                450180688.2980018,
+                -378357057.037533
+              ],
+              [
+                450180688.29800195,
+                -378357057.037533
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "full": [
+              [
+                -646976592.6433108,
+                -378338395.0161978
+              ],
+              [
+                -766441206.1108044,
+                -378357057.037533
+              ],
+              [
+                -119464613.4674937,
+                -18662.021335168087
+              ]
+            ]
+          },
+          "exact_first_order_response_single_box_scatter": [
+            [
+              2953166803.4474597,
+              0.0
+            ],
+            [
+              2964699317.8244424,
+              0.0
+            ],
+            [
+              66717385.681644,
+              0.0
+            ]
+          ],
+          "intrinsic_factorial_B_physical": [
+            -21042428307.97311,
+            -14844891450.882986
+          ],
+          "connected_parts_are_not_identified_pure_noise": true
+        }
+      ]
+    },
+    {
+      "cosmology": "LC_m",
+      "n_catalogs": 100,
+      "probes": [
+        {
+          "triangle_integer_modes": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              -3,
+              -5,
+              0
+            ]
+          ],
+          "shift_support_integer_modes": [
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              -3,
+              -5,
+              0
+            ],
+            [
+              -3,
+              0,
+              -1
+            ],
+            [
+              0,
+              -5,
+              1
+            ],
+            [
+              3,
+              5,
+              0
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              18,
+              -4,
+              7
+            ],
+            [
+              -23,
+              9,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -18,
+              4,
+              -7
+            ],
+            [
+              23,
+              -9,
+              -3
+            ]
+          ],
+          "shift_response": [
+            0.41730213804207617,
+            0.4131695935109598,
+            0.4079192212960409,
+            0.41730213804207617,
+            0.4131695935109598,
+            0.4079192212960409,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618
+          ],
+          "physical_units_Mpc_h6_factor": 1e+18,
+          "full_raw_self_corrected_response_components": [
+            "corrected",
+            "raw",
+            "self"
+          ],
+          "cumulant_parts_physical": {
+            "pair_and_means": [
+              [
+                -5022201891.22793,
+                3.599441673160023e-09
+              ],
+              [
+                -5286778791.151441,
+                3.5524964758894483e-09
+              ],
+              [
+                -264576899.92351088,
+                -4.694519727057458e-11
+              ]
+            ],
+            "third_cumulant": [
+              [
+                -244320.26219867973,
+                3625.9433941994453
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                244320.26219873142,
+                -3625.9433941994453
+              ]
+            ],
+            "fourth_cumulant": [
+              [
+                467859892.02293617,
+                -386489161.21817774
+              ],
+              [
+                467859892.02293617,
+                -386489161.21817774
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "full": [
+              [
+                -4554586319.467193,
+                -386485535.27478355
+              ],
+              [
+                -4818918899.128505,
+                -386489161.21817774
+              ],
+              [
+                -264332579.66131216,
+                -3625.9433941994926
+              ]
+            ]
+          },
+          "exact_first_order_response_single_box_scatter": [
+            [
+              9167540274.097597,
+              0.0
+            ],
+            [
+              9272837189.474688,
+              0.0
+            ],
+            [
+              151195270.62143803,
+              0.0
+            ]
+          ],
+          "intrinsic_factorial_B_physical": [
+            -23467389791.470306,
+            -33494182539.662212
+          ],
+          "connected_parts_are_not_identified_pure_noise": true
+        },
+        {
+          "triangle_integer_modes": [
+            [
+              8,
+              0,
+              4
+            ],
+            [
+              -3,
+              7,
+              -1
+            ],
+            [
+              -5,
+              -7,
+              -3
+            ]
+          ],
+          "shift_support_integer_modes": [
+            [
+              8,
+              0,
+              4
+            ],
+            [
+              -3,
+              7,
+              -1
+            ],
+            [
+              -5,
+              -7,
+              -3
+            ],
+            [
+              -8,
+              0,
+              -4
+            ],
+            [
+              3,
+              -7,
+              1
+            ],
+            [
+              5,
+              7,
+              3
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              18,
+              -4,
+              7
+            ],
+            [
+              -23,
+              9,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -18,
+              4,
+              -7
+            ],
+            [
+              23,
+              -9,
+              -3
+            ]
+          ],
+          "shift_response": [
+            0.3742188149639329,
+            0.3897216166814242,
+            0.37202304650144985,
+            0.3742188149639329,
+            0.3897216166814242,
+            0.37202304650144985,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618
+          ],
+          "physical_units_Mpc_h6_factor": 1e+18,
+          "full_raw_self_corrected_response_components": [
+            "corrected",
+            "raw",
+            "self"
+          ],
+          "cumulant_parts_physical": {
+            "pair_and_means": [
+              [
+                -1479831970.333813,
+                -6.410766187389408e-10
+              ],
+              [
+                -1627575716.5346105,
+                -7.111644914828076e-10
+              ],
+              [
+                -147743746.2007974,
+                -7.008787274386689e-11
+              ]
+            ],
+            "third_cumulant": [
+              [
+                -168761.37724296906,
+                -9636.22443779637
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                168761.37724304662,
+                9636.224437796369
+              ]
+            ],
+            "fourth_cumulant": [
+              [
+                -117641392.63330136,
+                -270512327.0262119
+              ],
+              [
+                -117641392.63330136,
+                -270512327.0262119
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "full": [
+              [
+                -1597642124.3443573,
+                -270521963.2506497
+              ],
+              [
+                -1745217109.1679118,
+                -270512327.0262119
+              ],
+              [
+                -147574984.82355434,
+                9636.2244377963
+              ]
+            ]
+          },
+          "exact_first_order_response_single_box_scatter": [
+            [
+              5433845926.231639,
+              0.0
+            ],
+            [
+              5499782297.666315,
+              0.0
+            ],
+            [
+              99153414.51296958,
+              0.0
+            ]
+          ],
+          "intrinsic_factorial_B_physical": [
+            11311404083.370764,
+            -21289561681.06427
+          ],
+          "connected_parts_are_not_identified_pure_noise": true
+        },
+        {
+          "triangle_integer_modes": [
+            [
+              10,
+              2,
+              1
+            ],
+            [
+              -2,
+              9,
+              -3
+            ],
+            [
+              -8,
+              -11,
+              2
+            ]
+          ],
+          "shift_support_integer_modes": [
+            [
+              10,
+              2,
+              1
+            ],
+            [
+              -2,
+              9,
+              -3
+            ],
+            [
+              -8,
+              -11,
+              2
+            ],
+            [
+              -10,
+              -2,
+              -1
+            ],
+            [
+              2,
+              -9,
+              3
+            ],
+            [
+              8,
+              11,
+              -2
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              18,
+              -4,
+              7
+            ],
+            [
+              -23,
+              9,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -18,
+              4,
+              -7
+            ],
+            [
+              23,
+              -9,
+              -3
+            ]
+          ],
+          "shift_response": [
+            0.3561346140017463,
+            0.3640276761434501,
+            0.3001381491160518,
+            0.3561346140017463,
+            0.3640276761434501,
+            0.3001381491160518,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618,
+            0.4182168844647222,
+            0.19871893588117717,
+            0.12344841103631618
+          ],
+          "physical_units_Mpc_h6_factor": 1e+18,
+          "full_raw_self_corrected_response_components": [
+            "corrected",
+            "raw",
+            "self"
+          ],
+          "cumulant_parts_physical": {
+            "pair_and_means": [
+              [
+                -1016621006.4876138,
+                -1.1793913665534119e-09
+              ],
+              [
+                -1131829472.038041,
+                -1.403234512654488e-09
+              ],
+              [
+                -115208465.5504272,
+                -2.2384314610107616e-10
+              ]
+            ],
+            "third_cumulant": [
+              [
+                -115921.68536252526,
+                41021.70541318141
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                115921.68536252526,
+                -41021.70541318141
+              ]
+            ],
+            "fourth_cumulant": [
+              [
+                444469858.17508674,
+                -410092980.175105
+              ],
+              [
+                444469858.17508674,
+                -410092980.175105
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "full": [
+              [
+                -572267069.9978895,
+                -410051958.4696918
+              ],
+              [
+                -687359613.8629543,
+                -410092980.175105
+              ],
+              [
+                -115092543.86506467,
+                -41021.705413181626
+              ]
+            ]
+          },
+          "exact_first_order_response_single_box_scatter": [
+            [
+              2775118150.226912,
+              0.0
+            ],
+            [
+              2785553954.0077534,
+              0.0
+            ],
+            [
+              62967165.27514677,
+              0.0
+            ]
+          ],
+          "intrinsic_factorial_B_physical": [
+            -19412497105.895584,
+            -12798770720.425716
+          ],
+          "connected_parts_are_not_identified_pure_noise": true
+        }
+      ]
+    }
+  ],
+  "field_matrix_sha256": "18da8eb56250cab3c6052cb2d0197970e5386621b4a45aa65cb9552507347f58",
+  "full_particles_used": true,
+  "exact_particle_DFT": true,
+  "finite_random_conditionally_integrated": true,
+  "whole_box_translation_phase_average": true,
+  "covariance_is_of_mean": false,
+  "likelihood_covariance_created": false,
+  "volume_Gpc_h3": 1.0,
+  "noise_pure_vs_nonlinear_signal_separated": false,
+  "all44_B_windows_validated": false,
+  "full_production_shift_and_IR_noise_validated": false,
+  "formal_noise_audit_released": false,
+  "MCMC_started": false,
+  "limitations": [
+    "three oriented triangles and finite q support only, not full-shell closure",
+    "connected3/4 include deterministic nonlinear/PNG correlations; not pure stochastic templates",
+    "same targets used as diagnostic, not an independent mock recovery",
+    "fixed response main-image CIC4 does not certify production alias/finite displacement"
+  ],
+  "CPU_affinity": [
+    13
+  ],
+  "peak_RSS_MiB": 213.30078125
+}

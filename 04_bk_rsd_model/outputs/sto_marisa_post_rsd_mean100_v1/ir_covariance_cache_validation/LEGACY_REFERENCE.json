@@ -1,0 +1,47 @@
+{
+  "status": "ORIGINAL_LEGACY_HARMONIC_REFERENCE_NOT_IR_MODEL_ACCEPTANCE",
+  "created_UTC": "2026-10-09T17:40:37.070879+00:00",
+  "scipy_version": "1.16.3",
+  "python_version": "3.11.14",
+  "spectrum": {
+    "physical_table": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+    "physical_sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb",
+    "no_wiggle_split": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/spectrum_split_s0.25.npz",
+    "no_wiggle_sha256": "df105acc326fd4cbe365a06902151063af8a5bfd757396ed7bfab8717a38922f",
+    "no_wiggle_metadata_sha256": "9f688ab56f776209a05fc451a6ce3a84d62bfd7893c53e421d93a9a06fe2b958",
+    "recipe": "Gaussian Eisenstein-Hu ratio, Quijote fiducial, 8192 log nodes, 4-sigma kernel",
+    "smoothing_lambda_ln_k": 0.25,
+    "redshift": 0.5,
+    "physical_P_M_unchanged": true
+  },
+  "physical_parameters": {
+    "b1": 2.11,
+    "bphi": 2.336795999999999,
+    "f_growth": 0.7625790037720044,
+    "los": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "q_min": 0.006283185307179587,
+    "q_max": 0.15,
+    "n_q": 513,
+    "n_mu": 32,
+    "n_phi": 64,
+    "shift_noise_explicit": false,
+    "reconstruction_signature": "2a1eab94cf8ec1d92eb3f9bfd9d652bafd1cd2ad7c327c10dd68bb6a358e6b64",
+    "long_spectrum_sha256": "b0d4d0a3a7e852e7ac5779b0814cc527b818198a55ffa756c4a57726cd8b59fb"
+  },
+  "probe_b1": 2.11,
+  "probe_p_halo": 1.417,
+  "p_probe_not_calibrated": true,
+  "reference_sha256": "fe8ddb0877145263deea52fa603fdc9f3e379a12cc599c77a1051eb7d2dbeb69",
+  "original_harmonic_source_sha256": "5673e635e98df5b7f536de06511ec0b548c7a3cbe5b696ff14d29be899443f8d",
+  "entry_sha256": "6c9aed9d71e8d37dd49736c1c0eea39ebcabea5a6e1c2104c843b431ccdd5157",
+  "CPU_affinity": [
+    7
+  ],
+  "full44_IR_B_verified": false,
+  "actual_STO_noise_validated": false,
+  "MCMC_released": false
+}

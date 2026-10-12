@@ -1,0 +1,609 @@
+{
+  "schema": "marisa-b-tree-png-ir-change-manifest-v1",
+  "created_utc": "2026-09-29T18:21:52.779550+00:00",
+  "source_files": [
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/Makefile",
+      "sha256": "f0f02e22a408226ec4fc9b3129acab58699d558cff2f002cb24f4c93a3573cb5",
+      "bytes": 24094
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/tree_png_ir.h",
+      "sha256": "a2d0a294932a96db391704873aa5db33b2a50022e4ae4b73481fb2cd2e98eba9",
+      "bytes": 2256
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/tree_png_ir.cpp",
+      "sha256": "bdbe737b418efb37f458ead09727eb239ee871409ec6554a5ca15258f7ea17fc",
+      "bytes": 10142
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/tree_ir_lattice_nodes.cpp",
+      "sha256": "e9b7fb430a44a5a7bf64924b583bed3c32e860ae4a1b8ef9928c7084fa60f4ef",
+      "bytes": 1302
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/scripts/build_tree_png_ir.sh",
+      "sha256": "c40fdd452cf00efdaa72e713d58fdb8a30857eb1e948477b6a722f9de96eb36b",
+      "bytes": 2034
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/python/marisa_b/tree_png_ir_native.py",
+      "sha256": "8095d0090f4d8a92364f05dd09ea7be6bda060451226bfadce8a0bf18500bb3f",
+      "bytes": 2656
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/python/marisa_b/tree_png_ir_resummation.py",
+      "sha256": "762756a7e0da1568a2395ba17d383c2b2268325d1a1bd5399eb19393e8718af5",
+      "bytes": 27040
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/tests/eft_v2/test_tree_png_ir_native.cpp",
+      "sha256": "5bb8c6fe09188660cd983fccad2efc4f69c5956643c71a3fecc6b323c622a8f5",
+      "bytes": 4994
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/tests/python/test_tree_png_ir_resummation.py",
+      "sha256": "f428a3736db5000f00cdb35af1419088d73bcc432e0d900e198e08442dd7f65e",
+      "bytes": 12667
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/tests/python/test_tree_png_ir_binding.py",
+      "sha256": "39da9620bd40068e37b8434c01a0e24d01fa620f2174007d1cdef52d202b31cd",
+      "bytes": 2843
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/docs/TREE_PNG_IR_NATIVE.md",
+      "sha256": "90db8a80bd6eab2d2f7adfd699a00686c5692bd976e1e9e4b25a3db6c6a26ec1",
+      "bytes": 4813
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/docs/TREE_LEVEL_PNG_IR_RESUMMATION_PLAN.md",
+      "sha256": "d8be9c7d85f7fefe7117114827bf02578c96a41d3c4626881a6abfcc64c77fe0",
+      "bytes": 27445
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/code/inspect_tree_ir_inputs.py",
+      "sha256": "f4212ba5a110f3effaa7b0e18195c8b7a152a8edd97aa6588300d4d837d67701",
+      "bytes": 2678
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/code/prepare_tree_png_ir_templates.py",
+      "sha256": "67c1c396c8eaa78fdc3175ea55d1b313b987239f3a90a97ec57457b7abef1e4c",
+      "bytes": 8538
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/code/run_tree_png_ir_kmax_scan.py",
+      "sha256": "f1c23730861d52315b487ccbb24799724f7256b73f439be1a7623f6bfabc0d6c",
+      "bytes": 11916
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/code/audit_tree_png_ir_scan.py",
+      "sha256": "8564d1059e244d7ad4119176b599187b2b258a66707ca965affd2abac1b36d61",
+      "bytes": 12023
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/code/write_tree_png_ir_manifest.py",
+      "sha256": "c1b6b505ad5903dc859b15ab039e7e8dc74db977e0be6456df9f3d908b68ff38",
+      "bytes": 4230
+    }
+  ],
+  "unchanged_native_reference": [
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/marisa_b_native.cpp",
+      "sha256": "14cce7b82f4c22a004ce4cc10357e363b24e63bbcadc8ece2ceb508f99e96f57",
+      "bytes": 181014
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/marisa_b_native.h",
+      "sha256": "da159b38f7c234801c33c2d6ff98b6beded13f6cbe7fcc894583f8d467ece5f3",
+      "bytes": 19401
+    }
+  ],
+  "original_makefile": {
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/work/tree_ir_20260930_originals/Makefile",
+    "sha256": "4dbcfe7e7fc9006ad44fd899bd1f1b9e8acf42f49f48e2a2914df04017f12804",
+    "bytes": 23818
+  },
+  "ir_cache_identities": {
+    "tree_ir_templates_r4_m80_s0.25_rbao110.0.json": {
+      "ir_cache_key_sha256": "7bccc7bec32199cd378c873183da9c69352c5dd07fafcfb401ef21a3f08986ec",
+      "identity": {
+        "redshift": 0.5,
+        "units": {
+          "k": "h/Mpc",
+          "r": "Mpc/h",
+          "sigma2": "(Mpc/h)^2"
+        },
+        "sigma2_by_kir": {
+          "0.05": 10.284279342385746,
+          "0.10": 14.348088509431493,
+          "0.15": 16.531355336263804,
+          "0.20": 17.822758921973392
+        },
+        "r_bao": 110.0,
+        "smoothing_lambda_ln_k": 0.25,
+        "split": "Gaussian Eisenstein-Hu ratio, Quijote fiducial, 8192 log nodes, 4-sigma kernel",
+        "variants": [
+          [
+            "fixed_order",
+            "fixed_order",
+            0.0
+          ],
+          [
+            "strict_zero",
+            "strict_lo",
+            0.0
+          ],
+          [
+            "strict_kir0.05",
+            "strict_lo",
+            10.284279342385746
+          ],
+          [
+            "strict_kir0.10",
+            "strict_lo",
+            14.348088509431493
+          ],
+          [
+            "strict_kir0.15",
+            "strict_lo",
+            16.531355336263804
+          ],
+          [
+            "strict_kir0.20",
+            "strict_lo",
+            17.822758921973392
+          ],
+          [
+            "factorized_kir0.15",
+            "factorized_closure",
+            16.531355336263804
+          ]
+        ],
+        "terms": [
+          "Btree_gaussian_pre",
+          "Btree_gaussian_reconstruction",
+          "dBdfNL_local_primordial",
+          "dBdfNL_local_bphi_f2",
+          "dBdfNL_local_bphi_advection",
+          "dBdfNL_local_bphidelta",
+          "dBdfNL_local_bphi_b2",
+          "dBdfNL_local_bphi_bK2",
+          "dBdfNL_local_bphi_reconstruction",
+          "Bhalo_tree_fNL2_bphi_B0",
+          "Bhalo_tree_fNL2_bphi_sq_advection",
+          "Bhalo_tree_fNL2_bphi_sq_F2",
+          "Bhalo_tree_fNL2_bphi_sq_b2",
+          "Bhalo_tree_fNL2_bphi_sq_bK2",
+          "Bhalo_tree_fNL2_bphi_sq_reconstruction",
+          "Bhalo_tree_fNL2_bphi_bphidelta",
+          "Bhalo_tree_fNL2_bphi2_operator",
+          "stochastic_alpha3_basis",
+          "dBdfNL_stochastic_alpha3_basis",
+          "Bhalo_tree_fNL2_stochastic_alpha3PNG_basis",
+          "stochastic_alpha4_basis",
+          "Btree_gaussian_f2",
+          "Btree_gaussian_b2",
+          "Btree_gaussian_bK2"
+        ],
+        "projection": {
+          "bin_average": "finite_box_shell",
+          "finite_box_kfund_h_mpc": 0.006283185307179587,
+          "finite_box_boxsize_mpc_h": 999.9999999999999,
+          "finite_box_domain": "k1,k2,k3 >= kfund; zero mode excluded",
+          "finite_box_projection_version": "continuum_full_shell_denominator_v2",
+          "finite_box_normalization": "retain the original full radial-shell and [-1,1] angular denominator; excluded configurations contribute zero",
+          "finite_box_surviving_fraction_by_pair": [
+            0.9183397161772772,
+            0.9699863058873771,
+            0.9705971700577903,
+            0.9705971700577889,
+            0.9705971700577896,
+            0.9705971700577916,
+            0.9705971700577896,
+            0.9705971700577916,
+            0.9705971700577907,
+            0.9705971700577879,
+            0.9966740631653399,
+            0.9998485184199624,
+            0.9999999999999978,
+            0.9999999999999999,
+            0.9999999999999993,
+            1.0000000000000007,
+            1.0000000000000009,
+            0.9999999999999993,
+            1.0000000000000004,
+            0.9987790340551949,
+            0.9999359039267001,
+            0.9999999999999983,
+            0.9999999999999974,
+            0.9999999999999999,
+            0.9999999999999998,
+            1.0000000000000007,
+            0.9999999999999983,
+            0.9993745413854516,
+            0.999964610083408,
+            1.0000000000000009,
+            1.0000000000000013,
+            1.0,
+            0.999999999999999,
+            0.999999999999999,
+            0.9996212221547913,
+            0.9999775550486513,
+            0.9999999999999998,
+            0.9999999999999992,
+            0.9999999999999988,
+            0.9999999999999991,
+            0.9997463700321408,
+            0.9999844934301272,
+            0.999999999999999,
+            0.9999999999999997,
+            1.0000000000000009,
+            0.9998184087043643,
+            0.9999886443091421,
+            1.0000000000000007,
+            1.0000000000000002,
+            0.999863619567336,
+            0.9999913248157263,
+            1.0000000000000013,
+            0.9998938364248999,
+            0.9999931562085849,
+            0.9999150227898057
+          ],
+          "nmu_b000": 80,
+          "nradial_binavg": 4,
+          "n_selected_pairs": 55,
+          "n_triangles": 70400,
+          "triangles_per_pair_min": 1280,
+          "triangles_per_pair_max": 1280,
+          "pre_half_weight_sum_min": 1.8366794323545543,
+          "pre_half_weight_sum_max": 2.0000000000000027,
+          "normalization_note": "accumulate_b000 multiplies each stored weight by 1/2; finite-box weight sums are <=2 because the denominator is not renormalized after zero-mode support is removed"
+        },
+        "lattice_nodes": 70400,
+        "inputs": {
+          "png_table": {
+            "path": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+            "sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb"
+          },
+          "geometry": {
+            "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100/matrices/baseline_pre_standard_matrix.npz",
+            "sha256": "3e84d977d595eca55260fceb90836cb181cf69ffd52db2da85156b703cb2365e"
+          },
+          "native_library": {
+            "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/build/tree_png_ir/libmarisa_tree_png_ir.so",
+            "sha256": "fd72ae621c8d2e8de695d5e96585718a5503d06c7c34d611935e5cba0dca73f0"
+          },
+          "native_source": {
+            "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/tree_png_ir.cpp",
+            "sha256": "bdbe737b418efb37f458ead09727eb239ee871409ec6554a5ca15258f7ea17fc"
+          },
+          "producer": {
+            "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/code/prepare_tree_png_ir_templates.py",
+            "sha256": "67c1c396c8eaa78fdc3175ea55d1b313b987239f3a90a97ec57457b7abef1e4c"
+          },
+          "node_exporter": {
+            "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/build/tree_png_ir/tree_ir_lattice_nodes",
+            "sha256": "e51ed79cceecce39115bc1528eae8a569f12e9b808ecced2131f6365df7b4e69"
+          }
+        }
+      },
+      "output": {
+        "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/tree_ir_templates_r4_m80_s0.25_rbao110.0.npz",
+        "sha256": "cbb3e229dcbc71b07c85f98a469ede2aed289e031cd062a3bd904a64cfcd05ce"
+      }
+    },
+    "tree_ir_templates_r6_m120_s0.25_rbao110.0.json": {
+      "ir_cache_key_sha256": "a120609c198a172b32c85be7871d1092ccfe58417e24b897f059908ff99f7725",
+      "identity": {
+        "redshift": 0.5,
+        "units": {
+          "k": "h/Mpc",
+          "r": "Mpc/h",
+          "sigma2": "(Mpc/h)^2"
+        },
+        "sigma2_by_kir": {
+          "0.05": 10.284279342385746,
+          "0.10": 14.348088509431493,
+          "0.15": 16.531355336263804,
+          "0.20": 17.822758921973392
+        },
+        "r_bao": 110.0,
+        "smoothing_lambda_ln_k": 0.25,
+        "split": "Gaussian Eisenstein-Hu ratio, Quijote fiducial, 8192 log nodes, 4-sigma kernel",
+        "variants": [
+          [
+            "fixed_order",
+            "fixed_order",
+            0.0
+          ],
+          [
+            "strict_zero",
+            "strict_lo",
+            0.0
+          ],
+          [
+            "strict_kir0.05",
+            "strict_lo",
+            10.284279342385746
+          ],
+          [
+            "strict_kir0.10",
+            "strict_lo",
+            14.348088509431493
+          ],
+          [
+            "strict_kir0.15",
+            "strict_lo",
+            16.531355336263804
+          ],
+          [
+            "strict_kir0.20",
+            "strict_lo",
+            17.822758921973392
+          ],
+          [
+            "factorized_kir0.15",
+            "factorized_closure",
+            16.531355336263804
+          ]
+        ],
+        "terms": [
+          "Btree_gaussian_pre",
+          "Btree_gaussian_reconstruction",
+          "dBdfNL_local_primordial",
+          "dBdfNL_local_bphi_f2",
+          "dBdfNL_local_bphi_advection",
+          "dBdfNL_local_bphidelta",
+          "dBdfNL_local_bphi_b2",
+          "dBdfNL_local_bphi_bK2",
+          "dBdfNL_local_bphi_reconstruction",
+          "Bhalo_tree_fNL2_bphi_B0",
+          "Bhalo_tree_fNL2_bphi_sq_advection",
+          "Bhalo_tree_fNL2_bphi_sq_F2",
+          "Bhalo_tree_fNL2_bphi_sq_b2",
+          "Bhalo_tree_fNL2_bphi_sq_bK2",
+          "Bhalo_tree_fNL2_bphi_sq_reconstruction",
+          "Bhalo_tree_fNL2_bphi_bphidelta",
+          "Bhalo_tree_fNL2_bphi2_operator",
+          "stochastic_alpha3_basis",
+          "dBdfNL_stochastic_alpha3_basis",
+          "Bhalo_tree_fNL2_stochastic_alpha3PNG_basis",
+          "stochastic_alpha4_basis",
+          "Btree_gaussian_f2",
+          "Btree_gaussian_b2",
+          "Btree_gaussian_bK2"
+        ],
+        "projection": {
+          "bin_average": "finite_box_shell",
+          "finite_box_kfund_h_mpc": 0.006283185307179587,
+          "finite_box_boxsize_mpc_h": 999.9999999999999,
+          "finite_box_domain": "k1,k2,k3 >= kfund; zero mode excluded",
+          "finite_box_projection_version": "continuum_full_shell_denominator_v2",
+          "finite_box_normalization": "retain the original full radial-shell and [-1,1] angular denominator; excluded configurations contribute zero",
+          "finite_box_surviving_fraction_by_pair": [
+            0.9194405726809758,
+            0.9698951867153581,
+            0.9705971700577923,
+            0.9705971700577949,
+            0.9705971700577917,
+            0.9705971700577914,
+            0.9705971700577928,
+            0.9705971700577883,
+            0.970597170057791,
+            0.9705971700577909,
+            0.9963343270002706,
+            0.9998478434451217,
+            0.9999999999999984,
+            1.000000000000001,
+            1.0000000000000009,
+            0.9999999999999983,
+            1.0000000000000009,
+            1.0000000000000036,
+            1.0000000000000027,
+            0.9986526015709848,
+            0.9999356222729662,
+            1.0000000000000022,
+            0.9999999999999996,
+            1.0000000000000029,
+            1.0000000000000033,
+            0.9999999999999997,
+            0.9999999999999963,
+            0.9993095292162572,
+            0.999964455328455,
+            1.0000000000000018,
+            0.9999999999999997,
+            1.0000000000000018,
+            0.9999999999999997,
+            0.9999999999999978,
+            0.9995817895128347,
+            0.9999774571214919,
+            1.0,
+            0.9999999999999971,
+            0.9999999999999993,
+            0.999999999999999,
+            0.9997199451273179,
+            0.9999844258579466,
+            1.0000000000000009,
+            1.0000000000000018,
+            0.9999999999999997,
+            0.9997994807274171,
+            0.999988594861574,
+            1.0000000000000016,
+            0.9999999999999957,
+            0.9998494000674728,
+            0.9999912870583317,
+            0.9999999999999998,
+            0.9998827653443856,
+            0.9999931264318199,
+            0.9999061599159995
+          ],
+          "nmu_b000": 120,
+          "nradial_binavg": 6,
+          "n_selected_pairs": 55,
+          "n_triangles": 237600,
+          "triangles_per_pair_min": 4320,
+          "triangles_per_pair_max": 4320,
+          "pre_half_weight_sum_min": 1.8388811453619516,
+          "pre_half_weight_sum_max": 2.000000000000007,
+          "normalization_note": "accumulate_b000 multiplies each stored weight by 1/2; finite-box weight sums are <=2 because the denominator is not renormalized after zero-mode support is removed"
+        },
+        "lattice_nodes": 237600,
+        "inputs": {
+          "png_table": {
+            "path": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+            "sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb"
+          },
+          "geometry": {
+            "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100/matrices/baseline_pre_standard_matrix.npz",
+            "sha256": "3e84d977d595eca55260fceb90836cb181cf69ffd52db2da85156b703cb2365e"
+          },
+          "native_library": {
+            "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/build/tree_png_ir/libmarisa_tree_png_ir.so",
+            "sha256": "fd72ae621c8d2e8de695d5e96585718a5503d06c7c34d611935e5cba0dca73f0"
+          },
+          "native_source": {
+            "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/tree_png_ir.cpp",
+            "sha256": "bdbe737b418efb37f458ead09727eb239ee871409ec6554a5ca15258f7ea17fc"
+          },
+          "producer": {
+            "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/code/prepare_tree_png_ir_templates.py",
+            "sha256": "67c1c396c8eaa78fdc3175ea55d1b313b987239f3a90a97ec57457b7abef1e4c"
+          },
+          "node_exporter": {
+            "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/build/tree_png_ir/tree_ir_lattice_nodes",
+            "sha256": "e51ed79cceecce39115bc1528eae8a569f12e9b808ecced2131f6365df7b4e69"
+          }
+        }
+      },
+      "output": {
+        "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/tree_ir_templates_r6_m120_s0.25_rbao110.0.npz",
+        "sha256": "a5227aeb65c1a09903b83d61901cdd08b0e48ce36a3f68c31d6524b2d8a3e362"
+      }
+    }
+  },
+  "output_files": [
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/IR_SCIENTIFIC_AUDIT.json",
+      "sha256": "33a65a8e8af7328b9a86d01cb7f243529f7163c1fbca3f6448c99d696b94b51b",
+      "bytes": 22901
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/REPORT.md",
+      "sha256": "a0103586d97246119b391bb02226cb1d9488c12870cbc8fb1bdf66668523e5c3",
+      "bytes": 10317
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/RESULTS_SUMMARY.json",
+      "sha256": "d3baba61024da0f30af5fd67b7a40e730e60b1dde1201312a0f1ba0ec731a875",
+      "bytes": 21825
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/frozen_inputs.json",
+      "sha256": "89fe08b5d30cdffb682727582d7237c52b243a40c2fc9bf82960bed73f2dcaf8",
+      "bytes": 2638
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/frozen_inputs.npz",
+      "sha256": "b3599ea7c696c241de0b8cfa9bae710b3a5d073b5259f62ac3bedec8b7a343d8",
+      "bytes": 1378870
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/ir_binwise_diagnostics.pdf",
+      "sha256": "2e0170bbfab3c848baf41e457088552b5a59b03d33691a5b9c3e1bd785960f8b",
+      "bytes": 34272
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/ir_kmax_scan_convergence.json",
+      "sha256": "22b4bd26fdf25dd95cd31c2328c787222617b4331cf757a2407169990a0045ce",
+      "bytes": 732218
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/ir_kmax_scan_convergence.pdf",
+      "sha256": "c16e9a7988b9f1fbe150cd9a6d0c77ae90d000c46f77da90b3ac71b7887cf95b",
+      "bytes": 53276
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/ir_kmax_scan_primary.json",
+      "sha256": "c3c25e60246847e8963c7a1d70d60bae9f6af42e1fee5f13f3aa0f466e935bc7",
+      "bytes": 1560312
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/ir_kmax_scan_primary.pdf",
+      "sha256": "cb274ed9951d982a9fd2722b6c3445aeadc80197d7868c38b22c87291daee71f",
+      "bytes": 59208
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/ir_model_designs_convergence.npz",
+      "sha256": "c8894f10da957ea31ac2aa315a3be61dfb6eae85cc3b265d2fae3762cad92038",
+      "bytes": 41644
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/ir_model_designs_primary.npz",
+      "sha256": "d09ece65b0537208753b4ddb832aeb1ba31f86b6363260016729bba54f1e26b0",
+      "bytes": 87388
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/lattice_nodes_r4_m80.log",
+      "sha256": "9d4efb27d50203f4606bb18a6aabbb9a75ad1ccf59466e3b932e7da7add470fc",
+      "bytes": 2342
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/lattice_nodes_r4_m80.npz",
+      "sha256": "bd9f3dddb56d24baba4ae633863cfdd81466d6618491a5e5f9be24d60711eb6d",
+      "bytes": 1389189
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/lattice_nodes_r6_m120.log",
+      "sha256": "e0962451dfdff8b10f76e5fa2bbcffa416b1f218c2e1a845ef24a9527a9d1179",
+      "bytes": 2342
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/lattice_nodes_r6_m120.npz",
+      "sha256": "fd789dc3d4999dce4ab97c104b88c9c8c9659bb1100be141b3596648a9a3b791",
+      "bytes": 6152072
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/native_validation.json",
+      "sha256": "25ab496fc23505e02c7a2a237d78ee2cab77097607dc2ecca5146b1b73d784d7",
+      "bytes": 2292
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/spectrum_split_s0.25.npz",
+      "sha256": "df105acc326fd4cbe365a06902151063af8a5bfd757396ed7bfab8717a38922f",
+      "bytes": 360855
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/tree_ir_templates_r4_m80_s0.25_rbao110.0.json",
+      "sha256": "2ae90dd35c453d3324f1babbe120d4d77e719a63a030ea08b6389f9a2ddcdde1",
+      "bytes": 6033
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/tree_ir_templates_r4_m80_s0.25_rbao110.0.npz",
+      "sha256": "cbb3e229dcbc71b07c85f98a469ede2aed289e031cd062a3bd904a64cfcd05ce",
+      "bytes": 123043
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/tree_ir_templates_r6_m120_s0.25_rbao110.0.json",
+      "sha256": "9f688ab56f776209a05fc451a6ce3a84d62bfd7893c53e421d93a9a06fe2b958",
+      "bytes": 6036
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/tree_ir_templates_r6_m120_s0.25_rbao110.0.npz",
+      "sha256": "a5227aeb65c1a09903b83d61901cdd08b0e48ce36a3f68c31d6524b2d8a3e362",
+      "bytes": 123223
+    }
+  ],
+  "frozen_historical_outputs_modified": false,
+  "test_evidence": {
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/native_validation.json",
+    "sha256": "25ab496fc23505e02c7a2a237d78ee2cab77097607dc2ecca5146b1b73d784d7",
+    "bytes": 2292
+  },
+  "results_summary": {
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/RESULTS_SUMMARY.json",
+    "sha256": "d3baba61024da0f30af5fd67b7a40e730e60b1dde1201312a0f1ba0ec731a875",
+    "bytes": 21825
+  }
+}

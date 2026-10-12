@@ -1,0 +1,30 @@
+{
+  "status": "READ_ONLY_TIMING_SNAPSHOT_NOT_CPU_GPU_BENCHMARK",
+  "checked_UTC": "2026-10-09T14:10:55.697443+00:00",
+  "source": "pilots/*_rec256_meas256_ran30_selfmatched_zeroaudit_nested/DONE.json and CONTRACT.json",
+  "completed": 131,
+  "required_unique_measurements": 700,
+  "counts": {"fiducial": 53, "LC_p": 39, "LC_m": 39},
+  "producer_hosts": ["login26"],
+  "worker_affinity_sizes": [1],
+  "elapsed_seconds": {
+    "median": 480.5800886154175,
+    "min": 381.47814440727234,
+    "max": 627.0207343101501
+  },
+  "time_seconds_medians": {
+    "reconstruction_seconds": 24.496580123901367,
+    "P_weighted_input_seconds": 23.44399905204773,
+    "P_post_seconds": 23.69959330558777,
+    "B_post_seconds": 402.1006438732147
+  },
+  "runtime_probe": {"host": "login26", "CPU_affinity": [11], "jax_version": "0.9.1", "backend": "cpu", "devices": ["TFRT_CPU_0"]},
+  "current_compute_job": {"job_id": 59592166, "checked_UTC": "2026-10-09T14:10:12Z", "state": "PENDING", "reason": "None", "allocated_nodes": 0},
+  "caveats": [
+    "Timing includes matched self contractions and zero-leg diagnostics, not only the bare B estimator",
+    "Eight cores means eight single-core boxes in the ideal throughput estimate; no eight-thread per-box benchmark",
+    "No matched GPU benchmark for this post-RSD producer",
+    "Login memory and shared-node I/O prevent interpreting ideal throughput as a promised finish time",
+    "Does not estimate subsequent calibration, main MCMC or IR completion time"
+  ]
+}

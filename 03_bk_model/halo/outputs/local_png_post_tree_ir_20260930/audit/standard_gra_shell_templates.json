@@ -1,0 +1,99 @@
+{
+  "schema": "marisa-post-tree-ir-templates-v1",
+  "status": "numerical_templates_not_catalogue_validation",
+  "configuration": {
+    "method": "standard_gra",
+    "bias": {
+      "b1": 1.93,
+      "b2": 0.5,
+      "bk2": -0.15,
+      "bphi": 2.53282412074871,
+      "bphidelta": 1.7673085714285715,
+      "bphi2": -10.887012617142856
+    },
+    "reconstruction": {
+      "smoothing_radius": 10.0,
+      "bias_recon": 1.9326526728794324,
+      "cell_size": 8.0,
+      "cic_window_power": 4
+    },
+    "adaptive": {
+      "bphi_recon": 3.144904812949446,
+      "fnl_recon_ratio": 0.0
+    },
+    "ir": {
+      "r_bao": 110.0,
+      "k_ir": 0.15,
+      "q_min": 0.006283185307179587,
+      "mesh_damping": "auto",
+      "angular_mu_order": 16,
+      "angular_phi_order": 32
+    },
+    "reconstruction_parameter_path": "f_rec=eta*f",
+    "weights_include_original_denominator": true,
+    "absolute_orientation_nodes": true,
+    "number_of_bins": 1,
+    "measure": "exact enumeration: 18 x 18 FFT modes, closing zero pairs omitted, denominator 324"
+  },
+  "inputs": {
+    "nodes": {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/standard_gra_exact_shell_nodes.npz",
+      "sha256": "9d51994d27db5ff45b1053b09e06c6d5ce79d1f4ee05f20a75e86afc44080b2c"
+    },
+    "config": {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/standard_gra_config.json",
+      "sha256": "cad62cee549b6b9dee9b7b6522ae32c70b1ce505fe3405af9cfb9146410b5083"
+    },
+    "native_library": {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/build/tree_png_ir/libmarisa_post_tree_png_ir.so",
+      "sha256": "b48aa0cc57284f1204ec9f4eb015c1fbd7ca705653ba125cd1ebaf73fb77ce03"
+    }
+  },
+  "output": {
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/standard_gra_shell_templates.npz",
+    "sha256": "fb1318890dfb9c5d6a426d3939fcd7a16423bd3c98765212966144212364f52f"
+  },
+  "number_of_nodes": 306,
+  "source_columns": [
+    "Btree_gaussian_pre",
+    "Btree_gaussian_reconstruction",
+    "dBdfNL_local_primordial",
+    "dBdfNL_local_bphi_f2",
+    "dBdfNL_local_bphi_advection",
+    "dBdfNL_local_bphidelta",
+    "dBdfNL_local_bphi_b2",
+    "dBdfNL_local_bphi_bK2",
+    "dBdfNL_local_bphi_reconstruction",
+    "Bhalo_tree_fNL2_bphi_B0",
+    "Bhalo_tree_fNL2_bphi_sq_advection",
+    "Bhalo_tree_fNL2_bphi_sq_F2",
+    "Bhalo_tree_fNL2_bphi_sq_b2",
+    "Bhalo_tree_fNL2_bphi_sq_bK2",
+    "Bhalo_tree_fNL2_bphi_sq_reconstruction",
+    "Bhalo_tree_fNL2_bphi_bphidelta",
+    "Bhalo_tree_fNL2_bphi2_operator",
+    "stochastic_alpha3_basis",
+    "dBdfNL_stochastic_alpha3_basis",
+    "Bhalo_tree_fNL2_stochastic_alpha3PNG_basis",
+    "stochastic_alpha4_basis",
+    "Btree_gaussian_f2",
+    "Btree_gaussian_b2",
+    "Btree_gaussian_bK2",
+    "dBdfNL_rec_brec_gaussian_linear",
+    "Btree_fNL2_rec_brec_gaussian_quadratic",
+    "Btree_fNL2_rec_brec_png_linear_cross"
+  ],
+  "deterministic_columns": [
+    "G",
+    "L",
+    "Q"
+  ],
+  "mixing_columns": [
+    "L_from_G",
+    "Q_from_L",
+    "Q_from_G"
+  ],
+  "shift_noise_enabled": false,
+  "stochastic_closure": "not_combined",
+  "scope": "real-space local-PNG tree; O(Pw), O(fNL^2), Gaussian linear long displacement"
+}

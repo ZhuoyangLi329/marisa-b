@@ -1,0 +1,26 @@
+{
+  "observed_UTC": "2026-10-02T06:45:03Z",
+  "host": "login12",
+  "user_cgroup": "/user.slice/user-112513.slice",
+  "memory_max_bytes": 32212254720,
+  "memory_max_GiB": 30,
+  "user_memory_events_oom": 2,
+  "user_memory_events_oom_kill": 1,
+  "runner_session": "session-46358.scope",
+  "runner_session_oom_kill": 1,
+  "runner_session_memory_peak_bytes": 32123543552,
+  "failed_worker": "bulk task 2, LC_m validation segment, SIGKILL (-9)",
+  "saved_measurements_after_other_workers_completed": 793,
+  "missing_measurements": "LC_m real093..099, seven files",
+  "resource_only_recovery": {
+    "measurement_batch_size": 10,
+    "maximum_measurement_workers": 4,
+    "maximum_MCMC_workers": 8,
+    "allowed_CPUs": [7, 8, 9, 10, 11, 12, 13, 14],
+    "measurement_entry_unchanged": true,
+    "model_covariance_priors_sampler_unchanged": true,
+    "completed_measurements_reused_not_overwritten": true,
+    "initial_controller_source_and_failure_preserved": true
+  },
+  "underlying_memory_growth_mechanism": "not uniquely identified; confirmed cgroup OOM rather than a Python/numerical exception"
+}

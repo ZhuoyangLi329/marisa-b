@@ -1,0 +1,17 @@
+{
+  "pid": 1877859,
+  "host": "login26",
+  "command": [
+    "/global/common/software/desi/users/adematti/perlmutter/cosmodesiconda/20260321-1.0.0/conda/bin/python",
+    "-B",
+    "-u",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_post_rsd_cross_leg_all44.py",
+    "--job-id",
+    "59597420"
+  ],
+  "CPU_affinity": [
+    12
+  ],
+  "launched_UTC": "2026-10-09T22:16:04.347454+00:00",
+  "log": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_cross_all44_v1.log"
+}

@@ -1,0 +1,319 @@
+{
+  "status": "LEADING_GENERAL_GAUSSIAN_PAIR_COLORED_TRANSPORT_PASS_NOT_ACTUAL_STO_CLOSURE",
+  "created_UTC": "2026-10-09T18:29:17.934212+00:00",
+  "independent_tests_passed": 6,
+  "test_output": "test_Gaussian_pair_F2_mean_and_finite_random_cancellation_independent (test_post_rsd_general_noise_transport.GeneralNoiseTest.test_Gaussian_pair_F2_mean_and_finite_random_cancellation_independent) ... ok\ntest_actual_noise_must_be_supplied_and_not_random_or_negative_residual (test_post_rsd_general_noise_transport.GeneralNoiseTest.test_actual_noise_must_be_supplied_and_not_random_or_negative_residual) ... ok\ntest_exact_shell_projection_full_denominator_and_zero_policy (test_post_rsd_general_noise_transport.GeneralNoiseTest.test_exact_shell_projection_full_denominator_and_zero_policy) ... ok\ntest_nonPoisson_colored_signed_cluster_leading_limit (test_post_rsd_general_noise_transport.GeneralNoiseTest.test_nonPoisson_colored_signed_cluster_leading_limit) ... ok\ntest_oriented_colored_power_retains_physical_fnl_squared (test_post_rsd_general_noise_transport.GeneralNoiseTest.test_oriented_colored_power_retains_physical_fnl_squared) ... ok\ntest_white_operator_combination_and_Poisson_limit (test_post_rsd_general_noise_transport.GeneralNoiseTest.test_white_operator_combination_and_Poisson_limit) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 5.264s\n\nOK\n",
+  "rows": [
+    {
+      "signal_leg": 0,
+      "nran": 2,
+      "nparents": 1000,
+      "data_raw_noise": [
+        0.0012582031336582393,
+        0.001234841992297774,
+        0.001243800121710036
+      ],
+      "actual_child_self_N2": 0.0010566706021251475,
+      "signal_power": [
+        0.0001271451457190462,
+        0.0,
+        0.0
+      ],
+      "exact_signal_response": [
+        -1.0158683487825448e-07,
+        -1.9715338657978697e-11
+      ],
+      "candidate_signal_response": -1.0213558846069293e-07,
+      "signal_relative_error": 0.005405302959341603,
+      "uniform_relative_error": 0.007729016424133237
+    },
+    {
+      "signal_leg": 0,
+      "nran": 2,
+      "nparents": 1000000,
+      "data_raw_noise": [
+        1.2582031336582394e-06,
+        1.2348419922977743e-06,
+        1.2438001217100357e-06
+      ],
+      "actual_child_self_N2": 1.0566706021251475e-06,
+      "signal_power": [
+        0.0001271451457190462,
+        0.0,
+        0.0
+      ],
+      "exact_signal_response": [
+        -1.0213503916593239e-10,
+        -1.97073596758685e-17
+      ],
+      "candidate_signal_response": -1.0213558846069285e-10,
+      "signal_relative_error": 5.381582827189033e-06,
+      "uniform_relative_error": 7.669795901666295e-06
+    },
+    {
+      "signal_leg": 0,
+      "nran": 30,
+      "nparents": 1000,
+      "data_raw_noise": [
+        0.0012582031336582393,
+        0.001234841992297774,
+        0.001243800121710036
+      ],
+      "actual_child_self_N2": 0.0010566706021251475,
+      "signal_power": [
+        0.0001271451457190462,
+        0.0,
+        0.0
+      ],
+      "exact_signal_response": [
+        -1.0158683487825596e-07,
+        -1.971533865797929e-11
+      ],
+      "candidate_signal_response": -1.0213558846069293e-07,
+      "signal_relative_error": 0.0054053029593269415,
+      "uniform_relative_error": 0.007729016424135193
+    },
+    {
+      "signal_leg": 0,
+      "nran": 30,
+      "nparents": 1000000,
+      "data_raw_noise": [
+        1.2582031336582394e-06,
+        1.2348419922977743e-06,
+        1.2438001217100357e-06
+      ],
+      "actual_child_self_N2": 1.0566706021251475e-06,
+      "signal_power": [
+        0.0001271451457190462,
+        0.0,
+        0.0
+      ],
+      "exact_signal_response": [
+        -1.0213503916593237e-10,
+        -1.97073596758685e-17
+      ],
+      "candidate_signal_response": -1.0213558846069285e-10,
+      "signal_relative_error": 5.381582827315498e-06,
+      "uniform_relative_error": 7.669795901666295e-06
+    },
+    {
+      "signal_leg": 1,
+      "nran": 2,
+      "nparents": 1000,
+      "data_raw_noise": [
+        0.0012582031336582393,
+        0.001234841992297774,
+        0.001243800121710036
+      ],
+      "actual_child_self_N2": 0.0010566706021251475,
+      "signal_power": [
+        0.0,
+        0.00012449938414197705,
+        0.0
+      ],
+      "exact_signal_response": [
+        -7.350119914505526e-08,
+        2.0955695265837258e-11
+      ],
+      "candidate_signal_response": -7.40489380666722e-08,
+      "signal_relative_error": 0.0074575602351923485,
+      "uniform_relative_error": 0.007729016424133237
+    },
+    {
+      "signal_leg": 1,
+      "nran": 2,
+      "nparents": 1000000,
+      "data_raw_noise": [
+        1.2582031336582394e-06,
+        1.2348419922977743e-06,
+        1.2438001217100357e-06
+      ],
+      "actual_child_self_N2": 1.0566706021251475e-06,
+      "signal_power": [
+        0.0,
+        0.00012449938414197705,
+        0.0
+      ],
+      "exact_signal_response": [
+        -7.404838975653153e-11,
+        2.0935394592583465e-17
+      ],
+      "candidate_signal_response": -7.404893806667219e-11,
+      "signal_relative_error": 7.410149917209801e-06,
+      "uniform_relative_error": 7.669795901666295e-06
+    },
+    {
+      "signal_leg": 1,
+      "nran": 30,
+      "nparents": 1000,
+      "data_raw_noise": [
+        0.0012582031336582393,
+        0.001234841992297774,
+        0.001243800121710036
+      ],
+      "actual_child_self_N2": 0.0010566706021251475,
+      "signal_power": [
+        0.0,
+        0.00012449938414197705,
+        0.0
+      ],
+      "exact_signal_response": [
+        -7.350119914505759e-08,
+        2.0955695265837316e-11
+      ],
+      "candidate_signal_response": -7.40489380666722e-08,
+      "signal_relative_error": 0.007457560235160444,
+      "uniform_relative_error": 0.007729016424135193
+    },
+    {
+      "signal_leg": 1,
+      "nran": 30,
+      "nparents": 1000000,
+      "data_raw_noise": [
+        1.2582031336582394e-06,
+        1.2348419922977743e-06,
+        1.2438001217100357e-06
+      ],
+      "actual_child_self_N2": 1.0566706021251475e-06,
+      "signal_power": [
+        0.0,
+        0.00012449938414197705,
+        0.0
+      ],
+      "exact_signal_response": [
+        -7.404838975653152e-11,
+        2.0935394592583468e-17
+      ],
+      "candidate_signal_response": -7.404893806667219e-11,
+      "signal_relative_error": 7.410149917384219e-06,
+      "uniform_relative_error": 7.669795901666295e-06
+    },
+    {
+      "signal_leg": 2,
+      "nran": 2,
+      "nparents": 1000,
+      "data_raw_noise": [
+        0.0012582031336582393,
+        0.001234841992297774,
+        0.001243800121710036
+      ],
+      "actual_child_self_N2": 0.0010566706021251475,
+      "signal_power": [
+        0.0,
+        0.0,
+        0.00012730023770479268
+      ],
+      "exact_signal_response": [
+        -7.598294103660077e-08,
+        -2.4526442932205893e-12
+      ],
+      "candidate_signal_response": -7.658032462075829e-08,
+      "signal_relative_error": 0.007862141297997597,
+      "uniform_relative_error": 0.007729016424133237
+    },
+    {
+      "signal_leg": 2,
+      "nran": 2,
+      "nparents": 1000000,
+      "data_raw_noise": [
+        1.2582031336582394e-06,
+        1.2348419922977743e-06,
+        1.2438001217100357e-06
+      ],
+      "actual_child_self_N2": 1.0566706021251475e-06,
+      "signal_power": [
+        0.0,
+        0.0,
+        0.00012730023770479268
+      ],
+      "exact_signal_response": [
+        -7.657972662532783e-11,
+        -2.440915036879301e-18
+      ],
+      "candidate_signal_response": -7.658032462075825e-11,
+      "signal_relative_error": 7.808860627326156e-06,
+      "uniform_relative_error": 7.669795901666295e-06
+    },
+    {
+      "signal_leg": 2,
+      "nran": 30,
+      "nparents": 1000,
+      "data_raw_noise": [
+        0.0012582031336582393,
+        0.001234841992297774,
+        0.001243800121710036
+      ],
+      "actual_child_self_N2": 0.0010566706021251475,
+      "signal_power": [
+        0.0,
+        0.0,
+        0.00012730023770479268
+      ],
+      "exact_signal_response": [
+        -7.598294103660246e-08,
+        -2.4526442932208025e-12
+      ],
+      "candidate_signal_response": -7.658032462075829e-08,
+      "signal_relative_error": 0.007862141297975125,
+      "uniform_relative_error": 0.007729016424135193
+    },
+    {
+      "signal_leg": 2,
+      "nran": 30,
+      "nparents": 1000000,
+      "data_raw_noise": [
+        1.2582031336582394e-06,
+        1.2348419922977743e-06,
+        1.2438001217100357e-06
+      ],
+      "actual_child_self_N2": 1.0566706021251475e-06,
+      "signal_power": [
+        0.0,
+        0.0,
+        0.00012730023770479268
+      ],
+      "exact_signal_response": [
+        -7.657972662532783e-11,
+        -2.4409150369843136e-18
+      ],
+      "candidate_signal_response": -7.658032462075825e-11,
+      "signal_relative_error": 7.808860627326163e-06,
+      "uniform_relative_error": 7.669795901666295e-06
+    }
+  ],
+  "max_large_N_cluster_relative_error": 7.808860627326163e-06,
+  "original_cluster_tolerance": 0.0001,
+  "source_sha256": {
+    "post_rsd_general_noise_transport.py": "4b590edbc6d3f4c2be7a24789b0fd0ddd81ec4c28167e6854177c8867a7f7531",
+    "test_post_rsd_general_noise_transport.py": "e5df398b6c3a3152004a4b3a87f86cba2da0ae6ef337c0dc5bcfd326ca49433e",
+    "audit_post_rsd_general_noise_transport.py": "4fd06e0e29f7a2c45a0fe13edf63797410800b08815d836f237c923d5868c5f3",
+    "post_rsd_clustered_moments.py": "d0b4557304ecb90a934536e369bc33072398d95a8fb098d607886d42b30aa2aa",
+    "post_rsd_marked_moments.py": "c6458247cc9e3b8b2fa530f11e4a4ae2450f892617da428983595fd4ef16ea31",
+    "post_rsd_poisson_projection.py": "ebdbfc0e0e5d8756a6628d3e4af3c224c162de31fb941901ebf5e27cb692ebdc",
+    "post_rsd_noise_transport.py": "c45e0547a83a1d0542d3113264900f75f3393c84eee95111a47cdc4fb32ed72d",
+    "post_rsd_fft_projection.py": "a3ac06aec7e973b2152ca312e34296f7531fc8c55c305c7d510b502fe1a02459",
+    "post_rsd_fixedrec.py": "f8d15b9678c44322ccefa3d3a1fb18592af011ca5d74505abf70cc905c4c5ed6",
+    "rsd_b000_fft_projection.py": "da7fe70eeb34b23770897f1c32671ca2acdd025bf9a962a0833ef572098f1c03"
+  },
+  "Gaussian_pair_and_F2_background_independently_verified": true,
+  "finite_independent_uniform_random_cancellation_leading_order_verified": true,
+  "actual_particle_N2_is_not_raw_stochastic_Nk": true,
+  "white_formula": "Nraw*Kcross+(Nraw-N2)*Ksame+Nraw*(Nraw-N2)*KNN",
+  "colored_formula": "-sum_pairs(Ti+Tj)*(Di*Nj+Dj*Ni+Ni*Nj)+N2*sum_i Ri*(Di+Ni)",
+  "shared_exact_FFT_and_original_full_shell_denominator_reused": true,
+  "third_leg_kmax_added": false,
+  "zero_atom_terms_still_require_separate_estimator_choice": true,
+  "actual_STO_noise_power_calibrated": false,
+  "PNG_noise_response_calibrated": false,
+  "connected_three_or_four_point_stochastic_responses_validated": false,
+  "finite_shift_or_IR_validated": false,
+  "original_physical_p_calibrated": false,
+  "production_likelihood_or_priors_modified": false,
+  "formal_noise_audit_released": false,
+  "MCMC_released": false,
+  "full_goal_reduced": false,
+  "CPU_affinity": [
+    7
+  ],
+  "elapsed_seconds": 5.400389909744263
+}

@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "active_regression": {
+      "PL_over_M_relative_l2": 0.007471415628189476,
+      "PL_relative_l2": 6.307614444144823e-06
+    },
+    "active_regression_max_below_one_percent": true,
+    "active_table_PL_over_M2_equals_Pphi": 4.440892098500626e-16,
+    "all_finite_positive": true,
+    "mode_counts_exact": true
+  },
+  "created_utc": "2026-08-31T05:10:00.835817+00:00",
+  "inputs": {
+    "active_table": {
+      "bytes": 230570,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_standard_noisy_shift_v1/stochastic_png_k1/symbolic_canary/quijote_z0p5_plin_pphi_m.dat",
+      "sha256": "bd927c24225b5984a0205330f03d9218679fad64d4d48a1f3a7da71d353b4995"
+    },
+    "reference": {
+      "bytes": 3798,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_pre_p0_fnl250_v1/PRE_P0_LINEAR_THEORY_LATTICE.npz",
+      "sha256": "9c50d2365d4d9cb6aee2348e31a887924e70bde2f2903dd1fc62c31098857379"
+    },
+    "reference_manifest": {
+      "bytes": 2761,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_pre_p0_fnl250_v1/PRE_P0_LINEAR_THEORY_LATTICE.json",
+      "sha256": "c9548a24fa5282e07eac5795b7214c85155033e98e64570b51145d593aa27142"
+    },
+    "runner": {
+      "bytes": 7524,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/prepare_quijote_halo_z0p5_p0_finite_local_png_lattice_kmax0p08.py",
+      "sha256": "a10bd804f82a92597f3ee618d904abefb7f5c502bd57ebd04373df5e2295f8db"
+    }
+  },
+  "output": {
+    "bytes": 2707,
+    "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_p0_finite_local_png_lattice_kmax0p08_v1/P0_FINITE_LOCAL_PNG_LATTICE.npz",
+    "sha256": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e"
+  },
+  "schema": "quijote-z0p5-p0-finite-local-png-exact-lattice-v1",
+  "scope": {
+    "P_bin_count": 12,
+    "Pphi_definition": "PL/M^2 from active four-column table",
+    "finite_fNL_order": 2,
+    "kmin_h_mpc": 0.006283185307179587,
+    "last_bin_upper_edge_h_mpc": 0.08168140899333462,
+    "matter_theory": "linear",
+    "redshift": 0.5
+  },
+  "status": "pass"
+}

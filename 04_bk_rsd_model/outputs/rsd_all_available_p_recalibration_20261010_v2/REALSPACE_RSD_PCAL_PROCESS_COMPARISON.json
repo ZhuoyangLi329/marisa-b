@@ -1,0 +1,211 @@
+{
+  "status": "ACTUAL_REALSPACE_RSD_PCAL_DIFFERENCES_AND_TARGET_PROFILES_RECORDED_NOT_FINAL_CALIBRATION_RELEASE",
+  "created_UTC": "2026-10-10T15:08:04.996026+00:00",
+  "same_calibration_parameter_order": [
+    "p",
+    "b1",
+    "Pshot_residual"
+  ],
+  "same_bounds": [
+    [
+      0.0,
+      3.0
+    ],
+    [
+      0.1,
+      6.0
+    ],
+    [
+      -100000.0,
+      100000.0
+    ]
+  ],
+  "same_calibration_fNL_fixed": 100.0,
+  "same_P_bins": 12,
+  "same_P_edges": true,
+  "realspace_actual_calibration_volume_scaling": 42.875,
+  "RSD_volume_Gpc_h3": 1.0,
+  "RSD_C_single_not_divided_by_calibration_or_covariance_count": true,
+  "historical_realspace_calibration_target_count": 100,
+  "RSD_calibration_post_weighted_input_count": 250,
+  "RSD_calibration_pre_count_when_ready": 500,
+  "realspace_calibration_data_stage": "sto_marisa reconstructed P0",
+  "RSD_current_calibration_data_stage": "GSR2 weighted RSD input before Marisa shift",
+  "target_stage_difference_under_diagnosis_not_assumed_error": true,
+  "positive_same100_post_minus_weighted_single_box_whitened_norm": 5.30190388081863,
+  "independent_fixed_fNL_MAP_profiles": {
+    "weighted_input_positive100": {
+      "physical_p_MAP": 1.3161970805428105,
+      "b1_MAP": 2.211788489760208,
+      "Pshot_MAP": -1292.8642069314164,
+      "chi2_single_box_forecast": 0.15624796465344765,
+      "minuit_valid": true,
+      "MAP_not_posterior_median": true,
+      "no_main_p_replaced": true
+    },
+    "weighted_input_positive250_all_available": {
+      "physical_p_MAP": 1.241278434892113,
+      "b1_MAP": 2.191635447709335,
+      "Pshot_MAP": -709.4878754390242,
+      "chi2_single_box_forecast": 0.09125230512845012,
+      "minuit_valid": true,
+      "MAP_not_posterior_median": true,
+      "no_main_p_replaced": true
+    },
+    "post_positive100_all_current_post_measurements": {
+      "physical_p_MAP": 1.2494076995275643,
+      "b1_MAP": 2.223202678400415,
+      "Pshot_MAP": -4607.611486080972,
+      "chi2_single_box_forecast": 0.2399450635498367,
+      "minuit_valid": true,
+      "MAP_not_posterior_median": true,
+      "no_main_p_replaced": true
+    }
+  },
+  "realspace_measured_and_theory_modes_match": true,
+  "realspace_nmodes": [
+    26,
+    66,
+    158,
+    234,
+    410,
+    470,
+    738,
+    866,
+    1170,
+    1358,
+    1626,
+    1970
+  ],
+  "RSD_nmodes": [
+    26,
+    96,
+    128,
+    234,
+    440,
+    440,
+    738,
+    906,
+    1130,
+    1414,
+    1600,
+    2018
+  ],
+  "realspace_and_RSD_nmodes_equal": false,
+  "RSD_realspace_same_window_fgrowth0_algebraic_probes": 27,
+  "RSD_realspace_same_window_fgrowth0_max_scaled_error": 2.0260540245912106e-15,
+  "RSD_over_realspace_asset_template_ratios": {
+    "PL_lattice": [
+      1.000000000000484,
+      1.000993022674411,
+      0.9927976066452093,
+      1.0000000001239824,
+      0.9942221262380095,
+      0.9952356779963266,
+      1.0000000004765208,
+      0.998023060801225,
+      0.9988087050564359,
+      0.9984225783704929,
+      0.9976641450793642,
+      0.9969142920148709
+    ],
+    "PL_over_M_lattice": [
+      0.9907946991068692,
+      0.8981744293176027,
+      0.9404995174765062,
+      0.99079469916001,
+      0.9789079105586752,
+      0.9807944736713653,
+      0.9907946993547878,
+      0.9857935044276283,
+      0.9874814938698953,
+      0.9871446947261662,
+      0.9861931904957552,
+      0.9860183537342001
+    ],
+    "Pphi_lattice": [
+      0.9965065954966835,
+      0.8340944139222347,
+      0.8993405479313104,
+      0.9965065516879913,
+      0.9787875940497895,
+      0.9808851238338364,
+      0.9965065409878724,
+      0.9885912517963563,
+      0.9909598015880676,
+      0.9908204744537311,
+      0.98956689708916,
+      0.9899945116104738
+    ]
+  },
+  "realspace_manifest": {
+    "checks": {
+      "active_regression": {
+        "PL_over_M_relative_l2": 0.007471415628189476,
+        "PL_relative_l2": 6.307614444144823e-06
+      },
+      "active_regression_max_below_one_percent": true,
+      "active_table_PL_over_M2_equals_Pphi": 4.440892098500626e-16,
+      "all_finite_positive": true,
+      "mode_counts_exact": true
+    },
+    "created_utc": "2026-08-31T05:10:00.835817+00:00",
+    "inputs": {
+      "active_table": {
+        "bytes": 230570,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_standard_noisy_shift_v1/stochastic_png_k1/symbolic_canary/quijote_z0p5_plin_pphi_m.dat",
+        "sha256": "bd927c24225b5984a0205330f03d9218679fad64d4d48a1f3a7da71d353b4995"
+      },
+      "reference": {
+        "bytes": 3798,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_pre_p0_fnl250_v1/PRE_P0_LINEAR_THEORY_LATTICE.npz",
+        "sha256": "9c50d2365d4d9cb6aee2348e31a887924e70bde2f2903dd1fc62c31098857379"
+      },
+      "reference_manifest": {
+        "bytes": 2761,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_pre_p0_fnl250_v1/PRE_P0_LINEAR_THEORY_LATTICE.json",
+        "sha256": "c9548a24fa5282e07eac5795b7214c85155033e98e64570b51145d593aa27142"
+      },
+      "runner": {
+        "bytes": 7524,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/prepare_quijote_halo_z0p5_p0_finite_local_png_lattice_kmax0p08.py",
+        "sha256": "a10bd804f82a92597f3ee618d904abefb7f5c502bd57ebd04373df5e2295f8db"
+      }
+    },
+    "output": {
+      "bytes": 2707,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_p0_finite_local_png_lattice_kmax0p08_v1/P0_FINITE_LOCAL_PNG_LATTICE.npz",
+      "sha256": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e"
+    },
+    "schema": "quijote-z0p5-p0-finite-local-png-exact-lattice-v1",
+    "scope": {
+      "P_bin_count": 12,
+      "Pphi_definition": "PL/M^2 from active four-column table",
+      "finite_fNL_order": 2,
+      "kmin_h_mpc": 0.006283185307179587,
+      "last_bin_upper_edge_h_mpc": 0.08168140899333462,
+      "matter_theory": "linear",
+      "redshift": 0.5
+    },
+    "status": "pass"
+  },
+  "realspace_asset_preserves_reference_PL_and_PL_over_M_but_Q_from_active_table": true,
+  "RSD_all_six_spectra_from_same_PL_M_source": true,
+  "different_tables_interpolation_and_windows_must_not_be_silently_mixed": true,
+  "RSD_spectrum_table_sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb",
+  "RSD_spectrum_table_path": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+  "main_volume_or_covariance_or_p_values_changed_by_audit": false,
+  "HDF_read": false,
+  "immutable_evidence": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_rsd_vs_realspace_pcal_v1.py": "5d536824ef031b34cd2f0e35283249d74214000174bcfe580e61741fa56a84aa",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.json": "ae6360473e480b426dbfbb7289314831099ce008dd99cfd5abe21c35dd069aba",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.npz": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/five_method_p0_matrix.npz": "c527cf51a6e7c90f02c85cb688d1963b72595809e9ebc9be53468ff80c0c6fa5",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_sto_marisa_fnlfixed100_freep_calib_v1/FREEP_PROFILE_ARRAYS.npz": "0dd42d06099c7c1caaf0c69828f0c7f64e2d5604a8a1fb8c44c643583104f5c4",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/pre_rsd_pb_mean100_v1/P0_LATTICE.npz": "e46da32e290e62d295740f5ecc87b2f2038cdd58a6e3c441e42fe70b077a4de1",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/rsd_all_available_p_recalibration_20261010_v2/post_physical_p_all_available/cases/post_physical_p_RSD_fNLfixed100_all_available/likelihood.npz": "8df56f1f203c08af2dbe75cf83d020c9d310148cdecd57638aeb724393035889",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/ensemble_measurements/AUDIT.json": "0aed1dd84b001e64ebef0b40ce531494d8d04894ef472b58dbd61db41f9ab157",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/ensemble_measurements/MATCHED_ENSEMBLE.npz": "ed2f887a1f8718fd8cfffa3e1fc61908793de35773742ae1a12d9f144102bbab",
+    "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb"
+  }
+}

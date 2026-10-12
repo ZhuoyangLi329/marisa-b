@@ -1,0 +1,16 @@
+{
+  "pid": 398463,
+  "host": "login26",
+  "command": [
+    "/global/common/software/desi/users/adematti/perlmutter/cosmodesiconda/20260321-1.0.0/conda/bin/python",
+    "-B",
+    "-u",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_sto_post_target300_completion.py"
+  ],
+  "source_sha256": "0ef49570c9fa185a3137cb3761a1d08634b023ce0d4d8d8b2b938b8372605a0b",
+  "CPU_affinity": [
+    13
+  ],
+  "log": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/target300_completion_v1.log",
+  "launched_UTC": "2026-10-10T00:37:48.125845+00:00"
+}

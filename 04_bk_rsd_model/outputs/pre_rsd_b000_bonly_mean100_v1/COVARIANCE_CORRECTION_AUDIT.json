@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "n_baseline": 18,
+  "cases": [
+    {
+      "name": "fiducial_mean100_k0.08",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "1ae29699b819d542f0ac1246090a57626aee5982f3a2bd0332ae9d30f8c4955f",
+      "new_likelihood_sha256": "6fdcfd10425e3aa4d4978beaeb4d704437ec80fb9ec8e23c9228102cc0a9924a"
+    },
+    {
+      "name": "fiducial_mean100_k0.10",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "7a821ffd88ada06ce1dc471a071d3cca9874529760932a01d2cc3e37e0d3649a",
+      "new_likelihood_sha256": "7774ccee2e8fee36e5bc5054884920ec405189cb47bfe83c3c6245839d7fb6e1"
+    },
+    {
+      "name": "fiducial_mean100_k0.12",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "d1e9092d1b9f34e78d7a1461bd6c847d8e5ca13198ae6a6567586dd1c1662840",
+      "new_likelihood_sha256": "bce2708ae410141a3d4e6e1fc66c66a684adfd600bee88c80d2e174fd1932d0d"
+    },
+    {
+      "name": "fiducial_mean100_k0.14",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "f28edc7fcaa8f0686000e85b430cb16f1091d922383f7361cc37aa3cd3ede1fa",
+      "new_likelihood_sha256": "7ee488e8dc8e842f5b43477ce996209e11044db2fe5cb693c3ee9aae1b961e8c"
+    },
+    {
+      "name": "fiducial_mean100_k0.18",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "63ada0870b76f397d0a670908444cb1c3a649c76df501a21003c72b4aaa1443e",
+      "new_likelihood_sha256": "284912a4ed47e29e0a156d47596dc33c9e8edf0617ea0465b868ee3659da0f7b"
+    },
+    {
+      "name": "fiducial_mean100_k0.20",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "9c6d91250afa047053419058dc12e448886028c36646c781f00c56ac2b38dd53",
+      "new_likelihood_sha256": "77c361ed05973a3c3cddc11fe3724bdadc2ac5b671cf625f90ebdb293cef3783"
+    },
+    {
+      "name": "LC_p_mean100_k0.08",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "458f09b87786fb0aa2bf0699e6ec1173e6525d51bb057e661d1f15ff241a7f13",
+      "new_likelihood_sha256": "ef63589b9fe85464e409182ad7a29fc7cbe3e872e2356f9830520ec8587c511b"
+    },
+    {
+      "name": "LC_p_mean100_k0.10",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "f82b33aba290aa5102e049667e5641d8d160d67632df71e5b7b02adeb3e8beca",
+      "new_likelihood_sha256": "9cc05e135c4b9d4e5a808407215890a143c8d856dcccdd1cbb8043584f470aa5"
+    },
+    {
+      "name": "LC_p_mean100_k0.12",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "ab905d1ce08caeda551ef8761a63c996d184b024a26c41fcac5cf68190b0b76b",
+      "new_likelihood_sha256": "4406c89544da36670cfec4a95f47c0ff0db1d81bf4726d0527d204b5bef09f22"
+    },
+    {
+      "name": "LC_p_mean100_k0.14",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "5a2bd40623fcb0320dcf61f4d0db9d502d027e8b11fc8c01dfccbe95abedf6a8",
+      "new_likelihood_sha256": "cbf6c991cf7872c2ac854706bfc880ef38d505ec63d567e6369194c59720a570"
+    },
+    {
+      "name": "LC_p_mean100_k0.18",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "731e58bb41e752a28a25c2f0382ee1a830cc51c135ad9ca8ba91a93492b6580b",
+      "new_likelihood_sha256": "9ab900a3477e9fa9dae4e62a77a5dd7e59d4cfd10c8916132293d632c7f53d7a"
+    },
+    {
+      "name": "LC_p_mean100_k0.20",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "ac02e90bc5da892ee0c2f7042d65fa15dfd373e242985da3c8fd5dd35fd100fe",
+      "new_likelihood_sha256": "940b8920d29d521341dd12cd9fca717dc71345a013844103d31690b631ac7895"
+    },
+    {
+      "name": "LC_m_mean100_k0.08",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "64571f61fc27e4839b66a6e5bfba893b388eda1ece430ed0fb32baa65c1837c8",
+      "new_likelihood_sha256": "b85b95e87e9c14b91789fdbe877d2d8a779cc829472583e9113dedcf5315a367"
+    },
+    {
+      "name": "LC_m_mean100_k0.10",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "7832e38e5fe23971da8716e61e7e688da8aabdc561e80bbb464c629e752a42c4",
+      "new_likelihood_sha256": "b83cb85bfedabe2f2e3963495a721c99d8dedc605d39e0c5403fc5a588c0a7d8"
+    },
+    {
+      "name": "LC_m_mean100_k0.12",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "f10d57ee1a528c09b7491e66f79aef1efe397fc031aed2a5e9b92551177c963f",
+      "new_likelihood_sha256": "7588fcbdc4e0e93f4dfca0353dd5670721f70ccb53ab6e400e5cff9c3f30681b"
+    },
+    {
+      "name": "LC_m_mean100_k0.14",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "f71e3d72f8ba93c06723b7f49b77944b7f5d3f4d64a681d7890f6b7b01843dc4",
+      "new_likelihood_sha256": "d0877cbb767ae4a732ad9ced4168db031c94fbcd52775e3cea011974b2cb721b"
+    },
+    {
+      "name": "LC_m_mean100_k0.18",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "cfebdafbe9118e21b6d594cb68ee264e6cc2ed55d01c81aa8263734358dec225",
+      "new_likelihood_sha256": "ee46235523587af0262d53917bb4144636e0f16bf9f51af0288df45079555aed"
+    },
+    {
+      "name": "LC_m_mean100_k0.20",
+      "target_model_prior_unchanged": true,
+      "covariance_is_unaveraged_single_box": true,
+      "source_likelihood_sha256": "cfbec95b3917affa75c3b36c2c271dea41ec1723289bf9bf0e6f65b69e4f22b7",
+      "new_likelihood_sha256": "fe9949c15cb62822494a0f5c886cfdc3878f3d261816a7803c49f60f4112091f"
+    }
+  ],
+  "source_ensemble_sha256": "cf1da49a3704c222d8b32346cfbfa08004734a875d1dc936e3522a8f96241baf",
+  "old_outputs_modified": false,
+  "data_mean_count": 100,
+  "covariance_sample_count": 500,
+  "covariance_multiplier": 1.0,
+  "volume_Gpc_h3": 1.0,
+  "covariance_definition": "np.cov(Fid500 single-box B vectors, rowvar=False, ddof=1); never /100 or /500",
+  "hartlap_separate_from_volume": true,
+  "new_source_sha256": "e472bea58955055f11556d7fc5b67c2449f61fbf99728fdf574104038ceedc0f"
+}

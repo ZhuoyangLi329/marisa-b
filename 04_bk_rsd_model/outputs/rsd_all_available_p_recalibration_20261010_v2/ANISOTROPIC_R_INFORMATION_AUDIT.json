@@ -1,0 +1,350 @@
+{
+  "created_UTC": "2026-10-10T17:20:57.250767+00:00",
+  "status": "FROZEN_R_B000_INFORMATION_DIAGNOSTIC_NOT_MODEL_CHANGE",
+  "continuum_isotropic_mean_mu4_minus_one_fifth": 6.635317295611287e-16,
+  "continuum_R_B000_projection_zero": true,
+  "checks": [
+    {
+      "name": "fiducial_post_PB_4plus4_k0.14",
+      "stage": "post",
+      "kmax_B": 0.14,
+      "truth_fNL": 0,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.018686217013599668,
+      "full_joint_white_prior_endpoint_separation_norm": 0.037372434027199336,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009716303682465783,
+      "actual_likelihood_sha256": "d307cf6f4592bcd2fefd5a3782dbc181289db1859c33151dbe1e634b5db76f41"
+    },
+    {
+      "name": "fiducial_pre_PB_4plus4_k0.14",
+      "stage": "pre",
+      "kmax_B": 0.14,
+      "truth_fNL": 0,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.01750861197089235,
+      "full_joint_white_prior_endpoint_separation_norm": 0.0350172239417847,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009716303682468574,
+      "actual_likelihood_sha256": "f9df7bca248ee2d7e4a9dcc56e807efc93f696c31d9eedea8384d45f92591ae2"
+    },
+    {
+      "name": "LC_p_post_PB_4plus4_k0.14",
+      "stage": "post",
+      "kmax_B": 0.14,
+      "truth_fNL": 100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.01873346580388873,
+      "full_joint_white_prior_endpoint_separation_norm": 0.03746693160777746,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009716303682465784,
+      "actual_likelihood_sha256": "68ee5c976ea104f314e4d1ccfe2d87bc80bd39792432d15a862c2b4d42e26431"
+    },
+    {
+      "name": "LC_p_pre_PB_4plus4_k0.14",
+      "stage": "pre",
+      "kmax_B": 0.14,
+      "truth_fNL": 100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.017505182396003204,
+      "full_joint_white_prior_endpoint_separation_norm": 0.03501036479200641,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.00971630368246857,
+      "actual_likelihood_sha256": "dbe6936d20960aef7786d2191746fb860fb167ce4750c43005585ae953a313cc"
+    },
+    {
+      "name": "LC_m_post_PB_4plus4_k0.14",
+      "stage": "post",
+      "kmax_B": 0.14,
+      "truth_fNL": -100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.018648237376005787,
+      "full_joint_white_prior_endpoint_separation_norm": 0.037296474752011574,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009716303682465784,
+      "actual_likelihood_sha256": "8782239f49949d565c5de9f6f94232cf166852da861bf7d1365cd6320b0541d0"
+    },
+    {
+      "name": "LC_m_pre_PB_4plus4_k0.14",
+      "stage": "pre",
+      "kmax_B": 0.14,
+      "truth_fNL": -100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.017514034064315707,
+      "full_joint_white_prior_endpoint_separation_norm": 0.035028068128631414,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009716303682468572,
+      "actual_likelihood_sha256": "50c9b31813e549c74eee952800e3c44cc04096b46c0858c8f1e148ac897a835e"
+    },
+    {
+      "name": "fiducial_post_PB_4plus4_k0.08",
+      "stage": "post",
+      "kmax_B": 0.08,
+      "truth_fNL": 0,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.00457348978535391,
+      "full_joint_white_prior_endpoint_separation_norm": 0.00914697957070782,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.008598715768222676,
+      "actual_likelihood_sha256": "3f27cab6d4239fee921b728fa0ebc8cbe2ba2b1a6a56d1c4799e93e4b66c4e43"
+    },
+    {
+      "name": "fiducial_pre_PB_4plus4_k0.08",
+      "stage": "pre",
+      "kmax_B": 0.08,
+      "truth_fNL": 0,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.004801245971400698,
+      "full_joint_white_prior_endpoint_separation_norm": 0.009602491942801395,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.008598715768226876,
+      "actual_likelihood_sha256": "f0418453b27a35f0ae8139d9b43f2fa411fdff240310de9619fbe9ba07b78479"
+    },
+    {
+      "name": "LC_p_post_PB_4plus4_k0.08",
+      "stage": "post",
+      "kmax_B": 0.08,
+      "truth_fNL": 100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.004585054023294666,
+      "full_joint_white_prior_endpoint_separation_norm": 0.009170108046589333,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.008598715768222675,
+      "actual_likelihood_sha256": "0d74c816a6540effd3314cbe249b14b9190311b07f1e0be22369c548bf106696"
+    },
+    {
+      "name": "LC_p_pre_PB_4plus4_k0.08",
+      "stage": "pre",
+      "kmax_B": 0.08,
+      "truth_fNL": 100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.004800305506636981,
+      "full_joint_white_prior_endpoint_separation_norm": 0.009600611013273962,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.008598715768226876,
+      "actual_likelihood_sha256": "6514a08540260aec2c3a4a5eeca14b296000501252c1b1a686dcc1ca207a3582"
+    },
+    {
+      "name": "LC_m_post_PB_4plus4_k0.08",
+      "stage": "post",
+      "kmax_B": 0.08,
+      "truth_fNL": -100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.004564194191469914,
+      "full_joint_white_prior_endpoint_separation_norm": 0.009128388382939829,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.008598715768222676,
+      "actual_likelihood_sha256": "35337e37811bbdb663744b6d89c991f0c3b28d26929b4f495303c3b858c0d84c"
+    },
+    {
+      "name": "LC_m_pre_PB_4plus4_k0.08",
+      "stage": "pre",
+      "kmax_B": 0.08,
+      "truth_fNL": -100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.004802732828511286,
+      "full_joint_white_prior_endpoint_separation_norm": 0.009605465657022572,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.008598715768226874,
+      "actual_likelihood_sha256": "6e0e47a356c105262350cf86d393b3bfb808f0d54f001d9dc5980f4552638c3f"
+    },
+    {
+      "name": "fiducial_post_PB_4plus4_k0.10",
+      "stage": "post",
+      "kmax_B": 0.1,
+      "truth_fNL": 0,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.008733457515223282,
+      "full_joint_white_prior_endpoint_separation_norm": 0.017466915030446565,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009099709801407023,
+      "actual_likelihood_sha256": "0feae8eb3b8bd7fef88c44f3b9032cc678f0120681d3b827754f1f8eeddb46ec"
+    },
+    {
+      "name": "fiducial_pre_PB_4plus4_k0.10",
+      "stage": "pre",
+      "kmax_B": 0.1,
+      "truth_fNL": 0,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.00815075953153034,
+      "full_joint_white_prior_endpoint_separation_norm": 0.01630151906306068,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.00909970980141116,
+      "actual_likelihood_sha256": "5d2e90bc2840e11b5939365a238a104f87be585003669a6108899e2b2dbaf77a"
+    },
+    {
+      "name": "LC_p_post_PB_4plus4_k0.10",
+      "stage": "post",
+      "kmax_B": 0.1,
+      "truth_fNL": 100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.008755540385305322,
+      "full_joint_white_prior_endpoint_separation_norm": 0.017511080770610643,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009099709801407022,
+      "actual_likelihood_sha256": "ecc5695086359529a47490fb50b917de850a796f2ebd581fb3e77ff4be9be38d"
+    },
+    {
+      "name": "LC_p_pre_PB_4plus4_k0.10",
+      "stage": "pre",
+      "kmax_B": 0.1,
+      "truth_fNL": 100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.008149162966350676,
+      "full_joint_white_prior_endpoint_separation_norm": 0.016298325932701353,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.00909970980141116,
+      "actual_likelihood_sha256": "dcc551c408cdbc3440bf2b4c5ce796aab5dc63e6ebfe0d727ea5d37cb9763d7d"
+    },
+    {
+      "name": "LC_m_post_PB_4plus4_k0.10",
+      "stage": "post",
+      "kmax_B": 0.1,
+      "truth_fNL": -100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.008715706808853581,
+      "full_joint_white_prior_endpoint_separation_norm": 0.017431413617707163,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009099709801407022,
+      "actual_likelihood_sha256": "09f260b2048a90e2e1842516bf7b8d4203cad930be6c4216f712d0da56383138"
+    },
+    {
+      "name": "LC_m_pre_PB_4plus4_k0.10",
+      "stage": "pre",
+      "kmax_B": 0.1,
+      "truth_fNL": -100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.008153283671063756,
+      "full_joint_white_prior_endpoint_separation_norm": 0.01630656734212751,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009099709801411159,
+      "actual_likelihood_sha256": "c5c171670439858ec92c87aab58d4376cf80dee86b52e0735913dce3b3667ebc"
+    },
+    {
+      "name": "fiducial_post_PB_4plus4_k0.12",
+      "stage": "post",
+      "kmax_B": 0.12,
+      "truth_fNL": 0,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.012925327077640117,
+      "full_joint_white_prior_endpoint_separation_norm": 0.025850654155280234,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009441482492413276,
+      "actual_likelihood_sha256": "e620344f1c45763fe8d9074ea844a6396bae3dd809ebfeeb3cd120da6fa42b08"
+    },
+    {
+      "name": "fiducial_pre_PB_4plus4_k0.12",
+      "stage": "pre",
+      "kmax_B": 0.12,
+      "truth_fNL": 0,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.012445809932344827,
+      "full_joint_white_prior_endpoint_separation_norm": 0.024891619864689653,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009441482492416147,
+      "actual_likelihood_sha256": "1a96ce7815732a8e8c1abbfb0d1df43fcdd23884643e7deac71557dc6946ff35"
+    },
+    {
+      "name": "LC_p_post_PB_4plus4_k0.12",
+      "stage": "post",
+      "kmax_B": 0.12,
+      "truth_fNL": 100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.012958009244826041,
+      "full_joint_white_prior_endpoint_separation_norm": 0.025916018489652082,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009441482492413276,
+      "actual_likelihood_sha256": "868b649927cbed04a270c749116dbfb145e5815081b3a893aa6ca67e0e78019b"
+    },
+    {
+      "name": "LC_p_pre_PB_4plus4_k0.12",
+      "stage": "pre",
+      "kmax_B": 0.12,
+      "truth_fNL": 100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.012443372055642192,
+      "full_joint_white_prior_endpoint_separation_norm": 0.024886744111284383,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009441482492416147,
+      "actual_likelihood_sha256": "7cf49d6197439c213f6ee8d62996f9475f94d6e6937e9e7620d1ffb9831c1020"
+    },
+    {
+      "name": "LC_m_post_PB_4plus4_k0.12",
+      "stage": "post",
+      "kmax_B": 0.12,
+      "truth_fNL": -100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.012899056418478206,
+      "full_joint_white_prior_endpoint_separation_norm": 0.025798112836956412,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009441482492413276,
+      "actual_likelihood_sha256": "32b52874902a3c9acb105db9cbfd38fd748eb574f097f8b0296013a2d58e0377"
+    },
+    {
+      "name": "LC_m_pre_PB_4plus4_k0.12",
+      "stage": "pre",
+      "kmax_B": 0.12,
+      "truth_fNL": -100,
+      "R_prior": [
+        -10,
+        10
+      ],
+      "full_joint_white_R10_norm": 0.012449664169579325,
+      "full_joint_white_prior_endpoint_separation_norm": 0.02489932833915865,
+      "centered_to_uncentered_mu4_shape_norm_ratio": 0.009441482492416147,
+      "actual_likelihood_sha256": "f753eec875cf631c1b6daee932b05ae8058ba74598799fc3471d542543c6accb"
+    }
+  ],
+  "active_HDF_read": false,
+  "model_prior_or_covariance_changed": false,
+  "interpretation": "Centered angular R is invisible to the ideal rotational monopole; only its discrete-window leakage enters these B000 fits. A near-uniform R posterior is not evidence of a tightly measured anisotropic stochastic response.",
+  "likelihood_norm_is_conditional_response_not_marginalized_constraint": true,
+  "original_products_preserved": true,
+  "auditor_sha256": "e71b8d66f427432d01964626b31ada705003a42eb5202637f23d177d6f3dd0c3"
+}

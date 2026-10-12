@@ -1,0 +1,25 @@
+{
+  "status": "IR_P0_SHARED_SIGNAL_AND_WINDOW_ALGORITHM_TESTS_PASS_NOT_MODEL_RELEASE",
+  "local_tests_passed": 5,
+  "NERSC_tests_passed": 5,
+  "NERSC_host": "login26",
+  "CPU_affinity": [13],
+  "numeric_threads": 1,
+  "sources_sha256": {
+    "code/post_rsd_ir_p0_projection.py": "035d3ee76fe5c68ff67196e05866ea8b24b6ec4988b3e17855435eca217f6f1e",
+    "code/test_post_rsd_ir_p0_projection.py": "7db049c723ccf9e083b8d6b27e0fb08a690b94017fc2af6857f19b3d0d536c7d"
+  },
+  "scope": [
+    "shared tagged source against independent explicit Z1 and spectral-t formula",
+    "strict fNL quadratic damping mixing at finite fNL",
+    "no-wiggle exact linear regression",
+    "zero-exponent strict-wiggle matching remainder retained and verified",
+    "weighted original-window-type projection against explicit mode loops",
+    "physical-p and fixed-reconstruction context and invalid input guards"
+  ],
+  "new_physical_fit_parameters": 0,
+  "physical_p_calibrated": false,
+  "actual_STO_raw_noise_calibrated": false,
+  "production_IR_matching_strategy_selected": false,
+  "MCMC_released": false
+}

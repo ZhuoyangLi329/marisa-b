@@ -1,0 +1,36 @@
+{
+  "realization": 0,
+  "sha256": "d30f880a994b3f5057fdacac4774f339dcbb2f5d17afcf974ecc471d9c9c876d",
+  "elapsed_seconds": 18.36763833509758,
+  "finished_UTC": "2026-10-10T14:49:04.339581+00:00",
+  "pid": 1876478,
+  "CPU_affinity": [
+    12
+  ],
+  "raw": {
+    "n_halo": 309602,
+    "nbar_h3_Mpc3": 0.000309602,
+    "rms_ds_Mpc_h": 3.51354662609038,
+    "source_raw": "/pscratch/sd/l/lzy/quijote-png/halos/FoF_z0p5/LC_p/real000/groups_003/group_tab_003.0",
+    "source_raw_sha256": "4748b7e718583199dd49f878fcdc3915b462777e6daffcd7b249762907296658",
+    "H_h": 132.44102461095656,
+    "cosmology": "LC_p",
+    "realization": 0,
+    "truth_fNL": 100,
+    "data_has_rsd": true,
+    "random_seed": 1226207469,
+    "meshsize": 256,
+    "CPU_affinity": [
+      12
+    ],
+    "measurement_entry_sha256": "6be2c40d777d1dcf480a969303312527a8cef1a6741d8d10e82dd28f3d577feb",
+    "shared_sha256": "fed90b2a2a89cde5826b8f5e512333cdbaa6574d866553d388c4fb5e543289b0",
+    "nmodes_exactly_match_original_window": true,
+    "plotting_k_coordinate_relative_difference": 3.026922968274448e-06,
+    "original_plotting_coordinate_1e6_check_passed": false,
+    "model_uses_original_mode_templates_not_plotting_k_coordinate": true
+  },
+  "single_box_whitened_replay_error": 2.2878349871974095e-05,
+  "original_data_not_replaced": true,
+  "status": "ACTUAL_PRE_RSD_P0_REPLAY_COMPATIBLE"
+}

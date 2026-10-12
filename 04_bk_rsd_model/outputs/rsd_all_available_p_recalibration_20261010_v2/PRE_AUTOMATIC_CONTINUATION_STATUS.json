@@ -1,0 +1,17 @@
+{
+  "pid": 1946804,
+  "host": "login26",
+  "CPU_affinity": [
+    13
+  ],
+  "started_UTC": "2026-10-10T15:06:32.190538+00:00",
+  "state": "ALL500_PRE_PHYSICAL_P_CALIBRATION_TRIAL_FINISHED_REVIEW_CHAIN",
+  "entry_sha256": "2751f5f1cfbc34066fad96bd720920ffa8d4cb25f03fe97739fa4d5dc4e156b3",
+  "calibration_entry_sha256": "ab8a579a837de55f147f1a4606070dfd5470465f21036e0d39e7c21d18875816",
+  "actual_summary_save_callback_fixed": true,
+  "updated_UTC": "2026-10-10T15:40:52.299963+00:00",
+  "measured_new_rows": 400,
+  "post_calibration_state": "ALL_AVAILABLE_PHYSICAL_P_TRIAL_FINISHED_REVIEW_CHAIN",
+  "converged": true,
+  "calibration_target_count": 500
+}

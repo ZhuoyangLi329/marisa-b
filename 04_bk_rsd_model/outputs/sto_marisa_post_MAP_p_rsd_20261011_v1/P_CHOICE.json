@@ -1,0 +1,13 @@
+{
+  "physical_p": 1.2494076995227128,
+  "estimator": "joint posterior MAP",
+  "p_origin": "same true post-RSD P0 calibration; fixed fNL=100",
+  "calibration_data_stage": "P_post after Marisa displacement",
+  "calibration_count": 100,
+  "original_marginal_p_median": 1.3079259941635721,
+  "calibration_MAP_file": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_postP_calibration_20261011_v1/cases/postP_physical_p_fNLfixed100/MAP.json",
+  "calibration_MAP_sha256": "5e31bf53fbc4d1397520c1f504149eaa4d00a20b0bc45f1db7e8453db0767949",
+  "new_calibration_performed": false,
+  "p_uncertainty_propagated": false,
+  "MAP_roundtrip_not_independent_mock_recovery": true
+}

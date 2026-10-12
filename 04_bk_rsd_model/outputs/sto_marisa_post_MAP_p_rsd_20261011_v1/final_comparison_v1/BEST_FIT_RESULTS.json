@@ -1,0 +1,80 @@
+{
+  "status": "NINE_MCMC_CASES_COMPLETED_AND_ORIGINAL_GATES_VERIFIED",
+  "point_estimator": "Lowest chi2 joint solution found among nine blind starts; selected solutions all Minuit-valid. This is the joint MAP under the original bounded uniform priors, not a marginal posterior median or mode.",
+  "fixed_physical_p": 1.2494076995227128,
+  "p_source": "Joint MAP from true post-RSD P0 calibration with fNL fixed to +100",
+  "space_and_method": "STO+Marisa post-RSD",
+  "target": "Mean100, realizations 0-99, independently for truth 0/+100/-100",
+  "covariance": "500 fiducial realizations 0-499; unaveraged C_single; original Hartlap factors; full P-B cross covariance retained",
+  "volume_Gpc_h3": 1,
+  "kmax_P": 0.08,
+  "kmax_B": [0.08, 0.14],
+  "P0_active_parameter_count": 3,
+  "PB_physical_plus_noise_parameter_counts": [4, 4],
+  "IR": false,
+  "p_uncertainty_propagated": false,
+  "prior_data_covariance_windows_and_models_unchanged": true,
+  "accepted_fiducial_covariance_target_overlap": "real0-99",
+  "calibration_positive_target_overlap": true,
+  "full_STO_noise_closure_certified": false,
+  "posterior_sigma_definition": "Marginal posterior standard deviation; listed separately from the joint best-fit point, not a symmetric credible interval centered on that point",
+  "source_comparison_file": "COMPARISON.json",
+  "source_comparison_sha256": "ff5eb297a6c70128c8b898002acabbd8f440aa709a38a07b53585ae41bba604d",
+  "source_remote_root": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_MAP_p_rsd_20261011_v1",
+  "cases": [
+    {
+      "statistic": "P0 only", "truth_fNL": 0,
+      "best_fNL": 10.831984609924145, "posterior_sigma_fNL": 82.31765781700022,
+      "chi2_best": 0.20993097014143008, "Minuit_valid": true, "steps_per_ensemble": 6000,
+      "all_original_MCMC_gates_pass": true, "prior_sensitive": false
+    },
+    {
+      "statistic": "P0 only", "truth_fNL": 100,
+      "best_fNL": 100.00010231570592, "posterior_sigma_fNL": 82.54580587324233,
+      "chi2_best": 0.23994506354487843, "Minuit_valid": true, "steps_per_ensemble": 6000,
+      "all_original_MCMC_gates_pass": true, "prior_sensitive": false
+    },
+    {
+      "statistic": "P0 only", "truth_fNL": -100,
+      "best_fNL": -79.69160139642985, "posterior_sigma_fNL": 83.99033573717162,
+      "chi2_best": 0.19281803655378188, "Minuit_valid": true, "steps_per_ensemble": 6000,
+      "all_original_MCMC_gates_pass": true, "prior_sensitive": false
+    },
+    {
+      "statistic": "P+B kB=0.08", "truth_fNL": 0,
+      "best_fNL": 9.19076776688627, "posterior_sigma_fNL": 81.1950718989928,
+      "chi2_best": 0.2290906133066178, "Minuit_valid": true, "steps_per_ensemble": 14000,
+      "all_original_MCMC_gates_pass": true, "prior_sensitive": true
+    },
+    {
+      "statistic": "P+B kB=0.08", "truth_fNL": 100,
+      "best_fNL": 96.06237521184161, "posterior_sigma_fNL": 80.4093254005367,
+      "chi2_best": 0.31303790107812257, "Minuit_valid": true, "steps_per_ensemble": 12000,
+      "all_original_MCMC_gates_pass": true, "prior_sensitive": true
+    },
+    {
+      "statistic": "P+B kB=0.08", "truth_fNL": -100,
+      "best_fNL": -75.71388579746902, "posterior_sigma_fNL": 82.43472569815737,
+      "chi2_best": 0.23154959087059993, "Minuit_valid": true, "steps_per_ensemble": 14000,
+      "all_original_MCMC_gates_pass": true, "prior_sensitive": true
+    },
+    {
+      "statistic": "P+B kB=0.14", "truth_fNL": 0,
+      "best_fNL": 32.5038378848102, "posterior_sigma_fNL": 70.03343117779451,
+      "chi2_best": 0.8887209261509826, "Minuit_valid": true, "steps_per_ensemble": 10000,
+      "all_original_MCMC_gates_pass": true, "prior_sensitive": true
+    },
+    {
+      "statistic": "P+B kB=0.14", "truth_fNL": 100,
+      "best_fNL": 108.99710173403506, "posterior_sigma_fNL": 69.43620356246915,
+      "chi2_best": 1.0040205120226617, "Minuit_valid": true, "steps_per_ensemble": 10000,
+      "all_original_MCMC_gates_pass": true, "prior_sensitive": true
+    },
+    {
+      "statistic": "P+B kB=0.14", "truth_fNL": -100,
+      "best_fNL": -39.21471608282213, "posterior_sigma_fNL": 71.12467241542068,
+      "chi2_best": 1.1546062502453782, "Minuit_valid": true, "steps_per_ensemble": 12000,
+      "all_original_MCMC_gates_pass": true, "prior_sensitive": true
+    }
+  ]
+}

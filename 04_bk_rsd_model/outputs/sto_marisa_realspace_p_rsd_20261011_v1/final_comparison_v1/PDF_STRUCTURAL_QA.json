@@ -1,0 +1,22 @@
+{
+  "status": "NUMERICAL_AND_BOUNDARY_QA_PASS_VISUAL_REVIEW_SEPARATE",
+  "pdf_sha256": "d1ca258ead9319860ca71ec7061e8e201018fa42eaf8526c63f6d10a5ad21eff",
+  "pages": [
+    {
+      "page": 1,
+      "outside_margin_words": 0,
+      "width": 842.4,
+      "height": 597.6
+    },
+    {
+      "page": 2,
+      "outside_margin_words": 0,
+      "width": 842.4,
+      "height": 597.6
+    }
+  ],
+  "all_18_median_sigma_pairs_and_9_median_changes_verified": true,
+  "fixed_physical_p_verified": true,
+  "no_4plus3_results": true,
+  "image_files_generated": false
+}

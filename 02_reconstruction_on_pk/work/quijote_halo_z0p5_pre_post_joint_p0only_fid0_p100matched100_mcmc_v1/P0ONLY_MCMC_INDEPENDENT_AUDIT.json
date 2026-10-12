@@ -1,0 +1,146 @@
+{
+  "checks": {
+    "chain_convergence": {
+      "pass": true,
+      "rows": [
+        {
+          "case": "pre_sto_only__fNL0",
+          "pass": true,
+          "recalculated_pass": true,
+          "rhat_max_abs": 0.0,
+          "task_status": "complete"
+        },
+        {
+          "case": "pre_sto_only__fNL100",
+          "pass": true,
+          "recalculated_pass": true,
+          "rhat_max_abs": 0.0,
+          "task_status": "complete"
+        }
+      ]
+    },
+    "comparison_to_pre": {
+      "pass": true,
+      "rows": [
+        {
+          "case": "pre_sto_only__fNL0",
+          "information_abs": 4.440892098500626e-16,
+          "pass": true,
+          "ratio_abs": 0.0
+        },
+        {
+          "case": "pre_sto_only__fNL100",
+          "information_abs": 4.440892098500626e-16,
+          "pass": true,
+          "ratio_abs": 0.0
+        }
+      ]
+    },
+    "figures": {
+      "pass": true,
+      "pdf_pages": {
+        "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_pre_post_joint_p0only_fid0_p100matched100_mcmc_v1/figures/pre_post_joint_p0only_mcmc_contours.pdf": 3,
+        "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_pre_post_joint_p0only_fid0_p100matched100_mcmc_v1/figures/pre_post_joint_p0only_recovery_comparison.pdf": 1
+      },
+      "png_files": []
+    },
+    "independent_likelihood": {
+      "pass": true,
+      "rows": [
+        {
+          "case": "pre_sto_only__fNL0",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 8.881784197001252e-16,
+          "pass": true,
+          "target_max_abs": 0.0
+        },
+        {
+          "case": "pre_sto_only__fNL100",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 1.0658141036401503e-14,
+          "pass": true,
+          "target_max_abs": 0.0
+        }
+      ]
+    },
+    "joint_matrix_parity": {
+      "pass": true,
+      "rows": [
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "joint_fiducial",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "joint_LCp",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 2e-11,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "target_fNL0",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 2e-11,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "target_fNL100",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 2e-08,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "covariance",
+          "pass": true,
+          "shape_equal": true
+        }
+      ]
+    },
+    "posterior_quantiles": {
+      "pass": true,
+      "rows": [
+        {
+          "case": "pre_sto_only__fNL0",
+          "max_abs": 0.0,
+          "pass": true
+        },
+        {
+          "case": "pre_sto_only__fNL100",
+          "max_abs": 0.0,
+          "pass": true
+        }
+      ]
+    },
+    "result_hashes": {
+      "marginal_pdf": true,
+      "pass": true,
+      "posteriors": true,
+      "published_marginal_pdf": true,
+      "published_recovery_pdf": true,
+      "recovery_pdf": true
+    }
+  },
+  "created_utc": "2026-09-16T10:18:19.400999+00:00",
+  "schema": "quijote-z0p5-pre-post-joint-p0only-independent-audit-v1",
+  "scope": {
+    "pair": "pre_sto_only",
+    "requirements": "joint matrix rebuilt from five-method per-realization arrays; matched100 stacked targets; 24x24 Fid500 covariance with cross blocks; five-parameter shared-fNL model; both chains converged; PDF-only",
+    "targets": [
+      "fNL0",
+      "fNL100"
+    ]
+  },
+  "status": "pass"
+}

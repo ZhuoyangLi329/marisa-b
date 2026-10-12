@@ -1,0 +1,102 @@
+{
+  "checks": {
+    "sto_only": {
+      "LC_p_count": 100,
+      "LC_p_mean_range": [
+        25474.99505859375,
+        84997.7842578125
+      ],
+      "covariance_condition_number": 354.4743482464042,
+      "covariance_minimum_eigenvalue": 872078.2753390428,
+      "covariance_realizations": [
+        0,
+        499
+      ],
+      "fiducial_count": 500,
+      "fiducial_mean_range": [
+        25262.21737890625,
+        71549.064015625
+      ],
+      "target_realizations": [
+        0,
+        99
+      ]
+    },
+    "sto_only_geometry": {
+      "edges_exact": true,
+      "k_close": true,
+      "k_max_abs_difference": 2.9802322387695312e-08,
+      "nmodes_exact": true,
+      "pass": true
+    }
+  },
+  "covariance": {
+    "hartlap_12": 0.9739478957915831,
+    "source": "each method's own fNL0 Fid500 single-realization sample covariance",
+    "target_mean_divisor": null,
+    "volume_ratio": 42.875
+  },
+  "created_utc": "2026-09-16T07:15:37.202186+00:00",
+  "inheritance": {
+    "frozen_four_method_matrix": {
+      "arrays_unchanged": true,
+      "audit_status": "pass",
+      "bytes": 133564,
+      "checks_inherited_from": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/four_method_p0_matrix_audit.json",
+      "methods": [
+        "pre",
+        "standard",
+        "marisa",
+        "sto_marisa"
+      ],
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/four_method_p0_matrix.npz",
+      "sha256": "8c206fd59404945266108b12366a1d222b57f5b56f44eb6e492536b115e317da"
+    }
+  },
+  "inputs": {
+    "P_theory": {
+      "bytes": 2707,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.npz",
+      "sha256": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e"
+    },
+    "four_method_matrix": {
+      "bytes": 133564,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/four_method_p0_matrix.npz",
+      "sha256": "8c206fd59404945266108b12366a1d222b57f5b56f44eb6e492536b115e317da"
+    },
+    "four_method_matrix_audit": {
+      "bytes": 4766,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/four_method_p0_matrix_audit.json",
+      "sha256": "06c55ddc0631a27dae1487435ea8de36a90d4e3a85868ee43da64f10016e22a7"
+    },
+    "runner": {
+      "bytes": 9827,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/code/aggregate_five_method_p0.py",
+      "sha256": "3f72e1c18a19625d2076b42d5398cab4cd06a1909bd19e9449e1dc7fc151af74"
+    },
+    "sto_only_matrix": {
+      "bytes": 1727299,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100/matrices/sto_only_matrix.npz",
+      "sha256": "a0e4c150c15f517200373f4ac93b1d95d5b2196044e7631213f73a78b251580a"
+    }
+  },
+  "methods": [
+    "pre",
+    "standard",
+    "marisa",
+    "sto_only",
+    "sto_marisa"
+  ],
+  "output": {
+    "bytes": 166664,
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/five_method_p0_matrix.npz",
+    "sha256": "c527cf51a6e7c90f02c85cb688d1963b72595809e9ebc9be53468ff80c0c6fa5"
+  },
+  "schema": "quijote-z0p5-five-method-p0-matrix-v1",
+  "status": "pass",
+  "sto_only_definition": "matter-assisted N+Env STO weighting (r10, lambda_th=1, env_source=dm, weight_source=dm, number weighting, components void/sheet/filament/knot); halo positions unchanged with INDWEIGHT=sto weights, no gra-recon",
+  "targets": {
+    "fNL0": "fiducial real0--99 mean",
+    "fNL100": "LC_p real0--99 mean"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "state": "COMPLETE",
+  "pid": 1877859,
+  "host": "login26",
+  "CPU_affinity": [
+    12
+  ],
+  "starttime_ticks": "146891233",
+  "started_UTC": "2026-10-09T22:16:05.202485+00:00",
+  "completed_grid_probes": 88,
+  "updated_UTC": "2026-10-09T22:28:30.242630+00:00",
+  "bin_index": 99,
+  "mesh": 160
+}

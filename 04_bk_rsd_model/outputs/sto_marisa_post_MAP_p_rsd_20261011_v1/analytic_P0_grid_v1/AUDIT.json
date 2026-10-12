@@ -1,0 +1,71 @@
+{
+  "status": "POST_MAP_P_P0_INDEPENDENT_INTEGRATION_COMPLETE",
+  "checks": [
+    {
+      "name": "fiducial_post_P0_postMAPp",
+      "mode": "fNL",
+      "grid_quantiles": [
+        -130.9130478784161,
+        -62.51772412388422,
+        12.02382689008208,
+        95.98631769576706,
+        194.42345326995266
+      ],
+      "grid_sigma": 82.48550467384491,
+      "MCMC_median": 11.456455432349316,
+      "MCMC_minus_grid_median": -0.5673714577327651,
+      "coarse_fine_max_quantile_difference": 0.026966575459823616,
+      "grid_resolution": [
+        801,
+        1001
+      ],
+      "likelihood_sha256": "849849f02c56a4cfeef8913af0bfe20f477d436770f7fa1a4a8d84dc1d53180f",
+      "summary_sha256": "b8365674930ad671b96668f6f5176f76a0e9d6040dc9816aecfa8e25a6cf63b6"
+    },
+    {
+      "name": "LC_p_post_P0_postMAPp",
+      "mode": "fNL",
+      "grid_quantiles": [
+        -34.95836491877081,
+        29.898172055666578,
+        103.31919090950109,
+        188.5477651272411,
+        290.0954811881796
+      ],
+      "grid_sigma": 82.37705192427659,
+      "MCMC_median": 103.06704954262858,
+      "MCMC_minus_grid_median": -0.25214136687250743,
+      "coarse_fine_max_quantile_difference": 0.013392491396558626,
+      "grid_resolution": [
+        801,
+        1001
+      ],
+      "likelihood_sha256": "0ef836977878a8a6e6741e779efdf5f9c0b724a954e53360819add9396e598ce",
+      "summary_sha256": "15aeafe0ea10c47d7745d7478f6a9e293a6bf79b8db2aee3fe21adc7ea715c0a"
+    },
+    {
+      "name": "LC_m_post_P0_postMAPp",
+      "mode": "fNL",
+      "grid_quantiles": [
+        -234.57615397119258,
+        -159.54226741149668,
+        -81.59580679929395,
+        2.638287981469964,
+        98.33228404020998
+      ],
+      "grid_sigma": 84.27724374846122,
+      "MCMC_median": -80.68872757834981,
+      "MCMC_minus_grid_median": 0.9070792209441407,
+      "coarse_fine_max_quantile_difference": 0.018414053678711184,
+      "grid_resolution": [
+        801,
+        1001
+      ],
+      "likelihood_sha256": "074628561b024bc2e435f3e5e9625068b098a2d808dfb2f023563ae6266a0b12",
+      "summary_sha256": "42e9100df72763471dc7d478d6b0c72082f5774b0cae663cd9b86c291e4fc6be"
+    }
+  ],
+  "fixed_p": 1.2494076995227128,
+  "HDF_read": false,
+  "inputs_priors_covariance_MCMC_unmodified": true
+}

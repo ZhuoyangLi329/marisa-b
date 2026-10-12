@@ -1,0 +1,11 @@
+{
+  "probes": 131,
+  "max_white_scaled_error": 4.695716753203593e-14,
+  "C_single": true,
+  "volume_Gpc_h3": 1.0,
+  "independent_prediction_verified": true,
+  "model_data_block": "P_post",
+  "physical_p": 1.2822,
+  "p_origin": "real-space calibrated p",
+  "RSD_p_recalibrated_in_this_run": false
+}

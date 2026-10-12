@@ -1,0 +1,12 @@
+{
+  "state": "ALL500_PRE_POSITIVE_P0_ROWS_READY",
+  "pid": 1880912,
+  "host": "login26",
+  "started_UTC": "2026-10-10T14:49:49.891206+00:00",
+  "CPU_affinity": [
+    12
+  ],
+  "worker_pids": [],
+  "completed_new_rows": 400,
+  "updated_UTC": "2026-10-10T15:37:21.194024+00:00"
+}

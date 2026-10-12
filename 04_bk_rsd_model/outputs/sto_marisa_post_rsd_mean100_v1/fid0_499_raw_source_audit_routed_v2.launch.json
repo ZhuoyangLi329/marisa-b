@@ -1,0 +1,17 @@
+{
+  "host": "login26",
+  "pid": 536207,
+  "command": [
+    "/global/common/software/desi/users/adematti/perlmutter/cosmodesiconda/20260321-1.0.0/conda/bin/python",
+    "-B",
+    "-u",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_sto_post_fid500_payload_complete.py"
+  ],
+  "log": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/fid0_499_raw_source_audit_routed_v2.log",
+  "CPU_affinity": [
+    11
+  ],
+  "new_session": true,
+  "created_UTC": "2026-10-09T11:40:06.888528+00:00",
+  "prior_v1_process_confirmed_absent": 457848
+}

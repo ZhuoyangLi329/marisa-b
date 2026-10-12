@@ -1,0 +1,38 @@
+{
+  "created_UTC": "2026-10-11T04:00:44.917346+00:00",
+  "ten_chains_verified": true,
+  "nine_main_cases": [
+    "fiducial_post_P0_postPcal",
+    "LC_p_post_P0_postPcal",
+    "LC_m_post_P0_postPcal",
+    "fiducial_post_PB_4plus4_k0.08_postPcal",
+    "LC_p_post_PB_4plus4_k0.08_postPcal",
+    "LC_m_post_PB_4plus4_k0.08_postPcal",
+    "fiducial_post_PB_4plus4_k0.14_postPcal",
+    "LC_p_post_PB_4plus4_k0.14_postPcal",
+    "LC_m_post_PB_4plus4_k0.14_postPcal"
+  ],
+  "all_post_P0_positive100_used": true,
+  "main_mean100": true,
+  "C_single500_unaveraged": true,
+  "volume_Gpc_h3": 1.0,
+  "kmax_P": 0.08,
+  "kmax_B": [
+    0.08,
+    0.14
+  ],
+  "PB_physics_plus_noise": [
+    4,
+    4
+  ],
+  "IR": false,
+  "original_main_data_covariance_priors_windows_unchanged": true,
+  "p_is_new_post_calibration_median": true,
+  "accepted_overlap_recorded": true,
+  "old_results_preserved": true,
+  "pre_not_rerun": true,
+  "complete_chain_checks_and_original_sampling_gates": true,
+  "comparison_sha256": "249cccd23390aab1252dcc4c71f5929e8718b24ce41c588f217461755596cc6e",
+  "pdf_sha256": "1847ee93be0c4d34368bd3b1f3f78160bd07cef4f7674012d0447af196f5e763",
+  "visual_PDF_QA_still_required": true
+}

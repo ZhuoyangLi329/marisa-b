@@ -1,0 +1,15 @@
+{
+  "state": "COMPLETE",
+  "host": "login26",
+  "pid": 492652,
+  "starttime_ticks": "147892412",
+  "CPU_affinity": [
+    13
+  ],
+  "started_UTC": "2026-10-10T01:02:57.283321+00:00",
+  "contract_sha256": "f1f01f4e8a9083379a0d462b05b30fc55f15c9653dad9448a6fba0165ae9eb92",
+  "stage": "complete",
+  "elapsed_seconds": 54.736587131163105,
+  "updated_UTC": "2026-10-10T01:03:52.017731+00:00",
+  "b1": 0.501982156429736
+}

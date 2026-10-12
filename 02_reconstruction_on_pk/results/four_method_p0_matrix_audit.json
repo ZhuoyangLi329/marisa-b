@@ -1,0 +1,163 @@
+{
+  "checks": {
+    "baseline_geometry": {
+      "edges_exact": true,
+      "k_close": true,
+      "k_max_abs_difference": 0.0,
+      "nmodes_exact": true,
+      "pass": true
+    },
+    "marisa": {
+      "LC_p_count": 100,
+      "LC_p_mean_range": [
+        19029.58203125,
+        65589.77080078125
+      ],
+      "covariance_condition_number": 353.3898628375315,
+      "covariance_minimum_eigenvalue": 542077.2905702386,
+      "covariance_realizations": [
+        0,
+        499
+      ],
+      "fiducial_count": 500,
+      "fiducial_mean_range": [
+        19080.11487890625,
+        55236.80766015625
+      ],
+      "target_realizations": [
+        0,
+        99
+      ]
+    },
+    "marisa_products": {
+      "all_geometry_pass": true,
+      "count": 600,
+      "maximum_k_difference": 1.043081283569336e-07,
+      "metadata_digest": "dca8dd1563250904cfbe0081a1c4ada4d720af40bf9d88b87209118b529ac3eb"
+    },
+    "pre": {
+      "LC_p_count": 100,
+      "LC_p_mean_range": [
+        19602.5119921875,
+        65692.54201171875
+      ],
+      "covariance_condition_number": 340.39683378169883,
+      "covariance_minimum_eigenvalue": 568353.7964551314,
+      "covariance_realizations": [
+        0,
+        499
+      ],
+      "fiducial_count": 500,
+      "fiducial_mean_range": [
+        19596.14969140625,
+        55469.9212109375
+      ],
+      "target_realizations": [
+        0,
+        99
+      ]
+    },
+    "standard": {
+      "LC_p_count": 100,
+      "LC_p_mean_range": [
+        19044.230546875,
+        65609.998359375
+      ],
+      "covariance_condition_number": 355.44493269933355,
+      "covariance_minimum_eigenvalue": 543982.57811324,
+      "covariance_realizations": [
+        0,
+        499
+      ],
+      "fiducial_count": 500,
+      "fiducial_mean_range": [
+        19076.62688671875,
+        55187.48296484375
+      ],
+      "target_realizations": [
+        0,
+        99
+      ]
+    },
+    "sto_geometry": {
+      "edges_exact": true,
+      "k_close": true,
+      "k_max_abs_difference": 3.725290298461914e-08,
+      "nmodes_exact": true,
+      "pass": true
+    },
+    "sto_marisa": {
+      "LC_p_count": 100,
+      "LC_p_mean_range": [
+        23654.87412109375,
+        85089.4872265625
+      ],
+      "covariance_condition_number": 392.9181397126316,
+      "covariance_minimum_eigenvalue": 789116.5833185466,
+      "covariance_realizations": [
+        0,
+        499
+      ],
+      "fiducial_count": 500,
+      "fiducial_mean_range": [
+        23575.220875,
+        71092.747390625
+      ],
+      "target_realizations": [
+        0,
+        99
+      ]
+    }
+  },
+  "covariance": {
+    "hartlap_12": 0.9739478957915831,
+    "source": "each method's own fNL0 Fid500 single-realization sample covariance",
+    "target_mean_divisor": null,
+    "volume_ratio": 42.875
+  },
+  "created_utc": "2026-08-31T08:10:33.645059+00:00",
+  "inputs": {
+    "P_theory": {
+      "bytes": 2707,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_p0_finite_local_png_lattice_kmax0p08_v1/P0_FINITE_LOCAL_PNG_LATTICE.npz",
+      "sha256": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e"
+    },
+    "baseline": {
+      "bytes": 2299103,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100/matrices/baseline_pre_standard_matrix.npz",
+      "sha256": "3e84d977d595eca55260fceb90836cb181cf69ffd52db2da85156b703cb2365e"
+    },
+    "marisa_manifest": {
+      "bytes": 997590,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/manifests/quijote_halo_z0p5_marisa_p0only_fid500_lcp100_v1/20260831/tasks_all.jsonl",
+      "sha256": "8e3c010c06a67870605514165b4f2c394a5eadfa4c28515b27bfaf2c959037e6"
+    },
+    "runner": {
+      "bytes": 11210,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/aggregate_quijote_halo_z0p5_four_method_p0_fid0_p100.py",
+      "sha256": "8e90c834cb08d80aba9a6279f798c56806710dbba6ad9ca03b52142a2e1e0d51"
+    },
+    "sto_marisa": {
+      "bytes": 2294349,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100/matrices/sto_marisa_matrix.npz",
+      "sha256": "ecd5d495d2f9d1fed516f01162371a865b90275b837724faf93f34732b751278"
+    }
+  },
+  "methods": [
+    "pre",
+    "standard",
+    "marisa",
+    "sto_marisa"
+  ],
+  "output": {
+    "bytes": 133564,
+    "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_pre_std_marisa_sto_marisa_p0only_fid0_p100matched100_mcmc_v1/FOUR_METHOD_P0_MATRIX.npz",
+    "sha256": "8c206fd59404945266108b12366a1d222b57f5b56f44eb6e492536b115e317da"
+  },
+  "schema": "quijote-z0p5-four-method-p0-matrix-v1",
+  "status": "pass",
+  "targets": {
+    "fNL0": "fiducial real0--99 mean",
+    "fNL100": "LC_p real0--99 mean"
+  }
+}

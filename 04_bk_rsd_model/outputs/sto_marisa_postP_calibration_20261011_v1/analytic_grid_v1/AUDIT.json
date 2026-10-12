@@ -1,0 +1,178 @@
+{
+  "status": "SAME_LIKELIHOOD_BOUNDED_SHOT_INDEPENDENT_GRID_COMPLETE",
+  "checks": [
+    {
+      "name": "postP_physical_p_fNLfixed100",
+      "mode": "p_calibration",
+      "grid_quantiles": [
+        0.1677235116119414,
+        0.641979708173442,
+        1.3119287011747325,
+        2.0385024535730816,
+        2.6807355421147414
+      ],
+      "grid_sigma": 0.6595513521669593,
+      "MCMC_median": 1.3079259941635721,
+      "MCMC_minus_grid_median": -0.004002707011160345,
+      "coarse_fine_max_quantile_difference": 1.6646134532560808e-05,
+      "grid_resolution": [
+        801,
+        1001
+      ],
+      "likelihood_sha256": "a9aae0cf76f663315131ad2df81089702a95ab89a99286d6aeff5c93e4da6d20",
+      "summary_sha256": "49357b95ab9d3b12b28f725fe7c3540e89edb7c6337b9fdf2909e3828df1f427"
+    },
+    {
+      "name": "fiducial_post_P0_postPcal",
+      "mode": "fNL",
+      "grid_quantiles": [
+        -137.59887514688782,
+        -65.71135454326009,
+        13.36367889018108,
+        103.72747258024694,
+        211.95366641699798
+      ],
+      "grid_sigma": 88.54875319935287,
+      "MCMC_median": 11.333945957945524,
+      "MCMC_minus_grid_median": -2.0297329322355555,
+      "coarse_fine_max_quantile_difference": 0.014043703976966526,
+      "grid_resolution": [
+        801,
+        1001
+      ],
+      "likelihood_sha256": "849849f02c56a4cfeef8913af0bfe20f477d436770f7fa1a4a8d84dc1d53180f",
+      "summary_sha256": "6014e6099e46f0456ebbb239f604bc1065f059c84dd59179160a13fb075a8de7"
+    },
+    {
+      "name": "fiducial_post_P0_all_available_p",
+      "mode": "fNL",
+      "grid_quantiles": [
+        -137.6183683911176,
+        -65.72050560334762,
+        13.36766937099448,
+        103.7501410482822,
+        212.00560855051128
+      ],
+      "grid_sigma": 88.56650438273964,
+      "MCMC_median": 13.827509984047417,
+      "MCMC_minus_grid_median": 0.4598406130529362,
+      "coarse_fine_max_quantile_difference": 0.014208059898635383,
+      "grid_resolution": [
+        801,
+        1001
+      ],
+      "likelihood_sha256": "849849f02c56a4cfeef8913af0bfe20f477d436770f7fa1a4a8d84dc1d53180f",
+      "summary_sha256": "423acdcb54a6d1bc56322dcdd1c5aaed52f43de8f421253ec4b4bc7ced0b38d5"
+    },
+    {
+      "name": "LC_p_post_P0_postPcal",
+      "mode": "fNL",
+      "grid_quantiles": [
+        -36.529552927033805,
+        32.06827721239279,
+        110.54634043610396,
+        203.00802339948777,
+        314.7282146154541
+      ],
+      "grid_sigma": 88.79221045870445,
+      "MCMC_median": 110.19829930616723,
+      "MCMC_minus_grid_median": -0.34804112993673186,
+      "coarse_fine_max_quantile_difference": 0.027549790957046127,
+      "grid_resolution": [
+        801,
+        1001
+      ],
+      "likelihood_sha256": "0ef836977878a8a6e6741e779efdf5f9c0b724a954e53360819add9396e598ce",
+      "summary_sha256": "2ce4d9575979fd1a1bb2529ce1981773045a8dcfa7d15089420d7ec91c5c09b6"
+    },
+    {
+      "name": "LC_p_post_P0_all_available_p",
+      "mode": "fNL",
+      "grid_quantiles": [
+        -36.534080328643554,
+        32.07461314436741,
+        110.56740061590551,
+        203.05038267235346,
+        314.79921298215174
+      ],
+      "grid_sigma": 88.81068366827674,
+      "MCMC_median": 110.05523735681072,
+      "MCMC_minus_grid_median": -0.5121632590947911,
+      "coarse_fine_max_quantile_difference": 0.027465174092000666,
+      "grid_resolution": [
+        801,
+        1001
+      ],
+      "likelihood_sha256": "0ef836977878a8a6e6741e779efdf5f9c0b724a954e53360819add9396e598ce",
+      "summary_sha256": "8a36efa7d40410e532990f41ca08731db78ec01257e277da37e28eb2257449c4"
+    },
+    {
+      "name": "LC_m_post_P0_postPcal",
+      "mode": "fNL",
+      "grid_quantiles": [
+        -246.4922470850745,
+        -168.15630597988428,
+        -86.13071981558406,
+        3.6238665015759777,
+        107.72159718030805
+      ],
+      "grid_sigma": 89.65568362182574,
+      "MCMC_median": -86.94072992851724,
+      "MCMC_minus_grid_median": -0.8100101129331847,
+      "coarse_fine_max_quantile_difference": 0.02483731603959427,
+      "grid_resolution": [
+        801,
+        1001
+      ],
+      "likelihood_sha256": "074628561b024bc2e435f3e5e9625068b098a2d808dfb2f023563ae6266a0b12",
+      "summary_sha256": "233bf09ba0134d79d9cb91d7092fd7e10f492703e24aba6e864e3215eb9fd966"
+    },
+    {
+      "name": "LC_m_post_P0_all_available_p",
+      "mode": "fNL",
+      "grid_quantiles": [
+        -246.5268540440468,
+        -168.1811248178598,
+        -86.14380198435865,
+        3.626890105497905,
+        107.74989943570533
+      ],
+      "grid_sigma": 89.67141573662137,
+      "MCMC_median": -86.29546030383582,
+      "MCMC_minus_grid_median": -0.15165831947717834,
+      "coarse_fine_max_quantile_difference": 0.02429604142730568,
+      "grid_resolution": [
+        801,
+        1001
+      ],
+      "likelihood_sha256": "074628561b024bc2e435f3e5e9625068b098a2d808dfb2f023563ae6266a0b12",
+      "summary_sha256": "3befb67a5e726c634ac8fd78f2b391fb04faff56777b01a904f11146cb6be3d3"
+    }
+  ],
+  "pairs": [
+    {
+      "truth": "fiducial",
+      "grid_new_minus_old_median": -0.003990480813401476,
+      "grid_new_over_old_sigma": 0.9997995722704596,
+      "new_MCMC_minus_grid_median": -2.0297329322355555
+    },
+    {
+      "truth": "LC_p",
+      "grid_new_minus_old_median": -0.021060179801551726,
+      "grid_new_over_old_sigma": 0.9997919933862767,
+      "new_MCMC_minus_grid_median": -0.34804112993673186
+    },
+    {
+      "truth": "LC_m",
+      "grid_new_minus_old_median": 0.013082168774587899,
+      "grid_new_over_old_sigma": 0.9998245581976554,
+      "new_MCMC_minus_grid_median": -0.8100101129331847
+    }
+  ],
+  "inputs_priors_covariance_and_MCMC_unmodified": true,
+  "HDF_read": false,
+  "source_sha256": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_postP_calibrated_grid_v1.py": "013ed57a677003b2825378a7bd830d3b0aa38d8389f00f3a52b98dba727a9ba2",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_p0_analytic_grid.py": "055f4e14c7f77bda6d86391d7d9c0d0d0073697aec47d0460e9af0e3493e8d52"
+  }
+}

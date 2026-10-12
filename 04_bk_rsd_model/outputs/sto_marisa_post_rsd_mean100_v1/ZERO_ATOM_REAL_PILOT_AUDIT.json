@@ -1,0 +1,170 @@
+{
+  "status": "REAL_PILOT_ZERO_DIAGNOSTIC_RECORDED_NOT_ESTIMATOR_RELEASE",
+  "created_UTC": "2026-10-08T17:26:28.233331+00:00",
+  "new_pilot": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/pilots/fiducial_real000_rec256_meas256_ran30_selfmatched_zeroaudit",
+  "old_matched_pilot": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/pilots/fiducial_real000_rec256_meas256_ran30_selfmatched",
+  "all_original_arrays_bitwise_equal": {
+    "P_weighted_input": true,
+    "P_weighted_input_raw": true,
+    "P_weighted_input_shot": true,
+    "P_weighted_input_k": true,
+    "P_weighted_input_nmodes": true,
+    "P_weighted_input_norm": true,
+    "P_post": true,
+    "P_post_raw": true,
+    "P_post_shot": true,
+    "P_post_k": true,
+    "P_post_nmodes": true,
+    "P_post_norm": true,
+    "B_post": true,
+    "B_post_raw": true,
+    "B_post_shot": true,
+    "B_post_k": true,
+    "B_post_nmodes": true,
+    "B_post_norm": true,
+    "B_post_bincenter_S113_with_TSC_shot": true,
+    "S113_discrete_minus_bincenter": true,
+    "P_edges": true,
+    "B_edges": true
+  },
+  "post_halos_identical": true,
+  "cuts": [
+    {
+      "kmax_B": 0.08,
+      "n_B": 9,
+      "zero_counterfactual_L2_over_B_L2": 0.0009404039396627775,
+      "max_abs_zero_contribution": 2062415.751763086,
+      "maximum_zero_pair_fraction": 0.006802721088435374,
+      "changed_bin_indices": [
+        1,
+        2,
+        3,
+        15,
+        29,
+        42
+      ]
+    },
+    {
+      "kmax_B": 0.1,
+      "n_B": 14,
+      "zero_counterfactual_L2_over_B_L2": 0.0008697960443292824,
+      "max_abs_zero_contribution": 2062415.751763086,
+      "maximum_zero_pair_fraction": 0.006802721088435374,
+      "changed_bin_indices": [
+        1,
+        2,
+        3,
+        4,
+        15,
+        29,
+        42,
+        54
+      ]
+    },
+    {
+      "kmax_B": 0.12,
+      "n_B": 20,
+      "zero_counterfactual_L2_over_B_L2": 0.0008497994712267806,
+      "max_abs_zero_contribution": 2062415.751763086,
+      "maximum_zero_pair_fraction": 0.006802721088435374,
+      "changed_bin_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        15,
+        29,
+        42,
+        54,
+        65
+      ]
+    },
+    {
+      "kmax_B": 0.14,
+      "n_B": 27,
+      "zero_counterfactual_L2_over_B_L2": 0.0008197800399638332,
+      "max_abs_zero_contribution": 2062415.751763086,
+      "maximum_zero_pair_fraction": 0.006802721088435374,
+      "changed_bin_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        15,
+        29,
+        42,
+        54,
+        65,
+        75
+      ]
+    },
+    {
+      "kmax_B": 0.18,
+      "n_B": 35,
+      "zero_counterfactual_L2_over_B_L2": 0.0008109377139856621,
+      "max_abs_zero_contribution": 2062415.751763086,
+      "maximum_zero_pair_fraction": 0.006802721088435374,
+      "changed_bin_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        15,
+        29,
+        42,
+        54,
+        65,
+        75,
+        92
+      ]
+    },
+    {
+      "kmax_B": 0.2,
+      "n_B": 44,
+      "zero_counterfactual_L2_over_B_L2": 0.0008029884808199698,
+      "max_abs_zero_contribution": 2062415.751763086,
+      "maximum_zero_pair_fraction": 0.006802721088435374,
+      "changed_bin_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        15,
+        29,
+        42,
+        54,
+        65,
+        75,
+        92,
+        99
+      ]
+    }
+  ],
+  "largest_kmax020_entry": {
+    "bin_index": 1,
+    "k": [
+      0.01543509867042303,
+      0.033158913254737854
+    ],
+    "B_post": 196694000.0,
+    "zero_shot_contribution": 2062415.751763086,
+    "counterfactual": 198756415.75176308
+  },
+  "old_and_primary_B_changed": false,
+  "binning_and_denominator_changed": false,
+  "whitened_error": null,
+  "p_or_fNL_fit_run": false,
+  "production_estimator_choice_finalized": false,
+  "entry_sha256": "e74aa289fa836f9d468aff8f0f84e13a1a4014efad051ab5f4d46cf186b2c84e",
+  "new_measurement_sha256": "151621fdbb265692062012e48f7f54c2814666c1598c7b6d1619d0321c7c7432"
+}

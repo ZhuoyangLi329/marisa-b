@@ -1,0 +1,28 @@
+{
+  "status": "IR_SIGNAL_INTERPOLATION_ALGORITHM_TESTS_PASS_NOT_PHYSICAL_MODEL_RELEASE",
+  "local_tests_passed": 5,
+  "NERSC_tests_passed": 5,
+  "NERSC_host": "login26",
+  "NERSC_CPU_affinity": [13],
+  "numeric_threads": 1,
+  "sources_sha256": {
+    "code/post_rsd_ir_signal_interpolation.py": "25848cc3d5842df62636448375d0cf7f1fccfe2b1674be2a6648c0c0b0505d93",
+    "code/test_post_rsd_ir_signal_interpolation.py": "430b863f829a606a2e484e28febb832a8c33d89454be0ea0b417877278e1030d"
+  },
+  "verified_algorithm_scope": [
+    "DCT and Clenshaw against independent node-product barycentric interpolation",
+    "5,9,17,33-node convergence for an explicit synthetic nonquartic exponential",
+    "strict fNL quadratic powers and affine native b2/bK2 dependence",
+    "full P+B Cholesky whitening with a nonzero cross block",
+    "explicit fixed physical p, unchanged b1/fNL domains, no extrapolation or release"
+  ],
+  "b1_domain": [0.5, 4.0],
+  "fNL_domain": [-500.0, 500.0],
+  "new_physical_fit_parameters": 0,
+  "physical_p_calibrated": false,
+  "actual_full44_IR_projection_accuracy_verified": false,
+  "STO_stochastic_closure_verified": false,
+  "MCMC_released": false,
+  "goal_completed": false,
+  "note": "Synthetic algorithm tests do not establish a physical IR-B model or production interpolation error. The separately executed original-spectrum low-bin audit preserves this distinction."
+}

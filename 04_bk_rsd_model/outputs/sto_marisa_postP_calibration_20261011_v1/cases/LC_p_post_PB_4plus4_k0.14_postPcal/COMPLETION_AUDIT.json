@@ -1,0 +1,16 @@
+{
+  "name": "LC_p_post_PB_4plus4_k0.14_postPcal",
+  "converged": true,
+  "steps_each_ensemble": 12000,
+  "complete_HDF_priors_gates_quantiles_sigma_thin_replayed": true,
+  "independent_logprob_spots": 512,
+  "max_logprob_error": 2.007283228522283e-13,
+  "summary_sha256": "0d69573244325bd3dbb80d8e6275b375ca26a882ee8d3f02a3cc37e98c76cbfc",
+  "chain_sha256": [
+    "d9ac77ff97d6ce7f5880bcc6d4e200f0a6bb4941e5f3add083864d731596ee9e",
+    "efcca9d40c85ee9d88aa3a40661a9873b3161e6cc5e0c63c301d6aa937b8e403",
+    "a6f735b22a4aa8b2a1efff0b8174dad64a670f4ac785f29f2eff2d72074bdceb",
+    "1bec8757afe043377adb716ec0df3271c1789963c2592a02c13c9d5eaecda36b"
+  ],
+  "created_UTC": "2026-10-11T03:58:18.306578+00:00"
+}

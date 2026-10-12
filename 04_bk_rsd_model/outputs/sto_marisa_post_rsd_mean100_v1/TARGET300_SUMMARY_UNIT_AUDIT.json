@@ -1,0 +1,23 @@
+{
+  "status": "TARGET300_MEAN_AND_SELF_MOMENT_ALGORITHM_TESTS_PASS_NOT_MCMC_RELEASE",
+  "local_tests_passed": 4,
+  "NERSC_tests_passed": 4,
+  "NERSC_host": "login26",
+  "CPU_affinity": [13],
+  "numeric_threads": 1,
+  "sources_sha256": {
+    "code/post_rsd_target300_summary.py": "3ad0889f7328861309a09cbab3c18dc395e4c96f545191515dc97d2dbd984d7a",
+    "code/test_post_rsd_target300_summary.py": "be415fcb0a0114f3a1cf4a6a7075be8f9b96d9267266a020167a5033974891c2"
+  },
+  "scope": [
+    "exact three truths with100 original realization identities each",
+    "original P_input12/P_post12/B44 geometry and P equality across two B definitions",
+    "signed N3 allowed and mean(N2 squared) distinguished from square(mean N2)",
+    "missing duplicate bool identities and invalid moments rejected",
+    "numpy.cov forbidden by an independent test guard"
+  ],
+  "covariance_created": false,
+  "physical_p_calibrated": false,
+  "actual_STO_raw_noise_calibrated": false,
+  "MCMC_released": false
+}

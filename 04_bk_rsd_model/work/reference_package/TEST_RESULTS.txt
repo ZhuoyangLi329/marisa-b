@@ -1,0 +1,75 @@
+MARISA-B tree-level finite-PNG RSD reference validation
+Date: 2026-10-01 (Asia/Taipei)
+
+Scope
+-----
+Standalone Python numerical/scientific oracle for:
+- plane-parallel pre-reconstruction RSD Z1/Z2;
+- finite local PNG through G + f_NL L + f_NL^2 Q;
+- current same-shift/no-linear-RSD-removal post-reconstruction map;
+- adaptive local-PNG reconstruction denominator through f_NL^2;
+- continuum Legendre/Scoccimarro multipoles;
+- Gaussian DESI-style RSD stochastic raw bases;
+- leading pre-reconstruction RSD IR covariance helper.
+
+Environment
+-----------
+Python: 3.13.5
+NumPy: 2.3.5
+pytest: 9.0.2
+
+Commands
+--------
+python -m compileall -q python tests examples
+PYTHONPATH=python python -m pytest tests/python/test_tree_png_rsd_reference.py -q
+PYTHONPATH=python python examples/tree_png_rsd_example.py
+
+Results
+-------
+22 passed in 1.84 s
+compileall: passed
+example: passed
+
+Test coverage
+-------------
+- closed-triangle validation;
+- second-order f_NL polynomial arithmetic and reciprocal;
+- f_growth -> 0 recovery of the current real-space pre model;
+- Gaussian limit against the standard compact/expanded Z1-Z2 formula;
+- nonlinear RSD-mapping cross term with b_phi/M;
+- primordial external-leg RSD factors in L and Q;
+- post reconstruction leaves Z1 unchanged;
+- post Z2 matches the explicit same-shift partition formula;
+- smoothing radius -> infinity returns pre reconstruction;
+- adaptive reconstruction denominator coefficients;
+- full adaptive post coefficients against independent finite differences;
+- simultaneous rotation covariance of triangle and LOS;
+- cyclic leg-permutation invariance;
+- shape/orientation constructor and closure;
+- real-space monopole limit;
+- RSD monopole quadrature convergence;
+- Gaussian RSD stochastic real-space limit;
+- anisotropic pre-RSD IR covariance;
+- explicit separation of bias-only and Kaiser-divided reconstruction;
+- global LOS reversal parity;
+- independent b_phi2 operator behavior;
+- vanishing odd Legendre multipoles in the parity-symmetric global-LOS model.
+
+Example output
+--------------
+oriented pre  (G,L,Q): FinitePngComponents(G=26090112.628420558, L=146503000.81792518, Q=414625108.9414034)
+oriented post (G,L,Q): FinitePngComponents(G=7452130.787898675, L=26041280.692856498, Q=123134764.59479332)
+pre prediction at f_NL=25: 262829358221.45364
+post prediction at f_NL=25: 77617712019.85513
+post monopole (G,L,Q): FinitePngComponents(G=12214452.249647906, L=52040725.289721765, Q=188555102.0383672)
+
+Limitations
+-----------
+- This environment could not clone or build the GitHub repository because
+  github.com was not resolvable from the container.
+- The native C++/GSL/OpenMP repository test suite was not run.
+- This standalone validation does not establish production readiness for a
+  survey likelihood or for post-reconstruction catalogs.
+- No one-loop, GEO-FPT, nonlinear-P input, FoG/counterterm, wide-angle,
+  AP/window, selection, velocity-bias, finite-PNG RSD stochastic closure,
+  post-RSD IR covariance completion, or TriPoSH normalization is claimed.

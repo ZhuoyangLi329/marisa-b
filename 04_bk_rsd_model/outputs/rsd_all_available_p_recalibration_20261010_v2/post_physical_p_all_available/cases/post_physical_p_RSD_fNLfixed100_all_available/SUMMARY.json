@@ -1,0 +1,117 @@
+{
+  "rank_location_split_rhat": [
+    1.0002323406505722,
+    1.000259902711803,
+    1.0002679410264752
+  ],
+  "rank_folded_split_rhat": [
+    1.0001002118794335,
+    1.0001034348128957,
+    1.0000901792272732
+  ],
+  "rank_normalized_split_rhat": [
+    1.0002323406505722,
+    1.000259902711803,
+    1.0002679410264752
+  ],
+  "bulk_ess": [
+    17233.2402908692,
+    16733.749777338708,
+    16274.048293781372
+  ],
+  "tail_ess": [
+    41268.01978279019,
+    38066.96942763285,
+    37664.85289572029
+  ],
+  "gates": {
+    "rhat": true,
+    "other_ESS": true,
+    "length_tau": true,
+    "half_shift": true,
+    "ensemble_spread": true,
+    "acceptance": true,
+    "physical_p_ESS": true
+  },
+  "converged": true,
+  "steps": 6000,
+  "retained_steps": 3000,
+  "length_over_tau": [
+    117.87700711486448,
+    119.8288942867746,
+    117.57866693637713
+  ],
+  "half_median_shift_sigma": [
+    0.020975744255611134,
+    0.025661635946629017,
+    0.02818264212203335
+  ],
+  "ensemble_median_spread_sigma": [
+    0.030025200582893246,
+    0.060791568933262506,
+    0.05954122629588101
+  ],
+  "acceptance": 0.5766119791666666,
+  "quantiles_2p5_16_50_84_97p5": [
+    [
+      0.15884392656665525,
+      1.9708128800402474,
+      -7466.454489610962
+    ],
+    [
+      0.6275091761156134,
+      2.0786793790291647,
+      -4218.864845318006
+    ],
+    [
+      1.3080857859668078,
+      2.1973982995213115,
+      -837.9130078391819
+    ],
+    [
+      2.04895632407398,
+      2.3174538766657293,
+      2492.950809485674
+    ],
+    [
+      2.683648612617559,
+      2.4244138229753895,
+      5532.70691117099
+    ]
+  ],
+  "boundary_mass_each_parameter": [
+    0.012299479166666667,
+    0.0,
+    0.0
+  ],
+  "boundary_mass_note": "prior sensitivity flag, separate from sampler convergence",
+  "prior_sensitive": true,
+  "name": "post_physical_p_RSD_fNLfixed100_all_available",
+  "cosmology": "LC_p",
+  "truth_fNL": 100,
+  "kmax_B": null,
+  "volume_Gpc_h3": 1.0,
+  "case_type": "physical_p_calibration",
+  "parameters": [
+    "physical_p",
+    "b1",
+    "Pshot_residual"
+  ],
+  "chi2_MAP": 0.09125230512844842,
+  "dof": 9,
+  "gof_pvalue": null,
+  "gof_note": "heldout150 mean with unaveraged Fid500 single-box forecast covariance",
+  "P_likelihood": true,
+  "P_derived_b1_prior": false,
+  "elapsed_seconds": 225.32861423492432,
+  "likelihood_sha256": "8df56f1f203c08af2dbe75cf83d020c9d310148cdecd57638aeb724393035889",
+  "physical_p_sigma": 0.6674939803517435,
+  "B_likelihood": false,
+  "calibration_fNL_fixed": 100.0,
+  "fNL_fitted": false,
+  "physical_p_true_value_known": false,
+  "covariance_is_of_mean": false,
+  "covariance_multiplier": 1.0,
+  "calibration_target_count": 150,
+  "kmax_P": 0.08
+}

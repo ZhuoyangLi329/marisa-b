@@ -1,0 +1,8 @@
+{
+  "case": "pre_k0p12",
+  "passed": true,
+  "direct_model_logp_max_error": 9.100276088247483e-12,
+  "posterior_quantile_max_error": 0.0,
+  "diagnostics_reproduced": true,
+  "chain_sha256": "826a3eda3c87b42bf9fdb631c43eecee4658f59688f561ca0f3f4b9fbed5e573"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "NINE_INDEPENDENT_MARKED_CUMULANT_AND_PARTICLE_TESTS_PASS_NOT_STO_CLOSURE",
+  "tests": 9,
+  "test_output": "test_Gaussian_pair_limit_random_cancellation (test_post_rsd_marked_cumulants.MarkedCumulantsTest.test_Gaussian_pair_limit_random_cancellation) ... ok\ntest_finite_uniform_random_by_independent_discrete_coordinates (test_post_rsd_marked_cumulants.MarkedCumulantsTest.test_finite_uniform_random_by_independent_discrete_coordinates) ... ok\ntest_independent_centered_third_fourth_moments (test_post_rsd_marked_cumulants.MarkedCumulantsTest.test_independent_centered_third_fourth_moments) ... ok\ntest_independent_coordinate_derivative_still_required (test_post_rsd_marked_cumulants.MarkedCumulantsTest.test_independent_coordinate_derivative_still_required) ... ok\ntest_independent_parent_labels_reconstruct_all_moments (test_post_rsd_marked_cumulants.MarkedCumulantsTest.test_independent_parent_labels_reconstruct_all_moments) ... ok\ntest_intrinsic_factorial_labels_against_direct_particles (test_post_rsd_marked_cumulants.MarkedCumulantsTest.test_intrinsic_factorial_labels_against_direct_particles) ... ok\ntest_missing_connected_inputs_and_invalid_labels_rejected (test_post_rsd_marked_cumulants.MarkedCumulantsTest.test_missing_connected_inputs_and_invalid_labels_rejected) ... ok\ntest_actual_multirow_connected_assembly_and_finite_random (test_sto_connected_particle_fields.ConnectedParticleFieldsTest.test_actual_multirow_connected_assembly_and_finite_random) ... ok\ntest_direct_particle_modes_weight_powers_and_conjugates (test_sto_connected_particle_fields.ConnectedParticleFieldsTest.test_direct_particle_modes_weight_powers_and_conjugates) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.553s\n\nOK\n",
+  "created_UTC": "2026-10-10T08:36:43.704578+00:00",
+  "host": "login26",
+  "CPU_affinity": [
+    13
+  ],
+  "source_sha256": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_marked_cumulants.py": "721fa3270f518a7262f169325cdf6e2b501bd7dc428835666d6969156ff8d504",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_marked_cumulants.py": "f97b61bdb3d68cdfcf457d9b6c5301150f8e1c6d7f8ce74b5139b0bf128d2e85",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/measure_sto_marked_connected_probes.py": "5ddc9b05d69217b39736df2880502c4d58a2e9c70e7e593fe001bfa7a72e4426",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_sto_connected_particle_fields.py": "cd538a4766e19598601a879213dc7449730cc50455a073be93527b67aaae9918"
+  },
+  "actual_STO_closure": false
+}

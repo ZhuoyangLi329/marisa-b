@@ -1,0 +1,120 @@
+{
+  "status": "ACTUAL3_TRUTHS_FULL_DM_MARKED_FIELDS_AND_GRID_COMPARISON_COMPLETE_NOT_STO_CLOSURE",
+  "created_UTC": "2026-10-10T08:39:42.502610+00:00",
+  "rows": [
+    {
+      "cosmology": "fiducial",
+      "realization": 0,
+      "full_DM_particles_per_mesh": 134217728,
+      "matching_mode_count": 134896,
+      "field_relative_RMS_grid_difference": [
+        5.733925789080484e-05,
+        3.8970870990091047e-05,
+        0.00015468496836705943,
+        0.00014207887821938322,
+        0.00013259845944551814,
+        0.00012991488279835326
+      ],
+      "max_auto_normalized_mixed_spectrum_grid_difference": 3.8981297840333246e-05,
+      "max_operational_RSD_residual_relative_grid_difference": 1.972698759078858e-05,
+      "operational_RSD_residual_range_Mpc_h3": [
+        2145.440303119154,
+        2784.3491567020756
+      ],
+      "weight_square_vs_weight_RSD_matter_cross_ratio_low_k_range": [
+        1.1085287957537495,
+        1.1500888295276028
+      ],
+      "N2_data_self": 3336.7563161008284,
+      "N3_data_self": 11652462.65745907,
+      "covariance_created": false,
+      "pure_stochastic_power_calibrated": false
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 0,
+      "full_DM_particles_per_mesh": 134217728,
+      "matching_mode_count": 134896,
+      "field_relative_RMS_grid_difference": [
+        5.776728269493213e-05,
+        3.929123504377664e-05,
+        0.0001548785704158906,
+        0.0001416383604404062,
+        0.00013234759009995238,
+        0.00013133460858896513
+      ],
+      "max_auto_normalized_mixed_spectrum_grid_difference": 4.031282889316444e-05,
+      "max_operational_RSD_residual_relative_grid_difference": 9.74988926703151e-06,
+      "operational_RSD_residual_range_Mpc_h3": [
+        2182.0735005383685,
+        2935.1285528797307
+      ],
+      "weight_square_vs_weight_RSD_matter_cross_ratio_low_k_range": [
+        1.1140817976135928,
+        1.1513925890642873
+      ],
+      "N2_data_self": 3352.016902806204,
+      "N3_data_self": 11849071.871442087,
+      "covariance_created": false,
+      "pure_stochastic_power_calibrated": false
+    },
+    {
+      "cosmology": "LC_m",
+      "realization": 0,
+      "full_DM_particles_per_mesh": 134217728,
+      "matching_mode_count": 134896,
+      "field_relative_RMS_grid_difference": [
+        5.694424678305046e-05,
+        3.86810548550831e-05,
+        0.00015567996779475732,
+        0.00014234246634194425,
+        0.00013302334041910097,
+        0.0001300717244340771
+      ],
+      "max_auto_normalized_mixed_spectrum_grid_difference": 4.2582777407257736e-05,
+      "max_operational_RSD_residual_relative_grid_difference": 1.2716383382226529e-05,
+      "operational_RSD_residual_range_Mpc_h3": [
+        2084.833158382178,
+        2704.0051909283357
+      ],
+      "weight_square_vs_weight_RSD_matter_cross_ratio_low_k_range": [
+        1.1050613915826861,
+        1.14944617064596
+      ],
+      "N2_data_self": 3333.68957397529,
+      "N3_data_self": 11595546.343428569,
+      "covariance_created": false,
+      "pure_stochastic_power_calibrated": false
+    }
+  ],
+  "immutable_inputs": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/fiducial_real000_m128/RAW_FIELDS_AND_SPECTRA.npz": "e5048a360784f5297f7d5ecb4424dcda22161d15a9d07c69d8a0dbbe165f391f",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/fiducial_real000_m128/REPORT.json": "fa00f3ac26d3139204a76b7e500988d05733ef57291c0b485e2fb18568bcc3d0",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/fiducial_real000_m256/RAW_FIELDS_AND_SPECTRA.npz": "4fb4330e17cce4abe3e63862ad7cf86294bb3cb5d6cf75ee8b2d4a6ded84e799",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/fiducial_real000_m256/REPORT.json": "21c55bdb01f664d6c7fe677b8805d761231ac35ffd3cae897f2356353b448ea1",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/LC_p_real000_m128/RAW_FIELDS_AND_SPECTRA.npz": "eb3e4d880f22fad9498c4a296cbdd85717b3c1b4a70f2634315be82e635e0606",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/LC_p_real000_m128/REPORT.json": "a63eecd83f256dcb25b507cefa0a7ae2c626ab37694b0c826dc0806b4429b176",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/LC_p_real000_m256/RAW_FIELDS_AND_SPECTRA.npz": "3e7dc7b22ffafa308bef284fe9b97d148034276f3c64533cd7b65c32ae8ee883",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/LC_p_real000_m256/REPORT.json": "abf2887c924b26ca3bb2798e55129fece4113424e6be54e0438ea2236c5099ed",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/LC_m_real000_m128/RAW_FIELDS_AND_SPECTRA.npz": "d41363f7df1724527978328b7fb4ad670fc96df7f6f6ede09b5722e307341af4",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/LC_m_real000_m128/REPORT.json": "cf018fdfc181840c643d54beca627c9b2b9cca2473211593078676d758b859ad",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/LC_m_real000_m256/RAW_FIELDS_AND_SPECTRA.npz": "7633a3d0a4e5cddb0de3c730e3145a096cbbe7c3209c88e3d9c805992f005afc",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_rsd_input_spectra_v1/rows/LC_m_real000_m256/REPORT.json": "fe7951af83b5e6f69c795887d288f2170d134054169d22104d5be681e63d5e00"
+  },
+  "independent_spectrum_replay_tolerance": 3e-13,
+  "maximum_independent_spectrum_replay_error": 1.071426149015114e-14,
+  "maximum_auto_normalized_grid_difference": 4.2582777407257736e-05,
+  "grid_comparison_is_diagnostic_not_likelihood_error_bound": true,
+  "source_and_mark_mixed_terms_are_not_replaced_by_single_N2": true,
+  "pure_noise_definition_and_deterministic_nonlinearity_not_separated": true,
+  "single_realization_per_truth_not_ensemble_validation": true,
+  "all44_B_estimator_windows_not_tested_here": true,
+  "connected_and_PNG_noise_validation_complete": false,
+  "finite_shift_or_IR_noise_validation_complete": false,
+  "formal_noise_audit_released": false,
+  "MCMC_started": false,
+  "source_sha256": "f80062b014c982bfca854c5790b2867b41a7e8a804460c083fc706da0b2fddc8",
+  "CPU_affinity": [
+    14
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "status": "INDEPENDENT_ACTUAL300_MARKED_FINITE_RANDOM_CONNECTED_PROBE_REPLAY_PASS_NOT_STO_CLOSURE",
+  "created_UTC": "2026-10-10T09:11:49.951966+00:00",
+  "actual_catalogs": 300,
+  "n_per_truth": 100,
+  "directed_triangles_per_truth": 3,
+  "required_modes": 169,
+  "q_per_probe": 12,
+  "matrix_sha256": "18da8eb56250cab3c6052cb2d0197970e5386621b4a45aa65cb9552507347f58",
+  "producer_report_sha256": "b01cd69e8d9b4693fdfdfe484c7eca828099b991a603de6953aef25289982733",
+  "audit_source_sha256": "3cd4ad0ffa5a71631d936c3db4bde23ed603f8d3d82109040d2fe0c151478235",
+  "source_admission_metadata_verified": true,
+  "max_scaled_error": 6.7233614545821524e-15,
+  "tolerance": 2e-11,
+  "max_conditional_corrected_random_cancellation_error": 2.10983894927373e-16,
+  "max_particle_DFT_conjugate_error": 0.0,
+  "probes": [
+    {
+      "cosmology": "fiducial",
+      "triangle": [
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          -1
+        ],
+        [
+          -3,
+          -5,
+          0
+        ]
+      ],
+      "independent_scaled_error": 2.8471580338821106e-15,
+      "conditional_corrected_random_error": 2.10983894927373e-16,
+      "raw_and_self_finite_random_terms_retained": true,
+      "corrected_pair_third_fourth_physical": [
+        [
+          -5711370780.220581,
+          -2.5191065231479382e-08
+        ],
+        [
+          -275579.38792201504,
+          -8051.631630061072
+        ],
+        [
+          580960894.3739854,
+          -353774616.6105113
+        ]
+      ],
+      "full_corrected_single_box_scatter": 9988687644.064621
+    },
+    {
+      "cosmology": "fiducial",
+      "triangle": [
+        [
+          8,
+          0,
+          4
+        ],
+        [
+          -3,
+          7,
+          -1
+        ],
+        [
+          -5,
+          -7,
+          -3
+        ]
+      ],
+      "independent_scaled_error": 3.043361080064291e-15,
+      "conditional_corrected_random_error": 3.397749282774243e-17,
+      "raw_and_self_finite_random_terms_retained": true,
+      "corrected_pair_third_fourth_physical": [
+        [
+          -1536266865.857762,
+          4.50779019036533e-09
+        ],
+        [
+          -165452.02866626886,
+          -16128.567829416366
+        ],
+        [
+          -61673259.116806895,
+          -291687217.0997725
+        ]
+      ],
+      "full_corrected_single_box_scatter": 5598107925.966446
+    },
+    {
+      "cosmology": "fiducial",
+      "triangle": [
+        [
+          10,
+          2,
+          1
+        ],
+        [
+          -2,
+          9,
+          -3
+        ],
+        [
+          -8,
+          -11,
+          2
+        ]
+      ],
+      "independent_scaled_error": 4.868004987262027e-15,
+      "conditional_corrected_random_error": 1.5062123073337366e-16,
+      "raw_and_self_finite_random_terms_retained": true,
+      "corrected_pair_third_fourth_physical": [
+        [
+          -1058243420.9934508,
+          -7.292398904253427e-10
+        ],
+        [
+          -115272.14682864156,
+          39923.19208985245
+        ],
+        [
+          415776280.2868703,
+          -375643023.79329354
+        ]
+      ],
+      "full_corrected_single_box_scatter": 2831056246.107138
+    },
+    {
+      "cosmology": "LC_p",
+      "triangle": [
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          -1
+        ],
+        [
+          -3,
+          -5,
+          0
+        ]
+      ],
+      "independent_scaled_error": 1.1352279919709326e-15,
+      "conditional_corrected_random_error": 9.716315284505719e-17,
+      "raw_and_self_finite_random_terms_retained": true,
+      "corrected_pair_third_fourth_physical": [
+        [
+          -6423363512.484205,
+          -7.440530846714203e-10
+        ],
+        [
+          -317030.7369335001,
+          3714.10186970637
+        ],
+        [
+          724448682.1769499,
+          -381216988.5009388
+        ]
+      ],
+      "full_corrected_single_box_scatter": 10890948659.064743
+    },
+    {
+      "cosmology": "LC_p",
+      "triangle": [
+        [
+          8,
+          0,
+          4
+        ],
+        [
+          -3,
+          7,
+          -1
+        ],
+        [
+          -5,
+          -7,
+          -3
+        ]
+      ],
+      "independent_scaled_error": 6.7233614545821524e-15,
+      "conditional_corrected_random_error": 3.570238216975962e-17,
+      "raw_and_self_finite_random_terms_retained": true,
+      "corrected_pair_third_fourth_physical": [
+        [
+          -1630682374.8088648,
+          6.800041943133836e-09
+        ],
+        [
+          -151130.80793576292,
+          -11503.627276375599
+        ],
+        [
+          8149857.180185787,
+          -241292284.72648838
+        ]
+      ],
+      "full_corrected_single_box_scatter": 5599958384.4329605
+    },
+    {
+      "cosmology": "LC_p",
+      "triangle": [
+        [
+          10,
+          2,
+          1
+        ],
+        [
+          -2,
+          9,
+          -3
+        ],
+        [
+          -8,
+          -11,
+          2
+        ]
+      ],
+      "independent_scaled_error": 1.5677414992924642e-15,
+      "conditional_corrected_random_error": 1.9135199706174949e-16,
+      "raw_and_self_finite_random_terms_retained": true,
+      "corrected_pair_third_fourth_physical": [
+        [
+          -1097115051.5410388,
+          2.5851341264002135e-09
+        ],
+        [
+          -42229.400273933854,
+          18662.0213351684
+        ],
+        [
+          450180688.2980019,
+          -378357057.0375329
+        ]
+      ],
+      "full_corrected_single_box_scatter": 2953166803.4474597
+    },
+    {
+      "cosmology": "LC_m",
+      "triangle": [
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          -1
+        ],
+        [
+          -3,
+          -5,
+          0
+        ]
+      ],
+      "independent_scaled_error": 3.607770833924161e-15,
+      "conditional_corrected_random_error": 1.1680090954001972e-16,
+      "raw_and_self_finite_random_terms_retained": true,
+      "corrected_pair_third_fourth_physical": [
+        [
+          -5022201891.22793,
+          2.4355297680961423e-09
+        ],
+        [
+          -244320.2621986398,
+          3625.9433941993652
+        ],
+        [
+          467859892.0229349,
+          -386489161.21817786
+        ]
+      ],
+      "full_corrected_single_box_scatter": 9167540274.097597
+    },
+    {
+      "cosmology": "LC_m",
+      "triangle": [
+        [
+          8,
+          0,
+          4
+        ],
+        [
+          -3,
+          7,
+          -1
+        ],
+        [
+          -5,
+          -7,
+          -3
+        ]
+      ],
+      "independent_scaled_error": 5.400017990001671e-16,
+      "conditional_corrected_random_error": 1.4267044512818388e-16,
+      "raw_and_self_finite_random_terms_retained": true,
+      "corrected_pair_third_fourth_physical": [
+        [
+          -1479831970.333813,
+          -1.596220577315697e-09
+        ],
+        [
+          -168761.37724301216,
+          -9636.22443779563
+        ],
+        [
+          -117641392.63330153,
+          -270512327.02621186
+        ]
+      ],
+      "full_corrected_single_box_scatter": 5433845926.231638
+    },
+    {
+      "cosmology": "LC_m",
+      "triangle": [
+        [
+          10,
+          2,
+          1
+        ],
+        [
+          -2,
+          9,
+          -3
+        ],
+        [
+          -8,
+          -11,
+          2
+        ]
+      ],
+      "independent_scaled_error": 3.370381634219176e-15,
+      "conditional_corrected_random_error": 1.8278825217815358e-16,
+      "raw_and_self_finite_random_terms_retained": true,
+      "corrected_pair_third_fourth_physical": [
+        [
+          -1016621006.4876138,
+          -5.2825823379556705e-09
+        ],
+        [
+          -115921.68536250708,
+          41021.70541318127
+        ],
+        [
+          444469858.17508686,
+          -410092980.17510504
+        ]
+      ],
+      "full_corrected_single_box_scatter": 2775118150.226912
+    }
+  ],
+  "covariance_created": false,
+  "data_vectors_changed": false,
+  "pure_noise_separated": false,
+  "all44_full_shell_closure": false,
+  "finite_production_shift_closure": false,
+  "IR_noise_closure": false,
+  "formal_noise_audit_released": false,
+  "MCMC_started": false
+}

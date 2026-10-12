@@ -1,0 +1,64 @@
+{
+  "status": "OBJECTIVE_INCOMPLETE_REQUIRED_INPUT_DEPENDENCY",
+  "created_UTC": "2026-10-08T19:31:23.291286+00:00",
+  "goal_complete": false,
+  "entry_sha256": "72c49bfb82ca8042b0f7e890897f0e1dfc0ccd1d2c475a4040ec9cc23dbaae55",
+  "source_tests": 42,
+  "protected_old_outputs_and_libraries_unchanged": true,
+  "IR_double_grid_independently_recomputed": {
+    "bins": 44,
+    "max_plain_error": 1.4355356607138867e-12,
+    "max_fNL_range_weighted_error": 8.636757266597963e-13,
+    "scope": "one numerical parameter point, not full model or science validation"
+  },
+  "validation_STO_source_counts": {
+    "fiducial": 100,
+    "LC_p": 100,
+    "LC_m": 100
+  },
+  "independent_calibration_P0_count": 150,
+  "physical_p_fit_complete": false,
+  "post_ensemble_and_covariance_complete": false,
+  "post_stochastic_and_statistical_numerical_gates_complete": false,
+  "main_MCMC_required": {
+    "B_only": 18,
+    "P0_only": 3,
+    "P_plus_B": 18
+  },
+  "main_MCMC_completed": 0,
+  "same_data_IR_effect_control_complete": false,
+  "covariance_correct_input_count": 0,
+  "covariance_required_count": 500,
+  "known_alternate_same_recipe_count": 0,
+  "statistics_preserved": {
+    "target_mean_count_per_truth": 100,
+    "covariance_count": 500,
+    "covariance_of_mean": false,
+    "volume_Gpc_h3": 1,
+    "B_kmax_scan": [
+      0.08,
+      0.1,
+      0.12,
+      0.14,
+      0.18,
+      0.2
+    ],
+    "P_kmax": 0.08
+  },
+  "required_next_input": "fiducial1000..1499 DM or matching matter-assisted GSR2 STO cache path; otherwise explicit authority for a revised data/sample plan",
+  "not_authorized_or_performed": [
+    "fewer covariance mocks",
+    "different covariance ICs",
+    "halo-only substitution",
+    "large new data acquisition",
+    "covariance averaging"
+  ],
+  "evidence_hashes": {
+    "SOURCE_AUDIT.json": "8c1536027b2dcea3eb4d6acac5ae546477bdff64a5b63b84224221e0192c2992",
+    "VALIDATION_SOURCE_AUDIT.json": "619b49bffab543c9e0686a37bbf1c6966f7a97cc9e7470bd1bf64c2c6b37541b",
+    "calibration_holdout_p0/HOLDOUT_COMPLETION_AUDIT.json": "618ae02923118966f5c584630ed71429ff7438b25211dc0f76e7d91f82e9f14b",
+    "ir_full_registry_audit/REGISTRY_AUDIT.json": "0e6fd91917dbd283345888599b263ab95956ebe3484821e7c650acdf7d835754",
+    "COVARIANCE_INPUT_RECHECK.json": "1f65ede2588c8525fbcd460d30f91ebfef43693526c335537442d78aacca24bf",
+    "IR_PNG_TRUNCATION_DIAGNOSTIC.json": "a0cbf87cf93e0df5d336270f087379f61a13e05d732c179f0b0b9dabd0d8f0ab"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "pid": 1946804,
+  "host": "login26",
+  "stage": "pre",
+  "state": "ALL_AVAILABLE_PHYSICAL_P_TRIAL_FINISHED_REVIEW_CHAIN",
+  "started_UTC": "2026-10-10T15:37:22.881370+00:00",
+  "CPU_affinity": [
+    13
+  ],
+  "updated_UTC": "2026-10-10T15:40:52.297772+00:00",
+  "converged": true,
+  "calibration_target_count": 500,
+  "physical_p_median": 1.1551560180012217
+}

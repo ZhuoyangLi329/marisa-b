@@ -1,0 +1,22 @@
+{
+  "replaced_PID": 1886272,
+  "old_state": {
+    "pid": 1886272,
+    "host": "login26",
+    "CPU_affinity": [
+      13
+    ],
+    "started_UTC": "2026-10-10T14:51:17.489485+00:00",
+    "state": "WAITING_FOR_ACTUAL_ALL500_PRE_MEASUREMENTS_AND_POST_PCAL_EXIT",
+    "entry_sha256": "aca08a705db39d83c3924730b28d7a803f4226f2c3dbcc9fd50d5dc50e794f0d",
+    "calibration_entry_sha256": "ab8a579a837de55f147f1a4606070dfd5470465f21036e0d39e7c21d18875816",
+    "updated_UTC": "2026-10-10T15:06:27.839819+00:00",
+    "measured_new_rows": 137,
+    "post_calibration_state": "ALL_AVAILABLE_PHYSICAL_P_TRIAL_FINISHED_REVIEW_CHAIN"
+  },
+  "old_cmdline": "/global/common/software/desi/users/adematti/perlmutter/cosmodesiconda/20260321-1.0.0/conda/bin/python -B -u /pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/continue_all_available_pre_pcal_v1.py ",
+  "old_proc_stat": "1886272 (python) S 1 1886272 1886272 0 -1 4194304 36902 247 0 0 212 84 0 0 20 0 1 0 152861943 506331136 34816 18446744073709551615 94895116595200 94895119012877 140726248097648 0 0 0 0 16781312 2 1 0 0 17 13 0 0 0 0 0 94895120445008 94895122423664 94895122432000 140726248105336 140726248105543 140726248105543 140726248132498 0\n",
+  "created_UTC": "2026-10-10T15:06:29.878870+00:00",
+  "reason": "fix actual summary save callback before all500pre calibration; no science or measurement change",
+  "old_waiter_actually_exited": true
+}

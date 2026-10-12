@@ -1,0 +1,7 @@
+{
+  "source_root": "/pscratch/sd/l/lzy/reconstruction-png",
+  "destination": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk",
+  "scope": ["P0 extraction", "Fiducial bias fit", "four-method P0-only MCMC", "independent audit", "direct PDF figures"],
+  "excluded": ["raw simulation", "posterior chains", "large NPZ matrices", "old one-loop branches", "unrelated B-only analyses", "PNG figures"],
+  "original_unchanged": true
+}

@@ -1,0 +1,9 @@
+{
+  "pid": 1509596,
+  "host": "login26",
+  "CPU_affinity": [
+    12
+  ],
+  "created_UTC": "2026-10-10T13:36:45.140029+00:00",
+  "log": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/diagnostic_three_noise_prepost_k008_v1.log"
+}

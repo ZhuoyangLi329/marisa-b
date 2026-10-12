@@ -1,0 +1,848 @@
+{
+  "status": "HIGHER_ORDER_IR_PNG_SENSITIVITY_RECORDED_NOT_MODEL_ACCEPTANCE",
+  "created_UTC": "2026-10-08T18:56:22.890505+00:00",
+  "triangles_integer": [
+    [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        30,
+        0,
+        3
+      ],
+      [
+        -31,
+        0,
+        -3
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        30,
+        3
+      ],
+      [
+        0,
+        -30,
+        -4
+      ]
+    ],
+    [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        30
+      ],
+      [
+        -1,
+        0,
+        -30
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        30
+      ],
+      [
+        0,
+        0,
+        -31
+      ]
+    ],
+    [
+      [
+        -12,
+        2,
+        -13
+      ],
+      [
+        -20,
+        -9,
+        0
+      ],
+      [
+        32,
+        7,
+        13
+      ]
+    ],
+    [
+      [
+        -9,
+        -2,
+        -2
+      ],
+      [
+        17,
+        -13,
+        -7
+      ],
+      [
+        -8,
+        15,
+        9
+      ]
+    ],
+    [
+      [
+        0,
+        18,
+        -10
+      ],
+      [
+        11,
+        -22,
+        18
+      ],
+      [
+        -11,
+        4,
+        -8
+      ]
+    ],
+    [
+      [
+        14,
+        -10,
+        -1
+      ],
+      [
+        -5,
+        9,
+        22
+      ],
+      [
+        -9,
+        1,
+        -21
+      ]
+    ],
+    [
+      [
+        0,
+        -5,
+        0
+      ],
+      [
+        -4,
+        1,
+        15
+      ],
+      [
+        4,
+        4,
+        -15
+      ]
+    ],
+    [
+      [
+        -12,
+        -11,
+        -21
+      ],
+      [
+        22,
+        -17,
+        13
+      ],
+      [
+        -10,
+        28,
+        8
+      ]
+    ],
+    [
+      [
+        7,
+        -16,
+        -19
+      ],
+      [
+        -8,
+        13,
+        17
+      ],
+      [
+        1,
+        3,
+        2
+      ]
+    ],
+    [
+      [
+        -13,
+        6,
+        3
+      ],
+      [
+        18,
+        -14,
+        -8
+      ],
+      [
+        -5,
+        8,
+        5
+      ]
+    ],
+    [
+      [
+        17,
+        11,
+        22
+      ],
+      [
+        1,
+        5,
+        8
+      ],
+      [
+        -18,
+        -16,
+        -30
+      ]
+    ],
+    [
+      [
+        -1,
+        11,
+        5
+      ],
+      [
+        -15,
+        -22,
+        11
+      ],
+      [
+        16,
+        11,
+        -16
+      ]
+    ],
+    [
+      [
+        -14,
+        21,
+        -15
+      ],
+      [
+        -21,
+        4,
+        20
+      ],
+      [
+        35,
+        -25,
+        -5
+      ]
+    ],
+    [
+      [
+        -6,
+        -25,
+        1
+      ],
+      [
+        -3,
+        7,
+        11
+      ],
+      [
+        9,
+        18,
+        -12
+      ]
+    ],
+    [
+      [
+        10,
+        11,
+        9
+      ],
+      [
+        2,
+        22,
+        6
+      ],
+      [
+        -12,
+        -33,
+        -15
+      ]
+    ],
+    [
+      [
+        12,
+        21,
+        7
+      ],
+      [
+        -24,
+        -3,
+        6
+      ],
+      [
+        12,
+        -18,
+        -13
+      ]
+    ],
+    [
+      [
+        -1,
+        -10,
+        17
+      ],
+      [
+        -19,
+        13,
+        -2
+      ],
+      [
+        20,
+        -3,
+        -15
+      ]
+    ],
+    [
+      [
+        8,
+        9,
+        -18
+      ],
+      [
+        -21,
+        3,
+        -2
+      ],
+      [
+        13,
+        -12,
+        20
+      ]
+    ],
+    [
+      [
+        -20,
+        -11,
+        -22
+      ],
+      [
+        -1,
+        2,
+        13
+      ],
+      [
+        21,
+        9,
+        9
+      ]
+    ],
+    [
+      [
+        -7,
+        13,
+        -18
+      ],
+      [
+        -14,
+        20,
+        7
+      ],
+      [
+        21,
+        -33,
+        11
+      ]
+    ],
+    [
+      [
+        4,
+        5,
+        -14
+      ],
+      [
+        -11,
+        -15,
+        -19
+      ],
+      [
+        7,
+        10,
+        33
+      ]
+    ],
+    [
+      [
+        -10,
+        -16,
+        -1
+      ],
+      [
+        5,
+        25,
+        10
+      ],
+      [
+        5,
+        -9,
+        -9
+      ]
+    ],
+    [
+      [
+        19,
+        5,
+        14
+      ],
+      [
+        -10,
+        0,
+        15
+      ],
+      [
+        -9,
+        -5,
+        -29
+      ]
+    ],
+    [
+      [
+        -2,
+        9,
+        -21
+      ],
+      [
+        -20,
+        8,
+        7
+      ],
+      [
+        22,
+        -17,
+        14
+      ]
+    ],
+    [
+      [
+        22,
+        18,
+        -2
+      ],
+      [
+        20,
+        14,
+        10
+      ],
+      [
+        -42,
+        -32,
+        -8
+      ]
+    ],
+    [
+      [
+        11,
+        -1,
+        9
+      ],
+      [
+        8,
+        -6,
+        9
+      ],
+      [
+        -19,
+        7,
+        -18
+      ]
+    ],
+    [
+      [
+        16,
+        -5,
+        16
+      ],
+      [
+        16,
+        23,
+        -13
+      ],
+      [
+        -32,
+        -18,
+        -3
+      ]
+    ],
+    [
+      [
+        -14,
+        -13,
+        -18
+      ],
+      [
+        9,
+        -18,
+        -15
+      ],
+      [
+        5,
+        31,
+        33
+      ]
+    ],
+    [
+      [
+        23,
+        7,
+        8
+      ],
+      [
+        23,
+        -3,
+        -1
+      ],
+      [
+        -46,
+        -4,
+        -7
+      ]
+    ],
+    [
+      [
+        -5,
+        6,
+        8
+      ],
+      [
+        -13,
+        14,
+        -25
+      ],
+      [
+        18,
+        -20,
+        17
+      ]
+    ]
+  ],
+  "rows": [
+    {
+      "b1": 0.5,
+      "p_halo_probe": 1.31,
+      "fNL": -500.0,
+      "max_absolute_damping_factor_difference": 0.0032505638741673337,
+      "minimum_quadratic_damping_factor": 0.23368597067243504,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 0.0014725680524083928,
+      "total_B_difference_L2_over_source_scale_L2": 0.0013637863572732334,
+      "largest_difference_triangle_index": 3,
+      "largest_difference_B_strict": 260093875.9700396,
+      "largest_difference_B_unexpanded_exponent": 261770556.24969262
+    },
+    {
+      "b1": 0.5,
+      "p_halo_probe": 1.31,
+      "fNL": -100.0,
+      "max_absolute_damping_factor_difference": 2.4661924886149045e-05,
+      "minimum_quadratic_damping_factor": 0.18545554274845322,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 7.719947445288258e-05,
+      "total_B_difference_L2_over_source_scale_L2": 3.516813308635366e-05,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": 11878189.940857714,
+      "largest_difference_B_unexpanded_exponent": 11880160.675247137
+    },
+    {
+      "b1": 0.5,
+      "p_halo_probe": 1.31,
+      "fNL": 0.0,
+      "max_absolute_damping_factor_difference": 0.0,
+      "minimum_quadratic_damping_factor": 0.17403894611183007,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 0.0,
+      "total_B_difference_L2_over_source_scale_L2": 0.0,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": 8281818.454972953,
+      "largest_difference_B_unexpanded_exponent": 8281818.454972953
+    },
+    {
+      "b1": 0.5,
+      "p_halo_probe": 1.31,
+      "fNL": 10.0,
+      "max_absolute_damping_factor_difference": 2.4208138382775246e-08,
+      "minimum_quadratic_damping_factor": 0.17291138867574393,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 1.779635394849152e-07,
+      "total_B_difference_L2_over_source_scale_L2": 4.762586160628682e-08,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": 7429864.127980379,
+      "largest_difference_B_unexpanded_exponent": 7429862.124312332
+    },
+    {
+      "b1": 0.5,
+      "p_halo_probe": 1.31,
+      "fNL": 20.0,
+      "max_absolute_damping_factor_difference": 1.9332248835102206e-07,
+      "minimum_quadratic_damping_factor": 0.17178639528103531,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 1.2906703552585345e-06,
+      "total_B_difference_L2_over_source_scale_L2": 3.682172188869523e-07,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": 6488397.586732515,
+      "largest_difference_B_unexpanded_exponent": 6488381.534545749
+    },
+    {
+      "b1": 0.5,
+      "p_halo_probe": 1.31,
+      "fNL": 100.0,
+      "max_absolute_damping_factor_difference": 2.3813827983332203e-05,
+      "minimum_quadratic_damping_factor": 0.16287875361295584,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 7.946342660652186e-05,
+      "total_B_difference_L2_over_source_scale_L2": 3.483198699776124e-05,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": -4265774.4564408455,
+      "largest_difference_B_unexpanded_exponent": -4267802.984596311
+    },
+    {
+      "b1": 0.5,
+      "p_halo_probe": 1.31,
+      "fNL": 500.0,
+      "max_absolute_damping_factor_difference": 0.0027323843132245895,
+      "minimum_quadratic_damping_factor": 0.12080202499494812,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 0.0014016285625424393,
+      "total_B_difference_L2_over_source_scale_L2": 0.0013008894925252018,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": -143968360.35738638,
+      "largest_difference_B_unexpanded_exponent": -144232865.93295807
+    },
+    {
+      "b1": 2.2280546353635335,
+      "p_halo_probe": 1.31,
+      "fNL": -500.0,
+      "max_absolute_damping_factor_difference": 0.00375260139759348,
+      "minimum_quadratic_damping_factor": 0.5297111193418954,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 0.0029053844838323696,
+      "total_B_difference_L2_over_source_scale_L2": 0.002228858824804866,
+      "largest_difference_triangle_index": 3,
+      "largest_difference_B_strict": -192766378.14054582,
+      "largest_difference_B_unexpanded_exponent": -216820749.44167024
+    },
+    {
+      "b1": 2.2280546353635335,
+      "p_halo_probe": 1.31,
+      "fNL": -100.0,
+      "max_absolute_damping_factor_difference": 2.8175194071500265e-05,
+      "minimum_quadratic_damping_factor": 0.6149614806845599,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 5.745912479441341e-05,
+      "total_B_difference_L2_over_source_scale_L2": 4.4435915204106826e-05,
+      "largest_difference_triangle_index": 3,
+      "largest_difference_B_strict": 1162828751.0325136,
+      "largest_difference_B_unexpanded_exponent": 1162652873.475014
+    },
+    {
+      "b1": 2.2280546353635335,
+      "p_halo_probe": 1.31,
+      "fNL": 0.0,
+      "max_absolute_damping_factor_difference": 0.0,
+      "minimum_quadratic_damping_factor": 0.631027764738942,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 0.0,
+      "total_B_difference_L2_over_source_scale_L2": 0.0,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": 376369183.06594014,
+      "largest_difference_B_unexpanded_exponent": 376369183.06594014
+    },
+    {
+      "b1": 2.2280546353635335,
+      "p_halo_probe": 1.31,
+      "fNL": 10.0,
+      "max_absolute_damping_factor_difference": 2.7534777791160536e-08,
+      "minimum_quadratic_damping_factor": 0.6325828816755074,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 7.495946043807678e-08,
+      "total_B_difference_L2_over_source_scale_L2": 5.475623590644009e-08,
+      "largest_difference_triangle_index": 3,
+      "largest_difference_B_strict": 1933880073.4632986,
+      "largest_difference_B_unexpanded_exponent": 1933880244.0057116
+    },
+    {
+      "b1": 2.2280546353635335,
+      "p_halo_probe": 1.31,
+      "fNL": 20.0,
+      "max_absolute_damping_factor_difference": 2.1979063513644093e-07,
+      "minimum_quadratic_damping_factor": 0.63412863289046,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 5.775385151385386e-07,
+      "total_B_difference_L2_over_source_scale_L2": 4.2565868507229104e-07,
+      "largest_difference_triangle_index": 3,
+      "largest_difference_B_strict": 2012494635.65023,
+      "largest_difference_B_unexpanded_exponent": 2012495995.9808085
+    },
+    {
+      "b1": 2.2280546353635335,
+      "p_halo_probe": 1.31,
+      "fNL": 100.0,
+      "max_absolute_damping_factor_difference": 2.6970240604162754e-05,
+      "minimum_quadratic_damping_factor": 0.6461574766320031,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 5.4211895475802464e-05,
+      "total_B_difference_L2_over_source_scale_L2": 4.189467241494262e-05,
+      "largest_difference_triangle_index": 3,
+      "largest_difference_B_strict": 2692525057.6686554,
+      "largest_difference_B_unexpanded_exponent": 2692690995.7298045
+    },
+    {
+      "b1": 2.2280546353635335,
+      "p_halo_probe": 1.31,
+      "fNL": 500.0,
+      "max_absolute_damping_factor_difference": 0.0030070477581973787,
+      "minimum_quadratic_damping_factor": 0.6973106025910387,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 0.002159843491946019,
+      "total_B_difference_L2_over_source_scale_L2": 0.0016613555895692515,
+      "largest_difference_triangle_index": 3,
+      "largest_difference_B_strict": 7455715155.040162,
+      "largest_difference_B_unexpanded_exponent": 7473597014.600125
+    },
+    {
+      "b1": 4.0,
+      "p_halo_probe": 1.31,
+      "fNL": -500.0,
+      "max_absolute_damping_factor_difference": 0.16257132006975028,
+      "minimum_quadratic_damping_factor": 0.7435562516470413,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 0.017019364963991996,
+      "total_B_difference_L2_over_source_scale_L2": 0.012873109343560807,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": -10998531034.544306,
+      "largest_difference_B_unexpanded_exponent": -10377311328.178913
+    },
+    {
+      "b1": 4.0,
+      "p_halo_probe": 1.31,
+      "fNL": -100.0,
+      "max_absolute_damping_factor_difference": 0.00146324080229554,
+      "minimum_quadratic_damping_factor": 0.6190593239241421,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 0.0021973341430016895,
+      "total_B_difference_L2_over_source_scale_L2": 0.0007196922112828645,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": 630859159.2344491,
+      "largest_difference_B_unexpanded_exponent": 638934349.4855496
+    },
+    {
+      "b1": 4.0,
+      "p_halo_probe": 1.31,
+      "fNL": 0.0,
+      "max_absolute_damping_factor_difference": 0.0,
+      "minimum_quadratic_damping_factor": 0.530295589757675,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 0.0,
+      "total_B_difference_L2_over_source_scale_L2": 0.0,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": 718277858.1674534,
+      "largest_difference_B_unexpanded_exponent": 718277858.1674534
+    },
+    {
+      "b1": 4.0,
+      "p_halo_probe": 1.31,
+      "fNL": 10.0,
+      "max_absolute_damping_factor_difference": 1.4404264860878868e-06,
+      "minimum_quadratic_damping_factor": 0.521084690694706,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 7.835520180669662e-06,
+      "total_B_difference_L2_over_source_scale_L2": 1.2828867092570595e-06,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": 664981293.3714968,
+      "largest_difference_B_unexpanded_exponent": 664972594.0088124
+    },
+    {
+      "b1": 4.0,
+      "p_halo_probe": 1.31,
+      "fNL": 20.0,
+      "max_absolute_damping_factor_difference": 1.1496048627823718e-05,
+      "minimum_quadratic_damping_factor": 0.511812968786951,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 5.3525835062126374e-05,
+      "total_B_difference_L2_over_source_scale_L2": 9.923079843304988e-06,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": 600405013.1774935,
+      "largest_difference_B_unexpanded_exponent": 600335014.1124446
+    },
+    {
+      "b1": 4.0,
+      "p_halo_probe": 1.31,
+      "fNL": 100.0,
+      "max_absolute_damping_factor_difference": 0.001402341406843366,
+      "minimum_quadratic_damping_factor": 0.4354495711126201,
+      "negative_quadratic_damping_leg_count": 0,
+      "max_total_B_difference_over_fixed_source_scale": 0.002480287364859908,
+      "total_B_difference_L2_over_source_scale_L2": 0.0009058510974194875,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": -322274982.7042159,
+      "largest_difference_B_unexpanded_exponent": -331390024.4071058
+    },
+    {
+      "b1": 4.0,
+      "p_halo_probe": 1.31,
+      "fNL": 500.0,
+      "max_absolute_damping_factor_difference": 0.1376884436349518,
+      "minimum_quadratic_damping_factor": -0.00475734825347714,
+      "negative_quadratic_damping_leg_count": 1,
+      "max_total_B_difference_over_fixed_source_scale": 0.03385762980798612,
+      "total_B_difference_L2_over_source_scale_L2": 0.029211317654162405,
+      "largest_difference_triangle_index": 0,
+      "largest_difference_B_strict": -15764201744.23763,
+      "largest_difference_B_unexpanded_exponent": -17000030865.479525
+    }
+  ],
+  "fixed_reconstruction_changed": false,
+  "physical_p_calibrated": false,
+  "production_model_changed": false,
+  "full_exponential_is_partial_higher_order_reference_only": true,
+  "whitened_error": null,
+  "fNL_bias": null,
+  "actual_estimator_projection_test": false,
+  "scope": "one no-wiggle split and fixed reconstruction; three b1 probes, 32 closed oriented triangles; Gaussian long modes",
+  "spectrum": {
+    "physical_table": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+    "physical_sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb",
+    "no_wiggle_split": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/spectrum_split_s0.25.npz",
+    "no_wiggle_sha256": "df105acc326fd4cbe365a06902151063af8a5bfd757396ed7bfab8717a38922f",
+    "no_wiggle_metadata_sha256": "9f688ab56f776209a05fc451a6ce3a84d62bfd7893c53e421d93a9a06fe2b958",
+    "recipe": "Gaussian Eisenstein-Hu ratio, Quijote fiducial, 8192 log nodes, 4-sigma kernel",
+    "smoothing_lambda_ln_k": 0.25,
+    "redshift": 0.5,
+    "physical_P_M_unchanged": true
+  },
+  "CPU_affinity": [
+    7
+  ],
+  "entry_sha256": "7a7337a96bba2ef9fc81e9f0ea23fd937ad1ead6e20610129caffbd6128280df"
+}

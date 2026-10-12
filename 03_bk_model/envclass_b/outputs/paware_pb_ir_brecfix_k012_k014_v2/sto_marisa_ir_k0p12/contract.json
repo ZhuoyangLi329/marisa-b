@@ -1,0 +1,301 @@
+{
+  "method": "sto_marisa",
+  "kmax_B": 0.12,
+  "kmax_P": 0.08,
+  "volume": 42.875,
+  "p_halo": 1.2822,
+  "p_fixed_not_marginalized": true,
+  "truth_fNL": 100,
+  "n_target": 250,
+  "n_fid": 500,
+  "parameter_names": [
+    "fNL",
+    "b1",
+    "Pshot",
+    "b2",
+    "gamma2",
+    "Ashot_residual",
+    "Bshot_residual"
+  ],
+  "full_PB_cross_covariance": true,
+  "cross_correlation_max": 0.3449221104120484,
+  "hartlap": 0.9338677354709419,
+  "IR_resummation": true,
+  "Gaussian_discrepancy": false,
+  "polynomial_max_whitened_error": 5.466396248607531e-11,
+  "reference_data_chi2_parity": 0.0,
+  "reference_MINOS": {
+    "gof_p_value_data_only": 0.71866868490747,
+    "note": "new MAP GoF; no new MINOS interval is claimed"
+  },
+  "original_runner_sha256": "357a9e973055770a3c90337d7b749ae14cb7f70739b6d1f02a691ddb52569527",
+  "runner_sha256": "c94de56c549a48d7a435a8eef999ef7b6b90200df84a08b571a013836db0a3a8",
+  "prior_weight": 0.04,
+  "calibration_uncertainty_propagated": false,
+  "fid_covariance_note": "\u6cbf\u7528\u73b0\u884c\u51bb\u7ed3 Fid500\uff1bSTO target \u4e3a p-aware matched250",
+  "sampling": {
+    "ensembles": 4,
+    "walkers": 32,
+    "initial_steps": 6000,
+    "max_steps": 20000,
+    "burn_fraction": 0.5
+  },
+  "map": {
+    "fNL": 102.07421851079398,
+    "b1": 2.1999719850014534,
+    "Pshot": -2248.351001782086,
+    "b2": 0.5787198406128368,
+    "gamma2": -0.22396312205646499,
+    "Ashot_residual": -0.2969647449444892,
+    "Bshot_residual": -0.48453814359709213
+  },
+  "map_objective": 20.532140153108994,
+  "likelihood_sha256": "b33003670a537cef1ad8ee7bdf71fe3b9bb7c77b657a90654abfc2cc0f5d1a40",
+  "case": "sto_marisa_ir_k0p12",
+  "baseline_reconstruction_corrected": true,
+  "reconstruction": {
+    "b_rec": 2.2280546353635335,
+    "p_rec": 1.2822,
+    "p_halo": 1.2822,
+    "old_cache_b_rec": 1.9326526728794324,
+    "raw_shift_multiplier": 0.8674170921145734,
+    "correction": "exact analytic 1/b_rec rescaling of G b1^4, PNG L/Q reconstruction, and all three adaptive raw bases",
+    "reconstruction_parameter_path": "f_rec=f (inherited legacy theoretical path)",
+    "catalogue_f_rec": 100.0,
+    "scope_warning": "controlled legacy-path comparison; not fixed-nonzero-f_rec inference",
+    "stochastic_closure": "legacy_accepted_pre retained; no added shift-noise damping"
+  },
+  "baseline_contract": "32d10a6b06ef396147ca973116a2e8a76d7249c64bd000262e19dfc1b55ba3d1",
+  "baseline_likelihood_sha256": "12f1d501772c438c0ede3d7b704dd5e3950e5fe48468d8c259a91ca0d13ade08",
+  "unchanged_arrays": {
+    "target": true,
+    "covariance": true,
+    "chol": true,
+    "prior_mean": true,
+    "prior_whitener": true,
+    "bounds": true,
+    "indices": true
+  },
+  "polynomial_degree": 32,
+  "map_data_chi2": 20.526920387123315,
+  "map_prior_chi2": 0.005219765985679397,
+  "corrected_model_sha256": "6d6410ce3aa04af73b412b688d1ee1bd18ff9445981f89e35790ae2df87c613e",
+  "old_reference_MINOS": {
+    "case": "sto_marisa",
+    "kmax_h_mpc": 0.12,
+    "ndata": 32,
+    "n_fid": 500,
+    "n_target": 250,
+    "map_fNL": 103.10262735333426,
+    "minos_fNL": {
+      "lower": -7.218592663362759,
+      "upper": 7.349611595041038,
+      "valid": true
+    },
+    "map": {
+      "fNL": 103.10262735333426,
+      "b1": 2.1948118894421897,
+      "Pshot": -2100.3720672360855,
+      "b2": 1.2095037765911267,
+      "gamma2": 0.016824769741851254,
+      "Ashot_residual": -1.5442252322181957,
+      "Bshot_residual": -0.4882494189105273
+    },
+    "data_chi2": 27.554714164320607,
+    "dof": 25,
+    "gof_p_value_data_only": 0.3287550036959344,
+    "hartlap": 0.9338677354709419
+  },
+  "IR_contract": {
+    "status": "pass",
+    "method": "sto_marisa",
+    "b_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      29,
+      30,
+      31,
+      32,
+      33,
+      42,
+      43,
+      44,
+      45,
+      54,
+      55,
+      56,
+      65,
+      66,
+      75
+    ],
+    "quadrature_max_whitened_component": 0.00010224520692239965,
+    "quadrature_max_whitened_norm": 0.00014585408127447386,
+    "interpolation_max_whitened_component": 1.7375790662879759e-12,
+    "quadrature_tolerance_component": 0.05,
+    "quadrature_tolerance_norm": 0.1,
+    "interpolation_tolerance": 1e-05,
+    "production_projection": "fine",
+    "post_orders": {
+      "primary": [
+        4,
+        32,
+        4,
+        3,
+        4
+      ],
+      "fine": [
+        6,
+        48,
+        4,
+        4,
+        4
+      ]
+    },
+    "pre_orders": {
+      "primary": [
+        4,
+        80
+      ],
+      "fine": [
+        6,
+        120
+      ]
+    },
+    "model": "strict O(Pw), O(fNL^2), Gaussian linear displacement; P and B both resummed",
+    "anchor": "corrected inherited fixed-order model + same-node (strict IR - full fixed-order) difference",
+    "IR_off": "original full fixed order; strict Sigma=0 still differs by O(Pw^2)",
+    "variance_contract": {
+      "status": "pass",
+      "independent_native_holdout": [
+        {
+          "b1": 0.13,
+          "max_variance_error_fnl_bound300": 1.1741297419048816e-09
+        },
+        {
+          "b1": 1.93,
+          "max_variance_error_fnl_bound300": 9.191193881700713e-10
+        },
+        {
+          "b1": 2.2280546353635335,
+          "max_variance_error_fnl_bound300": 8.988858856385219e-10
+        },
+        {
+          "b1": 5.1,
+          "max_variance_error_fnl_bound300": 1.0281857870534164e-09
+        },
+        {
+          "b1": 7.95,
+          "max_variance_error_fnl_bound300": 1.7121862276505556e-09
+        }
+      ],
+      "radial_nodes": 1025,
+      "validation_radial_nodes": 2049,
+      "angular_orders": [
+        24,
+        48
+      ],
+      "validation_angular_orders": [
+        48,
+        96
+      ],
+      "direction_representation": "cubic invariant polynomials through degree16",
+      "b1_representation": "exact quadratic for fixed p",
+      "q_min": 0.006283185307179587,
+      "kIR": 0.15,
+      "rBAO": 110.0,
+      "shift_noise": "disabled; weighted noise not assumed",
+      "table": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+      "table_sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb",
+      "library_sha256": "0ab2eb736f76b190af5c3114c3ea3349671bcddbc48ceab6ace374f028921f45",
+      "variance_sha256": "806a9a5147fb744883f198a297d7ea878a07588ddfe6924a919968f752a96a13"
+    },
+    "source_correction": {
+      "b_rec": 2.2280546353635335,
+      "p_rec": 1.2822,
+      "p_halo": 1.2822,
+      "old_cache_b_rec": 1.9326526728794324,
+      "raw_shift_multiplier": 0.8674170921145734,
+      "correction": "exact analytic 1/b_rec rescaling of G b1^4, PNG L/Q reconstruction, and all three adaptive raw bases",
+      "reconstruction_parameter_path": "f_rec=f (inherited legacy theoretical path)",
+      "catalogue_f_rec": 100.0,
+      "scope_warning": "controlled legacy-path comparison; not fixed-nonzero-f_rec inference",
+      "stochastic_closure": "legacy_accepted_pre retained; no added shift-noise damping"
+    },
+    "files": {
+      "sto_marisa_primary_bin001.npz": "c1d10ca36a83dac4c637e9ca8f35613cce8e2217d4a1c9656391fa19a4b31ad0",
+      "sto_marisa_primary_bin002.npz": "c739ddc622cad9dd26dddbae68a9728bfc48f614398fd351e4d265c257bd4ff4",
+      "sto_marisa_primary_bin003.npz": "6236c989ee2d404f6eca16a5105c52076a75a968ecfd5b94f3b87744f2468ecf",
+      "sto_marisa_primary_bin004.npz": "28d8f45c1101336f74739ae193c6d2d92dea7a989ceb388c262c4dd8a966059b",
+      "sto_marisa_primary_bin005.npz": "bf528e941065e325a1dff2d234f98a369589e89e029e1716c08cbf791715bbe2",
+      "sto_marisa_primary_bin006.npz": "c584a43924f92f7df8fef52e198b0e2ccae711e02912bb1c3e1bb0361e6b5d29",
+      "sto_marisa_primary_bin015.npz": "9536bcc078c4c4f00d9fc8eaccf7d109b9dda369978ae0b3a2fb2f0db89a3d1e",
+      "sto_marisa_primary_bin016.npz": "da384a44e617d742bbfe344366235b313b7206ffb4a5182b261b815a8bc60038",
+      "sto_marisa_primary_bin017.npz": "217489ffa039194869787f98e26c43f55790eed2832fb63a72a09500d4d78887",
+      "sto_marisa_primary_bin018.npz": "72d461731739921e69abc45ad17ebe760512ba9713d43251d817576c2190438e",
+      "sto_marisa_primary_bin019.npz": "8c774b78433f273a8bc4a470f1da64b51d0263b8d7439b6e1dc06329d7123db1",
+      "sto_marisa_primary_bin020.npz": "92120fd5da03c7b682143dc0e618eabebf91502aa88622180fe81c6973f9d20b",
+      "sto_marisa_primary_bin029.npz": "cc70cf334cfba66391bfde044c397ecc6b4f6e3eea89d87877d1929bec4f4040",
+      "sto_marisa_primary_bin030.npz": "b2f580c65682dd3d83ee1d864d78d8916c10632660f9607eedc5ac34c813af9e",
+      "sto_marisa_primary_bin031.npz": "14b97079904d7f7358860ce6b689a092e87dd5cc2d3a77ef582a471df4c787c9",
+      "sto_marisa_primary_bin032.npz": "2a1c9f18ffda3bbce5d4cb3c6f8b8b054acf14ddc5e36519b138b7ca04bfdfbf",
+      "sto_marisa_primary_bin033.npz": "62a97f4188dbca2f30603a85e0dcf47d33440d030b42fe25a77d15a8d1ccfc2f",
+      "sto_marisa_primary_bin042.npz": "bf1661ceb2c7ff5464ca44fc2f218f4d69fb0f827dca655c07e7a0b19f309ac8",
+      "sto_marisa_primary_bin043.npz": "145fa8031d2bd8bdb0407fde08c27ccc289bdf37b49d6169cfe73c8e3df78455",
+      "sto_marisa_primary_bin044.npz": "87a7adff06a0af8f4ee76a29ce9241e34e963a18d1747f1d06c2305f9e0b0e0b",
+      "sto_marisa_primary_bin045.npz": "8045f739b913953449a454c2dc6dff513302f32163ae8a79ae1315c2d4d5af0f",
+      "sto_marisa_primary_bin054.npz": "5fea87decc0c2ce5314291cac2ce61d2834c211bc9db5673cd15076da215625b",
+      "sto_marisa_primary_bin055.npz": "5ae955e4c6db249e3074797101d9052809a1544a1ff29dee46d6899e342a329d",
+      "sto_marisa_primary_bin056.npz": "ef896d0a2ef9db889ec1eee7e9d82ef4d50fb429471b0002a7e7bff9727642ce",
+      "sto_marisa_primary_bin065.npz": "210fafcbd24005bf4f3a6d399cba0154b464720c9875bee8212b5bbeb7b75500",
+      "sto_marisa_primary_bin066.npz": "69167afc4573713d4067cadc1c140bcb23eac0f8d326b51237f07046783e2989",
+      "sto_marisa_primary_bin075.npz": "3b3ced24b273cb01e95b6db85624f518fa086ac16a81c919aadaefba2ca29f5b",
+      "sto_marisa_fine_bin001.npz": "4e062c566c11df450bb9e0c4c753536138020e9b2616e5f2fb870e626fb14f09",
+      "sto_marisa_fine_bin002.npz": "e967f47dcd4414289e34d3ce065e50f74cf0a4dcb13c17a1cc107a1eb64f9fcd",
+      "sto_marisa_fine_bin003.npz": "bb55aec4cfdab73e85db9577d38d6334921f26191128505aca965207be03332d",
+      "sto_marisa_fine_bin004.npz": "3955f34e7e92b278c3a88937726e0fd1ccb59123e414670d60f5fab985bc3fd5",
+      "sto_marisa_fine_bin005.npz": "87c109ce93d0af2f9452f2f67eabd551f85c0a449e1a49b107549bbea529fc3b",
+      "sto_marisa_fine_bin006.npz": "92033842955b5c5d913691e93ccfaf43838249e668533b0dfed26f02db038b55",
+      "sto_marisa_fine_bin015.npz": "86051ab7347c948603d7edddaafc7b71c6714e8b45cb98421f831e7ca6d0512c",
+      "sto_marisa_fine_bin016.npz": "6d68927798763306f5d72ce9fc31848865937d033c1270d9585758182eb3ffb2",
+      "sto_marisa_fine_bin017.npz": "3db2717502ad7902d1d31723637698c92264c0b89a680dcc2ca9c476af54198f",
+      "sto_marisa_fine_bin018.npz": "0075c7f30d225dee1dfe3f451f0208a0586a1cc6c6118955ca6c447eacaf4434",
+      "sto_marisa_fine_bin019.npz": "7a26f9c96f048017bc6b9f32aede40e78f55c9474715fea037fbc7c01e2b9d54",
+      "sto_marisa_fine_bin020.npz": "1b8b8c6a537178268e085e2e4f7e87a97d4c8d51fa8f2e3bb7b6cc3d94988525",
+      "sto_marisa_fine_bin029.npz": "36a2008e7d860303b89783a3332f97e438a646ed37377eb903d8c020a71e26d3",
+      "sto_marisa_fine_bin030.npz": "252b6f5cf09dbbcb12eac280a2df4d0e8876058eab898ff90fd8790d7965bf45",
+      "sto_marisa_fine_bin031.npz": "e6a02d5a5a9f84f23224efa5a9099a04d981045cc62fe9c7401fde792743c818",
+      "sto_marisa_fine_bin032.npz": "03cc3b1616806e5d58b2581fa715a9842ef233919da25fe0af2a0022342abf5e",
+      "sto_marisa_fine_bin033.npz": "abcee879dcd8ecc350252c51741a7277b4b141ba6b411ddf17b4fb1d1a4b98c5",
+      "sto_marisa_fine_bin042.npz": "64b86b60fabc408931e01d7f247e2ce57eece55cf3ae7f1be7c9e220432c7ca3",
+      "sto_marisa_fine_bin043.npz": "d4bd431c7718db32e6e98348b748b06cb242451e28600a442aef34e9468b6c2c",
+      "sto_marisa_fine_bin044.npz": "ac3fcf2cf2e53e45265a90c3da6fd561994c07365a5ee6d141c1c18913e8e8f2",
+      "sto_marisa_fine_bin045.npz": "efddd430e6dc761198f2ba14f531617deedeb420812b3a6b6274279c18532cd9",
+      "sto_marisa_fine_bin054.npz": "5cff09ff6cac0d59a5d06010fbc70491cd66e5ff50bd8043a0110060d93cfdb2",
+      "sto_marisa_fine_bin055.npz": "927865a1cbf1bca014d6a2c33835bde418ed63e83fd0af4b550a30fdd632076a",
+      "sto_marisa_fine_bin056.npz": "e90939f4c75a948fe71f3bd028550aa57e5846a95bc4ea11c3a7d08686b693f7",
+      "sto_marisa_fine_bin065.npz": "0bb864686924486fc92fc58585bb81ada2a12174f4572ddb0e46566776e7ce94",
+      "sto_marisa_fine_bin066.npz": "263b8507ee93bbf6d6377484b3d342cbc3232acba1f651c5d42023e325537fc8",
+      "sto_marisa_fine_bin075.npz": "2019769e83f5507d16a0c3a8abf9e02576dd19ffb439205310d694c33c788be6"
+    },
+    "shift_noise": "not added; no measured weighted shift-noise spectrum supplied",
+    "catalogue_status": "legacy-path comparison, not fixed-f_rec=100 catalogue validation",
+    "frozen_assets_sha256": {
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/templates/sto_marisa_accepted.npz": "4396c272212e1c0854ce3c31a1bc2406e534d86678bc41c92a2b34ad73b14289",
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/templates/sto_marisa_accepted.json": "e7ea67acbfb0cc8a49dee0fbd3a26bf94eea47238025759eb3ea8a0ac6c75bfe",
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/templates/sto_marisa_pk.npz": "3d82f1bcaa31d02b6d9a6a96c3d9d10fdefa0e0189bdea9bfde8151fa583f636",
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/templates/variance.npz": "806a9a5147fb744883f198a297d7ea878a07588ddfe6924a919968f752a96a13",
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/build/libpaware_ir.so": "0ab2eb736f76b190af5c3114c3ea3349671bcddbc48ceab6ace374f028921f45",
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/code/paware_pb_ir_templates.py": "1903f4a20b99475b69c6ac1a4e997d8b2cbb6f2b369112dfbdd1d2d2f7d25d63"
+    }
+  }
+}

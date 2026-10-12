@@ -1,0 +1,18 @@
+{
+  "created_UTC": "2026-10-10T16:51:31.828027+00:00",
+  "tests_run": 12,
+  "passed": true,
+  "errors": 0,
+  "failures": 0,
+  "short_HDF_chains_are_IO_RNG_tests_not_science_MCMC": true,
+  "source_sha256": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/build_pre_rsd_paware_templates_v1.py": "1fa6a972ea157b0e3c2cf265612976887fcc6874cb66c3e0265a991e0b61d98d",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_pre_rsd_paware_templates_v1.py": "8e745468087b5d76469d225c27205f23c1a8c7fcb42aca5fee92cff6e4e21703",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/run_recalibrated_prepost_noise_comparison_v1.py": "4c2fbd959bdb0690d2f22c68ac6cc5af940086b1870ceeb49e3a365ef1d5bfc4",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_recalibrated_noise_comparison_v1.py": "95a510c19a32904d6e87e01fee9a81f83de0bae44695be7bad30fe2531cf4ea2",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_p0_analytic_grid.py": "055f4e14c7f77bda6d86391d7d9c0d0d0073697aec47d0460e9af0e3493e8d52",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_rsd_p0_analytic_grid.py": "6e483042cf8dc179751af1bb2058deb0d188c5e6403414e7e435dac3eb2fc325",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_physical_p_sampler_v2.py": "2346c46d2fffa9851385b204601c13e21e7cb99dcd67feb83ee46a80a02933d8",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_rsd_physical_p_sampler_v2.py": "9cf50d6c6a3f07f5ed3de3946512bed19e213a2c12b15fd7cc68819a555a251b"
+  }
+}

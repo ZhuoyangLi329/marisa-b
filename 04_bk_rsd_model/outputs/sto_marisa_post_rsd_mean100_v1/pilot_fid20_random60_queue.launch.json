@@ -1,0 +1,19 @@
+{
+  "host": "login26",
+  "pid": 1765138,
+  "new_session": true,
+  "log": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/pilot_fid20_random60_queue.launch.log",
+  "CPU_pool": [
+    10,
+    11
+  ],
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "-u",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/run_sto_post_random60_queue.py",
+    "--cpus",
+    "10,11"
+  ],
+  "launched_UTC": "2026-10-09T04:47:39.837517+00:00"
+}

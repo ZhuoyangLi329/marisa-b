@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "pages": [
+    {
+      "page": 1,
+      "label": "contract and interpretation",
+      "text_within_page": true
+    },
+    {
+      "page": 2,
+      "label": "fNL recovery and width ratios",
+      "text_within_page": true
+    },
+    {
+      "page": 3,
+      "label": "bias-PNG degeneracy",
+      "text_within_page": true
+    },
+    {
+      "page": 4,
+      "label": "full-covariance conditional residuals",
+      "text_within_page": true
+    },
+    {
+      "page": 5,
+      "label": "matched joint covariance",
+      "text_within_page": true
+    },
+    {
+      "page": 6,
+      "label": "all joint MCMC summaries",
+      "text_within_page": true
+    }
+  ],
+  "no_PNG_generated": true,
+  "visual_raster_inspection": false,
+  "note": "User requires PDF only; checked text bounds, scientific labels, frozen values. No PNG generated.",
+  "pdf_sha256": "bea4411b57596fc68c492f4adc1d71d498185a215eb96ed58dc688e7b95c2b33"
+}

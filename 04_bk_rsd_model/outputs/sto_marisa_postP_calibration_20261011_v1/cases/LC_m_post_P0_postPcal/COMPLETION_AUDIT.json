@@ -1,0 +1,16 @@
+{
+  "name": "LC_m_post_P0_postPcal",
+  "converged": true,
+  "steps_each_ensemble": 6000,
+  "complete_HDF_priors_gates_quantiles_sigma_thin_replayed": true,
+  "independent_logprob_spots": 512,
+  "max_logprob_error": 3.730349362740526e-14,
+  "summary_sha256": "233bf09ba0134d79d9cb91d7092fd7e10f492703e24aba6e864e3215eb9fd966",
+  "chain_sha256": [
+    "619c700e883dbb5d587be8f24e99703deca7c5a43f08374ecfb723834947cc6c",
+    "ba6a580b70bbdfc73180af34cfaa185ee5a39597693d94c6d72940d72c7885c0",
+    "78b5bdf2958cec58d7d80e861bcab447b683801e5aa823ade60769f532b9fb70",
+    "ab84ceeaab13faa8675dd151258fc80f898699e648304da0ff02e30bb6c1206d"
+  ],
+  "created_UTC": "2026-10-11T03:46:32.443711+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "pid": 1278399,
+  "host": "login26",
+  "created_UTC": "2026-10-10T04:32:17.641260+00:00",
+  "log": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/simultaneous_measurements_v3.log",
+  "entry": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/run_sto_post_simultaneous_v3.py"
+}

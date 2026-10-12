@@ -1,0 +1,10 @@
+{
+  "created_UTC": "2026-10-10T17:47:34.198915+00:00",
+  "PDF": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/rsd_all_available_p_recalibration_20261010_v2/pb_4plus3_then4plus4_all_p_v1/final_comparison_v1/RSD_PB_4PLUS3_VS_4PLUS4_ALLP.pdf",
+  "PDF_sha256": "eb376b9ef066aaa70474185f2413aa2124ae35573586840634aa80b92215a5f8",
+  "JSON_sha256": "351cdc8889a0cef9bae856637cc72f2f7932962f9ba9dcda26bec93575958ffb",
+  "PDF_pages_expected": 2,
+  "PNG_generated": false,
+  "actual48_chain_hashes_verified": true,
+  "PDF_visual_QA_status_at_creation": "pending; authoritative completed QA is in PDF_QA.json"
+}

@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "n_cases": 18,
+  "n_matched_P_B_samples": 800,
+  "n_covariance": 500,
+  "n_target_per_sign": 100,
+  "full_P_B_cross_covariance": true,
+  "cross_correlation_max_abs": 0.6977964429111424,
+  "correlation_eigenvalue_min": 0.10166872446941871,
+  "covariance_multiplier": 1.0,
+  "volume_Gpc_h3": 1.0,
+  "covariance_definition": "np.cov(matched Fid500 single-box [P0,B000] vectors, ddof=1); never /100 or /500",
+  "P0_ensemble_sha256": "61711b53709b13ad6b84e06a97465ecca6ed7378b722d64dea10fbebff357816",
+  "B_ensemble_sha256": "cf1da49a3704c222d8b32346cfbfa08004734a875d1dc936e3522a8f96241baf",
+  "old_outputs_modified": false,
+  "cases": [
+    {
+      "name": "fiducial_mean100_k0.08",
+      "P_bins": 12,
+      "B_bins": 9,
+      "joint_bins": 21,
+      "Hartlap_factor": 0.9559118236472945,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "fiducial_mean100_k0.10",
+      "P_bins": 12,
+      "B_bins": 14,
+      "joint_bins": 26,
+      "Hartlap_factor": 0.9458917835671342,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "fiducial_mean100_k0.12",
+      "P_bins": 12,
+      "B_bins": 20,
+      "joint_bins": 32,
+      "Hartlap_factor": 0.9338677354709419,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "fiducial_mean100_k0.14",
+      "P_bins": 12,
+      "B_bins": 27,
+      "joint_bins": 39,
+      "Hartlap_factor": 0.9198396793587175,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "fiducial_mean100_k0.18",
+      "P_bins": 12,
+      "B_bins": 35,
+      "joint_bins": 47,
+      "Hartlap_factor": 0.9038076152304609,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "fiducial_mean100_k0.20",
+      "P_bins": 12,
+      "B_bins": 44,
+      "joint_bins": 56,
+      "Hartlap_factor": 0.8857715430861723,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_p_mean100_k0.08",
+      "P_bins": 12,
+      "B_bins": 9,
+      "joint_bins": 21,
+      "Hartlap_factor": 0.9559118236472945,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_p_mean100_k0.10",
+      "P_bins": 12,
+      "B_bins": 14,
+      "joint_bins": 26,
+      "Hartlap_factor": 0.9458917835671342,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_p_mean100_k0.12",
+      "P_bins": 12,
+      "B_bins": 20,
+      "joint_bins": 32,
+      "Hartlap_factor": 0.9338677354709419,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_p_mean100_k0.14",
+      "P_bins": 12,
+      "B_bins": 27,
+      "joint_bins": 39,
+      "Hartlap_factor": 0.9198396793587175,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_p_mean100_k0.18",
+      "P_bins": 12,
+      "B_bins": 35,
+      "joint_bins": 47,
+      "Hartlap_factor": 0.9038076152304609,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_p_mean100_k0.20",
+      "P_bins": 12,
+      "B_bins": 44,
+      "joint_bins": 56,
+      "Hartlap_factor": 0.8857715430861723,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_m_mean100_k0.08",
+      "P_bins": 12,
+      "B_bins": 9,
+      "joint_bins": 21,
+      "Hartlap_factor": 0.9559118236472945,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_m_mean100_k0.10",
+      "P_bins": 12,
+      "B_bins": 14,
+      "joint_bins": 26,
+      "Hartlap_factor": 0.9458917835671342,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_m_mean100_k0.12",
+      "P_bins": 12,
+      "B_bins": 20,
+      "joint_bins": 32,
+      "Hartlap_factor": 0.9338677354709419,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_m_mean100_k0.14",
+      "P_bins": 12,
+      "B_bins": 27,
+      "joint_bins": 39,
+      "Hartlap_factor": 0.9198396793587175,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_m_mean100_k0.18",
+      "P_bins": 12,
+      "B_bins": 35,
+      "joint_bins": 47,
+      "Hartlap_factor": 0.9038076152304609,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    },
+    {
+      "name": "LC_m_mean100_k0.20",
+      "P_bins": 12,
+      "B_bins": 44,
+      "joint_bins": 56,
+      "Hartlap_factor": 0.8857715430861723,
+      "B_target_model_covariance_priors_unchanged": true,
+      "extra_Pshot_parameter": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "FOUR_INDEPENDENT_INPUT_FIELD_TESTS_PASS_NOT_SCIENTIFIC_CLOSURE",
+  "tests": 4,
+  "test_output": "test_mixed_spectra_against_independent_cell_loops (test_sto_rsd_noise_fields.NoiseFieldsTest.test_mixed_spectra_against_independent_cell_loops) ... ok\ntest_native_streaming_TSC_vs_whole_and_low_mode_DFT (test_sto_rsd_noise_fields.NoiseFieldsTest.test_native_streaming_TSC_vs_whole_and_low_mode_DFT) ... ok\ntest_particle_velocity_not_FoF_convention_and_periodic_wrap (test_sto_rsd_noise_fields.NoiseFieldsTest.test_particle_velocity_not_FoF_convention_and_periodic_wrap) ... ok\ntest_true_weight_self_moments_not_nraw (test_sto_rsd_noise_fields.NoiseFieldsTest.test_true_weight_self_moments_not_nraw) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.279s\n\nOK\n",
+  "created_UTC": "2026-10-10T08:08:04.782986+00:00",
+  "host": "login26",
+  "CPU_affinity": [
+    14
+  ],
+  "source_sha256": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/sto_rsd_noise_fields.py": "649d056eac4a36e11398e2541fd8f93b466e7c539a24042fad2cce6b89e941c0",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_sto_rsd_noise_fields.py": "d957db55ac594eb8572eaf1b23a7dd930e2932aad7c95b727c82e2e05684fdd5",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/measure_sto_rsd_input_noise.py": "b2560ba7c98a397314104921a01fade681ca870965f2e5f5d9c8cf8e1a1bb9ca"
+  },
+  "actual_STO_closure": false
+}

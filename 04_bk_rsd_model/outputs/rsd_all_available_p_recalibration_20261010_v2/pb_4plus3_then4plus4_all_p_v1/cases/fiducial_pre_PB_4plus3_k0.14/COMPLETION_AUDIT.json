@@ -1,0 +1,17 @@
+{
+  "created_UTC": "2026-10-10T16:12:59.215858+00:00",
+  "name": "fiducial_pre_PB_4plus3_k0.14",
+  "index": 1,
+  "converged": true,
+  "full_HDF_prior_gate_quantile_sigma_and_thin_RNG_replayed": true,
+  "steps_each_ensemble": 6000,
+  "stored_logprob_independent_spots": 512,
+  "maximum_logprob_spot_error": 1.0835776720341528e-13,
+  "summary_sha256": "2b40e7100cde55fad79b7a304cb5b3c50d9b107ac85ebb339cf6ef1cc238470d",
+  "chain_sha256": [
+    "2b928684f825f07f11a2a09f519db9575c4a5361d8df41f12d820b90e092dabf",
+    "8154e89288ab8b1fbc9fe83be3ca89fb4cae66a60774af1f2037fb1b8e94728c",
+    "d3bed9600b7c7b9efa6d1e6c8f7c3631a81426b909c7bcf26178db3df256ef5e",
+    "29af77a4a2f231b68ff84e0f2518d371cb95f4659c4934b28f57ed6b44657182"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "state": "PARTIAL_P_CALIBRATION_AND_THREE_P0_TRIALS_FINISHED",
+  "pid": 1679892,
+  "host": "login26",
+  "CPU_affinity": [
+    13
+  ],
+  "started_UTC": "2026-10-10T06:28:46.433122+00:00",
+  "child_pid": null,
+  "completed_cases": [
+    {
+      "name": "physical_p_GSR2_RSD_fNLfixed100_partial_cov",
+      "converged": true
+    },
+    {
+      "name": "fiducial_post_P0_mean100_partial_cov",
+      "converged": true
+    },
+    {
+      "name": "LC_p_post_P0_mean100_partial_cov",
+      "converged": true
+    },
+    {
+      "name": "LC_m_post_P0_mean100_partial_cov",
+      "converged": true
+    }
+  ],
+  "updated_UTC": "2026-10-10T06:42:07.028104+00:00",
+  "case": "LC_m_post_P0_mean100_partial_cov",
+  "finished_UTC": "2026-10-10T06:42:07.028095+00:00"
+}

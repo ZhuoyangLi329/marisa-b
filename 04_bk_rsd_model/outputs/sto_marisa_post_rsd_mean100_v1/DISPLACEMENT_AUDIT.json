@@ -1,0 +1,19 @@
+{
+  "status": "GAUSSIAN_LONG_DISPLACEMENT_TEST_PASS",
+  "created_UTC": "2026-10-08T15:36:07.485615+00:00",
+  "tests_run": 6,
+  "log": "test_cic_permutation_and_los_reversal (test_post_rsd_displacement.DisplacementTest.test_cic_permutation_and_los_reversal) ... ok\ntest_damping_taylor_and_explicit_noise (test_post_rsd_displacement.DisplacementTest.test_damping_taylor_and_explicit_noise) ... ok\ntest_fixed_PNG_polynomial_and_positive_semidefinite (test_post_rsd_displacement.DisplacementTest.test_fixed_PNG_polynomial_and_positive_semidefinite) ... ok\ntest_gaussian_soft_kernel_residual_displacement (test_post_rsd_displacement.DisplacementTest.test_gaussian_soft_kernel_residual_displacement) ... ok\ntest_pre_rsd_analytic_tensor (test_post_rsd_displacement.DisplacementTest.test_pre_rsd_analytic_tensor) ... ok\ntest_zero_separation_and_exact_matched_realspace (test_post_rsd_displacement.DisplacementTest.test_zero_separation_and_exact_matched_realspace) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 1.629s\n\nOK\n",
+  "CPU_affinity": [
+    7
+  ],
+  "scope": "linear-Gaussian long displacement, physical RSD plus frozen same-shift, continuous main image",
+  "full_B_IR_implemented": false,
+  "source_wiggle_dressing_verified": false,
+  "reconstruction_shift_noise_validated": false,
+  "PNG_higher_cumulants_included": false,
+  "hashes": {
+    "post_rsd_displacement.py": "388c814df98c5b29e8a88d6b0f48a82aeee126be73a493dbec269dc9987fd9ce",
+    "test_post_rsd_displacement.py": "f79438a4180f3b08edd5b9467607e4d4f1d3b378a536248154b4627c0b479c78",
+    "audit_post_rsd_displacement.py": "591a9dacda1df249771a13eb254f938861aa9653ecf0131764a2ebd2968d1a96"
+  }
+}

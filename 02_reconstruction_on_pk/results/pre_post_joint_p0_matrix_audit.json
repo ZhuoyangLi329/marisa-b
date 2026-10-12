@@ -1,0 +1,80 @@
+{
+  "checks": {
+    "pre_sto_only": {
+      "LC_p_count": 100,
+      "channels": [
+        "pre",
+        "sto_only"
+      ],
+      "covariance_condition_number": 28944.009040494184,
+      "covariance_minimum_eigenvalue": 17238.973431004986,
+      "covariance_realizations": [
+        0,
+        499
+      ],
+      "cross_correlation_max": 0.9861717024041396,
+      "cross_correlation_mean": 0.977466683296683,
+      "cross_correlation_min": 0.9655011737198601,
+      "fiducial_count": 500,
+      "pairing": "same realization, same snapshot, same production task (per-realization pre_pk/post_pk)",
+      "pre_post_same_bin_correlation": [
+        0.9846224832188565,
+        0.9851516027809286,
+        0.9861717024041396,
+        0.9834243673089555,
+        0.9805362027290148,
+        0.9812119892091078,
+        0.979769670619397,
+        0.9741795030042126,
+        0.9718886320988489,
+        0.9660869552331756,
+        0.9655011737198601,
+        0.9710559172336994
+      ],
+      "target_realizations": [
+        0,
+        99
+      ]
+    }
+  },
+  "covariance": {
+    "hartlap_24": 0.9498997995991983,
+    "source": "joint Fid500 fNL0 single-realization sample covariance",
+    "target_mean_divisor": null,
+    "volume_ratio": 42.875
+  },
+  "created_utc": "2026-09-16T10:02:52.463085+00:00",
+  "inputs": {
+    "P_theory": {
+      "bytes": 2707,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.npz",
+      "sha256": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e"
+    },
+    "five_method_matrix": {
+      "bytes": 166664,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/five_method_p0_matrix.npz",
+      "sha256": "c527cf51a6e7c90f02c85cb688d1963b72595809e9ebc9be53468ff80c0c6fa5"
+    },
+    "five_method_matrix_audit": {
+      "bytes": 3596,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/five_method_p0_matrix_audit.json",
+      "sha256": "97e5b4c70e0fad28c96bde4cfd7a59377f5e65abfa40a6452833eacc2aa1f7e3"
+    },
+    "runner": {
+      "bytes": 7936,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/code/aggregate_pre_post_joint_p0.py",
+      "sha256": "b77a81cec093a4bd6b0e9bc3a6f26e2ad17f3b8605a4158c88b294cb121233f6"
+    }
+  },
+  "joint_definition": "24-bin vector [P_pre(12), P_post(12)] stacked per matched realization; full 24x24 Fid500 sample covariance including pre--post cross blocks",
+  "output": {
+    "bytes": 65983,
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/pre_post_joint_p0_matrix.npz",
+    "sha256": "b4fac337359cf1587247e834384fbab8e7b5c1ca178d8902ca9cc25e3aad6274"
+  },
+  "pairs": [
+    "pre_sto_only"
+  ],
+  "schema": "quijote-z0p5-pre-post-joint-p0-matrix-v1",
+  "status": "pass"
+}

@@ -1,0 +1,305 @@
+{
+  "case": "sto_marisa_noir_k0p14",
+  "status": "converged",
+  "contract": {
+    "method": "sto_marisa",
+    "kmax_B": 0.14,
+    "kmax_P": 0.08,
+    "volume": 42.875,
+    "p_halo": 1.2822,
+    "p_fixed_not_marginalized": true,
+    "truth_fNL": 100,
+    "n_target": 250,
+    "n_fid": 500,
+    "parameter_names": [
+      "fNL",
+      "b1",
+      "Pshot",
+      "b2",
+      "gamma2",
+      "Ashot_residual",
+      "Bshot_residual"
+    ],
+    "full_PB_cross_covariance": true,
+    "cross_correlation_max": 0.3541455369860895,
+    "hartlap": 0.9198396793587175,
+    "IR_resummation": false,
+    "Gaussian_discrepancy": false,
+    "polynomial_max_whitened_error": 2.275269289821509e-11,
+    "reference_data_chi2_parity": 0.0,
+    "reference_MINOS": {
+      "gof_p_value_data_only": 0.07604948006420448,
+      "note": "new MAP GoF; no new MINOS interval is claimed"
+    },
+    "original_runner_sha256": "357a9e973055770a3c90337d7b749ae14cb7f70739b6d1f02a691ddb52569527",
+    "runner_sha256": "b22863d471e18270ef8fa34069223bd52ab960e7afcdbe2a4d54a7c4ec86cfeb",
+    "prior_weight": 0.04,
+    "calibration_uncertainty_propagated": false,
+    "fid_covariance_note": "\u6cbf\u7528\u73b0\u884c\u51bb\u7ed3 Fid500\uff1bSTO target \u4e3a p-aware matched250",
+    "sampling": {
+      "ensembles": 4,
+      "walkers": 32,
+      "initial_steps": 6000,
+      "max_steps": 20000,
+      "burn_fraction": 0.5
+    },
+    "map": {
+      "fNL": 112.9468155940294,
+      "b1": 2.17960337980828,
+      "Pshot": -1771.4285178308742,
+      "b2": 0.48328380790229625,
+      "gamma2": -0.2715287501791477,
+      "Ashot_residual": 0.17180869982985314,
+      "Bshot_residual": -0.4673381086686277
+    },
+    "map_objective": 44.062203338224506,
+    "likelihood_sha256": "8fab07ca9466b340470f619ca824bcd436a6ece415d85900ad8bdd06f3e70644",
+    "case": "sto_marisa_noir_k0p14",
+    "baseline_reconstruction_corrected": true,
+    "reconstruction": {
+      "b_rec": 2.2280546353635335,
+      "p_rec": 1.2822,
+      "p_halo": 1.2822,
+      "old_cache_b_rec": 1.9326526728794324,
+      "raw_shift_multiplier": 0.8674170921145734,
+      "correction": "exact analytic 1/b_rec rescaling of G b1^4, PNG L/Q reconstruction, and all three adaptive raw bases",
+      "reconstruction_parameter_path": "f_rec=f (inherited legacy theoretical path)",
+      "catalogue_f_rec": 100.0,
+      "scope_warning": "controlled legacy-path comparison; not fixed-nonzero-f_rec inference",
+      "stochastic_closure": "legacy_accepted_pre retained; no added shift-noise damping"
+    },
+    "baseline_contract": "036e65c0134371c3482c4d713ade03211d030c450e6280cc94741326bc112de6",
+    "baseline_likelihood_sha256": "773fa8a5ec85f1d2397771ee392c4a7573dfacfb2c9b7416fe57ff4b3e451d96",
+    "unchanged_arrays": {
+      "target": true,
+      "covariance": true,
+      "chol": true,
+      "prior_mean": true,
+      "prior_whitener": true,
+      "bounds": true,
+      "indices": true
+    },
+    "polynomial_degree": 6,
+    "map_data_chi2": 44.057948769391345,
+    "map_prior_chi2": 0.004254568833163973,
+    "corrected_model_sha256": "6d6410ce3aa04af73b412b688d1ee1bd18ff9445981f89e35790ae2df87c613e",
+    "old_reference_MINOS": {
+      "case": "sto_marisa",
+      "kmax_h_mpc": 0.14,
+      "ndata": 39,
+      "n_fid": 500,
+      "n_target": 250,
+      "map_fNL": 114.744931069824,
+      "minos_fNL": {
+        "lower": -6.76816412642975,
+        "upper": 6.882629760261576,
+        "valid": true
+      },
+      "map": {
+        "fNL": 114.744931069824,
+        "b1": 2.1692024675779265,
+        "Pshot": -1484.5772699093407,
+        "b2": 1.075318792188207,
+        "gamma2": -0.05821815817315574,
+        "Ashot_residual": -0.5908187092918524,
+        "Bshot_residual": -0.5019379358036531
+      },
+      "data_chi2": 69.78546964643454,
+      "dof": 32,
+      "gof_p_value_data_only": 0.00012613439919817126,
+      "hartlap": 0.9198396793587175
+    }
+  },
+  "diagnostics": {
+    "rank_location_split_rhat": [
+      1.0003981738481886,
+      1.0007131819470216,
+      1.0006934469746522,
+      1.000139575505643,
+      1.0002058929785267,
+      1.0001847542344702,
+      1.0002556855920923
+    ],
+    "rank_folded_split_rhat": [
+      1.0002171092066474,
+      1.0001857332692896,
+      1.0002250468019378,
+      1.000613733444044,
+      1.0003340092554311,
+      1.0003284396371772,
+      1.0001298844085273
+    ],
+    "rank_normalized_split_rhat": [
+      1.0003981738481886,
+      1.0007131819470216,
+      1.0006934469746522,
+      1.000613733444044,
+      1.0003340092554311,
+      1.0003284396371772,
+      1.0002556855920923
+    ],
+    "bulk_ess": [
+      7962.572751556861,
+      5166.826875201427,
+      4620.5130764256455,
+      6306.767329561175,
+      7849.231945258742,
+      6547.356899847342,
+      5622.295193201648
+    ],
+    "tail_ess": [
+      19914.527837932008,
+      16151.67817231892,
+      15389.557997295033,
+      17194.369729261398,
+      19135.576119950892,
+      19378.693600314935,
+      16334.047041624239
+    ],
+    "tau": [
+      [
+        44.947120779543646,
+        45.50136517650638,
+        47.86485596931322,
+        55.12285139107855,
+        52.942686026422464,
+        51.07644101900859,
+        48.90189210987319
+      ],
+      [
+        45.97238645508263,
+        42.19538455927129,
+        42.291497399801315,
+        47.867087605372845,
+        46.79246126242203,
+        47.07598497456819,
+        46.639780682944675
+      ],
+      [
+        48.013991828651285,
+        48.5531130895918,
+        46.85778065800177,
+        48.34062407154149,
+        49.41905280550616,
+        48.866197716208156,
+        47.50297027199892
+      ],
+      [
+        49.809932188704906,
+        47.92367194686202,
+        45.44119402880178,
+        45.992408883390844,
+        44.5990147881423,
+        41.77096404464738,
+        42.0992113281895
+      ]
+    ],
+    "retained_length_over_tau": [
+      60.22895170052634,
+      61.788005116464966,
+      62.676465629048145,
+      54.423889989216704,
+      56.665050928900165,
+      58.73549409763145,
+      61.347319511882574
+    ],
+    "half_shift_sigma": [
+      0.033726039583395005,
+      0.012758933442190798,
+      0.0011608523859809013,
+      0.01376218139361115,
+      0.01630314364880014,
+      0.02005211915057147,
+      0.0061802747919814
+    ],
+    "ensemble_spread_sigma": [
+      0.04465338783437682,
+      0.09304595044644025,
+      0.11227828501771,
+      0.03107266994628931,
+      0.05306947984676858,
+      0.05077766566242997,
+      0.07184947089836034
+    ],
+    "boundary_mass": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "acceptance": 0.4431171875,
+    "checks": {
+      "rhat": true,
+      "fnl_ess": true,
+      "other_ess": true,
+      "length_tau": true,
+      "half_shift": true,
+      "ensemble_spread": true,
+      "acceptance": true
+    },
+    "passed": true,
+    "boundary_warning": false,
+    "steps": 6000,
+    "burn": 3000
+  },
+  "posterior": {
+    "fNL": {
+      "q025": 98.79736192012331,
+      "q16": 105.70515118235548,
+      "median": 112.95192834391158,
+      "q84": 120.26070530360353,
+      "q975": 127.56220753636863
+    },
+    "b1": {
+      "q025": 2.157364906771032,
+      "q16": 2.1680386689213513,
+      "median": 2.17910060228645,
+      "q84": 2.1898637043360494,
+      "q975": 2.2003371038070823
+    },
+    "Pshot": {
+      "q025": -2312.3803492925663,
+      "q16": -2038.0136425347696,
+      "median": -1756.468196054754,
+      "q84": -1466.3100645636314,
+      "q975": -1192.190163690007
+    },
+    "b2": {
+      "q025": 0.3402236366194467,
+      "q16": 0.4100914860826023,
+      "median": 0.4824306084857206,
+      "q84": 0.554056461792859,
+      "q975": 0.6247046338914878
+    },
+    "gamma2": {
+      "q025": -0.3705826910623521,
+      "q16": -0.3213865572529999,
+      "median": -0.27160402504588554,
+      "q84": -0.22161021779278176,
+      "q975": -0.17121024159947512
+    },
+    "Ashot_residual": {
+      "q025": -0.45744974724117626,
+      "q16": -0.1471727374164763,
+      "median": 0.16617508210123724,
+      "q84": 0.4855408196205503,
+      "q975": 0.797601081093155
+    },
+    "Bshot_residual": {
+      "q025": -0.5658337606619427,
+      "q16": -0.5172113076032321,
+      "median": -0.46570256750568356,
+      "q84": -0.4140963262660267,
+      "q975": -0.36134813686795475
+    }
+  },
+  "fNL_half_width": 7.277777060624025,
+  "truth_in_68": false,
+  "truth_in_95": true,
+  "median_data_chi2": 44.065347045681975,
+  "median_prior_chi2": 0.004217014710489325,
+  "map_gof_p_value": 0.07604948006420448
+}

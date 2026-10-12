@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE",
+  "pid": 192948,
+  "host": "login06",
+  "affinity": [
+    7,
+    8,
+    9
+  ],
+  "maximum_logical_CPUs": 3,
+  "numeric_threads": 1,
+  "resource_only_resume": true,
+  "started_UTC": "2026-10-08T11:22:04.717792+00:00",
+  "stage": "complete",
+  "active_workers": [],
+  "updated_UTC": "2026-10-08T11:25:20.267083+00:00",
+  "completed_cases": [
+    1,
+    2,
+    0
+  ],
+  "pending_cases": [],
+  "completed_UTC": "2026-10-08T11:25:20.267067+00:00"
+}

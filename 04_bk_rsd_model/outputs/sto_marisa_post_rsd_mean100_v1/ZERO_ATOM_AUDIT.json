@@ -1,0 +1,74 @@
+{
+  "status": "ZERO_ATOM_DIAGNOSTIC_TEST_PASS",
+  "created_UTC": "2026-10-08T16:57:43.728147+00:00",
+  "rows": [
+    {
+      "point": {
+        "pair": [
+          0,
+          0
+        ],
+        "zero_triangle_count": 439,
+        "full_pair_count": 21609,
+        "raw_zero_contribution": 0.0,
+        "shot_zero_contribution": -100289543361.05319
+      },
+      "measured_zero_shot": -100290250637.46414,
+      "zero_scaled_error": 6.7682070559362985e-09,
+      "nonzero_only_expected": 511133858221.7202,
+      "nonzero_only_counterfactual": 511204145266.5359,
+      "nonzero_only_scaled_error": 6.726044659450429e-07
+    },
+    {
+      "point": {
+        "pair": [
+          0,
+          1
+        ],
+        "zero_triangle_count": 874,
+        "full_pair_count": 128478,
+        "raw_zero_contribution": 0.0,
+        "shot_zero_contribution": -33619884994.972492
+      },
+      "measured_zero_shot": -33620181786.225998,
+      "zero_scaled_error": 2.84011261370958e-09,
+      "nonzero_only_expected": 597644195085.3165,
+      "nonzero_only_counterfactual": 597632859365.774,
+      "nonzero_only_scaled_error": 1.0847597318919616e-07
+    },
+    {
+      "point": {
+        "pair": [
+          1,
+          1
+        ],
+        "zero_triangle_count": 874,
+        "full_pair_count": 763876,
+        "raw_zero_contribution": 0.0,
+        "shot_zero_contribution": -5654603082.67844
+      },
+      "measured_zero_shot": -5654653000.658148,
+      "zero_scaled_error": 4.776848446312532e-10,
+      "nonzero_only_expected": -871349068774.9363,
+      "nonzero_only_counterfactual": -871356573768.6582,
+      "nonzero_only_scaled_error": 7.181824627132153e-08
+    }
+  ],
+  "max_zero_scaled_error": 6.7682070559362985e-09,
+  "max_nonzero_counterfactual_scaled_error": 6.726044659450429e-07,
+  "predefined_tolerances": {
+    "zero": 5e-07,
+    "corrected": 5e-06
+  },
+  "all_full_shell_denominators_preserved": true,
+  "baseline_shot_changed": false,
+  "production_estimator_choice_finalized": false,
+  "real_catalog_zero_contribution_measured": false,
+  "CPU_affinity": [
+    7
+  ],
+  "hashes": {
+    "post_rsd_estimator.py": "b6b57d055f18157ceac4450abb5e6227cf85cd098491dcd5e5fd5402116b9ec0",
+    "audit_post_rsd_zero_atoms.py": "85f217eb98288d467ae66443286d2157d899536193305bba93c16c206bd8fb19"
+  }
+}

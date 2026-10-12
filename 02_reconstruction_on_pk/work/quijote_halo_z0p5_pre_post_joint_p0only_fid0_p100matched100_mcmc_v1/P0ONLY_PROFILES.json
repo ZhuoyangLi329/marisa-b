@@ -1,0 +1,241 @@
+{
+  "arrays": {
+    "bytes": 8986,
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_pre_post_joint_p0only_fid0_p100matched100_mcmc_v1/P0ONLY_PROFILE_ARRAYS.npz",
+    "sha256": "22553e10c784d010d8424c4d4018cdfb4ff2ff384df053fde2dfc23122fdb462"
+  },
+  "created_utc": "2026-09-16T10:10:24.684595+00:00",
+  "inputs": {
+    "amendment_joint": {
+      "bytes": 3841,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/pre_post_joint_amendment.md",
+      "sha256": "3f0876454fc0aa1dde9f20a2ee8f2859d7782d5d7faa6667dd2c8732bf7521aa"
+    },
+    "amendment_sto": {
+      "bytes": 3948,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0only_sto_only_amendment.md",
+      "sha256": "29437edd2e9cda546d54d1d45a6c12c89bdfd4f54329d713bc286df8e9ddc687"
+    },
+    "matrix": {
+      "bytes": 65983,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/pre_post_joint_p0_matrix.npz",
+      "sha256": "b4fac337359cf1587247e834384fbab8e7b5c1ca178d8902ca9cc25e3aad6274"
+    },
+    "matrix_audit": {
+      "bytes": 2847,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/pre_post_joint_p0_matrix_audit.json",
+      "sha256": "fb1debd3c93046b97196b274d70fadc24e6938bd2174bc74a953d1a019893604"
+    },
+    "preregistration": {
+      "bytes": 2230,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0only_preregistration.md",
+      "sha256": "5d1c6f930d5862be7f43c84abf770efcd33089df3bf46fbfd0ac894897b9d651"
+    },
+    "runner": {
+      "bytes": 52755,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/code/run_pre_post_joint_p0only_mcmc.py",
+      "sha256": "ce5fea829bcee53344eaee35e5971b77aa5a0d5f0890ed62051eef1565d455c8"
+    },
+    "theory": {
+      "bytes": 2707,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.npz",
+      "sha256": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e"
+    },
+    "theory_manifest": {
+      "bytes": 2132,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.json",
+      "sha256": "ae6360473e480b426dbfbb7289314831099ce008dd99cfd5abe21c35dd069aba"
+    }
+  },
+  "rows": {
+    "pre_sto_only__fNL0": {
+      "covariance": {
+        "condition_number": 28944.009040493125,
+        "dimension": 24,
+        "hartlap": 0.9498997995991983,
+        "minimum_eigenvalue": 423.2816790085889,
+        "source": "joint Fid500 fNL0 (full pre--post cross blocks)",
+        "volume_ratio": 42.875
+      },
+      "data_chi2": 12.573082360564328,
+      "dof": 19,
+      "goodness_of_fit_p": 0.859691505822274,
+      "hesse_covariance": [
+        [
+          55.19451691805271,
+          -0.06303755407194493,
+          -0.08367521009084437,
+          1154.083356633863,
+          1728.3679058668752
+        ],
+        [
+          -0.06303755407194493,
+          0.0002031752138208574,
+          0.0002399905466352639,
+          -4.630257471997552,
+          -6.101968331305298
+        ],
+        [
+          -0.08367521009084437,
+          0.0002399905466352639,
+          0.00029234857485590615,
+          -5.391240117952737,
+          -7.3307174384607565
+        ],
+        [
+          1154.083356633863,
+          -4.630257471997552,
+          -5.391240117952737,
+          111737.9940949076,
+          145180.34569131714
+        ],
+        [
+          1728.3679058668752,
+          -6.101968331305298,
+          -7.3307174384607565,
+          145180.34569131714,
+          195080.25503485106
+        ]
+      ],
+      "map": {
+        "b1_post": 2.2214847244960114,
+        "b1_pre": 1.9544327988875112,
+        "fNL": 0.24494616740244682,
+        "sn0_post": -561.8112150078423,
+        "sn0_pre": -394.84466437174547
+      },
+      "minos_fNL": {
+        "lower": -7.16108074495596,
+        "lower_error": -7.406026912358407,
+        "upper": 7.702973258116852,
+        "upper_error": 7.458027090714405,
+        "valid": true
+      },
+      "objective": 12.573082360564328,
+      "optimizer_valid": true,
+      "pair": "pre_sto_only",
+      "target": "fNL0",
+      "truth_fNL": 0.0,
+      "truth_profile": {
+        "delta_chi2": 0.0010869190638427284,
+        "inside_delta_chi2_1": true,
+        "inside_delta_chi2_4": true,
+        "mapping": {
+          "b1_post": 2.2218560868190997,
+          "b1_pre": 1.9547125736966455,
+          "fNL": 0.0,
+          "sn0_post": -569.4816190588394,
+          "sn0_pre": -399.9664595448917
+        },
+        "objective": 12.57416927962817
+      }
+    },
+    "pre_sto_only__fNL100": {
+      "covariance": {
+        "condition_number": 28944.009040493125,
+        "dimension": 24,
+        "hartlap": 0.9498997995991983,
+        "minimum_eigenvalue": 423.2816790085889,
+        "source": "joint Fid500 fNL0 (full pre--post cross blocks)",
+        "volume_ratio": 42.875
+      },
+      "data_chi2": 41.22066473617729,
+      "dof": 19,
+      "goodness_of_fit_p": 0.00225531046101115,
+      "hesse_covariance": [
+        [
+          48.321184114357905,
+          -0.0572514166160974,
+          -0.07631215104556509,
+          1099.5947729207207,
+          1655.1414177205036
+        ],
+        [
+          -0.0572514166160974,
+          0.0001722296064071971,
+          0.00020510055677798987,
+          -4.060590110329775,
+          -5.38373980309165
+        ],
+        [
+          -0.07631215104556509,
+          0.00020510055677798987,
+          0.0002516071232053751,
+          -4.760910045285087,
+          -6.507709657832139
+        ],
+        [
+          1099.5947729207207,
+          -4.060590110329775,
+          -4.760910045285087,
+          101850.86558023782,
+          132882.85735073953
+        ],
+        [
+          1655.1414177205036,
+          -5.38373980309165,
+          -6.507709657832139,
+          132882.85735073953,
+          179242.20912549575
+        ]
+      ],
+      "map": {
+        "b1_post": 2.252749483064103,
+        "b1_pre": 1.9891955402156314,
+        "fNL": 49.79171115255149,
+        "sn0_post": -1383.6432860364177,
+        "sn0_pre": -1313.448161794184
+      },
+      "minos_fNL": {
+        "lower": 42.88217212856224,
+        "lower_error": -6.9095390239892565,
+        "upper": 56.77778517696362,
+        "upper_error": 6.986074024412127,
+        "valid": true
+      },
+      "objective": 41.22066473617729,
+      "optimizer_valid": true,
+      "pair": "pre_sto_only",
+      "target": "fNL100",
+      "truth_fNL": 100.0,
+      "truth_profile": {
+        "delta_chi2": 47.68903307715109,
+        "inside_delta_chi2_1": false,
+        "inside_delta_chi2_4": false,
+        "mapping": {
+          "b1_post": 2.1720289058424482,
+          "b1_pre": 1.9284798058662198,
+          "fNL": 100.0,
+          "sn0_post": 395.5138759556175,
+          "sn0_pre": -123.4221260051172
+        },
+        "objective": 88.90969781332838
+      }
+    }
+  },
+  "schema": "quijote-z0p5-pre-post-joint-p0only-profiles-v1",
+  "scope": {
+    "P_bins_per_channel": 12,
+    "P_kmax_label": 0.08,
+    "covariance": "joint Fid500 fNL0 24x24 / volume / Hartlap_24; no target-count divisor",
+    "pairs": [
+      "pre_sto_only"
+    ],
+    "parameters": [
+      "fNL",
+      "b1_pre",
+      "b1_post",
+      "sn0_pre",
+      "sn0_post"
+    ],
+    "targets": [
+      "fNL0",
+      "fNL100"
+    ],
+    "truths": {
+      "fNL0": 0.0,
+      "fNL100": 100.0
+    }
+  },
+  "status": "complete"
+}

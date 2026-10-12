@@ -1,0 +1,24 @@
+{
+  "bin_index": 59,
+  "mesh": 160,
+  "coefficient_design": [
+    -4735.962411717931,
+    -0.479641699212389,
+    -1.2811008826581735e-05
+  ],
+  "independent_convolution_design": [
+    -4735.9624117179355,
+    -0.47964169921238786,
+    -1.2811008826581698e-05
+  ],
+  "scaled_error": 9.602005070000288e-16,
+  "geometry": {
+    "full_denominator": 370828540,
+    "nonzero_input_pairs": 370828540,
+    "maximum_weighted_convolution_imaginary_roundoff": 2.7975317861477793e-16,
+    "closing_leg_unrestricted": true,
+    "numerator_source_zero_legs_removed": true,
+    "weighted_convolution_coefficients_rounded": false,
+    "production_values_transform_integral_called": false
+  }
+}

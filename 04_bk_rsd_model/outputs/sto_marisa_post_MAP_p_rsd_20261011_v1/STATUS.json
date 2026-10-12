@@ -1,0 +1,29 @@
+{
+  "pid": 2023981,
+  "host": "login26",
+  "CPU_affinity": [
+    12
+  ],
+  "started_UTC": "2026-10-11T05:34:14.747801+00:00",
+  "state": "COMPLETE_NINE_CHAINS_AND_COMPARISON_VERIFIED",
+  "completed_cases": [
+    "fiducial_post_P0_postMAPp",
+    "LC_p_post_P0_postMAPp",
+    "LC_m_post_P0_postMAPp",
+    "fiducial_post_PB_4plus4_k0.08_postMAPp",
+    "LC_p_post_PB_4plus4_k0.08_postMAPp",
+    "LC_m_post_PB_4plus4_k0.08_postMAPp",
+    "fiducial_post_PB_4plus4_k0.14_postMAPp",
+    "LC_p_post_PB_4plus4_k0.14_postMAPp",
+    "LC_m_post_PB_4plus4_k0.14_postMAPp"
+  ],
+  "physical_p": 1.2494076995227128,
+  "updated_UTC": "2026-10-11T05:51:26.199998+00:00",
+  "current_case": null,
+  "current_case_index": 9,
+  "requested_checkpoint_steps": 12000,
+  "worker_pids": [],
+  "last_checked_steps": 12000,
+  "last_converged": true,
+  "finished_UTC": "2026-10-11T05:51:26.199988+00:00"
+}

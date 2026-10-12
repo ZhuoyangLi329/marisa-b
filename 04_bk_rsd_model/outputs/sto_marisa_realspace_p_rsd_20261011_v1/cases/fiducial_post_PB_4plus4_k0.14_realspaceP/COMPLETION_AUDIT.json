@@ -1,0 +1,16 @@
+{
+  "name": "fiducial_post_PB_4plus4_k0.14_realspaceP",
+  "converged": true,
+  "steps_each_ensemble": 12000,
+  "complete_HDF_priors_gates_quantiles_sigma_thin_replayed": true,
+  "independent_logprob_spots": 512,
+  "max_logprob_error": 1.0036416142611415e-13,
+  "summary_sha256": "6f8cfe307cd12789c6def7aca4e8e9d62047b41c609baf69dafa78a29cfd83dd",
+  "chain_sha256": [
+    "caae558a6a48d4a2c3d4a1ebb0f672072c186beff00dfaf3b747e539c2c9f75e",
+    "42e18473446c5cb0701d2e9b63835f997fcdc04baa1599a5edf9bcad0c155fcc",
+    "5b0129e59a16104f24c0d0f28ab291a4ab1be55151db189cd21cd1334035a2d2",
+    "74c025c5cf4469699af9ba7b20d0ef78b8209e1f4a5be8f68d88983163f6dbed"
+  ],
+  "created_UTC": "2026-10-11T04:46:25.025596+00:00"
+}

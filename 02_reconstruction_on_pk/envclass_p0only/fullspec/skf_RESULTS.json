@@ -1,0 +1,95 @@
+{
+  "schema": "quijote-z0p5-envclass-fullspec-mcmc-v8",
+  "created_utc": "2026-09-17T15:47:28.818451+00:00",
+  "combo": "skf",
+  "classes": [
+    "sheet",
+    "knot",
+    "filament"
+  ],
+  "beta_from_calibration": {
+    "sheet": 1.132484706163526,
+    "knot": 1.7209851149771578,
+    "filament": 1.0787199568362784
+  },
+  "data_vector": "bare-auto + cross converted to FKP caliber (v3)",
+  "caliber_conversion": {
+    "auto": "P_cc = K_c/(n_c^2*nmodes)*P_bare_cc - sn_c",
+    "cross": "P_cd = K_CROSS/(n_c*n_d*nmodes)*P_bare_cd",
+    "K_CLASS": {
+      "void": 80054000000.0,
+      "sheet": 79474000000.0,
+      "filament": 79472000000.0,
+      "knot": 79861000000.0
+    },
+    "K_CROSS": 79470000000.0,
+    "n_sn_source": "FKP product npz: n=sqrt(norm*V), sn=num_shotnoise/norm",
+    "validation": "probe_k_universal_result.json (200 reals, scatter 0.16-32%)"
+  },
+  "model": {
+    "form": "P_cc = b1_c^2*(G_c + fNL*R_c) + sn0_c;  P_cd = b1_c*b1_d*(G_cd + fNL*R_cd)",
+    "G": "fid 100-real mean spectrum per block (full Gaussian shape incl. bias-loop/calib-offset/sn-residual/cross spatial-separation effects)",
+    "R": "(LC_p mean - fid mean)/100 per block (measured PNG response shape; decays faster than any theoretical template at high k, see diag_response_shape.py)",
+    "caveats": "fnl0/fnl100 targets share data with G/R templates -> constructive closure (same-data self-consistency test, same spirit as jointA +100); sigma(fNL) from covariance + nuisance degeneracy remains meaningful"
+  },
+  "results": {
+    "fNL0": {
+      "fNL": {
+        "median": -0.08898069955023602,
+        "q16": -13.439197759932679,
+        "q84": 13.370246153069843,
+        "q2p5": -26.266395269784894,
+        "q97p5": 26.499439743344745,
+        "half_width": 13.40472195650126
+      },
+      "truth_inside_68": true,
+      "truth_inside_95": true,
+      "truth_percentile": 0.5023333333333333,
+      "b1": {
+        "s": 0.999969188637511,
+        "k": 1.000041011772672,
+        "f": 0.9999656249787714
+      },
+      "sn0": {
+        "s": 10.281152879036767,
+        "k": -39.10624220756262,
+        "f": -10.078190860815393
+      },
+      "gof_p": 1.0,
+      "converged": true,
+      "acceptance": 0.44359244791666663,
+      "n_fid": 99,
+      "n_lcp": 97,
+      "dim": 72
+    },
+    "fNL100": {
+      "fNL": {
+        "median": 99.60361838991943,
+        "q16": 86.1990678667302,
+        "q84": 113.26246784105767,
+        "q2p5": 73.4649020175118,
+        "q97p5": 126.57694269986885,
+        "half_width": 13.531699987163734
+      },
+      "truth_inside_68": true,
+      "truth_inside_95": true,
+      "truth_percentile": 0.5111,
+      "b1": {
+        "s": 1.0000232010355208,
+        "k": 0.9999845178749075,
+        "f": 0.9999730901372721
+      },
+      "sn0": {
+        "s": -1.9856533880028113,
+        "k": -14.916353761453124,
+        "f": 14.540044482614043
+      },
+      "gof_p": 1.0,
+      "converged": true,
+      "acceptance": 0.4446276041666667,
+      "n_fid": 99,
+      "n_lcp": 97,
+      "dim": 72
+    }
+  }
+}

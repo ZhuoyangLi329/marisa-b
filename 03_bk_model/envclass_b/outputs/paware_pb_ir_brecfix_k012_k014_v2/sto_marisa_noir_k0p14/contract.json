@@ -1,0 +1,109 @@
+{
+  "method": "sto_marisa",
+  "kmax_B": 0.14,
+  "kmax_P": 0.08,
+  "volume": 42.875,
+  "p_halo": 1.2822,
+  "p_fixed_not_marginalized": true,
+  "truth_fNL": 100,
+  "n_target": 250,
+  "n_fid": 500,
+  "parameter_names": [
+    "fNL",
+    "b1",
+    "Pshot",
+    "b2",
+    "gamma2",
+    "Ashot_residual",
+    "Bshot_residual"
+  ],
+  "full_PB_cross_covariance": true,
+  "cross_correlation_max": 0.3541455369860895,
+  "hartlap": 0.9198396793587175,
+  "IR_resummation": false,
+  "Gaussian_discrepancy": false,
+  "polynomial_max_whitened_error": 2.275269289821509e-11,
+  "reference_data_chi2_parity": 0.0,
+  "reference_MINOS": {
+    "gof_p_value_data_only": 0.07604948006420448,
+    "note": "new MAP GoF; no new MINOS interval is claimed"
+  },
+  "original_runner_sha256": "357a9e973055770a3c90337d7b749ae14cb7f70739b6d1f02a691ddb52569527",
+  "runner_sha256": "b22863d471e18270ef8fa34069223bd52ab960e7afcdbe2a4d54a7c4ec86cfeb",
+  "prior_weight": 0.04,
+  "calibration_uncertainty_propagated": false,
+  "fid_covariance_note": "\u6cbf\u7528\u73b0\u884c\u51bb\u7ed3 Fid500\uff1bSTO target \u4e3a p-aware matched250",
+  "sampling": {
+    "ensembles": 4,
+    "walkers": 32,
+    "initial_steps": 6000,
+    "max_steps": 20000,
+    "burn_fraction": 0.5
+  },
+  "map": {
+    "fNL": 112.9468155940294,
+    "b1": 2.17960337980828,
+    "Pshot": -1771.4285178308742,
+    "b2": 0.48328380790229625,
+    "gamma2": -0.2715287501791477,
+    "Ashot_residual": 0.17180869982985314,
+    "Bshot_residual": -0.4673381086686277
+  },
+  "map_objective": 44.062203338224506,
+  "likelihood_sha256": "8fab07ca9466b340470f619ca824bcd436a6ece415d85900ad8bdd06f3e70644",
+  "case": "sto_marisa_noir_k0p14",
+  "baseline_reconstruction_corrected": true,
+  "reconstruction": {
+    "b_rec": 2.2280546353635335,
+    "p_rec": 1.2822,
+    "p_halo": 1.2822,
+    "old_cache_b_rec": 1.9326526728794324,
+    "raw_shift_multiplier": 0.8674170921145734,
+    "correction": "exact analytic 1/b_rec rescaling of G b1^4, PNG L/Q reconstruction, and all three adaptive raw bases",
+    "reconstruction_parameter_path": "f_rec=f (inherited legacy theoretical path)",
+    "catalogue_f_rec": 100.0,
+    "scope_warning": "controlled legacy-path comparison; not fixed-nonzero-f_rec inference",
+    "stochastic_closure": "legacy_accepted_pre retained; no added shift-noise damping"
+  },
+  "baseline_contract": "036e65c0134371c3482c4d713ade03211d030c450e6280cc94741326bc112de6",
+  "baseline_likelihood_sha256": "773fa8a5ec85f1d2397771ee392c4a7573dfacfb2c9b7416fe57ff4b3e451d96",
+  "unchanged_arrays": {
+    "target": true,
+    "covariance": true,
+    "chol": true,
+    "prior_mean": true,
+    "prior_whitener": true,
+    "bounds": true,
+    "indices": true
+  },
+  "polynomial_degree": 6,
+  "map_data_chi2": 44.057948769391345,
+  "map_prior_chi2": 0.004254568833163973,
+  "corrected_model_sha256": "6d6410ce3aa04af73b412b688d1ee1bd18ff9445981f89e35790ae2df87c613e",
+  "old_reference_MINOS": {
+    "case": "sto_marisa",
+    "kmax_h_mpc": 0.14,
+    "ndata": 39,
+    "n_fid": 500,
+    "n_target": 250,
+    "map_fNL": 114.744931069824,
+    "minos_fNL": {
+      "lower": -6.76816412642975,
+      "upper": 6.882629760261576,
+      "valid": true
+    },
+    "map": {
+      "fNL": 114.744931069824,
+      "b1": 2.1692024675779265,
+      "Pshot": -1484.5772699093407,
+      "b2": 1.075318792188207,
+      "gamma2": -0.05821815817315574,
+      "Ashot_residual": -0.5908187092918524,
+      "Bshot_residual": -0.5019379358036531
+    },
+    "data_chi2": 69.78546964643454,
+    "dof": 32,
+    "gof_p_value_data_only": 0.00012613439919817126,
+    "hartlap": 0.9198396793587175
+  }
+}

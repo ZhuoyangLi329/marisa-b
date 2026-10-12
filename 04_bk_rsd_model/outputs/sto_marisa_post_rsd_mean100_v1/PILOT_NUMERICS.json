@@ -1,0 +1,371 @@
+{
+  "status": "PILOT_NUMERIC_COMPARISONS_NOT_SCIENTIFIC_ACCEPTANCE",
+  "created_UTC": "2026-10-08T18:34:02.075203+00:00",
+  "completed_pilots": [
+    {
+      "name": "LC_m_real000_rec256_meas256_ran30",
+      "arguments": {
+        "cosmology": "LC_m",
+        "realization": 0,
+        "recon_mesh": 256,
+        "measurement_mesh": 256,
+        "nran": 30,
+        "self_contraction": "legacy"
+      },
+      "host": "login02",
+      "CPU_affinity": [
+        7
+      ],
+      "measurement_sha256": "6193839fb5da3087fafba8338af12bcc6d0092ca54530122019cddb0c001b212",
+      "post_halos_sha256": "3d66c34437ee30e02c79a5a894301b347493dcf16f8e5409f863f0c7d89c6444",
+      "entry_sha256": "a889c28b7a1335cce7454a0c8ac74338c3fc6a5a00d7985f6ee52da463c1fc17",
+      "complete_UTC": "2026-10-08T15:31:30.265091+00:00"
+    },
+    {
+      "name": "LC_p_real000_rec256_meas256_ran30",
+      "arguments": {
+        "cosmology": "LC_p",
+        "realization": 0,
+        "recon_mesh": 256,
+        "measurement_mesh": 256,
+        "nran": 30
+      },
+      "host": "login38",
+      "CPU_affinity": [
+        7
+      ],
+      "measurement_sha256": "8d6c65b13f64a9bbb78c163c3e519c39f9dbecac3276bad05912dda494e8f1ee",
+      "post_halos_sha256": "9e31938f748b959b9649bf105e6973d02ed4b04b1d9be0c43deeb0d7b2e98925",
+      "entry_sha256": "b1e6a21e02ab2b26360336d4d467e25fb52e8ae9b3d113a5e6535ff926aceff7",
+      "complete_UTC": "2026-10-08T15:02:55.824371+00:00"
+    },
+    {
+      "name": "fiducial_real000_rec125_meas256_ran30",
+      "arguments": {
+        "cosmology": "fiducial",
+        "realization": 0,
+        "recon_mesh": 125,
+        "measurement_mesh": 256,
+        "nran": 30
+      },
+      "host": "login34",
+      "CPU_affinity": [
+        7
+      ],
+      "measurement_sha256": "9952c2fd92e364faee72dd3f98139092ae33393e181dca8d13f099a83a6031db",
+      "post_halos_sha256": "8d65f4b6e3149bbf4be6ec4c1671b4206c4563b3730b81f4157456821e53f353",
+      "entry_sha256": "b1e6a21e02ab2b26360336d4d467e25fb52e8ae9b3d113a5e6535ff926aceff7",
+      "complete_UTC": "2026-10-08T14:31:47.636276+00:00"
+    },
+    {
+      "name": "fiducial_real000_rec256_meas256_ran30",
+      "arguments": {
+        "cosmology": "fiducial",
+        "realization": 0,
+        "recon_mesh": 256,
+        "measurement_mesh": 256,
+        "nran": 30
+      },
+      "host": "login13",
+      "CPU_affinity": [
+        7
+      ],
+      "measurement_sha256": "1b6120728f0f7129db7e89dc9b70fe1cb7879ee7e9470beb5ba237d5111264a8",
+      "post_halos_sha256": "fd34de2d6ab1ff3d0c503da3e02681899a105f6c22181b02ceea4033cad79b9f",
+      "entry_sha256": "b1e6a21e02ab2b26360336d4d467e25fb52e8ae9b3d113a5e6535ff926aceff7",
+      "complete_UTC": "2026-10-08T14:45:40.162713+00:00"
+    },
+    {
+      "name": "fiducial_real000_rec256_meas256_ran30_selfmatched",
+      "arguments": {
+        "cosmology": "fiducial",
+        "realization": 0,
+        "recon_mesh": 256,
+        "measurement_mesh": 256,
+        "nran": 30,
+        "self_contraction": "matched"
+      },
+      "host": "login01",
+      "CPU_affinity": [
+        8
+      ],
+      "measurement_sha256": "2de04ad5ceb02824fb66c0e3ff7e05ee45fcb63ef1a0f1668b6f920b285331b3",
+      "post_halos_sha256": "fd34de2d6ab1ff3d0c503da3e02681899a105f6c22181b02ceea4033cad79b9f",
+      "entry_sha256": "a889c28b7a1335cce7454a0c8ac74338c3fc6a5a00d7985f6ee52da463c1fc17",
+      "complete_UTC": "2026-10-08T15:32:47.107212+00:00"
+    },
+    {
+      "name": "fiducial_real000_rec256_meas256_ran30_selfmatched_zeroaudit",
+      "arguments": {
+        "cosmology": "fiducial",
+        "realization": 0,
+        "recon_mesh": 256,
+        "measurement_mesh": 256,
+        "nran": 30,
+        "self_contraction": "matched",
+        "zero_atom_diagnostics": true
+      },
+      "host": "login13",
+      "CPU_affinity": [
+        7
+      ],
+      "measurement_sha256": "151621fdbb265692062012e48f7f54c2814666c1598c7b6d1619d0321c7c7432",
+      "post_halos_sha256": "fd34de2d6ab1ff3d0c503da3e02681899a105f6c22181b02ceea4033cad79b9f",
+      "entry_sha256": "e1c6e47773c4a5c2a2ef1a3e146d7d977e8577772980dacbf56866660e1d807b",
+      "complete_UTC": "2026-10-08T17:20:20.427171+00:00"
+    },
+    {
+      "name": "fiducial_real000_rec256_meas256_ran30_selfmatched_zeroaudit_originhalf",
+      "arguments": {
+        "cosmology": "fiducial",
+        "realization": 0,
+        "recon_mesh": 256,
+        "measurement_mesh": 256,
+        "nran": 30,
+        "self_contraction": "matched",
+        "zero_atom_diagnostics": true,
+        "grid_origin_fraction": 0.5,
+        "nested_randoms": false
+      },
+      "host": "login33",
+      "CPU_affinity": [
+        7
+      ],
+      "measurement_sha256": "13762bc5f2ce6d19e057a9ffd2cd11fdc30f04f58e29154f6c79047ddfdf4484",
+      "post_halos_sha256": "af4326d6457bacdab9214c9cc0816370e24fd0954c7896eac949d25304a8166c",
+      "entry_sha256": "602c22fe2587a57066bf7b334a76bbfab3137614df06d3b54c293bd591c2ac16",
+      "complete_UTC": "2026-10-08T18:15:05.032003+00:00"
+    },
+    {
+      "name": "fiducial_real000_rec256_meas256_ran60_selfmatched_zeroaudit_nested",
+      "arguments": {
+        "cosmology": "fiducial",
+        "realization": 0,
+        "recon_mesh": 256,
+        "measurement_mesh": 256,
+        "nran": 60,
+        "self_contraction": "matched",
+        "zero_atom_diagnostics": true,
+        "grid_origin_fraction": 0.0,
+        "nested_randoms": true
+      },
+      "host": "login39",
+      "CPU_affinity": [
+        8
+      ],
+      "measurement_sha256": "11a59196801409fdf5d02173c5cb4469b19d2e3646647b650dd5a97ce791d37f",
+      "post_halos_sha256": "fd34de2d6ab1ff3d0c503da3e02681899a105f6c22181b02ceea4033cad79b9f",
+      "entry_sha256": "602c22fe2587a57066bf7b334a76bbfab3137614df06d3b54c293bd591c2ac16",
+      "complete_UTC": "2026-10-08T18:16:35.139365+00:00"
+    },
+    {
+      "name": "fiducial_real000_rec512_meas256_ran30",
+      "arguments": {
+        "cosmology": "fiducial",
+        "realization": 0,
+        "recon_mesh": 512,
+        "measurement_mesh": 256,
+        "nran": 30,
+        "self_contraction": "legacy"
+      },
+      "host": "login15",
+      "CPU_affinity": [
+        9
+      ],
+      "measurement_sha256": "1c6c0a644aa8aa9e5db5565999021e5bb0be67dbaa1beba8fc6097085d5cd959",
+      "post_halos_sha256": "58cb4e65a62f4fdd40f378c7100fdaff583bf553f4ae7a26ba0fa8d6a341dc3b",
+      "entry_sha256": "a889c28b7a1335cce7454a0c8ac74338c3fc6a5a00d7985f6ee52da463c1fc17",
+      "complete_UTC": "2026-10-08T15:38:23.229917+00:00"
+    }
+  ],
+  "comparisons": [
+    {
+      "first": "fiducial_real000_rec125_meas256_ran30",
+      "second": "fiducial_real000_rec256_meas256_ran30",
+      "halo_displacement_difference_RMS_Mpc_h": [
+        0.18354725765064142,
+        0.18456879062447398,
+        0.18721851668443643
+      ],
+      "halo_displacement_difference_max_Mpc_h": 1.6915283203125,
+      "post_halos_identical": false,
+      "P0_kmax08_delta_L2_over_P_L2": 0.0037823500472349996,
+      "max_Braw_difference": 126505617.51574707,
+      "B_cuts": [
+        {
+          "kmax_B": 0.08,
+          "number_B": 9,
+          "delta_B_L2_over_B_L2": 0.08869897407571556,
+          "max_abs_delta_B": 120291651.76512265,
+          "max_abs_delta_over_raw_plus_shot": 0.07511190619037547
+        },
+        {
+          "kmax_B": 0.1,
+          "number_B": 14,
+          "delta_B_L2_over_B_L2": 0.09216481355419011,
+          "max_abs_delta_B": 120291651.76512265,
+          "max_abs_delta_over_raw_plus_shot": 0.07511190619037547
+        },
+        {
+          "kmax_B": 0.12,
+          "number_B": 20,
+          "delta_B_L2_over_B_L2": 0.09458763740321924,
+          "max_abs_delta_B": 120291651.76512265,
+          "max_abs_delta_over_raw_plus_shot": 0.07511190619037547
+        },
+        {
+          "kmax_B": 0.14,
+          "number_B": 27,
+          "delta_B_L2_over_B_L2": 0.0945932763280476,
+          "max_abs_delta_B": 120291651.76512265,
+          "max_abs_delta_over_raw_plus_shot": 0.07511190619037547
+        },
+        {
+          "kmax_B": 0.18,
+          "number_B": 35,
+          "delta_B_L2_over_B_L2": 0.09472876039884078,
+          "max_abs_delta_B": 120291651.76512265,
+          "max_abs_delta_over_raw_plus_shot": 0.07511190619037547
+        },
+        {
+          "kmax_B": 0.2,
+          "number_B": 44,
+          "delta_B_L2_over_B_L2": 0.09440882551257024,
+          "max_abs_delta_B": 120291651.76512265,
+          "max_abs_delta_over_raw_plus_shot": 0.07511190619037547
+        }
+      ],
+      "whitened_error": null,
+      "post_covariance_used": false
+    },
+    {
+      "first": "fiducial_real000_rec256_meas256_ran30",
+      "second": "fiducial_real000_rec512_meas256_ran30",
+      "halo_displacement_difference_RMS_Mpc_h": [
+        0.04768278458763718,
+        0.04783072173148756,
+        0.04825808506990696
+      ],
+      "halo_displacement_difference_max_Mpc_h": 0.4953155517578125,
+      "post_halos_identical": false,
+      "P0_kmax08_delta_L2_over_P_L2": 0.0010077922778610805,
+      "max_Braw_difference": 32900562.694473505,
+      "B_cuts": [
+        {
+          "kmax_B": 0.08,
+          "number_B": 9,
+          "delta_B_L2_over_B_L2": 0.024356723810884634,
+          "max_abs_delta_B": 31339884.493083477,
+          "max_abs_delta_over_raw_plus_shot": 0.020314277963796035
+        },
+        {
+          "kmax_B": 0.1,
+          "number_B": 14,
+          "delta_B_L2_over_B_L2": 0.025426897523842446,
+          "max_abs_delta_B": 31339884.493083477,
+          "max_abs_delta_over_raw_plus_shot": 0.020314277963796035
+        },
+        {
+          "kmax_B": 0.12,
+          "number_B": 20,
+          "delta_B_L2_over_B_L2": 0.026177499957293276,
+          "max_abs_delta_B": 31339884.493083477,
+          "max_abs_delta_over_raw_plus_shot": 0.020314277963796035
+        },
+        {
+          "kmax_B": 0.14,
+          "number_B": 27,
+          "delta_B_L2_over_B_L2": 0.02623996987939293,
+          "max_abs_delta_B": 31339884.493083477,
+          "max_abs_delta_over_raw_plus_shot": 0.020314277963796035
+        },
+        {
+          "kmax_B": 0.18,
+          "number_B": 35,
+          "delta_B_L2_over_B_L2": 0.026303541100502016,
+          "max_abs_delta_B": 31339884.493083477,
+          "max_abs_delta_over_raw_plus_shot": 0.020314277963796035
+        },
+        {
+          "kmax_B": 0.2,
+          "number_B": 44,
+          "delta_B_L2_over_B_L2": 0.026225236546227278,
+          "max_abs_delta_B": 31339884.493083477,
+          "max_abs_delta_over_raw_plus_shot": 0.020314277963796035
+        }
+      ],
+      "whitened_error": null,
+      "post_covariance_used": false
+    },
+    {
+      "first": "fiducial_real000_rec256_meas256_ran30",
+      "second": "fiducial_real000_rec256_meas256_ran30_selfmatched",
+      "halo_displacement_difference_RMS_Mpc_h": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "halo_displacement_difference_max_Mpc_h": 0.0,
+      "post_halos_identical": true,
+      "P0_kmax08_delta_L2_over_P_L2": 0.0,
+      "max_Braw_difference": 138.5674171447754,
+      "B_cuts": [
+        {
+          "kmax_B": 0.08,
+          "number_B": 9,
+          "delta_B_L2_over_B_L2": 0.001435945554390803,
+          "max_abs_delta_B": 3468512.32464236,
+          "max_abs_delta_over_raw_plus_shot": 0.0028555863831264236
+        },
+        {
+          "kmax_B": 0.1,
+          "number_B": 14,
+          "delta_B_L2_over_B_L2": 0.0012922064355766025,
+          "max_abs_delta_B": 3468512.32464236,
+          "max_abs_delta_over_raw_plus_shot": 0.0028555863831264236
+        },
+        {
+          "kmax_B": 0.12,
+          "number_B": 20,
+          "delta_B_L2_over_B_L2": 0.0012411344798427817,
+          "max_abs_delta_B": 3468512.32464236,
+          "max_abs_delta_over_raw_plus_shot": 0.0028555863831264236
+        },
+        {
+          "kmax_B": 0.14,
+          "number_B": 27,
+          "delta_B_L2_over_B_L2": 0.0011805599432401575,
+          "max_abs_delta_B": 3468512.32464236,
+          "max_abs_delta_over_raw_plus_shot": 0.0028555863831264236
+        },
+        {
+          "kmax_B": 0.18,
+          "number_B": 35,
+          "delta_B_L2_over_B_L2": 0.0011600660898980655,
+          "max_abs_delta_B": 3468512.32464236,
+          "max_abs_delta_over_raw_plus_shot": 0.0028555863831264236
+        },
+        {
+          "kmax_B": 0.2,
+          "number_B": 44,
+          "delta_B_L2_over_B_L2": 0.001143077432033938,
+          "max_abs_delta_B": 3468512.32464236,
+          "max_abs_delta_over_raw_plus_shot": 0.0028555863831264236
+        }
+      ],
+      "whitened_error": null,
+      "post_covariance_used": false
+    }
+  ],
+  "covariance_inputs_complete": false,
+  "bulk_released": false,
+  "MCMC_released": false,
+  "caveats": [
+    "one realization per truth, not mean100",
+    "mesh change alters a known CIC window as well as alias error",
+    "no post covariance whitening or numerical acceptance yet",
+    "estimator change requires matched new pre control if adopted",
+    "weighted factorial identity is not a shift-noise closure"
+  ],
+  "entry_sha256": "ebc8a056ac4e2d17bcbca1f0a59a52260ab4dbf174fb8ef82caea164516af34e"
+}

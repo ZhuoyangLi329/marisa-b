@@ -1,0 +1,2171 @@
+{
+  "status": "ALL44_DUAL_GRID_PN_CROSS_INDEPENDENT_CONVOLUTION_PASS_NOT_STO_CLOSURE",
+  "created_UTC": "2026-10-09T22:28:30.238886+00:00",
+  "actual_job": {
+    "job_id": "59597420",
+    "state": "COMPLETED",
+    "exit_code": "0:0"
+  },
+  "rows": [
+    {
+      "bin_index": 1,
+      "mesh": 32,
+      "coefficient_design": [
+        -75620.33420656853,
+        -69.08520094288622,
+        -0.02505870457202598
+      ],
+      "independent_convolution_design": [
+        -75620.33420656844,
+        -69.08520094288622,
+        -0.02505870457202582
+      ],
+      "scaled_error": 1.1546033522107492e-15,
+      "geometry": {
+        "full_denominator": 153174,
+        "nonzero_input_pairs": 152132,
+        "maximum_weighted_convolution_imaginary_roundoff": 1.7730137356298863e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 1,
+      "mesh": 48,
+      "coefficient_design": [
+        -75620.33420656853,
+        -69.08520094288622,
+        -0.02505870457202598
+      ],
+      "independent_convolution_design": [
+        -75620.33420656838,
+        -69.08520094288615,
+        -0.025058704572025806
+      ],
+      "scaled_error": 1.9243389203512504e-15,
+      "geometry": {
+        "full_denominator": 153174,
+        "nonzero_input_pairs": 152132,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.6540711052503745e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 2,
+      "mesh": 48,
+      "coefficient_design": [
+        -64084.774527880516,
+        -57.21433503108641,
+        -0.02168179508071091
+      ],
+      "independent_convolution_design": [
+        -64084.77452788049,
+        -57.21433503108634,
+        -0.021681795080711032
+      ],
+      "scaled_error": 4.989394648692074e-16,
+      "geometry": {
+        "full_denominator": 400134,
+        "nonzero_input_pairs": 397412,
+        "maximum_weighted_convolution_imaginary_roundoff": 4.989061992964882e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 2,
+      "mesh": 64,
+      "coefficient_design": [
+        -64084.774527880516,
+        -57.21433503108641,
+        -0.02168179508071091
+      ],
+      "independent_convolution_design": [
+        -64084.77452788053,
+        -57.21433503108639,
+        -0.02168179508071105
+      ],
+      "scaled_error": 5.41383967957039e-16,
+      "geometry": {
+        "full_denominator": 400134,
+        "nonzero_input_pairs": 397412,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.809325007157361e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 3,
+      "mesh": 64,
+      "coefficient_design": [
+        -55380.081120508636,
+        -48.857320239172296,
+        -0.0189659418138803
+      ],
+      "independent_convolution_design": [
+        -55380.08112050873,
+        -48.85732023917243,
+        -0.01896594181388011
+      ],
+      "scaled_error": 1.7079687691059785e-15,
+      "geometry": {
+        "full_denominator": 815556,
+        "nonzero_input_pairs": 810008,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.747157723747234e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 3,
+      "mesh": 80,
+      "coefficient_design": [
+        -55380.081120508636,
+        -48.857320239172296,
+        -0.0189659418138803
+      ],
+      "independent_convolution_design": [
+        -55380.08112050873,
+        -48.85732023917243,
+        -0.018965941813880113
+      ],
+      "scaled_error": 1.7079687691059785e-15,
+      "geometry": {
+        "full_denominator": 815556,
+        "nonzero_input_pairs": 810008,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.1320812135859835e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 4,
+      "mesh": 80,
+      "coefficient_design": [
+        -45722.13173429479,
+        -40.38830742807434,
+        -0.015858023523538337
+      ],
+      "independent_convolution_design": [
+        -45722.1317342948,
+        -40.3883074280743,
+        -0.015858023523538364
+      ],
+      "scaled_error": 4.662136533064205e-16,
+      "geometry": {
+        "full_denominator": 1345638,
+        "nonzero_input_pairs": 1336484,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.288469961231743e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 4,
+      "mesh": 96,
+      "coefficient_design": [
+        -45722.13173429479,
+        -40.38830742807434,
+        -0.015858023523538337
+      ],
+      "independent_convolution_design": [
+        -45722.13173429478,
+        -40.388307428074285,
+        -0.015858023523538357
+      ],
+      "scaled_error": 6.216182044085611e-16,
+      "geometry": {
+        "full_denominator": 1345638,
+        "nonzero_input_pairs": 1336484,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.3899636166332614e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 5,
+      "mesh": 80,
+      "coefficient_design": [
+        -35116.77029284806,
+        -32.06705390082866,
+        -0.012687017571381905
+      ],
+      "independent_convolution_design": [
+        -35116.77029284801,
+        -32.067053900828604,
+        -0.01268701757138196
+      ],
+      "scaled_error": 1.4503527196422416e-15,
+      "geometry": {
+        "full_denominator": 2001846,
+        "nonzero_input_pairs": 1988228,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.543260171712278e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 5,
+      "mesh": 96,
+      "coefficient_design": [
+        -35116.77029284806,
+        -32.06705390082866,
+        -0.012687017571381905
+      ],
+      "independent_convolution_design": [
+        -35116.77029284799,
+        -32.0670539008286,
+        -0.012687017571381954
+      ],
+      "scaled_error": 1.864739210968597e-15,
+      "geometry": {
+        "full_denominator": 2001846,
+        "nonzero_input_pairs": 1988228,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.8109991998628105e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 6,
+      "mesh": 96,
+      "coefficient_design": [
+        -27777.793910271583,
+        -24.586107154232355,
+        -0.00973407975401474
+      ],
+      "independent_convolution_design": [
+        -27777.793910271543,
+        -24.5861071542324,
+        -0.009734079754014696
+      ],
+      "scaled_error": 1.4406387709288627e-15,
+      "geometry": {
+        "full_denominator": 2741844,
+        "nonzero_input_pairs": 2723192,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.5824074476052327e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 6,
+      "mesh": 112,
+      "coefficient_design": [
+        -27777.793910271583,
+        -24.586107154232355,
+        -0.00973407975401474
+      ],
+      "independent_convolution_design": [
+        -27777.793910271546,
+        -24.586107154232415,
+        -0.0097340797540147
+      ],
+      "scaled_error": 1.3096716099353295e-15,
+      "geometry": {
+        "full_denominator": 2741844,
+        "nonzero_input_pairs": 2723192,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.743952249085429e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 8,
+      "mesh": 128,
+      "coefficient_design": [
+        -14812.52824756208,
+        -12.588273364678773,
+        -0.004975616107632907
+      ],
+      "independent_convolution_design": [
+        -14812.52824756206,
+        -12.58827336467877,
+        -0.004975616107632953
+      ],
+      "scaled_error": 1.3508081203016514e-15,
+      "geometry": {
+        "full_denominator": 4774854,
+        "nonzero_input_pairs": 4742372,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.181975628812398e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 8,
+      "mesh": 144,
+      "coefficient_design": [
+        -14812.52824756208,
+        -12.588273364678773,
+        -0.004975616107632907
+      ],
+      "independent_convolution_design": [
+        -14812.528247562057,
+        -12.588273364678765,
+        -0.004975616107632952
+      ],
+      "scaled_error": 1.5964095967201338e-15,
+      "geometry": {
+        "full_denominator": 4774854,
+        "nonzero_input_pairs": 4742372,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.5823469051445613e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 9,
+      "mesh": 144,
+      "coefficient_design": [
+        -10759.47009730887,
+        -8.466801846246398,
+        -0.003328530898624452
+      ],
+      "independent_convolution_design": [
+        -10759.470097308855,
+        -8.466801846246394,
+        -0.003328530898624432
+      ],
+      "scaled_error": 1.3524750844380856e-15,
+      "geometry": {
+        "full_denominator": 5954970,
+        "nonzero_input_pairs": 5914460,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.844375996197488e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 9,
+      "mesh": 160,
+      "coefficient_design": [
+        -10759.47009730887,
+        -8.466801846246398,
+        -0.003328530898624452
+      ],
+      "independent_convolution_design": [
+        -10759.470097308858,
+        -8.4668018462464,
+        -0.0033285308986244337
+      ],
+      "scaled_error": 1.014356313328564e-15,
+      "geometry": {
+        "full_denominator": 5954970,
+        "nonzero_input_pairs": 5914460,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.6290031431378606e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 15,
+      "mesh": 32,
+      "coefficient_design": [
+        -65713.00118240417,
+        -29.804501600682908,
+        -0.004899997238432653
+      ],
+      "independent_convolution_design": [
+        -65713.00118240422,
+        -29.80450160068301,
+        -0.004899997238432701
+      ],
+      "scaled_error": 7.839293201601803e-16,
+      "geometry": {
+        "full_denominator": 1085764,
+        "nonzero_input_pairs": 1085764,
+        "maximum_weighted_convolution_imaginary_roundoff": 1.662213415476761e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 15,
+      "mesh": 48,
+      "coefficient_design": [
+        -65713.00118240417,
+        -29.804501600682908,
+        -0.004899997238432653
+      ],
+      "independent_convolution_design": [
+        -65713.00118240417,
+        -29.804501600682997,
+        -0.004899997238432696
+      ],
+      "scaled_error": 6.758011380691214e-16,
+      "geometry": {
+        "full_denominator": 1085764,
+        "nonzero_input_pairs": 1085764,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.618469530992967e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 16,
+      "mesh": 48,
+      "coefficient_design": [
+        -54208.6653920852,
+        -19.13471032820672,
+        -0.001966947048007928
+      ],
+      "independent_convolution_design": [
+        -54208.6653920852,
+        -19.13471032820668,
+        -0.001966947048007929
+      ],
+      "scaled_error": 3.6045759643910557e-16,
+      "geometry": {
+        "full_denominator": 2836324,
+        "nonzero_input_pairs": 2836324,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.464726861336095e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 16,
+      "mesh": 64,
+      "coefficient_design": [
+        -54208.6653920852,
+        -19.13471032820672,
+        -0.001966947048007928
+      ],
+      "independent_convolution_design": [
+        -54208.66539208525,
+        -19.134710328206694,
+        -0.0019669470480079302
+      ],
+      "scaled_error": 9.395491095547296e-16,
+      "geometry": {
+        "full_denominator": 2836324,
+        "nonzero_input_pairs": 2836324,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.1505532131400582e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 17,
+      "mesh": 64,
+      "coefficient_design": [
+        -46412.20080152578,
+        -14.59274274364927,
+        -0.0013086869149043611
+      ],
+      "independent_convolution_design": [
+        -46412.20080152581,
+        -14.592742743649291,
+        -0.0013086869149043596
+      ],
+      "scaled_error": 6.270728376185279e-16,
+      "geometry": {
+        "full_denominator": 5781016,
+        "nonzero_input_pairs": 5781016,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.965187847183799e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 17,
+      "mesh": 80,
+      "coefficient_design": [
+        -46412.20080152578,
+        -14.59274274364927,
+        -0.0013086869149043611
+      ],
+      "independent_convolution_design": [
+        -46412.20080152581,
+        -14.592742743649291,
+        -0.0013086869149043596
+      ],
+      "scaled_error": 6.270728376185279e-16,
+      "geometry": {
+        "full_denominator": 5781016,
+        "nonzero_input_pairs": 5781016,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.242777410822671e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 18,
+      "mesh": 80,
+      "coefficient_design": [
+        -37710.29554675464,
+        -11.574240404740294,
+        -0.001046399943477624
+      ],
+      "independent_convolution_design": [
+        -37710.29554675467,
+        -11.574240404740287,
+        -0.0010463999434776295
+      ],
+      "scaled_error": 7.717741278545446e-16,
+      "geometry": {
+        "full_denominator": 9538468,
+        "nonzero_input_pairs": 9538468,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.4896380496985133e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 18,
+      "mesh": 96,
+      "coefficient_design": [
+        -37710.29554675464,
+        -11.574240404740294,
+        -0.001046399943477624
+      ],
+      "independent_convolution_design": [
+        -37710.295546754656,
+        -11.574240404740282,
+        -0.001046399943477629
+      ],
+      "scaled_error": 3.8588706392727246e-16,
+      "geometry": {
+        "full_denominator": 9538468,
+        "nonzero_input_pairs": 9538468,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.341177561867761e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 19,
+      "mesh": 80,
+      "coefficient_design": [
+        -29546.918621974375,
+        -9.046282288450069,
+        -0.0008276132448957489
+      ],
+      "independent_convolution_design": [
+        -29546.918621974335,
+        -9.046282288450056,
+        -0.0008276132448957609
+      ],
+      "scaled_error": 1.3543803802352248e-15,
+      "geometry": {
+        "full_denominator": 14189956,
+        "nonzero_input_pairs": 14189956,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.7133961651073727e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 19,
+      "mesh": 96,
+      "coefficient_design": [
+        -29546.918621974375,
+        -9.046282288450069,
+        -0.0008276132448957489
+      ],
+      "independent_convolution_design": [
+        -29546.91862197432,
+        -9.046282288450053,
+        -0.0008276132448957605
+      ],
+      "scaled_error": 1.8468823366843984e-15,
+      "geometry": {
+        "full_denominator": 14189956,
+        "nonzero_input_pairs": 14189956,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.853827692453972e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 20,
+      "mesh": 96,
+      "coefficient_design": [
+        -23306.40604260045,
+        -6.9169129976691375,
+        -0.0006338012573534466
+      ],
+      "independent_convolution_design": [
+        -23306.406042600458,
+        -6.916912997669123,
+        -0.0006338012573534544
+      ],
+      "scaled_error": 3.1218702707247594e-16,
+      "geometry": {
+        "full_denominator": 19435384,
+        "nonzero_input_pairs": 19435384,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.315596126606654e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 20,
+      "mesh": 112,
+      "coefficient_design": [
+        -23306.40604260045,
+        -6.9169129976691375,
+        -0.0006338012573534466
+      ],
+      "independent_convolution_design": [
+        -23306.406042600465,
+        -6.916912997669124,
+        -0.0006338012573534545
+      ],
+      "scaled_error": 6.243740541449517e-16,
+      "geometry": {
+        "full_denominator": 19435384,
+        "nonzero_input_pairs": 19435384,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.4907898822372232e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 22,
+      "mesh": 128,
+      "coefficient_design": [
+        -12823.470627152841,
+        -3.589688488085024,
+        -0.0003265101983037978
+      ],
+      "independent_convolution_design": [
+        -12823.470627152858,
+        -3.5896884880850224,
+        -0.0003265101983037964
+      ],
+      "scaled_error": 1.276636029972135e-15,
+      "geometry": {
+        "full_denominator": 33846244,
+        "nonzero_input_pairs": 33846244,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.5175165113433075e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 22,
+      "mesh": 144,
+      "coefficient_design": [
+        -12823.470627152841,
+        -3.589688488085024,
+        -0.0003265101983037978
+      ],
+      "independent_convolution_design": [
+        -12823.470627152856,
+        -3.5896884880850215,
+        -0.0003265101983037962
+      ],
+      "scaled_error": 1.1347875821974536e-15,
+      "geometry": {
+        "full_denominator": 33846244,
+        "nonzero_input_pairs": 33846244,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.8077614147476945e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 23,
+      "mesh": 144,
+      "coefficient_design": [
+        -9388.403302267978,
+        -2.454329922315075,
+        -0.00022005251150021245
+      ],
+      "independent_convolution_design": [
+        -9388.40330226799,
+        -2.4543299223150767,
+        -0.00022005251150021473
+      ],
+      "scaled_error": 1.3562397582286497e-15,
+      "geometry": {
+        "full_denominator": 42211420,
+        "nonzero_input_pairs": 42211420,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.9185444909927703e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 23,
+      "mesh": 160,
+      "coefficient_design": [
+        -9388.403302267978,
+        -2.454329922315075,
+        -0.00022005251150021245
+      ],
+      "independent_convolution_design": [
+        -9388.403302267994,
+        -2.454329922315078,
+        -0.0002200525115002148
+      ],
+      "scaled_error": 1.7437368320082631e-15,
+      "geometry": {
+        "full_denominator": 42211420,
+        "nonzero_input_pairs": 42211420,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.7348198845460704e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 29,
+      "mesh": 48,
+      "coefficient_design": [
+        -41134.261866775974,
+        -11.394564220836092,
+        -0.0014559398737971844
+      ],
+      "independent_convolution_design": [
+        -41134.26186677596,
+        -11.39456422083607,
+        -0.0014559398737971924
+      ],
+      "scaled_error": 3.5376629038578656e-16,
+      "geometry": {
+        "full_denominator": 7409284,
+        "nonzero_input_pairs": 7409284,
+        "maximum_weighted_convolution_imaginary_roundoff": 4.02017334578571e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 29,
+      "mesh": 64,
+      "coefficient_design": [
+        -41134.261866775974,
+        -11.394564220836092,
+        -0.0014559398737971844
+      ],
+      "independent_convolution_design": [
+        -41134.26186677599,
+        -11.394564220836077,
+        -0.001455939873797193
+      ],
+      "scaled_error": 3.537662903857863e-16,
+      "geometry": {
+        "full_denominator": 7409284,
+        "nonzero_input_pairs": 7409284,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.6572759393379943e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 30,
+      "mesh": 64,
+      "coefficient_design": [
+        -34335.478396605526,
+        -7.496571465238831,
+        -0.0005164882433850879
+      ],
+      "independent_convolution_design": [
+        -34335.4783966056,
+        -7.496571465238836,
+        -0.0005164882433850921
+      ],
+      "scaled_error": 2.1190785607060964e-15,
+      "geometry": {
+        "full_denominator": 15101656,
+        "nonzero_input_pairs": 15101656,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.141715906120279e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 30,
+      "mesh": 80,
+      "coefficient_design": [
+        -34335.478396605526,
+        -7.496571465238831,
+        -0.0005164882433850879
+      ],
+      "independent_convolution_design": [
+        -34335.47839660561,
+        -7.496571465238836,
+        -0.0005164882433850921
+      ],
+      "scaled_error": 2.5428942728473148e-15,
+      "geometry": {
+        "full_denominator": 15101656,
+        "nonzero_input_pairs": 15101656,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.050605240382146e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 31,
+      "mesh": 80,
+      "coefficient_design": [
+        -27228.420517294708,
+        -5.299719717059042,
+        -0.00027364883265713316
+      ],
+      "independent_convolution_design": [
+        -27228.420517294715,
+        -5.299719717059039,
+        -0.0002736488326571331
+      ],
+      "scaled_error": 2.6721923181559303e-16,
+      "geometry": {
+        "full_denominator": 24917188,
+        "nonzero_input_pairs": 24917188,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.354790232496873e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 31,
+      "mesh": 96,
+      "coefficient_design": [
+        -27228.420517294708,
+        -5.299719717059042,
+        -0.00027364883265713316
+      ],
+      "independent_convolution_design": [
+        -27228.4205172947,
+        -5.299719717059036,
+        -0.000273648832657133
+      ],
+      "scaled_error": 2.6721923181559317e-16,
+      "geometry": {
+        "full_denominator": 24917188,
+        "nonzero_input_pairs": 24917188,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.068899987857399e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 32,
+      "mesh": 80,
+      "coefficient_design": [
+        -21682.893560214987,
+        -4.000792139227855,
+        -0.00019880773163405587
+      ],
+      "independent_convolution_design": [
+        -21682.893560215027,
+        -4.000792139227839,
+        -0.00019880773163405592
+      ],
+      "scaled_error": 1.8455916304194592e-15,
+      "geometry": {
+        "full_denominator": 37068196,
+        "nonzero_input_pairs": 37068196,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.1160342618040215e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 32,
+      "mesh": 96,
+      "coefficient_design": [
+        -21682.893560214987,
+        -4.000792139227855,
+        -0.00019880773163405587
+      ],
+      "independent_convolution_design": [
+        -21682.893560215016,
+        -4.000792139227837,
+        -0.00019880773163405587
+      ],
+      "scaled_error": 1.3422484584868801e-15,
+      "geometry": {
+        "full_denominator": 37068196,
+        "nonzero_input_pairs": 37068196,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.963232083180023e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 33,
+      "mesh": 96,
+      "coefficient_design": [
+        -17204.509040380257,
+        -3.029761342300708,
+        -0.00014849802578368926
+      ],
+      "independent_convolution_design": [
+        -17204.50904038023,
+        -3.029761342300708,
+        -0.0001484980257836892
+      ],
+      "scaled_error": 1.4801847347036633e-15,
+      "geometry": {
+        "full_denominator": 50770744,
+        "nonzero_input_pairs": 50770744,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.912407118181957e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 33,
+      "mesh": 112,
+      "coefficient_design": [
+        -17204.509040380257,
+        -3.029761342300708,
+        -0.00014849802578368926
+      ],
+      "independent_convolution_design": [
+        -17204.50904038024,
+        -3.0297613423007097,
+        -0.00014849802578368926
+      ],
+      "scaled_error": 1.0572748105026163e-15,
+      "geometry": {
+        "full_denominator": 50770744,
+        "nonzero_input_pairs": 50770744,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.6738828300697956e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 35,
+      "mesh": 128,
+      "coefficient_design": [
+        -9792.144809794245,
+        -1.6015627517853295,
+        -7.676903376921064e-05
+      ],
+      "independent_convolution_design": [
+        -9792.144809794247,
+        -1.6015627517853337,
+        -7.676903376921141e-05
+      ],
+      "scaled_error": 2.1541999099910378e-16,
+      "geometry": {
+        "full_denominator": 88416004,
+        "nonzero_input_pairs": 88416004,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.002094590810435e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 35,
+      "mesh": 144,
+      "coefficient_design": [
+        -9792.144809794245,
+        -1.6015627517853295,
+        -7.676903376921064e-05
+      ],
+      "independent_convolution_design": [
+        -9792.144809794241,
+        -1.6015627517853332,
+        -7.676903376921138e-05
+      ],
+      "scaled_error": 3.7152011921361247e-16,
+      "geometry": {
+        "full_denominator": 88416004,
+        "nonzero_input_pairs": 88416004,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.5877109025980864e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 36,
+      "mesh": 144,
+      "coefficient_design": [
+        -7337.864019632725,
+        -1.1232027707956538,
+        -5.251677552603423e-05
+      ],
+      "independent_convolution_design": [
+        -7337.864019632731,
+        -1.1232027707956496,
+        -5.2516775526034135e-05
+      ],
+      "scaled_error": 7.436725722958679e-16,
+      "geometry": {
+        "full_denominator": 110268220,
+        "nonzero_input_pairs": 110268220,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.5777362072492864e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 36,
+      "mesh": 160,
+      "coefficient_design": [
+        -7337.864019632725,
+        -1.1232027707956538,
+        -5.251677552603423e-05
+      ],
+      "independent_convolution_design": [
+        -7337.864019632735,
+        -1.1232027707956502,
+        -5.251677552603416e-05
+      ],
+      "scaled_error": 1.363399715875757e-15,
+      "geometry": {
+        "full_denominator": 110268220,
+        "nonzero_input_pairs": 110268220,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.928372265052297e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 42,
+      "mesh": 64,
+      "coefficient_design": [
+        -27607.336378856613,
+        -5.490355232496645,
+        -0.0006060984946682402
+      ],
+      "independent_convolution_design": [
+        -27607.336378856602,
+        -5.490355232496644,
+        -0.0006060984946682389
+      ],
+      "scaled_error": 3.9532739672899785e-16,
+      "geometry": {
+        "full_denominator": 30780304,
+        "nonzero_input_pairs": 30780304,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.319451256883296e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 42,
+      "mesh": 80,
+      "coefficient_design": [
+        -27607.336378856613,
+        -5.490355232496645,
+        -0.0006060984946682402
+      ],
+      "independent_convolution_design": [
+        -27607.33637885661,
+        -5.490355232496644,
+        -0.0006060984946682388
+      ],
+      "scaled_error": 1.3177579890966593e-16,
+      "geometry": {
+        "full_denominator": 30780304,
+        "nonzero_input_pairs": 30780304,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.3719474849578503e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 43,
+      "mesh": 80,
+      "coefficient_design": [
+        -21650.308935532674,
+        -3.5951466850165534,
+        -0.00020653270026569818
+      ],
+      "independent_convolution_design": [
+        -21650.308935532667,
+        -3.5951466850165446,
+        -0.0002065327002656986
+      ],
+      "scaled_error": 3.360671497043658e-16,
+      "geometry": {
+        "full_denominator": 50786392,
+        "nonzero_input_pairs": 50786392,
+        "maximum_weighted_convolution_imaginary_roundoff": 1.950622556539343e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 43,
+      "mesh": 96,
+      "coefficient_design": [
+        -21650.308935532674,
+        -3.5951466850165534,
+        -0.00020653270026569818
+      ],
+      "independent_convolution_design": [
+        -21650.308935532656,
+        -3.5951466850165428,
+        -0.00020653270026569848
+      ],
+      "scaled_error": 8.40167874260915e-16,
+      "geometry": {
+        "full_denominator": 50786392,
+        "nonzero_input_pairs": 50786392,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.0890808763001789e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 44,
+      "mesh": 80,
+      "coefficient_design": [
+        -17213.33243387986,
+        -2.492591719856556,
+        -9.561823733846236e-05
+      ],
+      "independent_convolution_design": [
+        -17213.33243387986,
+        -2.4925917198565597,
+        -9.561823733846314e-05
+      ],
+      "scaled_error": 1.0319656848687622e-16,
+      "geometry": {
+        "full_denominator": 75552664,
+        "nonzero_input_pairs": 75552664,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.6959719296069225e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 44,
+      "mesh": 96,
+      "coefficient_design": [
+        -17213.33243387986,
+        -2.492591719856556,
+        -9.561823733846236e-05
+      ],
+      "independent_convolution_design": [
+        -17213.332433879856,
+        -2.4925917198565593,
+        -9.561823733846311e-05
+      ],
+      "scaled_error": 2.1134657226112251e-16,
+      "geometry": {
+        "full_denominator": 75552664,
+        "nonzero_input_pairs": 75552664,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.436615965010479e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 45,
+      "mesh": 96,
+      "coefficient_design": [
+        -13828.557550027343,
+        -1.8482513681263422,
+        -6.457127136756235e-05
+      ],
+      "independent_convolution_design": [
+        -13828.557550027355,
+        -1.8482513681263422,
+        -6.457127136756251e-05
+      ],
+      "scaled_error": 9.207703535786209e-16,
+      "geometry": {
+        "full_denominator": 103481296,
+        "nonzero_input_pairs": 103481296,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.8525563550814127e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 45,
+      "mesh": 112,
+      "coefficient_design": [
+        -13828.557550027343,
+        -1.8482513681263422,
+        -6.457127136756235e-05
+      ],
+      "independent_convolution_design": [
+        -13828.557550027355,
+        -1.8482513681263426,
+        -6.457127136756254e-05
+      ],
+      "scaled_error": 9.207703535786209e-16,
+      "geometry": {
+        "full_denominator": 103481296,
+        "nonzero_input_pairs": 103481296,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.3545661817856454e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 47,
+      "mesh": 128,
+      "coefficient_design": [
+        -8013.450659681267,
+        -0.9835723336694908,
+        -3.23878641954457e-05
+      ],
+      "independent_convolution_design": [
+        -8013.45065968127,
+        -0.9835723336694912,
+        -3.238786419544598e-05
+      ],
+      "scaled_error": 3.404880395716205e-16,
+      "geometry": {
+        "full_denominator": 180210136,
+        "nonzero_input_pairs": 180210136,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.010281963820702e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 47,
+      "mesh": 144,
+      "coefficient_design": [
+        -8013.450659681267,
+        -0.9835723336694908,
+        -3.23878641954457e-05
+      ],
+      "independent_convolution_design": [
+        -8013.450659681266,
+        -0.9835723336694906,
+        -3.2387864195445965e-05
+      ],
+      "scaled_error": 1.1349601319054021e-16,
+      "geometry": {
+        "full_denominator": 180210136,
+        "nonzero_input_pairs": 180210136,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.286969531862945e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 48,
+      "mesh": 144,
+      "coefficient_design": [
+        -6142.669847392711,
+        -0.7077743711881533,
+        -2.2488061758480947e-05
+      ],
+      "independent_convolution_design": [
+        -6142.669847392719,
+        -0.7077743711881547,
+        -2.2488061758480903e-05
+      ],
+      "scaled_error": 1.3325561228772049e-15,
+      "geometry": {
+        "full_denominator": 224749480,
+        "nonzero_input_pairs": 224749480,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.832300146662083e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 48,
+      "mesh": 160,
+      "coefficient_design": [
+        -6142.669847392711,
+        -0.7077743711881533,
+        -2.2488061758480947e-05
+      ],
+      "independent_convolution_design": [
+        -6142.669847392722,
+        -0.7077743711881553,
+        -2.2488061758480917e-05
+      ],
+      "scaled_error": 1.776741497169606e-15,
+      "geometry": {
+        "full_denominator": 224749480,
+        "nonzero_input_pairs": 224749480,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.930886827891951e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 54,
+      "mesh": 80,
+      "coefficient_design": [
+        -16209.399625820944,
+        -2.7627370070823583,
+        -0.00029563866236901617
+      ],
+      "independent_convolution_design": [
+        -16209.399625820955,
+        -2.762737007082359,
+        -0.00029563866236901633
+      ],
+      "scaled_error": 6.733091091103494e-16,
+      "geometry": {
+        "full_denominator": 83795716,
+        "nonzero_input_pairs": 83795716,
+        "maximum_weighted_convolution_imaginary_roundoff": 4.090451484614816e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 54,
+      "mesh": 96,
+      "coefficient_design": [
+        -16209.399625820944,
+        -2.7627370070823583,
+        -0.00029563866236901617
+      ],
+      "independent_convolution_design": [
+        -16209.399625820946,
+        -2.7627370070823583,
+        -0.0002956386623690161
+      ],
+      "scaled_error": 1.1221818485172497e-16,
+      "geometry": {
+        "full_denominator": 83795716,
+        "nonzero_input_pairs": 83795716,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.94330149536698e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 55,
+      "mesh": 80,
+      "coefficient_design": [
+        -12700.269980297486,
+        -1.8240560060588835,
+        -9.844796974334402e-05
+      ],
+      "independent_convolution_design": [
+        -12700.269980297486,
+        -1.8240560060588864,
+        -9.844796974334427e-05
+      ],
+      "scaled_error": 1.1364246069191802e-16,
+      "geometry": {
+        "full_denominator": 124659172,
+        "nonzero_input_pairs": 124659172,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.2020494784280457e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 55,
+      "mesh": 96,
+      "coefficient_design": [
+        -12700.269980297486,
+        -1.8240560060588835,
+        -9.844796974334402e-05
+      ],
+      "independent_convolution_design": [
+        -12700.269980297478,
+        -1.8240560060588857,
+        -9.844796974334422e-05
+      ],
+      "scaled_error": 5.728978695311956e-16,
+      "geometry": {
+        "full_denominator": 124659172,
+        "nonzero_input_pairs": 124659172,
+        "maximum_weighted_convolution_imaginary_roundoff": 1.9758086336649117e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 56,
+      "mesh": 96,
+      "coefficient_design": [
+        -10243.896602998471,
+        -1.2549875924862999,
+        -4.189297032592544e-05
+      ],
+      "independent_convolution_design": [
+        -10243.896602998473,
+        -1.254987592486299,
+        -4.189297032592511e-05
+      ],
+      "scaled_error": 1.7756811436513555e-16,
+      "geometry": {
+        "full_denominator": 170740408,
+        "nonzero_input_pairs": 170740408,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.553124237398483e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 56,
+      "mesh": 112,
+      "coefficient_design": [
+        -10243.896602998471,
+        -1.2549875924862999,
+        -4.189297032592544e-05
+      ],
+      "independent_convolution_design": [
+        -10243.896602998473,
+        -1.2549875924862992,
+        -4.189297032592512e-05
+      ],
+      "scaled_error": 1.7756811436513555e-16,
+      "geometry": {
+        "full_denominator": 170740408,
+        "nonzero_input_pairs": 170740408,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.1673924382569614e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 58,
+      "mesh": 128,
+      "coefficient_design": [
+        -6077.365942422636,
+        -0.6560342842634435,
+        -1.838726999558632e-05
+      ],
+      "independent_convolution_design": [
+        -6077.36594242264,
+        -0.6560342842634447,
+        -1.8387269995586522e-05
+      ],
+      "scaled_error": 5.986111156639506e-16,
+      "geometry": {
+        "full_denominator": 297340228,
+        "nonzero_input_pairs": 297340228,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.806483987775421e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 58,
+      "mesh": 144,
+      "coefficient_design": [
+        -6077.365942422636,
+        -0.6560342842634435,
+        -1.838726999558632e-05
+      ],
+      "independent_convolution_design": [
+        -6077.365942422636,
+        -0.6560342842634445,
+        -1.8387269995586515e-05
+      ],
+      "scaled_error": 8.220672669945616e-17,
+      "geometry": {
+        "full_denominator": 297340228,
+        "nonzero_input_pairs": 297340228,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.269971839877904e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 59,
+      "mesh": 144,
+      "coefficient_design": [
+        -4735.962411717931,
+        -0.479641699212389,
+        -1.2811008826581735e-05
+      ],
+      "independent_convolution_design": [
+        -4735.962411717935,
+        -0.4796416992123876,
+        -1.2811008826581684e-05
+      ],
+      "scaled_error": 7.681604056000233e-16,
+      "geometry": {
+        "full_denominator": 370828540,
+        "nonzero_input_pairs": 370828540,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.726997345607818e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 59,
+      "mesh": 160,
+      "coefficient_design": [
+        -4735.962411717931,
+        -0.479641699212389,
+        -1.2811008826581735e-05
+      ],
+      "independent_convolution_design": [
+        -4735.9624117179355,
+        -0.47964169921238786,
+        -1.2811008826581698e-05
+      ],
+      "scaled_error": 9.602005070000288e-16,
+      "geometry": {
+        "full_denominator": 370828540,
+        "nonzero_input_pairs": 370828540,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.7975317861477793e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 65,
+      "mesh": 80,
+      "coefficient_design": [
+        -9690.253335461224,
+        -1.4762635007418337,
+        -0.00015547638276119846
+      ],
+      "independent_convolution_design": [
+        -9690.253335461217,
+        -1.4762635007418385,
+        -0.00015547638276119973
+      ],
+      "scaled_error": 7.508531884875763e-16,
+      "geometry": {
+        "full_denominator": 185449924,
+        "nonzero_input_pairs": 185449924,
+        "maximum_weighted_convolution_imaginary_roundoff": 4.832960797526992e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 65,
+      "mesh": 96,
+      "coefficient_design": [
+        -9690.253335461224,
+        -1.4762635007418337,
+        -0.00015547638276119846
+      ],
+      "independent_convolution_design": [
+        -9690.253335461215,
+        -1.4762635007418377,
+        -0.00015547638276119965
+      ],
+      "scaled_error": 9.385664856094706e-16,
+      "geometry": {
+        "full_denominator": 185449924,
+        "nonzero_input_pairs": 185449924,
+        "maximum_weighted_convolution_imaginary_roundoff": 4.3359240949222066e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 66,
+      "mesh": 96,
+      "coefficient_design": [
+        -7813.658409150472,
+        -0.9921007105010902,
+        -5.122202203326344e-05
+      ],
+      "independent_convolution_design": [
+        -7813.658409150468,
+        -0.992100710501093,
+        -5.122202203326324e-05
+      ],
+      "scaled_error": 4.655922509782775e-16,
+      "geometry": {
+        "full_denominator": 254002936,
+        "nonzero_input_pairs": 254002936,
+        "maximum_weighted_convolution_imaginary_roundoff": 1.9247030272243473e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 66,
+      "mesh": 112,
+      "coefficient_design": [
+        -7813.658409150472,
+        -0.9921007105010902,
+        -5.122202203326344e-05
+      ],
+      "independent_convolution_design": [
+        -7813.65840915047,
+        -0.9921007105010933,
+        -5.122202203326325e-05
+      ],
+      "scaled_error": 2.327961254891387e-16,
+      "geometry": {
+        "full_denominator": 254002936,
+        "nonzero_input_pairs": 254002936,
+        "maximum_weighted_convolution_imaginary_roundoff": 1.846173499970303e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 68,
+      "mesh": 128,
+      "coefficient_design": [
+        -4708.898817929805,
+        -0.4777620353320869,
+        -1.2704599898783791e-05
+      ],
+      "independent_convolution_design": [
+        -4708.898817929806,
+        -0.47776203533208783,
+        -1.2704599898783753e-05
+      ],
+      "scaled_error": 1.9314381916848523e-16,
+      "geometry": {
+        "full_denominator": 442339876,
+        "nonzero_input_pairs": 442339876,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.516519207520043e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 68,
+      "mesh": 144,
+      "coefficient_design": [
+        -4708.898817929805,
+        -0.4777620353320869,
+        -1.2704599898783791e-05
+      ],
+      "independent_convolution_design": [
+        -4708.898817929803,
+        -0.4777620353320876,
+        -1.2704599898783746e-05
+      ],
+      "scaled_error": 3.8628763833697067e-16,
+      "geometry": {
+        "full_denominator": 442339876,
+        "nonzero_input_pairs": 442339876,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.3784349711768763e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 69,
+      "mesh": 144,
+      "coefficient_design": [
+        -3708.814129107739,
+        -0.35053102219109566,
+        -8.623679171789865e-06
+      ],
+      "independent_convolution_design": [
+        -3708.81412910774,
+        -0.35053102219109616,
+        -8.623679171789858e-06
+      ],
+      "scaled_error": 2.4522520409825253e-16,
+      "geometry": {
+        "full_denominator": 551665180,
+        "nonzero_input_pairs": 551665180,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.4573495967499093e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 69,
+      "mesh": 160,
+      "coefficient_design": [
+        -3708.814129107739,
+        -0.35053102219109566,
+        -8.623679171789865e-06
+      ],
+      "independent_convolution_design": [
+        -3708.8141291077413,
+        -0.3505310221910964,
+        -8.623679171789863e-06
+      ],
+      "scaled_error": 6.130630102456311e-16,
+      "geometry": {
+        "full_denominator": 551665180,
+        "nonzero_input_pairs": 551665180,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.880512921043726e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 75,
+      "mesh": 96,
+      "coefficient_design": [
+        -6233.0723085139325,
+        -0.8341362623302515,
+        -8.523813879873031e-05
+      ],
+      "independent_convolution_design": [
+        -6233.072308513934,
+        -0.8341362623302518,
+        -8.523813879873054e-05
+      ],
+      "scaled_error": 2.918287023658054e-16,
+      "geometry": {
+        "full_denominator": 347897104,
+        "nonzero_input_pairs": 347897104,
+        "maximum_weighted_convolution_imaginary_roundoff": 5.145781289107797e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 75,
+      "mesh": 112,
+      "coefficient_design": [
+        -6233.0723085139325,
+        -0.8341362623302515,
+        -8.523813879873031e-05
+      ],
+      "independent_convolution_design": [
+        -6233.072308513936,
+        -0.834136262330252,
+        -8.523813879873058e-05
+      ],
+      "scaled_error": 5.836574047316107e-16,
+      "geometry": {
+        "full_denominator": 347897104,
+        "nonzero_input_pairs": 347897104,
+        "maximum_weighted_convolution_imaginary_roundoff": 4.3028770111612656e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 77,
+      "mesh": 128,
+      "coefficient_design": [
+        -3769.8527427633726,
+        -0.3732038423150275,
+        -1.0612107687379985e-05
+      ],
+      "independent_convolution_design": [
+        -3769.8527427633708,
+        -0.37320384231502757,
+        -1.061210768738007e-05
+      ],
+      "scaled_error": 4.82509404919754e-16,
+      "geometry": {
+        "full_denominator": 605854264,
+        "nonzero_input_pairs": 605854264,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.266886194194114e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 77,
+      "mesh": 144,
+      "coefficient_design": [
+        -3769.8527427633726,
+        -0.3732038423150275,
+        -1.0612107687379985e-05
+      ],
+      "independent_convolution_design": [
+        -3769.852742763369,
+        -0.3732038423150274,
+        -1.0612107687380065e-05
+      ],
+      "scaled_error": 9.650188098395085e-16,
+      "geometry": {
+        "full_denominator": 605854264,
+        "nonzero_input_pairs": 605854264,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.0181518889404923e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 78,
+      "mesh": 144,
+      "coefficient_design": [
+        -3000.304466717215,
+        -0.27087730402185606,
+        -6.504465093411979e-06
+      ],
+      "independent_convolution_design": [
+        -3000.304466717214,
+        -0.27087730402185645,
+        -6.5044650934119626e-06
+      ],
+      "scaled_error": 3.031341358392379e-16,
+      "geometry": {
+        "full_denominator": 755592520,
+        "nonzero_input_pairs": 755592520,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.3514685624316463e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 78,
+      "mesh": 160,
+      "coefficient_design": [
+        -3000.304466717215,
+        -0.27087730402185606,
+        -6.504465093411979e-06
+      ],
+      "independent_convolution_design": [
+        -3000.3044667172157,
+        -0.27087730402185667,
+        -6.504465093411967e-06
+      ],
+      "scaled_error": 3.0313413583923776e-16,
+      "geometry": {
+        "full_denominator": 755592520,
+        "nonzero_input_pairs": 755592520,
+        "maximum_weighted_convolution_imaginary_roundoff": 2.49768772806498e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 92,
+      "mesh": 128,
+      "coefficient_design": [
+        -2104.0988465540577,
+        -0.25112943566069346,
+        -2.495402200611176e-05
+      ],
+      "independent_convolution_design": [
+        -2104.0988465540577,
+        -0.2511294356606946,
+        -2.495402200611173e-05
+      ],
+      "scaled_error": 2.770150693646285e-16,
+      "geometry": {
+        "full_denominator": 1055080324,
+        "nonzero_input_pairs": 1055080324,
+        "maximum_weighted_convolution_imaginary_roundoff": 5.46762727100842e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 92,
+      "mesh": 144,
+      "coefficient_design": [
+        -2104.0988465540577,
+        -0.25112943566069346,
+        -2.495402200611176e-05
+      ],
+      "independent_convolution_design": [
+        -2104.098846554057,
+        -0.2511294356606945,
+        -2.4954022006111714e-05
+      ],
+      "scaled_error": 2.5063268180609256e-16,
+      "geometry": {
+        "full_denominator": 1055080324,
+        "nonzero_input_pairs": 1055080324,
+        "maximum_weighted_convolution_imaginary_roundoff": 5.014022837717071e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 93,
+      "mesh": 144,
+      "coefficient_design": [
+        -1662.919108048383,
+        -0.16829890168888653,
+        -7.870749500635364e-06
+      ],
+      "independent_convolution_design": [
+        -1662.919108048383,
+        -0.1682989016888865,
+        -7.870749500635391e-06
+      ],
+      "scaled_error": 8.345437694862713e-18,
+      "geometry": {
+        "full_denominator": 1315845820,
+        "nonzero_input_pairs": 1315845820,
+        "maximum_weighted_convolution_imaginary_roundoff": 3.2266186470273193e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 93,
+      "mesh": 160,
+      "coefficient_design": [
+        -1662.919108048383,
+        -0.16829890168888653,
+        -7.870749500635364e-06
+      ],
+      "independent_convolution_design": [
+        -1662.9191080483831,
+        -0.1682989016888866,
+        -7.870749500635394e-06
+      ],
+      "scaled_error": 1.3673165119263069e-16,
+      "geometry": {
+        "full_denominator": 1315845820,
+        "nonzero_input_pairs": 1315845820,
+        "maximum_weighted_convolution_imaginary_roundoff": 1.6984009673498944e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 99,
+      "mesh": 144,
+      "coefficient_design": [
+        -1277.2607230116766,
+        -0.13943261311306904,
+        -1.3354898679720743e-05
+      ],
+      "independent_convolution_design": [
+        -1277.2607230116766,
+        -0.13943261311306931,
+        -1.3354898679720756e-05
+      ],
+      "scaled_error": 1.086527406486889e-16,
+      "geometry": {
+        "full_denominator": 1641060100,
+        "nonzero_input_pairs": 1641060100,
+        "maximum_weighted_convolution_imaginary_roundoff": 6.396760215136862e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    },
+    {
+      "bin_index": 99,
+      "mesh": 160,
+      "coefficient_design": [
+        -1277.2607230116766,
+        -0.13943261311306904,
+        -1.3354898679720743e-05
+      ],
+      "independent_convolution_design": [
+        -1277.260723011677,
+        -0.13943261311306937,
+        -1.3354898679720765e-05
+      ],
+      "scaled_error": 3.560333005576236e-16,
+      "geometry": {
+        "full_denominator": 1641060100,
+        "nonzero_input_pairs": 1641060100,
+        "maximum_weighted_convolution_imaginary_roundoff": 5.160049045409604e-16,
+        "closing_leg_unrestricted": true,
+        "numerator_source_zero_legs_removed": true,
+        "weighted_convolution_coefficients_rounded": false,
+        "production_values_transform_integral_called": false
+      }
+    }
+  ],
+  "bins": 44,
+  "grid_probes": 88,
+  "maximum_scaled_error": 2.5428942728473148e-15,
+  "original_scaled_tolerance": 1e-09,
+  "immutable_sources": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/build_post_rsd_noise_transport_templates.py": "0ac0ec8abdd7e61b87327b59e9f8641915501c57a51b4a4c7073b2d461a8790e",
+    "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/realspace_binning_reference/REALSPACE_BINNING.npz": "622a52922ab6722382b000092e7398269825fc91065026a5cb37677115595ca4",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/RECON_ALPHA_COMPARISON.npz": "d1a846fa8ac71fe5eee626d0020f591d0cdcfdb82a53da97250799d858fcff83",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/estimator_B_window/B000_WINDOW.npz": "a56a4ca6384e5835689ff8266bb45c3425891f9b16f05a56f55dd6470663ee2a",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noir_paware_templates/CONTRACT.json": "caf1fd35d72c94a3f7993c33ff9fb9dd810499335c356f544688541436578ebc",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noir_paware_templates/INDEPENDENT_COEFFICIENT_AUDIT.json": "b94a1580dc3e1d2ceae3cb2ce6e1cb72fa2e318d87eeb961b54a34d71825eb71",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/estimator_B_window/AUDIT.json": "8ed5318a0a51fdc89c6fe337de74eabce55df259756e115c01e266e197ba08fe",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/CLUSTERED_NONPOISSON_RESPONSE_AUDIT.json": "e8f23661f9dbfe90119d62b7fe3758166829f26346891f78bf29d31e66d99c4f",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_noise_transport.py": "c45e0547a83a1d0542d3113264900f75f3393c84eee95111a47cdc4fb32ed72d",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_noise_transport.py": "4a5a675a1fc6667ef78b3999c16aab6c2a01142bb9f133e3364d80eb890e1869",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_poisson_projection.py": "ebdbfc0e0e5d8756a6628d3e4af3c224c162de31fb941901ebf5e27cb692ebdc",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_fft_projection.py": "a3ac06aec7e973b2152ca312e34296f7531fc8c55c305c7d510b502fe1a02459",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_fixedrec.py": "f8d15b9678c44322ccefa3d3a1fb18592af011ca5d74505abf70cc905c4c5ed6",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_inputs.py": "8f14aae93cf0b02bc09e46a575ce98630930c3167e2972acbe1a39b0dd57c24b",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_b000_fft_projection.py": "da7fe70eeb34b23770897f1c32671ca2acdd025bf9a962a0833ef572098f1c03",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_bonly_common.py": "25bdf612d4007bd88fd73ea9fff42be2e5f52edb9c1293747bb0f31ff7a026cf",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_b000_contract.py": "550c7230ac7562cbb89e625cd5d28454fc3521bfe66ca2550141fbf90f048a0a",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_noir_polynomial.py": "e512d27310b5e75e4e7cd5464d3de07fe218c9abf7f6d4d2d5096df67f32c737",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_noir_likelihood.py": "b4c0327caaa680e19fdf0c8766798a9aeb570b865fcd54e14c654416b70cb983",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/vendor/quijote_strict_triangle_fft_estimator.py": "bc5a2f83a6b445670d888e4f62c451713ad992dc70af5531342ba5530de2c495",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_post_rsd_cross_leg_all44.py": "844a3bf4d0903511ae4104747b3c177e21ff4f63ba37289c1d7d7eb261e0d56f",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_cross_leg_oracle.py": "9f892f12b387d0d3fa77423e3de784cb79a34506f8511fa2f13342e52e2108de",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_cross_leg_oracle.py": "8ca60d8c367cfa19fd78a5f5780d1f8813c5506154136055da3dcd3dbc2153f6",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_post_rsd_noise_transport_coefficients.py": "94b10dd409045a5740b4ab7d46517d7775ea02cc0af0407045a0af710d143b22",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_transport_templates_v1/CONTRACT.json": "ad54307a36882b9eee7b148c4979ae89c8ac7cb212fef00412373e770a0bc027",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_transport_templates_v1/INDEPENDENT_COEFFICIENT_AUDIT.json": "02e54424f7565ec5dd5add621495c9e97c321a55291376cb729f10f515245eaa",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_transport_templates_v1/OPERATOR_COEFFICIENTS.npz": "1dca92763a4e56f5d1bda52a14f5e7628ca0ae59cd859ddc90772cfa4d569fe1",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noise_transport_templates_v1/COMPUTE_STATUS.json": "5a3cbb44edbcf08936b61b8bdc12593f3018ef7839d9ab38ab6e36e406b9784d",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/compute8_measurement_series_v3/CONTRACT.json": "afd1e339cef3ca160d68e141ba1fe3e6dfd98f6c67afab07733a50e98207752f",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/compute8_measurement_series_v3/HANDOFF_READY.json": "df54749d1dd71b60db319275fbc53bd3ed8576f020354deb50636b64e21e7ed7"
+  },
+  "CPU_affinity": [
+    12
+  ],
+  "elapsed_seconds": 745.0349950019736,
+  "full44_PN_cross_independent_grid_oracle_executed": true,
+  "physical_p_calibrated": false,
+  "actual_STO_noise_validated": false,
+  "formal_zero_atom_choice_validated": false,
+  "production_model_modified": false,
+  "MCMC_released": false,
+  "IR": false
+}

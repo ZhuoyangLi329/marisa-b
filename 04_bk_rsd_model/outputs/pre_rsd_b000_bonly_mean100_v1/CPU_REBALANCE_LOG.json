@@ -1,0 +1,50 @@
+[
+  {
+    "UTC": "2026-10-02T03:40:40.536847+00:00",
+    "host": "login12",
+    "pid": 1986506,
+    "case_index": 0,
+    "old_allowed_CPUs": [
+      6
+    ],
+    "new_allowed_CPUs": [
+      8
+    ],
+    "unchanged_approved_pool": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "maximum_logical_CPUs": 8,
+    "chain_model_RNG_untouched": true
+  },
+  {
+    "UTC": "2026-10-02T04:17:17.802120+00:00",
+    "host": "login12",
+    "pid": 1979138,
+    "case_index": 18,
+    "old_allowed_CPUs": [
+      6
+    ],
+    "new_allowed_CPUs": [
+      12
+    ],
+    "unchanged_approved_pool": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "maximum_logical_CPUs": 8,
+    "chain_model_RNG_untouched": true
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "created_UTC": "2026-10-08T13:49:06.353902+00:00",
+  "status": "DISTINCT_RECONSTRUCTION_ALPHA_MUST_BE_EXPLICIT",
+  "probe_k_range": [
+    0.006283185307179587,
+    0.42
+  ],
+  "probe_count": 401,
+  "rows": [
+    {
+      "nk": 2048,
+      "relative_alphaM_minus1_min": 0.009272662960432942,
+      "relative_alphaM_minus1_max": 0.009315323352539817,
+      "relative_alphaM_minus1_absmax": 0.009315323352539817,
+      "metadata": {
+        "cosmology": "quijote",
+        "redshift": 0.5,
+        "method": "desilike_prim",
+        "kmin": 0.0001,
+        "kmax": 10.0,
+        "nk": 2048,
+        "alpha_min": 9.514525866111833e-06,
+        "alpha_max": 8.748417079012544
+      }
+    },
+    {
+      "nk": 8192,
+      "relative_alphaM_minus1_min": 0.009289591957793109,
+      "relative_alphaM_minus1_max": 0.009292444723624449,
+      "relative_alphaM_minus1_absmax": 0.009292444723624449,
+      "metadata": {
+        "cosmology": "quijote",
+        "redshift": 0.5,
+        "method": "desilike_prim",
+        "kmin": 0.0001,
+        "kmax": 10.0,
+        "nk": 8192,
+        "alpha_min": 9.514525866111833e-06,
+        "alpha_max": 8.748417079012544
+      }
+    }
+  ],
+  "alpha_interpolation_refinement_fraction_max": 2.2753173975598173e-05,
+  "physical_source_table": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+  "physical_source_table_sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb",
+  "entry_sha256": "e8ab09aa824d0ef6567a4a7d917760ff8b6e73e60668c7dd4d495745dec237ff",
+  "old_tables_modified": false,
+  "formal_calibration_performed": false,
+  "comparison_sha256": "d1a846fa8ac71fe5eee626d0020f591d0cdcfdb82a53da97250799d858fcff83"
+}

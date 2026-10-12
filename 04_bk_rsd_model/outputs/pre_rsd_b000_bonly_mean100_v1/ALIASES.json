@@ -1,0 +1,14 @@
+{
+  "fiducial_mean100_k0.15": {
+    "source_case": "fiducial_mean100_k0.14",
+    "reason": "identical two-leg indices; no duplicate MCMC"
+  },
+  "LC_p_mean100_k0.15": {
+    "source_case": "LC_p_mean100_k0.14",
+    "reason": "identical two-leg indices; no duplicate MCMC"
+  },
+  "LC_m_mean100_k0.15": {
+    "source_case": "LC_m_mean100_k0.14",
+    "reason": "identical two-leg indices; no duplicate MCMC"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "EXACT_DERIVED_MOMENT_COMPARISON_FALSE_NEGATIVE_PRESERVED",
+  "date_UTC": "2026-10-09",
+  "failed_check": "old fiducial target report N2_data_self bitwise equality",
+  "real000_source_STO_SHA256_both": "e9761ae4889e16712efa590d543f1dafd41d8217705af586db31afd99aed6752",
+  "real000_diagnostics_SHA256_both": "58b28f03ffc6ac4a29531425289e3f06e03c56471e51353b03a9c88821c353de",
+  "real000_N2_new": 3336.7563161008284,
+  "real000_N2_old": 3336.7563161008275,
+  "maximum_relative_N2_difference_across100_targets": 4.440892098500626e-16,
+  "maximum_relative_N3_difference_across100_targets": 4.440892098500626e-16,
+  "mechanism_uniquely_identified": false,
+  "source_weights_changed": false,
+  "raw_source_SHA_checks_still_exact": true,
+  "new_cross_report_derived_moment_relative_gate": 1.7763568394002505e-15,
+  "physics_estimator_covariance_or_posterior_modified": false
+}

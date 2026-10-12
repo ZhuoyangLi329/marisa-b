@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-05-07T23:54:10.707487+00:00",
+  "fit_input_npz": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_mmin1e13_pk_bias/fiducial_mesh256_kmax0p10_mmin1e13_fid500_pk_mean_bias_fit.npz",
+  "fit_model": "P_hh = b1^2 P_lin + c0",
+  "fit_space": "realspace",
+  "free_sn": {
+    "b1": 1.9326526728794324,
+    "b1_err_from_cov_of_mean": 0.0018319342717997983,
+    "b1_squared": 3.7351463539880143,
+    "chi2": 84.34845062181918,
+    "constant_c0": 221.1005400637223,
+    "constant_c0_err_from_cov_of_mean": 35.93332281203955,
+    "ndof": 8
+  },
+  "kmax_fit": 0.1,
+  "kmin_fit": 0.0,
+  "legacy_desilike_bias": 1.676931955192804,
+  "n_realizations": 500,
+  "nbar_mean": 0.00030938718399999997,
+  "poisson_subtracted": {
+    "b1": 1.7802961629163947,
+    "b1_err_from_cov_of_mean": 0.0006002488008194824,
+    "b1_squared": 3.169454427694838,
+    "chi2": 7106.280165093684,
+    "ndof": 9,
+    "shotnoise_fixed": 3232.2040136787277
+  },
+  "recommended_bias_source": "free_sn",
+  "recommended_bias_value": 1.9326526728794324,
+  "source_summary_json": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_mmin1e13_pk_bias/fiducial_mesh256_kmax0p10_mmin1e13_fid500_summary.json"
+}

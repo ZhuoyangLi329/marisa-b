@@ -1,0 +1,22 @@
+{
+  "status": "ORIENTED_IR_SOURCE_ORACLE_PASS",
+  "created_UTC": "2026-10-08T15:49:11.247057+00:00",
+  "tests_run": 6,
+  "log": "test_exact_polynomial_gradient_step_independence (test_post_rsd_ir_oracle.IRSourceTest.test_exact_polynomial_gradient_step_independence) ... ok\ntest_gaussian_source_leg_derivative_analytic (test_post_rsd_ir_oracle.IRSourceTest.test_gaussian_source_leg_derivative_analytic) ... ok\ntest_mixing_by_independent_polynomial_convolution (test_post_rsd_ir_oracle.IRSourceTest.test_mixing_by_independent_polynomial_convolution) ... ok\ntest_no_wiggle_limit_and_oriented_permutation (test_post_rsd_ir_oracle.IRSourceTest.test_no_wiggle_limit_and_oriented_permutation) ... ok\ntest_one_wiggle_has_second_order_remainder (test_post_rsd_ir_oracle.IRSourceTest.test_one_wiggle_has_second_order_remainder) ... ok\ntest_reconstruction_alpha_must_be_explicitly_frozen (test_post_rsd_ir_oracle.IRSourceTest.test_reconstruction_alpha_must_be_explicitly_frozen) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.778s\n\nOK\n",
+  "CPU_affinity": [
+    7
+  ],
+  "scope": "deterministic LO O(Pw), fNL<=2, unprojected oriented source oracle, Gaussian long modes",
+  "production_projection_implemented": false,
+  "post_stochastic_validated": false,
+  "IR_MCMC_run": false,
+  "old_native_source_changed_by_this_extension": false,
+  "initial_failed_audit": "IR_SOURCE_ORACLE_AUDIT_initial_normalization.json",
+  "test_metric_correction": "fixed remainder normalization across wiggle amplitudes; source and rtol=.008 unchanged; independent absolute Gaussian remainder ratio=4",
+  "hashes": {
+    "post_rsd_ir_oracle.py": "d533407a9e7611662b8f37151f30aa48cf32de29233c0e00144c149e0cc5fb39",
+    "test_post_rsd_ir_oracle.py": "65f97d1d1903e600679293b91052a261ff628916b2261fda6c17dbc57b96ed6f",
+    "audit_post_rsd_ir_oracle.py": "5343448c80bb53627dfec43c58957f6dfc264676e648eb5e6f70aee407c78cf0",
+    "post_rsd_displacement.py": "388c814df98c5b29e8a88d6b0f48a82aeee126be73a493dbec269dc9987fd9ce"
+  }
+}

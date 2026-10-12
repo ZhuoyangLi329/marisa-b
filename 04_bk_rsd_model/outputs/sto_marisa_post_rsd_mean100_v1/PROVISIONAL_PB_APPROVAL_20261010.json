@@ -1,0 +1,13 @@
+{
+  "status": "DIRECT_HUMAN_AUTHORIZES_PROVISIONAL_PB_WHILE_FULL_STO_NOISE_VALIDATION_CONTINUES",
+  "recorded_UTC": "2026-10-10T10:00:43Z",
+  "authorization_source": "direct human reply in this conversation",
+  "question": "候选噪声模型已完成原分箱的数值核验和真实 P+B 检查，但完整 STO 物理闭合尚未认证，部分噪声参数触及先验边界；是否先跑明确标为 provisional、不能当作正式 fNL 结论的诊断版 P+B MCMC，同时继续噪声核验？",
+  "human_answer": "先跑诊断 MCMC，同时核验",
+  "full_STO_noise_closure_certified": false,
+  "formal_fNL_conclusion_authorized": false,
+  "diagnostic_MCMC_authorized": true,
+  "continue_noise_validation": true,
+  "original_measurements_data_volume_covariance_preserved": true,
+  "old_model_and_results_preserved": true
+}

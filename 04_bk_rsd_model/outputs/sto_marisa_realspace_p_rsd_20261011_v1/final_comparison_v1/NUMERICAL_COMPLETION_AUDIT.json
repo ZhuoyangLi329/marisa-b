@@ -1,0 +1,12 @@
+{
+  "nine_cases_verified": true,
+  "original_data_C_priors_windows_and_models_verified": true,
+  "fixed_physical_p": 1.2822,
+  "p_in_P_B_signal_and_noise_independently_verified": true,
+  "main_C_single500_V1_mean100": true,
+  "P0_then_4plus4_PB_two_cuts_complete": true,
+  "all_original_convergence_gates_and_full_chain_replays": true,
+  "comparison_sha256": "6ecde82443317c8425be28d298124f16f99ec0b085c475d94a9d61fee79a3ba1",
+  "pdf_sha256": "d1ca258ead9319860ca71ec7061e8e201018fa42eaf8526c63f6d10a5ad21eff",
+  "visual_PDF_QA_required": true
+}

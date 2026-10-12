@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "native_inverse_brec_scaling_max_error": 1.157718994148838e-15,
+  "unit_bias_source_jet_mapping_max_errors": [
+    5.929717636643629e-14,
+    1.0488485080450971e-13,
+    5.044882668610776e-14,
+    4.3952685027761995e-12
+  ],
+  "independent_cache_replacement_errors": [
+    {
+      "gaussian": 6.589793486689657e-16,
+      "linear_coefficient": 2.1831475131893037e-16,
+      "quadratic_coefficient": 1.924059690165916e-15,
+      "adaptive_linear": 1.8660066441985147e-16,
+      "adaptive_quadratic": 1.3877787807814457e-17,
+      "adaptive_cross": 2.209108608480594e-16
+    },
+    {
+      "gaussian": 6.665844976432888e-16,
+      "linear_coefficient": 4.189889791514489e-16,
+      "quadratic_coefficient": 3.944956898365765e-16,
+      "adaptive_linear": 2.3604790197474426e-16,
+      "adaptive_quadratic": 2.103854953112726e-16,
+      "adaptive_cross": 2.102672694202679e-16
+    },
+    {
+      "gaussian": 7.395243053586728e-15,
+      "linear_coefficient": 5.550914530311125e-16,
+      "quadratic_coefficient": 1.8723945627407237e-15,
+      "adaptive_linear": 2.1759951501006336e-16,
+      "adaptive_quadratic": 2.3836608640783083e-16,
+      "adaptive_cross": 2.1313384163582013e-16
+    },
+    {
+      "gaussian": 9.430257235249982e-16,
+      "linear_coefficient": 6.141577320324356e-16,
+      "quadratic_coefficient": 1.171487288213988e-15,
+      "adaptive_linear": 2.0672133646183809e-16,
+      "adaptive_quadratic": 1.6991992742044897e-16,
+      "adaptive_cross": 2.0158362342977195e-16
+    }
+  ],
+  "scope": "all full/nw/leg-wiggle source coefficients; no MCMC modification"
+}

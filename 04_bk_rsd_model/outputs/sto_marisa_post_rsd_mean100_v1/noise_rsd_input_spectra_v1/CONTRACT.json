@@ -1,0 +1,31 @@
+{
+  "status": "ACTUAL_INPUT_NOISE_MEASUREMENT_NOT_MCMC_RELEASE",
+  "immutable_inputs": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/measure_sto_rsd_input_noise.py": "b2560ba7c98a397314104921a01fade681ca870965f2e5f5d9c8cf8e1a1bb9ca",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/sto_rsd_noise_fields.py": "649d056eac4a36e11398e2541fd8f93b466e7c539a24042fad2cce6b89e941c0",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_sto_rsd_noise_fields.py": "d957db55ac594eb8572eaf1b23a7dd930e2932aad7c95b727c82e2e05684fdd5",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/NOISE_RSD_FIELDS_TEST_AUDIT.json": "29efdd7f80f1abb8b222567b25774e87fdaa3c3698f72eaf3824421f0ba9ef06",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/VALIDATION_SOURCE_AUDIT.json": "619b49bffab543c9e0686a37bbf1c6966f7a97cc9e7470bd1bf64c2c6b37541b",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/simultaneous_measurements_v3/CONTRACT.json": "273e4be97ec278ffa3040381d5ee6475292c075d81a2e1b0f54300a8c1c5f60e"
+  },
+  "cosmologies": [
+    "fiducial",
+    "LC_p",
+    "LC_m"
+  ],
+  "realizations": [
+    0
+  ],
+  "meshes": [
+    128,
+    256
+  ],
+  "CPU_affinity": [
+    14
+  ],
+  "chunk_particles": 1048576,
+  "formal_noise_audit_released": false,
+  "production_sources_untouched": true,
+  "target_overlap_explicit": true,
+  "pure_noise_definition_not_chosen": true
+}

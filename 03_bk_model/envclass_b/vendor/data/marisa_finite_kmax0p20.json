@@ -1,0 +1,318 @@
+{
+  "checks": {
+    "all_finite": true,
+    "established_linear_asset_closes_below_2e_minus_12": true,
+    "established_linear_asset_relative_l2": 1.1790784911170916e-15
+  },
+  "created_utc": "2026-08-30T06:18:37.118441+00:00",
+  "inputs": {
+    "driver_executable": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/marisa_b/build/halo_v1/eft_v2_post_r1_png_template_driver",
+      "sha256": "9df29c219cdf56462d2ffae0d32dd0458ac603166bb4cc413f38a6765e0e045b"
+    },
+    "driver_source": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/marisa_b/src/eft_v2/post_r1_png_template_driver.cpp",
+      "sha256": "806f509189c67f42dda8f00a1affc56e383ef0c398d266fc04f42551ff53739b"
+    },
+    "native_header": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/marisa_b/src/marisa_b/marisa_b_native.h",
+      "sha256": "5412ea3bf3776717d72c1993e0015683d8fa67f794abe3c0e5229dba1b0520df"
+    },
+    "native_source": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/marisa_b/src/marisa_b/marisa_b_native.cpp",
+      "sha256": "08840cf2dcae4d2988a3ce0a00c5fa3162112d4d797d898e02e798d6eb0fda16"
+    },
+    "old_linear_asset": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_only_p112_adaptive_response_kmax0p20/theory/adaptive_linear_templates_fixed_b1_1p93.npz",
+      "sha256": "00d2f64cfd24318b708985b3614b4ae338e70450b8016a9f74a4e79f744c0271"
+    },
+    "raw": [
+      {
+        "index": 1,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_001.jsonl",
+        "sha256": "8c41b2235d165fc02682994f3ef2c8cd8efb33c57f55e3d93212c38c382d0438"
+      },
+      {
+        "index": 2,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_002.jsonl",
+        "sha256": "cc862a4876c2fbe6f7370ff4c4fb14b043ef1e09d1adabc7f2023c05586a75c2"
+      },
+      {
+        "index": 3,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_003.jsonl",
+        "sha256": "b32b21938dcf60c35f70bf52d7850902e1019db579a34614bb873814157f7e02"
+      },
+      {
+        "index": 4,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_004.jsonl",
+        "sha256": "b9655a01de34c91467df42fbcf31b04983fb750cfc904c4a9947427d00f38126"
+      },
+      {
+        "index": 5,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_005.jsonl",
+        "sha256": "dc1cc6408e1d21a81e4cc58553930790240daf51685265df78b0eb1230d00ec9"
+      },
+      {
+        "index": 6,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_006.jsonl",
+        "sha256": "feec8ba366ac4538548b06268cae651d0b80f31f3b2ff1f54b277f1fe2bd134c"
+      },
+      {
+        "index": 8,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_008.jsonl",
+        "sha256": "cd6ffc0e8f022b4daf4a9ebd687ed091e82c4521d727daf85e6c63950757aaa5"
+      },
+      {
+        "index": 9,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_009.jsonl",
+        "sha256": "1bbfb47bd2daf34014310525251d786c192b3fe25905b5027f9df07d00ed6278"
+      },
+      {
+        "index": 15,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_015.jsonl",
+        "sha256": "bf823b2d376776086c62044eda14d5f74ce17222d2155026772f8f0c4088b810"
+      },
+      {
+        "index": 16,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_016.jsonl",
+        "sha256": "469d610ae7885cb28a5fe3c7c035ba0787631156ddadb10e7286fdb8f542fe8f"
+      },
+      {
+        "index": 17,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_017.jsonl",
+        "sha256": "153489fc5d022d5feb78f63a1a2be07540d4d3a0ecb806ececa0a90d63de184f"
+      },
+      {
+        "index": 18,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_018.jsonl",
+        "sha256": "f19dfdb4f546a3daa43bf7584c14ac82b165ddfc0f7e500c794e0050bf0f1268"
+      },
+      {
+        "index": 19,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_019.jsonl",
+        "sha256": "de579a97e6250669b6bcb016457fb4d32868c4e631d65b0a30ae614744bb637a"
+      },
+      {
+        "index": 20,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_020.jsonl",
+        "sha256": "0e232773e66f85dc9b34bd8a0f5fb2ac14c4e4f2d9e8f687ced315062660953c"
+      },
+      {
+        "index": 22,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_022.jsonl",
+        "sha256": "0b311ade5f6877a709abe15418b794dc6aa6a45fa9a45b0c88e537fea6373cb0"
+      },
+      {
+        "index": 23,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_023.jsonl",
+        "sha256": "e12e7cc7fcb4a6d146ec88863eb357d85e1938ac4ccef8f409324be0ba0e4eb5"
+      },
+      {
+        "index": 29,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_029.jsonl",
+        "sha256": "c3c79122dbedff4518d2450751813aa361d9eabe447d113a77674e853b6bd793"
+      },
+      {
+        "index": 30,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_030.jsonl",
+        "sha256": "0fdb87c619fe62b0cbc585aafc990a03da3504d8d89437005a2bf43eaf5155f1"
+      },
+      {
+        "index": 31,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_031.jsonl",
+        "sha256": "d3e6af42171205bd5dd7ab4027c510f9f99304cf244871f705cefd4edbabeb27"
+      },
+      {
+        "index": 32,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_032.jsonl",
+        "sha256": "a4ae199d9f9c0d250249257240ce8dbbe8bdef39613f8482b8478bd9e615f8c6"
+      },
+      {
+        "index": 33,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_033.jsonl",
+        "sha256": "d218ddfb0a92c4d317866bee61a8b3d19cb0ab25e9afe2a6823643d53fd7a312"
+      },
+      {
+        "index": 35,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_035.jsonl",
+        "sha256": "a1508252e7db1b7b7a80266f25080ea54e92e9ed1838f0424e1b9ed88998df64"
+      },
+      {
+        "index": 36,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_036.jsonl",
+        "sha256": "f73d0ba7c9478d786d675650fd3a8932f968bdcbd67680a78359abb56d0a7b84"
+      },
+      {
+        "index": 42,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_042.jsonl",
+        "sha256": "de34d3c2e40e7be5cae364a98783ab42c269fd7cf075d120722eda8624bafb5d"
+      },
+      {
+        "index": 43,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_043.jsonl",
+        "sha256": "820caced96f31a17adf736df6d496771966bc4dee5903463da772d47df20bb8e"
+      },
+      {
+        "index": 44,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_044.jsonl",
+        "sha256": "eaf9496c284652a43ae84507fe0b41346bdde12367e016937b3cdcb3c29cf21f"
+      },
+      {
+        "index": 45,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_045.jsonl",
+        "sha256": "f419617f6110dd88103a24774840f0ae0044745364af460197379f5e9dbac95b"
+      },
+      {
+        "index": 47,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_047.jsonl",
+        "sha256": "c50be208f16d7bb425c116a205284b97635e17e33267db7aa7983c35a8ebadb0"
+      },
+      {
+        "index": 48,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_048.jsonl",
+        "sha256": "18a8f894f3fd510d5e14dff9c5139ffb3f4c22a2c9a761613dae55e0da92704e"
+      },
+      {
+        "index": 54,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_054.jsonl",
+        "sha256": "dc564702bccd30589f8106c65f65148a41c5168362ac2cea4d96074d6cf8aa2d"
+      },
+      {
+        "index": 55,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_055.jsonl",
+        "sha256": "cbb0d6cbaf5b5f8f52e777cb5842147f9816d17349f138545586c60ba1f713c9"
+      },
+      {
+        "index": 56,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_056.jsonl",
+        "sha256": "627307d1e6d5d2e8d3bbbf9f0f44c698a3f88be7b22087feb94faadec9ce3dc4"
+      },
+      {
+        "index": 58,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_058.jsonl",
+        "sha256": "a69ecfe1312d0349f455e18d6e5922376c9c745cf3a544b25940eec24570ee68"
+      },
+      {
+        "index": 59,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_059.jsonl",
+        "sha256": "b56d3dd26038d0a3690228147008479e3b8efa3a3945fe0c56cf7e686dfe5fa5"
+      },
+      {
+        "index": 65,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_065.jsonl",
+        "sha256": "7d848f13581960226545e4c22050e293fef63f49b7e613d5555dfb0662eb1889"
+      },
+      {
+        "index": 66,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_066.jsonl",
+        "sha256": "e1d2bdb0f6805c3459cd862d979b827c7425637d750e61d4db8c57eeddd12dca"
+      },
+      {
+        "index": 68,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_068.jsonl",
+        "sha256": "e2f26eaec92ec8b3022d78a7ebb736ae6c9445eccd0625f8c84a045000940507"
+      },
+      {
+        "index": 69,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_069.jsonl",
+        "sha256": "229f4b84306d8d5af124c8201259229bc5d0320db080c8c36f78ae0e7f030b6d"
+      },
+      {
+        "index": 75,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_075.jsonl",
+        "sha256": "57c04a0d67d236054081224606bea3c24062ff1e852866cad9a4c8d441650f40"
+      },
+      {
+        "index": 77,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_077.jsonl",
+        "sha256": "1323536721bfec2fdc5fc2a15aee3cfb138e0a0228b14b3f3eb20494565c55d1"
+      },
+      {
+        "index": 78,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_078.jsonl",
+        "sha256": "2f36061e6fd9f01f8f1407900e74a2f6bc77bc26ff3fb2197b05a2fc2c7c2656"
+      },
+      {
+        "index": 92,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_092.jsonl",
+        "sha256": "3bf852a993ec4bd7fa04ad8fecf07c72fefd0d634ec10e912bf9d5df4c3c4230"
+      },
+      {
+        "index": 93,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_093.jsonl",
+        "sha256": "35581d92168c63f616703a3c17fbe5ea3010d5ee278d81b8b485714c2b71311e"
+      },
+      {
+        "index": 99,
+        "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/raw/adaptive_finite_tree_bin_099.jsonl",
+        "sha256": "07837315c7e52d27e206855d668c169516d68377aa607bbf25a53b0316fe2b15"
+      }
+    ]
+  },
+  "normalization": {
+    "adaptive_G1": "b1^4*(bphi_rec/b_rec)*gaussian_linear_basis",
+    "adaptive_G2": "b1^4*(bphi_rec/b_rec)^2*gaussian_quadratic_basis",
+    "adaptive_L_cross": "b1^3*bphi*(bphi_rec/b_rec)*png_linear_cross_basis"
+  },
+  "output": {
+    "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_marisa_direct_finite_tree_kmax0p20_v1/theory/marisa_adaptive_finite_tree_bases.npz",
+    "sha256": "03f566693e335c6b22d3cee2426f5c9cda643866885979ca9f8ba54ccc6e2deb"
+  },
+  "schema": "quijote-halo-z0p5-marisa-direct-finite-tree-bases-v1",
+  "scope": {
+    "empirical_gain": false,
+    "fNL_rec_equals_fNL": true,
+    "finite_png_order": 2,
+    "fully_tree_dm": true,
+    "indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      42,
+      43,
+      44,
+      45,
+      47,
+      48,
+      54,
+      55,
+      56,
+      58,
+      59,
+      65,
+      66,
+      68,
+      69,
+      75,
+      77,
+      78,
+      92,
+      93,
+      99
+    ],
+    "kmax_h_mpc": 0.2,
+    "matter_loop_included": false,
+    "redshift": 0.5
+  },
+  "status": "pass"
+}

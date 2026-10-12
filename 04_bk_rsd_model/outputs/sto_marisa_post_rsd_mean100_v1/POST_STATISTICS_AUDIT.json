@@ -1,0 +1,245 @@
+{
+  "status": "STATISTICS_AND_P0_IMPLEMENTATION_PASS_NO_POST_ENSEMBLE",
+  "created_UTC": "2026-10-09T02:19:25.343445+00:00",
+  "unit_tests_passed": 7,
+  "pre_control_boxes": 800,
+  "pre_likelihoods_replayed": 21,
+  "cases": [
+    {
+      "kind": "PB",
+      "case": "LC_m_mean100_k0.08",
+      "dimension": 21,
+      "Hartlap_factor": 0.9559118236472945,
+      "sigma_scaled_chol_max_abs_difference": 6.656134356635346e-16,
+      "sigma_scaled_chol_factorization_residual": 1.8877612975315146e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_m_mean100_k0.10",
+      "dimension": 26,
+      "Hartlap_factor": 0.9458917835671342,
+      "sigma_scaled_chol_max_abs_difference": 6.621157055383554e-16,
+      "sigma_scaled_chol_factorization_residual": 3.0616602382327096e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_m_mean100_k0.12",
+      "dimension": 32,
+      "Hartlap_factor": 0.9338677354709419,
+      "sigma_scaled_chol_max_abs_difference": 1.3279592926363788e-15,
+      "sigma_scaled_chol_factorization_residual": 2.0752055292569692e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_m_mean100_k0.14",
+      "dimension": 39,
+      "Hartlap_factor": 0.9198396793587175,
+      "sigma_scaled_chol_max_abs_difference": 1.3179476096665289e-15,
+      "sigma_scaled_chol_factorization_residual": 2.566697896643961e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_m_mean100_k0.18",
+      "dimension": 47,
+      "Hartlap_factor": 0.9038076152304609,
+      "sigma_scaled_chol_max_abs_difference": 1.0731239303331711e-15,
+      "sigma_scaled_chol_factorization_residual": 2.7503778487768843e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_m_mean100_k0.20",
+      "dimension": 56,
+      "Hartlap_factor": 0.8857715430861723,
+      "sigma_scaled_chol_max_abs_difference": 1.2933109025470196e-15,
+      "sigma_scaled_chol_factorization_residual": 3.4179167742371707e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_p_mean100_k0.08",
+      "dimension": 21,
+      "Hartlap_factor": 0.9559118236472945,
+      "sigma_scaled_chol_max_abs_difference": 6.656134356635346e-16,
+      "sigma_scaled_chol_factorization_residual": 1.8877612975315146e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_p_mean100_k0.10",
+      "dimension": 26,
+      "Hartlap_factor": 0.9458917835671342,
+      "sigma_scaled_chol_max_abs_difference": 6.621157055383554e-16,
+      "sigma_scaled_chol_factorization_residual": 3.0616602382327096e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_p_mean100_k0.12",
+      "dimension": 32,
+      "Hartlap_factor": 0.9338677354709419,
+      "sigma_scaled_chol_max_abs_difference": 1.3279592926363788e-15,
+      "sigma_scaled_chol_factorization_residual": 2.0752055292569692e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_p_mean100_k0.14",
+      "dimension": 39,
+      "Hartlap_factor": 0.9198396793587175,
+      "sigma_scaled_chol_max_abs_difference": 1.3179476096665289e-15,
+      "sigma_scaled_chol_factorization_residual": 2.566697896643961e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_p_mean100_k0.18",
+      "dimension": 47,
+      "Hartlap_factor": 0.9038076152304609,
+      "sigma_scaled_chol_max_abs_difference": 1.0731239303331711e-15,
+      "sigma_scaled_chol_factorization_residual": 2.7503778487768843e-16
+    },
+    {
+      "kind": "PB",
+      "case": "LC_p_mean100_k0.20",
+      "dimension": 56,
+      "Hartlap_factor": 0.8857715430861723,
+      "sigma_scaled_chol_max_abs_difference": 1.2933109025470196e-15,
+      "sigma_scaled_chol_factorization_residual": 3.4179167742371707e-16
+    },
+    {
+      "kind": "PB",
+      "case": "fiducial_mean100_k0.08",
+      "dimension": 21,
+      "Hartlap_factor": 0.9559118236472945,
+      "sigma_scaled_chol_max_abs_difference": 6.656134356635346e-16,
+      "sigma_scaled_chol_factorization_residual": 1.8877612975315146e-16
+    },
+    {
+      "kind": "PB",
+      "case": "fiducial_mean100_k0.10",
+      "dimension": 26,
+      "Hartlap_factor": 0.9458917835671342,
+      "sigma_scaled_chol_max_abs_difference": 6.621157055383554e-16,
+      "sigma_scaled_chol_factorization_residual": 3.0616602382327096e-16
+    },
+    {
+      "kind": "PB",
+      "case": "fiducial_mean100_k0.12",
+      "dimension": 32,
+      "Hartlap_factor": 0.9338677354709419,
+      "sigma_scaled_chol_max_abs_difference": 1.3279592926363788e-15,
+      "sigma_scaled_chol_factorization_residual": 2.0752055292569692e-16
+    },
+    {
+      "kind": "PB",
+      "case": "fiducial_mean100_k0.14",
+      "dimension": 39,
+      "Hartlap_factor": 0.9198396793587175,
+      "sigma_scaled_chol_max_abs_difference": 1.3179476096665289e-15,
+      "sigma_scaled_chol_factorization_residual": 2.566697896643961e-16
+    },
+    {
+      "kind": "PB",
+      "case": "fiducial_mean100_k0.18",
+      "dimension": 47,
+      "Hartlap_factor": 0.9038076152304609,
+      "sigma_scaled_chol_max_abs_difference": 1.0731239303331711e-15,
+      "sigma_scaled_chol_factorization_residual": 2.7503778487768843e-16
+    },
+    {
+      "kind": "PB",
+      "case": "fiducial_mean100_k0.20",
+      "dimension": 56,
+      "Hartlap_factor": 0.8857715430861723,
+      "sigma_scaled_chol_max_abs_difference": 1.2933109025470196e-15,
+      "sigma_scaled_chol_factorization_residual": 3.4179167742371707e-16
+    },
+    {
+      "kind": "P",
+      "case": "LC_m_mean100_kP0.08",
+      "dimension": 12,
+      "Hartlap_factor": 0.9739478957915831,
+      "sigma_scaled_chol_max_abs_difference": 4.3364203059765084e-16,
+      "sigma_scaled_chol_factorization_residual": 1.9106659112364227e-16
+    },
+    {
+      "kind": "P",
+      "case": "LC_p_mean100_kP0.08",
+      "dimension": 12,
+      "Hartlap_factor": 0.9739478957915831,
+      "sigma_scaled_chol_max_abs_difference": 4.3364203059765084e-16,
+      "sigma_scaled_chol_factorization_residual": 1.9106659112364227e-16
+    },
+    {
+      "kind": "P",
+      "case": "fiducial_mean100_kP0.08",
+      "dimension": 12,
+      "Hartlap_factor": 0.9739478957915831,
+      "sigma_scaled_chol_max_abs_difference": 4.3364203059765084e-16,
+      "sigma_scaled_chol_factorization_residual": 1.9106659112364227e-16
+    }
+  ],
+  "B_marginals_checked_against_joint_covariance_blocks": 18,
+  "saved_B_only_likelihoods_replayed": false,
+  "full_same_box_PB_cross_covariance_reproduced": true,
+  "P_only_uses_marginal_C_PP_not_conditional_precision": true,
+  "volume_Gpc_h3": 1.0,
+  "covariance_multiplier": 1.0,
+  "covariance_is_of_mean": false,
+  "overlap700_and_disjoint800_software_paths_tested": true,
+  "new_production_sample_selected": false,
+  "post_covariance_or_MCMC_created": false,
+  "physical_p_calibrated": false,
+  "old_pre_outputs_modified": false,
+  "input_sha256": {
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/P0_ENSEMBLE_MATRIX.npz": "61711b53709b13ad6b84e06a97465ecca6ed7378b722d64dea10fbebff357816",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_b000_bonly_v2/B000_ENSEMBLE_MATRIX.npz": "cf1da49a3704c222d8b32346cfbfa08004734a875d1dc936e3522a8f96241baf",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.08/contract.json": "21fc89c571ba4cc6d0c66c7f10ac216c5b5002bdf67425aa75657b143c3df0d3",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.08/likelihood.npz": "37d526869c6edbb43f5817abaf6bbe75ba338c5c0e0ad1660d19a209f542c96f",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.10/contract.json": "8942b3105f8fef25ff2c38a6a8c1e631f2c3c39ff24d2b601457625e9674d1a7",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.10/likelihood.npz": "d2a80e6b3207e618e389d842c03c1c26bb1ea5ac2c97aaa7ee906d94c73c8ace",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.12/contract.json": "746b37c6890ba18a0f78f7a7dc69e1166e0f1f79591a38906fe2b2d082bf1f5a",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.12/likelihood.npz": "6e22e71220ad540703c893f61f5a1db684a0c6e71367300b5aaf4ef21851c844",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.14/contract.json": "cbb39e85f6fa592bc13f54671737a5959a081289397dc969642486766a3fb6a1",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.14/likelihood.npz": "70f743454752e6d4784a41041fd133caadadc151b8ea659f399654d85c5ab6a7",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.18/contract.json": "3bc1cd773e134bb05077565182811cb7944601afd237387e3fbf3b1f0704ccc9",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.18/likelihood.npz": "de066c8ec6b1e310761a1935864b742d0186de5eb2e66232228dc9b9a59361eb",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.20/contract.json": "4c9e43d7c50cb591bf49f35ccccdca2b9751cccd02e94ad86a931117956e8657",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_m_mean100_k0.20/likelihood.npz": "06ec33f0f1c70f1b21dbf179f9e671440ca6e2cb852443676f3baba510118024",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.08/contract.json": "836a7939092c9fc0bb45e4e7ef21412556b93530c45079af9030edbba83fd3db",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.08/likelihood.npz": "9dc51a4022f9cd5afdd1635009b53d000e49176c551c8e271cc30461c9def7be",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.10/contract.json": "3636aa22f0b2a85d4a07ac545ac3ab9939fcd58d2cca1e7cc86440722ff129c7",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.10/likelihood.npz": "4b9c63f6c51e19cb7f49dae0675e8432f41de11bfed463255e28462a7b544a73",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.12/contract.json": "03369102da1686bfa8d71502fe24402a584c461e857790410948b3330890c98f",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.12/likelihood.npz": "3c4c7fd601e51127d64dd05afe55bef8c2b5111c688d86d2d660d7f40b8e1d77",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.14/contract.json": "c71894b34fc2ec7e5eeed479205d27ecea05e4d51134c73e12cc78758d75af38",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.14/likelihood.npz": "73cd4321d643851cc582c2888fbf5458c2b2f78d418f889e1b8605a248735358",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.18/contract.json": "6a137c5fe0c02669454f4d400da9677d6cf9ef0b33caf7bdc9f8f4a03f9f4ab5",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.18/likelihood.npz": "a6743d906609bb9cc762ec25c249fefb12cedc200f0ed463f6201807dedde4e2",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.20/contract.json": "68fd813d4ee3df4555ed247a1deb2a540217bd675c481dad4ad68e9fcd255ce9",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/LC_p_mean100_k0.20/likelihood.npz": "eddf76c2530b07a120658e0ac8648716013b94ff1f1619e16e80dd06dd3c207c",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.08/contract.json": "9170e2d11ae4c230b99fbe747a10b9d888fc948d538805b721da8499947772ca",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.08/likelihood.npz": "dcfc43c1b097855f583597e73b22564b73d1c381f3bdf8ac2625d5319f956158",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.10/contract.json": "965beddf99f9df3921a6c615e638ba8361ede09502ce0903470716e3958a8173",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.10/likelihood.npz": "c7b39cba3edea14cd9e001d0a4149851024cd12c98cd64825ed0c74200f2870a",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.12/contract.json": "227eb82c71e3cd64c38e667e3c3aa3988947c575b4b76272f5a26e81c7013e7c",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.12/likelihood.npz": "67ef3abc753292bdad36ce8c0b002d9be24b26cbe1edb55bd55908588eba590e",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.14/contract.json": "ddfe7d8567d9adeacef9923ece89556f08257fa06027f26b41f90ad1d4f10ac7",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.14/likelihood.npz": "28c2ede0f4ee2e3ecb7bd611b67bf885e2032f9279c2b8bd80e03e9947b86aa1",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.18/contract.json": "15d127f567bfa0d4e0a2877ed090d0db0e5d468b615af87c16cb31a594056b44",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.18/likelihood.npz": "63dbee203aa2df57036dc6cad5c08b3e87ab7291be78ef9f66292e7f5d8277df",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.20/contract.json": "6c6938f339c337e0be6f2dc1e0b5aa404ae0ae39107d5988065cef16b0da10ad",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_pb_mean100_v1/cases/fiducial_mean100_k0.20/likelihood.npz": "220723d46c5ed6aaf8755c7525be598411fbb3dfd9d268e686fc16413b7742e0",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_p0only_mean100_v1/cases/LC_m_mean100_kP0.08/contract.json": "fcf6d0e2596a529aa9e655b6dba4e4e7fbdf8600cce70d1d18255200caa00ae4",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_p0only_mean100_v1/cases/LC_m_mean100_kP0.08/likelihood.npz": "e976f23a1420ac10ce3857160b6d1ff4ea42df5a3c91705e915b15a0fa4ec6e2",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_p0only_mean100_v1/cases/LC_p_mean100_kP0.08/contract.json": "026440a86d19ae084431ca1b35da3548efe258dff8f151fadc9f1b7a12fe8779",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_p0only_mean100_v1/cases/LC_p_mean100_kP0.08/likelihood.npz": "f4fb94ae8cbcb50576ec6dbad4293c75fb2c3f5aa31a8ca6598cd1394772662c",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_p0only_mean100_v1/cases/fiducial_mean100_kP0.08/contract.json": "21f8d63b2e97048a67677f608f1a7bd19532280c8f8cf35ed095181bda5b13d0",
+    "/Users/lizhuoyang/Documents/Codex/2026-09-29/ssh-nersc-vscode-ssh-pscratch-sd-2/work/rsd_part4/outputs/pre_rsd_p0only_mean100_v1/cases/fiducial_mean100_kP0.08/likelihood.npz": "e1a99d5aebc2b8b22ca5be75090025b9fc3145cb8677367927e6ea9ffa7cf62d"
+  },
+  "source_sha256": {
+    "post_rsd_ensemble.py": "3e1b5731a708b09bb82889409a24a2789fdc39c5ac625db36aae9cb6a68d9ed9",
+    "test_post_rsd_ensemble.py": "6ff4c6b249bda6316b105e9b2d4f5a0173ffc447e1e8ff340dfb2a7acef2c680",
+    "post_rsd_p0_model.py": "36a95abbb65c6e95ccc548f0b28d0350dad8dde1066bc21bbb5f1dfc860b2117",
+    "test_post_rsd_p0_model.py": "693a28a838e0d9b62fc7ae1e376a164ca059ba1ade6c6de554eddeb84d93d82a",
+    "audit_post_rsd_statistics.py": "1f6b5435ea3ccb68b65395d4d9b4246f3ce38e94b2e82093395d238ea0ea0acf"
+  },
+  "python": "/opt/anaconda3/bin/python",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "numpy_version": "1.26.4"
+}

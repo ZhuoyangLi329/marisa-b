@@ -1,0 +1,173 @@
+{
+  "status": "EXACT_POINT_RESPONSE_SUPPORTS_ORIENTED_CANDIDATE",
+  "created_UTC": "2026-10-08T16:00:55.023919+00:00",
+  "triangle": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      -1,
+      -2,
+      0
+    ]
+  ],
+  "shift_response": [
+    0.71,
+    0.42,
+    0.26
+  ],
+  "rows": [
+    {
+      "signal_leg": 0,
+      "signal_power": [
+        0.0001,
+        0.0,
+        0.0
+      ],
+      "candidate_N_times_oriented": -6.280000000000001e-05,
+      "candidate_N_times_symmetric_R2": -6.69e-05,
+      "finite_N": [
+        {
+          "Npoint": 1000,
+          "derivative": -6.247586160000048e-08,
+          "raw_derivative": -1.5204666200000003e-06,
+          "self_derivative": -1.4579907583999999e-06,
+          "N_times_derivative": -6.247586160000048e-05
+        },
+        {
+          "Npoint": 10000,
+          "derivative": -6.2767562616e-09,
+          "raw_derivative": -2.7271682419999995e-08,
+          "self_derivative": -2.0994926158399995e-08,
+          "N_times_derivative": -6.2767562616e-05
+        },
+        {
+          "Npoint": 100000,
+          "derivative": -6.279675602615995e-10,
+          "raw_derivative": -1.4769418404199997e-09,
+          "self_derivative": -8.489742801584002e-10,
+          "N_times_derivative": -6.279675602615996e-05
+        },
+        {
+          "Npoint": 1000000,
+          "derivative": -6.279967560026161e-11,
+          "raw_derivative": -1.3518944342042e-10,
+          "self_derivative": -7.238976782015839e-11,
+          "N_times_derivative": -6.279967560026161e-05
+        }
+      ]
+    },
+    {
+      "signal_leg": 1,
+      "signal_power": [
+        0.0,
+        0.0001,
+        0.0
+      ],
+      "candidate_N_times_oriented": -7.620000000000001e-05,
+      "candidate_N_times_symmetric_R2": -5.91e-05,
+      "finite_N": [
+        {
+          "Npoint": 1000,
+          "derivative": -7.57777463999998e-08,
+          "raw_derivative": -1.5049401620000004e-06,
+          "self_derivative": -1.4291624156000006e-06,
+          "N_times_derivative": -7.577774639999981e-05
+        },
+        {
+          "Npoint": 10000,
+          "derivative": -7.615774346399998e-09,
+          "raw_derivative": -2.5712418361999998e-08,
+          "self_derivative": -1.80966440156e-08,
+          "N_times_derivative": -7.615774346399998e-05
+        },
+        {
+          "Npoint": 100000,
+          "derivative": -7.619577403463994e-10,
+          "raw_derivative": -1.3209492003619997e-09,
+          "self_derivative": -5.589914600156003e-10,
+          "N_times_derivative": -7.619577403463994e-05
+        },
+        {
+          "Npoint": 1000000,
+          "derivative": -7.619957740034641e-11,
+          "raw_derivative": -1.19589517020362e-10,
+          "self_derivative": -4.33899396200156e-11,
+          "N_times_derivative": -7.619957740034641e-05
+        }
+      ]
+    },
+    {
+      "signal_leg": 2,
+      "signal_power": [
+        0.0,
+        0.0,
+        0.0001
+      ],
+      "candidate_N_times_oriented": 0.0,
+      "candidate_N_times_symmetric_R2": -1.3000000000000003e-05,
+      "finite_N": [
+        {
+          "Npoint": 1000,
+          "derivative": 2.2577399999970115e-10,
+          "raw_derivative": -1.4128643300000005e-06,
+          "self_derivative": -1.4130901040000002e-06,
+          "N_times_derivative": 2.2577399999970115e-07
+        },
+        {
+          "Npoint": 10000,
+          "derivative": 2.2597740000051045e-12,
+          "raw_derivative": -1.649366033e-08,
+          "self_derivative": -1.6495920104000004e-08,
+          "N_times_derivative": 2.2597740000051045e-08
+        },
+        {
+          "Npoint": 100000,
+          "derivative": 2.259977400016098e-14,
+          "raw_derivative": -3.9896162032999995e-10,
+          "self_derivative": -3.989842201040001e-10,
+          "N_times_derivative": 2.259977400016098e-09
+        },
+        {
+          "Npoint": 1000000,
+          "derivative": 2.2599977400319316e-16,
+          "raw_derivative": -2.738964122033e-11,
+          "self_derivative": -2.7389867220104004e-11,
+          "N_times_derivative": 2.2599977400319316e-10
+        }
+      ]
+    }
+  ],
+  "uniform_point_tests": [
+    {
+      "Npoint": 1000,
+      "corrected_derivative": 0.0,
+      "raw_derivative": -1.3872200000000002e-06,
+      "self_derivative": -1.3872200000000002e-06
+    },
+    {
+      "Npoint": 100000,
+      "corrected_derivative": 7.754818242684634e-26,
+      "raw_derivative": -1.3899721999999998e-10,
+      "self_derivative": -1.3899722000000006e-10
+    }
+  ],
+  "max_fine_scaled_error": 5.545927212529055e-06,
+  "scope": "iid fixed-N single sinusoidal intensity, phase averaged exact occupancy, infinitesimal shift, continuous random",
+  "comparison_reference": "https://arxiv.org/html/2410.18524v3#S2.SS4 Eq44, differing symmetrized candidate recorded not silently selected",
+  "STO_nonpoisson_validated": false,
+  "finite_random_validated": false,
+  "finite_shift_validated": false,
+  "production_model_modified": false,
+  "CPU_affinity": [
+    7
+  ],
+  "entry_sha256": "071a7ae2f8aa5269eb11f48418b3637c799be9582f115321005858add6fddff6"
+}

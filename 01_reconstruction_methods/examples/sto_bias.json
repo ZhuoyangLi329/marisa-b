@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-08-05T02:53:56.291409+00:00",
+  "dm_cross_bias_diagnostic": {
+    "b1": 2.263065977209944,
+    "b1_err_from_cov_of_mean": 0.00026345564623765774,
+    "chi2": 3942.538450686962,
+    "ndof": 7,
+    "relative_difference_from_auto": 0.029624420309052664
+  },
+  "fit_input_npz": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100_bias/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100_fid500_sto_weighted_bias.npz",
+  "fit_model": "P_ww = b1^2 P_lin + c0",
+  "fit_space": "realspace",
+  "free_sn": {
+    "b1": 2.197952896776342,
+    "b1_err_from_cov_of_mean": 0.0020793113669365865,
+    "b1_squared": 4.830996936447512,
+    "chi2": 196.4252330321591,
+    "constant_c0": 383.40217246863176,
+    "constant_c0_err_from_cov_of_mean": 45.547660072683215,
+    "ndof": 13
+  },
+  "kmax_fit": 0.1,
+  "kmin_fit": 0.0,
+  "legacy_desilike_bias": null,
+  "n_realizations": 500,
+  "recommended_bias_source": "fid500_sto_weighted_auto_free_stochastic_constant",
+  "recommended_bias_value": 2.197952896776342,
+  "redshift": 0.5,
+  "source_summary_json": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100_bias/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100_fid500_sto_weighted_bias.json"
+}

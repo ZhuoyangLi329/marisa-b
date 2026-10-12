@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "pages": [
+    {
+      "page": 1,
+      "label": "P0-only / B-only / P+B comparison",
+      "text_within_page": true
+    },
+    {
+      "page": 2,
+      "label": "recovery and information gain",
+      "text_within_page": true
+    }
+  ],
+  "PDF_sha256": "a637e1a2485ab330ea72acbf67e228952280122698cea873d566fbb8910790fb",
+  "no_PNG_generated": true,
+  "visual_raster_inspection": false,
+  "note": "PDF-only preference; text bounds and scientific values checked"
+}

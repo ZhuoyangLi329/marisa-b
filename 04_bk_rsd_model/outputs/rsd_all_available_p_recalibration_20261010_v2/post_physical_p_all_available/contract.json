@@ -1,0 +1,26 @@
+{
+  "created_UTC": "2026-10-10T14:48:48.397992+00:00",
+  "case_contract_sha256": "3a291f3d68706f1dd43afe4a87c04244bf6bcb4d0a201d94803a6660e3d5fa3e",
+  "stage": "post",
+  "calibration_fNL_fixed": 100.0,
+  "calibration_target_count": 250,
+  "immutable_inputs": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/run_all_available_rsd_pcal_v1.py": "ab8a579a837de55f147f1a4606070dfd5470465f21036e0d39e7c21d18875816",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/run_sto_physical_p_mcmc.py": "43b62cc9ab3de9e77b77430e28003f417ea160f9d0d225f0dc243268b419b4be",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_p_calibration.py": "79263b8eab319521bf3c985bda2b4f91db79634235837e826f56f10f7da9c9c1",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_p0_model.py": "36a95abbb65c6e95ccc548f0b28d0350dad8dde1066bc21bbb5f1dfc860b2117",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/run_rsd_b000_mcmc.py": "018d3d4bb2db0dfdd739b7933472716bdb1c866d2f7d9aa57dca3f463456614d",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/code/run_five_method_p0only_mcmc.py": "277007672982fb6fdaaf1340f0f3beb5c2ef4edfec4eb9a8fb724dda9405c59d",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/ensemble_measurements/AUDIT.json": "0aed1dd84b001e64ebef0b40ce531494d8d04894ef472b58dbd61db41f9ab157",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/ensemble_measurements/MATCHED_ENSEMBLE.npz": "ed2f887a1f8718fd8cfffa3e1fc61908793de35773742ae1a12d9f144102bbab",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/calibration_holdout_p0/CALIBRATION_P0_HOLDOUT.npz": "149a276c1870cafd1e6719dbbf4648020ca201d1144eaaaec4fdb5973f8497d0",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/calibration_holdout_p0/HOLDOUT_COMPLETION_AUDIT.json": "618ae02923118966f5c584630ed71429ff7438b25211dc0f76e7d91f82e9f14b",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/physical_p_calibration_mcmc/cases/physical_p_GSR2_RSD_fNLfixed100/likelihood.npz": "a433b615b7561121de302ae51efa3b46805e7616da165133ba75bc6a81116b2b",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/rsd_all_available_p_recalibration_20261010_v2/post_physical_p_all_available/cases/post_physical_p_RSD_fNLfixed100_all_available/likelihood.npz": "8df56f1f203c08af2dbe75cf83d020c9d310148cdecd57638aeb724393035889",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/rsd_all_available_p_recalibration_20261010_v2/post_physical_p_all_available/CALIBRATION_VECTOR_MATRIX.npz": "80d45a42c9133694c316b88047e0ebfcf88e41bccae1e3804e2e2a9266058fbb"
+  },
+  "physical_p_is_not_p_rec": true,
+  "all_available_positive_samples_used": true,
+  "covariance_is_of_mean": false,
+  "volume_Gpc_h3": 1.0
+}

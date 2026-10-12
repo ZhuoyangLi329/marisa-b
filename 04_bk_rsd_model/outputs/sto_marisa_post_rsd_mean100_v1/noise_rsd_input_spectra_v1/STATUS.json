@@ -1,0 +1,48 @@
+{
+  "pid": 269059,
+  "host": "login26",
+  "CPU_affinity": [
+    14
+  ],
+  "started_UTC": "2026-10-10T08:08:07.437670+00:00",
+  "state": "SIX_ACTUAL_INPUT_SPECTRA_ROWS_COMPLETE_NOT_STO_CLOSURE",
+  "completed": [
+    {
+      "cosmology": "fiducial",
+      "meshsize": 128,
+      "arrays_sha256": "e5048a360784f5297f7d5ecb4424dcda22161d15a9d07c69d8a0dbbe165f391f"
+    },
+    {
+      "cosmology": "fiducial",
+      "meshsize": 256,
+      "arrays_sha256": "4fb4330e17cce4abe3e63862ad7cf86294bb3cb5d6cf75ee8b2d4a6ded84e799"
+    },
+    {
+      "cosmology": "LC_p",
+      "meshsize": 128,
+      "arrays_sha256": "eb3e4d880f22fad9498c4a296cbdd85717b3c1b4a70f2634315be82e635e0606"
+    },
+    {
+      "cosmology": "LC_p",
+      "meshsize": 256,
+      "arrays_sha256": "3e7dc7b22ffafa308bef284fe9b97d148034276f3c64533cd7b65c32ae8ee883"
+    },
+    {
+      "cosmology": "LC_m",
+      "meshsize": 128,
+      "arrays_sha256": "d41363f7df1724527978328b7fb4ad670fc96df7f6f6ede09b5722e307341af4"
+    },
+    {
+      "cosmology": "LC_m",
+      "meshsize": 256,
+      "arrays_sha256": "7633a3d0a4e5cddb0de3c730e3145a096cbbe7c3209c88e3d9c805992f005afc"
+    }
+  ],
+  "updated_UTC": "2026-10-10T08:23:02.179115+00:00",
+  "case": "LC_m_real000_m256",
+  "stage": "DM_streaming_paint",
+  "DM_file_completed": 8,
+  "DM_files_total": 8,
+  "DM_particles_loaded": 134217728,
+  "finished_UTC": "2026-10-10T08:23:02.179102+00:00"
+}

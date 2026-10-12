@@ -1,0 +1,26 @@
+{
+  "pid": 745303,
+  "host": "login26",
+  "state": "COMPLETE",
+  "started_UTC": "2026-10-11T06:55:28.458543+00:00",
+  "completed_cases": [
+    "pre_fiducial_P0",
+    "pre_LC_p_P0",
+    "pre_LC_m_P0",
+    "pre_fiducial_PB_4plus3_k0.14",
+    "pre_LC_p_PB_4plus3_k0.08",
+    "pre_LC_p_PB_4plus3_k0.14",
+    "sto_marisa_fiducial_P0",
+    "pre_fiducial_PB_4plus3_k0.08",
+    "pre_LC_m_PB_4plus3_k0.08",
+    "pre_LC_m_PB_4plus3_k0.14",
+    "sto_marisa_LC_p_P0",
+    "sto_marisa_fiducial_PB_4plus3_k0.08",
+    "sto_marisa_fiducial_PB_4plus3_k0.14",
+    "sto_marisa_LC_p_PB_4plus3_k0.08",
+    "sto_marisa_LC_p_PB_4plus3_k0.14"
+  ],
+  "updated_UTC": "2026-10-11T06:56:39.895308+00:00",
+  "active": [],
+  "finished_UTC": "2026-10-11T06:56:39.895289+00:00"
+}

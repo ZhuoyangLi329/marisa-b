@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE",
+  "pid": 1763496,
+  "host": "login12",
+  "affinity": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "maximum_logical_CPUs": 8,
+  "stage": "complete",
+  "max_steps": 48000,
+  "finished_worker_indices": [
+    20,
+    18,
+    22
+  ],
+  "active_workers": [],
+  "updated_UTC": "2026-10-02T04:39:48.029727+00:00"
+}

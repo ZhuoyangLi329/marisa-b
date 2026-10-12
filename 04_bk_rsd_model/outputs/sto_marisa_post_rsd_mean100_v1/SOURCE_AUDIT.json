@@ -1,0 +1,76 @@
+{
+  "status": "SOURCE_TESTS_PASS_PRODUCTION_NOT_RELEASED",
+  "created_UTC": "2026-10-08T18:24:42.106831+00:00",
+  "host": "login16",
+  "CPU_affinity": [
+    8
+  ],
+  "numeric_threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "tests_run": 42,
+  "failures": 0,
+  "errors": 0,
+  "test_log": "test_complete_cache_uses_original_and_failure_restores (test_post_rsd_catalog.CatalogAdapterTest.test_complete_cache_uses_original_and_failure_restores) ... ok\ntest_optional_missing_mass_checks_positions_and_restores (test_post_rsd_catalog.CatalogAdapterTest.test_optional_missing_mass_checks_positions_and_restores) ... ok\ntest_exact_and_endpoint_equivalence (test_post_rsd_catalog_identity.CatalogIdentityTest.test_exact_and_endpoint_equivalence) ... ok\ntest_nonendpoint_ulp_is_not_relaxed (test_post_rsd_catalog_identity.CatalogIdentityTest.test_nonendpoint_ulp_is_not_relaxed) ... ok\ntest_reordering_and_out_of_domain_rejected (test_post_rsd_catalog_identity.CatalogIdentityTest.test_reordering_and_out_of_domain_rejected) ... ok\ntest_cic_permutation_and_los_reversal (test_post_rsd_displacement.DisplacementTest.test_cic_permutation_and_los_reversal) ... ok\ntest_damping_taylor_and_explicit_noise (test_post_rsd_displacement.DisplacementTest.test_damping_taylor_and_explicit_noise) ... ok\ntest_fixed_PNG_polynomial_and_positive_semidefinite (test_post_rsd_displacement.DisplacementTest.test_fixed_PNG_polynomial_and_positive_semidefinite) ... ok\ntest_gaussian_soft_kernel_residual_displacement (test_post_rsd_displacement.DisplacementTest.test_gaussian_soft_kernel_residual_displacement) ... ok\ntest_pre_rsd_analytic_tensor (test_post_rsd_displacement.DisplacementTest.test_pre_rsd_analytic_tensor) ... ok\ntest_zero_separation_and_exact_matched_realspace (test_post_rsd_displacement.DisplacementTest.test_zero_separation_and_exact_matched_realspace) ... ok\ntest_coordinate_map_second_order (test_post_rsd_fixedrec.FixedPostTest.test_coordinate_map_second_order)\n\u76f4\u63a5 exp[-ik.(x+s)] delta(x) \u7684\u5076\u5dee\u5206\uff0c\u4e0d\u8c03\u7528 kernel \u7684 shift \u8868\u8fbe\u5f0f\u3002 ... ok\ntest_denominator_and_settings_rejected (test_post_rsd_fixedrec.FixedPostTest.test_denominator_and_settings_rejected) ... ok\ntest_fifth_bias_node_is_required (test_post_rsd_fixedrec.FixedPostTest.test_fifth_bias_node_is_required) ... ok\ntest_fixed_zero_and_no_shift_limits (test_post_rsd_fixedrec.FixedPostTest.test_fixed_zero_and_no_shift_limits) ... ok\ntest_full_polynomial_oracle (test_post_rsd_fixedrec.FixedPostTest.test_full_polynomial_oracle)\n\u72ec\u7acb numpy \u5b8c\u6574\u56db\u6b21\u4e58\u79ef\uff0c\u53ea\u5728\u6700\u540e\u622a\u65ad\uff1b\u4e0d\u590d\u7528 FnlPoly2 \u6216 response\u3002 ... ok\ntest_legacy_abi_is_unchanged (test_post_rsd_fixedrec.FixedPostTest.test_legacy_abi_is_unchanged) ... ok\ntest_linked_path_is_not_a_fixed_catalog (test_post_rsd_fixedrec.FixedPostTest.test_linked_path_is_not_a_fixed_catalog) ... ok\ntest_separate_reconstruction_alpha_does_not_change_physical_png (test_post_rsd_fixedrec.FixedPostTest.test_separate_reconstruction_alpha_does_not_change_physical_png) ... ok\ntest_symmetries_and_realspace_growth (test_post_rsd_fixedrec.FixedPostTest.test_symmetries_and_realspace_growth) ... ok\ntest_reachable_grid_preserves_same_FFT_result (test_post_rsd_ir_grid.IRGridTest.test_reachable_grid_preserves_same_FFT_result) ... ok\ntest_reflection_and_transverse_permutation (test_post_rsd_ir_grid.IRGridTest.test_reflection_and_transverse_permutation) ... ok\ntest_wrong_LOS_rejected (test_post_rsd_ir_grid.IRGridTest.test_wrong_LOS_rejected) ... ok\ntest_exact_polynomial_gradient_step_independence (test_post_rsd_ir_oracle.IRSourceTest.test_exact_polynomial_gradient_step_independence) ... ok\ntest_gaussian_source_leg_derivative_analytic (test_post_rsd_ir_oracle.IRSourceTest.test_gaussian_source_leg_derivative_analytic) ... ok\ntest_mixing_by_independent_polynomial_convolution (test_post_rsd_ir_oracle.IRSourceTest.test_mixing_by_independent_polynomial_convolution) ... ok\ntest_no_wiggle_limit_and_oriented_permutation (test_post_rsd_ir_oracle.IRSourceTest.test_no_wiggle_limit_and_oriented_permutation) ... ok\ntest_one_wiggle_has_second_order_remainder (test_post_rsd_ir_oracle.IRSourceTest.test_one_wiggle_has_second_order_remainder) ... ok\ntest_reconstruction_alpha_must_be_explicitly_frozen (test_post_rsd_ir_oracle.IRSourceTest.test_reconstruction_alpha_must_be_explicitly_frozen) ... ok\ntest_damping_context_guards (test_post_rsd_ir_projection.IRProjectionTest.test_damping_context_guards) ... ok\ntest_fft_full_shell_denominator_against_direct_nodes (test_post_rsd_ir_projection.IRProjectionTest.test_fft_full_shell_denominator_against_direct_nodes) ... ok\ntest_harmonic_tensor_against_independent_direct_angular_kernel (test_post_rsd_ir_projection.IRProjectionTest.test_harmonic_tensor_against_independent_direct_angular_kernel) ... ok\ntest_tagged_point_source_matches_native_wiggle_derivative (test_post_rsd_ir_projection.IRProjectionTest.test_tagged_point_source_matches_native_wiggle_derivative) ... ok\ntest_exact_lattice_zero_legs_and_full_denominator (test_post_rsd_poisson_projection.PoissonProjectionTest.test_exact_lattice_zero_legs_and_full_denominator) ... ok\ntest_old_deterministic_unchanged_and_guards (test_post_rsd_poisson_projection.PoissonProjectionTest.test_old_deterministic_unchanged_and_guards) ... ok\ntest_point_polynomial_and_frozen_rec (test_post_rsd_poisson_projection.PoissonProjectionTest.test_point_polynomial_and_frozen_rec) ... ok\ntest_exact_lattice_fft_matches_native_enumeration (test_post_rsd_projection.PostProjectionTest.test_exact_lattice_fft_matches_native_enumeration) ... ok\ntest_point_native_and_pbs_derivatives (test_post_rsd_projection.PostProjectionTest.test_point_native_and_pbs_derivatives) ... ok\ntest_effective_density_does_not_replace_weight_squared_field (test_post_rsd_weighted_factorial.WeightedFactorialTest.test_effective_density_does_not_replace_weight_squared_field) ... ok\ntest_equal_weight_reduces_to_standard_formula (test_post_rsd_weighted_factorial.WeightedFactorialTest.test_equal_weight_reduces_to_standard_formula) ... ok\ntest_weight_rescaling_and_common_translation (test_post_rsd_weighted_factorial.WeightedFactorialTest.test_weight_rescaling_and_common_translation) ... ok\ntest_weighted_signed_catalog_exact_distinct_sum (test_post_rsd_weighted_factorial.WeightedFactorialTest.test_weighted_signed_catalog_exact_distinct_sum) ... ok\n\n----------------------------------------------------------------------\nRan 42 tests in 15.108s\n\nOK\n",
+  "old_library_sha256": "9a3ced1c69a0224e1738a2d7e4ea3a841b8533ec4a3b4a816d755a9051a0efea",
+  "new_library_sha256": "263778aa37531ac96ddd7b0297d460d78c0d353dfaf8351dbcf1908fead66953",
+  "protected_old_outputs": {
+    "code/rsd_b000_fft_projection.py": {
+      "expected": "da7fe70eeb34b23770897f1c32671ca2acdd025bf9a962a0833ef572098f1c03",
+      "actual": "da7fe70eeb34b23770897f1c32671ca2acdd025bf9a962a0833ef572098f1c03"
+    },
+    "outputs/pre_rsd_p0only_mean100_v1/RESULTS.json": {
+      "expected": "308122b08d10ab85ee45f5124c484b69b22302cd8388b6e3f1a177a8f67cd55f",
+      "actual": "308122b08d10ab85ee45f5124c484b69b22302cd8388b6e3f1a177a8f67cd55f"
+    },
+    "outputs/pre_rsd_pb_mean100_v1/RESULTS.json": {
+      "expected": "8abb934915798f1f84f90692240e4990127f1e181670089f7027ab1f90863d0c",
+      "actual": "8abb934915798f1f84f90692240e4990127f1e181670089f7027ab1f90863d0c"
+    },
+    "outputs/pre_rsd_b000_bonly_mean100_v1/RESULTS.json": {
+      "expected": "56f99654de8caeaecc9a31f8a7ca58d13828da9f5ae832edbb826bfa47d35335",
+      "actual": "56f99654de8caeaecc9a31f8a7ca58d13828da9f5ae832edbb826bfa47d35335"
+    }
+  },
+  "sources": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_fixedrec.py": "f8d15b9678c44322ccefa3d3a1fb18592af011ca5d74505abf70cc905c4c5ed6",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_fft_projection.py": "a3ac06aec7e973b2152ca312e34296f7531fc8c55c305c7d510b502fe1a02459",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_fixedrec.py": "794446d7f41bddeda7e137811d936dc778f12b59aafee4273b8d109709897730",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_projection.py": "25f8649c718ad6e903fdca165f7fc6e7bab92ed5cc5c0f0ff051f0a347f48191",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_weighted_factorial.py": "3df02cc9a4f9fc90532084c4d9d7770f9fc763d08f3d51b0d5d58ff341ab919f",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_post_rsd_source.py": "3598a95c514209fe8424c71b4212a4901910c8cde3454a358d9c376395a84f62",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_displacement.py": "da7a85d509e0185e76ffb69b0941afa04f8c11e30c963323ad59cbd66a3713e9",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_displacement.py": "f79438a4180f3b08edd5b9467607e4d4f1d3b378a536248154b4627c0b479c78",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_oracle.py": "d533407a9e7611662b8f37151f30aa48cf32de29233c0e00144c149e0cc5fb39",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_ir_oracle.py": "65f97d1d1903e600679293b91052a261ff628916b2261fda6c17dbc57b96ed6f",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_harmonics.py": "5673e635e98df5b7f536de06511ec0b548c7a3cbe5b696ff14d29be899443f8d",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_projection.py": "5d12d366318ef3cd28615bfb8600daa228f139c15e88b2065849b9daaf2ba9e2",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_inputs.py": "8f14aae93cf0b02bc09e46a575ce98630930c3167e2972acbe1a39b0dd57c24b",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_ir_projection.py": "7482718636b5759e104fd585160f0751ab5fd3ba1c4d72ae354c234c4d392ef6",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_grid.py": "36b92ced773fcb4e51581fe542034fb63915f9b02e2c6ed2d2f25faea94212b5",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_ir_grid.py": "d56f3f3ddfa452bacc9f5d5a67826219eefc21f24216dd38fa01dfbd14df72fc",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_catalog_identity.py": "69fb34aa1a0a0d71ecdc11e023462368421f71aeb2b7fd51e351de1f8b77ba0f",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_catalog_identity.py": "6f959284ecf334764785a331cdeb514df281298dfc6b17c7ff73f09b078ea9c8",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_poisson_projection.py": "ebdbfc0e0e5d8756a6628d3e4af3c224c162de31fb941901ebf5e27cb692ebdc",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_poisson_projection.py": "3d929feb1cd1ce099f04531648ef418be286c804cab920b90e9664fca043d0c8",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_catalog.py": "2f97ac0280650d40d76bdff1de89970fa623990ac880df43b605822ae137d8e6",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_catalog.py": "ca24819077eb2e81790adddf5434524a542beb91523bf9669c1dc16c7e589a24",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/native/tree_png_rsd.cpp": "eeee08982f0d3d5ee1a8dd31706dc887c37e121735e879a279e58afb12cdb030",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/native/tree_png_rsd.h": "312a510becb3c3a78f3dcdb1792c6354b6187a454b79c558bb6cb0fbcc3f6735",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/build_post_rsd.sh": "32b38921418ce87d8420e4306d03489ae17f476679b72057585f520496b58c00"
+  },
+  "scope": "fixed-catalog source, exact-lattice no-IR and small-bin deterministic LO IR projection, point factorial identity, Gaussian long tensor, exact grid symmetry acceleration, explicit leading Poisson-shift projection; not full stochastic closure",
+  "not_yet_validated": [
+    "actual reconstruction operator transfer and alias",
+    "STO weighted discrete/shift noise",
+    "physical p calibration",
+    "independent Fid500 STO inputs",
+    "mock recovery",
+    "production IR projection and full post stochastic"
+  ],
+  "catalog_production_released": false,
+  "MCMC_released": false
+}

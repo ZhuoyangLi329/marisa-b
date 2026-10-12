@@ -1,0 +1,16 @@
+{
+  "name": "fiducial_post_PB_4plus4_k0.14_postMAPp",
+  "converged": true,
+  "steps_each_ensemble": 10000,
+  "complete_HDF_priors_gates_quantiles_sigma_thin_replayed": true,
+  "independent_logprob_spots": 512,
+  "max_logprob_error": 1.1457501614131615e-13,
+  "summary_sha256": "a7febd7866ba50613f52c81e05bd36d47c52665916465bd6a793bd8e34834e48",
+  "chain_sha256": [
+    "4ee7aca5b12d6a5de8659d799c432a5d09c9c1f00291c65e911412b16f450ed2",
+    "afcb59ba4e2e9a19103eeeb34136bd11612b1cd3ed1567534dc0c7a11db54c8f",
+    "f2700249a14990cb0cfd3c6cbc7ab81a981eb5d3a2082f1b19b5c634dc182c51",
+    "95a1b0db76f6d748d496c276c5890f3a1ed9cfda3876a6cfa880e14c370bd016"
+  ],
+  "created_UTC": "2026-10-11T05:46:59.528316+00:00"
+}

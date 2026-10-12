@@ -1,0 +1,26 @@
+{
+  "created_UTC": "2026-10-10T17:48:37Z",
+  "passed": true,
+  "pages": 2,
+  "PDF_sha256": "eb376b9ef066aaa70474185f2413aa2124ae35573586840634aa80b92215a5f8",
+  "comparison_sha256": "351cdc8889a0cef9bae856637cc72f2f7932962f9ba9dcda26bec93575958ffb",
+  "local_download_matches_remote_artifact_receipt": true,
+  "structural_and_numeric_checks_passed": true,
+  "all_48_formatted_median_std_pairs_verified": true,
+  "all_24_formatted_sigma_ratios_verified": true,
+  "embedded_fonts": ["/BMQQDV+DejaVuSans", "/EVICAO+DejaVuSans-Bold", "/GCWXDV+DejaVuSans-Oblique"],
+  "page_checks": [
+    {"page": 1, "width": 841.68, "height": 595.44, "text_chars": 755, "out_of_page_text": 0, "raster_images": 0},
+    {"page": 2, "width": 841.68, "height": 595.44, "text_chars": 1780, "out_of_page_text": 0, "raster_images": 0}
+  ],
+  "visual_review_complete": true,
+  "visual_review_method": "Both full pages rendered using PDFium/pdfplumber at150dpi into JPEG byte buffers and visually inspected through the tool image return; no image files created.",
+  "visual_findings": {"page1": "Six panels, legend, axes and footnotes readable; no overlapping or clipped content.", "page2": "All12 table rows, eight columns and six footer lines readable; no overlapping or clipped content."},
+  "native_visual_review_complete": false,
+  "native_preview_limitation": "Mac locked; native Preview selection failed. No lock bypass attempted; independent file rendering used instead.",
+  "PNG_exported": false,
+  "raster_image_files_saved": false,
+  "figure_deliverables": "One vector PDF only; companion numerical and audit JSON files are not image exports.",
+  "codex_panel_open_request": "queued for this thread; not claimed visibly open",
+  "sampler_model_priors_and_covariance_changed_for_QA": false
+}

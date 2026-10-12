@@ -1,0 +1,65 @@
+{
+  "status": "DISCRETE_OPERATOR_ORACLE_PASS",
+  "created_UTC": "2026-10-08T13:42:50.561146+00:00",
+  "host": "login20",
+  "CPU_affinity": [
+    7
+  ],
+  "mesh": 16,
+  "boxsize": 128.0,
+  "smoothing_radius": 10.0,
+  "b_rec": 2.2280546353635335,
+  "p_rec": 1.2822,
+  "reconstruction_growth_rate": 0.0,
+  "data_field": "disp",
+  "random_field": "disp",
+  "weighted_particles": 3000,
+  "independent_read_probes": 701,
+  "rows": [
+    {
+      "dtype": "f8",
+      "fNL_rec": 0.0,
+      "density_relative_max_error": 4.496116366395812e-15,
+      "read_shift_relative_max_error": 1.9831388637924633e-15,
+      "position_minus_shift_max_error": 0.0,
+      "relative_tolerance": 3e-11,
+      "pass": true
+    },
+    {
+      "dtype": "f8",
+      "fNL_rec": 100.0,
+      "density_relative_max_error": 4.496116366395812e-15,
+      "read_shift_relative_max_error": 1.9882465063167695e-15,
+      "position_minus_shift_max_error": 0.0,
+      "relative_tolerance": 3e-11,
+      "pass": true
+    },
+    {
+      "dtype": "f4",
+      "fNL_rec": 0.0,
+      "density_relative_max_error": 9.177489043104165e-07,
+      "read_shift_relative_max_error": 9.035937171404512e-07,
+      "position_minus_shift_max_error": 0.0,
+      "relative_tolerance": 3e-05,
+      "pass": true
+    },
+    {
+      "dtype": "f4",
+      "fNL_rec": 100.0,
+      "density_relative_max_error": 9.177489043104165e-07,
+      "read_shift_relative_max_error": 8.087229540640046e-07,
+      "position_minus_shift_max_error": 0.0,
+      "relative_tolerance": 3e-05,
+      "pass": true
+    }
+  ],
+  "alpha_table": "synthetic smooth table, not physical calibration",
+  "sources": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_post_rsd_operator.py": "9c77fdf7273b7deeeec3c74f696831513abe3c9a1eecbfdb0659c0e9b6979d31",
+    "/global/common/software/desi/users/adematti/perlmutter/cosmodesiconda/20260321-1.0.0/code/jaxrecon/main/lib/python3.12/site-packages/jaxrecon/zeldovich.py": "07d4210c2951245c4ae96cc5bb1460ef123d73fda43bc5700bc320503b68eed3",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/marisa_gra/png_recon_tools.py": "5ee0b1083cdc11253df23a054764f5456ade828d6b7d2c779d4fdf66e031e40d",
+    "/global/common/software/desi/users/adematti/perlmutter/cosmodesiconda/20260321-1.0.0/code/jaxpower/main/lib/python3.12/site-packages/jaxpower/mesh.py": "13eeb32bc6ca1e21fdff1c7d0e91e12918974ab66bd0feba16e8b7b3c15bfd51"
+  },
+  "catalog_production_released": false,
+  "remaining": "actual spectral table parity, finite-grid alias, weighted noise and independent Fid500"
+}

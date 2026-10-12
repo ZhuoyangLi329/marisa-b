@@ -1,0 +1,176 @@
+{
+  "auditor": {
+    "bytes": 21458,
+    "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/audit_quijote_halo_z0p5_fnl250_tree_dm_kmax0p08_results.py",
+    "sha256": "383d78fb849e5fc72dfbf92d07005bae16ce5ea52728b2e7fccacc0da837ac29"
+  },
+  "completion_proven": true,
+  "created_utc": "2026-08-29T16:43:57.085049+00:00",
+  "requirements": {
+    "fully_tree_kmax0p08_model_and_six_gaussian_gates": {
+      "evidence": {
+        "gate": {
+          "bytes": 8329,
+          "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_fnl250_pre_std_marisa_tree_dm_fixed_b1_1p93_kmax0p08_v42p875/TREE_DM_KMAX0P08_GAUSSIAN_GATE.json",
+          "sha256": "7ad3683d6235dee9025f93e7e98fbf4f8d4a3bcd4892f85ba7a566a8426979aa"
+        },
+        "manifest": {
+          "bytes": 3428,
+          "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_fnl250_pre_std_marisa_tree_dm_fixed_b1_1p93_kmax0p08_v42p875/TREE_DM_KMAX0P08_MODEL_MANIFEST.json",
+          "sha256": "c7a8dfab2788c714f678023a5a3370103d98345ed872efcb84fa508b651bc450"
+        },
+        "manifest_input_count": 6,
+        "minimum_p": 0.9351092031366925
+      },
+      "pass": true
+    },
+    "kmax0p08_vs_kmax0p10_recovery_comparison": {
+      "evidence": {
+        "fiducial_centres": {
+          "full_available": {
+            "marisa": {
+              "kmax0p08": 20.410426274535876,
+              "kmax0p10": 25.93347685300441
+            },
+            "standard": {
+              "kmax0p08": -9.814644740448244,
+              "kmax0p10": 31.436727562758364
+            }
+          },
+          "matched250": {
+            "marisa": {
+              "kmax0p08": 6.635508156810026,
+              "kmax0p10": 13.65442806958337
+            },
+            "standard": {
+              "kmax0p08": 19.296016625596312,
+              "kmax0p10": 35.1324483378195
+            }
+          }
+        },
+        "nonzero_summary": {
+          "marisa": {
+            "mean_absolute_bias_kmax0p08": 18.804493429179423,
+            "mean_absolute_bias_kmax0p10": 19.14861709647118,
+            "mean_profile_half_width_kmax0p08": 77.98095119263765,
+            "mean_profile_half_width_kmax0p10": 39.521362583652994
+          },
+          "standard": {
+            "mean_absolute_bias_kmax0p08": 21.817738237651255,
+            "mean_absolute_bias_kmax0p10": 44.84657353077168,
+            "mean_profile_half_width_kmax0p08": 96.22981632737103,
+            "mean_profile_half_width_kmax0p10": 73.6545309139276
+          }
+        },
+        "pre_kmax0p08_mean_absolute_nonzero_bias": 8.296891572791546,
+        "tree10_profiles": {
+          "bytes": 140841,
+          "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_fnl250_std_marisa_tree_dm_fixed_b1_1p93_kmax0p10_v42p875/FULL_AVAILABLE_MATCHED250_TREE_DM_PROFILES.json",
+          "sha256": "f19d99bc06b706bee31b3b33d58660e880ca2c694b8c2ada42b54253352ae24d"
+        }
+      },
+      "pass": true
+    },
+    "pre_standard_marisa_data_covariance_and_thirty_profiles": {
+      "evidence": {
+        "arrays": {
+          "bytes": 211048,
+          "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_fnl250_pre_std_marisa_tree_dm_fixed_b1_1p93_kmax0p08_v42p875/FULL_AVAILABLE_MATCHED250_TREE_DM_KMAX0P08_ARRAYS.npz",
+          "sha256": "4bf2750422fb18883fa31134d739c82e65d49403b8182fb67a26de54385b4fb4"
+        },
+        "input_artifact_count": 8,
+        "matrices": {
+          "marisa": {
+            "bytes": 3931311,
+            "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_fnl250_standard_marisa/matrices/MARISA_FNL250_MATRIX.npz",
+            "sha256": "ed3e9c4f6529b60d278bbd08d56787e0115b441e7a6f3df11459c90852177d3d"
+          },
+          "standard": {
+            "bytes": 3931301,
+            "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_fnl250_standard_marisa/matrices/STANDARD_FNL250_MATRIX.npz",
+            "sha256": "070f51171401d4e803724acaa1ad73d98dcaa2edbae94b8e5147214d8f544e25"
+          }
+        },
+        "matrix_summary": {
+          "bytes": 23108,
+          "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_fnl250_standard_marisa/matrices/FNL250_MATRIX_SUMMARY.json",
+          "sha256": "b262271ad590572e63c47a57c09204e5807ac7e0e9e98097500017b24c459200"
+        },
+        "output_artifact_count": 12,
+        "pdf_count": 9,
+        "profiles": {
+          "bytes": 209034,
+          "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_fnl250_pre_std_marisa_tree_dm_fixed_b1_1p93_kmax0p08_v42p875/FULL_AVAILABLE_MATCHED250_TREE_DM_KMAX0P08_PROFILES.json",
+          "sha256": "b8423b371bd777f691778f328fdd52a16ba2eaebc0e702232fdbeac3a2e11280"
+        },
+        "row_count": 30,
+        "truth_inside_count": 30
+      },
+      "pass": true
+    },
+    "runtime_provenance_and_pdf_only": {
+      "evidence": {
+        "allocation": {
+          "AllocCPUS": 8,
+          "ElapsedRaw": 62,
+          "ExitCode": "0:0",
+          "JobIDRaw": "57691794",
+          "JobName": "z05_tree_dm_k08",
+          "NodeList": "nid004285",
+          "State": "COMPLETED"
+        },
+        "pdf_only": true,
+        "runner": {
+          "bytes": 44339,
+          "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/run_quijote_halo_z0p5_fnl250_pre_std_marisa_tree_dm_kmax0p08_profiles.py",
+          "sha256": "a0037d331bf5a30c5d61d3d65a4c08e47b21f3dadba7e84b53c4cb962061898c"
+        },
+        "stderr": {
+          "bytes": 0,
+          "path": "/pscratch/sd/l/lzy/reconstruction-png/log/fnl250_tree_dm_kmax0p08_20260829/profiles_57691794.err",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 1820,
+          "path": "/pscratch/sd/l/lzy/reconstruction-png/log/fnl250_tree_dm_kmax0p08_20260829/profiles_57691794.out",
+          "sha256": "459fbf6b2c525120401a146713c67fdc20f7a85ec49f2c0be59c8962bd215008"
+        },
+        "step": {
+          "AllocCPUS": 8,
+          "ElapsedRaw": 56,
+          "ExitCode": "0:0",
+          "JobIDRaw": "57691794.0",
+          "JobName": "python",
+          "NodeList": "nid004285",
+          "State": "COMPLETED"
+        }
+      },
+      "pass": true
+    }
+  },
+  "schema": "quijote-halo-z0p5-fnl250-pre-standard-marisa-tree-dm-kmax0p08-final-audit-v1",
+  "scope": {
+    "covariance": "method/stage-specific Fid500 single-realization covariance /42.875 plus Hartlap",
+    "dm_perturbative_order": "tree in Gaussian and linear PNG response",
+    "figures": "PDF only",
+    "fixed_b1": 1.93,
+    "kmax_h_mpc": 0.08,
+    "methods": [
+      "pre",
+      "standard",
+      "marisa"
+    ],
+    "p": 1.12,
+    "retained_configuration_count": 9,
+    "targets": [
+      "full_available",
+      "matched250"
+    ]
+  },
+  "status": "pass",
+  "summary": {
+    "failed": [],
+    "passed_count": 4,
+    "requirement_count": 4
+  }
+}

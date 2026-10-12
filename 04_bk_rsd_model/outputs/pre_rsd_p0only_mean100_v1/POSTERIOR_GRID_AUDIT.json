@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "method": "finite-flat-Pshot analytic Gaussian integral, then normalized 2D fNL/b1 quadrature",
+  "uses_truth_to_select_inputs": false,
+  "cases": [
+    {
+      "name": "fiducial_mean100_kP0.08",
+      "coarse": {
+        "grid": [
+          301,
+          251
+        ],
+        "fNL_mean": 7.91236829418807,
+        "fNL_sigma": 99.52794254644857,
+        "fNL_p16": -87.03077798182014,
+        "fNL_median": 0.5832924235530744,
+        "fNL_p84": 101.79242605466013
+      },
+      "fine": {
+        "grid": [
+          601,
+          501
+        ],
+        "fNL_mean": 7.912395050724534,
+        "fNL_sigma": 99.52799300656491,
+        "fNL_p16": -87.01962057693392,
+        "fNL_median": 0.5814327408712303,
+        "fNL_p84": 101.77048615544784
+      },
+      "grid_sigma_fraction_change": 5.06994211502132e-07,
+      "grid_median_change_over_sigma": 1.8685021426298075e-05,
+      "MCMC_median_error_over_sigma": 0.009581170637707935,
+      "MCMC_sigma_fraction_error": 0.006909084596667503,
+      "status": "PASS"
+    },
+    {
+      "name": "LC_p_mean100_kP0.08",
+      "coarse": {
+        "grid": [
+          301,
+          251
+        ],
+        "fNL_mean": 113.83191911277426,
+        "fNL_sigma": 99.9802643624787,
+        "fNL_p16": 17.612210154648853,
+        "fNL_median": 104.97468747684377,
+        "fNL_p84": 209.91009646694536
+      },
+      "fine": {
+        "grid": [
+          601,
+          501
+        ],
+        "fNL_mean": 113.8320402601518,
+        "fNL_sigma": 99.9804230544835,
+        "fNL_p16": 17.628210019464678,
+        "fNL_median": 104.97075614883238,
+        "fNL_p84": 209.90217717814528
+      },
+      "grid_sigma_fraction_change": 1.587230779143134e-06,
+      "grid_median_change_over_sigma": 3.9320977960333635e-05,
+      "MCMC_median_error_over_sigma": 0.005244246483374608,
+      "MCMC_sigma_fraction_error": 0.010715641414369648,
+      "status": "PASS"
+    },
+    {
+      "name": "LC_m_mean100_kP0.08",
+      "coarse": {
+        "grid": [
+          301,
+          251
+        ],
+        "fNL_mean": -101.9951882959934,
+        "fNL_sigma": 100.26071503638391,
+        "fNL_p16": -197.81226467534572,
+        "fNL_median": -106.76139713546377,
+        "fNL_p84": -7.352150179334043
+      },
+      "fine": {
+        "grid": [
+          601,
+          501
+        ],
+        "fNL_mean": -101.9951929605054,
+        "fNL_sigma": 100.26074459052342,
+        "fNL_p16": -197.79413646513112,
+        "fNL_median": -106.76208513514246,
+        "fNL_p84": -7.366156113047184
+      },
+      "grid_sigma_fraction_change": 2.947727909541342e-07,
+      "grid_median_change_over_sigma": 6.86210422133944e-06,
+      "MCMC_median_error_over_sigma": 3.512260373598587e-05,
+      "MCMC_sigma_fraction_error": 0.010921072842622337,
+      "status": "PASS"
+    }
+  ]
+}

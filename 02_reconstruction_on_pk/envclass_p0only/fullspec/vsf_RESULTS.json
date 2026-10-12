@@ -1,0 +1,94 @@
+{
+  "schema": "quijote-z0p5-envclass-fullspec-mcmc-v8",
+  "created_utc": "2026-09-17T15:35:12.886476+00:00",
+  "combo": "vsf",
+  "classes": [
+    "void",
+    "sheet",
+    "filament"
+  ],
+  "beta_from_calibration": {
+    "void": -0.05582113057920417,
+    "sheet": 1.132484706163526,
+    "filament": 1.0787199568362784
+  },
+  "data_vector": "bare-auto + cross converted to FKP caliber (v3)",
+  "caliber_conversion": {
+    "auto": "P_cc = K_c/(n_c^2*nmodes)*P_bare_cc - sn_c",
+    "cross": "P_cd = K_CROSS/(n_c*n_d*nmodes)*P_bare_cd",
+    "K_CLASS": {
+      "void": 80054000000.0,
+      "sheet": 79474000000.0,
+      "filament": 79472000000.0
+    },
+    "K_CROSS": 79470000000.0,
+    "n_sn_source": "FKP product npz: n=sqrt(norm*V), sn=num_shotnoise/norm",
+    "validation": "probe_k_universal_result.json (200 reals, scatter 0.16-32%)"
+  },
+  "model": {
+    "form": "P_cc = b1_c^2*(G_c + fNL*R_c) + sn0_c;  P_cd = b1_c*b1_d*(G_cd + fNL*R_cd)",
+    "G": "fid 100-real mean spectrum per block (full Gaussian shape incl. bias-loop/calib-offset/sn-residual/cross spatial-separation effects)",
+    "R": "(LC_p mean - fid mean)/100 per block (measured PNG response shape; decays faster than any theoretical template at high k, see diag_response_shape.py)",
+    "caveats": "fnl0/fnl100 targets share data with G/R templates -> constructive closure (same-data self-consistency test, same spirit as jointA +100); sigma(fNL) from covariance + nuisance degeneracy remains meaningful"
+  },
+  "results": {
+    "fNL0": {
+      "fNL": {
+        "median": -0.031812177823833734,
+        "q16": -10.378238745552563,
+        "q84": 10.401723335678614,
+        "q2p5": -20.65755923970768,
+        "q97p5": 20.369641789628968,
+        "half_width": 10.389981040615588
+      },
+      "truth_inside_68": true,
+      "truth_inside_95": true,
+      "truth_percentile": 0.5013333333333333,
+      "b1": {
+        "v": 0.9999822937431624,
+        "s": 1.000086019357326,
+        "f": 0.9999486497375285
+      },
+      "sn0": {
+        "v": 2.8155584133993727,
+        "s": -5.974951865902527,
+        "f": 1.3496892938271827
+      },
+      "gof_p": 1.0,
+      "converged": true,
+      "acceptance": 0.4447096354166667,
+      "n_fid": 100,
+      "n_lcp": 100,
+      "dim": 72
+    },
+    "fNL100": {
+      "fNL": {
+        "median": 99.92816988698793,
+        "q16": 89.33199600422552,
+        "q84": 110.61217682928441,
+        "q2p5": 78.61336540642898,
+        "q97p5": 121.28024044269497,
+        "half_width": 10.640090412529446
+      },
+      "truth_inside_68": true,
+      "truth_inside_95": true,
+      "truth_percentile": 0.5029,
+      "b1": {
+        "v": 0.9997608785494603,
+        "s": 1.0000169065265108,
+        "f": 1.000024410972783
+      },
+      "sn0": {
+        "v": 4.998505158544933,
+        "s": -4.6203482963950435,
+        "f": 1.4878613451467047
+      },
+      "gof_p": 1.0,
+      "converged": true,
+      "acceptance": 0.444265625,
+      "n_fid": 100,
+      "n_lcp": 100,
+      "dim": 72
+    }
+  }
+}

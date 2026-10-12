@@ -1,0 +1,10 @@
+{
+  "status": "BOTH_PAGES_VISUALLY_REVIEWED_PASS",
+  "pdf_sha256": "d1ca258ead9319860ca71ec7061e8e201018fa42eaf8526c63f6d10a5ad21eff",
+  "method": "pdfplumber/PDFium rendering to in-memory JPEG stdout at 150 dpi; both pages visually inspected",
+  "pages_reviewed": [1, 2],
+  "page_1": "Title, fixed p values, all 18 median/std cells, nine median changes, notes and footer are legible and unclipped.",
+  "page_2": "Three truth panels, nine statistic rows, both series of 68 percent intervals, truth lines, axes and legend are legible and unclipped.",
+  "image_files_saved": false,
+  "PNG_generated": false
+}

@@ -1,0 +1,95 @@
+{
+  "status": "ACTUAL_ALL12_P0_IR_SIGNAL_WINDOW_AND_BIAS_PROBES_VERIFIED_NOT_MCMC_RELEASE",
+  "created_UTC": "2026-10-10T01:03:52.016145+00:00",
+  "contract_sha256": "f1f01f4e8a9083379a0d462b05b30fc55f15c9653dad9448a6fba0165ae9eb92",
+  "original_P_bins": 12,
+  "stored_nonzero_modes": 9170,
+  "weighted_mode_count": 9170.0,
+  "direct_window_rows": [
+    {
+      "b1": 0.5,
+      "independent_original_window_error": 4.675495444171434e-16,
+      "no_wiggle_exact_tree_error": 6.267367735432603e-16,
+      "zero_damping_strict_wiggle_matching_remainder_scaled": 0.00012678933612591408
+    },
+    {
+      "b1": 0.71,
+      "independent_original_window_error": 3.6020677290864477e-16,
+      "no_wiggle_exact_tree_error": 5.608597708085654e-16,
+      "zero_damping_strict_wiggle_matching_remainder_scaled": 6.613945546474449e-05
+    },
+    {
+      "b1": 1.31,
+      "independent_original_window_error": 6.362953024724741e-16,
+      "no_wiggle_exact_tree_error": 5.831288488382725e-16,
+      "zero_damping_strict_wiggle_matching_remainder_scaled": 6.032384425016677e-16
+    },
+    {
+      "b1": 2.2280546353635335,
+      "independent_original_window_error": 7.992170336246715e-16,
+      "no_wiggle_exact_tree_error": 4.650100469296217e-16,
+      "zero_damping_strict_wiggle_matching_remainder_scaled": 3.23129331258672e-05
+    },
+    {
+      "b1": 3.1,
+      "independent_original_window_error": 4.473566807965306e-16,
+      "no_wiggle_exact_tree_error": 3.4731782677104227e-16,
+      "zero_damping_strict_wiggle_matching_remainder_scaled": 4.531347280707711e-05
+    },
+    {
+      "b1": 3.73,
+      "independent_original_window_error": 2.3606966572998104e-16,
+      "no_wiggle_exact_tree_error": 6.2905060139624685e-16,
+      "zero_damping_strict_wiggle_matching_remainder_scaled": 5.0929930922598746e-05
+    },
+    {
+      "b1": 4.0,
+      "independent_original_window_error": 3.2993940803309746e-16,
+      "no_wiggle_exact_tree_error": 5.21882118174675e-16,
+      "zero_damping_strict_wiggle_matching_remainder_scaled": 5.2797355750147497e-05
+    }
+  ],
+  "independent_uncached_harmonic_projection_rows": [
+    {
+      "b1": 0.5,
+      "scaled_error": 0.0
+    },
+    {
+      "b1": 2.2280546353635335,
+      "scaled_error": 0.0
+    },
+    {
+      "b1": 4.0,
+      "scaled_error": 1.1534953865219275e-18
+    }
+  ],
+  "node_candidates": [
+    {
+      "nodes": 9,
+      "max_scaled_error": 3.147773138803438e-10,
+      "passed": true,
+      "payload_sha256": "7d0d4a73d8bce063eed0a009aac110014e4512a67c2c97ed8329d7f3059aeb25"
+    },
+    {
+      "nodes": 17,
+      "max_scaled_error": 1.5188436738002522e-14,
+      "passed": true,
+      "payload_sha256": "5981302ef5b26a1908a7c6e509193589216aed0256368e9f33b527e667ba1bce"
+    },
+    {
+      "nodes": 33,
+      "max_scaled_error": 3.559427540890667e-14,
+      "passed": true,
+      "payload_sha256": "94317feb5bcab3b1435da83ffbaceb48993d1f88e8b810f6981b2c5fc9e4667b"
+    }
+  ],
+  "direct_bias_parameter_evaluations": 63,
+  "strict_wiggle_matching_remainder_quantified_not_removed": true,
+  "physical_p_calibrated": false,
+  "raw_STO_noise_calibrated": false,
+  "full_PB_IR_model_validated": false,
+  "post_C_single500_whitened_error_checked": false,
+  "MCMC_released": false,
+  "elapsed_seconds": 54.735030204989016,
+  "peak_RSS_MiB": 93.59765625
+}

@@ -1,0 +1,25 @@
+{
+  "status": "NUMERICAL_AND_PAGE_BOUNDARY_QA_PASS_VISUAL_REVIEW_SEPARATE",
+  "pdf_sha256": "1847ee93be0c4d34368bd3b1f3f78160bd07cef4f7674012d0447af196f5e763",
+  "pages": [
+    {
+      "page": 1,
+      "words": 252,
+      "outside_margin_words": 0,
+      "width": 842.4,
+      "height": 597.6
+    },
+    {
+      "page": 2,
+      "words": 83,
+      "outside_margin_words": 0,
+      "width": 842.4,
+      "height": 597.6
+    }
+  ],
+  "all_27_median_sigma_pairs_verified": true,
+  "p_value_verified": true,
+  "no_4plus3_displayed": true,
+  "scientific_image_files_generated": false,
+  "visual_review_completed": false
+}

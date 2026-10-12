@@ -1,0 +1,62 @@
+{
+  "beta_fixed": {
+    "filament": 1.0787199568362784,
+    "sheet": 1.132484706163526
+  },
+  "classes": [
+    "sheet",
+    "filament"
+  ],
+  "combo": "sf",
+  "created_utc": "2026-09-17T09:26:24.955210+00:00",
+  "inputs": {
+    "calibration": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/envclass_p0only/calibration/ENVCLASS_CALIBRATION.json",
+    "lattice": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.npz"
+  },
+  "notes": "+100 \u4e3a\u540c\u6570\u636e\u81ea\u6d3d\u68c0\u9a8c\uff08\u6821\u51c6\u4e0e\u76ee\u6807\u540c\u4e00 LC_p \u6837\u672c\uff09",
+  "parameters": "(fNL, b1_c..., sn0_c...); beta_c fixed from calibration",
+  "results": {
+    "fNL0": {
+      "acceptance": 0.49838541666666664,
+      "b1": {
+        "filament": 4.767712990053032,
+        "sheet": 3.877046838447908
+      },
+      "converged": true,
+      "fNL": {
+        "half_width": 15.628444104378605,
+        "median": 5.350168083905104,
+        "q16": -10.463743809722923,
+        "q2p5": -25.6554769999148,
+        "q84": 20.79314439903429,
+        "q97p5": 35.49740413586067
+      },
+      "gof_p": 0.8282338297941451,
+      "truth_inside_68": true,
+      "truth_inside_95": true,
+      "truth_percentile": 0.36843333333333333
+    },
+    "fNL100": {
+      "acceptance": 0.4991484375,
+      "b1": {
+        "filament": 4.757228612533924,
+        "sheet": 3.8319213668439707
+      },
+      "converged": true,
+      "fNL": {
+        "half_width": 14.60824273204652,
+        "median": 98.7149027308953,
+        "q16": 83.9090513690934,
+        "q2p5": 69.48081537266548,
+        "q84": 113.12553683318644,
+        "q97p5": 127.1696477181893
+      },
+      "gof_p": 0.9947214782832478,
+      "truth_inside_68": true,
+      "truth_inside_95": true,
+      "truth_percentile": 0.5355
+    }
+  },
+  "schema": "quijote-z0p5-envclass-jointA-mcmc-v1",
+  "status": "complete"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "window_sha256": "adaaab512258bb36cbb6551cdb52f9d20bb6ce5d1090007212c79ccd718d9028",
+  "binner_source_sha256": "861c22cf9c4e7a58c6409823533167a3d00d0eb1f54558d4d745753a850139a8",
+  "entry_sha256": "392a3fde3d4f8d28c3cb2b37a6575847c377c7386efbc182211cea16f99d6ac8",
+  "all_six_templates_against_original_production_operator": true,
+  "max_relative_error": 0.0,
+  "measurement_nmodes_match": true,
+  "nmodes": [
+    26,
+    96,
+    128,
+    234,
+    440,
+    440,
+    738,
+    906,
+    1130,
+    1414,
+    1600,
+    2018
+  ],
+  "mode_count": 9170
+}

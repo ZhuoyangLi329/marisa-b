@@ -1,0 +1,8 @@
+{
+  "case": "sto_marisa_k0p12",
+  "passed": true,
+  "direct_model_logp_max_error": 1.9262813566456316e-11,
+  "posterior_quantile_max_error": 0.0,
+  "diagnostics_reproduced": true,
+  "chain_sha256": "6c361e308ea7e6b13dd050db60d217f27b745e928905bdcc4292f1b98cbeeeba"
+}

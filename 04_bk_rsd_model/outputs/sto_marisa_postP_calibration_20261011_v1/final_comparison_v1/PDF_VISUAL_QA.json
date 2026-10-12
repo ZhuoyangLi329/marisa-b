@@ -1,0 +1,11 @@
+{
+  "status": "BOTH_PAGES_VISUALLY_REVIEWED_PASS",
+  "pdf_sha256": "1847ee93be0c4d34368bd3b1f3f78160bd07cef4f7674012d0447af196f5e763",
+  "review_method": "pdfplumber PDFium rendering at 150 dpi to in-memory JPEG stdout, both pages inspected",
+  "pages_reviewed": [1, 2],
+  "page_1": "Title, p calibration interval, all 27 median/std cells, notes and footer are legible without clipping or overlap.",
+  "page_2": "Three truth panels, nine statistic rows, three-series 68 percent error bars, truth lines, axes and legend are legible without clipping or overlap.",
+  "only_4plus4_PB_and_P0_controls_displayed": true,
+  "image_files_saved": false,
+  "PNG_generated": false
+}

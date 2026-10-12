@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "fiducial_mean100_kP0.08",
+      "same_P_data_model_bounds_all_six_PB_cases": true,
+      "unconditional_C_PP_not_conditional_covariance": true,
+      "Hartlap_factor": 0.9739478957915831
+    },
+    {
+      "name": "LC_p_mean100_kP0.08",
+      "same_P_data_model_bounds_all_six_PB_cases": true,
+      "unconditional_C_PP_not_conditional_covariance": true,
+      "Hartlap_factor": 0.9739478957915831
+    },
+    {
+      "name": "LC_m_mean100_kP0.08",
+      "same_P_data_model_bounds_all_six_PB_cases": true,
+      "unconditional_C_PP_not_conditional_covariance": true,
+      "Hartlap_factor": 0.9739478957915831
+    }
+  ],
+  "n_cases": 3,
+  "same_raw_P_measurements_as_PB": true,
+  "remeasurement": false,
+  "covariance_ddof": 1,
+  "Hartlap_data_dimension": 12,
+  "B_only_nuisance_flat_prior_integrals_are_constants": true
+}

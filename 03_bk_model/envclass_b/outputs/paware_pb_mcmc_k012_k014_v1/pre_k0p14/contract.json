@@ -1,0 +1,76 @@
+{
+  "method": "pre",
+  "kmax_B": 0.14,
+  "kmax_P": 0.08,
+  "volume": 42.875,
+  "p_halo": 1.179,
+  "p_fixed_not_marginalized": true,
+  "truth_fNL": 100,
+  "n_target": 250,
+  "n_fid": 500,
+  "parameter_names": [
+    "fNL",
+    "b1",
+    "Pshot",
+    "b2",
+    "gamma2",
+    "Ashot_residual",
+    "Bshot_residual"
+  ],
+  "full_PB_cross_covariance": true,
+  "cross_correlation_max": 0.5239215976861558,
+  "hartlap": 0.9198396793587175,
+  "IR_resummation": false,
+  "Gaussian_discrepancy": false,
+  "polynomial_max_whitened_error": 2.3281992843885967e-11,
+  "reference_data_chi2_parity": 0.0,
+  "reference_MINOS": {
+    "case": "pre",
+    "kmax_h_mpc": 0.14,
+    "ndata": 39,
+    "n_fid": 500,
+    "n_target": 250,
+    "map_fNL": 118.27348138321739,
+    "minos_fNL": {
+      "lower": -10.92339393545455,
+      "upper": 11.056553172678214,
+      "valid": true
+    },
+    "map": {
+      "fNL": 118.27348138321739,
+      "b1": 1.908329099177998,
+      "Pshot": 356.38131601456024,
+      "b2": -0.315083756081363,
+      "gamma2": -0.29215767142072824,
+      "Ashot_residual": 0.41101908753898897,
+      "Bshot_residual": -0.07596067178656085
+    },
+    "data_chi2": 15.15734889450966,
+    "dof": 32,
+    "gof_p_value_data_only": 0.9949291757167219,
+    "hartlap": 0.9198396793587175
+  },
+  "original_runner_sha256": "357a9e973055770a3c90337d7b749ae14cb7f70739b6d1f02a691ddb52569527",
+  "runner_sha256": "c65459b801456a5e97df03e64e7075cd37558b48220adcaf8e1ac52b30788f2b",
+  "prior_weight": 0.04,
+  "calibration_uncertainty_propagated": false,
+  "fid_covariance_note": "\u6cbf\u7528\u73b0\u884c\u51bb\u7ed3 Fid500\uff1bSTO target \u4e3a p-aware matched250",
+  "sampling": {
+    "ensembles": 4,
+    "walkers": 32,
+    "initial_steps": 6000,
+    "max_steps": 20000,
+    "burn_fraction": 0.5
+  },
+  "map": {
+    "fNL": 118.27347556998923,
+    "b1": 1.9083291118268346,
+    "Pshot": 356.38110227719426,
+    "b2": -0.31508384825371716,
+    "gamma2": -0.2921577448895264,
+    "Ashot_residual": 0.4110190987221358,
+    "Bshot_residual": -0.07596069187275134
+  },
+  "map_objective": 15.160390757239746,
+  "likelihood_sha256": "aa695858e19e5bfa164919d9e137dc49cbaec179ec09a2df0e1942c6cf97e470"
+}

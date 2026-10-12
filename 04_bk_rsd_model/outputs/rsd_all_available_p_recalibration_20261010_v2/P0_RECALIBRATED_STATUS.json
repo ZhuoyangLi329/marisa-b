@@ -1,0 +1,21 @@
+{
+  "pid": 1901413,
+  "host": "login26",
+  "CPU_affinity": [
+    7
+  ],
+  "started_UTC": "2026-10-10T14:54:47.665469+00:00",
+  "state": "SIX_RECALIBRATED_P0_TRIALS_FINISHED_REVIEW_CHAINS",
+  "completed_cases": [
+    "fiducial_post_P0_all_available_p",
+    "LC_p_post_P0_all_available_p",
+    "LC_m_post_P0_all_available_p",
+    "fiducial_pre_P0_all_available_p",
+    "LC_p_pre_P0_all_available_p",
+    "LC_m_pre_P0_all_available_p"
+  ],
+  "updated_UTC": "2026-10-10T15:50:01.366684+00:00",
+  "current_stage": "pre",
+  "current_case": null,
+  "finished_UTC": "2026-10-10T15:50:01.366676+00:00"
+}

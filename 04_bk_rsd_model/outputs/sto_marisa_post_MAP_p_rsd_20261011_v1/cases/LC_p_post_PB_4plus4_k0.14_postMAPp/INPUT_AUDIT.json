@@ -1,0 +1,8 @@
+{
+  "probes": 131,
+  "max_white_scaled_error": 5.4048106371605306e-14,
+  "C_single": true,
+  "volume_Gpc_h3": 1.0,
+  "calibration_block": "P_post",
+  "independent_prediction_verified": true
+}

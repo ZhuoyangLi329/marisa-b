@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETE",
+  "host": "login12",
+  "pid": 120189,
+  "affinity": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "maximum_logical_CPUs": 8,
+  "threads_per_numeric_library": 1,
+  "started_UTC": "2026-10-02T04:39:11.160275+00:00",
+  "stage": "complete",
+  "completed_case_indices": [
+    20,
+    21,
+    22,
+    23,
+    19,
+    18
+  ],
+  "pending_case_indices": [],
+  "active_workers": [],
+  "failures": [],
+  "updated_UTC": "2026-10-02T04:39:47.995545+00:00",
+  "completed_UTC": "2026-10-02T04:39:47.995518+00:00"
+}

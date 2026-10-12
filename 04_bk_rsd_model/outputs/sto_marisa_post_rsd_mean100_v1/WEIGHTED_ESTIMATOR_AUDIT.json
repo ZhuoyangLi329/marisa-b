@@ -1,0 +1,63 @@
+{
+  "status": "REQUIRES_INVESTIGATION",
+  "created_UTC": "2026-10-08T14:41:11.795858+00:00",
+  "CPU_affinity": [
+    8
+  ],
+  "point_oracle": {
+    "raw": 46366114135225.31,
+    "shot": 45058453470753.41,
+    "corrected": 1307660664471.9062,
+    "all_same": 104499818800514.52,
+    "shell_counts": [
+      140,
+      874
+    ],
+    "ordered_triangles": 122360,
+    "unique_modes": 3310
+  },
+  "rows": [
+    {
+      "mesh": 64,
+      "bin_index": 1,
+      "k_mean": [
+        0.015937576070427895,
+        0.03178609535098076
+      ],
+      "raw": 46366175843324.49,
+      "shot": 44658384635212.19,
+      "corrected": 1707791208112.3079,
+      "normalization": 9.91887821877313e-12,
+      "raw_error_over_reference_scale": 5.905091500444178e-07,
+      "shot_error_over_reference_scale": 0.0038284165478308847,
+      "corrected_error_over_reference_scale": 0.003829007056980959,
+      "elapsed_seconds": 10.639824628829956
+    },
+    {
+      "mesh": 128,
+      "bin_index": 1,
+      "k_mean": [
+        0.015937576070427895,
+        0.03178609535098076
+      ],
+      "raw": 46366068158240.48,
+      "shot": 44651704506401.87,
+      "corrected": 1714363651838.607,
+      "normalization": 9.91887821877313e-12,
+      "raw_error_over_reference_scale": 4.399719096518771e-07,
+      "shot_error_over_reference_scale": 0.0038923413362850386,
+      "corrected_error_over_reference_scale": 0.0038919013643753633,
+      "elapsed_seconds": 9.554145336151123
+    }
+  ],
+  "reference_scale": 104499818800514.52,
+  "fine_mesh_tolerance": 0.001,
+  "scope": "one nonzero-leg off-diagonal pair; weighted signed data/random field",
+  "raw_paint": "production TSC interlacing=3 compensate=True",
+  "shot_operator": "unchanged production compute_fkp3_shotnoise defaults CIC/interlacing=0",
+  "full_registry_verified": false,
+  "shift_noise_theory_validated": false,
+  "elapsed_seconds": 26.253408193588257,
+  "source_sha256": "244b4ce98c04d0176ec6bee280eee0b016245dbd2af6a6e9c35e38cabc83fe64",
+  "shared_measurement_sha256": "fed90b2a2a89cde5826b8f5e512333cdbaa6574d866553d388c4fb5e543289b0"
+}

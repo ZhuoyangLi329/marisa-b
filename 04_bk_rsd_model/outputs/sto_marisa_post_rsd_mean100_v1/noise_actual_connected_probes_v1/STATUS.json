@@ -1,0 +1,14 @@
+{
+  "pid": 351429,
+  "host": "login26",
+  "CPU_affinity": [
+    13
+  ],
+  "started_UTC": "2026-10-10T08:36:46.722845+00:00",
+  "state": "ACTUAL300_CONNECTED_PROBES_COMPLETE_NOT_STO_CLOSURE",
+  "completed": 300,
+  "updated_UTC": "2026-10-10T08:44:39.200837+00:00",
+  "case": "LC_m_real099",
+  "stage": "actual100_per_truth",
+  "finished_UTC": "2026-10-10T08:44:39.200811+00:00"
+}

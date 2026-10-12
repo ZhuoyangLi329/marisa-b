@@ -1,0 +1,11 @@
+{
+  "state": "COMPLETE",
+  "host": "login26",
+  "pid": 311506,
+  "affinity": [
+    8
+  ],
+  "stage": "complete",
+  "updated_UTC": "2026-10-08T17:38:59.539507+00:00",
+  "elapsed_seconds": 2716.2039244174957
+}

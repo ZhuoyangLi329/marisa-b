@@ -1,0 +1,470 @@
+{
+  "scope": "deterministic fixed-catalog no-IR G/L/Q; no stochastic closure or likelihood release",
+  "indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    42,
+    43,
+    44,
+    45,
+    47,
+    48,
+    54,
+    55,
+    56,
+    58,
+    59,
+    65,
+    66,
+    68,
+    69,
+    75,
+    77,
+    78,
+    92,
+    93,
+    99
+  ],
+  "cuts": {
+    "0.08": [
+      1,
+      2,
+      3,
+      15,
+      16,
+      17,
+      29,
+      30,
+      42
+    ],
+    "0.1": [
+      1,
+      2,
+      3,
+      4,
+      15,
+      16,
+      17,
+      18,
+      29,
+      30,
+      31,
+      42,
+      43,
+      54
+    ],
+    "0.12": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      15,
+      16,
+      17,
+      18,
+      19,
+      29,
+      30,
+      31,
+      32,
+      42,
+      43,
+      44,
+      54,
+      55,
+      65
+    ],
+    "0.14": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      29,
+      30,
+      31,
+      32,
+      33,
+      42,
+      43,
+      44,
+      45,
+      54,
+      55,
+      56,
+      65,
+      66,
+      75
+    ],
+    "0.18": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      42,
+      43,
+      44,
+      45,
+      47,
+      54,
+      55,
+      56,
+      58,
+      65,
+      66,
+      68,
+      75,
+      77,
+      92
+    ],
+    "0.2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      42,
+      43,
+      44,
+      45,
+      47,
+      48,
+      54,
+      55,
+      56,
+      58,
+      59,
+      65,
+      66,
+      68,
+      69,
+      75,
+      77,
+      78,
+      92,
+      93,
+      99
+    ]
+  },
+  "axes": [
+    "b1_chebyshev5",
+    "physical_p_chebyshev3",
+    "one_b2_bK2",
+    "G_L_Q",
+    "observable_bin"
+  ],
+  "b1_nodes": [
+    3.914348903516519,
+    3.278624191511828,
+    2.25,
+    1.2213758084881723,
+    0.5856510964834813
+  ],
+  "physical_p_nodes": [
+    1.7330127018922195,
+    1.3,
+    0.8669872981077806
+  ],
+  "coordinate_centers_and_scales": {
+    "b1": [
+      2.25,
+      1.75
+    ],
+    "p": [
+      1.3,
+      0.5
+    ]
+  },
+  "physical_p_is_not_fitted_or_calibrated_here": true,
+  "numerical_nodes_are_not_priors": true,
+  "new_MCMC_parameter_added": false,
+  "f_growth": 0.7625790037720044,
+  "IR": false,
+  "b_rec": 2.2280546353635335,
+  "p_rec": 1.2822,
+  "fNL_rec": 100.0,
+  "recon_mesh": 256,
+  "R": 10.0,
+  "CIC_window_power": 4,
+  "alpha_sha256": "d1a846fa8ac71fe5eee626d0020f591d0cdcfdb82a53da97250799d858fcff83",
+  "zero_leg_source": 0,
+  "closing_leg_cut": false,
+  "denominator": "full actual production two-shell mode counts",
+  "meshes": {
+    "1": [
+      32,
+      48
+    ],
+    "2": [
+      48,
+      64
+    ],
+    "3": [
+      64,
+      80
+    ],
+    "4": [
+      80,
+      96
+    ],
+    "5": [
+      80,
+      96
+    ],
+    "6": [
+      96,
+      112
+    ],
+    "8": [
+      128,
+      144
+    ],
+    "9": [
+      144,
+      160
+    ],
+    "15": [
+      32,
+      48
+    ],
+    "16": [
+      48,
+      64
+    ],
+    "17": [
+      64,
+      80
+    ],
+    "18": [
+      80,
+      96
+    ],
+    "19": [
+      80,
+      96
+    ],
+    "20": [
+      96,
+      112
+    ],
+    "22": [
+      128,
+      144
+    ],
+    "23": [
+      144,
+      160
+    ],
+    "29": [
+      48,
+      64
+    ],
+    "30": [
+      64,
+      80
+    ],
+    "31": [
+      80,
+      96
+    ],
+    "32": [
+      80,
+      96
+    ],
+    "33": [
+      96,
+      112
+    ],
+    "35": [
+      128,
+      144
+    ],
+    "36": [
+      144,
+      160
+    ],
+    "42": [
+      64,
+      80
+    ],
+    "43": [
+      80,
+      96
+    ],
+    "44": [
+      80,
+      96
+    ],
+    "45": [
+      96,
+      112
+    ],
+    "47": [
+      128,
+      144
+    ],
+    "48": [
+      144,
+      160
+    ],
+    "54": [
+      80,
+      96
+    ],
+    "55": [
+      80,
+      96
+    ],
+    "56": [
+      96,
+      112
+    ],
+    "58": [
+      128,
+      144
+    ],
+    "59": [
+      144,
+      160
+    ],
+    "65": [
+      80,
+      96
+    ],
+    "66": [
+      96,
+      112
+    ],
+    "68": [
+      128,
+      144
+    ],
+    "69": [
+      144,
+      160
+    ],
+    "75": [
+      96,
+      112
+    ],
+    "77": [
+      128,
+      144
+    ],
+    "78": [
+      144,
+      160
+    ],
+    "92": [
+      128,
+      144
+    ],
+    "93": [
+      144,
+      160
+    ],
+    "99": [
+      144,
+      160
+    ]
+  },
+  "off_node_probes": [
+    [
+      1.83641,
+      1.287
+    ],
+    [
+      3.613,
+      1.513
+    ]
+  ],
+  "fNL_range_coefficient_scaling": [
+    1.0,
+    500.0,
+    250000.0
+  ],
+  "combined_nonnode_fine_grid_scaled_tolerance": 2e-10,
+  "covariance_whitening_required_after_post_covariance": true,
+  "immutable_sources": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/build_post_rsd_noir_templates.py": "35ee5e0e1c538df2c1d9db27b53d52bac9ae28386c34966a132f857c77e8c65e",
+    "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/realspace_binning_reference/REALSPACE_BINNING.npz": "622a52922ab6722382b000092e7398269825fc91065026a5cb37677115595ca4",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/RECON_ALPHA_COMPARISON.npz": "d1a846fa8ac71fe5eee626d0020f591d0cdcfdb82a53da97250799d858fcff83",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/estimator_B_window/B000_WINDOW.npz": "a56a4ca6384e5835689ff8266bb45c3425891f9b16f05a56f55dd6470663ee2a",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/estimator_B_window/AUDIT.json": "8ed5318a0a51fdc89c6fe337de74eabce55df259756e115c01e266e197ba08fe",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/SOURCE_AUDIT.json": "8c1536027b2dcea3eb4d6acac5ae546477bdff64a5b63b84224221e0192c2992",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_noir_polynomial.py": "e512d27310b5e75e4e7cd5464d3de07fe218c9abf7f6d4d2d5096df67f32c737",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_noir_polynomial.py": "1d4f4a6d1eaa352dada2c2de8b41da31b76ba2cb9de2fd01af69f4459da0f1b3",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_fft_projection.py": "a3ac06aec7e973b2152ca312e34296f7531fc8c55c305c7d510b502fe1a02459",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_fixedrec.py": "f8d15b9678c44322ccefa3d3a1fb18592af011ca5d74505abf70cc905c4c5ed6",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_inputs.py": "8f14aae93cf0b02bc09e46a575ce98630930c3167e2972acbe1a39b0dd57c24b",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_b000_fft_projection.py": "da7fe70eeb34b23770897f1c32671ca2acdd025bf9a962a0833ef572098f1c03",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_b000_contract.py": "550c7230ac7562cbb89e625cd5d28454fc3521bfe66ca2550141fbf90f048a0a",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_bonly_common.py": "25bdf612d4007bd88fd73ea9fff42be2e5f52edb9c1293747bb0f31ff7a026cf",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_post_rsd_ir_registry.py": "b85f4805417546277f5b044fddea5701cf4e8d5b71a77d6e0d58e753f85ee0a5",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/vendor/quijote_strict_triangle_fft_estimator.py": "bc5a2f83a6b445670d888e4f62c451713ad992dc70af5531342ba5530de2c495"
+  }
+}

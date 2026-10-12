@@ -1,0 +1,83 @@
+{
+  "arrays": {
+    "bytes": 1340,
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_sto_marisa_fnlfixed100_freep_calib_v1/FREEP_PROFILE_ARRAYS.npz",
+    "sha256": "0dd42d06099c7c1caaf0c69828f0c7f64e2d5604a8a1fb8c44c643583104f5c4"
+  },
+  "created_utc": "2026-09-18T00:54:26.760347+00:00",
+  "inputs": {
+    "matrix": {
+      "bytes": 166664,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/five_method_p0_matrix.npz",
+      "sha256": "c527cf51a6e7c90f02c85cb688d1963b72595809e9ebc9be53468ff80c0c6fa5"
+    },
+    "matrix_audit": {
+      "bytes": 3596,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/five_method_p0_matrix_audit.json",
+      "sha256": "97e5b4c70e0fad28c96bde4cfd7a59377f5e65abfa40a6452833eacc2aa1f7e3"
+    },
+    "runner": {
+      "bytes": 31261,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/code/run_fnlfixed100_freep_sto_marisa.py",
+      "sha256": "5f9c2b58c4ef3e8fe57c86569b2a7323713bb5413b9e1af0607501f59478004c"
+    },
+    "theory": {
+      "bytes": 2707,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.npz",
+      "sha256": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e"
+    }
+  },
+  "rows": {
+    "sto_marisa": {
+      "data_chi2": 10.025216055893393,
+      "dof": 9,
+      "goodness_of_fit_p": 0.3484476878788932,
+      "hesse_covariance": [
+        [
+          0.010034071624364245,
+          0.0013453917702395434,
+          -28.951766027694305
+        ],
+        [
+          0.0013453917702395434,
+          0.00028009958679149584,
+          -6.932902771085921
+        ],
+        [
+          -28.951766027694305,
+          -6.932902771085921,
+          181716.07575930358
+        ]
+      ],
+      "map": {
+        "Pshot_residual": -2617.8572472546225,
+        "b1": 2.217899592582541,
+        "p": 1.2822134139646149
+      },
+      "method": "sto_marisa",
+      "minos_p": {
+        "lower": 1.1824368145395183,
+        "lower_error": -0.09977659942509659,
+        "upper": 1.3827758095978842,
+        "upper_error": 0.1005623956332692,
+        "valid": true
+      },
+      "objective": 10.025216055893393,
+      "optimizer_valid": true
+    }
+  },
+  "schema": "quijote-z0p5-fnlfixed100-freep-profiles-v1",
+  "scope": {
+    "fNL_fixed": 100.0,
+    "methods": [
+      "sto_marisa"
+    ],
+    "note": "\u6821\u51c6\u6d4b\u91cf\uff1afNL \u56fa\u5b9a\u4e3a\u8f93\u5165\u771f\u503c\uff0c\u65e0 recovery gate",
+    "parameters": [
+      "p",
+      "b1",
+      "Pshot_residual"
+    ]
+  },
+  "status": "complete"
+}

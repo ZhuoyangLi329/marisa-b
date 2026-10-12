@@ -1,0 +1,201 @@
+{
+  "created_utc": "2026-09-18T00:56:35.735565+00:00",
+  "inputs": {
+    "five_results": {
+      "bytes": 47073,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/five_method_p0only_mcmc_results.json",
+      "sha256": "5a4a3c0827878bc811f01592041fc82eead756aa2b29f9bd736818daba1cc0c0"
+    },
+    "matrix": {
+      "bytes": 166664,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/five_method_p0_matrix.npz",
+      "sha256": "c527cf51a6e7c90f02c85cb688d1963b72595809e9ebc9be53468ff80c0c6fa5"
+    },
+    "matrix_audit": {
+      "bytes": 3596,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/five_method_p0_matrix_audit.json",
+      "sha256": "97e5b4c70e0fad28c96bde4cfd7a59377f5e65abfa40a6452833eacc2aa1f7e3"
+    },
+    "profiles": {
+      "bytes": 2682,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_sto_marisa_fnlfixed100_freep_calib_v1/FREEP_PROFILES.json",
+      "sha256": "ec876ba178e96a6fcec0697da7696adebfc1a5f19304c279c30ffe81e953dd36"
+    },
+    "runner": {
+      "bytes": 31261,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/code/run_fnlfixed100_freep_sto_marisa.py",
+      "sha256": "5f9c2b58c4ef3e8fe57c86569b2a7323713bb5413b9e1af0607501f59478004c"
+    },
+    "theory": {
+      "bytes": 2707,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.npz",
+      "sha256": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e"
+    }
+  },
+  "outputs": {
+    "posteriors": {
+      "bytes": 1197545,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_sto_marisa_fnlfixed100_freep_calib_v1/FREEP_POSTERIORS.npz",
+      "sha256": "197eacf06ecf869db8ff8aa0b632af425a44f1a08717a4d06f32571939d7dfd3"
+    }
+  },
+  "rows": [
+    {
+      "Pshot_residual": {
+        "half_width": 423.883402892875,
+        "median": -2615.668454074244,
+        "q16": -3041.2317908498135,
+        "q2p5": -3452.2513449806793,
+        "q84": -2193.4649850640635,
+        "q97p5": -1781.1551225196413
+      },
+      "b1": {
+        "half_width": 0.016598463363836524,
+        "median": 2.217889546285489,
+        "q16": 2.2013881437962457,
+        "q2p5": 2.1851116918533484,
+        "q84": 2.2345850705239187,
+        "q97p5": 2.2507204948479287
+      },
+      "diagnostics": {
+        "boundary_mass": {
+          "Pshot_residual": 0.0,
+          "b1": 0.0,
+          "p": 0.0
+        },
+        "bulk_ess": [
+          17139.357660043486,
+          20721.015827468735,
+          21838.84535087884
+        ],
+        "chain_layout": {
+          "burn": 3000,
+          "ensembles": 4,
+          "retained_samples": 384000,
+          "steps": 6000,
+          "walkers": 32
+        },
+        "checks": {
+          "acceptance": true,
+          "boundaries": true,
+          "ensemble_spread": true,
+          "half_shift": true,
+          "length_tau": true,
+          "other_ess": true,
+          "p_ess": true,
+          "rhat": true
+        },
+        "ensemble_median_spread_sigma": [
+          0.0191390642854627,
+          0.01937791405817032,
+          0.018021962953732238
+        ],
+        "ensemble_medians": [
+          [
+            1.2817544897898312,
+            2.2176851348476845,
+            -2613.106109666659
+          ],
+          [
+            1.2832522081616635,
+            2.218008552615882,
+            -2618.1715315100446
+          ],
+          [
+            1.2827058284073358,
+            2.217959706926646,
+            -2620.7732883917697
+          ],
+          [
+            1.2836652718871497,
+            2.2179842711540987,
+            -2618.1408896228263
+          ]
+        ],
+        "half_chain_median_shift_sigma": [
+          0.04722801374269922,
+          0.029888266969212082,
+          0.020023468380075144
+        ],
+        "mean_acceptance_fraction": 0.5810768229166665,
+        "pass": true,
+        "rank_folded_split_rhat": [
+          1.0000313688857312,
+          1.0000825411110321,
+          1.0001019935215691
+        ],
+        "rank_location_split_rhat": [
+          1.000324943437712,
+          1.0002170093359202,
+          1.000184883365025
+        ],
+        "rank_normalized_split_rhat": [
+          1.000324943437712,
+          1.0002170093359202,
+          1.000184883365025
+        ],
+        "retained_length_over_tau": [
+          127.2047080545208,
+          126.68186877753222,
+          126.61197253417821
+        ],
+        "tail_ess": [
+          36316.57372214759,
+          37582.89381877778,
+          34121.951909423056
+        ],
+        "tau_by_ensemble": [
+          [
+            22.42669296040824,
+            22.98862051460923,
+            23.476845240253915
+          ],
+          [
+            23.005128814873892,
+            22.397913902598717,
+            22.744001243191875
+          ],
+          [
+            23.584032744402666,
+            23.68136836746813,
+            23.694441686311826
+          ],
+          [
+            22.522836968126125,
+            22.09402570809082,
+            21.597927255615605
+          ]
+        ]
+      },
+      "goodness_of_fit_p": 0.3484476878788932,
+      "method": "sto_marisa",
+      "p": {
+        "half_width": 0.09878677888490783,
+        "median": 1.2827640472347774,
+        "q16": 1.1852953316555928,
+        "q2p5": 1.0878858480700002,
+        "q84": 1.3828688894254084,
+        "q97p5": 1.4826842168891587
+      },
+      "profile_map_p": 1.2822134139646149
+    }
+  ],
+  "schema": "quijote-z0p5-fnlfixed100-freep-results-v1",
+  "scope": {
+    "definition": "\u6821\u51c6\u6d4b\u91cf\uff1afNL \u56fa\u5b9a\u4e3a\u8f93\u5165\u771f\u503c +100\uff0cp/b1/Pshot \u81ea\u7531\uff1b\u65e0 recovery gate\uff1b\u534f\u65b9\u5dee\u6cbf\u7528\u4e94\u65b9\u6cd5\u7ea6\u5b9a",
+    "fNL_fixed": 100.0,
+    "methods": [
+      "sto_marisa"
+    ],
+    "parameters": [
+      "p",
+      "b1",
+      "Pshot_residual"
+    ],
+    "prior_p": [
+      0.0,
+      3.0
+    ]
+  },
+  "status": "complete"
+}

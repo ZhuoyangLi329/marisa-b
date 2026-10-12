@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "errors": [
+    {
+      "b1": 0.2,
+      "scaled_error": 7.362600112914564e-13
+    },
+    {
+      "b1": 1.93,
+      "scaled_error": 2.1247273923506694e-13
+    },
+    {
+      "b1": 2.2280546353635335,
+      "scaled_error": 2.7001894364617746e-13
+    },
+    {
+      "b1": 4.2,
+      "scaled_error": 6.107440549297934e-14
+    },
+    {
+      "b1": 7.8,
+      "scaled_error": 8.463627525025697e-14
+    }
+  ],
+  "includes": "deterministic source, all exponent mixing, inherited common-amplitude stochastic mixing",
+  "native_validation": "48x96 angles,2049 radial nodes, independent triangles"
+}

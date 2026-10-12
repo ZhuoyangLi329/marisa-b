@@ -1,0 +1,32 @@
+{
+  "implementation": "native_post_tree_local_png_LO_IR_integrated_opt_in",
+  "scientific_status": "provisional; post_catalogue_and_full_kmax_likelihood_not_validated",
+  "native_source_checks": 39200,
+  "targeted_tests_passed": 76,
+  "all_python_tests": "107 passed, 6 failed, 14 errors; failures are missing nonlocal/production files",
+  "release_test": "blocked at repository boundary: migrated NERSC directory has no .git metadata",
+  "methods": [
+    "standard_gra",
+    "marisa_gra",
+    "sto_marisa"
+  ],
+  "parameter_path": "f_rec=eta*f only",
+  "angular_G_L_Q_scaled_error_max": 4.167222122930525e-13,
+  "radial_1025_2049_G_L_Q_scaled_error_max": 2.615685446016869e-12,
+  "radial_1025_2049_variance_scaled_error_max": 7.603629255331508e-10,
+  "first_shell_angular_scaled_error_max": 8.596964595994502e-15,
+  "physical_limits": [
+    "real space",
+    "local PNG",
+    "O(Pw)",
+    "O(fNL^2)",
+    "Gaussian linear displacement"
+  ],
+  "not_done": [
+    "fixed nonzero f_rec catalogue expansion",
+    "dedicated post bias/noise calibration",
+    "all-shell covariance-weighted convergence",
+    "trusted post PNG injection recovery",
+    "B-only kmax scan"
+  ]
+}

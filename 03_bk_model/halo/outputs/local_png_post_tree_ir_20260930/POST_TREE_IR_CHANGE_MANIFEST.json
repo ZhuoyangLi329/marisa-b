@@ -1,0 +1,665 @@
+{
+  "schema": "marisa-post-tree-ir-change-manifest-v1",
+  "created_utc": "2026-09-30T12:28:28.150955+00:00",
+  "task_repository": "/pscratch/sd/l/lzy/reconstuction-png-v2",
+  "user_package": "marisa-b-post-recon-tree-png-ir, 2026-09-30",
+  "imported_file_sha256": {
+    "python/marisa_b/post_recon_tree_png_ir.py": "fe9cdd352abde8029c1422915212017148852c295ae349818d39acbc121e9b1c",
+    "tests/python/test_post_recon_tree_png_ir.py": "647cbc249dcc436b1de1f6355b7c038370a771f5b0ae98ed1a3ec2d1cd9c2571",
+    "docs/POST_RECON_TREE_PNG_IR_API.md": "8c99fb6faeceb8c7a824dc634b360a1b4675ada3c9be50dcae459e7af6dd83cb",
+    "docs/POST_RECON_TREE_PNG_IR_RESUMMATION_PLAN.md": "d5266602f4d6abc5958967e512859cc60907dd4a353b60ead40adc5ddc3cd4ec"
+  },
+  "source_files": [
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/README.md",
+      "sha256": "e119e341c16587aa38a6df61d65dbc4f1888b51e9a8617bf9535350d4cbe5605",
+      "bytes": 7481
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/tree_png_ir.h",
+      "sha256": "adea30c96780d488917b8d4f2b6c074d739df45021c95239c4b587cacf9fca48",
+      "bytes": 2906
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/tree_png_ir.cpp",
+      "sha256": "2ec1049b95c4518e3bf2830c4a871364c97a2f1a36ff37ec35a175e11e7b2543",
+      "bytes": 12547
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/post_recon_tree_png_ir.h",
+      "sha256": "0e50ac7b556f9a84e4e83ddcf8636ece670491c2da12ead76a6e2160573b2594",
+      "bytes": 2153
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/post_recon_tree_png_ir.cpp",
+      "sha256": "4bb7510bdd97ed7dbb28336a692ebc9e5f9248b14088259c44925bf20a594156",
+      "bytes": 12588
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/scripts/build_tree_png_ir.sh",
+      "sha256": "3c5229568770b52862bf1e269eb7d976cb4708af1fff3e79ee4983f5b180f97e",
+      "bytes": 2284
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/python/marisa_b/post_recon_tree_png_ir_native.py",
+      "sha256": "369c7c7e4dae70c659b6922778ebe47ea1ede3a92a9143aa9c80898dc99fec55",
+      "bytes": 7549
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/tests/eft_v2/test_tree_png_ir_native.cpp",
+      "sha256": "c4247f34e7b61ca2216be671d3ecdf6d84a2193666dd5135ebdcd032dd0c2135",
+      "bytes": 6008
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/tests/python/test_post_recon_tree_png_ir_native.py",
+      "sha256": "0401f85ef732aaa73895660442bf51b2aac5af71b0dc3bb04bc4f56616ab1fba",
+      "bytes": 5552
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/scripts/production/generate_post_tree_png_ir.py",
+      "sha256": "4f4ef2d1cb668677becf0a488368d0aee717ad37557319ae3cbbbeec93f42bc8",
+      "bytes": 5309
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/scripts/examples/reconstruction_current_p.py",
+      "sha256": "280428a260859ada9a2e2d363b71350fd7ca784e645acdaf3663759db502a7e7",
+      "bytes": 6584
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/configs/reconstruction_current_p_example.json",
+      "sha256": "654bfab8490ece7dece22b6b2c630563e277f8eeeb6af24971f909ea805f07f7",
+      "bytes": 3393
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/docs/POST_RECON_TREE_PNG_IR_NATIVE.md",
+      "sha256": "35d0b34ebd44ac239158c3602bd00fdb442063761bc186576005d83cd0498011",
+      "bytes": 7654
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/python/marisa_b/post_recon_tree_png_ir.py",
+      "sha256": "fe9cdd352abde8029c1422915212017148852c295ae349818d39acbc121e9b1c",
+      "bytes": 39476
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/tests/python/test_post_recon_tree_png_ir.py",
+      "sha256": "647cbc249dcc436b1de1f6355b7c038370a771f5b0ae98ed1a3ec2d1cd9c2571",
+      "bytes": 23872
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/docs/POST_RECON_TREE_PNG_IR_API.md",
+      "sha256": "8c99fb6faeceb8c7a824dc634b360a1b4675ada3c9be50dcae459e7af6dd83cb",
+      "bytes": 3450
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/docs/POST_RECON_TREE_PNG_IR_RESUMMATION_PLAN.md",
+      "sha256": "d5266602f4d6abc5958967e512859cc60907dd4a353b60ead40adc5ddc3cd4ec",
+      "bytes": 32544
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/code/audit_post_tree_png_ir.py",
+      "sha256": "6ed56236ff6a336b5f09fc077135863b2099caf31a7423d9272159da7b830dd7",
+      "bytes": 10182
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/code/write_post_tree_ir_manifest.py",
+      "sha256": "4c79ac38ca3f76550b3ad80845bf948be855161ae45785c723d6bdbe9d0623dd",
+      "bytes": 8743
+    }
+  ],
+  "current_p_example_origin": "ZhuoyangLi329/marisa-b PR 3 commit 615192fe4cedabe5e75148686418c1a9a6b7bcf4",
+  "unchanged_native_reference": [
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/marisa_b_native.cpp",
+      "sha256": "14cce7b82f4c22a004ce4cc10357e363b24e63bbcadc8ece2ceb508f99e96f57",
+      "bytes": 181014
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/src/marisa_b/marisa_b_native.h",
+      "sha256": "da159b38f7c234801c33c2d6ff98b6beded13f6cbe7fcc894583f8d467ece5f3",
+      "bytes": 19401
+    }
+  ],
+  "backups": [
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/original_source/README.md",
+      "sha256": "fd62c73fba98856a7d815f76dc04a47fb062d1314a0d71c1eaff21d3f7228292",
+      "bytes": 7037
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/original_source/scripts/build_tree_png_ir.sh",
+      "sha256": "c40fdd452cf00efdaa72e713d58fdb8a30857eb1e948477b6a722f9de96eb36b",
+      "bytes": 2034
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/original_source/src/marisa_b/tree_png_ir.cpp",
+      "sha256": "bdbe737b418efb37f458ead09727eb239ee871409ec6554a5ca15258f7ea17fc",
+      "bytes": 10142
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/original_source/src/marisa_b/tree_png_ir.h",
+      "sha256": "a2d0a294932a96db391704873aa5db33b2a50022e4ae4b73481fb2cd2e98eba9",
+      "bytes": 2256
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/original_source/tests/eft_v2/test_tree_png_ir_native.cpp",
+      "sha256": "5bb8c6fe09188660cd983fccad2efc4f69c5956643c71a3fecc6b323c622a8f5",
+      "bytes": 4994
+    }
+  ],
+  "template_identities": {
+    "marisa_gra_shell_templates.json": {
+      "schema": "marisa-post-tree-ir-templates-v1",
+      "status": "numerical_templates_not_catalogue_validation",
+      "configuration": {
+        "method": "marisa_gra",
+        "bias": {
+          "b1": 1.93,
+          "b2": 0.5,
+          "bk2": -0.15,
+          "bphi": 2.53282412074871,
+          "bphidelta": 1.7673085714285715,
+          "bphi2": -10.887012617142856
+        },
+        "reconstruction": {
+          "smoothing_radius": 10.0,
+          "bias_recon": 1.9326526728794324,
+          "cell_size": 8.0,
+          "cic_window_power": 4
+        },
+        "adaptive": {
+          "bphi_recon": 3.144904812949446,
+          "fnl_recon_ratio": 1.0
+        },
+        "ir": {
+          "r_bao": 110.0,
+          "k_ir": 0.15,
+          "q_min": 0.006283185307179587,
+          "mesh_damping": "auto",
+          "angular_mu_order": 16,
+          "angular_phi_order": 32
+        },
+        "reconstruction_parameter_path": "f_rec=eta*f",
+        "weights_include_original_denominator": true,
+        "absolute_orientation_nodes": true,
+        "number_of_bins": 1,
+        "measure": "exact enumeration: 18 x 18 FFT modes, closing zero pairs omitted, denominator 324"
+      },
+      "inputs": {
+        "nodes": {
+          "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/marisa_gra_exact_shell_nodes.npz",
+          "sha256": "9d51994d27db5ff45b1053b09e06c6d5ce79d1f4ee05f20a75e86afc44080b2c"
+        },
+        "config": {
+          "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/marisa_gra_config.json",
+          "sha256": "840709c4097c73ccc064e96ff747d85098cb7ea51504f46143143db41b79c76b"
+        },
+        "native_library": {
+          "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/build/tree_png_ir/libmarisa_post_tree_png_ir.so",
+          "sha256": "b48aa0cc57284f1204ec9f4eb015c1fbd7ca705653ba125cd1ebaf73fb77ce03"
+        }
+      },
+      "output": {
+        "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/marisa_gra_shell_templates.npz",
+        "sha256": "1327fc7d48b3803e2cce3f635048caa142de829703ac2b733096dea6e57fad3c"
+      },
+      "number_of_nodes": 306,
+      "source_columns": [
+        "Btree_gaussian_pre",
+        "Btree_gaussian_reconstruction",
+        "dBdfNL_local_primordial",
+        "dBdfNL_local_bphi_f2",
+        "dBdfNL_local_bphi_advection",
+        "dBdfNL_local_bphidelta",
+        "dBdfNL_local_bphi_b2",
+        "dBdfNL_local_bphi_bK2",
+        "dBdfNL_local_bphi_reconstruction",
+        "Bhalo_tree_fNL2_bphi_B0",
+        "Bhalo_tree_fNL2_bphi_sq_advection",
+        "Bhalo_tree_fNL2_bphi_sq_F2",
+        "Bhalo_tree_fNL2_bphi_sq_b2",
+        "Bhalo_tree_fNL2_bphi_sq_bK2",
+        "Bhalo_tree_fNL2_bphi_sq_reconstruction",
+        "Bhalo_tree_fNL2_bphi_bphidelta",
+        "Bhalo_tree_fNL2_bphi2_operator",
+        "stochastic_alpha3_basis",
+        "dBdfNL_stochastic_alpha3_basis",
+        "Bhalo_tree_fNL2_stochastic_alpha3PNG_basis",
+        "stochastic_alpha4_basis",
+        "Btree_gaussian_f2",
+        "Btree_gaussian_b2",
+        "Btree_gaussian_bK2",
+        "dBdfNL_rec_brec_gaussian_linear",
+        "Btree_fNL2_rec_brec_gaussian_quadratic",
+        "Btree_fNL2_rec_brec_png_linear_cross"
+      ],
+      "deterministic_columns": [
+        "G",
+        "L",
+        "Q"
+      ],
+      "mixing_columns": [
+        "L_from_G",
+        "Q_from_L",
+        "Q_from_G"
+      ],
+      "shift_noise_enabled": false,
+      "stochastic_closure": "not_combined",
+      "scope": "real-space local-PNG tree; O(Pw), O(fNL^2), Gaussian linear long displacement"
+    },
+    "standard_gra_shell_templates.json": {
+      "schema": "marisa-post-tree-ir-templates-v1",
+      "status": "numerical_templates_not_catalogue_validation",
+      "configuration": {
+        "method": "standard_gra",
+        "bias": {
+          "b1": 1.93,
+          "b2": 0.5,
+          "bk2": -0.15,
+          "bphi": 2.53282412074871,
+          "bphidelta": 1.7673085714285715,
+          "bphi2": -10.887012617142856
+        },
+        "reconstruction": {
+          "smoothing_radius": 10.0,
+          "bias_recon": 1.9326526728794324,
+          "cell_size": 8.0,
+          "cic_window_power": 4
+        },
+        "adaptive": {
+          "bphi_recon": 3.144904812949446,
+          "fnl_recon_ratio": 0.0
+        },
+        "ir": {
+          "r_bao": 110.0,
+          "k_ir": 0.15,
+          "q_min": 0.006283185307179587,
+          "mesh_damping": "auto",
+          "angular_mu_order": 16,
+          "angular_phi_order": 32
+        },
+        "reconstruction_parameter_path": "f_rec=eta*f",
+        "weights_include_original_denominator": true,
+        "absolute_orientation_nodes": true,
+        "number_of_bins": 1,
+        "measure": "exact enumeration: 18 x 18 FFT modes, closing zero pairs omitted, denominator 324"
+      },
+      "inputs": {
+        "nodes": {
+          "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/standard_gra_exact_shell_nodes.npz",
+          "sha256": "9d51994d27db5ff45b1053b09e06c6d5ce79d1f4ee05f20a75e86afc44080b2c"
+        },
+        "config": {
+          "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/standard_gra_config.json",
+          "sha256": "cad62cee549b6b9dee9b7b6522ae32c70b1ce505fe3405af9cfb9146410b5083"
+        },
+        "native_library": {
+          "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/build/tree_png_ir/libmarisa_post_tree_png_ir.so",
+          "sha256": "b48aa0cc57284f1204ec9f4eb015c1fbd7ca705653ba125cd1ebaf73fb77ce03"
+        }
+      },
+      "output": {
+        "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/standard_gra_shell_templates.npz",
+        "sha256": "fb1318890dfb9c5d6a426d3939fcd7a16423bd3c98765212966144212364f52f"
+      },
+      "number_of_nodes": 306,
+      "source_columns": [
+        "Btree_gaussian_pre",
+        "Btree_gaussian_reconstruction",
+        "dBdfNL_local_primordial",
+        "dBdfNL_local_bphi_f2",
+        "dBdfNL_local_bphi_advection",
+        "dBdfNL_local_bphidelta",
+        "dBdfNL_local_bphi_b2",
+        "dBdfNL_local_bphi_bK2",
+        "dBdfNL_local_bphi_reconstruction",
+        "Bhalo_tree_fNL2_bphi_B0",
+        "Bhalo_tree_fNL2_bphi_sq_advection",
+        "Bhalo_tree_fNL2_bphi_sq_F2",
+        "Bhalo_tree_fNL2_bphi_sq_b2",
+        "Bhalo_tree_fNL2_bphi_sq_bK2",
+        "Bhalo_tree_fNL2_bphi_sq_reconstruction",
+        "Bhalo_tree_fNL2_bphi_bphidelta",
+        "Bhalo_tree_fNL2_bphi2_operator",
+        "stochastic_alpha3_basis",
+        "dBdfNL_stochastic_alpha3_basis",
+        "Bhalo_tree_fNL2_stochastic_alpha3PNG_basis",
+        "stochastic_alpha4_basis",
+        "Btree_gaussian_f2",
+        "Btree_gaussian_b2",
+        "Btree_gaussian_bK2",
+        "dBdfNL_rec_brec_gaussian_linear",
+        "Btree_fNL2_rec_brec_gaussian_quadratic",
+        "Btree_fNL2_rec_brec_png_linear_cross"
+      ],
+      "deterministic_columns": [
+        "G",
+        "L",
+        "Q"
+      ],
+      "mixing_columns": [
+        "L_from_G",
+        "Q_from_L",
+        "Q_from_G"
+      ],
+      "shift_noise_enabled": false,
+      "stochastic_closure": "not_combined",
+      "scope": "real-space local-PNG tree; O(Pw), O(fNL^2), Gaussian linear long displacement"
+    },
+    "sto_marisa_shell_templates.json": {
+      "schema": "marisa-post-tree-ir-templates-v1",
+      "status": "numerical_templates_not_catalogue_validation",
+      "configuration": {
+        "method": "sto_marisa",
+        "bias": {
+          "b1": 2.197952896776342,
+          "b2": 0.5,
+          "bk2": -0.15,
+          "bphi": 2.8948252523300324,
+          "bphidelta": 1.790735310403874,
+          "bphi2": -15.661819319437155
+        },
+        "reconstruction": {
+          "smoothing_radius": 10.0,
+          "bias_recon": 2.197952896776342,
+          "cell_size": 8.0,
+          "cic_window_power": 4
+        },
+        "adaptive": {
+          "bphi_recon": 4.039497167929825,
+          "fnl_recon_ratio": 1.0
+        },
+        "ir": {
+          "r_bao": 110.0,
+          "k_ir": 0.15,
+          "q_min": 0.006283185307179587,
+          "mesh_damping": "auto",
+          "angular_mu_order": 16,
+          "angular_phi_order": 32
+        },
+        "reconstruction_parameter_path": "f_rec=eta*f",
+        "weights_include_original_denominator": true,
+        "absolute_orientation_nodes": true,
+        "number_of_bins": 1,
+        "measure": "exact enumeration: 18 x 18 FFT modes, closing zero pairs omitted, denominator 324"
+      },
+      "inputs": {
+        "nodes": {
+          "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/sto_marisa_exact_shell_nodes.npz",
+          "sha256": "9d51994d27db5ff45b1053b09e06c6d5ce79d1f4ee05f20a75e86afc44080b2c"
+        },
+        "config": {
+          "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/sto_marisa_config.json",
+          "sha256": "a460f06a309d7e69cbeab85fdd867ed50e6e8075765e445f12c44fe1b61dbe26"
+        },
+        "native_library": {
+          "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/marisa_b_core/build/tree_png_ir/libmarisa_post_tree_png_ir.so",
+          "sha256": "b48aa0cc57284f1204ec9f4eb015c1fbd7ca705653ba125cd1ebaf73fb77ce03"
+        }
+      },
+      "output": {
+        "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/sto_marisa_shell_templates.npz",
+        "sha256": "4143bb8d7fa2fd8687042453d4b86661cc9f3bc867a4835d0c2f9fd3b24a24fe"
+      },
+      "number_of_nodes": 306,
+      "source_columns": [
+        "Btree_gaussian_pre",
+        "Btree_gaussian_reconstruction",
+        "dBdfNL_local_primordial",
+        "dBdfNL_local_bphi_f2",
+        "dBdfNL_local_bphi_advection",
+        "dBdfNL_local_bphidelta",
+        "dBdfNL_local_bphi_b2",
+        "dBdfNL_local_bphi_bK2",
+        "dBdfNL_local_bphi_reconstruction",
+        "Bhalo_tree_fNL2_bphi_B0",
+        "Bhalo_tree_fNL2_bphi_sq_advection",
+        "Bhalo_tree_fNL2_bphi_sq_F2",
+        "Bhalo_tree_fNL2_bphi_sq_b2",
+        "Bhalo_tree_fNL2_bphi_sq_bK2",
+        "Bhalo_tree_fNL2_bphi_sq_reconstruction",
+        "Bhalo_tree_fNL2_bphi_bphidelta",
+        "Bhalo_tree_fNL2_bphi2_operator",
+        "stochastic_alpha3_basis",
+        "dBdfNL_stochastic_alpha3_basis",
+        "Bhalo_tree_fNL2_stochastic_alpha3PNG_basis",
+        "stochastic_alpha4_basis",
+        "Btree_gaussian_f2",
+        "Btree_gaussian_b2",
+        "Btree_gaussian_bK2",
+        "dBdfNL_rec_brec_gaussian_linear",
+        "Btree_fNL2_rec_brec_gaussian_quadratic",
+        "Btree_fNL2_rec_brec_png_linear_cross"
+      ],
+      "deterministic_columns": [
+        "G",
+        "L",
+        "Q"
+      ],
+      "mixing_columns": [
+        "L_from_G",
+        "Q_from_L",
+        "Q_from_G"
+      ],
+      "shift_noise_enabled": false,
+      "stochastic_closure": "not_combined",
+      "scope": "real-space local-PNG tree; O(Pw), O(fNL^2), Gaussian linear long displacement"
+    }
+  },
+  "summary": {
+    "implementation": "native_post_tree_local_png_LO_IR_integrated_opt_in",
+    "scientific_status": "provisional; post_catalogue_and_full_kmax_likelihood_not_validated",
+    "native_source_checks": 39200,
+    "targeted_tests_passed": 76,
+    "all_python_tests": "107 passed, 6 failed, 14 errors; failures are missing nonlocal/production files",
+    "release_test": "blocked at repository boundary: migrated NERSC directory has no .git metadata",
+    "methods": [
+      "standard_gra",
+      "marisa_gra",
+      "sto_marisa"
+    ],
+    "parameter_path": "f_rec=eta*f only",
+    "angular_G_L_Q_scaled_error_max": 4.167222122930525e-13,
+    "radial_1025_2049_G_L_Q_scaled_error_max": 2.615685446016869e-12,
+    "radial_1025_2049_variance_scaled_error_max": 7.603629255331508e-10,
+    "first_shell_angular_scaled_error_max": 8.596964595994502e-15,
+    "physical_limits": [
+      "real space",
+      "local PNG",
+      "O(Pw)",
+      "O(fNL^2)",
+      "Gaussian linear displacement"
+    ],
+    "not_done": [
+      "fixed nonzero f_rec catalogue expansion",
+      "dedicated post bias/noise calibration",
+      "all-shell covariance-weighted convergence",
+      "trusted post PNG injection recovery",
+      "B-only kmax scan"
+    ]
+  },
+  "output_files": [
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/REPORT.md",
+      "sha256": "9e0c4c57f5da3a8eda7fc6ee42bd6c0a14753328a38cc3fd04bfc09f33bf15b4",
+      "bytes": 2468
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/RESULTS_SUMMARY.json",
+      "sha256": "d1f56e76416e8a64f4ea30cf6cea1c3a002fbde3d7174a5c21c92b9774f8442a",
+      "bytes": 1171
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/POST_TREE_IR_AUDIT.json",
+      "sha256": "c13e25114818d7c40f46ba3a044c2ff4575732d17e69cdec2de4884443e9d4b4",
+      "bytes": 47975
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/marisa_gra_config.json",
+      "sha256": "840709c4097c73ccc064e96ff747d85098cb7ea51504f46143143db41b79c76b",
+      "bytes": 852
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/marisa_gra_exact_shell_nodes.npz",
+      "sha256": "9d51994d27db5ff45b1053b09e06c6d5ce79d1f4ee05f20a75e86afc44080b2c",
+      "bytes": 8672
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/marisa_gra_shell_templates.json",
+      "sha256": "a8320f0c2d953acb911fcd00dda06646609cbb3377c6f9e9ede7ae5b2e6bca66",
+      "bytes": 3354
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/marisa_gra_shell_templates.npz",
+      "sha256": "1327fc7d48b3803e2cce3f635048caa142de829703ac2b733096dea6e57fad3c",
+      "bytes": 2158
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/post_tree_ir_current_p.pdf",
+      "sha256": "2f5213410b6ca5d5bbb11f30bd5728d96257df43a7fe5adde4416b8cdd2e9b8e",
+      "bytes": 20482
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/standard_gra_config.json",
+      "sha256": "cad62cee549b6b9dee9b7b6522ae32c70b1ce505fe3405af9cfb9146410b5083",
+      "bytes": 854
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/standard_gra_exact_shell_nodes.npz",
+      "sha256": "9d51994d27db5ff45b1053b09e06c6d5ce79d1f4ee05f20a75e86afc44080b2c",
+      "bytes": 8672
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/standard_gra_shell_templates.json",
+      "sha256": "6f5fc72de0986c02c180737eb009333f5c7ee467f658b8b2d169cbb0d880c820",
+      "bytes": 3362
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/standard_gra_shell_templates.npz",
+      "sha256": "fb1318890dfb9c5d6a426d3939fcd7a16423bd3c98765212966144212364f52f",
+      "bytes": 2091
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/sto_marisa_config.json",
+      "sha256": "a460f06a309d7e69cbeab85fdd867ed50e6e8075765e445f12c44fe1b61dbe26",
+      "bytes": 865
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/sto_marisa_exact_shell_nodes.npz",
+      "sha256": "9d51994d27db5ff45b1053b09e06c6d5ce79d1f4ee05f20a75e86afc44080b2c",
+      "bytes": 8672
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/sto_marisa_shell_templates.json",
+      "sha256": "14838f900393fdc25ff5193c8726d0c35baaeb9a379fe6da2df9a4bd00f60461",
+      "bytes": 3367
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit/sto_marisa_shell_templates.npz",
+      "sha256": "4143bb8d7fa2fd8687042453d4b86661cc9f3bc867a4835d0c2f9fd3b24a24fe",
+      "bytes": 2154
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit.log",
+      "sha256": "b695021c95cf479bc341208c8352bf32d4c5ab483ee713fdd43f11e180108750",
+      "bytes": 1878
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/POST_TREE_IR_AUDIT.json",
+      "sha256": "02705bf845939b032c40e251337128f0f59a7ddfa9c1b0b72f951dd81659fc99",
+      "bytes": 48383
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/marisa_gra_config.json",
+      "sha256": "840709c4097c73ccc064e96ff747d85098cb7ea51504f46143143db41b79c76b",
+      "bytes": 852
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/marisa_gra_exact_shell_nodes.npz",
+      "sha256": "9d51994d27db5ff45b1053b09e06c6d5ce79d1f4ee05f20a75e86afc44080b2c",
+      "bytes": 8672
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/marisa_gra_shell_templates.json",
+      "sha256": "6985d6a74faa7175aeadebfec3e3a025992681f0498adf8c519901152e5b74b8",
+      "bytes": 3369
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/marisa_gra_shell_templates.npz",
+      "sha256": "1327fc7d48b3803e2cce3f635048caa142de829703ac2b733096dea6e57fad3c",
+      "bytes": 2158
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/post_tree_ir_current_p.pdf",
+      "sha256": "041a578313a0932a3ce10c190e8c040cbbcff2a0e3549950fe04d4704ac8e22b",
+      "bytes": 20484
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/standard_gra_config.json",
+      "sha256": "cad62cee549b6b9dee9b7b6522ae32c70b1ce505fe3405af9cfb9146410b5083",
+      "bytes": 854
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/standard_gra_exact_shell_nodes.npz",
+      "sha256": "9d51994d27db5ff45b1053b09e06c6d5ce79d1f4ee05f20a75e86afc44080b2c",
+      "bytes": 8672
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/standard_gra_shell_templates.json",
+      "sha256": "17a3c2d348204683290784efb0fd79abbc52ca25e31f6ff29c93012c6b60801d",
+      "bytes": 3377
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/standard_gra_shell_templates.npz",
+      "sha256": "fb1318890dfb9c5d6a426d3939fcd7a16423bd3c98765212966144212364f52f",
+      "bytes": 2091
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/sto_marisa_config.json",
+      "sha256": "a460f06a309d7e69cbeab85fdd867ed50e6e8075765e445f12c44fe1b61dbe26",
+      "bytes": 865
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/sto_marisa_exact_shell_nodes.npz",
+      "sha256": "9d51994d27db5ff45b1053b09e06c6d5ce79d1f4ee05f20a75e86afc44080b2c",
+      "bytes": 8672
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/sto_marisa_shell_templates.json",
+      "sha256": "d06105bf8f0a1cd087d7066231221b17a01a15ef1d748edab2422c5622056124",
+      "bytes": 3382
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine/sto_marisa_shell_templates.npz",
+      "sha256": "4143bb8d7fa2fd8687042453d4b86661cc9f3bc867a4835d0c2f9fd3b24a24fe",
+      "bytes": 2154
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/audit_fine.log",
+      "sha256": "b8104c1e5cc323848c6c94133af5875fe217c500efda3e039e0705adc15fcf5e",
+      "bytes": 2078
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/build.log",
+      "sha256": "cd08bae08998f0a881475b9adca6d04db490d98938ff413c03e465a018e5ecf8",
+      "bytes": 40
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/python-suite.log",
+      "sha256": "a116cf441205064cec25217fb9550aa23fa33b3d05d9c75683e0058ff2071dbb",
+      "bytes": 28750
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/release-test.log",
+      "sha256": "4a10df9530478dc18ea549bb2da4c838f68ac67a41f42c4514ea64e96b97c6ac",
+      "bytes": 2167
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_post_tree_ir_20260930/tests.log",
+      "sha256": "46968958fe303fea74e152673da1e274e604a3c49e29d6581ea759f6944b5e29",
+      "bytes": 179
+    }
+  ],
+  "historical_outputs_modified": false,
+  "historical_pre_manifest_rewritten": false,
+  "github_published": false
+}

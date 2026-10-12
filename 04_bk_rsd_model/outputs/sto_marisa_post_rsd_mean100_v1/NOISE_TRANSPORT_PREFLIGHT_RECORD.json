@@ -1,0 +1,45 @@
+{
+  "status": "PREFLIGHT_FAILURES_PRESERVED_FINAL_SUBMISSION_VERIFIED_NOT_RUNNING",
+  "checked_UTC": "2026-10-09T14:58:33Z",
+  "directory_discovery_attempt": {
+    "host": "login26",
+    "test_PID": 975337,
+    "test_starttime_ticks": "144180025",
+    "CPU_affinity": [11],
+    "wait_channel": "cl_sync_io_wait",
+    "observed_syscall": "stat",
+    "observed_stat_target": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_post_rsd_weighted_estimator.py",
+    "owned_preflight_parent_PID": 975242,
+    "owned_parent_command_and_test_starttime_verified_before_signal": true,
+    "owned_parent_confirmed_absent_after_SIGTERM": true,
+    "test_still_existed_with_termination_signal_pending_at_verification": true,
+    "test_not_falsely_reported_as_terminated": true,
+    "batch_job_was_not_submitted_by_this_attempt": true,
+    "fix": "run the exact test module, not a filesystem-wide test discovery"
+  },
+  "specific_module_attempt": {
+    "failed_before_submission": true,
+    "error": "ImportError: scipy.special.sph_harm absent in existing production SciPy",
+    "unneeded_import_chain": "noise builder -> IR registry mesh helper -> IR harmonics",
+    "fix": "reuse verified original no-IR CONTRACT.json grid mapping and geometry SHA directly",
+    "old_IR_sources_changed": false,
+    "packages_installed_or_environment_changed": false
+  },
+  "final_preflight": {
+    "specific_module_tests_passed": 2,
+    "original_44_bin_grid_contract_verified": true,
+    "plan_status": "OPERATOR_TEMPLATE_PLAN_VALIDATED",
+    "contract_sha256": "ad54307a36882b9eee7b148c4979ae89c8ac7cb212fef00412373e770a0bc027",
+    "batch_script_syntax_passed": true,
+    "job_id": 59594709,
+    "live_Slurm_state": "PENDING",
+    "live_Slurm_reason": "Priority",
+    "allocated_nodes": 0,
+    "requested_CPU": 32,
+    "requested_memory": "60G",
+    "stored_and_current_batch_script_sha256": "aab76e723d6265cbb43a16ec0543d8fac0e84a925a7d5a529bc7f1574fdb5ad7"
+  },
+  "measurement_job59592166_unchanged": true,
+  "actual_STO_noise_scientifically_released": false,
+  "main_MCMC_started": 0
+}

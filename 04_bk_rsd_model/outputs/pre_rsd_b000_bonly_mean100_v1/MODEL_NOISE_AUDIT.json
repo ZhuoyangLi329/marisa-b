@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "parameter_count": 7,
+  "native_SP_independent_combination_retained": true,
+  "unit_SP_residual_max_whitened_mean100_shift": 0.013416640975349553,
+  "max_shift_at_prior_amplitude10": 0.13416640975349553,
+  "threshold_for_safe_two_shape_reduction": 0.1,
+  "conversion_to_effective_A_S": [
+    4.7034797571431036e-05,
+    -0.00011659121842304153
+  ],
+  "shapes": "A=sum Plin/nbar; S=valid_fraction/nbar^2; optional R=orthogonal native-SP lattice combination",
+  "finite_PNG_stochastic_closure": "still provisional, not implemented",
+  "retained_for_covariance_only_comparison": true,
+  "audit_origin": "legacy numerical rank audit; keep all seven existing parameters, do not prune after changing statistical precision",
+  "likelihood_covariance_multiplier": 1.0
+}

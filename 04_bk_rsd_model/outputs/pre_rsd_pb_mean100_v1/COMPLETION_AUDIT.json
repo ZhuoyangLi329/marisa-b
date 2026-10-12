@@ -1,0 +1,209 @@
+{
+  "status": "PASS",
+  "n_joint_cases": 18,
+  "n_converged": 18,
+  "n_P_measurements": 800,
+  "P_bins": 12,
+  "full_same_realization_cross_covariance": true,
+  "data_mean_count": 100,
+  "covariance_sample_count": 500,
+  "volume_Gpc_h3": 1.0,
+  "covariance_multiplier": 1.0,
+  "covariance_is_of_mean": false,
+  "cases": [
+    {
+      "name": "fiducial_mean100_k0.08",
+      "converged": true,
+      "steps": 12000,
+      "P_bins": 12,
+      "B_bins": 9,
+      "rhat_max": 1.0007643991897048,
+      "likelihood_sha256": "dcfc43c1b097855f583597e73b22564b73d1c381f3bdf8ac2625d5319f956158"
+    },
+    {
+      "name": "fiducial_mean100_k0.10",
+      "converged": true,
+      "steps": 10000,
+      "P_bins": 12,
+      "B_bins": 14,
+      "rhat_max": 1.0009680852331262,
+      "likelihood_sha256": "c7b39cba3edea14cd9e001d0a4149851024cd12c98cd64825ed0c74200f2870a"
+    },
+    {
+      "name": "fiducial_mean100_k0.12",
+      "converged": true,
+      "steps": 10000,
+      "P_bins": 12,
+      "B_bins": 20,
+      "rhat_max": 1.001305471779596,
+      "likelihood_sha256": "67ef3abc753292bdad36ce8c0b002d9be24b26cbe1edb55bd55908588eba590e"
+    },
+    {
+      "name": "fiducial_mean100_k0.14",
+      "converged": true,
+      "steps": 8000,
+      "P_bins": 12,
+      "B_bins": 27,
+      "rhat_max": 1.0006864778390827,
+      "likelihood_sha256": "28c2ede0f4ee2e3ecb7bd611b67bf885e2032f9279c2b8bd80e03e9947b86aa1"
+    },
+    {
+      "name": "fiducial_mean100_k0.18",
+      "converged": true,
+      "steps": 8000,
+      "P_bins": 12,
+      "B_bins": 35,
+      "rhat_max": 1.0007429709610205,
+      "likelihood_sha256": "63dbee203aa2df57036dc6cad5c08b3e87ab7291be78ef9f66292e7f5d8277df"
+    },
+    {
+      "name": "fiducial_mean100_k0.20",
+      "converged": true,
+      "steps": 8000,
+      "P_bins": 12,
+      "B_bins": 44,
+      "rhat_max": 1.000824412358337,
+      "likelihood_sha256": "220723d46c5ed6aaf8755c7525be598411fbb3dfd9d268e686fc16413b7742e0"
+    },
+    {
+      "name": "LC_p_mean100_k0.08",
+      "converged": true,
+      "steps": 10000,
+      "P_bins": 12,
+      "B_bins": 9,
+      "rhat_max": 1.0004918550191841,
+      "likelihood_sha256": "9dc51a4022f9cd5afdd1635009b53d000e49176c551c8e271cc30461c9def7be"
+    },
+    {
+      "name": "LC_p_mean100_k0.10",
+      "converged": true,
+      "steps": 10000,
+      "P_bins": 12,
+      "B_bins": 14,
+      "rhat_max": 1.0010482864084447,
+      "likelihood_sha256": "4b9c63f6c51e19cb7f49dae0675e8432f41de11bfed463255e28462a7b544a73"
+    },
+    {
+      "name": "LC_p_mean100_k0.12",
+      "converged": true,
+      "steps": 8000,
+      "P_bins": 12,
+      "B_bins": 20,
+      "rhat_max": 1.0005234356593422,
+      "likelihood_sha256": "3c4c7fd601e51127d64dd05afe55bef8c2b5111c688d86d2d660d7f40b8e1d77"
+    },
+    {
+      "name": "LC_p_mean100_k0.14",
+      "converged": true,
+      "steps": 10000,
+      "P_bins": 12,
+      "B_bins": 27,
+      "rhat_max": 1.0004576024901943,
+      "likelihood_sha256": "73cd4321d643851cc582c2888fbf5458c2b2f78d418f889e1b8605a248735358"
+    },
+    {
+      "name": "LC_p_mean100_k0.18",
+      "converged": true,
+      "steps": 8000,
+      "P_bins": 12,
+      "B_bins": 35,
+      "rhat_max": 1.0008279426218283,
+      "likelihood_sha256": "a6743d906609bb9cc762ec25c249fefb12cedc200f0ed463f6201807dedde4e2"
+    },
+    {
+      "name": "LC_p_mean100_k0.20",
+      "converged": true,
+      "steps": 8000,
+      "P_bins": 12,
+      "B_bins": 44,
+      "rhat_max": 1.0010166081394671,
+      "likelihood_sha256": "eddf76c2530b07a120658e0ac8648716013b94ff1f1619e16e80dd06dd3c207c"
+    },
+    {
+      "name": "LC_m_mean100_k0.08",
+      "converged": true,
+      "steps": 12000,
+      "P_bins": 12,
+      "B_bins": 9,
+      "rhat_max": 1.0007414675454391,
+      "likelihood_sha256": "37d526869c6edbb43f5817abaf6bbe75ba338c5c0e0ad1660d19a209f542c96f"
+    },
+    {
+      "name": "LC_m_mean100_k0.10",
+      "converged": true,
+      "steps": 10000,
+      "P_bins": 12,
+      "B_bins": 14,
+      "rhat_max": 1.0009962579883966,
+      "likelihood_sha256": "d2a80e6b3207e618e389d842c03c1c26bb1ea5ac2c97aaa7ee906d94c73c8ace"
+    },
+    {
+      "name": "LC_m_mean100_k0.12",
+      "converged": true,
+      "steps": 8000,
+      "P_bins": 12,
+      "B_bins": 20,
+      "rhat_max": 1.0013037065181725,
+      "likelihood_sha256": "6e22e71220ad540703c893f61f5a1db684a0c6e71367300b5aaf4ef21851c844"
+    },
+    {
+      "name": "LC_m_mean100_k0.14",
+      "converged": true,
+      "steps": 8000,
+      "P_bins": 12,
+      "B_bins": 27,
+      "rhat_max": 1.0008448795151144,
+      "likelihood_sha256": "70f743454752e6d4784a41041fd133caadadc151b8ea659f399654d85c5ab6a7"
+    },
+    {
+      "name": "LC_m_mean100_k0.18",
+      "converged": true,
+      "steps": 8000,
+      "P_bins": 12,
+      "B_bins": 35,
+      "rhat_max": 1.0011081815897618,
+      "likelihood_sha256": "de066c8ec6b1e310761a1935864b742d0186de5eb2e66232228dc9b9a59361eb"
+    },
+    {
+      "name": "LC_m_mean100_k0.20",
+      "converged": true,
+      "steps": 8000,
+      "P_bins": 12,
+      "B_bins": 44,
+      "rhat_max": 1.0009196971662495,
+      "likelihood_sha256": "06ec33f0f1c70f1b21dbf179f9e671440ca6e2cb852443676f3baba510118024"
+    }
+  ],
+  "all_frozen_old_B_inputs_outputs_sha256_unchanged": true,
+  "maximum_logical_CPUs": 8,
+  "numeric_threads": 1,
+  "sampler_kernel_and_diagnostics_unchanged": true,
+  "no_PNG": true,
+  "resource_only_measurement_recovery": {
+    "pid": 156688,
+    "host": "login12",
+    "affinity": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "maximum_logical_CPUs": 8,
+    "threads_per_numeric_library": 1,
+    "launch_UTC": "2026-10-02T06:52:41.996185+00:00",
+    "runner_sha256": "7dc8e449abc1dbde44b02febcc5d41f461cff3ace608139ae78d4c804822c159",
+    "resource_recovery": true,
+    "measurement_batch_size": 10,
+    "maximum_measurement_workers": 4,
+    "maximum_MCMC_workers": 8,
+    "measurement_model_covariance_sampler_unchanged": true,
+    "pipeline": "pilot P60+fine3 \u2192 bulk P800 \u2192 freeze full P+B \u2192 18 MCMC \u2192 report \u2192 completion audit"
+  },
+  "PDF_sha256": "bea4411b57596fc68c492f4adc1d71d498185a215eb96ed58dc688e7b95c2b33",
+  "RESULTS_sha256": "8abb934915798f1f84f90692240e4990127f1e181670089f7027ab1f90863d0c",
+  "scientifically_certified": false
+}

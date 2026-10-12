@@ -1,0 +1,17 @@
+{
+  "created_UTC": "2026-10-10T16:37:31.529197+00:00",
+  "name": "LC_p_pre_PB_4plus3_k0.10",
+  "index": 15,
+  "converged": true,
+  "full_HDF_prior_gate_quantile_sigma_and_thin_RNG_replayed": true,
+  "steps_each_ensemble": 8000,
+  "stored_logprob_independent_spots": 512,
+  "maximum_logprob_spot_error": 2.042810365310288e-13,
+  "summary_sha256": "3de1c47ccd523039c1c9b16e70db1f7f1fc3cdd625abea2eecd94e4c4e7715dd",
+  "chain_sha256": [
+    "4f456f64b871b563bedbaacc9c352c01ddad16da936546f6b284d52e674e38a8",
+    "ba7758fbce382176af6d2ed85c4953f2b2075e33e3bd2ff9f61b0927e04f4e10",
+    "335c6a4ad46721f85d0236dd8e8038dcd4c8ba231d876b9788cf794c7ba3eb94",
+    "15556bd0d923863a60f5a8cbc1b7521e9b44d2a9aca7653d1ce22126eed80273"
+  ]
+}

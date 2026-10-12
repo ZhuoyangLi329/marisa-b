@@ -1,0 +1,12 @@
+{
+  "physical_p": 1.2822,
+  "p_origin": "real-space STO+Marisa calibrated p deployed in p-aware fits",
+  "estimator": "fixed calibrated value used in real-space analyses",
+  "RSD_p_recalibrated_in_this_run": false,
+  "realspace_p_source": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/SUMMARY.json",
+  "realspace_p_source_sha256": "539fb71a48da9f79d3b3e0288678796eddf6bf62eebf760d4840e612eb09c377",
+  "original_realspace_calibration": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_sto_marisa_fnlfixed100_freep_calib_v1/FREEP_RESULTS.json",
+  "original_realspace_calibration_sha256": "41d5a65e6a9340eb5a54b907e686a78ed0a1b41dbf97b65ff808548a889baf6c",
+  "baseline_RSD_p": 1.3079259941635721,
+  "p_uncertainty_propagated": false
+}

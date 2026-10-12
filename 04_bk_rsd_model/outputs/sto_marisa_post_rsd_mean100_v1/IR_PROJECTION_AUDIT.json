@@ -1,0 +1,21 @@
+{
+  "status": "IR_HARMONIC_FFT_PROJECTION_TEST_PASS",
+  "created_UTC": "2026-10-08T16:40:41.044613+00:00",
+  "tests_run": 4,
+  "log": "test_damping_context_guards (test_post_rsd_ir_projection.IRProjectionTest.test_damping_context_guards) ... ok\ntest_fft_full_shell_denominator_against_direct_nodes (test_post_rsd_ir_projection.IRProjectionTest.test_fft_full_shell_denominator_against_direct_nodes) ... ok\ntest_harmonic_tensor_against_independent_direct_angular_kernel (test_post_rsd_ir_projection.IRProjectionTest.test_harmonic_tensor_against_independent_direct_angular_kernel) ... ok\ntest_tagged_point_source_matches_native_wiggle_derivative (test_post_rsd_ir_projection.IRProjectionTest.test_tagged_point_source_matches_native_wiggle_derivative) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 3.531s\n\nOK\n",
+  "CPU_affinity": [
+    8
+  ],
+  "scope": "deterministic strict-O(Pw) finite-PNG, synthetic spectrum split, exact small full-shell FFT, LOS=z",
+  "full_production_registry_verified": false,
+  "production_parameter_interpolation_verified": false,
+  "actual_post_stochastic_validated": false,
+  "MCMC_released": false,
+  "hashes": {
+    "post_rsd_displacement.py": "da7a85d509e0185e76ffb69b0941afa04f8c11e30c963323ad59cbd66a3713e9",
+    "post_rsd_ir_harmonics.py": "5673e635e98df5b7f536de06511ec0b548c7a3cbe5b696ff14d29be899443f8d",
+    "post_rsd_ir_projection.py": "5d12d366318ef3cd28615bfb8600daa228f139c15e88b2065849b9daaf2ba9e2",
+    "test_post_rsd_ir_projection.py": "7482718636b5759e104fd585160f0751ab5fd3ba1c4d72ae354c234c4d392ef6",
+    "audit_post_rsd_ir_projection.py": "2d9950a5ee54eb3953c84a5f48f5c2945005b6a72f2f4ff4f3e5ea3e31233443"
+  }
+}

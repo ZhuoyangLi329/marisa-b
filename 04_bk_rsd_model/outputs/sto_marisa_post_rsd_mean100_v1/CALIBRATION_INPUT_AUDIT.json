@@ -1,0 +1,1197 @@
+{
+  "status": "HISTORICAL_P_SOURCE_AUDITED_NOT_ADOPTED",
+  "created_UTC": "2026-10-08T17:36:09.831256+00:00",
+  "source_comparisons": [
+    {
+      "cosmology": "fiducial",
+      "realization": 0,
+      "halo_positions_identical": true,
+      "weights_identical": false,
+      "max_absolute_weight_difference": 0.78684401512146,
+      "weight_L2_relative_difference": 0.07515013337167412,
+      "historical_gsr": 1.0,
+      "current_gsr": 2.0,
+      "historical_N2": 3347.735857083202,
+      "current_N2": 3336.7563161008275,
+      "historical_source": "/pscratch/sd/l/lzy/reconstruction-png/result_quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100_source/fiducial/real000/lam1_dm_nenv",
+      "current_source": "/pscratch/sd/l/lzy/reconstruction-png/result_quijote_halo_z0p5_r10_stovar_env_lam1_gsr2_thr15_fid500_lcp100_source/fiducial/real000/env_lam1_gsr2_thr15",
+      "historical_source_sha256": "5f1b9db35a464a5890d55566742b60ffa74fb205c210b89b04ab12cbd86fb385",
+      "current_source_sha256": "e9761ae4889e16712efa590d543f1dafd41d8217705af586db31afd99aed6752",
+      "historical_diagnostics_sha256": "a222b9e87bf6d63bdb8876b552f3982959ca90c067399d413610adf9205fcf87",
+      "current_diagnostics_sha256": "58b28f03ffc6ac4a29531425289e3f06e03c56471e51353b03a9c88821c353de"
+    },
+    {
+      "cosmology": "LC_p",
+      "realization": 0,
+      "halo_positions_identical": true,
+      "weights_identical": false,
+      "max_absolute_weight_difference": 0.8609282970428467,
+      "weight_L2_relative_difference": 0.0797904573379506,
+      "historical_gsr": 1.0,
+      "current_gsr": 2.0,
+      "historical_N2": 3363.5714219889364,
+      "current_N2": 3352.0169028062032,
+      "historical_source": "/pscratch/sd/l/lzy/reconstruction-png/result_quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100_source/LC_p/real000/lam1_dm_nenv",
+      "current_source": "/pscratch/sd/l/lzy/reconstruction-png/result_quijote_halo_z0p5_r10_stovar_env_lam1_gsr2_thr15_fid500_lcp100_source/LC_p/real000/env_lam1_gsr2_thr15",
+      "historical_source_sha256": "d316074634926ad04d7cabf944a6ce7ee4d1c79f542de21132aaeb4d95b1df69",
+      "current_source_sha256": "893202a9f11580b8b257e6e6e1a184d7656e74656c1977dc07a965cb9632e690",
+      "historical_diagnostics_sha256": "b779e5228b4e480e0bed651c5b596f8f45e75fdbe9b00cf6f99243d0d3e8160c",
+      "current_diagnostics_sha256": "f7e67cb267c6c6c0d58dc5e3e2129f208fbce1345a7901e776e11ec0b4f89c2a"
+    }
+  ],
+  "historical_calibrations": [
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/fnlfixed100_freep_results.json",
+      "sha256": "f06289e093b56c4919eb3010476ef0a15139f3c2f43a37a2769248650b782284",
+      "rows": [
+        {
+          "method": "sto_only",
+          "p": {
+            "half_width": 0.10226689006572465,
+            "median": 1.3394637946618602,
+            "q16": 1.2387139890463075,
+            "q2p5": 1.1412398648744062,
+            "q84": 1.4432477691777568,
+            "q97p5": 1.5427053312445362
+          },
+          "b1": {
+            "half_width": 0.017405349427403793,
+            "median": 2.2119283573040054,
+            "q16": 2.194613132258971,
+            "q2p5": 2.1773459284116483,
+            "q84": 2.2294238311137784,
+            "q97p5": 2.2461073502441598
+          },
+          "Pshot_residual": {
+            "half_width": 441.93928707676184,
+            "median": -577.4236239825507,
+            "q16": -1019.6157741405569,
+            "q2p5": -1448.3995146731763,
+            "q84": -135.73719998703322,
+            "q97p5": 299.293094056384
+          }
+        }
+      ],
+      "calibration_fNL_fixed": 100,
+      "target_realizations": [
+        0,
+        99
+      ],
+      "target_overlaps_current_validation": true,
+      "historical_volume_ratio": 42.875,
+      "historical_volume_or_covariance_used_in_current_task": false
+    },
+    {
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_sto_marisa_fnlfixed100_freep_calib_v1/FREEP_RESULTS.json",
+      "sha256": "41d5a65e6a9340eb5a54b907e686a78ed0a1b41dbf97b65ff808548a889baf6c",
+      "rows": [
+        {
+          "method": "sto_marisa",
+          "p": {
+            "half_width": 0.09878677888490783,
+            "median": 1.2827640472347774,
+            "q16": 1.1852953316555928,
+            "q2p5": 1.0878858480700002,
+            "q84": 1.3828688894254084,
+            "q97p5": 1.4826842168891587
+          },
+          "b1": {
+            "half_width": 0.016598463363836524,
+            "median": 2.217889546285489,
+            "q16": 2.2013881437962457,
+            "q2p5": 2.1851116918533484,
+            "q84": 2.2345850705239187,
+            "q97p5": 2.2507204948479287
+          },
+          "Pshot_residual": {
+            "half_width": 423.883402892875,
+            "median": -2615.668454074244,
+            "q16": -3041.2317908498135,
+            "q2p5": -3452.2513449806793,
+            "q84": -2193.4649850640635,
+            "q97p5": -1781.1551225196413
+          }
+        }
+      ],
+      "calibration_fNL_fixed": 100,
+      "target_realizations": [
+        0,
+        99
+      ],
+      "target_overlaps_current_validation": true,
+      "historical_volume_ratio": 42.875,
+      "historical_volume_or_covariance_used_in_current_task": false
+    }
+  ],
+  "historical_physical_p_direct_reuse_approved": false,
+  "physical_p_newly_fitted": false,
+  "frozen_algorithm_p_rec": 1.2822,
+  "frozen_algorithm_b_rec": 2.2280546353635335,
+  "holdout_candidates": [
+    {
+      "realization": 100,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real100/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 101,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real101/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 102,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real102/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 103,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real103/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 104,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real104/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 105,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real105/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 106,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real106/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 107,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real107/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 108,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real108/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 109,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real109/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 110,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real110/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 111,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real111/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 112,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real112/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 113,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real113/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 114,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real114/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 115,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real115/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 116,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real116/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 117,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real117/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 118,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real118/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 119,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real119/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 120,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real120/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 121,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real121/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 122,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real122/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 123,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real123/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 124,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real124/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 125,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real125/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 126,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real126/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 127,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real127/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 128,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real128/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 129,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real129/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 130,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real130/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 131,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real131/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 132,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real132/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 133,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real133/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 134,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real134/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 135,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real135/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 136,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real136/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 137,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real137/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 138,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real138/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 139,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real139/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 140,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real140/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 141,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real141/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 142,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real142/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 143,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real143/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 144,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real144/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 145,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real145/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 146,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real146/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 147,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real147/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 148,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real148/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 149,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real149/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 150,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real150/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 151,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real151/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 152,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real152/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 153,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real153/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 154,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real154/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 155,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real155/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 156,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real156/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 157,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real157/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 158,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real158/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 159,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real159/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 160,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real160/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 161,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real161/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 162,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real162/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 163,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real163/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 164,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real164/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 165,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real165/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 166,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real166/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 167,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real167/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 168,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real168/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 169,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real169/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 170,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real170/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 171,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real171/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 172,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real172/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 173,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real173/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 174,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real174/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 175,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real175/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 176,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real176/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 177,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real177/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 178,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real178/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 179,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real179/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 180,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real180/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 181,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real181/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 182,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real182/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 183,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real183/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 184,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real184/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 185,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real185/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 186,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real186/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 187,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real187/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 188,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real188/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 189,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real189/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 190,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real190/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 191,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real191/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 192,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real192/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 193,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real193/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 194,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real194/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 195,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real195/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 196,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real196/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 197,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real197/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 198,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real198/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 199,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real199/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 200,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real200/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 201,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real201/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 202,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real202/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 203,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real203/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 204,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real204/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 205,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real205/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 206,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real206/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 207,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real207/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 208,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real208/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 209,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real209/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 210,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real210/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 211,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real211/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 212,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real212/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 213,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real213/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 214,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real214/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 215,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real215/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 216,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real216/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 217,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real217/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 218,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real218/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 219,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real219/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 220,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real220/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 221,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real221/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 222,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real222/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 223,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real223/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 224,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real224/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 225,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real225/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 226,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real226/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 227,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real227/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 228,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real228/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 229,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real229/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 230,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real230/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 231,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real231/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 232,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real232/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 233,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real233/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 234,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real234/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 235,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real235/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 236,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real236/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 237,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real237/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 238,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real238/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 239,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real239/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 240,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real240/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 241,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real241/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 242,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real242/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 243,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real243/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 244,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real244/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 245,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real245/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 246,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real246/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 247,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real247/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 248,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real248/env_lam1_gsr2_thr15"
+    },
+    {
+      "realization": 249,
+      "raw_fof_exists": true,
+      "weights_exist": true,
+      "recipe_matches": true,
+      "source": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_v4_lcp250_source/LC_p/real249/env_lam1_gsr2_thr15"
+    }
+  ],
+  "holdout_complete_count": 150,
+  "holdout_role": "potential independent calibration of weighted STO RSD input before Marisa, not an additional reconstruction comparison",
+  "main_validation_ids_unchanged": [
+    0,
+    99
+  ],
+  "main_covariance_ids_unchanged": [
+    1000,
+    1499
+  ],
+  "main_covariance_count": 500,
+  "main_covariance_of_mean": false,
+  "volume_Gpc_h3": 1.0,
+  "independent_main_covariance_inputs_still_missing": true,
+  "entry_sha256": "d4aa5477ebfda0e702bbf34517fbae42aa7f4844105d9b0b970cac7cd6177c68"
+}

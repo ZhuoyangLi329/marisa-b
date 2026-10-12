@@ -1,0 +1,460 @@
+{
+  "scope": "all44 actual B bins at one diagnostic parameter point, deterministic Gaussian-long LO IR only",
+  "indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    42,
+    43,
+    44,
+    45,
+    47,
+    48,
+    54,
+    55,
+    56,
+    58,
+    59,
+    65,
+    66,
+    68,
+    69,
+    75,
+    77,
+    78,
+    92,
+    93,
+    99
+  ],
+  "cuts": {
+    "0.08": [
+      1,
+      2,
+      3,
+      15,
+      16,
+      17,
+      29,
+      30,
+      42
+    ],
+    "0.1": [
+      1,
+      2,
+      3,
+      4,
+      15,
+      16,
+      17,
+      18,
+      29,
+      30,
+      31,
+      42,
+      43,
+      54
+    ],
+    "0.12": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      15,
+      16,
+      17,
+      18,
+      19,
+      29,
+      30,
+      31,
+      32,
+      42,
+      43,
+      44,
+      54,
+      55,
+      65
+    ],
+    "0.14": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      29,
+      30,
+      31,
+      32,
+      33,
+      42,
+      43,
+      44,
+      45,
+      54,
+      55,
+      56,
+      65,
+      66,
+      75
+    ],
+    "0.18": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      42,
+      43,
+      44,
+      45,
+      47,
+      54,
+      55,
+      56,
+      58,
+      65,
+      66,
+      68,
+      75,
+      77,
+      92
+    ],
+    "0.2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      42,
+      43,
+      44,
+      45,
+      47,
+      48,
+      54,
+      55,
+      56,
+      58,
+      59,
+      65,
+      66,
+      68,
+      69,
+      75,
+      77,
+      78,
+      92,
+      93,
+      99
+    ]
+  },
+  "edges": [
+    0.0,
+    0.02035714285714286,
+    0.04107142857142857,
+    0.06178571428571428,
+    0.08249999999999999,
+    0.1032142857142857,
+    0.12392857142857142,
+    0.14464285714285713,
+    0.16535714285714287,
+    0.18607142857142855,
+    0.2067857142857143,
+    0.22749999999999998,
+    0.24821428571428572,
+    0.2689285714285714,
+    0.2896428571428571,
+    0.3103571428571429
+  ],
+  "pair_meshes": {
+    "1": [
+      32,
+      48
+    ],
+    "2": [
+      48,
+      64
+    ],
+    "3": [
+      64,
+      80
+    ],
+    "4": [
+      80,
+      96
+    ],
+    "5": [
+      80,
+      96
+    ],
+    "6": [
+      96,
+      112
+    ],
+    "8": [
+      128,
+      144
+    ],
+    "9": [
+      144,
+      160
+    ],
+    "15": [
+      32,
+      48
+    ],
+    "16": [
+      48,
+      64
+    ],
+    "17": [
+      64,
+      80
+    ],
+    "18": [
+      80,
+      96
+    ],
+    "19": [
+      80,
+      96
+    ],
+    "20": [
+      96,
+      112
+    ],
+    "22": [
+      128,
+      144
+    ],
+    "23": [
+      144,
+      160
+    ],
+    "29": [
+      48,
+      64
+    ],
+    "30": [
+      64,
+      80
+    ],
+    "31": [
+      80,
+      96
+    ],
+    "32": [
+      80,
+      96
+    ],
+    "33": [
+      96,
+      112
+    ],
+    "35": [
+      128,
+      144
+    ],
+    "36": [
+      144,
+      160
+    ],
+    "42": [
+      64,
+      80
+    ],
+    "43": [
+      80,
+      96
+    ],
+    "44": [
+      80,
+      96
+    ],
+    "45": [
+      96,
+      112
+    ],
+    "47": [
+      128,
+      144
+    ],
+    "48": [
+      144,
+      160
+    ],
+    "54": [
+      80,
+      96
+    ],
+    "55": [
+      80,
+      96
+    ],
+    "56": [
+      96,
+      112
+    ],
+    "58": [
+      128,
+      144
+    ],
+    "59": [
+      144,
+      160
+    ],
+    "65": [
+      80,
+      96
+    ],
+    "66": [
+      96,
+      112
+    ],
+    "68": [
+      128,
+      144
+    ],
+    "69": [
+      144,
+      160
+    ],
+    "75": [
+      96,
+      112
+    ],
+    "77": [
+      128,
+      144
+    ],
+    "78": [
+      144,
+      160
+    ],
+    "92": [
+      128,
+      144
+    ],
+    "93": [
+      144,
+      160
+    ],
+    "99": [
+      144,
+      160
+    ]
+  },
+  "probe_b1": 2.2280546353635335,
+  "probe_p_halo": 1.31,
+  "physical_p_calibrated": false,
+  "f_growth": 0.7625790037720044,
+  "recon_mesh": 256,
+  "alpha_sha256": "d1a846fa8ac71fe5eee626d0020f591d0cdcfdb82a53da97250799d858fcff83",
+  "spectrum": {
+    "physical_table": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+    "physical_sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb",
+    "no_wiggle_split": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/spectrum_split_s0.25.npz",
+    "no_wiggle_sha256": "df105acc326fd4cbe365a06902151063af8a5bfd757396ed7bfab8717a38922f",
+    "no_wiggle_metadata_sha256": "9f688ab56f776209a05fc451a6ce3a84d62bfd7893c53e421d93a9a06fe2b958",
+    "recipe": "Gaussian Eisenstein-Hu ratio, Quijote fiducial, 8192 log nodes, 4-sigma kernel",
+    "smoothing_lambda_ln_k": 0.25,
+    "redshift": 0.5,
+    "physical_P_M_unchanged": true
+  },
+  "harmonics": {
+    "nq": 1025,
+    "n_mu": 48,
+    "n_phi": 96,
+    "lmax": 12,
+    "r_bao": 110.0,
+    "qmin": 0.006283185307179587,
+    "k_ir": 0.15
+  },
+  "double_grid_scaled_tolerance": 1e-09,
+  "fNL_coefficient_scaling": [
+    1.0,
+    500.0,
+    250000.0
+  ],
+  "zero_leg_source": 0,
+  "denominator": "original full two-shell mode counts",
+  "closing_leg_kmax_cut": false,
+  "b1_parameter_interpolation_certified": false,
+  "post_covariance_whitening_done": false,
+  "immutable_sources": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_post_rsd_ir_registry.py": "b85f4805417546277f5b044fddea5701cf4e8d5b71a77d6e0d58e753f85ee0a5",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/realspace_binning_reference/REALSPACE_BINNING.npz": "622a52922ab6722382b000092e7398269825fc91065026a5cb37677115595ca4",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/work/build/libmarisa_tree_rsd_fixedrec.so": "263778aa37531ac96ddd7b0297d460d78c0d353dfaf8351dbcf1908fead66953",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_grid.py": "36b92ced773fcb4e51581fe542034fb63915f9b02e2c6ed2d2f25faea94212b5",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_projection.py": "5d12d366318ef3cd28615bfb8600daa228f139c15e88b2065849b9daaf2ba9e2",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_harmonics.py": "5673e635e98df5b7f536de06511ec0b548c7a3cbe5b696ff14d29be899443f8d",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_displacement.py": "da7a85d509e0185e76ffb69b0941afa04f8c11e30c963323ad59cbd66a3713e9",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_ir_inputs.py": "8f14aae93cf0b02bc09e46a575ce98630930c3167e2972acbe1a39b0dd57c24b",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_fft_projection.py": "a3ac06aec7e973b2152ca312e34296f7531fc8c55c305c7d510b502fe1a02459",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_fixedrec.py": "f8d15b9678c44322ccefa3d3a1fb18592af011ca5d74505abf70cc905c4c5ed6",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_b000_fft_projection.py": "da7fe70eeb34b23770897f1c32671ca2acdd025bf9a962a0833ef572098f1c03",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_b000_contract.py": "550c7230ac7562cbb89e625cd5d28454fc3521bfe66ca2550141fbf90f048a0a",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_bonly_common.py": "25bdf612d4007bd88fd73ea9fff42be2e5f52edb9c1293747bb0f31ff7a026cf"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "created_UTC": "2026-10-09T21:34:47.315182+00:00",
+  "tests_passed": 5,
+  "local_tests_passed": 5,
+  "syntax_pass": true,
+  "CPU_affinity": [
+    12
+  ],
+  "stdout": "test_direct_pair_enumeration_all_coefficients_and_unrestricted_closing (test_post_rsd_cross_leg_oracle.CrossLegOracleTest.test_direct_pair_enumeration_all_coefficients_and_unrestricted_closing) ... ok\ntest_disabled_shift_and_bad_geometry_fail_closed (test_post_rsd_cross_leg_oracle.CrossLegOracleTest.test_disabled_shift_and_bad_geometry_fail_closed) ... ok\ntest_full_denominator_includes_source_zero_not_numerator (test_post_rsd_cross_leg_oracle.CrossLegOracleTest.test_full_denominator_includes_source_zero_not_numerator) ... ok\ntest_no_production_factor_or_integral_or_transform_access (test_post_rsd_cross_leg_oracle.CrossLegOracleTest.test_no_production_factor_or_integral_or_transform_access) ... ok\ntest_original_projection_multiple_bias_and_p_and_finite_PNG (test_post_rsd_cross_leg_oracle.CrossLegOracleTest.test_original_projection_multiple_bias_and_p_and_finite_PNG) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.342s\n\nOK\n",
+  "sources_sha256": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_cross_leg_oracle.py": "9f892f12b387d0d3fa77423e3de784cb79a34506f8511fa2f13342e52e2108de",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_cross_leg_oracle.py": "8ca60d8c367cfa19fd78a5f5780d1f8813c5506154136055da3dcd3dbc2153f6",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_post_rsd_cross_leg_all44.py": "844a3bf4d0903511ae4104747b3c177e21ff4f63ba37289c1d7d7eb261e0d56f"
+  },
+  "active_measurement_sources_34_unchanged": true,
+  "all44_launch_readiness": "NOT_READY_NO_ALL44_RUN_DISPATCHED: [Errno 2] No such file or directory: '/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/compute8_measurement_series_v3/HANDOFF_READY.json'",
+  "full44_PN_cross_executed": false,
+  "actual_STO_closure": false,
+  "physical_p_calibrated": false,
+  "MCMC_released": false,
+  "IR": false
+}

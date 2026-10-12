@@ -1,0 +1,46 @@
+{
+  "status": "STO_SOURCE_REPRODUCTION_PASS",
+  "created_UTC": "2026-10-08T15:25:41.599095+00:00",
+  "fiducial_cache_comparison": {
+    "positions_mpc_h": {
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "weights": {
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "env_labels": {
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "component_labels": {
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "base_weights": {
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "solution_weight_by_component": {
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0
+    }
+  },
+  "old_source_sha256": "e9761ae4889e16712efa590d543f1dafd41d8217705af586db31afd99aed6752",
+  "regenerated_source_sha256": "e9761ae4889e16712efa590d543f1dafd41d8217705af586db31afd99aed6752",
+  "LC_m_source_sha256": "88ab89b33528a6925029ef08e19b742ea4103ee4b79a10afed618fc0baf1abf1",
+  "LC_m_diagnostics_sha256": "529b046c8f97918e1b7b7643a5b0da35448d6ef43060657fe60f7145e4d38781",
+  "LC_m_raw_fof_sha256": "05312b8637090884f931f2a614ee818e14245c216e9e74f516d8ab623f397111",
+  "LC_m_halo_rows_exactly_equal": true,
+  "LC_m_nhalo": 309357,
+  "LC_m_weight_min_max": [
+    0.906442403793335,
+    1.9035429954528809
+  ],
+  "new_source_root": "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/outputs/sto_marisa_post_rsd_source",
+  "old_source_modified": false,
+  "covariance_inputs_complete": false,
+  "environment_note": "desilike lacks pmesh; successfully used existing cosmodesi production environment; no installation",
+  "entry_sha256": "0efc4f4df2e867347041adb5b261e7f4968bd290206e75c5106f0b90a29035db"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "LC_p_post_PB_4plus4_k0.14_realspaceP",
+  "converged": true,
+  "steps_each_ensemble": 10000,
+  "complete_HDF_priors_gates_quantiles_sigma_thin_replayed": true,
+  "independent_logprob_spots": 512,
+  "max_logprob_error": 1.1013412404281553e-13,
+  "summary_sha256": "09ca9306772d750a8d047b1387577ad330ce8a9c1078c54bfdafd596c90d23f2",
+  "chain_sha256": [
+    "8becec5c6a67ada7314aadd3aacc92762bdd6a8d4680bfc34d6a9bcee2853b5f",
+    "c0ecdcc9b600be3a9373f8297a30fda25473801d28a84402080273a4c36b4f9c",
+    "ed77d91f69325f86540772b0e89108193eb11b986ce64ad3045d780da34f0b15",
+    "f8200b219d72c7795ca0d480a34f725fb89de5b7925c1b19d4cf527e0ddb39f6"
+  ],
+  "created_UTC": "2026-10-11T04:48:17.988844+00:00"
+}

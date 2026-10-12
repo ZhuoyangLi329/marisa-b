@@ -1,0 +1,70 @@
+{
+  "status": "PRODUCTION_B000_WINDOW_MATCHES_EXISTING_FFT_ALL44_BINS",
+  "created_UTC": "2026-10-09T05:08:26.122918+00:00",
+  "host": "login26",
+  "CPU_affinity": [
+    10
+  ],
+  "backend": "cpu",
+  "production_mesh": 256,
+  "basis": "sugiyama",
+  "multipole": [
+    0,
+    0,
+    0
+  ],
+  "used_shells": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+  ],
+  "mode_count_exported": 123875,
+  "fit_bins": 44,
+  "actual_theory_label_mismatches_in_fitted_shells": 0,
+  "all120_actual_pair_counts_match_measured_pilot": true,
+  "all44_model_pair_counts_match_measured_pilot": true,
+  "legacy_reference_count_difference_fit_bins": [
+    8,
+    9,
+    22,
+    23,
+    35,
+    36,
+    47,
+    48,
+    58,
+    59,
+    68,
+    69,
+    77,
+    78,
+    92,
+    93,
+    99
+  ],
+  "legacy_reference_max_relative_count_difference": 0.004448008350278254,
+  "theory_or_measurement_modified": false,
+  "old_reference_preserved": true,
+  "third_leg_kmax_cut_added": false,
+  "full_two_shell_denominator_preserved": true,
+  "zero_leg_source_policy_not_changed": true,
+  "main_MCMC_released": false,
+  "source_sha256": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/audit_sto_post_b_window.py": "5a9f6777d5142c1c5998aca03633c21a83566fc7ab562443681b231fb635cb19",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/01_reconstruction_methods/common/halo_b000_pipeline.py": "fed90b2a2a89cde5826b8f5e512333cdbaa6574d866553d388c4fb5e543289b0",
+    "/global/common/software/desi/users/adematti/perlmutter/cosmodesiconda/20260321-1.0.0/code/desi-clustering/main/lib/python3.12/site-packages/clustering_statistics/spectrum3_tools.py": "36bb58ec168e1e24c1d141071f210aafffc6a0f624efb6f79e3a2ae6ea55836c",
+    "/global/common/software/desi/users/adematti/perlmutter/cosmodesiconda/20260321-1.0.0/code/jaxpower/main/lib/python3.12/site-packages/jaxpower/mesh3.py": "6b03d2ca24165524be2320a1185516628b30a5be504074b77f9cc51340b6339c",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/vendor/quijote_strict_triangle_fft_estimator.py": "bc5a2f83a6b445670d888e4f62c451713ad992dc70af5531342ba5530de2c495",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/rsd_b000_fft_projection.py": "da7fe70eeb34b23770897f1c32671ca2acdd025bf9a962a0833ef572098f1c03",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/realspace_binning_reference/REALSPACE_BINNING.npz": "622a52922ab6722382b000092e7398269825fc91065026a5cb37677115595ca4",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/pilots/fiducial_real000_rec256_meas256_ran30_selfmatched_zeroaudit_nested/DONE.json": "c9226d47764a34f6b8b64ed61e3c166aaf3dc3a90881c77e7b8f15d5ba0944c8",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/pilots/fiducial_real000_rec256_meas256_ran30_selfmatched_zeroaudit_nested/MEASUREMENTS.npz": "151621fdbb265692062012e48f7f54c2814666c1598c7b6d1619d0321c7c7432"
+  },
+  "window_sha256": "a56a4ca6384e5835689ff8266bb45c3425891f9b16f05a56f55dd6470663ee2a"
+}

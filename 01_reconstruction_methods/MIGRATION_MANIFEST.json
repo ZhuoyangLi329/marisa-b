@@ -1,0 +1,71 @@
+{
+  "source_root": "/pscratch/sd/l/lzy/reconstruction-png",
+  "destination_root": "/pscratch/sd/l/lzy/reconstuction-png-v2",
+  "source_files_unchanged": true,
+  "source_files": [
+    {
+      "source": "/pscratch/sd/l/lzy/reconstruction-png/codes/quijote_dm_2d_paperbin_runner_tools.py",
+      "source_sha256": "f954df8b252cb0bc38a7dcd08488d0524f8b4e10b3ee944a02b6dc7029c171f6",
+      "destination": "common/quijote_dm_2d_paperbin_runner_tools.py",
+      "changes": "原样复制",
+      "destination_sha256": "f954df8b252cb0bc38a7dcd08488d0524f8b4e10b3ee944a02b6dc7029c171f6"
+    },
+    {
+      "source": "/pscratch/sd/l/lzy/reconstruction-png/codes/stovar_jaxpower_compat.py",
+      "source_sha256": "8f9d8435477680352e5edc7fe89dd3e97a03ce22b9af9141580d942aa3236833",
+      "destination": "common/stovar_jaxpower_compat.py",
+      "changes": "原样复制",
+      "destination_sha256": "8f9d8435477680352e5edc7fe89dd3e97a03ce22b9af9141580d942aa3236833"
+    },
+    {
+      "source": "/pscratch/sd/l/lzy/marisa-recon/clustering_statistics/png_recon_tools.py",
+      "source_sha256": "5ee0b1083cdc11253df23a054764f5456ade828d6b7d2c779d4fdf66e031e40d",
+      "destination": "marisa_gra/png_recon_tools.py",
+      "changes": "原样复制",
+      "destination_sha256": "5ee0b1083cdc11253df23a054764f5456ade828d6b7d2c779d4fdf66e031e40d"
+    },
+    {
+      "source": "/pscratch/sd/l/lzy/reconstruction-png/codes/marisa_recon_runner_tools.py",
+      "source_sha256": "4bc8945b051878c9eb0445405d47d8cef6af20b0243760e237ac565a0a92821a",
+      "destination": "marisa_gra/marisa_recon_runner_tools.py",
+      "changes": "激活路径改为本目录；直接导入本地 png_recon_tools；位移和 alpha 公式未改",
+      "destination_sha256": "8cbb4fbc0c23491b4cd2dbc41c42896028ef04f2f0b9b445c1c04b383e8ad5bc"
+    },
+    {
+      "source": "/pscratch/sd/l/lzy/reconstruction-png/codes/run_quijote_halo_z0p5_jaxrecon_jaxpower_b000.py",
+      "source_sha256": "9e889dff2b40a6872d7499dc0e217e985ee93cca02d0281cb63664fbfdc3294c",
+      "destination": "common/halo_b000_pipeline.py",
+      "changes": "合并标准/Marisa/组合共用入口；动态定位 v2；输出路径检查；其余数值流程保留",
+      "destination_sha256": "fed90b2a2a89cde5826b8f5e512333cdbaa6574d866553d388c4fb5e543289b0"
+    },
+    {
+      "source": "/pscratch/sd/l/lzy/reconstruction-png/codes/run_quijote_halo_sto_recon_variants_v1.py",
+      "source_sha256": "d26893eb90b0430e189e4812361e0581bda7ade51d4fb32e4fdb3f6aa7f6fde7",
+      "destination": "sto_recon/run_halo_sto_variants.py",
+      "changes": "保留完整现役 STO 实现；根目录动态定位 v2；输出检查；求权重科学函数未改",
+      "destination_sha256": "6d3502015dd341b9e468c78f517fc7ad7ef39fc4bbb22e4d655e34e106ce7be2"
+    },
+    {
+      "source": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_mmin1e13_pk_bias/fiducial_mesh256_kmax0p10_mmin1e13_fid500_realspace_bias.json",
+      "source_sha256": "d7f16dc400cf5d2fc9a7a81518ba6d727a253e3b039e6183610507bb7717693e",
+      "destination": "examples/halo_bias.json",
+      "changes": "原样复制",
+      "destination_sha256": "fbfd5fa5baf5ab545e3234f5ae920fc4a9a3bbb2915649ef1b8cd47dd988bab1"
+    },
+    {
+      "source": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100_bias/quijote_halo_z0p5_r10_lam1_dm_nenv_fid500_lcp100_fid500_sto_weighted_bias_canonical.json",
+      "source_sha256": "7855986d39a0f0c08c7ae9089bb50244c708ac461b0a50bca005b94987b0372d",
+      "destination": "examples/sto_bias.json",
+      "changes": "原样复制",
+      "destination_sha256": "7855986d39a0f0c08c7ae9089bb50244c708ac461b0a50bca005b94987b0372d"
+    }
+  ],
+  "temporary_copies_moved_to": "/tmp/reconstruction_png_v2_migration_20260914",
+  "excluded": [
+    "旧 archive wrapper",
+    "批量生产 manifest",
+    "原始模拟",
+    "历史结果日志",
+    "Fisher/MCMC/绘图代码"
+  ]
+}

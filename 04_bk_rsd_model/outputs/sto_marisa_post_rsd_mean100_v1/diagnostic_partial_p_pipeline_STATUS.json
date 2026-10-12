@@ -1,0 +1,13 @@
+{
+  "state": "FAILED_PRESERVED_REQUIRES_INSPECTION",
+  "pid": 1674026,
+  "host": "login26",
+  "CPU_affinity": [
+    13
+  ],
+  "started_UTC": "2026-10-10T06:26:43.915358+00:00",
+  "child_pid": null,
+  "completed_cases": [],
+  "updated_UTC": "2026-10-10T06:26:49.994237+00:00",
+  "error": "Traceback (most recent call last):\n  File \"/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/run_sto_post_partial_p_mcmc.py\", line 234, in pipeline\n    freeze()\n  File \"/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/run_sto_post_partial_p_mcmc.py\", line 129, in freeze\n    PART/'code/rsd_pb_common.py',PART/'code/rsd_b000_contract.py',spectral.TABLE,\n                                                                  ^^^^^^^^^^^^^^\nAttributeError: module 'rsd_pb_common' has no attribute 'TABLE'\n"
+}

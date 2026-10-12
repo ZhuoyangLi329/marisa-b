@@ -1,0 +1,41 @@
+{
+  "status": "ACTUAL_EXACT_GRID_ACCELERATION_PASS",
+  "created_UTC": "2026-10-08T17:50:12.282937+00:00",
+  "rows": [
+    {
+      "bin": 1,
+      "mesh": 144,
+      "scaled_error": 5.857786721135045e-15,
+      "original_seconds": 576.3553779125214,
+      "accelerated_seconds": 63.72282266616821
+    },
+    {
+      "bin": 1,
+      "mesh": 160,
+      "scaled_error": 1.144098968971764e-17,
+      "original_seconds": 782.6280500888824,
+      "accelerated_seconds": 81.72342896461487
+    },
+    {
+      "bin": 99,
+      "mesh": 144,
+      "scaled_error": 0.0,
+      "original_seconds": 559.8256061077118,
+      "accelerated_seconds": 61.62809658050537
+    },
+    {
+      "bin": 99,
+      "mesh": 160,
+      "scaled_error": 0.0,
+      "original_seconds": 783.4162395000458,
+      "accelerated_seconds": 80.73452568054199
+    }
+  ],
+  "max_scaled_error": 5.857786721135045e-15,
+  "predefined_tolerance": 1e-09,
+  "baseline_sha256": "b49e5a8d656fe04efe0aaf07f14cf14589987f66197a4e125bd6eac6d3c85471",
+  "accelerated_sha256": "3eeabc1120638f56ec9f3fd0591c7e283c772a77b0401eb5016616d556aa58f0",
+  "comparison_source_sha256": "4ff29753f35689d818ea09b3e2194c5ff5b084e98d3208abf0588bcf885db54b",
+  "whitened_error": null,
+  "full_registry_verified": false
+}

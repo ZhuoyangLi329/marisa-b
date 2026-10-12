@@ -1,0 +1,38 @@
+{
+  "status": "EXACT_S113_POINT_TEST_PASS",
+  "created_UTC": "2026-10-08T14:58:05.522576+00:00",
+  "CPU_affinity": [
+    8
+  ],
+  "point_oracle": {
+    "raw": 46366114135225.31,
+    "shot": 45058453470753.41,
+    "corrected": 1307660664471.9062,
+    "all_same": 104499818800514.52,
+    "shell_counts": [
+      140,
+      874
+    ],
+    "ordered_triangles": 122360,
+    "unique_modes": 3310
+  },
+  "comparison": {
+    "corrected_exact": 1236037140480.0,
+    "shot_exact": 45130031562752.0,
+    "raw": 46366067785728.0,
+    "corrected_legacy": 1714365053547.7966,
+    "shot_legacy": 44651703649684.2,
+    "S113_difference": 478327913067.7966,
+    "exact_error_over_reference_scale": 0.0006853936091958788,
+    "legacy_error_over_reference_scale": 0.003891914777883691
+  },
+  "scope": "one nonzero-leg weighted data/random shell pair",
+  "change": "replace radial bin-center j0 projection with actual discrete-shell windows for S113 only",
+  "old_shared_installation_modified": false,
+  "original_failed_audit_preserved": true,
+  "full_registry_verified": false,
+  "formal_estimator_choice_frozen": false,
+  "elapsed_seconds": 18.81725239753723,
+  "entry_sha256": "57b9e1ab7e1743c39cce932d5b8e40767720b188d15ad6b4a50c6ba20044f6fa",
+  "adapter_sha256": "af18ce23a426b6a92959564de3e6bbc368b80d4ce74cac0f9d1d27a04e486b7b"
+}

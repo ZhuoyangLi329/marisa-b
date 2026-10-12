@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "new_cases_converged": 3,
+  "old_B_and_PB_data_models_cases_results_unchanged": true,
+  "same_P0_model_data_shared_priors": true,
+  "unscaled_C_PP_recomputed_from_Fid500": true,
+  "Hartlap_dimension": 12,
+  "posterior_analytic_marginalization_check": "PASS",
+  "maximum_Rhat": 1.0004106651451465,
+  "upstream_frozen_artifact_reuse_audit": {
+    "status": "PASS_FOR_FROZEN_ARTIFACT_REUSE",
+    "measurement_software_changes": [
+      {
+        "path": "/global/common/software/desi/users/adematti/perlmutter/cosmodesiconda/20260321-1.0.0/code/jaxpower/main/lib/python3.12/site-packages/jaxpower/mesh2.py",
+        "frozen_sha256": "861c22cf9c4e7a58c6409823533167a3d00d0eb1f54558d4d745753a850139a8",
+        "current_sha256": "b8eddf458b84666b8115d659c319ee56f75b6e96917367a71b9f0d0cfb44f01c",
+        "executed_in_this_P0_only_fit": false
+      }
+    ],
+    "other_upstream_immutable_inputs_unchanged": true,
+    "frozen_P0_ensemble_sha256": "61711b53709b13ad6b84e06a97465ecca6ed7378b722d64dea10fbebff357816",
+    "frozen_P_template_sha256": "e46da32e290e62d295740f5ecc87b2f2038cdd58a6e3c441e42fe70b077a4de1",
+    "live_binner_executed": false,
+    "old_PB_parent_guard_modified": false
+  },
+  "RESULTS_sha256": "308122b08d10ab85ee45f5124c484b69b22302cd8388b6e3f1a177a8f67cd55f",
+  "PDF_sha256": "a637e1a2485ab330ea72acbf67e228952280122698cea873d566fbb8910790fb",
+  "no_PNG_generated": true,
+  "scientifically_certified": false
+}

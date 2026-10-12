@@ -1,0 +1,613 @@
+{
+  "checks": {
+    "chain_convergence": {
+      "pass": true,
+      "rows": [
+        {
+          "case": "pre__fNL0",
+          "frozen_diagnostics_pass": true,
+          "pass": true,
+          "source": "frozen_v1"
+        },
+        {
+          "case": "standard__fNL0",
+          "frozen_diagnostics_pass": true,
+          "pass": true,
+          "source": "frozen_v1"
+        },
+        {
+          "case": "marisa__fNL0",
+          "frozen_diagnostics_pass": true,
+          "pass": true,
+          "source": "frozen_v1"
+        },
+        {
+          "case": "sto_only__fNL0",
+          "pass": true,
+          "recalculated_pass": true,
+          "rhat_max_abs": 0.0,
+          "task_status": "complete"
+        },
+        {
+          "case": "sto_marisa__fNL0",
+          "frozen_diagnostics_pass": true,
+          "pass": true,
+          "source": "frozen_v1"
+        },
+        {
+          "case": "pre__fNL100",
+          "frozen_diagnostics_pass": true,
+          "pass": true,
+          "source": "frozen_v1"
+        },
+        {
+          "case": "standard__fNL100",
+          "frozen_diagnostics_pass": true,
+          "pass": true,
+          "source": "frozen_v1"
+        },
+        {
+          "case": "marisa__fNL100",
+          "frozen_diagnostics_pass": true,
+          "pass": true,
+          "source": "frozen_v1"
+        },
+        {
+          "case": "sto_only__fNL100",
+          "pass": true,
+          "recalculated_pass": true,
+          "rhat_max_abs": 0.0,
+          "task_status": "complete"
+        },
+        {
+          "case": "sto_marisa__fNL100",
+          "frozen_diagnostics_pass": true,
+          "pass": true,
+          "source": "frozen_v1"
+        }
+      ]
+    },
+    "comparison_to_pre": {
+      "pass": true,
+      "rows": [
+        {
+          "case": "pre__fNL0",
+          "information_abs": 0.0,
+          "pass": true,
+          "ratio_abs": 0.0
+        },
+        {
+          "case": "standard__fNL0",
+          "information_abs": 0.0,
+          "pass": true,
+          "ratio_abs": 0.0
+        },
+        {
+          "case": "marisa__fNL0",
+          "information_abs": 0.0,
+          "pass": true,
+          "ratio_abs": 0.0
+        },
+        {
+          "case": "sto_only__fNL0",
+          "information_abs": 0.0,
+          "pass": true,
+          "ratio_abs": 0.0
+        },
+        {
+          "case": "sto_marisa__fNL0",
+          "information_abs": 0.0,
+          "pass": true,
+          "ratio_abs": 0.0
+        },
+        {
+          "case": "pre__fNL100",
+          "information_abs": 0.0,
+          "pass": true,
+          "ratio_abs": 0.0
+        },
+        {
+          "case": "standard__fNL100",
+          "information_abs": 0.0,
+          "pass": true,
+          "ratio_abs": 0.0
+        },
+        {
+          "case": "marisa__fNL100",
+          "information_abs": 0.0,
+          "pass": true,
+          "ratio_abs": 0.0
+        },
+        {
+          "case": "sto_only__fNL100",
+          "information_abs": 0.0,
+          "pass": true,
+          "ratio_abs": 0.0
+        },
+        {
+          "case": "sto_marisa__fNL100",
+          "information_abs": 0.0,
+          "pass": true,
+          "ratio_abs": 0.0
+        }
+      ]
+    },
+    "figures": {
+      "pass": true,
+      "pdf_pages": {
+        "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_five_method_p0only_fid0_p100matched100_mcmc_v1/figures/five_method_p0only_mcmc_contours.pdf": 3,
+        "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_five_method_p0only_fid0_p100matched100_mcmc_v1/figures/five_method_p0only_recovery_comparison.pdf": 1
+      },
+      "png_files": []
+    },
+    "frozen_inheritance": {
+      "pass": true,
+      "rows": [
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_pk_k",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_pk_edges",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_pk_nmodes",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_volume_ratio",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_hartlap_12",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_pre__fiducial_realizations",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_pre__LC_p_realizations",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_pre__fiducial_P0",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_pre__LC_p_P0",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_pre__target_fNL0_matched100",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_pre__target_fNL100_matched100",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_pre__covariance_fNL0_fid500_one_box",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_standard__fiducial_realizations",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_standard__LC_p_realizations",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_standard__fiducial_P0",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_standard__LC_p_P0",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_standard__target_fNL0_matched100",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_standard__target_fNL100_matched100",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_standard__covariance_fNL0_fid500_one_box",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_sto_marisa__fiducial_realizations",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_sto_marisa__LC_p_realizations",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_sto_marisa__fiducial_P0",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_sto_marisa__LC_p_P0",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_sto_marisa__target_fNL0_matched100",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_sto_marisa__target_fNL100_matched100",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_sto_marisa__covariance_fNL0_fid500_one_box",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_marisa__fiducial_realizations",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_marisa__LC_p_realizations",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_marisa__fiducial_P0",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_marisa__LC_p_P0",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_marisa__target_fNL0_matched100",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_marisa__target_fNL100_matched100",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "inherit_marisa__covariance_fNL0_fid500_one_box",
+          "pass": true,
+          "shape_equal": true
+        }
+      ]
+    },
+    "independent_likelihood": {
+      "pass": true,
+      "rows": [
+        {
+          "case": "pre__fNL0",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 0.0,
+          "pass": true,
+          "target_max_abs": 0.0
+        },
+        {
+          "case": "standard__fNL0",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 0.0,
+          "pass": true,
+          "target_max_abs": 0.0
+        },
+        {
+          "case": "marisa__fNL0",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 0.0,
+          "pass": true,
+          "target_max_abs": 0.0
+        },
+        {
+          "case": "sto_only__fNL0",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 8.881784197001252e-16,
+          "pass": true,
+          "target_max_abs": 0.0
+        },
+        {
+          "case": "sto_marisa__fNL0",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 0.0,
+          "pass": true,
+          "target_max_abs": 0.0
+        },
+        {
+          "case": "pre__fNL100",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 0.0,
+          "pass": true,
+          "target_max_abs": 0.0
+        },
+        {
+          "case": "standard__fNL100",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 0.0,
+          "pass": true,
+          "target_max_abs": 0.0
+        },
+        {
+          "case": "marisa__fNL100",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 0.0,
+          "pass": true,
+          "target_max_abs": 0.0
+        },
+        {
+          "case": "sto_only__fNL100",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 8.881784197001252e-16,
+          "pass": true,
+          "target_max_abs": 0.0
+        },
+        {
+          "case": "sto_marisa__fNL100",
+          "covariance_max_abs": 0.0,
+          "logp_max_abs": 0.0,
+          "pass": true,
+          "target_max_abs": 0.0
+        }
+      ]
+    },
+    "posterior_quantiles": {
+      "pass": true,
+      "rows": [
+        {
+          "case": "pre__fNL0",
+          "max_abs": 0.0,
+          "pass": true
+        },
+        {
+          "case": "standard__fNL0",
+          "max_abs": 0.0,
+          "pass": true
+        },
+        {
+          "case": "marisa__fNL0",
+          "max_abs": 0.0,
+          "pass": true
+        },
+        {
+          "case": "sto_only__fNL0",
+          "max_abs": 0.0,
+          "pass": true
+        },
+        {
+          "case": "sto_marisa__fNL0",
+          "max_abs": 0.0,
+          "pass": true
+        },
+        {
+          "case": "pre__fNL100",
+          "max_abs": 0.0,
+          "pass": true
+        },
+        {
+          "case": "standard__fNL100",
+          "max_abs": 0.0,
+          "pass": true
+        },
+        {
+          "case": "marisa__fNL100",
+          "max_abs": 0.0,
+          "pass": true
+        },
+        {
+          "case": "sto_only__fNL100",
+          "max_abs": 0.0,
+          "pass": true
+        },
+        {
+          "case": "sto_marisa__fNL100",
+          "max_abs": 0.0,
+          "pass": true
+        }
+      ]
+    },
+    "result_hashes": {
+      "marginal_pdf": true,
+      "pass": true,
+      "posteriors": true,
+      "published_marginal_pdf": true,
+      "published_recovery_pdf": true,
+      "recovery_pdf": true
+    },
+    "sto_only_original_parity": {
+      "pass": true,
+      "rows": [
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "sto_only_fiducial",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 0.0,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "sto_only_LCp",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 2e-11,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "sto_only_target_fNL0",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 2e-11,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "sto_only_target_fNL100",
+          "pass": true,
+          "shape_equal": true
+        },
+        {
+          "atol": 2e-08,
+          "exact": true,
+          "max_abs": 0.0,
+          "name": "sto_only_covariance",
+          "pass": true,
+          "shape_equal": true
+        }
+      ]
+    }
+  },
+  "created_utc": "2026-09-16T07:27:45.018024+00:00",
+  "schema": "quijote-z0p5-five-method-p0only-independent-audit-v1",
+  "scope": {
+    "methods": [
+      "pre",
+      "standard",
+      "marisa",
+      "sto_only",
+      "sto_marisa"
+    ],
+    "requirements": "frozen four-method rows inherited bit-exact; sto_only rebuilt from 600 raw post_pk.npz products; matched100 targets; method-specific fNL0 Fid500 covariance; sto_only chains converged; PDF-only",
+    "targets": [
+      "fNL0",
+      "fNL100"
+    ]
+  },
+  "status": "pass"
+}

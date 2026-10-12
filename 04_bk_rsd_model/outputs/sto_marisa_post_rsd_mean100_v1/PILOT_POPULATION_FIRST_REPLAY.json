@@ -1,0 +1,26 @@
+{
+  "status": "FIRST_POPULATION_PILOT_EXACT_REPLAY_PASS",
+  "verified_UTC": "2026-10-09T02:37:15Z",
+  "cosmology": "fiducial",
+  "realization": 0,
+  "old_pilot": "pilots/fiducial_real000_rec256_meas256_ran30_selfmatched_zeroaudit",
+  "current_pilot": "pilots/fiducial_real000_rec256_meas256_ran30_selfmatched_zeroaudit_nested",
+  "all_measurement_arrays_bitwise_identical": true,
+  "identical_array_count": 25,
+  "measurement_sha256_both": "151621fdbb265692062012e48f7f54c2814666c1598c7b6d1619d0321c7c7432",
+  "post_halos_sha256_both": "fd34de2d6ab1ff3d0c503da3e02681899a105f6c22181b02ceea4033cad79b9f",
+  "identical_provenance_fields": [
+    "source_STO_sha256", "source_diagnostics_sha256", "raw_fof.source_raw_sha256",
+    "random_seed", "shared_measure_source_sha256", "fixed_reconstruction"
+  ],
+  "entry_old_sha256": "e1c6e47773c4a5c2a2ef1a3e146d7d977e8577772980dacbf56866660e1d807b",
+  "entry_current_sha256": "602c22fe2587a57066bf7b334a76bbfab3137614df06d3b54c293bd591c2ac16",
+  "old_DONE_sha256": "ded6d527107e667569e47903683844dc414fab252cfc1584de862adbb8070590",
+  "current_DONE_sha256": "c9226d47764a34f6b8b64ed61e3c166aaf3dc3a90881c77e7b8f15d5ba0944c8",
+  "current_finished_UTC": "2026-10-09T02:34:53.020131+00:00",
+  "current_elapsed_seconds": 391.9863121509552,
+  "scope": "Numerical reproduction of fiducial0 only; not population convergence, post covariance or fNL recovery",
+  "old_results_modified": false,
+  "main_sample_choice_changed": false,
+  "main_covariance_or_MCMC_created": false
+}

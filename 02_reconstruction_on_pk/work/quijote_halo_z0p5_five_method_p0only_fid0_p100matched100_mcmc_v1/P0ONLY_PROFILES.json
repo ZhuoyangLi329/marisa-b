@@ -1,0 +1,194 @@
+{
+  "arrays": {
+    "bytes": 4020,
+    "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/work/quijote_halo_z0p5_five_method_p0only_fid0_p100matched100_mcmc_v1/P0ONLY_PROFILE_ARRAYS.npz",
+    "sha256": "61515a8ce251bc251b9ff111755aa7eb58a47e6e3ae1a6d8161d51d7cdb54911"
+  },
+  "created_utc": "2026-09-16T07:18:26.244898+00:00",
+  "inputs": {
+    "amendment": {
+      "bytes": 3948,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0only_sto_only_amendment.md",
+      "sha256": "29437edd2e9cda546d54d1d45a6c12c89bdfd4f54329d713bc286df8e9ddc687"
+    },
+    "matrix": {
+      "bytes": 166664,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/five_method_p0_matrix.npz",
+      "sha256": "c527cf51a6e7c90f02c85cb688d1963b72595809e9ebc9be53468ff80c0c6fa5"
+    },
+    "matrix_audit": {
+      "bytes": 3596,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/results/five_method_p0_matrix_audit.json",
+      "sha256": "97e5b4c70e0fad28c96bde4cfd7a59377f5e65abfa40a6452833eacc2aa1f7e3"
+    },
+    "preregistration": {
+      "bytes": 2230,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0only_preregistration.md",
+      "sha256": "5d1c6f930d5862be7f43c84abf770efcd33089df3bf46fbfd0ac894897b9d651"
+    },
+    "runner": {
+      "bytes": 53942,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/code/run_five_method_p0only_mcmc.py",
+      "sha256": "277007672982fb6fdaaf1340f0f3beb5c2ef4edfec4eb9a8fb724dda9405c59d"
+    },
+    "theory": {
+      "bytes": 2707,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.npz",
+      "sha256": "f13482ba4b408e939e4d10a11c6b8a5d97afabe5c49bd9dcc1d914d61d40447e"
+    },
+    "theory_manifest": {
+      "bytes": 2132,
+      "path": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.json",
+      "sha256": "ae6360473e480b426dbfbb7289314831099ce008dd99cfd5abe21c35dd069aba"
+    }
+  },
+  "rows": {
+    "sto_only__fNL0": {
+      "covariance": {
+        "condition_number": 354.4743482464046,
+        "dimension": 12,
+        "hartlap": 0.9739478957915831,
+        "minimum_eigenvalue": 20884.092641504132,
+        "source": "method-specific fNL0 Fid500",
+        "volume_ratio": 42.875
+      },
+      "data_chi2": 6.396989521649905,
+      "dof": 9,
+      "goodness_of_fit_p": 0.6996217521125329,
+      "hesse_covariance": [
+        [
+          86.98070776649314,
+          -0.12985324864956027,
+          2631.504764833965
+        ],
+        [
+          -0.12985324864956027,
+          0.0003584846134370757,
+          -8.624424745357773
+        ],
+        [
+          2631.504764833965,
+          -8.624424745357773,
+          220353.0271939808
+        ]
+      ],
+      "map": {
+        "Pshot_residual": -615.2474125864499,
+        "b1": 2.223604958876502,
+        "fNL": -0.40631070539042924
+      },
+      "method": "sto_only",
+      "minos_fNL": {
+        "lower": -9.6767034485867,
+        "lower_error": -9.27039274319627,
+        "upper": 8.97930673767436,
+        "upper_error": 9.38561744306479,
+        "valid": true
+      },
+      "objective": 6.396989521649905,
+      "optimizer_valid": true,
+      "target": "fNL0",
+      "truth_fNL": 0.0,
+      "truth_profile": {
+        "delta_chi2": 0.001897181740454279,
+        "inside_delta_chi2_1": true,
+        "inside_delta_chi2_4": true,
+        "mapping": {
+          "Pshot_residual": -602.9500865361465,
+          "b1": 2.2229984620204495,
+          "fNL": 0.0
+        },
+        "objective": 6.398886703390359
+      }
+    },
+    "sto_only__fNL100": {
+      "covariance": {
+        "condition_number": 354.4743482464046,
+        "dimension": 12,
+        "hartlap": 0.9739478957915831,
+        "minimum_eigenvalue": 20884.092641504132,
+        "source": "method-specific fNL0 Fid500",
+        "volume_ratio": 42.875
+      },
+      "data_chi2": 7.27363043520309,
+      "dof": 9,
+      "goodness_of_fit_p": 0.6086539583072408,
+      "hesse_covariance": [
+        [
+          83.18546250682934,
+          -0.1262021609893727,
+          2713.822175298252
+        ],
+        [
+          -0.1262021609893727,
+          0.00031067107458371973,
+          -7.661602283170585
+        ],
+        [
+          2713.822175298252,
+          -7.661602283170585,
+          200715.68640173247
+        ]
+      ],
+      "map": {
+        "Pshot_residual": -577.1701015266526,
+        "b1": 2.2120201431904927,
+        "fNL": 79.83494093167552
+      },
+      "method": "sto_only",
+      "minos_fNL": {
+        "lower": 70.79054941315371,
+        "lower_error": -9.044391518521806,
+        "upper": 89.03589419965476,
+        "upper_error": 9.200953267979251,
+        "valid": true
+      },
+      "objective": 7.27363043520309,
+      "optimizer_valid": true,
+      "target": "fNL100",
+      "truth_fNL": 100.0,
+      "truth_profile": {
+        "delta_chi2": 4.701180425639631,
+        "inside_delta_chi2_1": false,
+        "inside_delta_chi2_4": false,
+        "mapping": {
+          "Pshot_residual": 83.95206663050888,
+          "b1": 2.181429002465053,
+          "fNL": 100.0
+        },
+        "objective": 11.974810860842721
+      }
+    }
+  },
+  "schema": "quijote-z0p5-five-method-p0only-profiles-v1",
+  "scope": {
+    "P_bins": 12,
+    "P_kmax_label": 0.08,
+    "covariance": "method-specific fNL0 Fid500 / volume / Hartlap; no target-count divisor",
+    "inherited_methods_note": "pre/standard/marisa/sto_marisa \u7684 profile \u4e0e\u94fe\u51bb\u7ed3\u4e8e v1\uff0c\u4e0d\u5728\u672c\u8f6e\u91cd\u8dd1",
+    "methods_all": [
+      "pre",
+      "standard",
+      "marisa",
+      "sto_only",
+      "sto_marisa"
+    ],
+    "methods_run": [
+      "sto_only"
+    ],
+    "parameters": [
+      "fNL",
+      "b1",
+      "Pshot_residual"
+    ],
+    "targets": [
+      "fNL0",
+      "fNL100"
+    ],
+    "truths": {
+      "fNL0": 0.0,
+      "fNL100": 100.0
+    }
+  },
+  "status": "complete"
+}

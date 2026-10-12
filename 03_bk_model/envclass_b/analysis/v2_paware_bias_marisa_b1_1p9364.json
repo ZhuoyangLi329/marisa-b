@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-18T14:05:00+00:00",
+  "fit_model": "P_ww = b1^2 P_lin + c0",
+  "fit_space": "realspace",
+  "free_sn": {
+    "b1": 1.9364310827111566,
+    "b1_err_from_cov_of_mean": 0.002,
+    "b1_squared": 3.7497653380899023,
+    "ndof": 13
+  },
+  "kmax_fit": 0.1,
+  "kmin_fit": 0.0,
+  "legacy_desilike_bias": null,
+  "n_realizations": 500,
+  "recommended_bias_source": "v2_paware_freep_b1_marisa",
+  "recommended_bias_value": 1.9364310827111566,
+  "redshift": 0.5,
+  "note": "v2 p-aware re-production (marisa only): b1 from P0 freep; png_p=1.1217 (measured p_marisa)"
+}

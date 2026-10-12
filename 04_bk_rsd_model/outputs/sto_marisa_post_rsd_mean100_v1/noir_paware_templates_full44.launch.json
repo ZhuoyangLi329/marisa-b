@@ -1,0 +1,16 @@
+{
+  "host": "login26",
+  "pid": 1990467,
+  "CPU_affinity": [
+    10
+  ],
+  "new_session": true,
+  "log": "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/outputs/sto_marisa_post_rsd_mean100_v1/noir_paware_templates_full44.log",
+  "command": [
+    "/global/homes/l/lzy/anaconda3/envs/desilike/bin/python",
+    "-B",
+    "-u",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/build_post_rsd_noir_templates.py"
+  ],
+  "launched_UTC": "2026-10-09T05:48:35.018433+00:00"
+}

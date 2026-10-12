@@ -1,0 +1,16 @@
+{
+  "name": "postP_physical_p_fNLfixed100",
+  "converged": true,
+  "steps_each_ensemble": 6000,
+  "complete_HDF_priors_gates_quantiles_sigma_thin_replayed": true,
+  "independent_logprob_spots": 512,
+  "max_logprob_error": 2.042810365310288e-14,
+  "summary_sha256": "49357b95ab9d3b12b28f725fe7c3540e89edb7c6337b9fdf2909e3828df1f427",
+  "chain_sha256": [
+    "8719fc34c008c1d1b323c3f5ec8b53c853644abd12cacb8a547e7a21000ced56",
+    "28c7183e763bd0ba0f5f8bb284619680658d426e2d92692154e205a885a2292c",
+    "7b59ca23f4e3402b7da2152805879509ba1f66fd12b3ea34839bf3c4b8f42cb5",
+    "06282918ccd294f71709ee249e29f51c4269824b849d043504994dd23b7682c5"
+  ],
+  "created_UTC": "2026-10-11T03:43:48.303732+00:00"
+}

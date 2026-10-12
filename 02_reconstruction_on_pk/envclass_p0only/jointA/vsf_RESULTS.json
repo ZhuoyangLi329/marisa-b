@@ -1,0 +1,66 @@
+{
+  "beta_fixed": {
+    "filament": 1.0787199568362784,
+    "sheet": 1.132484706163526,
+    "void": -0.05582113057920417
+  },
+  "classes": [
+    "void",
+    "sheet",
+    "filament"
+  ],
+  "combo": "vsf",
+  "created_utc": "2026-09-17T09:31:58.931240+00:00",
+  "inputs": {
+    "calibration": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/envclass_p0only/calibration/ENVCLASS_CALIBRATION.json",
+    "lattice": "/pscratch/sd/l/lzy/reconstuction-png-v2/02_reconstruction_on_pk/inputs/p0_finite_local_png_lattice.npz"
+  },
+  "notes": "+100 \u4e3a\u540c\u6570\u636e\u81ea\u6d3d\u68c0\u9a8c\uff08\u6821\u51c6\u4e0e\u76ee\u6807\u540c\u4e00 LC_p \u6837\u672c\uff09",
+  "parameters": "(fNL, b1_c..., sn0_c...); beta_c fixed from calibration",
+  "results": {
+    "fNL0": {
+      "acceptance": 0.4439283854166667,
+      "b1": {
+        "filament": 4.790148829918101,
+        "sheet": 3.884939619321563,
+        "void": 0.9539029159504957
+      },
+      "converged": true,
+      "fNL": {
+        "half_width": 16.96065267943961,
+        "median": -4.153546114836251,
+        "q16": -20.983991105415555,
+        "q2p5": -36.84577793969749,
+        "q84": 12.937314253463665,
+        "q97p5": 28.973733192447916
+      },
+      "gof_p": 0.008770887099055729,
+      "truth_inside_68": true,
+      "truth_inside_95": true,
+      "truth_percentile": 0.5949
+    },
+    "fNL100": {
+      "acceptance": 0.44308984374999993,
+      "b1": {
+        "filament": 4.77469173627488,
+        "sheet": 3.844278294439496,
+        "void": 0.9932529188445147
+      },
+      "converged": true,
+      "fNL": {
+        "half_width": 15.59615188676878,
+        "median": 88.60990952557952,
+        "q16": 72.81410704579925,
+        "q2p5": 58.09491298649215,
+        "q84": 104.0064108193368,
+        "q97p5": 119.17867336141573
+      },
+      "gof_p": 0.007676079551166893,
+      "truth_inside_68": true,
+      "truth_inside_95": true,
+      "truth_percentile": 0.7685666666666666
+    }
+  },
+  "schema": "quijote-z0p5-envclass-jointA-mcmc-v1",
+  "status": "complete"
+}

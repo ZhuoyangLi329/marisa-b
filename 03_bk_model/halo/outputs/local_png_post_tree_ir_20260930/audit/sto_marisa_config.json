@@ -1,0 +1,34 @@
+{
+  "method": "sto_marisa",
+  "bias": {
+    "b1": 2.197952896776342,
+    "b2": 0.5,
+    "bk2": -0.15,
+    "bphi": 2.8948252523300324,
+    "bphidelta": 1.790735310403874,
+    "bphi2": -15.661819319437155
+  },
+  "reconstruction": {
+    "smoothing_radius": 10.0,
+    "bias_recon": 2.197952896776342,
+    "cell_size": 8.0,
+    "cic_window_power": 4
+  },
+  "adaptive": {
+    "bphi_recon": 4.039497167929825,
+    "fnl_recon_ratio": 1.0
+  },
+  "ir": {
+    "r_bao": 110.0,
+    "k_ir": 0.15,
+    "q_min": 0.006283185307179587,
+    "mesh_damping": "auto",
+    "angular_mu_order": 16,
+    "angular_phi_order": 32
+  },
+  "reconstruction_parameter_path": "f_rec=eta*f",
+  "weights_include_original_denominator": true,
+  "absolute_orientation_nodes": true,
+  "number_of_bins": 1,
+  "measure": "exact enumeration: 18 x 18 FFT modes, closing zero pairs omitted, denominator 324"
+}

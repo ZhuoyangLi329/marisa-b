@@ -1,0 +1,96 @@
+{
+  "status": "MATCHED_SELF_CONTRACTION_TEST_PASS",
+  "created_UTC": "2026-10-08T17:07:14.718445+00:00",
+  "rows": [
+    {
+      "point": {
+        "pair": [
+          0,
+          0
+        ],
+        "raw": 44013880692711.02,
+        "shot": 43402457291128.25,
+        "corrected": 611423401582.7734,
+        "all_same": 104499818800514.52,
+        "ordered_triangles": 21609,
+        "triangles_with_zero_leg": 439
+      },
+      "measured": {
+        "raw": 44013910491136.0,
+        "shot": 43402414522368.0,
+        "corrected": 611494395904.0
+      },
+      "scaled_errors": {
+        "raw": 2.851528865657304e-07,
+        "shot": 4.09271142676751e-07,
+        "corrected": 6.793726730003952e-07
+      },
+      "bin_center_vs_shell_S113": 500327975733.1293
+    },
+    {
+      "point": {
+        "pair": [
+          0,
+          1
+        ],
+        "raw": 45591741102681.234,
+        "shot": 44960477022600.945,
+        "corrected": 631264080080.2891,
+        "all_same": 104499818800514.52,
+        "ordered_triangles": 128478,
+        "triangles_with_zero_leg": 874
+      },
+      "measured": {
+        "raw": 45591681826816.0,
+        "shot": 44960430686208.0,
+        "corrected": 631253041152.0
+      },
+      "scaled_errors": {
+        "raw": 5.67234143702488e-07,
+        "shot": 4.4341122766697426e-07,
+        "corrected": 1.0563586057632617e-07
+      },
+      "bin_center_vs_shell_S113": 454344714203.35565
+    },
+    {
+      "point": {
+        "pair": [
+          1,
+          1
+        ],
+        "raw": 45480807264402.77,
+        "shot": 46346501730095.03,
+        "corrected": -865694465692.2578,
+        "all_same": 104499818800514.52,
+        "ordered_triangles": 763876,
+        "triangles_with_zero_leg": 874
+      },
+      "measured": {
+        "raw": 45480742486016.0,
+        "shot": 46346442637312.0,
+        "corrected": -865701920768.0
+      },
+      "scaled_errors": {
+        "raw": 6.19889943513649e-07,
+        "shot": 5.654821578595795e-07,
+        "corrected": 7.13405614264165e-08
+      },
+      "bin_center_vs_shell_S113": 213938821749.55618
+    }
+  ],
+  "max_scaled_error": 6.793726730003952e-07,
+  "predefined_tolerance": 5e-06,
+  "CPU_affinity": [
+    7
+  ],
+  "scope": "three bins including diagonal and zero-leg atoms; tiny weighted signed-point fixture",
+  "raw_and_shot_paint": "TSC interlacing=3 compensate=True",
+  "S113": "actual discrete shell windows",
+  "full_production_registry_verified": false,
+  "reconstruction_shift_noise_theory_validated": false,
+  "old_shared_installation_modified": false,
+  "old_failed_audits_preserved": true,
+  "elapsed_seconds": 54.39932703971863,
+  "entry_sha256": "443cf44e44dea2a2b80de16a1ac4b0af9c70f4d4088931c73b8929ac8a9ff9fc",
+  "adapter_sha256": "b6b57d055f18157ceac4450abb5e6227cf85cd098491dcd5e5fd5402116b9ec0"
+}

@@ -1,0 +1,135 @@
+{
+  "status": "ACTUAL_SPECTRUM_HARMONIC_COMPAT_AND_EXACT_BIAS_CACHE_PASS_NOT_FULL_IR_MODEL",
+  "created_UTC": "2026-10-09T17:40:52.857722+00:00",
+  "compatibility": {
+    "process_only": true,
+    "original_source_modified": false,
+    "packages_installed": false,
+    "bridge_installed": true,
+    "scipy_version": "1.17.1",
+    "mapping": "legacy(m,l,azimuth,polar) -> sph_harm_y(l,m,polar,azimuth mod2pi)"
+  },
+  "legacy_scipy_version": "1.16.3",
+  "cross_environment_scaled_errors": {
+    "harmonics": 5.131489257546994e-15,
+    "coefficients": 1.1371112921397689e-15,
+    "covariance": 2.079236599610366e-15,
+    "damping": 1.1102230246251565e-16
+  },
+  "rows": [
+    {
+      "b1": 0.5,
+      "physical_p_probe": 0.0,
+      "coefficient_scaled_error": 7.3002745391774e-16,
+      "damping_scaled_error": 1.1102230246251565e-16,
+      "minimum_full_covariance_eigenvalue": 12.23147029565093,
+      "direct_harmonic_build_seconds": 0.9329413590021431,
+      "cached_coefficient_assembly_seconds": 6.783590652048588e-05
+    },
+    {
+      "b1": 0.5,
+      "physical_p_probe": 1.417,
+      "coefficient_scaled_error": 7.3002745391774e-16,
+      "damping_scaled_error": 1.1102230246251565e-16,
+      "minimum_full_covariance_eigenvalue": 11.1615945612933,
+      "direct_harmonic_build_seconds": 0.909055202966556,
+      "cached_coefficient_assembly_seconds": 5.7206954807043076e-05
+    },
+    {
+      "b1": 0.5,
+      "physical_p_probe": 3.0,
+      "coefficient_scaled_error": 7.3002745391774e-16,
+      "damping_scaled_error": 1.1102230246251565e-16,
+      "minimum_full_covariance_eigenvalue": 8.704243656460312,
+      "direct_harmonic_build_seconds": 0.9103055770974606,
+      "cached_coefficient_assembly_seconds": 5.975179374217987e-05
+    },
+    {
+      "b1": 2.2280546353635335,
+      "physical_p_probe": 0.0,
+      "coefficient_scaled_error": 1.489176096921708e-14,
+      "damping_scaled_error": 8.881784197001252e-16,
+      "minimum_full_covariance_eigenvalue": 1.7176329350705128,
+      "direct_harmonic_build_seconds": 0.9158814810216427,
+      "cached_coefficient_assembly_seconds": 5.7918019592761993e-05
+    },
+    {
+      "b1": 2.2280546353635335,
+      "physical_p_probe": 1.417,
+      "coefficient_scaled_error": 1.489176096921708e-14,
+      "damping_scaled_error": 8.881784197001252e-16,
+      "minimum_full_covariance_eigenvalue": 1.7143435650457204,
+      "direct_harmonic_build_seconds": 0.9095492260530591,
+      "cached_coefficient_assembly_seconds": 5.5684009566903114e-05
+    },
+    {
+      "b1": 2.2280546353635335,
+      "physical_p_probe": 3.0,
+      "coefficient_scaled_error": 1.489176096921708e-14,
+      "damping_scaled_error": 8.881784197001252e-16,
+      "minimum_full_covariance_eigenvalue": 1.6992799214641894,
+      "direct_harmonic_build_seconds": 0.9090913098771125,
+      "cached_coefficient_assembly_seconds": 5.745794624090195e-05
+    },
+    {
+      "b1": 4.0,
+      "physical_p_probe": 0.0,
+      "coefficient_scaled_error": 1.311110525212235e-13,
+      "damping_scaled_error": 3.552713678800501e-15,
+      "minimum_full_covariance_eigenvalue": 3.5208235419118123,
+      "direct_harmonic_build_seconds": 0.9034942199941725,
+      "cached_coefficient_assembly_seconds": 5.802907980978489e-05
+    },
+    {
+      "b1": 4.0,
+      "physical_p_probe": 1.417,
+      "coefficient_scaled_error": 1.311110525212235e-13,
+      "damping_scaled_error": 3.552713678800501e-15,
+      "minimum_full_covariance_eigenvalue": 2.793532156299453,
+      "direct_harmonic_build_seconds": 0.907030382193625,
+      "cached_coefficient_assembly_seconds": 5.698692984879017e-05
+    },
+    {
+      "b1": 4.0,
+      "physical_p_probe": 3.0,
+      "coefficient_scaled_error": 1.311110525212235e-13,
+      "damping_scaled_error": 3.552713678800501e-15,
+      "minimum_full_covariance_eigenvalue": 4.3119749095237765,
+      "direct_harmonic_build_seconds": 0.9041086460929364,
+      "cached_coefficient_assembly_seconds": 5.267816595733166e-05
+    }
+  ],
+  "maximum_scaled_error": 1.311110525212235e-13,
+  "original_scaled_tolerance": 2e-10,
+  "covariance_basis_build_seconds": 4.546318374108523,
+  "coefficient_assembly_speedup_median": 15821.85527595429,
+  "speedup_scope": "only harmonic coefficient assembly; not projected IR-B or MCMC runtime",
+  "signal_B_quartic_polynomial_assumed": false,
+  "old_IR_formulas_changed": false,
+  "negative_truncated_damping_issue_repaired": false,
+  "physical_p_calibrated": false,
+  "full44_IR_B_verified": false,
+  "actual_STO_noise_validated": false,
+  "MCMC_released": false,
+  "source_sha256": "6c9aed9d71e8d37dd49736c1c0eea39ebcabea5a6e1c2104c843b431ccdd5157",
+  "reference_sha256": "fe8ddb0877145263deea52fa603fdc9f3e379a12cc599c77a1051eb7d2dbeb69",
+  "spectrum": {
+    "physical_table": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+    "physical_sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb",
+    "no_wiggle_split": "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/halo/outputs/local_png_tree_ir_20260930/spectrum_split_s0.25.npz",
+    "no_wiggle_sha256": "df105acc326fd4cbe365a06902151063af8a5bfd757396ed7bfab8717a38922f",
+    "no_wiggle_metadata_sha256": "9f688ab56f776209a05fc451a6ce3a84d62bfd7893c53e421d93a9a06fe2b958",
+    "recipe": "Gaussian Eisenstein-Hu ratio, Quijote fiducial, 8192 log nodes, 4-sigma kernel",
+    "smoothing_lambda_ln_k": 0.25,
+    "redshift": 0.5,
+    "physical_P_M_unchanged": true
+  },
+  "new_sources": {
+    "post_rsd_scipy_harmonic_compat.py": "0564d5dc3d1b38b67ed0ca5aee8aed3d9386038490f0ee2faba396ef752a99b6",
+    "post_rsd_ir_covariance_basis.py": "020d3c62026ab967dc06c2e0978b657ed85ce4f9844b364f66765c54bd24fa9b"
+  },
+  "CPU_affinity": [
+    7
+  ],
+  "python_version": "3.12.9"
+}

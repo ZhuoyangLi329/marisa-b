@@ -1,0 +1,394 @@
+{
+  "created_UTC": "2026-10-10T16:10:11.813398+00:00",
+  "checks": [
+    {
+      "name": "fiducial_post_PB_4plus3_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 6.940100043603598e-16,
+      "noise_parameters": 3,
+      "n_data": 39,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "fiducial_pre_PB_4plus3_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 1.364757961467207e-15,
+      "noise_parameters": 3,
+      "n_data": 39,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_p_post_PB_4plus3_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 5.399502213020994e-16,
+      "noise_parameters": 3,
+      "n_data": 39,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_p_pre_PB_4plus3_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 1.515043149887962e-15,
+      "noise_parameters": 3,
+      "n_data": 39,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_m_post_PB_4plus3_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 1.0676415006381858e-15,
+      "noise_parameters": 3,
+      "n_data": 39,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_m_pre_PB_4plus3_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 6.9097020322188e-16,
+      "noise_parameters": 3,
+      "n_data": 39,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "fiducial_post_PB_4plus3_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.265973508901046e-16,
+      "noise_parameters": 3,
+      "n_data": 21,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "fiducial_pre_PB_4plus3_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 6.430536727143063e-16,
+      "noise_parameters": 3,
+      "n_data": 21,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_p_post_PB_4plus3_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 2.7828051767378928e-16,
+      "noise_parameters": 3,
+      "n_data": 21,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_p_pre_PB_4plus3_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 5.190396090699523e-16,
+      "noise_parameters": 3,
+      "n_data": 21,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_m_post_PB_4plus3_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.1827324655196925e-16,
+      "noise_parameters": 3,
+      "n_data": 21,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_m_pre_PB_4plus3_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.581311779505112e-16,
+      "noise_parameters": 3,
+      "n_data": 21,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "fiducial_post_PB_4plus3_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 8.55186518798526e-16,
+      "noise_parameters": 3,
+      "n_data": 26,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "fiducial_pre_PB_4plus3_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 1.408997219485703e-15,
+      "noise_parameters": 3,
+      "n_data": 26,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_p_post_PB_4plus3_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 9.320327622672935e-16,
+      "noise_parameters": 3,
+      "n_data": 26,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_p_pre_PB_4plus3_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 5.57686457139939e-16,
+      "noise_parameters": 3,
+      "n_data": 26,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_m_post_PB_4plus3_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.5861500761109785e-16,
+      "noise_parameters": 3,
+      "n_data": 26,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_m_pre_PB_4plus3_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 7.976854069615836e-16,
+      "noise_parameters": 3,
+      "n_data": 26,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "fiducial_post_PB_4plus3_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.48286990310237e-16,
+      "noise_parameters": 3,
+      "n_data": 32,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "fiducial_pre_PB_4plus3_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 5.121955909957313e-16,
+      "noise_parameters": 3,
+      "n_data": 32,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_p_post_PB_4plus3_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 5.581789149159285e-16,
+      "noise_parameters": 3,
+      "n_data": 32,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_p_pre_PB_4plus3_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 7.354720235116763e-16,
+      "noise_parameters": 3,
+      "n_data": 32,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_m_post_PB_4plus3_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 4.864618152217122e-16,
+      "noise_parameters": 3,
+      "n_data": 32,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_m_pre_PB_4plus3_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 5.7444276660097e-16,
+      "noise_parameters": 3,
+      "n_data": 32,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "fiducial_post_PB_4plus4_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 6.809026957202573e-16,
+      "noise_parameters": 4,
+      "n_data": 39,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "fiducial_pre_PB_4plus4_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 7.123880098201993e-16,
+      "noise_parameters": 4,
+      "n_data": 39,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_p_post_PB_4plus4_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 7.921875775749676e-16,
+      "noise_parameters": 4,
+      "n_data": 39,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_p_pre_PB_4plus4_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 1.4128134742846443e-15,
+      "noise_parameters": 4,
+      "n_data": 39,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_m_post_PB_4plus4_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 7.780472801668372e-16,
+      "noise_parameters": 4,
+      "n_data": 39,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_m_pre_PB_4plus4_k0.14",
+      "probes": 131,
+      "maximum_white_scaled_error": 1.697364467960006e-15,
+      "noise_parameters": 4,
+      "n_data": 39,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "fiducial_post_PB_4plus4_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 2.2247611967295713e-16,
+      "noise_parameters": 4,
+      "n_data": 21,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "fiducial_pre_PB_4plus4_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 5.270089095547428e-16,
+      "noise_parameters": 4,
+      "n_data": 21,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_p_post_PB_4plus4_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.1542900949536515e-16,
+      "noise_parameters": 4,
+      "n_data": 21,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_p_pre_PB_4plus4_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 2.3856633207538444e-16,
+      "noise_parameters": 4,
+      "n_data": 21,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_m_post_PB_4plus4_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.6470278594201557e-16,
+      "noise_parameters": 4,
+      "n_data": 21,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_m_pre_PB_4plus4_k0.08",
+      "probes": 131,
+      "maximum_white_scaled_error": 5.697784570290564e-16,
+      "noise_parameters": 4,
+      "n_data": 21,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "fiducial_post_PB_4plus4_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.488806821780996e-16,
+      "noise_parameters": 4,
+      "n_data": 26,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "fiducial_pre_PB_4plus4_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 1.3644558190456434e-15,
+      "noise_parameters": 4,
+      "n_data": 26,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_p_post_PB_4plus4_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.7914524032117094e-16,
+      "noise_parameters": 4,
+      "n_data": 26,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_p_pre_PB_4plus4_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 9.969418325021797e-16,
+      "noise_parameters": 4,
+      "n_data": 26,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_m_post_PB_4plus4_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.371428418073249e-16,
+      "noise_parameters": 4,
+      "n_data": 26,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_m_pre_PB_4plus4_k0.10",
+      "probes": 131,
+      "maximum_white_scaled_error": 6.769916350943883e-16,
+      "noise_parameters": 4,
+      "n_data": 26,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "fiducial_post_PB_4plus4_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 7.60500270065882e-16,
+      "noise_parameters": 4,
+      "n_data": 32,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "fiducial_pre_PB_4plus4_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 7.672944720910603e-16,
+      "noise_parameters": 4,
+      "n_data": 32,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_p_post_PB_4plus4_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 4.604761541275995e-16,
+      "noise_parameters": 4,
+      "n_data": 32,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_p_pre_PB_4plus4_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 7.040345223797074e-16,
+      "noise_parameters": 4,
+      "n_data": 32,
+      "p": 1.1551560180012217
+    },
+    {
+      "name": "LC_m_post_PB_4plus4_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 3.5855104226456706e-16,
+      "noise_parameters": 4,
+      "n_data": 32,
+      "p": 1.3080857859668078
+    },
+    {
+      "name": "LC_m_pre_PB_4plus4_k0.12",
+      "probes": 131,
+      "maximum_white_scaled_error": 7.178953621354461e-16,
+      "noise_parameters": 4,
+      "n_data": 32,
+      "p": 1.1551560180012217
+    }
+  ],
+  "actual_case_count": 48,
+  "independent_probes": 6288,
+  "same_data_covariance_old7priors_and_p_between_versions": true,
+  "HDF_read": false,
+  "formal_noise_certified": false
+}

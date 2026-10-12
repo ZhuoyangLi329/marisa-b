@@ -1,0 +1,25 @@
+{
+  "created_UTC": "2026-10-10T15:10:47.435251+00:00",
+  "tests_run": 6,
+  "passed": true,
+  "failure_count": 0,
+  "error_count": 0,
+  "exactly_one_new_anisotropic_noise_parameter": true,
+  "total_parameters": 8,
+  "noise_parameters": 4,
+  "MCMC_4plus4_started": false,
+  "tests_cover": [
+    "R_zero_bitwise_4plus3_recovery",
+    "independent_directed_leg_anisotropic_projection",
+    "full_joint_whitening",
+    "fgrowth0_Rvanishes",
+    "actual_old_sampler_summary_callback_fix",
+    "unrelated_output_unchanged"
+  ],
+  "source_sha256": {
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/post_rsd_legacy4_model.py": "925a0c4ccb7d0f153696e321c46e4f69908a0e5e12ae18e98a058a6756375043",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_post_rsd_legacy4_model.py": "22e80e5aac849641826aa385a3810ad4795f9a0d8c031cfc70261ad6f32c650c",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/continue_all_available_pre_pcal_v2.py": "2751f5f1cfbc34066fad96bd720920ffa8d4cb25f03fe97739fa4d5dc4e156b3",
+    "/pscratch/sd/l/lzy/reconstuction-png-v2/04_bk_rsd_model/code/test_all_available_pcal_summary_callback.py": "c8565f1268e797938c0bc276edbb7c0fdae38db5fd696231efa6b50078e47fc7"
+  }
+}

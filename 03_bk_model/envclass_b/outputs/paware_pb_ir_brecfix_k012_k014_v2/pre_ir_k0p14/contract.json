@@ -1,0 +1,301 @@
+{
+  "method": "pre",
+  "kmax_B": 0.14,
+  "kmax_P": 0.08,
+  "volume": 42.875,
+  "p_halo": 1.179,
+  "p_fixed_not_marginalized": true,
+  "truth_fNL": 100,
+  "n_target": 250,
+  "n_fid": 500,
+  "parameter_names": [
+    "fNL",
+    "b1",
+    "Pshot",
+    "b2",
+    "gamma2",
+    "Ashot_residual",
+    "Bshot_residual"
+  ],
+  "full_PB_cross_covariance": true,
+  "cross_correlation_max": 0.5239215976861558,
+  "hartlap": 0.9198396793587175,
+  "IR_resummation": true,
+  "Gaussian_discrepancy": false,
+  "polynomial_max_whitened_error": 1.7658436594746165e-11,
+  "reference_data_chi2_parity": 0.0,
+  "reference_MINOS": {
+    "gof_p_value_data_only": 0.999784082438933,
+    "note": "new MAP GoF; no new MINOS interval is claimed"
+  },
+  "original_runner_sha256": "357a9e973055770a3c90337d7b749ae14cb7f70739b6d1f02a691ddb52569527",
+  "runner_sha256": "c94de56c549a48d7a435a8eef999ef7b6b90200df84a08b571a013836db0a3a8",
+  "prior_weight": 0.04,
+  "calibration_uncertainty_propagated": false,
+  "fid_covariance_note": "\u6cbf\u7528\u73b0\u884c\u51bb\u7ed3 Fid500\uff1bSTO target \u4e3a p-aware matched250",
+  "sampling": {
+    "ensembles": 4,
+    "walkers": 32,
+    "initial_steps": 6000,
+    "max_steps": 20000,
+    "burn_fraction": 0.5
+  },
+  "map": {
+    "fNL": 117.67491011870779,
+    "b1": 1.9094767139175213,
+    "Pshot": 345.38130562739934,
+    "b2": -0.3124019434844249,
+    "gamma2": -0.28832417217259254,
+    "Ashot_residual": 0.44414790348309907,
+    "Bshot_residual": -0.07592176911748538
+  },
+  "map_objective": 11.079786308127806,
+  "likelihood_sha256": "b7d3f8b29e523bfc443e64b123ea10e1717471c6f203c8df421e11c1bf1a9a96",
+  "case": "pre_ir_k0p14",
+  "baseline_reconstruction_corrected": false,
+  "reconstruction": {
+    "b_rec": null,
+    "p_rec": null,
+    "p_halo": 1.179,
+    "old_cache_b_rec": 1.9326526728794324,
+    "raw_shift_multiplier": 1.0,
+    "correction": "exact analytic 1/b_rec rescaling of G b1^4, PNG L/Q reconstruction, and all three adaptive raw bases",
+    "reconstruction_parameter_path": "f_rec=f (inherited legacy theoretical path)",
+    "catalogue_f_rec": 100.0,
+    "scope_warning": "controlled legacy-path comparison; not fixed-nonzero-f_rec inference",
+    "stochastic_closure": "legacy_accepted_pre retained; no added shift-noise damping"
+  },
+  "baseline_contract": "8117c1cd6b649d9dab0917a5e1214b3b1498550529527116e9b7b2517aeafbd9",
+  "baseline_likelihood_sha256": "aa695858e19e5bfa164919d9e137dc49cbaec179ec09a2df0e1942c6cf97e470",
+  "unchanged_arrays": {
+    "target": true,
+    "covariance": true,
+    "chol": true,
+    "prior_mean": true,
+    "prior_whitener": true,
+    "bounds": true,
+    "indices": true
+  },
+  "polynomial_degree": 32,
+  "map_data_chi2": 11.076490929651971,
+  "map_prior_chi2": 0.0032953784758352556,
+  "corrected_model_sha256": "6d6410ce3aa04af73b412b688d1ee1bd18ff9445981f89e35790ae2df87c613e",
+  "old_reference_MINOS": {
+    "case": "pre",
+    "kmax_h_mpc": 0.14,
+    "ndata": 39,
+    "n_fid": 500,
+    "n_target": 250,
+    "map_fNL": 118.27348138321739,
+    "minos_fNL": {
+      "lower": -10.92339393545455,
+      "upper": 11.056553172678214,
+      "valid": true
+    },
+    "map": {
+      "fNL": 118.27348138321739,
+      "b1": 1.908329099177998,
+      "Pshot": 356.38131601456024,
+      "b2": -0.315083756081363,
+      "gamma2": -0.29215767142072824,
+      "Ashot_residual": 0.41101908753898897,
+      "Bshot_residual": -0.07596067178656085
+    },
+    "data_chi2": 15.15734889450966,
+    "dof": 32,
+    "gof_p_value_data_only": 0.9949291757167219,
+    "hartlap": 0.9198396793587175
+  },
+  "IR_contract": {
+    "status": "pass",
+    "method": "pre",
+    "b_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      29,
+      30,
+      31,
+      32,
+      33,
+      42,
+      43,
+      44,
+      45,
+      54,
+      55,
+      56,
+      65,
+      66,
+      75
+    ],
+    "quadrature_max_whitened_component": 0.0002207460758685701,
+    "quadrature_max_whitened_norm": 0.00029542082060904915,
+    "interpolation_max_whitened_component": 2.346972070884636e-13,
+    "quadrature_tolerance_component": 0.05,
+    "quadrature_tolerance_norm": 0.1,
+    "interpolation_tolerance": 1e-05,
+    "production_projection": "fine",
+    "post_orders": {
+      "primary": [
+        4,
+        32,
+        4,
+        3,
+        4
+      ],
+      "fine": [
+        6,
+        48,
+        4,
+        4,
+        4
+      ]
+    },
+    "pre_orders": {
+      "primary": [
+        4,
+        80
+      ],
+      "fine": [
+        6,
+        120
+      ]
+    },
+    "model": "strict O(Pw), O(fNL^2), Gaussian linear displacement; P and B both resummed",
+    "anchor": "corrected inherited fixed-order model + same-node (strict IR - full fixed-order) difference",
+    "IR_off": "original full fixed order; strict Sigma=0 still differs by O(Pw^2)",
+    "variance_contract": {
+      "status": "pass",
+      "independent_native_holdout": [
+        {
+          "b1": 0.13,
+          "max_variance_error_fnl_bound300": 1.1741297419048816e-09
+        },
+        {
+          "b1": 1.93,
+          "max_variance_error_fnl_bound300": 9.191193881700713e-10
+        },
+        {
+          "b1": 2.2280546353635335,
+          "max_variance_error_fnl_bound300": 8.988858856385219e-10
+        },
+        {
+          "b1": 5.1,
+          "max_variance_error_fnl_bound300": 1.0281857870534164e-09
+        },
+        {
+          "b1": 7.95,
+          "max_variance_error_fnl_bound300": 1.7121862276505556e-09
+        }
+      ],
+      "radial_nodes": 1025,
+      "validation_radial_nodes": 2049,
+      "angular_orders": [
+        24,
+        48
+      ],
+      "validation_angular_orders": [
+        48,
+        96
+      ],
+      "direction_representation": "cubic invariant polynomials through degree16",
+      "b1_representation": "exact quadratic for fixed p",
+      "q_min": 0.006283185307179587,
+      "kIR": 0.15,
+      "rBAO": 110.0,
+      "shift_noise": "disabled; weighted noise not assumed",
+      "table": "/pscratch/sd/l/lzy/reconstruction-png/old_doc_codes/archive_20260615_diagnostics_cleanup/figures/diagnostics/quijote_dm_png_z0p5_marisa_b_local_png_1loop/marisa_b_local_png_1loop_b000_weighted_all120_nmu96_eps1e3_plin_pphi_m_z0.5.dat",
+      "table_sha256": "c748ba2bdd217581071513fe918d93e5a08b48390451c69af60159d3dc73feeb",
+      "library_sha256": "0ab2eb736f76b190af5c3114c3ea3349671bcddbc48ceab6ace374f028921f45",
+      "variance_sha256": "806a9a5147fb744883f198a297d7ea878a07588ddfe6924a919968f752a96a13"
+    },
+    "source_correction": {
+      "b_rec": null,
+      "p_rec": null,
+      "p_halo": 1.179,
+      "old_cache_b_rec": 1.9326526728794324,
+      "raw_shift_multiplier": 1.0,
+      "correction": "exact analytic 1/b_rec rescaling of G b1^4, PNG L/Q reconstruction, and all three adaptive raw bases",
+      "reconstruction_parameter_path": "f_rec=f (inherited legacy theoretical path)",
+      "catalogue_f_rec": 100.0,
+      "scope_warning": "controlled legacy-path comparison; not fixed-nonzero-f_rec inference",
+      "stochastic_closure": "legacy_accepted_pre retained; no added shift-noise damping"
+    },
+    "files": {
+      "pre_primary_bin001.npz": "739e49eac5978456b30268aaa6083e8d04336a01a6ec4787a802b47fda435564",
+      "pre_primary_bin002.npz": "851aac8a353ec1f7504b843cea9024418830f5e3f810b592cc9b442841c3badf",
+      "pre_primary_bin003.npz": "39c19437f140c65ec5105293d678c1bc1df1b7d4f995e0c885725ab36003a32a",
+      "pre_primary_bin004.npz": "1c6d9d6f11e14f874ba086c979ca2ad8fc8145e7d0e8a2169176ab127620a370",
+      "pre_primary_bin005.npz": "9304023db05696347395c13404dd7c5a7d55af09c3e8066339951f7d210ae3f2",
+      "pre_primary_bin006.npz": "00bd8cc03382daead063754967435128c744ef7b14d61854ab505a37de082cdc",
+      "pre_primary_bin015.npz": "0ac94809853374166d8aa76b6fff2765e6e25e350a6d26df54d99e616dd52ddd",
+      "pre_primary_bin016.npz": "0b05d3176d32dd9113a58cd03788401259d240ba95e0db671777942377f2bcd0",
+      "pre_primary_bin017.npz": "79d16108c91091368c5bbf1c896a93ab44b983a19261daa04b5c9a6bbb6ac3af",
+      "pre_primary_bin018.npz": "bd64c3a9a37f83dc8a8376c8b6c5587885648a6aeee06ede3cf26d3891ea43e3",
+      "pre_primary_bin019.npz": "73e0ffeb5cd94e6c18a67d3de4aee54a2d8cd580eaaf37c75f6d1e69295431dc",
+      "pre_primary_bin020.npz": "c5f09767c0f9f85ca399be7b205c4bb2de8554ccec50d50f22fa66bf208b2c2d",
+      "pre_primary_bin029.npz": "ead9c549ad55bbdcd28a38829eed2b53f79c3ba8f99cfd7b9489e5fc68749c78",
+      "pre_primary_bin030.npz": "01391c989a05ea999a94e45b0a5780813823a44c4dd3ca8e34609562a3387836",
+      "pre_primary_bin031.npz": "921182253acc19dbf40abd678542dad243a2eaa6f87908d12be826bc97f8b428",
+      "pre_primary_bin032.npz": "1c843bb59a15b5736b35fef3f81bf7b08b2ee3b2e710db2381d972cf75dd7a11",
+      "pre_primary_bin033.npz": "b75718254c90401ccfc9cf6dfe3be9caf82187ab22b0b8953317e272c5a77552",
+      "pre_primary_bin042.npz": "63b47447456939d4c77e023c205150e95646a52e2afed8736f046ef38dafac1a",
+      "pre_primary_bin043.npz": "3ab78f0cf641bedb7ac454305e057e1400c782fc2985aa363e8c2a75d14ce405",
+      "pre_primary_bin044.npz": "1be809a733f32eacc848e3d2256e950018c871178bc39579d71dba80b4e17d7f",
+      "pre_primary_bin045.npz": "197fa6bfdde33576d9934905d5f64a2bea21daac34a7b0ecd6f4b7a8e9d68fc2",
+      "pre_primary_bin054.npz": "fe34b143768065160250c06b378dd9e263c8ee11b2d274bd977f0c751f183f6e",
+      "pre_primary_bin055.npz": "3b8624343585c4994569d80d7be014978b8749565b8b10b8b5bc2c1e0fd39f18",
+      "pre_primary_bin056.npz": "103002885674e52af1b4c94cc1e375a157e0300c00482e7c087ebf386898d276",
+      "pre_primary_bin065.npz": "b0cdbf44898c0b68094115e80cf1401d1a496a3bcffd144f26765c00bdb226a5",
+      "pre_primary_bin066.npz": "62388e91a430e5f92b9467cedb1141cac63b086cba2416907cfef339e4312ca0",
+      "pre_primary_bin075.npz": "996485b7388283a3725622b5af4a58896fecedd58b567089a27122c4a631a54d",
+      "pre_fine_bin001.npz": "df4aa34b2c9458651619ef5a7cf88e0641451bf28d8fa44922d3e8e27c25cade",
+      "pre_fine_bin002.npz": "1b43e83e888aef13f5442ea75c00fb2773cbb27203f787e64a664db41caddc39",
+      "pre_fine_bin003.npz": "18f24586953b76d9f885adaf3b8c7b691be2e87fb415a8b9f9b025dda6d9736e",
+      "pre_fine_bin004.npz": "0f6b91844201c52d8e60688831bc3e553aa921980f7e0d31b4f6af560f7eaa29",
+      "pre_fine_bin005.npz": "d010d143f46d0efb0b8d7ea32f88ebabc7284ef5e39bcc15f1384d8bf24cff15",
+      "pre_fine_bin006.npz": "6f8d40cc1c71b72694f37e81d9f715990de4e703afce7ed3d35a1027cd070b0d",
+      "pre_fine_bin015.npz": "a7390ab9c0731de8d419915edebaf1186c90efeca594746af8f10244507eb413",
+      "pre_fine_bin016.npz": "c9b15b8dd2c7b4dea52ca1ceb9a9508c705620751c433bfab70f416087abddf2",
+      "pre_fine_bin017.npz": "1b03c901d86d44a88a34453a03e62bcbb270731afd595993464ae95f6da6b087",
+      "pre_fine_bin018.npz": "3c48646655987529c8eaca02e4bcb9bd696db4c3100d1804782e0e6176ce9e27",
+      "pre_fine_bin019.npz": "5bbe404f17832b2abcc6a4f9db8a9883ad0363dda74177f3295ad5e5fbf05257",
+      "pre_fine_bin020.npz": "50f6ab9b70651b967fb57c7f0daf99e96ea5481b63225600f8cfc76b1da16c74",
+      "pre_fine_bin029.npz": "9fbaa7202ed477d80837096a1ab4e9db4f90cf44189ac450b51e4a319e0af447",
+      "pre_fine_bin030.npz": "c31365391f36e655732e8e74ae31b5ea6d3ee87efc53eea291c4bfaadd5e112a",
+      "pre_fine_bin031.npz": "3e918520597a50735924eb1c7322a5c9f0371df3aa335b47fe8b4d514acf15c4",
+      "pre_fine_bin032.npz": "f7fef9191763ecaada0a72b046b5afcd97f6e3482950dcd617a9eac6e2545370",
+      "pre_fine_bin033.npz": "a2f369c798189671fd9fdd9fc45a08e76df403e2bdb2b988e51e40ba075ce9be",
+      "pre_fine_bin042.npz": "ad2effeb133dab41836e0ec0995b681e4096ff045549b1d51fe8b4d795efe9ee",
+      "pre_fine_bin043.npz": "d9ffc8ab25d8d9b820e346661ead44d4e37cba9ed7da7e139348cc587c5d6efb",
+      "pre_fine_bin044.npz": "f3aa1365251dc3f816d5179a3e58d880bf80379c277d8ad27eba4b67aa20d22c",
+      "pre_fine_bin045.npz": "36d5f606e13d3f60573efce04278179e9cde57fde8a66841c02917a1dc25f427",
+      "pre_fine_bin054.npz": "7b6abd2bc9cdfb73fcce45b4bd1e5f80bc93a11dce958b0d59b34eb73b0d1bcd",
+      "pre_fine_bin055.npz": "2cb2cfdf23eef0c101f97f17686631dbeb66a4d5df9ba1d302b2b57786f16eb0",
+      "pre_fine_bin056.npz": "9bf55a7ccdf8dbaf2f9579feb33633e30190b1b1bcbefb040d86afddbfe255c2",
+      "pre_fine_bin065.npz": "0cf6d4a84fc11a26d8b0cfe1e4d298d472220f0c7ad9adba509a0f818508db84",
+      "pre_fine_bin066.npz": "c6f6f18dec36ab7a588daec23c69062fe589beb0cbc7f335239ae5bb95590c0a",
+      "pre_fine_bin075.npz": "6108f6ede7a085cabcb156dfa4f6c30aa021eecf234b58543eff18bb6d732a75"
+    },
+    "shift_noise": "not added; no measured weighted shift-noise spectrum supplied",
+    "catalogue_status": "legacy-path comparison, not fixed-f_rec=100 catalogue validation",
+    "frozen_assets_sha256": {
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/templates/pre_accepted.npz": "a36173b730f7f76b7987ba3ea7241f8c710700391a3632e1b1a78dd227d54eb0",
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/templates/pre_accepted.json": "ddbd6d8924b823e465ada64e69e83ae2b14608da71d7e666d7f2fc9f4767e80d",
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/templates/pre_pk.npz": "55fad0a4a52947a0be9e471515fcaf55374bf639f22cb336c0b0acd1b7e87618",
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/templates/variance.npz": "806a9a5147fb744883f198a297d7ea878a07588ddfe6924a919968f752a96a13",
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/outputs/paware_pb_ir_brecfix_k012_k014_v2/build/libpaware_ir.so": "0ab2eb736f76b190af5c3114c3ea3349671bcddbc48ceab6ace374f028921f45",
+      "/pscratch/sd/l/lzy/reconstuction-png-v2/03_bk_model/envclass_b/code/paware_pb_ir_templates.py": "1903f4a20b99475b69c6ac1a4e997d8b2cbb6f2b369112dfbdd1d2d2f7d25d63"
+    }
+  }
+}

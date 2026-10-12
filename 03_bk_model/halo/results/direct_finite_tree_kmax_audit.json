@@ -1,0 +1,2411 @@
+{
+  "created_utc": "2026-08-30T07:10:23.944200+00:00",
+  "gates": {
+    "covariance_recompute": true,
+    "independent_maps": true,
+    "independent_minos_endpoints": true,
+    "independent_truth_profiles": true,
+    "kmax0p14_and_0p15_identical_registry": true,
+    "low_k_overlap": true,
+    "native_finite_adaptive_tests_162": true,
+    "no_stale_temporary_files": true,
+    "objective_recompute": true,
+    "pdf_only": true,
+    "pdfs_parse": true,
+    "prediction_recompute": true,
+    "row_registry_105": true,
+    "target_recompute": true,
+    "validity_decision_recompute": true
+  },
+  "independent_optimization": [
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999836918315477,
+          "fNL": -115.5609829436682,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.000001765910658,
+          "fNL": -70.67709464960737,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -93.29270472411676,
+      "map_valid": true,
+      "reported_fNL": -93.29300836886142,
+      "row": "pre__kmax0.08__fNL-100",
+      "truth_delta_chi2": 0.09016105821611142,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999978396047571,
+          "fNL": -66.41226392068401,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000068972015315,
+          "fNL": -21.4469058554374,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -44.29504141425555,
+      "map_valid": true,
+      "reported_fNL": -44.29504141597907,
+      "row": "pre__kmax0.08__fNL-50",
+      "truth_delta_chi2": 0.06516834293679996,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999939711619314,
+          "fNL": -18.118430735262518,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000112566911439,
+          "fNL": 28.504861075013427,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 4.713445571555503,
+      "map_valid": true,
+      "reported_fNL": 4.7140602960891735,
+      "row": "pre__kmax0.08__fNL+0",
+      "truth_delta_chi2": 0.04132685633395694,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999904828783153,
+          "fNL": 30.143836295272365,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.000012320313371,
+          "fNL": 76.62157600445602,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 52.86470766342123,
+      "map_valid": true,
+      "reported_fNL": 52.86519132849615,
+      "row": "pre__kmax0.08__fNL+50",
+      "truth_delta_chi2": 0.015302242613257633,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999907973706177,
+          "fNL": 75.37457002072006,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000104545169688,
+          "fNL": 122.55101569502943,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 98.45505118368719,
+      "map_valid": true,
+      "reported_fNL": 98.45475072691585,
+      "row": "pre__kmax0.08__fNL+100",
+      "truth_delta_chi2": 0.0042796608041058,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000000200456753,
+          "fNL": -100.06451338232785,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999834027261238,
+          "fNL": -67.44942059694944,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -83.7811191763955,
+      "map_valid": true,
+      "reported_fNL": -83.78223889394124,
+      "row": "pre__kmax0.10__fNL-100",
+      "truth_delta_chi2": 0.9920900400322132,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.999976629268152,
+          "fNL": -49.60014454311566,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000001323027239,
+          "fNL": -17.390611582301194,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -33.57050286207186,
+      "map_valid": true,
+      "reported_fNL": -33.5705928378271,
+      "row": "pre__kmax0.10__fNL-50",
+      "truth_delta_chi2": 1.05068147853657,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999997606043785,
+          "fNL": -4.783161446975102,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000004103594446,
+          "fNL": 27.418923737629928,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 11.21252447548199,
+      "map_valid": true,
+      "reported_fNL": 11.211804377798298,
+      "row": "pre__kmax0.10__fNL+0",
+      "truth_delta_chi2": 0.48960939813645554,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.999999608443018,
+          "fNL": 47.436996259537004,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000006500966339,
+          "fNL": 79.55118640937332,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 63.36778207541618,
+      "map_valid": true,
+      "reported_fNL": 63.367782158783115,
+      "row": "pre__kmax0.10__fNL+50",
+      "truth_delta_chi2": 0.7024039134697904,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999995695317434,
+          "fNL": 96.25215911957336,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.000000712305523,
+          "fNL": 128.56045888604226,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 112.27226302856877,
+      "map_valid": true,
+      "reported_fNL": 112.27277063904195,
+      "row": "pre__kmax0.10__fNL+100",
+      "truth_delta_chi2": 0.5845918939787325,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999946763654588,
+          "fNL": -89.9017798821843,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999802490433805,
+          "fNL": -61.43857309146103,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -75.704557370302,
+      "map_valid": true,
+      "reported_fNL": -75.7045573710241,
+      "row": "pre__kmax0.12__fNL-100",
+      "truth_delta_chi2": 2.9359045769592225,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999818037372057,
+          "fNL": -40.44924784199817,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.999962733738295,
+          "fNL": -12.228693132166105,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -26.390927105844803,
+      "map_valid": true,
+      "reported_fNL": -26.390927106462545,
+      "row": "pre__kmax0.12__fNL-50",
+      "truth_delta_chi2": 2.8326397475954748,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999693325574723,
+          "fNL": 3.568769026761153,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000001322121186,
+          "fNL": 31.530389550852533,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 17.486932379715928,
+      "map_valid": true,
+      "reported_fNL": 17.486932379395682,
+      "row": "pre__kmax0.12__fNL+0",
+      "truth_delta_chi2": 1.5819366511773394,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999591980646745,
+          "fNL": 56.678917725342515,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000001754506203,
+          "fNL": 84.7332534609516,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 70.63547481888452,
+      "map_valid": true,
+      "reported_fNL": 70.6354748161323,
+      "row": "pre__kmax0.12__fNL+50",
+      "truth_delta_chi2": 2.1962294692357203,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999549932516683,
+          "fNL": 106.52606792050696,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.000000185095046,
+          "fNL": 134.6342044612441,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 120.50708145512984,
+      "map_valid": true,
+      "reported_fNL": 120.50708143839475,
+      "row": "pre__kmax0.12__fNL+100",
+      "truth_delta_chi2": 2.161691260493374,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999979517000597,
+          "fNL": -94.16822948067927,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999912575090342,
+          "fNL": -68.1470551000571,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -81.17812777131248,
+      "map_valid": true,
+      "reported_fNL": -81.17812780936067,
+      "row": "pre__kmax0.14__fNL-100",
+      "truth_delta_chi2": 2.1017787504372514,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.999992598093483,
+          "fNL": -45.479449622246776,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999836654547494,
+          "fNL": -19.728332839306244,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -32.63496633240715,
+      "map_valid": true,
+      "reported_fNL": -32.63512535991066,
+      "row": "pre__kmax0.14__fNL-50",
+      "truth_delta_chi2": 1.8305271343844574,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999872064644695,
+          "fNL": -0.14312063658978857,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999772472613744,
+          "fNL": 25.427120147723077,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 12.604135683186557,
+      "map_valid": true,
+      "reported_fNL": 12.604135683100242,
+      "row": "pre__kmax0.14__fNL+0",
+      "truth_delta_chi2": 0.9775966005200676,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.999982372952612,
+          "fNL": 49.51834287370126,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999718663754997,
+          "fNL": 75.05281976132787,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 62.24255359474765,
+      "map_valid": true,
+      "reported_fNL": 62.24233359457898,
+      "row": "pre__kmax0.14__fNL+50",
+      "truth_delta_chi2": 0.9254792980799511,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999794556876545,
+          "fNL": 99.02720533027843,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999689166049475,
+          "fNL": 124.58359881591062,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 111.7595534308239,
+      "map_valid": true,
+      "reported_fNL": 111.75978291315559,
+      "row": "pre__kmax0.14__fNL+100",
+      "truth_delta_chi2": 0.8525519062766804,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999979517000597,
+          "fNL": -94.16822948067927,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999912575090342,
+          "fNL": -68.1470551000571,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -81.17812777131248,
+      "map_valid": true,
+      "reported_fNL": -81.17812780936067,
+      "row": "pre__kmax0.15__fNL-100",
+      "truth_delta_chi2": 2.1017787504372514,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.999992598093483,
+          "fNL": -45.479449622246776,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999836654547494,
+          "fNL": -19.728332839306244,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -32.63496633240715,
+      "map_valid": true,
+      "reported_fNL": -32.63512535991066,
+      "row": "pre__kmax0.15__fNL-50",
+      "truth_delta_chi2": 1.8305271343844574,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999872064644695,
+          "fNL": -0.14312063658978857,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999772472613744,
+          "fNL": 25.427120147723077,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 12.604135683186557,
+      "map_valid": true,
+      "reported_fNL": 12.604135683100242,
+      "row": "pre__kmax0.15__fNL+0",
+      "truth_delta_chi2": 0.9775966005200676,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.999982372952612,
+          "fNL": 49.51834287370126,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999718663754997,
+          "fNL": 75.05281976132787,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 62.24255359474765,
+      "map_valid": true,
+      "reported_fNL": 62.24233359457898,
+      "row": "pre__kmax0.15__fNL+50",
+      "truth_delta_chi2": 0.9254792980799511,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999794556876545,
+          "fNL": 99.02720533027843,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999689166049475,
+          "fNL": 124.58359881591062,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 111.7595534308239,
+      "map_valid": true,
+      "reported_fNL": 111.75978291315559,
+      "row": "pre__kmax0.15__fNL+100",
+      "truth_delta_chi2": 0.8525519062766804,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000000070670339,
+          "fNL": -69.79052563211052,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999991171903737,
+          "fNL": -46.58163417773674,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -58.19084702647691,
+      "map_valid": true,
+      "reported_fNL": -58.19166714465306,
+      "row": "pre__kmax0.18__fNL-100",
+      "truth_delta_chi2": 13.008852115407375,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999998480081267,
+          "fNL": -23.398899004070174,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999985275109182,
+          "fNL": -0.41422517053653074,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -11.913588940855966,
+      "map_valid": true,
+      "reported_fNL": -11.913588940898263,
+      "row": "pre__kmax0.18__fNL-50",
+      "truth_delta_chi2": 11.021811634251662,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999996500679629,
+          "fNL": 24.277144608353492,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.999997820576592,
+          "fNL": 47.06078345819078,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 35.66001737247907,
+      "map_valid": true,
+      "reported_fNL": 35.66001737097644,
+      "row": "pre__kmax0.18__fNL+0",
+      "truth_delta_chi2": 9.843192725663659,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.999999244111784,
+          "fNL": 70.32015044069946,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999976173614691,
+          "fNL": 92.90610438945896,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 81.60326756137701,
+      "map_valid": true,
+      "reported_fNL": 81.60326756150391,
+      "row": "pre__kmax0.18__fNL+50",
+      "truth_delta_chi2": 7.868353223265643,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999990541820942,
+          "fNL": 118.53987525259024,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999974179552247,
+          "fNL": 140.97925177921942,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 129.74916298025133,
+      "map_valid": true,
+      "reported_fNL": 129.74916296401582,
+      "row": "pre__kmax0.18__fNL+100",
+      "truth_delta_chi2": 7.064470624511198,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999995497434071,
+          "fNL": -75.66657781696442,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000000763348638,
+          "fNL": -53.82633597437795,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -64.74356261724252,
+      "map_valid": true,
+      "reported_fNL": -64.74356261724259,
+      "row": "pre__kmax0.20__fNL-100",
+      "truth_delta_chi2": 10.400798723839728,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999998676018791,
+          "fNL": -29.930618091372047,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000000275272711,
+          "fNL": -8.329840401543118,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -19.129322222945596,
+      "map_valid": true,
+      "reported_fNL": -19.129322218803875,
+      "row": "pre__kmax0.20__fNL-50",
+      "truth_delta_chi2": 8.163286376285527,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000000046761535,
+          "fNL": 17.432213255271922,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999998720552554,
+          "fNL": 38.855536563005316,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 28.143558940116996,
+      "map_valid": true,
+      "reported_fNL": 28.143558949526945,
+      "row": "pre__kmax0.20__fNL+0",
+      "truth_delta_chi2": 6.9035830430825555,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000000083243549,
+          "fNL": 62.82108846333098,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999997172838277,
+          "fNL": 84.00238619447276,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 73.40970161424838,
+      "map_valid": true,
+      "reported_fNL": 73.40970161408771,
+      "row": "pre__kmax0.20__fNL+50",
+      "truth_delta_chi2": 4.889428695763037,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000000400422664,
+          "fNL": 110.02056978365889,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999995956530654,
+          "fNL": 131.03491511627362,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 120.52471104617813,
+      "map_valid": true,
+      "reported_fNL": 120.52471104631418,
+      "row": "pre__kmax0.20__fNL+100",
+      "truth_delta_chi2": 3.8197865887173137,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000000932341886,
+          "fNL": -206.3325631622131,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999983761888105,
+          "fNL": 15.503301770867196,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -102.02677844628839,
+      "map_valid": true,
+      "reported_fNL": -102.02677842749559,
+      "row": "standard__kmax0.08__fNL-100",
+      "truth_delta_chi2": 0.00041319334565015353,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000087538245168,
+          "fNL": -145.8654217074166,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999922325295422,
+          "fNL": 69.85420503146779,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -53.13781345654197,
+      "map_valid": true,
+      "reported_fNL": -53.137813451488626,
+      "row": "standard__kmax0.08__fNL-50",
+      "truth_delta_chi2": 0.0009483316478092751,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000000080430041,
+          "fNL": -89.28533501483625,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999968374967776,
+          "fNL": 102.60047066031765,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -9.518792363024088,
+      "map_valid": true,
+      "reported_fNL": -9.518792352986232,
+      "row": "standard__kmax0.08__fNL+0",
+      "truth_delta_chi2": 0.010028956028199754,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999999583624187,
+          "fNL": -29.67731901233791,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999688730911728,
+          "fNL": 159.34214838905467,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 62.85327521158937,
+      "map_valid": true,
+      "reported_fNL": 62.853275215500865,
+      "row": "standard__kmax0.08__fNL+50",
+      "truth_delta_chi2": 0.016007620435742775,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999304099332726,
+          "fNL": 32.497554278717345,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9997455858278206,
+          "fNL": 199.69223046355506,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 119.33206159190938,
+      "map_valid": true,
+      "reported_fNL": 119.3320616033633,
+      "row": "standard__kmax0.08__fNL+100",
+      "truth_delta_chi2": 0.04894401836201667,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999748161339677,
+          "fNL": -131.045914609653,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999999729050979,
+          "fNL": 20.760205185284825,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -60.14454384156828,
+      "map_valid": true,
+      "reported_fNL": -60.14454384127527,
+      "row": "standard__kmax0.10__fNL-100",
+      "truth_delta_chi2": 0.3048280700089743,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999999388814946,
+          "fNL": -88.39095595255387,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000034362861094,
+          "fNL": 69.05184574164888,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -15.380885030496456,
+      "map_valid": true,
+      "reported_fNL": -15.380885030101519,
+      "row": "standard__kmax0.10__fNL-50",
+      "truth_delta_chi2": 0.20470871364208865,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999998291803189,
+          "fNL": -51.366169199863265,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9998418130026803,
+          "fNL": 105.7067026426687,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 20.688303597459047,
+      "map_valid": true,
+      "reported_fNL": 20.688303597456454,
+      "row": "standard__kmax0.10__fNL+0",
+      "truth_delta_chi2": 0.06914586309648785,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999928100955853,
+          "fNL": 10.813377167627849,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9998915179770538,
+          "fNL": 152.30889272989535,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 83.06495637367466,
+      "map_valid": true,
+      "reported_fNL": 83.06495637366733,
+      "row": "standard__kmax0.10__fNL+50",
+      "truth_delta_chi2": 0.20263193742362517,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000516863071758,
+          "fNL": 68.83327609530234,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9997852041469348,
+          "fNL": 196.30026824882736,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 135.9236246556955,
+      "map_valid": true,
+      "reported_fNL": 135.92362465569568,
+      "row": "standard__kmax0.10__fNL+100",
+      "truth_delta_chi2": 0.2940470216732116,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9998101166702305,
+          "fNL": -111.90863718076741,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999969481389361,
+          "fNL": 43.76221997225153,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -27.08024886409157,
+      "map_valid": true,
+      "reported_fNL": -27.08024886451155,
+      "row": "standard__kmax0.12__fNL-100",
+      "truth_delta_chi2": 0.7321910666365756,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999995775621233,
+          "fNL": -41.580146871689564,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999976461375253,
+          "fNL": 93.75895821568307,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 38.00276365404416,
+      "map_valid": true,
+      "reported_fNL": 38.002763654515846,
+      "row": "standard__kmax0.12__fNL-50",
+      "truth_delta_chi2": 1.1871679828555877,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000007274021208,
+          "fNL": 31.509231913377114,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999998565394241,
+          "fNL": 135.57792866751697,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 90.23163696742225,
+      "map_valid": true,
+      "reported_fNL": 90.23163696747844,
+      "row": "standard__kmax0.12__fNL+0",
+      "truth_delta_chi2": 2.0145101455588774,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000000039730783,
+          "fNL": 86.81937767398642,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000000005399334,
+          "fNL": 173.13151179027227,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 133.78237699989188,
+      "map_valid": true,
+      "reported_fNL": 133.78237699928414,
+      "row": "standard__kmax0.12__fNL+50",
+      "truth_delta_chi2": 2.693991038911798,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000000186261775,
+          "fNL": 135.20808582908808,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9998410476123154,
+          "fNL": 210.05697780297365,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 175.01527685822938,
+      "map_valid": true,
+      "reported_fNL": 175.01527685822896,
+      "row": "standard__kmax0.12__fNL+100",
+      "truth_delta_chi2": 3.1021053478233687,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000000519569028,
+          "fNL": -22.061436004210012,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999999980460164,
+          "fNL": 57.89345694138329,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 21.348057985438135,
+      "map_valid": true,
+      "reported_fNL": 21.34805798538248,
+      "row": "standard__kmax0.14__fNL-100",
+      "truth_delta_chi2": 5.49124419183328,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0002610978481048,
+          "fNL": 44.23031806317252,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9998548681626929,
+          "fNL": 109.38600849859841,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 78.77452178341245,
+      "map_valid": true,
+      "reported_fNL": 78.77452178347713,
+      "row": "standard__kmax0.14__fNL-50",
+      "truth_delta_chi2": 9.308130461742618,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0001444851326422,
+          "fNL": 83.47652926445232,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999186278609304,
+          "fNL": 142.5300513149822,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 114.45458067188962,
+      "map_valid": true,
+      "reported_fNL": 114.4545806724627,
+      "row": "standard__kmax0.14__fNL+0",
+      "truth_delta_chi2": 9.894044118832346,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000637836386215,
+          "fNL": 131.98168180093114,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999652591633126,
+          "fNL": 184.46961765807103,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 159.19502296729974,
+      "map_valid": true,
+      "reported_fNL": 159.19502296717536,
+      "row": "standard__kmax0.14__fNL+50",
+      "truth_delta_chi2": 12.300913852161404,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000298099192335,
+          "fNL": 176.45054779278934,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999840833921905,
+          "fNL": 223.89205859405817,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 200.8454779811689,
+      "map_valid": true,
+      "reported_fNL": 200.84547798116506,
+      "row": "standard__kmax0.14__fNL+100",
+      "truth_delta_chi2": 13.812056577617966,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000000519569028,
+          "fNL": -22.061436004210012,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999999980460164,
+          "fNL": 57.89345694138329,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 21.348057985438135,
+      "map_valid": true,
+      "reported_fNL": 21.34805798538248,
+      "row": "standard__kmax0.15__fNL-100",
+      "truth_delta_chi2": 5.49124419183328,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0002610978481048,
+          "fNL": 44.23031806317252,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9998548681626929,
+          "fNL": 109.38600849859841,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 78.77452178341245,
+      "map_valid": true,
+      "reported_fNL": 78.77452178347713,
+      "row": "standard__kmax0.15__fNL-50",
+      "truth_delta_chi2": 9.308130461742618,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0001444851326422,
+          "fNL": 83.47652926445232,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999186278609304,
+          "fNL": 142.5300513149822,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 114.45458067188962,
+      "map_valid": true,
+      "reported_fNL": 114.4545806724627,
+      "row": "standard__kmax0.15__fNL+0",
+      "truth_delta_chi2": 9.894044118832346,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000637836386215,
+          "fNL": 131.98168180093114,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999652591633126,
+          "fNL": 184.46961765807103,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 159.19502296729974,
+      "map_valid": true,
+      "reported_fNL": 159.19502296717536,
+      "row": "standard__kmax0.15__fNL+50",
+      "truth_delta_chi2": 12.300913852161404,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000298099192335,
+          "fNL": 176.45054779278934,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999840833921905,
+          "fNL": 223.89205859405817,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 200.8454779811689,
+      "map_valid": true,
+      "reported_fNL": 200.84547798116506,
+      "row": "standard__kmax0.15__fNL+100",
+      "truth_delta_chi2": 13.812056577617966,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000101532344274,
+          "fNL": 7.610310886794082,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999946274844049,
+          "fNL": 48.00597304825642,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 28.20696930534735,
+      "map_valid": true,
+      "reported_fNL": 28.206969305358466,
+      "row": "standard__kmax0.18__fNL-100",
+      "truth_delta_chi2": 30.954804327097662,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.00000679974535,
+          "fNL": 53.571991876568646,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999962213289706,
+          "fNL": 91.2200227666344,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 72.72445621619626,
+      "map_valid": true,
+      "reported_fNL": 72.72456224947203,
+      "row": "standard__kmax0.18__fNL-50",
+      "truth_delta_chi2": 33.42389206026482,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000004389330634,
+          "fNL": 99.46636340374175,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999975482457515,
+          "fNL": 134.4525752143422,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 117.22276219064314,
+      "map_valid": true,
+      "reported_fNL": 117.22276219064314,
+      "row": "standard__kmax0.18__fNL+0",
+      "truth_delta_chi2": 36.231408838926264,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000030070935821,
+          "fNL": 141.9917760146205,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999982954714994,
+          "fNL": 174.9758014261114,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 158.7028931420293,
+      "map_valid": true,
+      "reported_fNL": 158.70289314271707,
+      "row": "standard__kmax0.18__fNL+50",
+      "truth_delta_chi2": 36.048072170978536,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000002000772973,
+          "fNL": 186.6088443583175,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999989738907971,
+          "fNL": 217.50343737780886,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 202.23243391590262,
+      "map_valid": true,
+      "reported_fNL": 202.23243391591137,
+      "row": "standard__kmax0.18__fNL+100",
+      "truth_delta_chi2": 37.27708822910561,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000002426542423,
+          "fNL": 12.470484036034797,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999986998852819,
+          "fNL": 44.67121997325316,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 28.768260999685566,
+      "map_valid": true,
+      "reported_fNL": 28.76826099960516,
+      "row": "standard__kmax0.20__fNL-100",
+      "truth_delta_chi2": 52.07065259964389,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000017353579338,
+          "fNL": 57.69240726713986,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999990533748147,
+          "fNL": 88.07142149916301,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 73.04877079754759,
+      "map_valid": true,
+      "reported_fNL": 73.04877079755339,
+      "row": "standard__kmax0.20__fNL-50",
+      "truth_delta_chi2": 54.402812875046045,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000001367587032,
+          "fNL": 97.95218519285439,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999993359819541,
+          "fNL": 126.86445796047869,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 112.55248945343067,
+      "map_valid": true,
+      "reported_fNL": 112.55248945343544,
+      "row": "standard__kmax0.20__fNL+0",
+      "truth_delta_chi2": 51.46257034986695,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000009407834938,
+          "fNL": 143.59249232130048,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999995431905546,
+          "fNL": 170.90816797297862,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 157.37053432195125,
+      "map_valid": true,
+      "reported_fNL": 157.37053432195125,
+      "row": "standard__kmax0.20__fNL+50",
+      "truth_delta_chi2": 53.39259665913727,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000006284695218,
+          "fNL": 187.34536623981916,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999996721795128,
+          "fNL": 213.248085088808,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 200.39732207815518,
+      "map_valid": true,
+      "reported_fNL": 200.39732207812352,
+      "row": "standard__kmax0.20__fNL+100",
+      "truth_delta_chi2": 52.90295053402809,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999984393228865,
+          "fNL": -257.44915935433994,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999999310130832,
+          "fNL": 6.72175339473462,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -89.03896150593621,
+      "map_valid": true,
+      "reported_fNL": -89.05006597308285,
+      "row": "marisa__kmax0.08__fNL-100",
+      "truth_delta_chi2": 0.007281020886373835,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000158108847663,
+          "fNL": -158.50348175404412,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999941602926842,
+          "fNL": 46.96594194629412,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -28.850062914534597,
+      "map_valid": true,
+      "reported_fNL": -28.850062914526774,
+      "row": "marisa__kmax0.08__fNL-50",
+      "truth_delta_chi2": 0.046787791090704745,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000022940323063,
+          "fNL": -96.27656335893786,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999982635941184,
+          "fNL": 87.57325926607419,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 19.104257292036984,
+      "map_valid": true,
+      "reported_fNL": 19.099164872233345,
+      "row": "marisa__kmax0.08__fNL+0",
+      "truth_delta_chi2": 0.05011683373588338,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000002115597686,
+          "fNL": -12.536738154702086,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999999727810933,
+          "fNL": 119.12321078752615,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 62.06946311152513,
+      "map_valid": true,
+      "reported_fNL": 62.06946312814676,
+      "row": "marisa__kmax0.08__fNL+50",
+      "truth_delta_chi2": 0.03520343050724528,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000001272211372,
+          "fNL": 42.54202935311393,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9997574674692776,
+          "fNL": 155.2990954372495,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 103.74461039191418,
+      "map_valid": true,
+      "reported_fNL": 103.74205508696967,
+      "row": "marisa__kmax0.08__fNL+100",
+      "truth_delta_chi2": 0.004553627822251327,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000003516276905,
+          "fNL": -156.30881459382513,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999998192261592,
+          "fNL": -43.767423114004394,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -93.17623620699423,
+      "map_valid": true,
+      "reported_fNL": -93.17623620699464,
+      "row": "marisa__kmax0.10__fNL-100",
+      "truth_delta_chi2": 0.014881710662705938,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000001851729665,
+          "fNL": -81.45754065828785,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 1.0000000044113329,
+          "fNL": 9.149327323085977,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -31.47406568722386,
+      "map_valid": true,
+      "reported_fNL": -31.476545071481105,
+      "row": "marisa__kmax0.10__fNL-50",
+      "truth_delta_chi2": 0.16025923054388658,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000000269928848,
+          "fNL": -14.90689679081095,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9997802075068294,
+          "fNL": 59.53679764180008,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 24.97975613518826,
+      "map_valid": true,
+      "reported_fNL": 24.979756135190062,
+      "row": "marisa__kmax0.10__fNL+0",
+      "truth_delta_chi2": 0.4182783750304211,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0001536194825906,
+          "fNL": 28.63536200874651,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999283232241316,
+          "fNL": 92.98703118992336,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 62.39005068013212,
+      "map_valid": true,
+      "reported_fNL": 62.39005068022595,
+      "row": "marisa__kmax0.10__fNL+50",
+      "truth_delta_chi2": 0.14475102440348597,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000413187829027,
+          "fNL": 85.40227319399771,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999816414883465,
+          "fNL": 141.18436246164683,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 114.15631403349053,
+      "map_valid": true,
+      "reported_fNL": 114.15631403312749,
+      "row": "marisa__kmax0.10__fNL+100",
+      "truth_delta_chi2": 0.2511371155529416,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000000769860793,
+          "fNL": -110.64956302925845,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999999781945621,
+          "fNL": -40.91925361935151,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -72.63180124611205,
+      "map_valid": true,
+      "reported_fNL": -72.63180124611364,
+      "row": "marisa__kmax0.12__fNL-100",
+      "truth_delta_chi2": 0.5494886125230076,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0002201483970312,
+          "fNL": -42.041881302733074,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9998505908985953,
+          "fNL": 12.27982732021105,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -13.291264940260433,
+      "map_valid": true,
+      "reported_fNL": -13.291264940262044,
+      "row": "marisa__kmax0.12__fNL-50",
+      "truth_delta_chi2": 1.5700439656881602,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000571561938902,
+          "fNL": 16.283118567992762,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999640573210713,
+          "fNL": 60.51982053538168,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 39.20463001059101,
+      "map_valid": true,
+      "reported_fNL": 39.204630010593064,
+      "row": "marisa__kmax0.12__fNL+0",
+      "truth_delta_chi2": 2.7552041548415125,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000182304238892,
+          "fNL": 67.96258312769243,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999891108667653,
+          "fNL": 106.4731243499165,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 87.68906348425878,
+      "map_valid": true,
+      "reported_fNL": 87.68906348424926,
+      "row": "marisa__kmax0.12__fNL+50",
+      "truth_delta_chi2": 3.4681283324434937,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000059619423989,
+          "fNL": 115.91946000348457,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999965195003946,
+          "fNL": 150.25065130867466,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 133.3724042144153,
+      "map_valid": true,
+      "reported_fNL": 133.37240421461857,
+      "row": "marisa__kmax0.12__fNL+100",
+      "truth_delta_chi2": 3.5327255837394382,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000604128303223,
+          "fNL": -73.82320956500439,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999550629476257,
+          "fNL": -32.60134100209939,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -52.43139398913398,
+      "map_valid": true,
+      "reported_fNL": -52.431393989135266,
+      "row": "marisa__kmax0.14__fNL-100",
+      "truth_delta_chi2": 4.455455521481175,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.00001774045238,
+          "fNL": -11.561381553980219,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999872419006621,
+          "fNL": 22.411683391696727,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 5.848092287519483,
+      "map_valid": true,
+      "reported_fNL": 5.848092287516015,
+      "row": "marisa__kmax0.14__fNL-50",
+      "truth_delta_chi2": 9.082294759710221,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000064747802373,
+          "fNL": 38.41365701738084,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999954764010148,
+          "fNL": 68.06744592846809,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 53.50235205357454,
+      "map_valid": true,
+      "reported_fNL": 53.50235205357054,
+      "row": "marisa__kmax0.14__fNL+0",
+      "truth_delta_chi2": 11.356380885439604,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000024912400978,
+          "fNL": 88.90124634101687,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999983066747689,
+          "fNL": 115.45469321182352,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 102.34689475431811,
+      "map_valid": true,
+      "reported_fNL": 102.34689475429063,
+      "row": "marisa__kmax0.14__fNL+50",
+      "truth_delta_chi2": 13.951891339294232,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000000994130028,
+          "fNL": 136.50860360701017,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999994040335274,
+          "fNL": 160.6282290665372,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 148.67993313148295,
+      "map_valid": true,
+      "reported_fNL": 148.67986008008148,
+      "row": "marisa__kmax0.14__fNL+100",
+      "truth_delta_chi2": 15.041155245584289,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000604128303223,
+          "fNL": -73.82320956500439,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999550629476257,
+          "fNL": -32.60134100209939,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -52.43139398913398,
+      "map_valid": true,
+      "reported_fNL": -52.431393989135266,
+      "row": "marisa__kmax0.15__fNL-100",
+      "truth_delta_chi2": 4.455455521481175,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.00001774045238,
+          "fNL": -11.561381553980219,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999872419006621,
+          "fNL": 22.411683391696727,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 5.848092287519483,
+      "map_valid": true,
+      "reported_fNL": 5.848092287516015,
+      "row": "marisa__kmax0.15__fNL-50",
+      "truth_delta_chi2": 9.082294759710221,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000064747802373,
+          "fNL": 38.41365701738084,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999954764010148,
+          "fNL": 68.06744592846809,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 53.50235205357454,
+      "map_valid": true,
+      "reported_fNL": 53.50235205357054,
+      "row": "marisa__kmax0.15__fNL+0",
+      "truth_delta_chi2": 11.356380885439604,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000024912400978,
+          "fNL": 88.90124634101687,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999983066747689,
+          "fNL": 115.45469321182352,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 102.34689475431811,
+      "map_valid": true,
+      "reported_fNL": 102.34689475429063,
+      "row": "marisa__kmax0.15__fNL+50",
+      "truth_delta_chi2": 13.951891339294232,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000000994130028,
+          "fNL": 136.50860360701017,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999994040335274,
+          "fNL": 160.6282290665372,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 148.67993313148295,
+      "map_valid": true,
+      "reported_fNL": 148.67986008008148,
+      "row": "marisa__kmax0.15__fNL+100",
+      "truth_delta_chi2": 15.041155245584289,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.000001763902091,
+          "fNL": -44.76497686246421,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999986088205759,
+          "fNL": -20.988106890165326,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -32.73813866623079,
+      "map_valid": true,
+      "reported_fNL": -32.73813866624808,
+      "row": "marisa__kmax0.18__fNL-100",
+      "truth_delta_chi2": 27.9082755133433,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000009455827765,
+          "fNL": 6.316225297312528,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999992614536382,
+          "fNL": 27.84189431359453,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 17.18065153863698,
+      "map_valid": true,
+      "reported_fNL": 17.180651538619095,
+      "row": "marisa__kmax0.18__fNL-50",
+      "truth_delta_chi2": 34.42927994720064,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000005013318543,
+          "fNL": 56.16283058533283,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999996217501561,
+          "fNL": 75.77522883004704,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 66.04338043677649,
+      "map_valid": true,
+      "reported_fNL": 66.04338043687979,
+      "row": "marisa__kmax0.18__fNL+0",
+      "truth_delta_chi2": 40.71658567753104,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000002910895134,
+          "fNL": 103.20173580659619,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999997897334651,
+          "fNL": 121.38921854666401,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 112.35284514079369,
+      "map_valid": true,
+      "reported_fNL": 112.35301747628739,
+      "row": "marisa__kmax0.18__fNL+50",
+      "truth_delta_chi2": 42.93386672215384,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000001636947218,
+          "fNL": 150.0787362216964,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999513036431509,
+          "fNL": 167.0049277767113,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 158.58562995385185,
+      "map_valid": true,
+      "reported_fNL": 158.58562995384628,
+      "row": "marisa__kmax0.18__fNL+100",
+      "truth_delta_chi2": 44.45106843310427,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000005164766037,
+          "fNL": -35.5336812831513,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999995940633752,
+          "fNL": -16.025080979973094,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": -25.704108623399176,
+      "map_valid": true,
+      "reported_fNL": -25.704108623408672,
+      "row": "marisa__kmax0.20__fNL-100",
+      "truth_delta_chi2": 51.30730407311814,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000002983624086,
+          "fNL": 15.574126897434802,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999997804056946,
+          "fNL": 33.46634969952152,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 24.57720394673598,
+      "map_valid": true,
+      "reported_fNL": 24.577203946736127,
+      "row": "marisa__kmax0.20__fNL-50",
+      "truth_delta_chi2": 62.1609561112051,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 1.0000001829886855,
+          "fNL": 62.75593293386302,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.9999998751945967,
+          "fNL": 79.36822707943546,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 71.10669314118232,
+      "map_valid": true,
+      "reported_fNL": 71.1066931327298,
+      "row": "marisa__kmax0.20__fNL+0",
+      "truth_delta_chi2": 66.5651490249453,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999570828315427,
+          "fNL": 110.05201954356481,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.999963216283696,
+          "fNL": 125.5716819061753,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 117.84641829590022,
+      "map_valid": true,
+      "reported_fNL": 117.84641829581491,
+      "row": "marisa__kmax0.20__fNL+50",
+      "truth_delta_chi2": 70.4140624746003,
+      "truth_valid": true
+    },
+    {
+      "endpoints": [
+        {
+          "delta_chi2": 0.9999698990366426,
+          "fNL": 157.34853010835795,
+          "side": "lower",
+          "valid": true
+        },
+        {
+          "delta_chi2": 0.999974783011865,
+          "fNL": 171.90436830422186,
+          "side": "upper",
+          "valid": true
+        }
+      ],
+      "independent_fNL": 164.65348490003012,
+      "map_valid": true,
+      "reported_fNL": 164.65348490004988,
+      "row": "marisa__kmax0.20__fNL+100",
+      "truth_delta_chi2": 73.61778169881381,
+      "truth_valid": true
+    }
+  ],
+  "inputs": {
+    "arrays": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_direct_finite_tree_kmax_validity_scan_v42p875/DIRECT_FINITE_TREE_KMAX_VALIDITY_ARRAYS.npz",
+      "sha256": "fa898c57ffe87c4477a002025f86b67db8e8762f0bfc9146c1399d3c6c88cfe1"
+    },
+    "auditor": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/audit_quijote_halo_z0p5_direct_finite_tree_kmax_validity_scan.py",
+      "sha256": "3f111b75503e728039d7b6ba7d2e8155dc6f013e2e6855c27597bef60c1e9268"
+    },
+    "model": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/quijote_halo_z0p5_direct_finite_fnl_kmax_scan_models.py",
+      "sha256": "6e5804161bcb1cb5fa2f1e355bc8ea28ffc0dacc80f3e39fd18484bf989f0568"
+    },
+    "producer": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/codes/run_quijote_halo_z0p5_direct_finite_tree_kmax_validity_scan.py",
+      "sha256": "92d85b996a9c7800d861c4b774da3b9cf7881d57fe38868ec40070e649eaa4ff"
+    },
+    "profiles": {
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/analysis/quijote_halo_z0p5_direct_finite_tree_kmax_validity_scan_v42p875/DIRECT_FINITE_TREE_KMAX_VALIDITY_PROFILES.json",
+      "sha256": "f505748d65000f59c09fc7cbd68736992ce1747ac8ba030d98decb9f500ad732"
+    }
+  },
+  "maximum_differences": {
+    "covariance_relative_l2": 0.0,
+    "map_fNL_absolute": 0.011104467146637376,
+    "objective_absolute": 4.263256414560601e-14,
+    "prediction_relative_l2": 0.0,
+    "profile_endpoint_delta_chi2_error": 0.0002610978481047965,
+    "target_relative_l2": 0.0,
+    "truth_delta_chi2_absolute": 3.2454391174496777e-07
+  },
+  "native_test": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "post-R1 finite-PNG native checks passed: 162"
+  },
+  "pdfs": {
+    "bestfit": {
+      "bytes": 53835,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/figures/diagnostics/quijote_halo_z0p5_direct_finite_tree_kmax_validity_scan_v42p875/direct_finite_tree_kmax_fiducial_bestfit.pdf",
+      "sha256": "c5813eacd053a213c28b869348e67dfb9070cb2634ddc2dde981e521f9381bbd"
+    },
+    "recovery": {
+      "bytes": 38816,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/figures/diagnostics/quijote_halo_z0p5_direct_finite_tree_kmax_validity_scan_v42p875/direct_finite_tree_kmax_recovery.pdf",
+      "sha256": "d43ceb9279a6ec2512f794fdcdc9f33c2bd30c6e85b427bc69370da3b663290c"
+    },
+    "validity": {
+      "bytes": 31196,
+      "path": "/pscratch/sd/l/lzy/reconstruction-png/figures/diagnostics/quijote_halo_z0p5_direct_finite_tree_kmax_validity_scan_v42p875/direct_finite_tree_kmax_validity.pdf",
+      "sha256": "c9289014ded979038e16794c10538e25e1c9276fe1e27a98b6c96c3c3f0433c2"
+    }
+  },
+  "raster_artifacts": [],
+  "schema": "independent-direct-finite-tree-kmax-validity-audit-v1",
+  "scientific_warnings": [
+    "pre kmax=0.10 is a marginal strict failure: only the -50 injection has Delta-chi2=1.051; robust multi-injection failure begins at 0.12.",
+    "kmax=0.15 adds no certified configurations relative to 0.14 because the k=0.155 h/Mpc shell is pre-registered as excluded.",
+    "Odd-PNG directions remain comparatively well aligned beyond the validity boundary; failure is dominated by common offsets/even or Gaussian residuals that fNL absorbs."
+  ],
+  "stale_temporary_files": [],
+  "status": "pass_with_scientific_warnings",
+  "validity_decision": {
+    "marisa": {
+      "failure_definition": "first cut where Gaussian fixed-fNL0 p<0.05, or fewer than 5/5 truths have profiled Delta-chi2<=1, or an optimizer/interval is invalid/censored",
+      "first_failed_kmax_h_mpc": 0.12,
+      "largest_strictly_valid_kmax_before_first_failure_h_mpc": 0.1
+    },
+    "pre": {
+      "failure_definition": "first cut where Gaussian fixed-fNL0 p<0.05, or fewer than 5/5 truths have profiled Delta-chi2<=1, or an optimizer/interval is invalid/censored",
+      "first_failed_kmax_h_mpc": 0.1,
+      "largest_strictly_valid_kmax_before_first_failure_h_mpc": 0.08
+    },
+    "standard": {
+      "failure_definition": "first cut where Gaussian fixed-fNL0 p<0.05, or fewer than 5/5 truths have profiled Delta-chi2<=1, or an optimizer/interval is invalid/censored",
+      "first_failed_kmax_h_mpc": 0.12,
+      "largest_strictly_valid_kmax_before_first_failure_h_mpc": 0.1
+    }
+  }
+}
